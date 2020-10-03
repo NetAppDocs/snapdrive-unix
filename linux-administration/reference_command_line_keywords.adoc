@@ -1,0 +1,115 @@
+---
+permalink: linux-administration/reference_command_line_keywords.html
+sidebar: sidebar
+keywords: 
+summary: 'The SnapDrive for UNIX uses keywords to specify the name of host disk group, the destination group, volume, or FlexClone, the NFS file, the storage system, and so on.'
+---
+= Command-line keywords
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The SnapDrive for UNIX uses keywords to specify the name of host disk group, the destination group, volume, or FlexClone, the NFS file, the storage system, and so on.
+
+Here are the keywords you can use with the SnapDrive for UNIX commands. You use them to specify the targets of the SnapDrive for UNIX operations. These keywords can take one or more arguments.
+
+NOTE: Some LVMs refer to disk groups and some refer to volume groups. In SnapDrive for UNIX, these terms are treated as synonyms. Moreover, some LVMs refer to logical volumes and some refer to volumes. SnapDrive for UNIX treats the term host volume (which was created to avoid confusing host logical volumes with storage system volumes) and the term logical volume as synonymous.
+
+|===
+| Keyword| Argument used with this keyword
+a|
+-dg (synonymous with -vg)
+a|
+The name of the host disk group. You can enter the name of either a disk group or a volume group with this option.
+a|
+-destdg
+
+-desthv
+
+-destlv
+
+-destvg
+
+a|
+The destination group or volume.
+a|
+-destfv
+
+a|
+The name of the FlexClone volume specified on the command line for volume clones created by SnapDrive for UNIX during the NFS Snapshot connect operation.
+
+NOTE: This argument supports NFS volumes only and not NFS directories.
+
+a|
+-file
+
+a|
+The name of a NFS file.
+a|
+-filer
+
+a|
+The name of a storage system.
+a|
+-filervol
+
+a|
+The name of the storage system and a volume on it.
+a|
+-fs
+
+a|
+The name of a file system on the host. The name used is the directory where the file system is currently mounted or is to be mounted (the mountpoint).
+a|
+-hostvol or -lvol
+
+a|
+The host volume name, including the disk group that contains it. For example, you might enter large_vg/accounting_lvol.
+
+a|
+-igroup
+
+a|
+The name of an initiator group (igroup).
+
+NetApp strongly recommends that you use the default igroup that SnapDrive for UNIX creates instead of specifying an igroup on the target storage system. The default igroup is hostname_protocol_SdIg.
+
+* hostname is the local (non-domain qualified) name of the current host.
+* protocol is either FCP or iSCSI, depending on the protocol the host is using.
+
+If the igroup hostname_protocol_SdIg does not exist, SnapDrive for UNIX creates it and places all the initiators for the host in it.
+
+If it exists and has the correct initiators, SnapDrive for UNIX uses the existing igroup.
+
+If the igroup exists, but does not contain the initiators for this host, SnapDrive for UNIX creates a new igroup with a different name and uses that igroup in the current operation. To avoid using the same name, SnapDrive for UNIX includes a unique number when it creates the new name. In this case, the name format is hostname-number_protocol_SdIg.
+
+If you supply your own igroup name, SnapDrive for UNIX does not validate the contents of the igroup. This is because it cannot always determine which igroups corresponding to the host are present on the storage system.
+
+All commands that take this option for specifying initiator groups cannot accept it with shared disk groups and file systems. This option is allowed only for local resources.
+
+The SnapDrive for UNIX command fails if any foreign igroups are involved in the command line. Ensure that all the igroups specified in the command line contain initiators from the local host.
+
+a|
+-lun
+
+a|
+The name of a LUN on a storage system. For the first LUN name you supply with this keyword, you must supply the full path name (storage system name, volume name, and LUN name). For additional LUN names, you can specify either only the names within their volume (if the volume stays unchanged) or a path to indicate a new storage system name or a new volume name (if you just want to switch volumes).
+
+NOTE: In a snapdrive snap connect command, the lun_name should be in the lun_name or tree_name/lun_name format.
+
+a|
+-lvol or - hostvol
+
+a|
+The logical volume name, including the volume group that contains it. For example, you might enter large_vg/accounting_lvol as the logical volume name.
+a|
+-snapname
+
+a|
+The name of a Snapshot copy.
+a|
+-vg or -dg
+
+a|
+The name of the volume group. You can enter the name of either a disk group or a volume group with this option.
+|===

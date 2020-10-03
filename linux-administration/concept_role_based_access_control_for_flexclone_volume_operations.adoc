@@ -1,0 +1,26 @@
+---
+permalink: linux-administration/concept_role_based_access_control_for_flexclone_volume_operations.html
+sidebar: sidebar
+keywords: 
+summary: 'If Operations Manager is configured with the system, the Operations Manager administrator must grant you the required capabilities to carry out storage operations on FlexClone volumes.'
+---
+= Role-based access control for FlexClone volume operations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If Operations Manager is configured with the system, the Operations Manager administrator must grant you the required capabilities to carry out storage operations on FlexClone volumes.
+
+*Unrestricted FlexClone volume*: You must have the following capabilities to perform storage operations on an unrestricted FlexClone volume:
+
+* For snap connect, you must have `SD.SnapShot.UnrestrictedClone` capability on the parent volume.
+* For snap disconnect, you must have `SD.SnapShot.DestroyUnrestrictedClone` capability on the FlexClone volume.
+
+*Restricted FlexClone volumes*: You must have the following capabilities for storage operations on a restricted FlexClone volume:
+
+* For snap connect you must have `SD.SnapShot.Clone` capability on the parent volume.
+* For snap disconnect you must have `SD.SnapShot.Clone` capability on the parent volume.
+
+To split the FlexClone volume during the snap connect operation, `SD.Storage.Write` access capability on the parent volume.
+
+To perform storage operations on split FlexClone volumes during the snap disconnect, for split FlexClone volumes, you must have `SD.Storage.Delete` capability on the split volume clone.

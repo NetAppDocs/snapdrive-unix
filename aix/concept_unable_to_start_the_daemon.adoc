@@ -1,0 +1,29 @@
+---
+permalink: aix/concept_unable_to_start_the_daemon.html
+sidebar: sidebar
+keywords: 
+summary: 'The daemon cannot be started when the daemon finds few stale entries in the snapdrive process.'
+---
+= Unable to start the daemon
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The daemon cannot be started when the daemon finds few stale entries in the snapdrive process.
+
+The following error message appears when the daemon is started or restarted.
+
+----
+Starting snapdrive daemon: snapdrive daemon port 4094 is in use ...
+snapdrive daemon port 4094 is in use ...
+snapdrive daemon port 4094 is in use ...
+snapdrive daemon port 4094 is in use ...
+Unable to start daemon...check daemon log file for more details
+----
+
+During the daemon restart/start operation, you can encounter staled snapdrive process entries, which results the daemon to fail.
+
+The workaround for this problem is to execute the following:
+
+* Manually delete the stale entries in the snapdrive process.
+* Find the free ports that are available in the host. Then, in the snapdrive.conf file, specify the port in the option contact-http-port-sdu-daemon.

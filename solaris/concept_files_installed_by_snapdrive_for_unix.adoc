@@ -1,0 +1,16 @@
+---
+permalink: solaris/concept_files_installed_by_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX installs multiple files, such as executable files, configuration files, uninstall files, diagnostic files, and man pages, on the host. Through these files you can detect problems, store configuration information for the current version of the product, and so on, in SnapDrive for UNIX.'
+---
+= Files installed by SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX installs multiple files, such as executable files, configuration files, uninstall files, diagnostic files, and man pages, on the host. Through these files you can detect problems, store configuration information for the current version of the product, and so on, in SnapDrive for UNIX.
+
+*Related information*
+
+xref:concept_types_of_logs.adoc[Types of logs]

@@ -1,0 +1,22 @@
+---
+permalink: solaris/concept_security_featuresprovided_bysnapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX provides certain features that allow you to work with it more securely. These features give you more control over which users can perform operations on a storage system and from which host.'
+---
+= What the Security features are
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX provides certain features that allow you to work with it more securely. These features give you more control over which users can perform operations on a storage system and from which host.
+
+The security features allow you to perform the following tasks:
+
+* Set up access control permissions
+* Specify login information for the storage systems
+* Specify that SnapDrive for UNIX use HTTPS
+
+The access control feature allows you to specify which operations a host running SnapDrive for UNIX can perform on a storage system. You set these permissions individually for each host. In addition, to allow SnapDrive for UNIX to access a storage system, you must supply the login name and password for that storage system.
+
+The HTTPS feature lets you specify SSL encryption for all interactions with the storage system through the Manage ONTAP interface, including sending the passwords. This behavior is the default in SnapDrive 4.1 for UNIX and later releases for Solaris hosts; however, you can disable SSL encryption by changing the value of the use-https-to-filer configuration variable to off.

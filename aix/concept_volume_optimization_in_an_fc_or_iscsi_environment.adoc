@@ -1,0 +1,17 @@
+---
+permalink: aix/concept_volume_optimization_in_an_fc_or_iscsi_environment.html
+sidebar: sidebar
+keywords: 
+summary: 'You can optimize your volume usage in a FC and Internet Small Computer System Interface \(iSCSI\) environment by having host-specific Logical Units Numbers \(LUNs\) on the same volume.'
+---
+= Volume optimization in an FC or iSCSI environment
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can optimize your volume usage in a FC and Internet Small Computer System Interface (iSCSI) environment by having host-specific Logical Units Numbers (LUNs) on the same volume.
+
+In addition to this, you can also optimize your volumes by performing a few other tasks:
+
+* When multiple hosts share the same storage system, each host should have its own dedicated storage system volume to hold all the LUNs connected to that host.
+* When multiple LUNs exist on a storage system volume, it is best for the dedicated volume, on which the LUNs reside to contain only the LUNs for a single host. It must not contain any other files or directories.

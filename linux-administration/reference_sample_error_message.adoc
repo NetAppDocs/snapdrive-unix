@@ -1,0 +1,21 @@
+---
+permalink: linux-administration/reference_sample_error_message.html
+sidebar: sidebar
+keywords: 
+summary: 'This is an error message in SnapDrive for UNIX.'
+---
+= Sample error message
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+This is an error message in SnapDrive for UNIX.
+
+The following message indicates a problem at the command prompt. The message-ID is 0001-377.
+
+----
+Return Code: 43
+
+0001-377 Command error: Disk group name dg2 is already in use or
+conflicts with another entity.
+----

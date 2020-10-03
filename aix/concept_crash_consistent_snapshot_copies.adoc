@@ -1,0 +1,18 @@
+---
+permalink: aix/concept_crash_consistent_snapshot_copies.html
+sidebar: sidebar
+keywords: 
+summary: 'You might have to create a crash-consistent Snapshot copies of your file system or disk groups. SnapDrive for UNIX creates Snapshot copies that contain the image of all the storage system volumes specified in the entity.'
+---
+= Crash-consistent Snapshot copies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You might have to create a crash-consistent Snapshot copies of your file system or disk groups. SnapDrive for UNIX creates Snapshot copies that contain the image of all the storage system volumes specified in the entity.
+
+When you create a Snapshot copy of a storage entity, such as a file system or disk group, SnapDrive for UNIX creates a Snapshot copy that contains the image of all the storage system volumes that comprise the entity you specified using a file_spec argument. The file_spec argument specifies the storage entity, such as the file system, LUN, or NFS directory tree that SnapDrive for UNIX uses to create the Snapshot copy.
+
+SnapDrive for UNIX makes consistent storage components that compose the entity you requested in the Snapshot copy. This means that LUNs or directories being used outside those specified by the snapdrive snap create command file_spec argument might not have consistent images in the Snapshot copy. SnapDrive for UNIX enables you to restore only the entities specified by the file_spec argument that are consistent in the Snapshot copy.
+
+Snapshot copies of entities contained on a single storage system volume are always crash-consistent. SnapDrive for UNIX takes special steps to ensure that Snapshot copies that span multiple storage systems or storage system volumes are also crash-consistent. The method that SnapDrive for UNIX uses to ensure crash consistency depends on the Data ONTAP version used where the storage entities in your Snapshot copy resides.

@@ -1,0 +1,22 @@
+---
+permalink: solaris/concept_when_to_use_the_snapdrive_configuration_wizard.html
+sidebar: sidebar
+keywords: 
+summary: 'Use the SnapDrive configuration wizard to update the configuration variables in the wizard. You can run the configuration wizard at any time to modify your configuration changes to SnapDrive.'
+---
+= SnapDrive configuration wizard
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use the SnapDrive configuration wizard to update the configuration variables in the wizard. You can run the configuration wizard at any time to modify your configuration changes to SnapDrive.
+
+You can run the configuration wizard from /opt/NTAPsnapdrive/setup/config_wizard
+
+Enter exit to close the configuration wizard, without saving the changes.
+
+Alternatively, you can modify the configuration variables value directly in the snapdrive.conf file.
+
+*Related information*
+
+xref:reference_stack_requirements.adoc[Stack requirements]

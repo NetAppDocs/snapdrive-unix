@@ -1,0 +1,20 @@
+---
+permalink: solaris/concept_operations_performed_on_stand_alone_unix_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX on stand-alone UNIX systems enable you to create storage and manage Snapshot copy of LUNs, file systems, logical volumes, and disk groups.'
+---
+= Operations performed on stand-alone UNIX systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX on stand-alone UNIX systems enable you to create storage andmanage Snapshot copy of LUNs, file systems, logical volumes, and disk groups.
+
+* Create storage that include LUNs, file systems, logical volumes, and disk groups.
++
+After creating the storage, you can increase or reduce the storage capacity, connect the storage to a host or disconnect it, and display configuration information about the storage.
+
+* Create a Snapshot copy of one or more volume groups on a storage system.
++
+The Snapshot copy can contain file systems, logical volumes, disk groups, LUNs, and NFS directory trees. After you create a Snapshot copy, you can rename, restore, or delete the Snapshot copy. You can also connect a Snapshot copy to a different location on the same or different host. After you connect the Snapshot copy, you can view and modify the content, or disconnect. You can also display information about Snapshot copies that you create.

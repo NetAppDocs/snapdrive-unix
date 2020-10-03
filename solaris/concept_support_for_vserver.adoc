@@ -1,0 +1,33 @@
+---
+permalink: solaris/concept_support_for_vserver.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX supports Vserver. Vserver is a secure virtual storage server that supports multiple protocols and unified storage. A Vserver contains data volumes and one or more LIFs, which it uses to serve data to clients.'
+---
+= Support for Vserver
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX supports Vserver. Vserver is a secure virtual storage server that supports multiple protocols and unified storage. A Vserver contains data volumes and one or more LIFs, which it uses to serve data to clients.
+
+The Vserver securely isolates the shared virtualized data storage and network, and appears as a single dedicated server to the clients. Each Vserver has a separate administrator authentication domain and can be managed independently by a Vserver administrator.
+
+The volumes of each Vserver are related through junctions and are mounted on junction paths. The file system of each volume appears to be mounted at the junctions. The root volume of the Vserver is found at the top level of the namespace hierarchy; additional volumes are mounted to the Vserver's root volume to extend the global namespace. The Vserver's data volumes contain files and LUNs.
+
+* You can use SnapDrive for UNIX to perform storage provisioning, Snapshot copy operations, and configuration operations on a Vserver.
+* Application data is not stored in the root volume of the Vserver.
+* If the root of the Vserver is a qtree, Snapshot copy operations are not supported.
+* Every volume that is created on the Vserver must be mounted on a junction path.
+
+*Related information*
+
+xref:concept_configuration_information_for_vserver_environment.adoc[Configuration information for Vserver]
+
+xref:task_verifying_login_information_for_vserver.adoc[Verifying login information for Vserver]
+
+xref:task_specifying_login_information_for_vserver.adoc[Specifying login information for the Vserver]
+
+xref:task_deleting_a_user_for_a_vserver.adoc[Deleting a user from a Vserver]
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ssg/home.html[ONTAP 9 Software Setup Guide]

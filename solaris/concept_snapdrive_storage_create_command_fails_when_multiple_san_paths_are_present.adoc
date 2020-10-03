@@ -1,0 +1,37 @@
+---
+permalink: solaris/concept_snapdrive_storage_create_command_fails_when_multiple_san_paths_are_present.html
+sidebar: sidebar
+keywords: 
+summary: 'The SnapDrive storage create command fails when multiple SAN paths are present but multipathing is disabled.'
+---
+= SnapDrive storage create command fails when multiple SAN paths are present but multipathing is disabled
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The SnapDrive storage `create` command fails when multiple SAN paths are present but multipathing is disabled.
+
+For example, for two iSCSI LIFs for an SVM:
+
+----
+[root@scspr0189449001 etc]# iscsiadm --mode session --rescan
+Rescanning session [sid: 1, target: iqn.1992-08.com.netapp:sn.f7335762b23e11e695360050569c153a:vs.3, portal: 10.224.70.253,3260]
+Rescanning session [sid: 2, target: iqn.1992-08.com.netapp:sn.f7335762b23e11e695360050569c153a:vs.3, portal: 10.224.70.254,3260]
+----
+
+When `multipathing-type` is set to `none` in the snapdrive.conf file and the multipath service is disabled, trying a storage create using LVM, returns the following error:
+
+----
+root@scspr0189449001 etc]# snapdrive storage create -fs /mnt/test -lun rgvsim:/vol/asmvol/test -lunsize 500m
+        LUN rgvsim:/vol/asmvol/test ... created
+        mapping new lun(s) ... done
+        discovering new lun(s) ... *failed*
+        Cleaning up ...
+         - LUN rgvsim:/vol/asmvol/test ... deleted
+         0001-422 Admin error: LVM initialization of luns failed:
+        Device /dev/sdb,/dev/sdc not found (or ignored by filtering).
+----
+
+This happens because the `pvcreate` command uses both the devices separated by a comma as a single device `pvcreate /dev/sdb,/dev/sdc` and a device named `/dev/sdb,/dev/sdc` that does not exist.
+
+When there are multiple paths to storage and LVM needs to be used, then multipathing must be enabled.

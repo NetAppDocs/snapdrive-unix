@@ -1,0 +1,63 @@
+---
+permalink: aix/task_viewing_the_result_of_a_clone_split_using_filespec.html
+sidebar: sidebar
+keywords: 
+summary: 'You can view the result of the completed clone split operation using job ID or file specification.'
+---
+= Viewing the result of a clone split operation using job ID or file specification
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can view the result of the completed clone split operation using job ID or file specification.
+
+. Enter the following command to view the clone split result using a file specification: snapdrive clone split result [-lun]long_lun_name [long_lun_name...] |[{-dg | -vg | -fs | -hostvol | -lvol} file_spec [file_spec...]] | [-job <jobid>]
++
+SnapDrive for UNIX displays the result of the clone split that is completed, or failed for a file specification, and then removes the file specification from the job, and removes the job from the job queue.
+
+The following example shows the clone split result for a job ID that is completed successfully.
+
+----
+# snapdrive clone split result -job VT1ov6Q8vU
+Clone-Split for "/mnt/my_mnt3" is 100% completed and succeeded
+Clone-Split for "/mnt/my_mnt4" is 100% completed and succeeded
+----
+
+If there are two file specifications, and out of which one of the file specification fails due to insufficient space in the storage system, then the result of the clone split operation shows as one file specification failed and another file specification was completed successfully.
+
+The following example shows the clone split result for a file specification that is completed successfully.
+
+----
+# snapdrive clone split result -fs /mnt/my_mnt3 /mnt/my_mnt4
+Clone-Split for "/mnt/my_mnt3" is 100% completed and succeeded
+Clone-Split for "/mnt/my_mnt4" is 100% completed and succeeded
+----
+
+The following example shows the clone split result when the clone split operation is still in progress and not yet completed.
+
+----
+# snapdrive clone split result -job R57aCzUaeG
+Clone-Split for "/mnt/my_mnt3" is 0% completed and Split in progress
+----
+
+The following example shows a job that is permanently removed from the job set, and when you try to view the result using file specification, SnapDrive for UNIX encounters an error message as "does not belong to any job."
+
+----
+# snapdrive clone split result -fs /mnt/my_mnt2
+Storage resource /mnt/my_mnt2 does not belong to any job
+----
+
+The following example shows a job that is permanently removed from the job set, and when you try to view the result using job ID, SnapDrive for UNIX encounters an error message as "Job ID is not valid".
+
+----
+# snapdrive clone split result -job T59aCzUaeG
+Job ID is not valid
+----
+
+The following example displays the clone split result in which one of the clone split is in progress and another has failed.
+
+----
+# snapdrive clone split result -job qJrG8U59mg
+Clone-Split for "/mnt/my_mnt4" is 100% completed and succeeded
+Clone-Split for "/mnt/my_mnt5" is 0% completed and split failed
+----

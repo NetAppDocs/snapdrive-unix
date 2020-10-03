@@ -1,0 +1,12 @@
+---
+permalink: linux-administration/concept_command_reference.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX supports various commands. These command references helps you in learning about the commands, their options, keywords, and arguments.'
+---
+= Command reference
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX supports various commands. These command references helps you in learning about the commands, their options, keywords, and arguments.

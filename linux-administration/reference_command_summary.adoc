@@ -1,0 +1,12 @@
+---
+permalink: linux-administration/reference_command_summary.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX supports the different command lines, such as, configuration, storage provisioning, host-side management, and Snapshot operation.'
+---
+= Command summary
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX supports the different command lines, such as, configuration, storage provisioning, host-side management, and Snapshot operation.

@@ -1,0 +1,23 @@
+---
+permalink: aix/concept_methods_fordisconnectingstorage.html
+sidebar: sidebar
+keywords: 
+summary: 'To make it easier to disconnect the storage, SnapDrive for UNIX provides several formats for the snapdrive storage disconnect command.'
+---
+= Methods for disconnecting storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To make it easier to disconnect the storage, SnapDrive for UNIX provides several formats for the snapdrive storage disconnect command.
+
+This is because the disconnect operations fall into the following general categories:
+
+* Specifying the LUNs that you want to disconnect from the host.
+* Specifying a file system that is created directly on a LUN that you want to disconnect from the host.
++
+SnapDrive for UNIX disconnects both the file system and LUN.
+
+* Specifying a disk group, host volume, or file system that resides on LUNs you want to disconnect from the host.
++
+SnapDrive for UNIX disconnects all the LUNs associated with that entity, and also removes mappings for the file system, host volume, and disk group that comprise the entity you disconnected.

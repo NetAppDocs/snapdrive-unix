@@ -1,0 +1,21 @@
+---
+permalink: aix/concept_command_to_use_todisplay_snapshotcopy_information.html
+sidebar: sidebar
+keywords: 
+summary: 'Use the snapdrive snap show \(or list\) command to display information about the Snapshot copies.'
+---
+= Command to use to display Snapshot copy information
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use the snapdrive snap show (or list) command to display information about the Snapshot copies.
+
+You can use the snapdrive snap show (or list) command to display information about each Snapshot copy that is created by SnapDrive for UNIX. You can use this command to display information about the following:
+
+* Storage systems
+* Volumes on storage systems
+* Storage entities such as NFS files and directory trees, volume groups, disk groups, file systems, logical volumes, and host volumes
+* Snapshot copies
+
+NOTE: The show and list forms of this command are synonymous. For SnapDrive 2.0 for UNIX and later, you must use the long form of the Snapshot copy name when you display information about Snapshot copies.

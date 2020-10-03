@@ -1,0 +1,12 @@
+---
+permalink: solaris/task_stopping_the_daemon.html
+sidebar: sidebar
+keywords: 
+summary: 'If you change the SnapDrive for UNIX configuration file, you must stop and restart the daemon. You can stop the daemon nonforcibly or forcibly.'
+---
+= Stopping the daemon
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you change the SnapDrive for UNIX configuration file, you must stop and restart the daemon. You can stop the daemon nonforcibly or forcibly.

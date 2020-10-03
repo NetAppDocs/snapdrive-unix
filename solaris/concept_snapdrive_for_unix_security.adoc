@@ -1,0 +1,12 @@
+---
+permalink: solaris/concept_snapdrive_for_unix_security.html
+sidebar: sidebar
+keywords: 
+summary: 'Before you use SnapDrive for UNIX, you must understand its security features and learn how to access them.'
+---
+= Security features in SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you use SnapDrive for UNIX, you must understand its security features and learn how to access them.

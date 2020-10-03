@@ -1,0 +1,134 @@
+---
+permalink: linux-administration/reference_stack_requirements.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX requires a host operating system, host file systems, NFS, volume managers, FC or iSCSI Host Utilities, storage system licenses, ONTAP software, MultiStore software, and Internet Protocol \(IP\) access. SnapDrive for UNIX also has certain stack requirements which it must fulfill.'
+---
+= Stack requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX requires a host operating system, host file systems, NFS, volume managers, FC or iSCSI Host Utilities, storage system licenses, ONTAP software, MultiStore software, and Internet Protocol (IP) access. SnapDrive for UNIX also has certain stack requirements which it must fulfill.
+
+== Host-side entities
+
+The following is a list of host-side entities:
+
+* The host operating system
+* A volume manager
+* File system
+* Linux Host Utilities
+
+== Guest-side entities for RDM LUN support
+
+The following is a list of guest-side entities:
+
+* The guest operating system
+* A volume manager
+* File system
+* Linux iSCSI Host Utility alone is adequate, if the protocol is iSCSI
+
+== SnapDrive for UNIX stack
+
+You must enter acceptable values for the multipathing-type, fstype, default-transport, and vmtype variables in the snapdrive.conf file as provided in the matrix stack. You must verify that the values entered are installed and running in your host system.
+
+|===
+| Host platform| Default transport type| Multipathing type| fstype| vmtype
+a|
+Linux
+a|
+FCP
+a|
+none
+a|
+ext4
+a|
+lvm
+a|
+iSCSI
+a|
+none
+a|
+ext4
+a|
+lvm
+a|
+FCP
+a|
+nativempio
+a|
+ext4
+a|
+lvm
+a|
+iSCSI
+a|
+nativempio
+a|
+ext4
+a|
+lvm
+a|
+FCP
+a|
+none
+a|
+ext3
+a|
+lvm
+a|
+iSCSI
+a|
+none
+a|
+ext3
+a|
+lvm
+a|
+FCP
+a|
+nativempio
+a|
+ext3
+a|
+lvm
+a|
+iSCSI
+a|
+nativempio
+a|
+ext3
+a|
+lvm
+|===
+*Note:* SnapDrive for UNIX does not support the Ext2 file system.
+
+* If you have FCP and iSCSI storage stacks, SnapDrive will only support FCP storage stacks.
++
+SnapDrive does not support iSCSI storage stacks for AIX.
+
+* The host operating system and appropriate patches for Linux are installed .
+* The volume manager for Linux is LVM2 .
+* Host Utilities are installed in Linux
+* ONTAP software is installed on your storage system.
+* MultiStore software is installed on your storage system for a vFiler unit setup.
+* Internet Protocol (IP) access is available between the host and storage system.
+
+NetApp modifies host utilities and components on an ongoing basis. You can track this changes by using the Interoperability Matrix, which contains up-to-date information for using NetApp products in a SAN environment.
+
+The storage system license and the MultiStore license constitute the storage system entities.
+
+== Storage system licensing requirements
+
+* An FC, iSCSI, or NFS license, depending on your configuration
+* A FlexClone license
+* A SnapRestore license on the storage system
+
+*Related information*
+
+xref:concept_unable_to_select_a_storage_stack.adoc[Unable to select a storage stack]
+
+xref:concept_when_to_use_the_snapdrive_configuration_wizard.adoc[SnapDrive configuration wizard]
+
+https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability]

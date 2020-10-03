@@ -1,0 +1,17 @@
+---
+permalink: aix/task_restarting_the_daemon.html
+sidebar: sidebar
+keywords: 
+summary: 'You must restart the daemon after you stop it so that changes that you make to the configuration file or to the other modules take effect. The SnapDrive for UNIX daemon restarts only after completing all the commands that are in execution and in queue. After the restart request is received, no new commands are executed.'
+---
+= Restarting the daemon
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must restart the daemon after you stop it so that changes that you make to the configuration file or to the other modules take effect. The SnapDrive for UNIX daemon restarts only after completing all the commands that are in execution and in queue. After the restart request is received, no new commands are executed.
+
+* Ensure that you are logged in as a root user.
+* Ensure that no other sessions are running on the same host in parallel. The snapdrived restart command hangs the system in such situations.
+
+. Enter the following command to restart the daemon:snapdrived restart

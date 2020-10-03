@@ -1,0 +1,21 @@
+---
+permalink: linux-administration/concept_multipath_access_in_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX supports FC multipath access to the storage systems using the standard multipathing software solution. By using multipathing, you can configure multiple network paths between the host and storage system.'
+---
+= Support for multipath access in SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX supports FC multipath access to the storage systems using the standard multipathing software solution. By using multipathing, you can configure multiple network paths between the host and storage system.
+
+|===
+| Platform| Multipathing solution
+a|
+Linux
+a|
+NativeMPIO [DM Multipath]
+|===
+If one path fails, the FC traffic continues on the remaining paths. Multipathing is required if the host has multiple paths to a LUN, and it works by making the underlying paths transparent to the user. If the multipathing solution specified in the configuration file for SnapDrive for UNIX operations is configured and supported, SnapDrive for UNIX uses the specified multipathing solution.

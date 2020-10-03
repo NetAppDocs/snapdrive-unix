@@ -1,0 +1,44 @@
+---
+permalink: aix/concept_snapdrive_for_unix_incorrectly_interprets_the_dollar_sign_symbol.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX incorrectly interprets the dollar sign \($\) and all special characters differently, if the special characters are specified as part of a configuration value.'
+---
+= SnapDrive for UNIX incorrectly interprets the dollar sign
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX incorrectly interprets the dollar sign ($) and all special characters differently, if the special characters are specified as part of a configuration value.
+
+All specified configuration values should be numeric. If you specify $ or any other special character as part of the configuration value, SnapDrive for UNIX accepts the value but interprets the numeric value mentioned after the special character in a different manner.
+
+== Example
+
+The following is an example of how $ is interpreted:
+
+----
+#a=$123
+#echo $a
+23
+
+[root@vm-linux-51-233 ~]# /opt/NetApp/snapdrive/bin/config_set volume-clone-retry-sleep=$129
+[root@vm-linux-51-233 ~]# /opt/NetApp/snapdrive/bin/config_show |grep volume-clone-retry-sleep
+volume-clone-retry-sleep:Number of seconds between retries during flex-clone create:'3':'29':1:0:'^[0-9]+$':filer
+----
+
+In this example, SnapDrive for UNIX interprets the configuration value ($123) as 23.
+
+== Workaround
+
+Specify a backslash (\) before $. Modify the previous example as follows:
+
+----
+#a=\$123
+#echo $a
+23
+
+[root@vm-linux-51-233 ~]# /opt/NetApp/snapdrive/bin/config_set volume-clone-retry-sleep=$129
+[root@vm-linux-51-233 ~]# /opt/NetApp/snapdrive/bin/config_show |grep volume-clone-retry-sleep
+volume-clone-retry-sleep:Number of seconds between retries during flex-clone create:'3':'29':1:0:'^[0-9]+$':filer
+----

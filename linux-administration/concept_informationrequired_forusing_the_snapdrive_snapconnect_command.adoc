@@ -1,0 +1,156 @@
+---
+permalink: linux-administration/concept_informationrequired_forusing_the_snapdrive_snapconnect_command.html
+sidebar: sidebar
+keywords: 
+summary: 'To connect to a Snapshot copy, determine the type of storage entity, connect a Snapshot copy with the NFS directory tree to Data ONTAP 7.3 configurations, and so on.'
+---
+= Information required for using the snapdrive snap connect command
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To connect to a Snapshot copy, determine the type of storage entity, connect a Snapshot copy with the NFS directory tree to Data ONTAP 7.3 configurations, and so on.
+
+The following table gives the information you need to supply when you use the snapdrive snap connect command.
+
+|===
+| Requirement/Option| Argument
+a|
+Decide the type of storage entity that you want to use to attach the Snapshot copy and supply that entity's name with the appropriate argument. This is the value for the src_fspec argument.
+
+* If you connect a Snapshot copy of a LUN, SnapDrive for UNIX connects the LUN you specify. You cannot use the -lun option on the same command line with the -vg, -dg, -fs, -lvol, or -hostvol options. You can specify the short name of the LUN in the lun_name or qtree_name/lun_name format.
+* If you connect a Snapshot copy of a file system that is created directly on a LUN, SnapDrive for UNIX connects the LUN that has the file system.
+* If you connect a Snapshot copy of a disk group that has a host volume or file specification, the argument translates into a set of disk groups on the storage system. SnapDrive for UNIX connects the entire disk group containing the entity, even if the entity is a host volume or file system.
+* If you connect a Snapshot copy of an NFS file system, the argument translates to the NFS directory tree. SnapDrive for UNIX creates a FlexClone of the volume, removes directory trees that are not specified in the Snapshot copy, and then connects and mounts the NFS directory tree. If you specify an NFS mount point, you cannot specify non-NFS entities (-vg, -dg, -fs, -lvol, or -hostvol) on the same command line.
++
+NOTE: SnapDrive for UNIX does not support symbolic links at the mount point level.
+
+a|
+LUN (-lunfile_spec)
+a|
+_short name of the LUN._
+a|
+The s_lun_name specifies a LUN that exists in the -snapnamelong_snap_name. The short lun_name is required. You cannot include a storage system or storage system volume name. The d_lun_name specifies the name at which the LUN is connected. The short lun_name is required. You cannot include a storage system or storage system volume name. You must specify a d_lun_name
+a|
+Disk group (-dgfile_spec) or volume group (-vgfile_spec )
+
+a|
+_name of the disk or volume group_
+a|
+File system (-fsfile_spec )
+a|
+_name of the file system_
+a|
+Host volume (-hostvolfile_spec ) or logical volume (-lvolfile_spec )
+a|
+_name of the host or logical volume_
+a|
+Connect a Snapshot copy with an NFS directory tree to Data ONTAP 7.3 configurations.
+
+* If your configuration uses Data ONTAP 7.3 or a later version of Data ONTAP with traditional (not FlexVol) volumes, you must specify this option to connect the Snapshot copy with readonly access (required).
+* If your configuration uses Data ONTAP 7.3 and later and FlexVol volumes, SnapDrive for UNIX automatically provides read-write access. Specify this option only if you want to restrict access to read-only (optional).
+
+a|
+-readonly
+a|
+_set read only permission_
+a|
+Optional: Supply a name by which the target entity is accessible after the storage entity is connected. SnapDrive for UNIX uses this name to connect the destination entity. This is the dest_file_spec argument.
+
+If you omit this name, the snap connect command uses the value you supplied for src_fspec.
+
+a|
+Name of target entity
+a|
+dest_file_spec
+a|
+Optional: Specify the names for the destination storage entities. If you included this information as part of the dest_fspec/src_fspec pair, you do not need to enter it here. You can use the -destxx options to specify names for destination storage entities if this information is not part of the dest_fspec/src_fspec pair. For example, the -fs option names only a destination mount point so you can use the -destdg option to specify the destination disk group.
+
+If you do not specify the name needed to connect an entity in the destination disk group, the snapdrive snap connect command takes the name from the source disk group.
+
+If you do not specify the name needed to connect an entity in the destination disk group, the snap connect command takes the name from the source disk group. If it cannot use that name, the operation fails, unless you included -autorename at the command prompt.
+
+a|
+Destination disk group (-destdg) or destination volume group (-destvg)
+a|
+dgname
+a|
+Destination logical volume (-destlv) or destination host volume (-desthv)
+a|
+lvname
+a|
+Specify the name for the Snapshot copy. Use the long form of the name where you enter the storage system name, volume, and Snapshot copy name.
+a|
+Snapshot copy name (-snapname)
+a|
+long_snap_name
+a|
+-nopersist
+a|
+~
+a|
+Optional: Connect the Snapshot copy to a new location without creating an entry in the host file system table.
+
+* The -nopersist option allows you to connect a Snapshot copy to a new location without creating an entry in the host file system table. (For example, fstab on Linux) By default SnapDrive for UNIX creates persistent mounts. This means that:
+ ** When you connect a Snapshot copy on a host, SnapDrive for UNIX mounts the file system and then places an entry for the LUNs that comprise the file system in the host's file system table.
+ ** When you connect a Snapshot copy on a Linux host, SnapDrive for UNIX mounts the file system, resets the file system universal unique identifier (UUID) and label, and places the UUID and mount point in the host's file system table.
+ ** You cannot use -nopersist to connect a Snapshot copy that contains an NFS directory tree.
+
+a|
+-reserve | -noreserve
+a|
+~
+a|
+Optional: Connect the Snapshot copy to a new location with or without creating a space reservation.
+a|
+Igroup name (-igroup)
+a|
+ig_name
+a|
+Optional: NetApp recommends that you use the default igroup for your host instead of supplying an igroup name.
+
+a|
+-autoexpand
+a|
+~
+a|
+To shorten the amount of information you must supply when connecting to a volume group, include the -autoexpand option at the command prompt. This option lets you name only a subset of the logical volumes or file systems in the volume group. It then expands the connection to the rest of the logical volumes or file systems in the disk group. In this manner, you do not need to specify each logical volume or file system. SnapDrive for UNIX uses this information to generate the name of the destination entity.
+
+This option applies to each disk group specified at the command prompt and all host LVM entities within the group. Without the -autoexpand option (default), you must specify all affected host volumes and file systems contained in that disk group to connect the entire disk group.
+
+NOTE: If the value you enter is a disk group, you do not need to enter all the host volumes or file systems because SnapDrive for UNIX knows what the disk group is connecting to.
+
+NetApp recommends that, if you include this option, you should also include the -autorename option. If the -autoexpand option needs to connect the destination copy of an LVM entity, but the name is already in use, the command fails unless the -autorename option is at the command prompt.
+
+a|
+The command fails if you do not include -autoexpand and you do not specify all the LVM host volumes in all the disk groups that is referred at the command prompt (either by specifying the host volume itself or the file system).
+
+a|
+-autorename
+a|
+~
+a|
+When you use the -autoexpand option without the -autorename option, the snap connect command fails if the default name for the destination copy of an LVM entity is in use. If you include the -autorename option, SnapDrive for UNIX renames the entity when the default name is in use. This means that with the -autorename option at the command prompt, the Snapshot connect operation continues regardless of whether all the necessary names are available. This option applies to all host-side entities specified at the command prompt.
+
+If you include the -autorename option at the command prompt, it implies the -autoexpand option, even if you do not include that option.
+
+a|
+-split
+a|
+~
+a|
+Enables to split the cloned volumes or LUNs during Snapshot connect and Snapshot disconnect operations.
+
+a|
+mntopts
+a|
+~
+a|
+*Optional:* If you are creating a file system, you can specify the following options:
+
+* Use -mntopts to specify options that you want to pass to the host mount command (for example, to specify host system logging behavior). The options you specify are stored in the host file system table file. Allowed options depend on the host file system type.
+* The-mntopts argument is a file system -type option that is specified using the mount command -o flag. Do not include the -o flag in the -mntopts argument. For example, the sequence -mntopts tmplog passes the string -otmplog to the mount command, and inserts the text tmplog on a new command line.
++
+NOTE: If you pass any invalid -mntopts options for storage and snap operations, SnapDrive for UNIX does not validate those invalid mount options.
+
+|===

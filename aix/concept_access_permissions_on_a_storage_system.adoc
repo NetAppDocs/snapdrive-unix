@@ -1,0 +1,16 @@
+---
+permalink: aix/concept_access_permissions_on_a_storage_system.html
+sidebar: sidebar
+keywords: 
+summary: 'Access permissions indicate whether a host can perform certain Snapshot copy and storage operations. Access permissions do not affect any of the SnapDrive storage show or storage list operations. SnapDrive enables you to specify the access permissions for each host in a file that resides on the storage system.'
+---
+= Access permissions on a storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Access permissions indicate whether a host can perform certain Snapshot copy and storage operations. Access permissions do not affect any of the SnapDrive storage show or storage list operations. SnapDrive enables you to specify the access permissions for each host in a file that resides on the storage system.
+
+You can also specify the action that SnapDrive must take when it does not find a permission file for a specified host. You can specify the action by setting the value in the snapdrive.conf configuration file for all-access-if-rbac-unspecified. You can also enable or disable the access to the storage system by modifying the access permissions.
+
+NOTE: In SnapDrive 4.0 for UNIX and later, you can perform storage operations depending on the role-based access control capabilities.

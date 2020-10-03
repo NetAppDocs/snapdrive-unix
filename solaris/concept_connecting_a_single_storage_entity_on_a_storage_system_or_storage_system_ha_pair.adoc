@@ -1,0 +1,14 @@
+---
+permalink: solaris/concept_connecting_a_single_storage_entity_on_a_storage_system_or_storage_system_ha_pair.html
+sidebar: sidebar
+keywords: 
+summary: 'You can connect a Snapshot copy containing a single storage entity.'
+---
+= Connecting a single storage entity on a storage system or storage system HA pair
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can connect a Snapshot copy containing a single storage entity.
+
+You can connect a Snapshot copy that contains a single storage entity that resides on a storage system or on a storage system HA pair. The name of the volume on the destination storage system must match the name of the volume on the source storage system.

@@ -1,0 +1,19 @@
+---
+permalink: linux-administration/concept_hba_setup.html
+sidebar: sidebar
+keywords: 
+summary: 'HBA Setup is the process of installing an appropriate HBA Card and the supported drivers on a Linux host.'
+---
+= HBA setup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+HBA Setup is the process of installing an appropriate HBA Card and the supported drivers on a Linux host.
+
+Following are the HBA Cards that are supported for a Linux MPIO Configuration:
+
+* QLOGIC
+* EMULEX
+
+These HBA cards are supported by FC Host Utilities Linux Attach Kit 3.0 and above with RHEL4 Update 6 and above.

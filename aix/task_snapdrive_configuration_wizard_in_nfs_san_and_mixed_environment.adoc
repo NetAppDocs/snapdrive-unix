@@ -1,0 +1,102 @@
+---
+permalink: aix/task_snapdrive_configuration_wizard_in_nfs_san_and_mixed_environment.html
+sidebar: sidebar
+keywords: 
+summary: 'The configuration wizard allows you to configure in NFS, SAN or Mixed environment.'
+---
+= Using the SnapDrive configuration wizard
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The configuration wizard allows you to configure in NFS, SAN or Mixed environment.
+
+== Steps to configure in NFS environment
+
+The following are the steps to configure in NFS environment.
+
+. Select the *NFS* profile.
+. Enable the Protection Manager Integration.
+ ** Select Yes to enable the access permission checks by using the DataFabric Manager.
+  *** Enter the DataFabric Manager server name or IP address followed by user name and password.
+  *** Enter the http/https port to communicate with the DataFabric Manager. The default value is 8088.
+  *** Enter the SSL server port to access the DataFabric Manager. The default value is 8488.
+  *** Enable the HTTPs enabled to communicate with the DataFabric Manager.
+ ** Select No to enable the access permission checks by using the rbac.
+. Specify the role-based access control methods. The possible values are native and dfm.
+ ** Select native to check the access permission for the host using the control file stored in /vol/vol0/sdprbac/sdhost-name.prbac or /vol/vol0/sdprbac/sdgenericname.prbac.
+ ** Select dfm to check the access permission using the Operations Manager console.
+*Note:* If you select dfm as rbac-method without configuring DataFabric Manager, a warning message specifying that the RBAC method is selected as dfm without enabling Protection Manager Integration is displayed.
+. Specify https or http to communicate with the storage system.
+. The final step is to save the configuration changes in the snapdrive.conf file, and restart the daemon.
+ ** If you select Yes, the SnapDrive daemon is restarted and the configuration changes are reflected.
+ ** If you select No, the variable values are changed in snapdrive.conf file, but the changes are not reflected.
+
+== Steps to configure in SAN environment
+
+The following are the steps to configure in SAN environment.
+
+. Select the SAN profile.
+. Select the required transport protocol.
+ ** Select fcp to set the default-transport.
+ ** Select iscsi to set the default-transport.
+. Select the SAN Storage Stack (combination of MPIO Solution, volume manager, and file system). The options are native, veritas, and none.
++
+SnapDrive does not support veritas for iSCSI transport protocol.
+
+. Enable the Protection Manager Integration.
+ ** Select Yes to enable the access permission checks by using the DataFabric Manager.
+  *** Enter the DataFabric Manager server name or IP address followed by user name and password.
+  *** Enter the http/https port to communicate with the DataFabric Manager. The default value is 8088.
+  *** Enter the SSL server port to access the DataFabric Manager. The default value is 8488.
+  *** Enable the HTTPs enabled to communicate with the DataFabric Manager
+ ** Select No to enable the access permission checks by using the rbac.
+. Specify the role-based access control methods. The possible values are native and dfm.
+ ** Select native to check the access permission for the host using the control file stored in /vol/vol0/sdprbac/sdhost-name.prbac or /vol/vol0/sdprbac/sdgenericname.prbac.
+ ** Select dfm to check the access permission using the Operations Manager.
+*Note:* If you select dfm as rbac-method without configuring DataFabric Manager, a warning message specifying that the RBAC method is selected as dfm without enabling Protection Manager Integration is displayed.
+. Specify https or http to communicate with the storage system.
+. The final step is to save the configuration changes in the snapdrive.conf file, and restart the daemon.
+ ** If you select Yes, the SnapDrive daemon is restarted and the configuration changes are reflected.
+ ** If you select No, the variable values are changed in snapdrive.conf file, but the changes are not reflected.
+
+== Steps to configure in Mixed SAN and NFS environment
+
+The following are the steps to configure in Mixed SAN and NFS environment.
+
+. Select the Mixed profile.
+. Select the required transport protocol.
+ ** Select fcp to set the default-transport.
+ ** Select iscsi to set the default-transport.
+. Select the SAN Storage Stack (combination of MPIO Solution, volume manager, file system). The options are native, veritas, and none.
++
+SnapDrive does not support veritas for iSCSI transport protocol.
+
+. Enable the Protection Manager Integration.
+ ** Select Yes to enable the access permission checks by using the DataFabric Manager
+  *** Enter the DataFabric Manager server name or IP address followed by user name and password.
+  *** Enter the http/https port to communicate with the DataFabric Manager. The default value is 8088.
+  *** Enter the SSL server port to access the DataFabric Manager. The default value is 8488.
+  *** Enable the HTTPs enabled to communicate with the DataFabric Manager.
+ ** Select No to enable the access permission checks by using the rbac.
+. Specify the role-based access control methods. The possible values are native and dfm.
+ ** Select native to check the access permission for the host using the control file stored in /vol/vol0/sdprbac/sdhost-name.prbac or /vol/vol0/sdprbac/sdgenericname.prbac
+ ** Select dfm to check the access permission using the Operations Manager console.
+*Note:* If you select dfm as rbac-method without configuring DataFabric Manager, a warning message specifying that the RBAC method is selected as dfm without enabling Protection Manager Integration is displayed.
+. Specify https or http to communicate with the storage system.
+. The final step is to save the configuration changes in the snapdrive.conf file, and restart the daemon.
+ ** If you select Yes, the SnapDrive daemon is restarted and the configuration changes are reflected.
+ ** If you select No, the variable values are changed in snapdrive.conf file, but the changes are not reflected.
+
+SnapDrive modifies the following variables in the snapdrive.conf file.
+
+* contact-http-dfm-port
+* contact-ssl-dfm-port
+* use-https-to-dfm
+* default-transport
+* use-https-to-filer
+* fstype
+* multipathing-type
+* vmtype
+* rbac-method
+* rbac-cache

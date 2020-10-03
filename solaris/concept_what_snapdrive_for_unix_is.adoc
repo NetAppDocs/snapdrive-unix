@@ -1,0 +1,18 @@
+---
+permalink: solaris/concept_what_snapdrive_for_unix_is.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX simplifies the storage management tasks for you. SnapDrive for UNIX uses Snapshot technology to create an image of data stored on a shared or unshared storage system. SnapDrive also helps you with storage provisioning.'
+---
+= What SnapDrive for UNIX does
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX simplifies the storage management tasks for you. SnapDrive for UNIX uses Snapshot technology to create an image of data stored on a shared or unshared storage system. SnapDrive also helps you with storage provisioning.
+
+You can use SnapDrive for UNIX for performing the following tasks:
+
+* **Back up and restore data:**SnapDrive for UNIX enables you to use Snapshot technology to create an image (Snapshot copy) of the host data that is stored on a storage system. This Snapshot copy provides you with a copy of that data, which you can restore later. The data in the Snapshot copy can exist on one storage system or span multiple storage systems and their volumes. These storage systems can be in HA pair or node-local file systems or disk groups, or LUNs in a host cluster environment.
+* *Manage storage:* You can create and delete storage components, including disk groups, host volumes, file systems, and LUNs on host cluster and non-cluster environments. SnapDrive for UNIX enables you to manage this storage by expanding it, connecting it to a host, and disconnecting it.
+* **Role-based access control:**SnapDrive for UNIX provides role-based access control (RBAC). RBAC allows a SnapDrive administrator to restrict access to a storage system for various SnapDrive operations. This access for storage operations depends on the role that is assigned to the user. RBAC allows the storage administrators to limit the operations that SnapDrive users can perform depending on their assigned roles.

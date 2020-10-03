@@ -1,0 +1,37 @@
+---
+permalink: linux-installation-7mode/reference_product_overview.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX is a host-based storage and data management solution for UNIX environments. SnapDrive for UNIX simplifies data management, improves data availability, and increases the reliability of application data through simplified storage provisioning and file system consistent Snapshot copies.'
+---
+= Product overview
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX is a host-based storage and data management solution for UNIX environments. SnapDrive for UNIX simplifies data management, improves data availability, and increases the reliability of application data through simplified storage provisioning and file system consistent Snapshot copies.
+
+You can use SnapDrive for UNIX as a stand-alone product or along with other SnapManager products that run on UNIX. SnapDrive for UNIX deployed along with SnapManager enables you to create application-consistent data backup.
+
+== SnapDrive highlights
+
+SnapDrive for UNIX enables you to simplify storage management tasks. Some of the tasks that you can perform using SnapDrive for UNIX are:
+
+* Creating Snapshot copies using NetApp Snapshot technology.
++
+SnapDrive for UNIX enables you to create and delete Snapshot copies of a file system, volume group, host volume, or LUN and to clone storage entities from Snapshot copies.
+
+* Provisioning and managing storage with little or no application or host downtime.
++
+SnapDrive for UNIX enables you to create and delete storage components, including disk groups, host volumes, file systems, and LUNs on host cluster environments. SnapDrive for UNIX also enables you to expand storage, connect storage to a host, and disconnect storage from a host.
+
+* Providing role-based access control, which enables storage administrators to restrict the operations that SnapDrive users can perform, depending on their assigned roles.
+
+In addition to these major features, SnapDrive offers the following advantages:
+
+* Enhanced clone-split operation
+* Volume-based SnapRestore (VBSR)
+* Command-line interface (CLI) options
+* Data collection utility
+* Support for storage system renaming
+* Support for Fibre Channel RDM LUNs in Linux guest operating systems

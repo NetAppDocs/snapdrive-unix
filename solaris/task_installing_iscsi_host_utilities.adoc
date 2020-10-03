@@ -1,0 +1,16 @@
+---
+permalink: solaris/task_installing_iscsi_host_utilities.html
+sidebar: sidebar
+keywords: 
+summary: 'Before you install SnapDrive for UNIX, you must install the Solaris Host Utilities.'
+---
+= Installing Solaris Host Utilities
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you install SnapDrive for UNIX, you must install the Solaris Host Utilities.
+
+. To install the Solaris Host Utilities, see the Solaris Host Utilities documentation to ensure that the system is set up correctly.
++
+It contains information about volume managers, multipathing, and other features you must set up before you install SnapDrive for UNIX.

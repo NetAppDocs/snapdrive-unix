@@ -1,0 +1,16 @@
+---
+permalink: solaris/concept_how_snapdrive_for_unix_works_on_host_clustered_unix_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX supports storage provisioning and Snapshot management options to manage a host cluster-wide storage. The host cluster-wide shared storage includes disk groups and file systems in an SFRAC environment on a Solaris host. All the operations are allowed from any node in the host cluster.'
+---
+= How SnapDrive for UNIX works on host clustered UNIX systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX supports storage provisioning and Snapshot management options to manage a host cluster-wide storage. The host cluster-wide shared storage includes disk groups and file systems in an SFRAC environment on a Solaris host. All the operations are allowed from any node in the host cluster.
+
+You can run SnapDrive for UNIX operations on a Solaris host from the aster node. In the host clustered setup, the commands must be executed locally on the host cluster's master node. For this, you must ensure that rsh or sshaccess-without-password-prompt for the root user must be configured for all nodes in the host cluster.
+
+NOTE: If you are using SnapDrive for UNIX in an SFRAC environment, then the default login shell should be bash for all the users.

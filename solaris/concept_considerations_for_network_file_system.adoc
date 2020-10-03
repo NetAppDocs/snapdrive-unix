@@ -1,0 +1,27 @@
+---
+permalink: solaris/concept_considerations_for_network_file_system.html
+sidebar: sidebar
+keywords: 
+summary: 'Before you install SnapDrive for UNIX, you should consider the location where the Network File System \(NFS\) service runs and the location to which the storage system directories are exported. You should check the NFS client permissions and the interface read-write permissions.'
+---
+= Guidelines for NFS configurations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you install SnapDrive for UNIX, you should consider the location where the Network File System (NFS) service runs and the location to which the storage system directories are exported. You should check the NFS client permissions and the interface read-write permissions.
+
+When you use SnapDrive for UNIX to restore or connect to NFS-mounted directories, you must ensure that the storage system directories are exported correctly to the host. If your host has multiple IP interfaces that can access the storage system, you must ensure that the directory is exported correctly to each one of them.
+
+SnapDrive for UNIX issues warnings unless all such interfaces have read-write permissions, or, in the case of snapdrive snap connect with the -readonly option, or at least read-only permission. The snapdrive snap restore and snapdrive snap connect commands fail if none of these interfaces have permission to access the directory.
+
+When you perform Single File SnapRestore (SFSR) as a root user, you must ensure that the storage system directories are exported with read-write permissions on the host and the following export rules must be set:
+
+* rw=<hostname>, root=<hostname> in Data ONTAP operating in 7-Mode
+* rwrule = sys, rorule=sys, superuser= sys in clustered Data ONTAP
+
+*Related information*
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.cdot-famg-nfs/home.html[ONTAP 9 NFS Reference]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1401220[Data ONTAP 8.2 File Access and Protocols Management Guide for 7-Mode]

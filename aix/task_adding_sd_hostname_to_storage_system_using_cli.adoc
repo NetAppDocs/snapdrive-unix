@@ -1,0 +1,49 @@
+---
+permalink: aix/task_adding_sd_hostname_to_storage_system_using_cli.html
+sidebar: sidebar
+keywords: 
+summary: 'The storage system administrator can create and configure the sd-hostname user using the useradmin command.'
+---
+= Adding sd- hostname to storage system using CLI
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The storage system administrator can create and configure the sd-hostname user using the useradmin command.
+
+. Add storage.
++
+----
+# dfm host add storage_array1
+Added host storage_array1.lab.eng.btc.xyz.in
+----
+
+. Set the password for the host.
++
+----
+# dfm host password save -u root -p xxxxxxxx storage_array1
+Changed login for host storage_array1.lab.eng.btc.xyz.in to root.
+Changed Password for host storage_array1.lab.eng.xyz.netapp
+.in
+----
+
+. Create a role on the host.
++
+----
+# dfm host role create -h storage_array1 -c "api-*,login-*" sd-unixhost-role
+Created role sd-unixhost-role on storage_array1
+----
+
+. Create a usergroup.
++
+----
+# dfm host usergroup create -h storage_array1 -r sd-unixhost-role sd-unixhost-ug
+Created usergroup sd-unixhost-ug(44) on storage_array1
+----
+
+. Create a local user.
++
+----
+# dfm host user create -h storage_array1 -p xxxxxxxx -g sd-unixhost-ug sd-unixhost
+Created local user sd-unixhost on storage_array1
+----

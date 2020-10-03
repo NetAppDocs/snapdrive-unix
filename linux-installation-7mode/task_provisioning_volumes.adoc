@@ -1,0 +1,16 @@
+---
+permalink: linux-installation-7mode/task_provisioning_volumes.html
+sidebar: sidebar
+keywords: 
+summary: 'Data ONTAP enables you to provision storage by creating a volume on the storage system and mounting the volume to the host with NFS protocol enabled.'
+---
+= Provisioning volumes
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Data ONTAP enables you to provision storage by creating a volume on the storage system and mounting the volume to the host with NFS protocol enabled.
+
+*Related information*
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1368859[Data ONTAP 8.2 Storage Management Guide For 7-Mode]

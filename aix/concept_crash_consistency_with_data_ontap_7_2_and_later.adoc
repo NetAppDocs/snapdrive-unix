@@ -1,0 +1,25 @@
+---
+permalink: aix/concept_crash_consistency_with_data_ontap_7_2_and_later.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX uses the support for consistency groups provided by Data ONTAP 7.2 and later versions, such that all Snapshot copies that span multiple volumes are crash consistent.'
+---
+= Crash consistency with Data ONTAP 7.2 and later
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX uses the support for consistency groups provided by Data ONTAP 7.2 and later versions, such that all Snapshot copies that span multiple volumes are crash consistent.
+
+Data ONTAP versions 7.2 and greater provides support for consistency groups and storage system fencing. SnapDrive for UNIX uses these features to ensure that all Snapshot copies that span multiple volumes are crash consistent.
+
+To create a crash consistent Snapshot copy across multiple volumes, SnapDrive for UNIX does the following:
+
+* Fences (freezes) I/O to every volume that contains a storage entity.
+* Takes a Snapshot copy of each volume.
+
+The time it takes to fence the volume and create the Snapshot copy is limited, and is controlled by Data ONTAP.
+
+The snapcreate-cg-timeout parameter in the snapdrive.conf file specifies the amount of time, within Data ONTAP limitations, that you wish to allow for storage system fencing. You can specify an interval that is urgent, medium, or relaxed. If the storage system requires more time than allowed to complete the fencing operation, SnapDrive for UNIX creates the Snapshot copy using the consistency methodology for previous Data ONTAP 7.2 versions. You can also specify this methodology by using the-nofilerfence option when you create the Snapshot copy.
+
+If you request a Snapshot copy for a storage entity that spans storage systems with both Data ONTAP 7.2 and previous Data ONTAP versions, SnapDrive for UNIX also creates the Snapshot copy using the consistency method for Data ONTAP versions before 7.2.

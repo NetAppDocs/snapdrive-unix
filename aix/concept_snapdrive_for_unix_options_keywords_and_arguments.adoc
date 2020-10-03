@@ -1,0 +1,12 @@
+---
+permalink: aix/concept_snapdrive_for_unix_options_keywords_and_arguments.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX commands has options, keywords, and arguments associated with them.'
+---
+= SnapDrive for UNIX options, keywords, and arguments
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX commands has options, keywords, and arguments associated with them.

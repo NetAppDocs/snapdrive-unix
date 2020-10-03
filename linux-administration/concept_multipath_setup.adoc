@@ -1,0 +1,12 @@
+---
+permalink: linux-administration/concept_multipath_setup.html
+sidebar: sidebar
+keywords: 
+summary: 'Linux MPIO works if host setup is completed. The host setup is broadly classified as HBA setup, HBA driver parameter setup, Multipath setup, LVM setup, and SnapDrive for UNIX setup.'
+---
+= Multipath setup
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Linux MPIO works if host setup is completed. The host setup is broadly classified as HBA setup, HBA driver parameter setup, Multipath setup, LVM setup, and SnapDrive for UNIX setup.

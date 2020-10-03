@@ -1,0 +1,12 @@
+---
+permalink: aix/concept_volume_based_snaprestore.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive 4.0 for UNIX and later provides Snapshot restore capability at a volume level. This explains the various storage operations you can carry out using volume-based Snapshot restore.'
+---
+= Volume-based SnapRestore
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive 4.0 for UNIX and later provides Snapshot restore capability at a volume level. This explains the various storage operations you can carry out using volume-based Snapshot restore.

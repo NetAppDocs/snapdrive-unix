@@ -1,0 +1,25 @@
+---
+permalink: linux-administration/concept_available_access_control_levels.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX provides various access control levels to the users. These access levels are related to the Snapshot copies and storage system operations.'
+---
+= Available access control levels
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX provides various access control levels to the users. These access levels are related to the Snapshot copies and storage system operations.
+
+You can set the following access levels:
+
+* NONE--The host has no access to the storage system.
+* SNAP CREATE--The host can create Snapshot copies.
+* SNAP USE--The host can delete and rename Snapshot copies.
+* SNAP ALL--The host can create, restore, delete, and rename Snapshot copies.
+* STORAGE CREATE DELETE--The host can create, resize, and delete storage.
+* STORAGE USE--The host can connect and disconnect storage, and also perform clone split estimate and clone split start on storage.
+* STORAGE ALL--The host can create, delete, connect, and disconnect storage, and also perform clone split estimate and clone split start on storage.
+* ALL ACCESS--The host has access to all the preceding SnapDrive for UNIX operations.
+
+Each level is distinct. If you specify permission for only certain operations, SnapDrive for UNIX can execute only those operations. For example, if you specify STORAGE USE, the host can use SnapDrive for UNIX to connect and disconnect storage, but it cannot perform any other operations governed by access control permissions.

@@ -1,0 +1,20 @@
+---
+permalink: linux-administration/concept_application_consistentsnapshot_copies.html
+sidebar: sidebar
+keywords: 
+summary: 'To make an application-consistent Snapshot copy, you should halt the application before the Snapshot operation.'
+---
+= Application-consistent Snapshot copies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To make an application-consistent Snapshot copy, you should halt the application before the Snapshot operation.
+
+To ensure that a Snapshot copy is application-consistent, you might need to stop or perform the necessary steps to quiesce the application before taking the Snapshot copy. Note that database hot backup facilities depend on the methods used by the DBMS, and do not always quiesce I/O to database files.
+
+If the application has not completed its transactions and written data to the storage system, the resulting Snapshot copy might not be application-consistent.
+
+NOTE: If your application can recover from a crash-consistent Snapshot copy, you do not need to stop it. Consult the documentation for your application. For more information about taking application-consistent Snapshot copies.
+
+You should take a new Snapshot copy whenever you add or remove a host volume, LUN, or NFS directory tree, or resize host volumes or file systems. This ensures that you have a consistent copy of the newly configured disk group that you can use if you need to restore the disk group.

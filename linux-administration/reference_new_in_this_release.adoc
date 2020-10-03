@@ -1,0 +1,16 @@
+---
+permalink: linux-administration/reference_new_in_this_release.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive 5.3.2 for UNIX includes only bug fixes. There are no new features in this release.'
+---
+= New in this release
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive 5.3.2 for UNIX includes only bug fixes. There are no new features in this release.
+
+*Related information*
+
+https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability]

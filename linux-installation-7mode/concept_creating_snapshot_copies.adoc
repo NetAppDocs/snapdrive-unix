@@ -1,0 +1,18 @@
+---
+permalink: linux-installation-7mode/concept_creating_snapshot_copies.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX when deployed as a stand-alone product uses NetApp Snapshot technology, which enables you to create and manage Snapshot copies of the host data. You can use the Snapshot copies to restore the data.'
+---
+= Creating Snapshot copies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX when deployed as a stand-alone product uses NetApp Snapshot technology, which enables you to create and manage Snapshot copies of the host data. You can use the Snapshot copies to restore the data.
+
+*Related information*
+
+xref:task_creating_a_snapshot_copy.adoc[Creating a Snapshot copy]
+
+xref:task_verifying_the_snapshot_copy.adoc[Verifying the Snapshot copy]

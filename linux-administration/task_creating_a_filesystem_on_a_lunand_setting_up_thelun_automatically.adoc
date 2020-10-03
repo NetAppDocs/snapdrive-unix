@@ -1,0 +1,50 @@
+---
+permalink: linux-administration/task_creating_a_filesystem_on_a_lunand_setting_up_thelun_automatically.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create a file system on a LUN using SnapDrive for UNIX. SnapDrive for UNIX automatically create the associated LUN.'
+---
+= Creating a file system on a LUN and setting up the LUN automatically
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create a file system on a LUN using SnapDrive for UNIX. SnapDrive for UNIX automatically create the associated LUN.
+
+. At the command line, enter the following command: snapdrive storage create -fs file_spec -nolvm [-fstype type] [-fsopts options] [-mntopts options] [-nopersist] -filervol long_filer_path -lunsize size [-igroup ig_name[ig_name ...]] [{-reserve | -noreserve }]
++
+SnapDrive for UNIX creates the file system you specify and creates a LUN for it on the storage system you specify. It performs all of the tasks associated with host preparation and discovery for the LUNs, as well as mapping and connecting the LUNs to the host entity.
+
+== Examples:
+
+*Creating a 100-MB file system directly on a LUN:*
+
+----
+# snapdrive storage create -fs /mnt/acct1 -filervol acctfiler:/vol/vol1 -lunsize 100m -nolvm
+----
+
+*Creating a file system on a raw LUN without any volume manager:*
+
+----
+# snapdrive storage create -fs /mnt/vxfs2 -fstype vxfs -lun
+snoopy:/vol/vol1/lunVxvm2 -lunsize 50m -nolvm
+LUN snoopy:/vol/vol1/lunVxvm2 ... created
+mapping new lun(s) ... done
+discovering new lun(s) ... done
+LUN to device file mappings:
+- snoopy:/vol/vol1/lunVxvm2 => /dev/vx/dmp/Disk_1
+file system /mnt/vxfs2 created
+----
+
+*Creating a file system on a RDM LUN without any volume manager:*
+
+----
+# snapdrive storage create -fs /mnt/fs -fstype ext3 -lun
+lech:/vol/vol_1/lun1 -lunsize 50m -nolvm
+LUN lech:/vol/vol1/lun1 ... created
+exporting new lun(s) to Guest OS ... done
+discovering new lun(s) ... done
+LUN to device file mappings:
+- lech:/vol/vol1/lun1 => /dev/sdb
+file system /mnt/fs created
+----

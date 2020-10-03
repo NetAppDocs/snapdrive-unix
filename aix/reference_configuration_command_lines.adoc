@@ -1,0 +1,30 @@
+---
+permalink: aix/reference_configuration_command_lines.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX commands are used for configuration operations.'
+---
+= Configuration command lines
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX commands are used for configuration operations.
+
+The following command-line options are used for configuration operations.
+
+* snapdrive config access {show | list} filername
+* snapdrive config check luns
+* snapdrive config delete appliance_name [appliance_name ...]
+* snapdrive config list
+* snapdrive config set [-dfm] user_name appliance_name [appliance_name ...]
+* snapdrive config set [-viadmin] user_name viadmin_name
+* snapdrive config show [host_file_name]
+* snapdrive config check cluster
+* snapdrive config prepare luns -count count
+* snapdrive config migrate set storage_system_name new_storage_system_name
+* snapdrive config migrate delete new_storage_system_name [new_storage_system_name...]
+* snapdrive config migrate list
+* snapdrive igroup add igroup_name filername [filername ...]
+* snapdrive igroup delete filername [filername ...]
+* snapdrive igroup list

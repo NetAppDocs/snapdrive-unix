@@ -1,0 +1,30 @@
+---
+permalink: linux-installation-7mode/reference_where_to_go_next.html
+sidebar: sidebar
+keywords: 
+summary: 'After configuring SnapDrive for UNIX and creating a Snapshot copy, you can perform a restore operation, connect a Snapshot copy, and create a clone. You can also explore other important SnapDrive features, such as role-based access control \(RBAC\), enhanced clone-splitting, and volume-based SnapRestore.'
+---
+= Where to go next
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After configuring SnapDrive for UNIX and creating a Snapshot copy, you can perform a restore operation, connect a Snapshot copy, and create a clone. You can also explore other important SnapDrive features, such as role-based access control (RBAC), enhanced clone-splitting, and volume-based SnapRestore.
+
+You can find more information about these features, as well as release-specific information about SnapDrive for UNIX, in the following documentation, available on the NetApp Support Site:
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2849340[SnapDrive 5.3.2 for UNIX Administration Guide for Linux]
++
+Describes how to configure various features on SnapDrive for UNIX after the deployment is complete. Topics include how to configure igroups, configure SnapDrive for UNIX, configure RBAC, and use the data collection utility to diagnose issues with SnapDrive for UNIX.
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2849339[SnapDrive 5.3.2 for UNIX Release Notes (AIX, Linux, and Solaris)]
++
+Describes new features, important cautions, known problems, and limitations for SnapDrive 5.3.2 for UNIX.
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMP12471545[SnapManager 3.4 for Oracle Installation and Setup Guide for UNIX for Data ONTAP Operating in 7-Mode]
++
+Describes initial tasks you must perform to deploy SnapManager for Oracle with 7-mode in UNIX environment. Topics include how to install and configure the product and how to back up the databases.
+
+* NetApp Technical Report 4212: Best Practice Guide for SnapDrive for UNIX 5.3
++
+Describes SnapDrive for UNIX best practices.

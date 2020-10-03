@@ -1,0 +1,21 @@
+---
+permalink: aix/concept_deleting_storage_using_a_wizard.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the storage delete wizard to perform certain delete operations.'
+---
+= Deleting storage using a wizard
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the storage delete wizard to perform certain delete operations.
+
+You can start the wizard by using the snapdrive storage wizard delete command.
+
+You can delete the following entities:
+
+* A LUN
+* A disk group
+* A logical volume
+* A file system

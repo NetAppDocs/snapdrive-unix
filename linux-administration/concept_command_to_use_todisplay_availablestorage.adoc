@@ -1,0 +1,23 @@
+---
+permalink: linux-administration/concept_command_to_use_todisplay_availablestorage.html
+sidebar: sidebar
+keywords: 
+summary: 'The snapdrive storage show or snapdrive storage list show LUNs or NFS directory trees underlying one or more storage entities. You can use the snapdrive storage show command to learn and know what is in a Snapshot copy of a disk group, host volume, file system, or NFS directory tree.'
+---
+= Command to use to display available storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The snapdrive storage show or snapdrive storage list show LUNs or NFS directory trees underlying one or more storage entities. You can use the snapdrive storage show command to learn and know what is in a Snapshot copy of a disk group, host volume, file system, or NFS directory tree.
+
+You can use these commands to display the following information:
+
+* LUNs available for specific storage systems or storage system volumes
+* LUNs associated with file systems, host volumes, or disk groups
+* NFS mount points and directory trees
+* LUNs known to a specific host, and any LVM entities that the LUNs include
+* Devices known to a specific host
+* Resources on the shared and dedicated hosts
+
+NOTE: You can use either snapdrive storage show or snapdrive storage list at the command line.

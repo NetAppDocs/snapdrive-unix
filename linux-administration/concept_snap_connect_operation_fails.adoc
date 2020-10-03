@@ -1,0 +1,48 @@
+---
+permalink: linux-administration/concept_snap_connect_operation_fails.html
+sidebar: sidebar
+keywords: 
+summary: 'The Snap connect operation fails and the original volume group does not load after rebooting the host.'
+---
+= Snap connect operation fails
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Snap connect operation fails and the original volume group does not load after rebooting the host.
+
+On a Linux host, the Snapshot connect operation fails on an originating host if SnapDrive for UNIX is interrupted, either by rebooting the host or by using Ctrl-C. The interruption results in the #SDUTEMP tag added to the/etc/lvm/lvm.conf file; any subsequent SnapDrive for UNIX operations fail with the following error message:
+
+----
+0001-945 Admin error: Volume Manager's configuration file contains
+tags from previous SDU operation. Please cleanup the cloned lun(s),
+if any, existing from a previous unsuccessful operation and cleanup
+the configuration file before proceeding.
+----
+
+== Workaround
+
+. Remove any cloned LUNs from the storage system that might exist from a previously failed or interrupted Snapshot connect operation.
++
+NOTE: You can use the snapdrive storage show command with the -alloption to verify.
+
+. Check if the LUN has been removed from the host by entering the following command:
+ ** For iSCSI, enter the command /etc/init.d/iscsi reload
++
+NOTE: /etc/init.d/iscsi reload option is applicable for versions RHEL 4 update 6 and prior.
+
+ ** For RHEL 5 and later, if you are using iSCSI you have to remove LUNs manually. Also, you have to perform host rescan manually.
++
+If you are using multipathing solution, then perform rescan for multipathing also manually. You can do so by running the command multipath
++
+NOTE: If you are using FC, then the above process applies to all the versions prior to RHEL 4 update 6 and RHEL 5 and later.
+. Remove the volume group from the /etc/lvm/lvm.conf file.
++
+After removing the cloned LUNs from the /etc/lvm/lvm.conf file, the file might look as follows:
++
+#SDUEXISTING volume_list = [ "vgX" , "vgY" ] volume_list = [ "vgX" ] #SDUTEMP
+
+. Delete the entire line containing the #SDUTEMP tag at the end. If a line exists that begins with the #SDUEXISTING tag, remove the tag only, and retain the line.
+. Run the vgscan command to retain the changes made in the configuration file.
+. Enter the vgchange -a ycommand to retain the original volume group.
+. Execute the appropriate mount command to mount the logical volume group after reviewing the /etc/fstab file in the host to remount the file system.

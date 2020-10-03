@@ -1,0 +1,30 @@
+---
+permalink: solaris/concept_storage_system_volume_preparation.html
+sidebar: sidebar
+keywords: 
+summary: 'You can either use the command prompt on the storage system or the FilerView option to create a storage system volume for the dedicated use of SnapDrive for UNIX.'
+---
+= Storage system volume preparation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can either use the command prompt on the storage system or the FilerView option to create a storage system volume for the dedicated use of SnapDrive for UNIX.
+
+You must complete the following tasks on the storage system to create a volume that can hold the SnapDrive for UNIX Logical Unit Numbers (LUN) or Network File System (NFS) entities attached to a single host:
+
+* Create a storage system volume.
+* If you are in an Fibre Channel or Internet Small Computer System Interface (iSCSI) environment, reset the snapdrive snap reserve option to zero percent on the storage system volume that holds all the LUNs attached to the host, for volume optimization.
+
+When you create a volume on a storage system to hold LUNs or the NFS directory trees, you should be aware of the following:
+
+* You can create multiple LUNs or NFS directory trees on a storage system volume.
+* You should not store user data in the root volume on the storage system or vFiler unit.
+
+*Related information*
+
+http://mysupport.netapp.com/portal/documentation[NetApp Documentation]
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.cdot-famg-nfs/home.html[ONTAP 9 NFS Reference]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1401220[Data ONTAP 8.2 File Access and Protocols Management Guide for 7-Mode]

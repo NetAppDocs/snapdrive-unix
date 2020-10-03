@@ -1,0 +1,14 @@
+---
+permalink: aix/concept_information_about_luns_mapped_to_local_or_remote_hosts.html
+sidebar: sidebar
+keywords: 
+summary: 'The only mapping information available from the volume to SnapDrive for UNIX during volume based SnapRestore is the initiator group information for a LUN. If the initiator groups used by you are always created by SnapDrive for UNIX, then the fully qualified domain name of the host is part of the initiator group name.'
+---
+= Information about LUNs mapped to local or remote hosts
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The only mapping information available from the volume to SnapDrive for UNIX during volume based SnapRestore is the initiator group information for a LUN. If the initiator groups used by you are always created by SnapDrive for UNIX, then the fully qualified domain name of the host is part of the initiator group name.
+
+If SnapDrive for UNIX administrator specifies the --igroup CLI option or if you use manually created initiator groups, then the igroup name need not necessarily have the host name. For all the earlier reasons, SnapDrive for UNIX cannot reliably detect local or remote bindings for a LUN. Therefore, SnapDrive for UNIX displays the full LUN initiator group and initiator information as part of the volume based SnapRestore.

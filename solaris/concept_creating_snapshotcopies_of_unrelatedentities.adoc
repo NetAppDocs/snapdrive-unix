@@ -1,0 +1,28 @@
+---
+permalink: solaris/concept_creating_snapshotcopies_of_unrelatedentities.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX creates Snapshot copies of unrelated entities by maintaining individual crash-consistent Snapshot copies.'
+---
+= Creating Snapshot copies of unrelated entities
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX creates Snapshot copies of unrelated entities by maintaining individual crash-consistent Snapshot copies.
+
+Unless you specify otherwise, SnapDrive for UNIX assumes that all entities that you specify on a particular snapdrive snap create command line are related; in other words the validity of updates to one entity can depend on updates to the other entities specified. When storage entities have dependent writes in this way, SnapDrive for UNIX takes steps to create a Snapshot copy that is crash consistent for all storage entities as a group.
+
+The following example shows how SnapDrive for UNIX creates a Snapshot copy of storage entities that may have dependent writes. In the following example, the snapdrive snap create command specifies a file system on a LUN and also a disk group. The disk group consists of LUNs residing on a single storage system (see Creating a Snapshot copy). The file system on a LUN resides on a different storage system and storage system volume. As a group, the file system and the disk group span multiple storage system volumes; individually they do not.
+
+The following command specifies a Snapshot copy that contains both the file system /mnt/fs1 and the disk group dg1: snapdrive snap create -fs /mnt/fs1 -dg dg1 -snapname fs1_dg1
+
+Because these storage entities can have dependent writes, SnapDrive for UNIX attempts to create a crash-consistent Snapshot copy, and treats the file system /mnt/fs1 and the disk group dg1 as a group. This means SnapDrive for UNIX is required to freeze I/O operations to the storage system volumes before creating the Snapshot copy.
+
+Creating crash-consistent Snapshot copies for multiple storage entities across volumes takes extra time, and is not always possible if SnapDrive for UNIX cannot freeze I/O operations. Because this is so, SnapDrive for UNIX allows you to create Snapshot copies of unrelated storage entities. Unrelated storage entities are entities that you can specify that have no dependent writes when the Snapshot copy is taken. Because the entities have no dependent writes, SnapDrive for UNIX does not take steps to make the entities consistent as a group. Instead, SnapDrive for UNIX creates a Snapshot copy in which each of the individual storage entities is crash-consistent.
+
+The following command specifies a Snapshot copy of the file system on a LUN and the disk group described previously. Because the -unrelated option is specified, SnapDrive for UNIX creates a Snapshot copy in which the file system /mnt/fs1 and the disk group dg1 are crash-consistent as individual storage entities, but are not treated as a group. The following command does not require SnapDrive for UNIX to freeze I/O operations on the storage system volumes: snapdrive snap create -fs /mnt/fs1 -dg dg1 -unrelated -snapname fs1_dg1
+
+*Related information*
+
+xref:task_creating_asnapshot_copy.adoc[Creating a Snapshot copy]

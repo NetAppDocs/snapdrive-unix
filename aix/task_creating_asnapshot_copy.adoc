@@ -1,0 +1,22 @@
+---
+permalink: aix/task_creating_asnapshot_copy.html
+sidebar: sidebar
+keywords: 
+summary: 'To create a Snapshot copy, run the snapdrive snap create command.'
+---
+= Creating a Snapshot copy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To create a Snapshot copy, run the snapdrive snap create command.
+
+Before you execute this syntax, you must understand the options, keywords, and arguments mentioned in this command.
+
+. Enter the following command syntax to create a Snapshot copy: snapdrive snap create {-lun | -dg | -fs | -hostvol }file_spec[file_spec ...] [ {-lun |-dg | -fs | -hostvol } file_spec [file_spec...]] -snapname snap_name [ -force [-noprompt]][-unrelated] [-nofilerfence] [-fstype type][-vmtype type]
+
+The file_spec arguments represent a set of storage entities on one or more storage systems. The Snapshot create operation takes a Snapshot copy of the storage system volume containing those entities and gives it the name specified in the snap_name argument.
+
+*Related information*
+
+xref:concept_creating_snapshotcopies_of_unrelatedentities.adoc[Creating Snapshot copies of unrelated entities]

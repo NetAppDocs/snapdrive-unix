@@ -1,0 +1,29 @@
+---
+permalink: linux-administration/concept_snap_disconnect_procedure.html
+sidebar: sidebar
+keywords: 
+summary: 'This section explains the procedure followed for snap disconnect.'
+---
+= Snap disconnect procedure
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+This section explains the procedure followed for snap disconnect.
+
+The following steps depict the snap disconnect procedure:
+
+. SnapDrive for UNIX obtains host file specs from snap disconnect CLI and finds out the storage system volume.
+. After deleting host file specs and un-mapping the LUNs, SnapDrive for UNIX checks if the current volume is a clone created by SnapDrive.
+. If the FlexClone is created by SnapDrive, then SnapDrive for UNIX checks whether:
+ .. There are any mapped LUNs in the clone volume
+ .. There are any new LUNs in the cloned volume
+ .. There are any new Snapshot copies
+
+If all the conditions are satisfied, SnapDrive for UNIX deletes the cloned volume. For an unrestricted FlexClone, if RBAC is configured, then SnapDrive for UNIX does not perform substep 1 and substep 2 checks.
+
+On storage systems with Data ONTAP version earlier than 7.2, restricted FlexClone volumes does not gets deleted by SnapDrive for UNIX. Storage system commands should be used to delete them. However, Unrestricted FlexClone volumes are deleted when the appropriate RBAC capability is provided to the user.
+
+*Related information*
+
+xref:concept_role_based_access_control_in_snapdrive_for_unix.adoc[Role-based access control in SnapDrive for UNIX]

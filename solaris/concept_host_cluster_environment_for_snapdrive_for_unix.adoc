@@ -1,0 +1,12 @@
+---
+permalink: solaris/concept_host_cluster_environment_for_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive operations for host clustered systems are available only for Veritas SFRAC on a Solaris host.'
+---
+= Host cluster environment for SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive operations for host clustered systems are available only for Veritas SFRAC on a Solaris host.

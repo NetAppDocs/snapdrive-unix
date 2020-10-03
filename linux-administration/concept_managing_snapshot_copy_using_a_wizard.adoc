@@ -1,0 +1,47 @@
+---
+permalink: linux-administration/concept_managing_snapshot_copy_using_a_wizard.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use a wizard to manage Snapshot copies. This wizard runs you through a set of questions and helps you to perform the snap connect, snap restore, and snap disconnect operations.'
+---
+= Managing Snapshot copies using a wizard
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use a wizard to manage Snapshot copies. This wizard runs you through a set of questions and helps you to perform the snap connect, snap restore, and snap disconnect operations.
+
+You can run the wizard by using the snapdrive snap wizard command.
+
+The following table lists the different operations and corresponding commands to run the wizard. After launching the wizard, follow the steps in the application window.
+
+|===
+| Operation| Command
+a|
+Snapshot restore
+a|
+snapdrive snap wizard restore
+a|
+Snapshot connect
+a|
+snapdrive snap wizard connect
+a|
+Snapshot connect operation for file system with storage system volume
+a|
+Snapshot connect for disk group
+a|
+Snapshot disconnect for LUN
+a|
+snapdrive snap wizard disconnect
+a|
+Snapshot disconnect for a disk group
+a|
+Snapshot disconnect for host volume
+a|
+Snapshot disconnect for file system
+|===
+*Limitations:* In SnapDrive for UNIX 4.1 and later, the snapdrive snap wizard command has the following limitations:
+
+* Volume-based SnapRestore is not supported with the snap wizard restore command.
+* FlexClone® volume is not supported with the snap wizard connect command.
+* Operations on unresponsive file specifications are not supported with snap wizard commands.

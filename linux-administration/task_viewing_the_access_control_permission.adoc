@@ -1,0 +1,64 @@
+---
+permalink: linux-administration/task_viewing_the_access_control_permission.html
+sidebar: sidebar
+keywords: 
+summary: 'You can view the access control permissions by running the snapdrive config access show command.'
+---
+= Viewing the access control permission
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can view the access control permissions by running the snapdrive config access show command.
+
+. Run the snapdrive config access show command.
++
+This command has the following format: snapdrive config access {show | list} filername
++
+You can use the same parameters regardless of whether you enter the show or list version of the command.
++
+This command line checks the storage system toaster to determine which permissions the host has. Based on the output, the permissions for the host on this storage system are SNAP ALL.
++
+----
+# snapdrive config access show toaster
+This host has the following access permission to filer, toaster:
+SNAP ALL
+Commands allowed:
+snap create
+snap restore
+snap delete
+snap rename
+#
+----
++
+In this example, the permissions file is not on the storage system, so SnapDrive for UNIX checks the variable all-access-if-rbac-unspecified in the snapdrive.conf file to determine which permissions the host has. This variable is set to on, which is equivalent to creating a permissions file with the access level set to ALL ACCESS.
++
+----
+# snapdrive config access list toaster
+This host has the following access permission to filer, toaster:
+ALL ACCESS
+Commands allowed:
+snap create
+snap restore
+snap delete
+snap rename
+storage create
+storage resize
+snap connect
+storage connect
+storage delete
+snap disconnect
+storage disconnect
+clone split estimate
+clone split start
+#
+----
++
+This example shows the kind of message you receive if no permissions file is on the storage system toaster, and the variable all-access-if-rbac-unspecified in the snapdrive.conf file is set to off.
++
+----
+# snapdrive config access list toaster
+Unable to read the access permission file on filer, toaster. Verify that the
+file is present.
+Granting no permissions to filer, toaster.
+----

@@ -1,0 +1,20 @@
+---
+permalink: linux-administration/concept_operation_with_multiple_operations_manager_servers_managing_storage_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'The following output shows the error message you would receive when storage systems are managed by multiple Operations Managers console.'
+---
+= Operation with multiple Operations Manager console servers managing storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following output shows the error message you would receive when storage systems are managed by multiple Operations Managers console.
+
+----
+[root]# snapdrive storage create -lun storage_array1:/vol/vol1/lun5 lun6 -lun storage_array2:/vol/vol1/lun2 -lunsize 100m
+0002-332 Admin error:SD.Storage.Write access denied on volume storage_array1:/vol/vol1 for user unix_host\root on Operations Manager server ops_mngr_server1
+SD.Storage.Write access denied on volume storage_array2:/vol/vol1 for user unix_host\root on Operations Manager server ops_mngr_server2
+----
+
+storage_array1 is managed by ops_mngr_server1 and storage_array2 is managed by ops_mngr_server2. Administrator of unix_host is not authorized to create filespecs on storage_array1 and storage_array2. In the preceding example SnapDrive for UNIX displays the Operations Manager console used to determine access.

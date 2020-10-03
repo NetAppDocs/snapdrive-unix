@@ -1,0 +1,23 @@
+---
+permalink: linux-administration/concept_error_message_format.html
+sidebar: sidebar
+keywords: 
+summary: 'The format of the error message helps you determine the cause of the error.'
+---
+= Error message format
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The format of the error message helps you determine the cause of the error.
+
+SnapDrive for UNIX returns the standard error code information, which provides a more specific description of what caused the initial error condition. SnapDrive for UNIX error messages conform to the following format: return code message-ID error type: message text
+
+* return code -- SnapDrive for UNIX error message ID that is linked to an exit status value which indicates the basic cause of the error condition.
+* message-ID -- A unique identifier used by NetApp technical support to locate the specific code that produced the error. If you need to call NetApp technical support, NetApp recommends that you record the message ID that accompanied the error message.
+* error type -- Specifies the type of error that SnapDrive for UNIX encountered. Return values include the following:
+ ** Warning -- SnapDrive for UNIX executed the command but issued a warning about conditions that might require your attention.
+ ** Command -- SnapDrive for UNIX failed to execute the command due to an error in the command line. Check the command line format and variables to ensure they are correct.
+ ** Admin -- SnapDrive for UNIX failed to execute the command due to incompatibilities in the system configuration. Contact your System Administrator to review your configuration parameters.
+ ** Fatal -- SnapDrive for UNIX failed to execute the command due to an unexpected condition. Fatal errors are rare. If a fatal error occurs and you have problems resolving it, contact NetApp technical support for assistance.
+* message text--Information that explains the error. This text might include information from another component to provide more detail about the error. For example, if a command-line argument such as a disk group is missing, the error message tells you what is missing. Or the Manage ONTAP APIs that SnapDrive for UNIX uses to control the storage system might supply additional text to help explain the error. In this case, the text follows the basic SnapDrive for UNIX error message.

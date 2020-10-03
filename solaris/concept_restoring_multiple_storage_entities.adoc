@@ -1,0 +1,20 @@
+---
+permalink: solaris/concept_restoring_multiple_storage_entities.html
+sidebar: sidebar
+keywords: 
+summary: 'You can restore a Snapshot copy that contains multiple storage entities.'
+---
+= Restoring multiple storage entities
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can restore a Snapshot copy that contains multiple storage entities.
+
+To restore a Snapshot copy that contains storage entities that reside on multiple destination storage systems, you must meet the following requirements:
+
+* The storage entities you specify at the command prompt must reside on a single storage system, or on a HA pair.
+* The name of the volume of the source storage system must match the name of the volume of the destination storage system.
+* You must set the snapmirror-dest-multiple-filervolumes-enabled argument in the snapdrive.conf file to on.
+
+You can use one command to restore storage entities that reside on a single storage system or on a HA pair.

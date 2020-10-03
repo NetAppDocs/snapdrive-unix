@@ -1,0 +1,19 @@
+---
+permalink: aix/concept_benefits_of_flexclone_volumes.html
+sidebar: sidebar
+keywords: 
+summary: 'FlexClone volumes provide data management and performance benefits.'
+---
+= Benefits of FlexClone volumes
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+FlexClone volumes provide data management and performance benefits.
+
+* Simplified data management and reduced risk.
+* Flexibility and greater utilization.
++
+You can use FlexClone volumes to create multiple copies of data for additional users without giving them access to the original data.
+
+* Faster than a LUN clone.

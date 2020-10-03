@@ -1,0 +1,41 @@
+---
+permalink: solaris/concept_contents_of_an_audit_log_file.html
+sidebar: sidebar
+keywords: 
+summary: 'The audit log shows information about commands you issued with SnapDrive for UNIX.'
+---
+= Contents of an audit log file
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The audit log shows information about commands you issued with SnapDrive for UNIX.
+
+The audit log file maintains the history of the following information:
+
+* The commands issued.
+* The return value from those commands.
+* The user ID of the user who invoked the command.
+* A timestamp indicating when the command started (with no return code) and another timestamp indicating when the command finished (with a return code). The audit log record shows only information about snapdrive use (issued commands).
+
+An audit log file contains the following information.
+
+|===
+| Field| Description
+a|
+uid
+a|
+user ID
+a|
+gid
+a|
+group ID
+a|
+msgText
+a|
+message text
+a|
+returnCode
+a|
+return code from a command
+|===

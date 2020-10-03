@@ -1,0 +1,62 @@
+---
+permalink: linux-administration/concept_clustered_data_ontap_features_available_in_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX 5.0 and later versions support some features of clustered Data ONTAP.'
+---
+= Clustered Data ONTAP features available in SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX 5.0 and later versions support some features of clustered Data ONTAP.
+
+The following features are supported:
+
+* Port sets
+* Vserver
+* Handling errors caused by volume migration using the appropriate configuration variables
+* Crash-consistent (consistency groups) Snapshot copies
+* AutoSupport
+* Raw Device Mapping (RDM) logical unit number (LUN) for Vservers
+* Role-based access control (RBAC) with Operations Manager console
+* Load-sharing mirrors (LSM)
++
+A load-sharing mirror reduces the network traffic to a FlexVol volume by providing additional read-only access to the clients. You can create and manage the load-sharing mirrors to distribute read-only traffic away from a FlexVol volume. Load-sharing mirrors do not support Infinite Volumes. A set of load-sharing mirrors consists of a source volume that can connect with one or more destination volumes. Each load-sharing mirror in the set must belong to the same Storage Virtual Machine (SVM) as the source volume of the set. The load-sharing mirrors should also be created on different aggregates and accessed by different nodes in the cluster to achieve proper load balancing of client requests. For more information, see the _Clustered Data ONTAP Logical Storage Management Guide_.
++
+NOTE:
+
+ ** LSM is supported with clustered Data ONTAP 8.2 and higher version of ONTAP. But you will have to configure cluster administrator if you are using clustered Data ONTAP 8.2.2 and below version using snapdrive config set-cserver command.
+ ** LSM is not supported on any versions earlier than ONTAP 8.2 even if the cluster administrator is configured.
+
+* IPspaces
++
+An IPspace defines a distinct IP address space in which Storage Virtual Machines (SVMs) can be created. A routing table is maintained for each SVM within an IPspace; no cross-SVM or cross-IPspace traffic routing occurs. For more information, see the _Clustered Data ONTAP Network Management Guide_.
++
+NOTE: This feature is supported only if you are using clustered Data ONTAP 8.3.
+
+* MetroCluster setup
++
+This feature is supported only if you are using clustered Data ONTAP 8.3. For information about MetroCluster setup, see the _Clustered Data ONTAP MetroCluster Installation and Configuration Guide_.
+
+* Tokens to reserve space on node to create FlexClone files and FlexClone LUNs
++
+You must have the FlexClone license if you want to use this feature. For more information, see the _Clustered Data ONTAP Logical Storage Management Guide_.
+
+* Custom qtree exports
++
+The qtree can have different exportfs policy than the parent volume.
++
+NOTE: This feature is supported only if you are using clustered Data ONTAP 8.2.1 and later.
+
+* Federal Information Processing Standard (FIPS) compliance
+
+*Related information*
+
+xref:concept_support_for_storage_system_rename.adoc[Support for storage system rename]
+
+xref:concept_using_port_set_in_snapdrive_for_unix.adoc[Using port set in SnapDrive for UNIX]
+
+xref:concept_managing_volume_migration_using_snapdrive_for_unix.adoc[Volume migration in SnapDrive for UNIX]
+
+xref:concept_support_for_vserver.adoc[Support for Vserver]

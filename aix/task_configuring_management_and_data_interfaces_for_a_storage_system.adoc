@@ -1,0 +1,28 @@
+---
+permalink: aix/task_configuring_management_and_data_interfaces_for_a_storage_system.html
+sidebar: sidebar
+keywords: 
+summary: 'You can configure multiple data interfaces for a single management interface in an NFS environment, so that you can separate management traffic from data traffic on your storage system.'
+---
+= Configuring management and data interfaces for a storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure multiple data interfaces for a single management interface in an NFS environment, so that you can separate management traffic from data traffic on your storage system.
+
+. Set the configuration for the new management interface: snapdrive config set root
++
+----
+# snapdrive config set root f3050-197-91
+Password for root:
+Retype password:
+----
+
+. Configure the data interface for the new management interface: snapdrive config set
++
+----
+# snapdrive config set -mgmtpath f3050-197-91 f3050-220-91#
+----
++
+In the preceding command, `f3050-197-191` is the management interface and `f3050-220-91` is the data interface.

@@ -1,0 +1,47 @@
+---
+permalink: solaris/concept_limitations_of_rdm_luns_managed_by_snapdrive.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive has a few limitations for provisioning RDM LUNs. You must be aware of the limitations that might affect your environment.'
+---
+= Limitations of RDM LUNs managed by SnapDrive
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive has a few limitations for provisioning RDM LUNs. You must be aware of the limitations that might affect your environment.
+
+* An RDM LUN cannot serve either as a boot disk or system disk.
+* SnapDrive does not support MPIO in the guest operating system, although VMware ESX server supports MPIO.
+* When the transport protocol is FC, the igroup that is specified in the CLI command is ignored by SnapDrive, and the igroup is automatically created by the virtual interface.
+* You can rename, move, or delete the /usr/bin/rescan-scsi-bus.sh script that is bundled as part of sg3_utils to avoid limiting the number of RDM LUNs to eight.
++
+NOTE: If you want to retain /usr/bin/rescan-scsi-bus.sh in sg3_utils and avoid limiting the number of RDM LUNs to eight, then you must create a wrapper script /root/dynamic-lun-rescan.sh and from that script run /usr/bin/rescan-scsi-bus.sh, with the options-w, -c, and -r and assign full permissions.
+
+The following is an example of the modified content of /root/dynamic-lun-rescan.sh:
+
+----
+#cat /root/dynamic-lun-rescan.sh
+#Wrapper script used to call the actual rescan script.
+/usr/bin/rescan-scsi-bus.sh -w -c -r
+----
+
+*Limitations related to VMware ESX server*
+
+* Each guest operating system can be configured with four SCSI controllers, and each SCSI controller can be mapped to 16 devices.
++
+However, one device is reserved per controller, and therefore a total of 60 (16 *4 -- 4) RDM LUNs can be mapped to the guest operating system.
+
+* Each ESX server can be mapped to a maximum of 256 RDM LUNs.
+
+*Related information*
+
+xref:concept_guest_os_preparation_for_installing_sdu.adoc[Guest OS preparation for installing SnapDrive for UNIX]
+
+xref:concept_storage_provisioning_for_rdm_luns.adoc[VMware VMotion support in SnapDrive for UNIX]
+
+xref:task_configuring_virtual_storage_console_in_snapdrive_for_unix.adoc[Configuring Virtual Storage Console for SnapDrive for UNIX]
+
+xref:task_considerations_for_provisioning_rdm_luns.adoc[Considerations for provisioning RDM LUNs]
+
+http://www.vmware.com/pdf/vsphere4/r40/vsp_40_config_max.pdf[www.vmware.com/pdf/vsphere4/r40/vsp_40_config_max.pdf]

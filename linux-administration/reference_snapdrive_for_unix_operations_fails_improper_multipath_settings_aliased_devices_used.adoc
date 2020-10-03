@@ -1,0 +1,33 @@
+---
+permalink: linux-administration/reference_snapdrive_for_unix_operations_fails_improper_multipath_settings_aliased_devices_used.html
+sidebar: sidebar
+keywords: 
+summary: 'When you run the storage show or snap create command in RHEL 5.11, the command displays the following error message: Status call to SDU daemon failed and in SLES11SP3 host with –nolvm option when the host LVM is not involved.'
+---
+= SnapDrive for UNIX operations fails due to improper multipath settings when aliased devices are used.
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you run the storage show or snap create command in RHEL 5.11, the command displays the following error message: Status call to SDU daemon failed and in SLES11SP3 host with --nolvm option when the host LVM is not involved.
+
+* *snapdrive storage show -all command fails to show proper alias name*
++
+SnapDrive for UNIX does not show proper alias name for the mapper devices. This issue occurs when multipaths{ } section is not proper in the multipath.conf file.
+
+* *Workaround*
++
+You must ensure that closing braces are entered in the multipath settings.
+
+* *SnapDrive operations fails with the below error when the alias names has been set for the mapper devices*
++
+----
+Snapdrive could not import /dev/mapper/lvm_fs_SdDg:   device-mapper: resume ioctl failed: Invalid argument
+  Unable to resume lvm_fs_SdDg-lvm_fs_SdHv (252:4)   1 logical volume(s) in volume group "lvm_fs_SdDg" now active”
+----
++
+This issue occurs when the alias name mapping with the devices is not proper.
+
+* *Workaround*
++
+Perform multipath-ll and make sure that the alias name mapping with the devices is proper, and then perform the SnapDrive for UNIX operations.

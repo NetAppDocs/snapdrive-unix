@@ -1,0 +1,12 @@
+---
+permalink: linux-installation-7mode/concept_provisioning_storage.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX enables you to provision storage and connect to an existing storage system by using command-line options from the host. You can also provision storage using Data ONTAP.'
+---
+= Provisioning storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX enables you to provision storage and connect to an existing storage system by using command-line options from the host. You can also provision storage using Data ONTAP.

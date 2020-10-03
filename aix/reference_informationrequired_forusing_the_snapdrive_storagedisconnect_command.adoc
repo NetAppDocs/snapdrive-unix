@@ -1,0 +1,74 @@
+---
+permalink: aix/reference_informationrequired_forusing_the_snapdrive_storagedisconnect_command.html
+sidebar: sidebar
+keywords: 
+summary: 'The following table gives the information you need to supply when you use the snapdrive storage disconnect command:'
+---
+= Information required for using the snapdrive storage disconnect command
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The following table gives the information you need to supply when you use the snapdrive storage disconnect command:
+
+|===
+| Requirement| Argument
+a|
+Based on the command you enter, you can remove mappings from any of the following:
+
+* LUNs
++
+If you disconnect one or more LUNs, the first argument must use the long form of the LUN name, which specifies the storage system name, the volume name, and the name of the LUN within the volume.
++
+To specify additional LUNs, you can use the LUN name alone if the new LUN is on the same storage system and volume as the previous LUN. Otherwise, you can specify a new storage system name and volume name (or just a volume name) to replace the previous values.
+
+* File systems on LUNs
++
+The file_spec given to -fs is the name of the file system mountpoint. SnapDrive for UNIX automatically locates and disconnects the LUN that is associated with the file system you specify.
+
+* Disk or volume groups
+* File systems on disk or volume groups
+* Host or logical volumes
+
+The value you enter for the file_spec argument must identify the storage entity you are disconnecting.
+
+a|
+A LUN (-lun)
+a|
+lun_name (long or short form)
+a|
+Disk group (-dgfile_spec) or volume group (-vgfile_spec)
+
+a|
+name of the disk or volume group
+a|
+File system (-fsfile_spec)
+a|
+filesystem_name
+a|
+Host volume (-hostvolfile_spec) or logical volume (-lvolfile_spec)
+
+a|
+name of the host or logical volume
+a|
+If you want SnapDrive for UNIX to disconnect the storage you specify even if you include at the command prompt a host-side entity that has other entities (such as a disk group that has one or more host volumes), include the -full option at the command prompt.
+
+If you do not include this option, you must specify only empty host-side entities.
+
+a|
+-full
+a|
+~
+a|
+If you want to disable a node or a host cluster from sharing a file system
+a|
+-fstype
+a|
+type
+a|
+-vmtype
+a|
+type
+a|
+*Optional:* Specifies the type of file system and volume manager to be used for SnapDrive for UNIX operations.
+|===

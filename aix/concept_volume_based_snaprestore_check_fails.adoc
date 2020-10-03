@@ -1,0 +1,14 @@
+---
+permalink: aix/concept_volume_based_snaprestore_check_fails.html
+sidebar: sidebar
+keywords: 
+summary: 'Volume-based SnapRestore \(Vbsr\) check fails, \(when NFS tries to export the list that do not have foreign hosts\) in the client machine \(SLES 11\) that has two different IPs for a host name in the /etc/hosts file.'
+---
+= Volume-based SnapRestore check fails
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Volume-based SnapRestore (Vbsr) check fails, (when NFS tries to export the list that do not have foreign hosts) in the client machine (SLES 11) that has two different IPs for a host name in the /etc/hosts file.
+
+To resolve the problem, you must ensure to have only one IP for a host name in the /etc/hosts file.

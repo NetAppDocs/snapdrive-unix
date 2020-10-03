@@ -1,0 +1,24 @@
+---
+permalink: solaris/concept_using_consistency_group_snapshots_in_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'Consistency Group Snapshot is a Snapshot copy of a set of volumes that span different Vservers or nodes of a cluster, which is managed as a single entity.'
+---
+= Consistency group Snapshot copies in SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Consistency Group Snapshot is a Snapshot copy of a set of volumes that span different Vservers or nodes of a cluster, which is managed as a single entity.
+
+SnapDrive for UNIX captures crash-consistent Snapshot copies across all volumes spanning different Vservers or nodes of a cluster. You can also configure the time period within which the Snapshot copy is to be captured.
+
+SnapDrive for UNIX captures consistency group Snapshot copies by default. You can disable this feature and revert to capturing Snapshot copies in best-effort mode.
+
+NOTE: SnapDrive for UNIX 5.2 supports consistency group Snapshot copies for clustered Data ONTAP only in Data ONTAP 8.2 or later versions.
+
+*Related information*
+
+xref:task_capturing_a_consistency_group_snapshot.adoc[Creating a consistency group Snapshot copy]
+
+xref:task_disabling_consistency_group_snapshots.adoc[Disabling consistency group Snapshots copies]

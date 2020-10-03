@@ -1,0 +1,181 @@
+---
+permalink: linux-administration/reference_informationrequired_for_the_storagecreate_operation.html
+sidebar: sidebar
+keywords: 
+summary: 'You must supply some information when you complete the storage create operation.'
+---
+= Information required for the storage create operation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must supply some information when you complete the storage create operation.
+
+The following table lists the information you need to supply when you use the snapdrive storage create command to create storage:
+
+|===
+| Requirement| Argument
+a|
+Decide the type of storage you want to provision. Based on the command you enter, you can create any of the following:
+
+* LUNs
++
+If you create one or more LUNs, the first argument must use the long form of the LUN name, which specifies the storage system name, the volume name, and the name of the LUN within the volume.
++
+To specify additional LUNs, you can use the LUN name (short name) alone if the new LUN is on the same storage system and volume as the previous LUN. Otherwise, you can specify a new storage system name and volume name (or just a volume name) to replace the previous values.
+
+* A file system created directly on a LUN
++
+If you create a file system on a LUN, the first argument must be the -fs mount point. To create the file system on a LUN in a storage system and volume, use the -filervol argument and specify the name of the storage system and volume. To create the file system on a specific LUN, use the-lun argument and specify the storage system name, volume name, and LUN name. You must also include the -nolvm option to create the file system on the LUN without activating the host LVM.
++
+By default, SnapDrive for UNIX automatically performs all of the tasks associated with host preparation and discovery for the LUN, as well as mapping and connecting to it.
++
+If you create a LUN on a Linux host, SnapDrive for UNIX performs the following actions:
+
+ ** Creates the LUN.
+ ** Configures the LUN into one partition.
+*Note:* If you are using SLES10 update 2, then raw device is used to create a file system.
+
+* LVM disk groups with host volumes and file systems
++
+When you specify a disk or volume group, file system, or host or logical volume, SnapDrive for UNIX performs all the actions necessary to create the entity you specify. You can either explicitly specify the LUNs, or just supply the storage system and volume information and let SnapDrive for UNIX create the LUNs automatically.
++
+If you are creating an entity such as a file system, you do not need to supply a value for a disk or volume group. SnapDrive for UNIX automatically creates one.
+
+a|
+
+* A LUN (-lun)
+
+a|
+long_lun_name
+a|
+
+* Additional LUNs
+
+a|
+lun_name (long or short form)
+a|
+
+* Disk group (-dgdgname) or volume group (-vgvgname)
+
+a|
+diskor volume group name
+a|
+SnapDrive for UNIX creates a disk or volume group to hold the LUNs based on the value you enter with the -dg option. The name you supply for the group must not exist.
+
+a|
+
+* Host volume (-hostvolfile_spec) or logical volume (-lvolfile_spec)
+
+a|
+Host or logical volume name
+a|
+
+* File system (-fsfile_spec)
+
+a|
+filesystem_name
+a|
+-nolvm
+a|
+~
+a|
+*Required:* If you are creating a file system that resides directly on a LUN, specify the -nolvm option.
+a|
+
+* Lun size (-lunsize)
+
+a|
+size
+a|
+
+* Disk group size (-dgsize)
+* Volume group size (-vgsize)
+
+a|
+size
+a|
+Specify the size in bytes or some other data unit for each entity being created. The size of the LVM entity depends on the aggregated size of the LUNs you request.
+
+To control the size of the host entity, use the -dgsize option to specify the size in bytes of the underlying disk group.
+
+a|
+
+* Path to storage system volume (-filervol)
+
+a|
+long_filer_path
+a|
+
+* -lun
+
+a|
+long_lun_path
+a|
+Specify the storage system and its volume where you want SnapDrive for UNIX to create the LUNs automatically.
+
+* Use the -filervoloption to specify the storage system and volume where you want the LUNs created.
++
+Do not specify the LUN. SnapDrive for UNIX creates the LUN automatically when you use this form of the snapdrive storage create command. It uses system defaults to determine the LUN IDs, and the size of each LUN. It bases the names of the associated disk/volume groups on the name of the host volume or file system.
+
+* Use the -lun option to name the LUNs that you want to use.
+
+a|
+File system type (-fstype)
+
+a|
+type
+a|
+If you are creating a file system, supply the string representing the file system type.
+
+SnapDrive for UNIX accepts Linux: ext4 or ext3
+
+NOTE: By default, SnapDrive for UNIX supplies this value if there is only one file system type for your host platform. In that case, you do not need to enter it.
+
+a|
+-vmtype
+a|
+type
+a|
+*Optional:* Specifies the type of volume manager to be used for SnapDrive for UNIX operations.
+a|
+-fsopts
+a|
+option name and value
+a|
+-mntopts
+a|
+option name and value
+a|
+-nopersist
+a|
+~
+a|
+-reserve | -noreserve
+a|
+~
+a|
+*Optional:* If you are creating a file system, you can specify the following options:
+
+* Use -fsopts to specify options you want to pass to the host command used to create the file systems. For example, you might supply options that themkfscommand would use. The value you supply usually needs to be a quoted string and must contain the exact text to be passed to the command.
+* Use -mntopts to specify options that you want to pass to the host mount command (for example, to specify host system logging behavior). The options you specify are stored in the host file system table file. Allowed options depend on the host file system type.
++
+The -mntopts argument is a file system -type option that is specified using the mount command -o flag. Do not include the -o flag in the -mntopts argument. For example, the sequence -mntopts tmplog passes the string -otmplog to the mount command, and inserts the text tmplog on a new command line.
++
+If the value of the enable-mount-with-netdev configuration parameter is set to off (default value), you must manually specify -mntopts _netdev in the snapdrive storage create command. However, if you change the value to on, the -mntopts _netdev is executed automatically when you run the snapdrive storage create command.
++
+NOTE: If you pass any invalid -mntopts options for storage and snap operations, SnapDrive for UNIX does not validate those invalid mount options.
+
+* Use -nopersist to create the file system without adding an entry to the file system mount table file on the host(for example, fstab on Linux). By default, the snapdrive storage create command creates persistent mounts. When you create an LVM storage entity on a Linux host, SnapDrive for UNIX automatically creates the storage, mounts the file system, and then places an entry for the file system in the host file system table. On Linux systems, SnapDrive for UNIX adds a UUID in the host file system table.
+* Use -reserve | -noreserve to create the storage with or without creating a space reservation.
+
+a|
+
+* igroup name(-igroup)
+
+a|
+ig_name
+a|
+*Optional:* NetApp recommends that you use the default igroup for your host instead of supplying an igroup name.
+
+|===

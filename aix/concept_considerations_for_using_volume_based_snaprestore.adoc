@@ -1,0 +1,21 @@
+---
+permalink: aix/concept_considerations_for_using_volume_based_snaprestore.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use volume-based SnapRestore \(VBSR\) with keeping few points in mind. Keeping these points in mind helps you to use the VBSR feature safely.'
+---
+= Considerations for using volume-based SnapRestore
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use volume-based SnapRestore (VBSR) with keeping few points in mind. Keeping these points in mind helps you to use the VBSR feature safely.
+
+You must keep the following points in mind:
+
+* VBSR reverts the entire volume to the state of the time when the Snapshot copy is created, which is used for VBSR. VBSR includes the following:
+ ** All the files and LUNs for the specified host filespec during snap create operation.
+ ** All the files and LUNs that are part of the application consistent Snapshot copy during snap create operation.
+* VBSR removes all the newer files and LUNs created on the current volume after the Snapshot copy used for restore.
+* VBSR removes all the newer Snapshot copies that are taken after the Snapshot copy which is being used for restore.
+* It is recommended that you run -vbsr preview command before using -vbsr execute command.

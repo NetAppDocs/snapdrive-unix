@@ -1,0 +1,19 @@
+---
+permalink: aix/concept_ghost_device_handles_in_aix_cause_longer_return_time_on_iscsi_commands.html
+sidebar: sidebar
+keywords: 
+summary: 'Querying AIX devices through iSCSI or FC that have ghost device handles \(devices handles in a defined or failed state\) can cause SCSI commands to wait for the AIX default timeout which is about 30 seconds.'
+---
+= Ghost device handles in AIX cause longer return time on iSCSI commands
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Querying AIX devices through iSCSI or FC that have ghost device handles (devices handles in a defined or failed state) can cause SCSI commands to wait for the AIX default timeout which is about 30 seconds.
+
+You can see this issue after switching an AIX system from using FC to using iSCSI if FC child device handles are not cleaned up or a FC HBA is left not attached to a switch.
+
+*Workaround:*
+
+* If the Fibre Channel HBA is not attached to a switch, install a Fibre Channel IOA wrap plug in all Fibre Channel initiators not connected to a Fibre Channel Switch.
+* If the Fibre Channel HBA is attached to a switch but has Failed or Defined device handles as child devices, remove the stale ghost device handles with the rmdev command.

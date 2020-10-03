@@ -1,0 +1,14 @@
+---
+permalink: linux-administration/concept_configuration_information_in_snapdrive_for_unix_for_guest_os.html
+sidebar: sidebar
+keywords: 
+summary: 'You must configure the storage systems and Virtual Storage Console in the guest operating system for provisioning RDM LUNs.'
+---
+= Configuration information in SnapDrive for UNIX for guest operating system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must configure the storage systems and Virtual Storage Console in the guest operating system for provisioning RDM LUNs.
+
+The login information is required to communicate with the Virtual Storage Console for provisioning RDM LUN. Once the configuration is complete, SnapDrive for UNIX allows you to create RDM LUNs in the guest operating system.

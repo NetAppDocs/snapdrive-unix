@@ -1,0 +1,71 @@
+---
+permalink: aix/concept_volume_based_snaprestore_command.html
+sidebar: sidebar
+keywords: 
+summary: 'This section describes the commands and the options to use volume based SnapRestore.'
+---
+= Volume-based SnapRestore command
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+This section describes the commands and the options to use volume based SnapRestore.
+
+-vbsr option is added in snap restore CLI to select volume based SnapRestore. Use the following command syntax to perform restore using volume based SnapRestore:
+
+----
+snapdrive snap restore {-lun | -dg | -vg | -hostvol |
+-lvol | -fs |-file} file_spec [file_spec ...] [{-lun | -dg |
+-vg | -hostvol | -lvol | -fs -file} file_spec [file_spec ...]
+...] -snapname snap_name [-force [-noprompt]][{-reserve |
+-noreserve}]
+[-vbsr [execute | preview]]
+----
+
+If no argument is supplied with the -vbsr, the default output is that of the preview option. A --verbose option is used which enables detailed output of all the mandatory checks that can be over-ridden by the user. The default output when -verbose option is not provided displays the results of the checks that is failed.
+
+If you do not want any confirmation message to prompt, while executing volume based SnapRestore, you can use -noprompt and -force option with snap restore -vbsr execute command. The following table describes SnapDrive for UNIX behavior depending on the options provided by you.
+
+|===
+| S.N.| -vbsr execute| -force| -noprompt| Result
+a|
+1.
+a|
+No
+a|
+NA
+a|
+NA
+a|
+Preview mode is the default mode. All the checks are done and report for each check is generated.
+a|
+2.
+a|
+Yes
+a|
+No
+a|
+No
+a|
+All checks are done. If any mandatory checks that a user can override fails, SnapDrive for UNIX displays an error message.
+a|
+3.
+a|
+Yes
+a|
+Yes
+a|
+No
+a|
+All the checks are done. If any mandatory checks fail, SnapDrive for UNIX displays an error message. If any check that a user can override fails, SnapDrive for UNIX prompts you.
+a|
+4.
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+All the checks are done. If any mandatory checks fail, SnapDrive for UNIX displays an error message. If any check that a user can override fails, SnapDrive for UNIX does not prompt you.
+|===

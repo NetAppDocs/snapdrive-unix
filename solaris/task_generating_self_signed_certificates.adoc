@@ -1,0 +1,68 @@
+---
+permalink: solaris/task_generating_self_signed_certificates.html
+sidebar: sidebar
+keywords: 
+summary: 'The SnapDrive for UNIX daemon service requires that you generate a self-signed certificate for authentication. This authentication is required while communicating with the CLI.'
+---
+= Generating self-signed certificates
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The SnapDrive for UNIX daemon service requires that you generate a self-signed certificate for authentication. This authentication is required while communicating with the CLI.
+
+. Generate an RSA key: $ openssl genrsa 1024 > host.key $ chmod 400 host.key
++
+----
+# openssl genrsa 1024 > host.key Generating
+RSA private key, 1024 bit long modulus
+...............................++++++ ...++++++ e is 65537(0x10001)
+# chmod 400 host.key
+----
+
+. Create the certificate: $ openssl req -new -x509 -nodes -sha1 -days 365 -key host.key > host.cert
++
+The -new, -x509, and -nodes options are used to create an unencrypted certificate. The -days option specifies the number of days the certificate remains valid.
+
+. When asked to fill out the certificate's x509 data, enter your local data:
++
+----
+# openssl req -new -x509 -nodes -sha1 -days 365 -key host.key > host.cert
+You are about to be asked to enter information that will be incorporated into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN. There are quite a few fields
+but you can leave some blank For some fields there will be a default value, If you enter '.', the field will be left blank.
+
+Country Name (2 letter code) [AU]:US
+State or Province Name (full name) [Some-State]:California
+Locality Name (eg, city) []:Sunnyvale
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:abc.com
+Organizational Unit Name (eg, section) []:
+Common Name (eg, YOUR name) []:localhost
+Email Address []:postmaster@example.org
+----
++
+NOTE: The Common Name value must be _localhost_.
+
+. Extract metadata (optional).
+
+ $ openssl x509 -noout -fingerprint -text < host.cert > host.info
++
+You can save the certificate metadata for quick reference later.
+
+. Combine key and certificate data.
++
+SnapDrive for UNIX requires the key and certificate data to be in the same file. The combined file must be protected as a key file.
++
+$ cat host.cert host.key > host.pem \
++
+&& rm host.key
++
+$ chmod 400 host.pem
++
+----
+# cat host.cert host.key >   \# /opt/NTAPsnapdrive/snapdrive.pem
+# rm host.key rm: remove regular file `host.key'? y
+# chmod 400  /opt/NTAPsnapdrive/snapdrive.pem
+----
+
+. Add the complete path of the daemon certificate to the sdu-daemon-certificate-path variable of the snapdrive.conf file.

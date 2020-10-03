@@ -1,0 +1,22 @@
+---
+permalink: linux-administration/concept_support_for_datamotion_for_vfiler.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX supports DataMotion for vFiler. When you perform DataMotion for vFiler, few SnapDrive for UNIX operations might fail during the cutover phase.'
+---
+= Support for NetAppDataMotion for vFiler
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX supports DataMotion for vFiler. When you perform DataMotion for vFiler, few SnapDrive for UNIX operations might fail during the cutover phase.
+
+NOTE: If the SnapDrive for UNIX operations fail during the cutover phase of vFiler migration, you must perform the SnapDrive for UNIX operations after the DataMotion for vFiler operations are completed.
+
+You must set the datamotion-cutover-wait variable in the snapdrive.conf file to execute SnapDrive for UNIX operations.
+
+NOTE: If you run a volume-based snap restore command during the cutover phase of a vFiler migration, the snap restore operation might fail. After the migration is complete and the vFiler is available at the destination, running a volume-based snap restore operation places the LUNs offline. You must manually put the LUNs back online.
+
+*Related information*
+
+http://www.netapp.com/us/media/tr-3814.pdf[NetApp Technical Report 3814: NetApp DataMotion for vFiler with NetApp Data ONTAP 7.3]

@@ -1,0 +1,126 @@
+---
+permalink: linux-administration/task_steps_to_cleanup_the_mapped_rdm_luns_in_the_guest_os_or_esx_server.html
+sidebar: sidebar
+keywords: 
+summary: 'You must clean up the RDM LUNs in the guest operating system as well as in ESX server.'
+---
+= Cleaning up the mapped RDM LUNs in the guest operating system and ESX server
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must clean up the RDM LUNs in the guest operating system as well as in ESX server.
+
+== Cleaning up the mapped RDM LUNs in the guest operating system
+
+[.lead]
+The following steps must be done in the guest operating system.
+
+. From the *vCenter* navigation pane, select the Virtual Machine in which the RDM mapping is done.
+. Right-click the virtual machine and turn off your guest operating system.
+. Right-click the virtual machine and select *Edit settings*.
++
+The *virtual machine properties* dialog box appears.
+
+. In the *virtual machine properties* dialog box, select the *Hardware* tab.
++
+You will find the entire RDM mapped entry as Mapped RAW LUN for every RDM entry.
+
+. Select the RDM mapped entry and click *Remove*.
++
+The *Removal Options* appears in the right pane.
+
+. In the *Removal Options*, select *Remove from virtual machine and delete files from disk*.
+. Click *OK*.
++
+All the RDM mapped entries are removed from the guest operating system.
++
+After you remove RDM LUN entries from the guest operating system, you need to remove them from the ESX server.
+
+== Cleaning up the mapped RDM LUNs in the ESX server
+
+[.lead]
+The following steps must be done only by the ESX server administrator for a complete cleaning up of all RDM LUN entries in the ESX server.
+
+Turn off your virtual machine before working on the virtual machine directory.
+
+. Go to the virtual machine directory.
+. Change to the directory cd /vmfs/volumes/Data store path.
++
+----
+# ls -l
+total 1024
+drwxr-xr-t 1 root root 1540 Apr 19 23:54 4bc702de-fa7ec190-992b-001a6496f353
+lrwxr-xr-x 1 root root   35 May 11 07:56 local_storage (1) -> 4bc702de-fa7ec190-992b-001a6496f353
+----
++
+All the files and directories are listed here.
+
+. Select the appropriate data store in which the virtual machines resides.
+. Change the directory to data store.
++
+The virtual machine directory is displayed here.
+
+. Change the directory to virtual machine in which you want to clean up RDM LUN mapping.
++
+All the files are listed in the virtual machine directory.
+
+. Delete all vmdk files, which have SMVI string embedded. Alternatively, you can also identify the vmdk file using LUN name.
++
+Alternatively, you can also identify the vmdk file using LUN name.
++
+If you have a vmdk file of the LUN name as rdm1, delete only rhel4u8-141-232_SMVI_vol_esx3u5_rdm1-rdmp.vmdk and rhel4u8-141-232_SMVI_vol_esx3u5_rdm1.vmdk files.
++
+Delete vmlnx5U4-197-23_SMVI_10.72.197.93_C4koV4XzK2HT_22-rdmp.vmdk and vmlnx5U4-197-23_SMVI_10.72.197.93_C4koV4XzK2HT_22.vmdk vmlnx5U4-197-23_SMVI_10.72.197.93_C4koV4YG4NuD_53-rdmp.vmdkfiles.
+
+. Remove the vmdk file entries from the virtual machine configuration file (vmx) as well.
++
+The following is an example of removing vmdk file entries from the vmx file.
++
+|===
+a|
+    *Name*
+a|
+    *Description*
+a|
+rhel4u8-141-232
+a|
+    Name of the virtual machine
+a|
+SMVI
+a|
+    Indicates that this vmdk file is created by SnapManager for Virtual Infrastructure server
+a|
+vol_esx3u5
+a|
+    Name of the volume where the LUN is created
+a|
+rdm1
+a|
+    Name of the LUN
+a|
+rdmp
+a|
+    Signifies that this is physically compatible RDM LUN
+a|
+vmdk
+a|
+    Virtual Machine Disk File
++
+|===
++
+----
+[root@ rhel4u8-141-232]# vi rhel4u8-141-232.vmx
+		:
+		:
+scsi3:1.fileName = "rhel4u8-141-232_SMVI__vol_esx3u5_rdm1.vmdk"
+scsi3:1.mode = "independent-persistent"
+scsi3:1.ctkEnabled = "FALSE"
+scsi3:1.deviceType = "scsi-hardDisk"
+scsi3:1.present = "TRUE"
+scsi3:1.redo = ""
+----
+
+. Delete the entries as specified in the preceding example, including quotes and commas except for the scsi3:1.present entry, which you should change to FALSE from TRUE.
+. Save and quit the file.
+. Turn on the virtual machine.

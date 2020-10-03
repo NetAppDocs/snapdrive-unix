@@ -1,0 +1,14 @@
+---
+permalink: linux-administration/concept_connectingsnapshot_copies_onmirrored_storagesystems.html
+sidebar: sidebar
+keywords: 
+summary: 'In the case of a Snapshot copy on a mirrored storage system, you can connect the Snapshot copy on the source storage system and the destination system.'
+---
+= Connecting Snapshot copies on mirrored storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In the case of a Snapshot copy on a mirrored storage system, you can connect the Snapshot copy on the source storage system and the destination system.
+
+When you create a Snapshot copy on a mirrored storage system, the Snapshot copy is automatically replicated, from the source system where it is created, to the destination (mirrored) storage system. SnapDrive for UNIX allows you to connect the Snapshot copy on the source storage system. You can also connect the Snapshot copy on the destination storage system.

@@ -1,0 +1,18 @@
+---
+permalink: linux-administration/concept_configuration_information_for_vserver_environment.html
+sidebar: sidebar
+keywords: 
+summary: 'You must configure Vserver in SnapDrive for UNIX, to perform SnapDrive operations.'
+---
+= Configuration information for Vserver
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must configure Vserver in SnapDrive for UNIX, to perform SnapDrive operations.
+
+To configure Vserver with SnapDrive for UNIX, in clustered DATA ONTAP, ensure that the IP address of the Vserver's management logical interface (LIF) is mapped with the Vserver name, either in Domain Name Service (DNS) or in the /etc/hosts file. You must also ensure that the Vserver name is configured in SnapDrive for UNIX by using the following command: snapdrive config set <vsadmin> <Vserver name>
+
+*Related information*
+
+xref:concept_support_for_vserver.adoc[Support for Vserver]

@@ -1,0 +1,55 @@
+---
+permalink: solaris/concept_volume_based_snaprestore_for_space_reservation.html
+sidebar: sidebar
+keywords: 
+summary: 'For space reservation with volume based snap reserve you need to set space-reservations-volume-enabled option in the snapdrive.conf file.'
+---
+= Volume-based SnapRestore for space reservation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+For space reservation with volume based snap reserve you need to set space-reservations-volume-enabled option in the snapdrive.conf file.
+
+The space-reservations-volume-enabled option is used to set space guarantee policy on volume and can take the following three values.
+
+* *Snapshot*: This is the default value. Space guarantee on the volume does not change.
+* *volume*: Space guarantee on the volume is at the volume level.
+* *none*: Space guarantee is set as none.
+
+Following table describes the behavior of volume-based snap reserve for space reservation.
+
+|===
+| No space reserve CLI option used; -vbsr execute is specified| space-reservations-volume-enabled=| Result
+a|
+none
+a|
+snapshot
+a|
+Space guarantee on the volume does not change.
+a|
+none
+a|
+none
+a|
+Attempt to set space guarantee as "`none`" for the volumes.
+a|
+-reserve
+a|
+configuration value is over-ridden
+a|
+Attempt to set space guarantee for volumes as "volume"
+a|
+-noreserve
+a|
+configuration value is over-ridden
+a|
+Attempt to set space guarantee for volumes as "none"
+a|
+none
+a|
+volume
+a|
+Attempt to set space guarantee for volumes as "volume"
+|===
+*Note:* --vbsr preview does not check for any of the space reservation options.

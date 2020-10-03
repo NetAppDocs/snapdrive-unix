@@ -1,0 +1,26 @@
+---
+permalink: solaris/concept_guidelines_fordisconnectingsnapshot_copies_for_nfs_entities.html
+sidebar: sidebar
+keywords: 
+summary: 'The disconnect operation for a Snapshot copy can be executed from any node in a host cluster environment. Use command options to disconnect a storage entity from a specific node.'
+---
+= Guidelines for disconnecting Snapshot copies for NFS entities
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The disconnect operation for a Snapshot copy can be executed from any node in a host cluster environment. Use command options to disconnect a storage entity from a specific node.
+
+Follow these guidelines when disconnecting Snapshot copies that contain NFS entities:
+
+* If you disconnect an NFS directory tree that you connected with read-only permission, SnapDrive for UNIX performs the following actions:
+ ** Unmounts the file system.
+ ** Removes the mount entry in the file system table file.
+ ** Removes the mountpoint.
+ ** Does not remove the export rules of the Snapshot copy directory, which was created while connecting NFS filespec from the secondary host (the host that does not have export permission on the parent volume).
+* If you disconnect an NFS directory tree that you connected with read-write permission, SnapDrive for UNIX performs the following actions:
+ ** Unmounts the file system.
+ ** Removes the mount entry in the file system table file.
+ ** Deletes the NFS directory tree that corresponds to the file system in the FlexVol volume clone.
+ ** Destroys the underlying FlexVol volume clone (if it is empty).
+ ** Removes the mountpoint.

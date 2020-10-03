@@ -1,0 +1,30 @@
+---
+permalink: solaris/concept_verification_of_storage_system_readiness_and_licenses.html
+sidebar: sidebar
+keywords: 
+summary: 'Before you install SnapDrive for UNIX, you must verify the storage system readiness and check for licenses of certain software.'
+---
+= Verification of storage system readiness and licenses
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before you install SnapDrive for UNIX, you must verify the storage system readiness and check for licenses of certain software.
+
+You must ensure that the following conditions are met:
+
+* The storage systems are online.
+* The storage systems meet the minimum system requirements for SnapDrive for UNIX.
+* The HBAs or network interface cards (NICs) in your storage systems meet the requirements for your host operating system.
++
+For more information about HBA cards, see the Interoperability Matrix.
+
+* The hosts and the storage systems can communicate by using an Internet Protocol (IP).
+* The licenses for the following are valid:
+ ** SnapRestore
+ ** MultiStore software
+ ** Secure HTTP access to the storage system
+
+*Related information*
+
+https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability]

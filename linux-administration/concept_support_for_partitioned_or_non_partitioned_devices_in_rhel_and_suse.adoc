@@ -1,0 +1,14 @@
+---
+permalink: linux-administration/concept_support_for_partitioned_or_non_partitioned_devices_in_rhel_and_suse.html
+sidebar: sidebar
+keywords: 
+summary: 'On RHEL, SnapDrive for UNIX partitions the disks to provision host storage entities. However, SnapDrive for UNIX allows to provisioning and managing SnapDrive operations for both partitioning and non-partitioning devices on SLES 11, and only non-partitioning devices on SLES 10.'
+---
+= Storage partitioning scheme in Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES)
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+On RHEL, SnapDrive for UNIX partitions the disks to provision host storage entities. However, SnapDrive for UNIX allows to provisioning and managing SnapDrive operations for both partitioning and non-partitioning devices on SLES 11, and only non-partitioning devices on SLES 10.
+
+The Linux 2.2 and 2.4 kernel versions could not use raw disks for creating file-systems because historically all Microsoft x86 system architecture used the Windows operating system, and always partitioned the hard disks. Since the initial kernel was written to work on top of the Windows operating systems, the kernel was also written in such a way to expect partitions on the hard disk. Further partitioning was always done to create file-systems on raw devices. Partitioning is never done for LUNs part of a disk group and/or for raw LUNs. Hence, any change with respect to the partitioning scheme is restricted to the behavior in case of file-systems on raw devices only.

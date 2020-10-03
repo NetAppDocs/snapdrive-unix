@@ -1,0 +1,76 @@
+---
+permalink: linux-administration/concept_lun_discovery_fails_because_of_iscsi_daemon_limitation.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX commands fail to discover the LUNs after continuous multiple iterations.'
+---
+= LUN discovery fails due to iSCSI daemon limitation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX commands fail to discover the LUNs after continuous multiple iterations.
+
+You may see the following error message.
+
+----
+0000-001 Admin error: iscsi transport protocol has dropped sessions in the host. Please ensure the connection and the service in the storage system.
+----
+
+This happens because of the iSCSI daemon limitation in the following hosts:
+
+* Red Hat Enterprise Linux 4.0
+* Oracle Enterprise Linux 4.0
+
+== Workaround
+
+----
+Before modifying the following system parameters, contact the OS vendor.
+----
+
+. Add the fs.file-max parameter to the/etc/sysctl.conf file.
++
+The following is an example in the command-line.
++
+----
+# sysctl -w fs.file-max=65536
+----
++
+NOTE: We recommend to set the parameter value to 65536, but you can also set the value depending on the applications on your host.
+
+. Assign 65536 to the fs.file-max parameter.
+. Update the default shell start-up file for the root user's UNIX account.
+ ** For the Bourne, Bash, or Korn shell, add the following lines to the /etc/profile file by running the following command:
++
+----
+cat >> /etc/profile <<EOF
+if [ \$USER = "root" ]; then
+if [ \$SHELL = "/bin/ksh" ]; then
+ulimit -p 16384
+ulimit -n 65536
+else
+ulimit -u 16384 -n 65536
+fi
+umask 022
+fi
+EOF
+----
+
+ ** For the C shell (csh or tcsh), add the following lines to the /etc/csh.login file by running the following command:
++
+----
+cat >> /etc/csh.login <<EOF
+if ( \$USER == "root" ) then
+limit maxproc 16384
+limit descriptors 65536
+endif
+EOF
+----
+. Add the following parameters to the /etc/security/limits.conf file by running the following command:
++
+----
+root soft nofile 65536
+root hard nofile 65536
+----
+
+. Activate all the kernel parameters for the system by executing the following command:sysctl -p

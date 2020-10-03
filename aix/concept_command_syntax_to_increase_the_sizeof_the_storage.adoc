@@ -1,0 +1,23 @@
+---
+permalink: aix/concept_command_syntax_to_increase_the_sizeof_the_storage.html
+sidebar: sidebar
+keywords: 
+summary: 'To increase the size of the storage, you should know the correct syntax to be used.'
+---
+= Command syntax to increase the size of the storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To increase the size of the storage, you should know the correct syntax to be used.
+
+snapdrive storage resize -dgfile_spec { -growby | -growto } size [-addlun [-igroupig_name [ig_name ...]]] [{ -reserve | - noreserve}]] [-fstypetype] [-vmtypetype]
+
+NOTE: You cannot use the snapdrive storage resize command to reduce the size of an entity. You can only increase the size using this command.
+
+The snapdrive storage resize command does not support directly on logical volumes or file systems. For example, you cannot use the snapdrive storage resizecommand to resize a file system on a LUN.
+
+*Result*: This command increases the size of the storage entity (logical volume or disk group) by either of the following:
+
+* Adding bytes to storage (-growby).
+* Increasing the size to the byte size you specify (-growto).

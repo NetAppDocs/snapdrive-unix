@@ -1,0 +1,29 @@
+---
+permalink: solaris/concept_storage_system_partner_ip_address_or_interface_name_confirmation.html
+sidebar: sidebar
+keywords: 
+summary: 'When you run the setup program on your storage system, it prompts you to provide an IP address or interface name for a partner storage system to use in case of a failover. If you do not provide this, SnapDrive for UNIX cannot search for the storage entities on a storage system that it took over.'
+---
+= Storage system partner IP address or interface name confirmation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you run the setup program on your storage system, it prompts you to provide an IP address or interface name for a partner storage system to use in case of a failover. If you do not provide this, SnapDrive for UNIX cannot search for the storage entities on a storage system that it took over.
+
+A partner IP address or the interface name is the IP address or the interface name of the partner storage system in an HA pair setup. If the primary storage system fails, the partner storage system takes over the functioning of the primary storage system.
+
+== Example: storage system setup script
+
+The following sample output of the storage system setup script requests the IP address:
+
+----
+storage_system_A> setup...
+Should interface e0 take over a partner IP address during failover?
+[n]: y
+Please enter the IP address or interface name to be taken over by e0
+[]: 10.2.21.35
+storage_system_A> reboot -t 0
+----
+
+This example uses the IP address 10.2.21.35.
