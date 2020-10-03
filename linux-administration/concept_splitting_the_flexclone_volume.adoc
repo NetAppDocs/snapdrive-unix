@@ -1,0 +1,18 @@
+---
+permalink: linux-administration/concept_splitting_the_flexclone_volume.html
+sidebar: sidebar
+keywords: 
+summary: 'You can split the existing FlexClone volume using the SnapDrive for UNIX commands.'
+---
+= Splitting the FlexClone volume
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can split the existing FlexClone volume using the SnapDrive for UNIX commands.
+
+To split the FlexClone volume you need to additionally specify the -split CLI option with the snap connect command. To disconnect, you should provide the -split option with the disconnect command to disconnect the split FlexClone volume. The blocking and non-blocking modes of initiating a -split operation are valid here.
+
+*Related information*
+
+xref:concept_splitting_the_volume_or_lun_clone_operations.adoc[Splitting a volume clone or LUN clone]

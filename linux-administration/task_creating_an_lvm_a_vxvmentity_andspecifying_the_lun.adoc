@@ -1,0 +1,46 @@
+---
+permalink: linux-administration/task_creating_an_lvm_a_vxvmentity_andspecifying_the_lun.html
+sidebar: sidebar
+keywords: 
+summary: 'You can create a host entity such as a file system, logical volume, or disk group and specify the LUN that is created as part of it.'
+---
+= Creating an LVM entity and specifying the LUN
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can create a host entity such as a file system, logical volume, or disk group and specify the LUN that is created as part of it.
+
+. At the command line, enter the following command: snapdrive storage create-host_lvm_fspec -lunlong_lun_name [lun_name...] -lunsize size [-igroup ig_name [ig_name...]] [{ -reserve | -noreserve }]
++
+This example creates the file system /mnt/acctfs with file system depending on your host. It sets up three LUNs on the storage system acctfiler. Each LUN is 10 GB:# snapdrive storage create -fs /mnt/acctfs -fstype jfs2 -lun acctfiler:/vol/vol1/lunA lunB lunC -lunsize 10g
++
+----
+LUN acctfiler:/vol/vol1/lunA ... created
+LUN acctfiler:/vol/vol1/lunB ... created
+LUN acctfiler:/vol/vol1/lunC ... created
+mapping new lun(s) ... done
+discovering new lun(s) ... done
+LUN to device file mappings:
+- acctfiler:/vol/vol1/lunA => hdisk2
+- acctfiler:/vol/vol1/lunB => hdisk3
+- acctfiler:/vol/vol1/lunC => hdisk4
+disk group acctfs_SdDg created
+host volume acctfs_SdHv created
+file system /mnt/acctfs created
+----
++
+----
+LUN acctfiler:/vol/vol1/lunA ... created
+LUN acctfiler:/vol/vol1/lunB ... created
+LUN acctfiler:/vol/vol1/lunC ... created
+mapping new lun(s) ... done
+discovering new lun(s) ... done
+LUN to device file mappings:
+- acctfiler:/vol/vol1/lunA => /dev/vx/rdmp/c4t0d3s2
+- acctfiler:/vol/vol1/lunB => /dev/vx/rdmp/c4t0d7s2
+- acctfiler:/vol/vol1/lunC => /dev/vx/rdmp/c4t0d8s2
+disk group acctfsvg created
+host volume acctfshv created
+file system /mnt/acctfs created
+----

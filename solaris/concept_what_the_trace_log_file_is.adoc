@@ -1,0 +1,14 @@
+---
+permalink: solaris/concept_what_the_trace_log_file_is.html
+sidebar: sidebar
+keywords: 
+summary: 'Technical support uses the trace log file to troubleshoot problems.'
+---
+= What the trace log file is
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Technical support uses the trace log file to troubleshoot problems.
+
+Enabling the trace log file does not affect system performance. By default, this file is enabled. You can disable by setting the snapdrive.conftrace-enabled variable to off.

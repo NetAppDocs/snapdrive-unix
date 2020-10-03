@@ -1,0 +1,21 @@
+---
+permalink: aix/concept_how_snapdrive_forunix_usesautosupport.html
+sidebar: sidebar
+keywords: 
+summary: 'AutoSupport messages are logged in the EMS log view of the storage system when the autosupport-enabled option is set to on in the snapdrive.conf file. By default, this option is set to on in the snapdrive.conf file. SnapDrive for UNIX sends AutoSupport messages to the storage system, where the messages are logged in the Event Management System \(EMS\).'
+---
+= How SnapDrive for UNIX uses AutoSupport
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+AutoSupport messages are logged in the EMS log view of the storage system when the autosupport-enabled option is set to on in the snapdrive.conf file. By default, this option is set to on in the snapdrive.conf file. SnapDrive for UNIX sends AutoSupport messages to the storage system, where the messages are logged in the Event Management System (EMS).
+
+An AutoSupport message is sent during any of the following scenarios:
+
+* When an operation is stopped because of an operational failure, an AutoSupport message is sent to the storage system for which the operation failed.
+* If multiple storage systems are connected to the host and the operational failure occurs in more than one storage system, SnapDrive for UNIX sends the AutoSupport message to a specific storage system for which the operation fails.
+* When a new storage controller is added by using snapdrive config set <username> <filername>, SnapDrive for UNIX sends an AutoSupport message to the specified storage system.
+* When the SnapDrive daemon is restarted or started, the AutoSupport message is sent to the configured storage system.
+* When the snapdrive storage show -all command is executed, the AutoSupport message is sent to all the configured storage systems.
+* When there is a successful snap create operation, the AutoSupport message is sent to the storage system.

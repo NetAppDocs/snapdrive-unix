@@ -1,0 +1,59 @@
+---
+permalink: aix/concept_requirements_for_storage_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'You must consider the storage system requirements before setting it up.'
+---
+= Requirements for storage systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must consider the storage system requirements before setting it up.
+
+|===
+| Component| Requirement
+a|
+Operating system
+
+a|
+Data ONTAP 7.3.5 or later.
+
+* SnapDrive for UNIX supports FlexVol volumes but does not use all FlexVol volume features.
+* Configurations that use NFS must use Data ONTAP 7.3.5 or later and FlexVol volumes must use snapdrive snap connect to read and write to a connected NFS file or directory tree.
++
+Configurations with traditional volumes are provided with read-only access to NFS files and directory trees.
+
+a|
+Storage system setup
+
+a|
+You must specify the partner IP address in the HA pair that can be used if a storage system failover occurs.
+
+NOTE: You specify the IP address when you run the setup program on the storage system.
+
+a|
+Licenses
+
+a|
+
+* FC, iSCSI, or NFS, depending on the host platform
+* FlexClone license
++
+NOTE: You must have appropriate protocols running on the storage system for SnapDrive for UNIX to execute.
+
+* SnapRestore software
+* MultiStore software
++
+You should set the SnapRestore and MultiStore licenses when you set up the storage system. You need a MultiStore license if you want to set up a vFiler environment.
+
+* Secure HTTP access to the storage system.
+
+|===
+SnapDrive for UNIX operations are not case-sensitive with respect to storage system host name, you must ensure that the IP addresses are unique when you configure the storage system.
+
+NOTE: For the latest SnapDrive requirements, see the Interoperability Matrix.
+
+*Related information*
+
+https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability]

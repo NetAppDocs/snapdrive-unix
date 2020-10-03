@@ -1,0 +1,35 @@
+---
+permalink: linux-administration/reference_preconfigured_roles_for_ease_of_user_role_configuration.html
+sidebar: sidebar
+keywords: 
+summary: 'Preconfigured roles simplify the task of assigning roles to users.'
+---
+= Preconfigured roles for ease of user role configuration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Preconfigured roles simplify the task of assigning roles to users.
+
+The following table lists the predefined roles:
+
+|===
+| Role Name| Description
+a|
+GlobalSDStorage
+a|
+Manage storage with SnapDrive for UNIX
+a|
+GlobalSDConfig
+a|
+Manage configurations with SnapDrive for UNIX
+a|
+GlobalSDSnapshot
+a|
+Manage Snapshot copies with SnapDrive for UNIX
+a|
+GlobalSDFullControl
+a|
+Full use of SnapDrive for UNIX
+|===
+In the preceding table, Global refers to all the storage systems managed by an Operations Manager console.

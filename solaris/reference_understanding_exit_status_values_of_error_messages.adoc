@@ -1,0 +1,21 @@
+---
+permalink: solaris/reference_understanding_exit_status_values_of_error_messages.html
+sidebar: sidebar
+keywords: 
+summary: 'Each SnapDrive for UNIX error message is associated with an exit status value. The exit status value contains cause of the error, and its type-Warning, Command, Admin, or Fatal.'
+---
+= Understanding exit status values of error messages
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Each SnapDrive for UNIX error message is associated with an exit status value. The exit status value contains cause of the error, and its type-Warning, Command, Admin, or Fatal.
+
+Each SnapDrive error message ID is linked to an exit status value. Exit status values contain the following information:
+
+* Exit status value--indicates the basic cause of the error condition.
+* Type--indicates the type of error. The level of seriousness depends on the message, not the value. The following are the possible values:
+ ** Warning--SnapDrive for UNIX executed the command but issued a warning about conditions that might require your attention.
+ ** Command--SnapDrive for UNIX failed to execute the command due to an error in the command line. Check the command line format to ensure they are correct.
+ ** Admin--SnapDrive for UNIX failed to execute the command due to incompatibilities in the system configuration. Contact your System Administrator to review your configuration parameters.
+ ** Fatal--SnapDrive for UNIX failed to execute the command due to an unexpected condition. Fatal errors are rare. If a fatal error occurs and you have problems resolving it, contact NetApp technical support for assistance in determining the steps you need to take to recover correctly and fix any error condition.

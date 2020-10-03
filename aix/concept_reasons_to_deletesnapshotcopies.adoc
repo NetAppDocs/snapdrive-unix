@@ -1,0 +1,20 @@
+---
+permalink: aix/concept_reasons_to_deletesnapshotcopies.html
+sidebar: sidebar
+keywords: 
+summary: 'Delete older Snapshot copies to free space on the storage system volume, or to keep fewer Snapshot copies.'
+---
+= Reasons to delete Snapshot copies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Delete older Snapshot copies to free space on the storage system volume, or to keep fewer Snapshot copies.
+
+You might delete older Snapshot copies for the following reasons:
+
+* To keep fewer stored Snapshot copies than the hard limit of 255 on a storage system volume. Once it reaches the limit, attempts to create new Snapshot copies fail.
+* To free space on the storage system volume. Even before the Snapshot copy reaches the limit, a Snapshot copy fails if the disk does not have enough reserved space for it.
+* You can also use the wildcard (*) character in Snapshot copy names. The Snapshot show operation enables you to use the wildcard character to show all Snapshot copy names that match a certain pattern. The following rules apply to using wildcard in Snapshot copy names:
+ ** You can use a wildcard at the end of the name only. You cannot use the wildcard at the beginning or the middle of a Snapshot copy name.
+ ** You cannot use the wildcard in the storage system or storage system volume fields of a Snapshot copy name.

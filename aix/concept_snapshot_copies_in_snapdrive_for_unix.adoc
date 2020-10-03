@@ -1,0 +1,12 @@
+---
+permalink: aix/concept_snapshot_copies_in_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX enables you to create Snapshot copies of host data.'
+---
+= Creating and using Snapshot copies in SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX enables you to create Snapshot copies of host data.

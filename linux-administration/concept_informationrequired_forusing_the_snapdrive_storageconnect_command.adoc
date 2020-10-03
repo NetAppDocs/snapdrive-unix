@@ -1,0 +1,94 @@
+---
+permalink: linux-administration/concept_informationrequired_forusing_the_snapdrive_storageconnect_command.html
+sidebar: sidebar
+keywords: 
+summary: 'There is some information that you need to supply when you use the snapdrive storage connect command. This information helps you to use the command correctly.'
+---
+= Information required for using the snapdrive storage connect command
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+There is some information that you need to supply when you use the snapdrive storage connect command. This information helps you to use the command correctly.
+
+|===
+| Requirement| Argument
+a|
+Specify the LUNs, the file system created directly on a LUN, or the LVM entity that you want to connect to the host.
+
+* If you connect one or more LUNs, the first argument must use the long form of the LUN name, which specifies the storage system name, the volume name, and the name of the LUN within the volume.
++
+To specify additional LUNs, you can use the LUN name alone if the new LUN is on the same storage system and volume as the previous LUN. Otherwise, you can specify a new storage system name and volume name (or just a volume name) to replace the previous values.
+
+* If you connect a file system created directly on a LUN, you must include the long form of the LUN name, and also the -nolvm option.
+* If you connect a LUN with a disk group, host volume, and file system, you must use the -fs and -hostvol options to specify the file system and host volume. The host volume must include the name of the disk group.
+
+a|
+A LUN (-lun)
+a|
+long_lun_name
+a|
+The first value you supply with the -lun option must include the storage system name, volume, and LUN name. To connect multiple LUNs on the same volume, you can use relative path names for the -lun option after you supply the complete information in the first path name. When SnapDrive for UNIX encounters a relative path name, it looks for the LUN on the same volume as the previous LUN. To connect additional LUNs that are not on the same volume, enter the full path name to each LUN.
+a|
+Additional LUNs
+a|
+lun_name(long or short form)
+a|
+The file_spec given to -fs is the name of the file system mountpoint when connecting a file system created directly on a LUN.
+a|
+A file system (-fs file-spec)
+a|
+filesystem_name
+a|
+To connect a file system that is created on a LUN without activating the host LVM.
+a|
+-nolvm
+a|
+ 
+a|
+To connect a file system on a host volume: The -fsfile_spec and -hostvolfile_spec you supply identify the LVM file system, disk group, and host volumes that you want to connect to a new host.
+
+The storage hierarchy that you connect must contain a disk group, host volume, and file system. You must specify a value for -fs and -hostvol. The -hostvol value must include the name of the disk group.
+
+a|
+Host volume (-hostvol file-spec)
+a|
+disk_group_name and host_volume_name
+a|
+Optional: Use the -nopersist option to connect the storage to a new location without creating an entry in the host file system table(for example, fstab on Linux). By default the storage connect command creates persistent mounts. This means that when you create an LVM storage entity on a Linux host, SnapDrive for UNIX automatically creates the storage, mounts the file system and then places an entry for the file system in the host file system table.
+
+a|
+-nopersist
+a|
+~
+a|
+*Optional:* It is recommended that you use the default igroup for your host instead of supplying an igroup name.
+
+a|
+Igroup name (-igroup)
+a|
+ig_name
+a|
+-fstype
+a|
+type
+a|
+vmtype
+a|
+type
+a|
+*Optional:* Specifies the type of file system and volume manager to be used for SnapDrive for UNIX operations.
+
+a|
+-mntopts
+a|
+~
+a|
+*Optional:* If you are creating a file system, you can specify the following options:
+
+* Use -mntopts to specify options that you want to pass to the host mount command (for example, to specify host system logging behavior). The options you specify are stored in the host file system table file. Allowed options depend on the host file system type.
+* The-mntopts argument is a file system -type option that is specified using the mount command -o flag. Do not include the -o flag in the -mntopts argument. For example, the sequence -mntopts tmplog passes the string -otmplog to the mount command, and inserts the text tmplog on a new command line.
++
+NOTE: If you pass any invalid -mntopts options for storage and snap operations, SnapDrive for UNIX does not validate those invalid mount options.
+
+|===

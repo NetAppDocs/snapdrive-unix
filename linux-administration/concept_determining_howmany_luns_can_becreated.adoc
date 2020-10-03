@@ -1,0 +1,16 @@
+---
+permalink: linux-administration/concept_determining_howmany_luns_can_becreated.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX lets you determine how many LUNs can be created on the host without exceeding the limit.'
+---
+= Determining how many LUNs can be created
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX lets you determine how many LUNs can be created on the host without exceeding the limit.
+
+You can use snapdrive config check luns command to determine this value.
+
+On a Linux host, this command checks the existing /dev/sg files to determine how many are unused.

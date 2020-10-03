@@ -1,0 +1,38 @@
+---
+permalink: solaris/task_specifying_login_information_for_virtual_storage_console.html
+sidebar: sidebar
+keywords: 
+summary: 'The Virtual Storage Console must be configured in SnapDrive for UNIX for provisioning RDM LUNs in the guest operating system. However, there is a user name and password that allows SnapDrive for UNIX to access the Virtual Storage Console. The Virtual Storage Console does not authenticate these login credentials.'
+---
+= Specifying login information for Virtual Storage Console
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Virtual Storage Console must be configured in SnapDrive for UNIX for provisioning RDM LUNs in the guest operating system. However, there is a user name and password that allows SnapDrive for UNIX to access the Virtual Storage Console. The Virtual Storage Console does not authenticate these login credentials.
+
+Ensure that Virtual Storage Console is configured with the vCenter.
+
+. Enter the following command:
++
+snapdrive config set -viadmin <user> <viadmin_name>
++
+user is the user name of the virtual interface system.
++
+viadmin_name is the name or the IP address of the virtual interface system.
+
+. At the prompt, enter the password, if there is one.
++
+NOTE: If you have not set any password, press Enter (the null value) when prompted for a password.
++
+This example sets up an user called sdadmin for a virtual interface:
++
+----
+guest# snapdrive config set -viadmin sdadmin ruffleskin
+Password for sdadmin:
+Retype Password:
+----
++
+SnapDrive for UNIX is now ready to provision RDM LUNs in the guest operating system.
++
+NOTE: If you wish to configure a new virtual interface, the existing virtual interface details are overwritten, as SnapDrive for UNIX allows you to have only one virtual interface configured to a guest operating system.

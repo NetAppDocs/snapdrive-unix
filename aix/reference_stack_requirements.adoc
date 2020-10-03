@@ -1,0 +1,103 @@
+---
+permalink: aix/reference_stack_requirements.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX requires a host operating system, host file systems, NFS, volume managers, FC or iSCSI Host Utilities, storage system licenses, ONTAP software, MultiStore software, and Internet Protocol \(IP\) access. SnapDrive for UNIX also has certain stack requirements which it must fulfill.'
+---
+= Stack requirements
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX requires a host operating system, host file systems, NFS, volume managers, FC or iSCSI Host Utilities, storage system licenses, ONTAP software, MultiStore software, and Internet Protocol (IP) access. SnapDrive for UNIX also has certain stack requirements which it must fulfill.
+
+== Host-side entities
+
+The following is a list of host-side entities:
+
+* The host operating system
+* A volume manager
+* File system
+* AIX Host Utilities
+
+== SnapDrive for UNIX stack
+
+You must enter acceptable values for the multipathing-type, fstype, default-transport, and vmtype variables in the snapdrive.conf file as provided in the matrix stack. You must verify that the values entered are installed and running in your host system.
+
+|===
+| Host platform| Default transport type| Multipathing type| fstype| vmtype
+a|
+AIX
+a|
+FCP
+a|
+none
+a|
+jfs2
+a|
+lvm
+a|
+FCP
+a|
+none
+a|
+jfs
+a|
+lvm
+a|
+FCP
+a|
+nativempio
+a|
+jfs2
+a|
+lvm
+a|
+FCP
+a|
+nativempio
+a|
+jfs
+a|
+lvm
+a|
+FCP
+a|
+DMP
+a|
+vxfs
+a|
+vxvm
+|===
+
+* If you have FCP and iSCSI storage stacks, SnapDrive will only support FCP storage stacks.
++
+SnapDrive does not support iSCSI storage stacks for AIX.
+
+* The host operating system and appropriate patches for AIX are installed .
+* The volume manager for AIX is LVM or VxVM .
+* Host Utilities are installed in AIX
++
+For example, if multipathing is in use with SnapDrive for UNIX with an AIX host, you must set up the features required by the AIX Host Utilities for that host.
+
+* ONTAP software is installed on your storage system.
+* MultiStore software is installed on your storage system for a vFiler unit setup.
+* Internet Protocol (IP) access is available between the host and storage system.
+
+NetApp modifies host utilities and components on an ongoing basis. You can track this changes by using the Interoperability Matrix, which contains up-to-date information for using NetApp products in a SAN environment.
+
+The storage system license and the MultiStore license constitute the storage system entities.
+
+== Storage system licensing requirements
+
+* An FC, iSCSI, or NFS license, depending on your configuration
+* A FlexClone license
+* A SnapRestore license on the storage system
+
+*Related information*
+
+xref:concept_unable_to_select_a_storage_stack.adoc[Unable to select a storage stack]
+
+xref:concept_when_to_use_the_snapdrive_configuration_wizard.adoc[SnapDrive configuration wizard]
+
+https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability]

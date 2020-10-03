@@ -1,0 +1,19 @@
+---
+permalink: linux-administration/concept_methods_forcreating_storage.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX provides some basic formats for the snapdrive storage create command to make it easier to create the storage you want. The storage create operation falls into various general categories.'
+---
+= Methods for creating storage
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX provides some basic formats for the snapdrive storage create command to make it easier to create the storage you want. The storage create operation falls into various general categories.
+
+* Creating LUNs--The snapdrive storage create command automatically creates the LUNs on the storage system but does not create any additional storage entities. SnapDrive for UNIX performs all of the tasks associated with host preparation and creating storage discovery for each LUN, as well as mapping and connecting to it.
+* Creating a file system directly on a LUN and setting up the LUN automatically-- SnapDrive for UNIX performs all of the actions needed to set up the file system. You do not need to specify any LUNs for it to create.
+* Creating a file system directly on a LUN and specifying the LUN you want associated with it--In this case, you use the snapdrive storage create command to specify the file system you want to set up, and the LUN you want to associate with the file system.
+* Creating an LVM and setting up the LUN automatically--The snapdrive storage create command lets you create a file system, a logical volume, or a disk group on the host. SnapDrive for UNIX performs all the actions needed to set up the entity, including automatically creating the required disk group and LUN. You do not need to specify any LUN for it to create.
+* Creating an LVM entity on the host and specifying the LUN you want associated with it--In this case, you use the snapdrive storage create command to specify both the entity you want to set up (file system, logical volume, or disk group) and the LUN you want associated with that entity.
+* Creating a file system on a shared host in a host cluster environment--In this case, you create a file system, a logical volume, or a disk group on the shared host.

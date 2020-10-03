@@ -1,0 +1,23 @@
+---
+permalink: solaris/concept_snapdrive_for_unix_provisioning_in_an_lvma_vxvm_environment.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= SnapDrive for UNIX provisioning in a VxVM environment
+:icons: font
+:imagesdir: ../media/
+
+SnapDrive for UNIX storage commands provision VxVM entities by creating VxVM objects.
+
+If you request a SnapDrive for UNIX storage operation that provisions a VxVM entity--for example, a disk group that includes host volumes or file systems--the snapdrive storage command works with the VxVM to create the VxVM objects and file systems that use the storage.
+
+During storage provisioning operation, the following actions occur:
+
+* The host VxVM combines LUNs from a storage system into disks, or volume groups.
++
+The storage is then divided into logical volumes, which are used as if they were raw disk devices to hold file systems or raw data.
+
+* SnapDrive for UNIX integrates with the host VxVM to determine which NetApp LUNs make up each disk group, host volume, and file system requested for a Snapshot copy.
++
+Because the data from any specified host volume can be distributed across all disks in the disk group, Snapshot copies can be made and restored only for whole disk groups.

@@ -1,0 +1,44 @@
+---
+permalink: aix/concept_log_file_rotation_settings.html
+sidebar: sidebar
+keywords: 
+summary: 'The values you specify for the variable in the snapdrive.conf file affect the log file rotation.'
+---
+= Log file rotation settings
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The values you specify for the variable in the snapdrive.conf file affect the log file rotation.
+
+The values you specify in the snapdrive.conf file enable automatic log file rotations. You can change these values, if necessary, by editing the snapdrive.conf variables. The following options affect log file rotation:
+
+* audit-log-max-size
+* audit-log-save
+* trace-max-size
+* trace-log-max-save
+* recovery-log-save
+
+With automatic log rotation, SnapDrive for UNIX keeps old log files until it reaches the limit specified in the audit-log-save, trace-log-save, and recovery-log-save variable. Then it deletes the oldest log file.
+
+SnapDrive for UNIX tracks which file is oldest by assigning the file the number "0" when it creates the file. Each time it creates a new file, it increments by 1 the number assigned to each of the existing log files. When a log file's number reaches the save value, SnapDrive for UNIX deletes that file.
+
+*Example:* This example uses the ls command to display information about the log files on the system.
+
+Based on those settings, you would see the following information in log files.
+
+----
+# ls -l /var/log/sd*
+-rw-r--r-- 1 root other 12247 Mar 13 13:09 /var/log/sd-audit.log
+-rw-r--r-- 1 root other 20489 Mar 12 16:57 /var/log/sd-audit.log.0
+-rw-r--r-- 1 root other 20536 Mar 12 03:13 /var/log/sd-audit.log.1
+-rw-r--r-- 1 root other 3250 Mar 12 18:38 /var/log/sd-recovery.log.1
+-rw-r--r-- 1 root other 6250 Mar 12 18:36 /var/log/sd-recovery.log.2
+-rw-r--r-- 1 root other 6238 Mar 12 18:33 /var/log/sd-recovery.log.3
+-rw-r--r-- 1 root other 191704 Mar 13 13:09 /var/log/sd-trace.log
+-rw-r--r-- 1 root other 227929 Mar 12 16:57 /var/log/sd-trace.log.0
+-rw-r--r-- 1 root other 213970 Mar 12 15:14 /var/log/sd-trace.log.1
+-rw-r--r-- 1 root other 261697 Mar 12 14:16 /var/log/sd-trace.log.2
+-rw-r--r-- 1 root other 232904 Mar 12 14:15 /var/log/sd-trace.log.3
+-rw-r--r-- 1 root other 206905 Mar 12 14:14 /var/log/sd-trace.log.4
+----

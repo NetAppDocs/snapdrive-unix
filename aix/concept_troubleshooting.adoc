@@ -1,0 +1,14 @@
+---
+permalink: aix/concept_troubleshooting.html
+sidebar: sidebar
+keywords: 
+summary: 'The troubleshooting tool in SnapDrive for UNIX enables you to find information in addition to solving problems.'
+---
+= Troubleshooting
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The troubleshooting tool in SnapDrive for UNIX enables you to find information in addition to solving problems.
+
+At the time of this release, there were some known issues and limitations in SnapDrive for UNIX. While some issues affect all SnapDrive for UNIX host platforms, others affect only a specific host platform. For information about known issues and troubleshooting tips, see the _SnapDrive for UNIX Release Notes._

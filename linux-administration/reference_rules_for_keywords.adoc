@@ -1,0 +1,18 @@
+---
+permalink: linux-administration/reference_rules_for_keywords.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX uses keywords to specify the target of the SnapDrive for UNIX operations.'
+---
+= Rules for keywords
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX uses keywords to specify the target of the SnapDrive for UNIX operations.
+
+SnapDrive for UNIX uses keywords to specify sequences of strings corresponding to the host and storage system objects with which you are working. The following rules apply to SnapDrive for UNIX keywords:
+
+* Precede each keyword with a hyphen (-).
+* Do not concatenate keywords.
+* Enter the entire keyword and hyphen, not an abbreviation.

@@ -1,0 +1,33 @@
+---
+permalink: solaris/concept_features_supported_in_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'You can find information about the features and supported configurations in SnapDrive for UNIX.'
+---
+= Features supported in SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can find information about the features and supported configurations in SnapDrive for UNIX.
+
+SnapDrive for Unix has the following capabilities and supports the following features:
+
+* SnapDrive for UNIX configuration checker
+* Role-based access control (RBAC) permissions
+* SnapDrive for UNIX wizard
+* Enhanced clone-split operation
+* Creation and usage of Snapshot copies
+* Volume-based SnapRestore (VBSR)
+* Command-line interface (CLI) options
+* Data collection utility
+* Modified system name support for a storage system in SnapDrive operations
+* Transparent handling of errors caused by volume migration and NetAppDataMotion for vFiler; controls the same using the appropriate configuration variables
+* Support for Fibre Channel RDM LUNs in Linux and Solaris x86 guest operating systems
+* Support for SnapDrive commands on raw LUNs and raw file systems in the Solaris x86 architecture
+
+NOTE: The latest information about SnapDrive for UNIX and its requirements is available in the Interoperability Matrix.
+
+*Related information*
+
+https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability]

@@ -1,0 +1,21 @@
+---
+permalink: aix/concept_commands_appear_blocked_commands_appear_blocked.html
+sidebar: sidebar
+keywords: 
+summary: 'You are unable to run SnapDrive for UNIX commands because the commands seem to be blocked for more than 10 minutes. You might have to wait for the command to complete.'
+---
+= Commands appear blocked
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You are unable to run SnapDrive for UNIX commands because the commands seem to be blocked for more than 10 minutes. You might have to wait for the command to complete.
+
+This behavior occurs in rare cases when VxVM/DMP needs time to manage the volume configuration daemon. Triggers for this behavior include the following:
+
+* A storage system that has recovered from a panic
+* A storage system target adapter that has transitioned from offline to online
+
+== Workaround
+
+Wait for the command to complete. The Veritas configuration daemon needs several minutes to run and discover the current state of the devices.

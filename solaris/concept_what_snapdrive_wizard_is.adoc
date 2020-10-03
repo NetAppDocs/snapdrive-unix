@@ -1,0 +1,12 @@
+---
+permalink: solaris/concept_what_snapdrive_wizard_is.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive has different wizards that help you to perform a particular SnapDrive operation in an interactive manner.'
+---
+= What SnapDrive wizards are
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive has different wizards that help you to perform a particular SnapDrive operation in an interactive manner.

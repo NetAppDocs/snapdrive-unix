@@ -1,0 +1,16 @@
+---
+permalink: aix/concept_security_considerations.html
+sidebar: sidebar
+keywords: 
+summary: 'You can enable SnapDrive for UNIX to access the storage systems connected to the host, and must configure the host to use the login names and passwords assigned to the storage systems. If you do not provide this information, SnapDrive for UNIX cannot communicate with the storage system.'
+---
+= Security considerations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can enable SnapDrive for UNIX to access the storage systems connected to the host, and must configure the host to use the login names and passwords assigned to the storage systems. If you do not provide this information, SnapDrive for UNIX cannot communicate with the storage system.
+
+A root user can allow other users to run specific commands, depending on the roles assigned to them. You need not be a root user to perform the storage and snap management operations.
+
+SnapDrive for UNIX stores user authentication information about the host in an encrypted file. On AIX hosts, by default, SnapDrive encrypts the password information and sends it across the network. SnapDrive for UNIX communicates using HTTPS over the standard IP connection.

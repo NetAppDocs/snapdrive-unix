@@ -1,0 +1,15 @@
+---
+permalink: solaris/reference_using_exit_status_values.html
+sidebar: sidebar
+keywords: 
+summary: 'Exit status values are used in scripts to determine the success or failure of a SnapDrive for UNIX command.'
+---
+= Using exit status values
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Exit status values are used in scripts to determine the success or failure of a SnapDrive for UNIX command.
+
+* A value of zero indicates that the command completed successfully.
+* A value other than zero indicates that the command did not complete, and provides information about the cause and severity of the error condition.

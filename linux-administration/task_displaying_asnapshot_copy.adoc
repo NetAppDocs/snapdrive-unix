@@ -1,0 +1,124 @@
+---
+permalink: linux-administration/task_displaying_asnapshot_copy.html
+sidebar: sidebar
+keywords: 
+summary: 'The command snapdrive snap show or list displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.'
+---
+= Displaying a Snapshot copy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The command snapdrive snap show or list displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.
+
+. Enter the following command syntax to display a Snapshot copy: snapdrive snap show [-snapname] long_snap_name [snap_name...] [-verbose]
+
+This operation displays, at a minimum, the following information about the Snapshot copy:
+
+* The name of the storage system where the Snapshot copy is created
+* The name of the host that took the Snapshot copy
+* The path to the LUNs on the storage system
+* The date and time the Snapshot copy was created
+* The name of the Snapshot copy
+* The names of the disk groups included in the Snapshot copy
+
+*Example*: The following are examples of snapdrive snap show commands:
+
+----
+# snapdrive snap show -snapname toaster:/vol/vol2:snapA snapX snapY
+
+# snapdrive snap show -verbose toaster:/vol/vol2:snapA /vol/vol3:snapB snapC
+
+# snapdrive snap show toaster:/vol/vol2:snapA
+
+# snapdrive snap list -dg dg1 dg2
+----
+
+*Example*: This example uses a wildcard to display information about the available Snapshot copies on a particular volume:
+
+----
+# snapdrive snap show toaster:/vol/vol1:*
+snap name host date
+snapped
+------------------------------------------------------------------
+-------------
+toaster:/vol/vol1:sss1 DBserver Mar 12
+16:19 dg1
+toaster:/vol/vol1:testdg DBserver Mar 12
+15:35 dg1
+toaster:/vol/vol1:t1 DBserver Mar 10
+18:06 dg1
+toaster:/vol/vol1:hp_1 HPserver Mar 8
+19:01 vg01
+toaster:/vol/vol1:r3 DBserver Mar 8
+13:39 rdg1
+toaster:/vol/vol1:r1 DBserver Mar 8
+13:20 rdg1
+toaster:/vol/vol1:snap2 DBserver Mar 8
+11:51 rdg1toaster:/vol/vol1:snap_p1 DBserver
+Mar 8 10:18 rdg1
+----
+
+*Example*: This example shows a Snapshot copy of an NFS-mounted directory tree on a Linux host using the snapdrive snap list command with the - verbose option:
+
+----
+# snapdrive snap list -fs /mnt/acctfs1 -v
+snap name host date
+snapped
+------------------------------------------------------------------
+----------
+besser:/vol/vol1:acctfs-s1 childs Aug 8 18:58
+/mnt/acctfs1
+host OS: Linux 2.4.21-9.ELsmp #1 SMP Thu Jan 8 17:08:56 EST 2004
+snapshot name: acctfs-s1 file system: type: nfs mountpoint:
+/mnt/acctfs1
+filer dir: besser:/vol/vol1
+----
+
+*Example*: This example executes the snapdrive snap show command on a Linux host:
+
+----
+# snapdrive snap show -snapname surf:/vol/vol1:swzldg5snapped
+snap name host date
+snapped
+------------------------------------------------------------------
+-------------
+surf:/vol/vol1:bagel5snapped pons Aug 18
+20:06 dg5
+#
+# ./linux/ix86/snapdrive snap show -v -snapname
+surf:/vol/vol1:bagel5snapped >
+snap name host date
+snapped
+------------------------------------------------------------------
+-------------
+surf:/vol/vol1:bagel5snapped pons Aug 18
+20:06 dg5
+host OS: Linux 2.4.21-9.ELsmp #1 SMP Thu Jan 8 17:08:56 EST 2004
+snapshot name: bagel5snapped
+Volume Manager: linuxlvm 1.0.3
+disk group: dg5
+host volume: vol1
+host volume: vol2
+host volume: vol3
+lun path dev paths
+-------------------------------------------------------
+surf:/vol/vol1/glk19 /dev/sdu
+----
+
+*Example*: The following examples use wildcard:
+
+----
+# snapdrive snap show toaster:/vol/volX:*
+# snapdrive snap show -v toaster:/vol/volX:DB1*
+filer1:/vol/volY:DB2*
+# snapdrive snap show toaster:/vol/vol2:mysnap* /vol/vol2:yoursnap*
+hersnap*
+# snapdrive snap show toaster:/vol/volX:*
+----
+
+*Example*: In this example use of a wildcard is invalid because the wildcard is in the middle of the name instead of being placed at the end:
+
+----
+# snap show toaster:/vol/vol1:my*snap
+----

@@ -1,0 +1,33 @@
+---
+permalink: linux-installation-cmode/index.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Installation and Setup Guide for Linux®
+:icons: font
+:imagesdir: ../media/
+
+* xref:reference_product_overview.adoc[Product overview]
+* xref:reference_deployment_workflow.adoc[Deployment workflow]
+* xref:task_preparing_for_deployment.adoc[Preparing for deployment]
+ ** xref:reference_snapdrive_licensing.adoc[SnapDrive for UNIX license requirements]
+ ** xref:reference_supported_configurations.adoc[Supported configurations]
+ ** xref:reference_linux_host_requirements.adoc[Linux host requirements]
+* xref:task_installing_snapdrive_for_unix.adoc[Installing SnapDrive for UNIX]
+ ** xref:task_verifying_the_installation.adoc[Verifying the installation]
+ ** xref:task_performing_post_installation_tasks.adoc[Performing post-installation tasks]
+* xref:concept_verifying_supported_configurations_using_configuration_checker_tool.adoc[Verifying Linux host configurations using the configuration checker tool]
+ ** xref:task_importing_data_files.adoc[Importing data files]
+ ** xref:task_verifying_the_supported_configurations.adoc[Verifying the supported configurations]
+* xref:concept_provisioning_storage.adoc[Provisioning storage]
+ ** xref:task_provisioning_volumes.adoc[Provisioning volumes]
+ ** xref:task_provisioning_rdm_luns.adoc[Provisioning RDM LUNs]
+* xref:task_connecting_linux_host_to_the_storage_system.adoc[Connecting Linux hosts to storage systems]
+* xref:concept_creating_snapshot_copies.adoc[Creating Snapshot copies]
+ ** xref:task_creating_a_snapshot_copy.adoc[Creating a Snapshot copy]
+ ** xref:task_verifying_the_snapshot_copy.adoc[Verifying the Snapshot copy]
+* xref:reference_where_to_go_next.adoc[Where to go next]
+* xref:delete_reference_copyright.adoc[Copyright]
+* xref:delete_reference_trademark.adoc[Trademark]
+* xref:delete_concept_how_to_send_comments_about_documentation_and_receiv.adoc[How to send comments about documentation and receive update notifications]

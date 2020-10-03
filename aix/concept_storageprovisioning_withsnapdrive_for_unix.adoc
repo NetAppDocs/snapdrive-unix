@@ -1,0 +1,34 @@
+---
+permalink: aix/concept_storageprovisioning_withsnapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX provides end-to-end storage management. You can provision storage from a host to a storage system and manage that storage with or without using the host Logical Volume Manager \(LVM\).'
+---
+= Storage operations in SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX provides end-to-end storage management. You can provision storage from a host to a storage system and manage that storage with or without using the host Logical Volume Manager (LVM).
+
+SnapDrive for UNIX enables you to perform the following storage operations:
+
+* Create the storage by creating LUNs, file systems, logical volumes, and disk groups.
+* Display information about the storage.
+* Connect to the storage.
+* Resize the storage.
+* Disconnect from the storage.
+* Delete the storage.
+
+When you create a storage by using the snapdrive storage create command, SnapDrive for UNIX automatically performs all the tasks needed to set up LUNs, including preparing the host, performing discovery mapping, and connecting to each LUN you create. You can use the snapdrive storage show command to display information about theNetApp LUNs, disk groups, host volumes, file systems, or NFS directory trees that you create.
+
+You can use the snapdrive storage connect command to map the storage to a new location. This command enables you to access the existing storage from a different host than the one used to create it. The snapdrive storage connect command enables you to make the existing LUNs, file systems, disk groups, and logical volumes accessible on a new host. This might be useful if you want to back up a storage entity from the new host to another host.
+
+Using the snapdrive storage resize command, you can increase the size of your storage in the following ways:
+
+* Specifying the target size that you want the host entity to reach
+* Entering a set number of bytes by which you want to increase the storage
+
+If you no longer want your storage mapped to its current location, you can use the snapdrive storage disconnect command. This command removes the mappings from one or more host locations to the LUNs creating the storage for that location.
+
+If you want to delete the storage, you can use the snapdrive storage delete command. SnapDrive for UNIX deletes all the host-side entities you specify as well as all their underlying entities and the LUNs associated with them.

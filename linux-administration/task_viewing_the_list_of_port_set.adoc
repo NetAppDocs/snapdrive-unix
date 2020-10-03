@@ -1,0 +1,21 @@
+---
+permalink: linux-administration/task_viewing_the_list_of_port_set.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the snapdrive portset list command to view all the port sets that are configured in SnapDrive on the host.'
+---
+= Viewing the list of port set
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the snapdrive portset list command to view all the port sets that are configured in SnapDrive on the host.
+
+. Enter the following command on the host system:snapdrive portset list
++
+----
+snapdrive portset list
+appliance name   Portset name
+-----------------------------
+vs91        ps2
+----

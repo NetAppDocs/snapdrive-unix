@@ -1,0 +1,61 @@
+---
+permalink: aix/concept_informationrequired_forusing_the_snapdrive_snapdisconnect_command.html
+sidebar: sidebar
+keywords: 
+summary: 'To disconnect a Snapshot copy, specify the type of storage entity to be used, such as, LUN, disk groups, file systems, or host volume.'
+---
+= Information required for using the snapdrive snap disconnect command
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To disconnect a Snapshot copy, specify the type of storage entity to be used, such as, LUN, disk groups, file systems, or host volume.
+
+The following table gives the information you need to supply when you use the snapdrive snap disconnect command.
+
+|===
+| Requirement/Option| Argument
+a|
+LUN (-lun file_spec )
+a|
+_name of the LUN. Include the name of the filer, volume and LUN._
+
+a|
+Disk group (-dg file_spec ) or volume group (-vg file_spec )
+a|
+_name of the disk or volume group_
+a|
+File system (-fs file_spec )
+a|
+filesystem_name
+a|
+Host volume (-hostvol file_spec ) or logical volume (-lvol file_spec )
+a|
+_name of the host or logical volume_
+a|
+Specify the type of storage entity that you want to use to disconnect the Snapshot copy and supply that entity's name with the appropriate argument.This is the value for the file_spec argument.
+
+a|
+-full
+a|
+~
+a|
+Include the -full option on the command line if you want SnapDrive for UNIX to disconnect the objects from the Snapshot copy even if a host-side entity on the command line has other entities (such as a disk group that has one or more host volumes). If you do not include this option, you must specify only empty host-side entities.
+a|
+-fstype
+a|
+type
+a|
+-vmtype
+a|
+type
+a|
+Optional: Specify the type of file system and volume manager to be used.
+a|
+-split
+a|
+~
+a|
+Enables to split the cloned volumes or LUNs during Snapshot connect and Snapshot disconnect operations.
+
+|===

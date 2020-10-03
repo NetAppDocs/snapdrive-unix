@@ -1,0 +1,31 @@
+---
+permalink: solaris/concept_tasks_performed_by_snapdrive_dc.html
+sidebar: sidebar
+keywords: 
+summary: 'The data collection utility runs the NetApp diagnostic utilities, copies SnapDrive for UNIX log files, and creates a compressed file that is used for analysis.'
+---
+= Tasks performed by snapdrive.dc
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The data collection utility runs the NetApp diagnostic utilities, copies SnapDrive for UNIX log files, and creates a compressed file that is used for analysis.
+
+The snapdrive.dc utility performs the following tasks:
+
+* Runs the host_info and filer_info utilities to collect information about the host and the storage systems connected to the host, and saves this information in a compressed file. The host_info utility and filer_info utility comes along with SnapDrive for UNIX installation package.
++
+For example, the Solaris kit includes the solaris_info utility.
+
+* Creates a directory called /tmp/netapp/ntap_snapdrive_name. The tool places copies of the following files in the directory:
+ ** SnapDrive for UNIX version, as indicated by running the snapdrive version command
+ ** The snapdrive.conffile
+ ** The audit log files
+ ** The trace log files
+ ** The recovery log files
+ ** The files created by the host_info utility
+* Creates a compressed file of the directory contents and displays a message stating you send this file toNetApp technical support.
+
+*Related information*
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1148981[Solaris Host Utilities 6.1 Installation and Setup Guide]

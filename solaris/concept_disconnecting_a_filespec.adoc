@@ -1,0 +1,42 @@
+---
+permalink: solaris/concept_disconnecting_a_filespec.html
+sidebar: sidebar
+keywords: 
+summary: 'You can disconnect a file specification. The following example describes how you can complete this operation.'
+---
+= Disconnecting a file specification
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can disconnect a file specification. The following example describes how you can complete this operation.
+
+The layout of /mnt/fs1_0 is given in the following.
+
+----
+# snapdrive storage show -fs /mnt/fs_1_0 -capabilities
+raw device: /dev/sde1   mount point: /mnt/fs_1_0 (persistent) fstype ufs
+allowed operations: all
+
+device filename    adapter  path    size    proto   state   clone         lun path                                                         backing snapshot
+----------------   -------  ----    ----    -----   -----   -----         --------                                                         ----------------
+/dev/sde              -      P      100m    iscsi   online  flex-clone    homer:/vol/Snapdrive_vol1_volume_clone_from_snap2_snapshot/lun1    vol1:snap2
+----
+
+The following output shows how to disconnect the file system /mnt/fs_1_0:
+
+----
+#snapdrive snap disconnect -fs /mnt/fs_1_0
+ delete file system /mnt/fs_1_0
+- fs /mnt/fs_1_0 ... deleted
+         - LUN homer:/vol/Snapdrive_vol1_volume_clone_from_snap2_snapshot/lun1 ... disconnected
+         - deleting volume clone ... homer:/vol/Snapdrive_vol1_volume_clone_from_snap2_snapshot  done
+----
+
+After disconnecting the file system /mnt/fs_1_0, SnapDrive for UNIX also deletes the cloned volume Snapdrive_vol1_0_volume_clone_from_snap2_snapshot, if the following conditions are met:
+
+* No mapped LUNs are present in the volume
+* No new LUNs are present
+* No new Snapshot copies are present
+
+*Deleting a FlexClone not created by SnapDrive for UNIX*: SnapDrive for UNIX does not allow deletion of FlexClone not created by it.

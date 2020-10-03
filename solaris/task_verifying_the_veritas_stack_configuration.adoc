@@ -1,0 +1,35 @@
+---
+permalink: solaris/task_verifying_the_veritas_stack_configuration.html
+sidebar: sidebar
+keywords: 
+summary: 'To verify the Veritas stack configuration, you must run the snapdrive storage connect and the vxdisk list commands.'
+---
+= Verifying the Veritas stack configuration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To verify the Veritas stack configuration, you must run the snapdrive storage connect and the vxdisk listcommands.
+
+To verify the Veritas stack configuration, you must first confirm that you installed the following items in this order:
+
+. NTAPasl library
+. Veritas licenses
+. Veritas stack (storage foundation)
+. Multipathing licenses
+. SnapDrive for UNIX software
+
+Then perform the following steps:
+
+. Enter the following command to connect to an operating system specific device: snapdrive storage connect -lun long_lun_name
++
+where the long_lun_name is the lun name.
+
+. Enter the following command to get the device information: vxdisk list
+
+You might get one of the following results:
+
+* If the Veritas configuration on the host is correct, the expected output for the device status is online invalid.
+* If the Veritas configuration on the host is incorrect, the expected output for the device status is error.
++
+This error message occurs when you install the Veritas stack without installing the NTAPasl library. To rectify this error message, you must install the NTAPasl library and execute the vxinstall command to bring the LUNs and disk groups online.

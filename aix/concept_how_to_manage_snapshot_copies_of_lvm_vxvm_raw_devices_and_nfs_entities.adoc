@@ -1,0 +1,28 @@
+---
+permalink: aix/concept_how_to_manage_snapshot_copies_of_lvm_vxvm_raw_devices_and_nfs_entities.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use SnapDrive commands to create, restore, and manage Snapshot copies of LVM, raw devices and NFS entities.'
+---
+= How to manage Snapshot copies of LVM, raw devices, and NFS entities
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use SnapDrive commands to create, restore, and manage Snapshot copies of LVM, raw devices and NFS entities.
+
+You must run the commands on the host to create, restore, and manage Snapshot copies of storage entities.
+
+* Volume manager entities
++
+The volume manager entities are disk groups with host volumes and file systems that you created using the host volume manager.
+
+* Raw entities
++
+The raw entities are either LUNs or LUNs that contain file systems without creating any volumes or disk groups and are mapped directly to the host.
+
+* NFS entities
++
+The NFS entities are NFS files and directory trees.
+
+The Snapshot copy that you create can exist on multiple storage systems and storage system volumes. SnapDrive checks the read or write privilege against the storage entities in the Snapshot copy to ensure that all Snapshot copy data is crash-consistent. SnapDrive does not create a Snapshot copy unless the data is crash-consistent.

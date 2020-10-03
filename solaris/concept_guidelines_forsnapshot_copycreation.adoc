@@ -1,0 +1,29 @@
+---
+permalink: solaris/concept_guidelines_forsnapshot_copycreation.html
+sidebar: sidebar
+keywords: 
+summary: 'Consider the following while creating Snapshot copies using SnapDrive for UNIX: you can keep maximum 255 Snapshot copies per volume, SnapDrive for UNIX supports only the Snapshot copies that it creates, you cannot create Snapshot copies of root disk groups, and boot device or swap device, and SnapDrive for UNIX requires a freeze operation to maintain crash-consistency.'
+---
+= Guidelines for Snapshot copy creation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Consider the following while creating Snapshot copies using SnapDrive for UNIX: you can keep maximum 255 Snapshot copies per volume, SnapDrive for UNIX supports only the Snapshot copies that it creates, you cannot create Snapshot copies of root disk groups, and boot device or swap device, and SnapDrive for UNIX requires a freeze operation to maintain crash-consistency.
+
+Follow these guidelines when you enter commands that create Snapshot copies:
+
+* You can keep a maximum of 255 Snapshot copies per storage system volume. This limit is set by the storage system. The total number can vary depending on whether other tools use these Snapshot copies.
++
+When the number of Snapshot copies has reached the maximum limit, the Snapshot create operation fails. You must delete some of the old Snapshot copies before you can use SnapDrive for UNIX to take anymore.
+
+* SnapDrive for UNIX does not support Snapshot copies that it does not create. For example, it does not support Snapshot copies that are created from the storage system console, because such a practice can lead to inconsistencies within the file system.
+* You cannot use SnapDrive for UNIX to create Snapshot copies of the following:
+ ** Root disk groups
++
+The Snapshot create operation fails when you try to take a Snapshot copy of a root disk group for an LVM.
+
+ ** Boot device or swap device
++
+SnapDrive for UNIX does not take a Snapshot copy of a system boot device or a system swap device.
+* When a Snapshot copy spans multiple storage systems or storage system volumes, SnapDrive for UNIX requires a freeze operation to guarantee crash-consistency. For information about creating Snapshot copies on configurations for which a freeze operation is not provided.

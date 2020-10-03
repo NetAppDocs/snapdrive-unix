@@ -1,0 +1,25 @@
+---
+permalink: solaris/concept_checks_that_can_be_overridden_by_the_user.html
+sidebar: sidebar
+keywords: 
+summary: 'Before volume-based SnapRestore is carried out, SnapDrive for UNIX performs some checks that a user can override using -force option. These checks are required so that volume-based SnapRestore is used safely.'
+---
+= Checks that can be overridden by the user
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before volume-based SnapRestore is carried out, SnapDrive for UNIX performs some checks that a user can override using -force option. These checks are required so that volume-based SnapRestore is used safely.
+
+It is recommended that you follow the various checks that the system performs, but you can override these checks by using the -force option.
+
+You can override the following SnapDrive for UNIX for volume-based SnapRestore checks:
+
+* SnapDrive for UNIX checks for LUNs in the Snapshot copy which are not crash consistent. If it finds an application inconsistent LUN in the Snapshot copy, it warns you about it.
+* SnapDrive for UNIX checks whether there are additional LUNs in the active volume which were created after the Snapshot copy was taken. If SnapDrive for UNIX finds additional LUNs, it warns you that those additional LUNs in the active volume is lost.
+* SnapDrive for UNIX checks for new Snapshot copies. These new Snapshot copies do not get restored and are lost.
+* SnapDrive for UNIX checks for normal file (files that are visible from the local host) in a volume.
+* SnapDrive for UNIX checks for NFS exports.
+* SnapDrive for UNIX checks for CIFS shares.
+
+If Snapshot copies were created using SnapDrive 3.0 for UNIX or earlier, volume-based SnapRestore preview is not able to perform the first two checks in the earlier mentioned list. If you have provided -force option, then during volume-based SnapRestore execute, a prompt message is displayed to over-ride these checks and proceed.

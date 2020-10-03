@@ -1,0 +1,12 @@
+---
+permalink: aix/concept_what_autosupport_is.html
+sidebar: sidebar
+keywords: 
+summary: 'AutoSupport allows SnapDrive for UNIX to send any operational failures that is incurred due to SnapDrive is sent to the EMS log view of the storage system in the /etc/log/ems file.'
+---
+= What AutoSupport is
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+AutoSupport allows SnapDrive for UNIX to send any operational failures that is incurred due to SnapDrive is sent to the EMS log view of the storage system in the /etc/log/ems file.

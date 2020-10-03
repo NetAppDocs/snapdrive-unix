@@ -1,0 +1,20 @@
+---
+permalink: solaris/task_disconnectingsnapshot_copieswith_shared_storageentities.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains shared storage entities.'
+---
+= Disconnecting Snapshot copies with shared storage entities
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains shared storage entities.
+
+. Enter the following command syntax: snapdrive snap disconnect {-dg | -fs}file_spec [file_spec...] {-dg | -fs} file_spec [file_spec...]...] long_snap_name[-full] [-devicetype shared] [-fstype type] [-vmtype type] [-split]
+
+This example disconnects shared file system:
+
+----
+# snapdrive snap disconnect -fs /mnt/oracle
+----

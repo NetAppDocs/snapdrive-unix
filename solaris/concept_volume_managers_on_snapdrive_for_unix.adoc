@@ -1,0 +1,36 @@
+---
+permalink: solaris/concept_volume_managers_on_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'On a Solaris platform, you can use VxVM or Solaris Volume Manager \(SVM\). The SVM comes bundled as a part of Solaris OS.'
+---
+= Volume managers on SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+On a Solaris platform, you can use VxVM or Solaris Volume Manager (SVM). The SVM comes bundled as a part of Solaris OS.
+
+The following table describes the volume managers on your host platform:
+
+|===
+| Host| Volume manager| Volume or disk groups| Location of logical volumes| Location of multipathing devices
+a|
+Solaris
+a|
+VxVM
+a|
+Disk groups (dg
+a|
+/dev/vx/dsk/dg/lvol
+a|
+/dev/vx/dmp/15t0d2
+a|
+SVM
+a|
+Disk groups (dg
+a|
+/dev/md/fs1_SdDg/dsk/vol0 fs1_SdDg is the disk group and vol0 is the logical volume name
+a|
+/dev/rdsk/c4t60A98000686F65 36526B302777653350s2
+|===

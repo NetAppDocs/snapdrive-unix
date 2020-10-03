@@ -1,0 +1,14 @@
+---
+permalink: linux-administration/concept_using_port_set_in_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'Port set is a group of SAN data port or interface, and is used to control the path available to a host by grouping the set of SAN data port or interface.'
+---
+= Using port set in SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Port set is a group of SAN data port or interface, and is used to control the path available to a host by grouping the set of SAN data port or interface.
+
+Port set configuration is created by the storage administrator on the storage system, and it is an optional task. When there is no port set configured on the host, the host can view all the paths, depending on the host SCSI configuration limits. SnapDrive for UNIX allows the storage administrator to specify a single port set per Vserver. Therefore, there is a restriction in the number of paths that the host can view through the Vserver.

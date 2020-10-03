@@ -1,0 +1,28 @@
+---
+permalink: aix/concept_managing_storage_using_a_wizard.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the SnapDrive for UNIX wizard to create storage in an interactive and efficient manner. The wizard leads you through a set of questions to help you to create storage.'
+---
+= Managing storage using a wizard
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the SnapDrive for UNIX wizard to create storage in an interactive and efficient manner. The wizard leads you through a set of questions to help you to create storage.
+
+You can launch the wizard by using the snapdrive storage wizard create command.
+
+The following storage management operations can be performed:
+
+* Creating a LUN
+* Creating a disk group and automatically setting up the LUN
+* Creating a disk group and specifying the LUN.
+* Creating a host volume and automatically setting up the LUN
+* Creating a host volume and specifying the LUN
+* Creating a file system on a LUN and automatically setting up the LUN
+* Creating a file system on a LUN and specifying the LUN.
+* Creating a file system on a LUN and setting up the LUN automatically with Logical Volume Manager (LVM) and disk group specified
+* Creating a file system on a LUN and specifying the LUN with LVM and disk group specified
+* Creating a file system on a LUN and setting up the LUN automatically with LVM and host volume specified
+* Creating a file system on a LUN and specifying the LUN with LVM and host volume specified

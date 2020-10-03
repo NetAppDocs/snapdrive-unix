@@ -1,0 +1,12 @@
+---
+permalink: linux-administration/concept_command_to_use_torename_a_snapshotcopy.html
+sidebar: sidebar
+keywords: 
+summary: 'Use the snapshot snap rename command to rename a Snapshot copy.'
+---
+= Command to use to rename a Snapshot copy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use the snapshot snap rename command to rename a Snapshot copy.

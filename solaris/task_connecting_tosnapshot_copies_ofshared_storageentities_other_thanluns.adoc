@@ -1,0 +1,66 @@
+---
+permalink: solaris/task_connecting_tosnapshot_copies_ofshared_storageentities_other_thanluns.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the snapdrive snap connect command to connect to a Snapshot copy of shared storage entities other than LUNs.'
+---
+= Connecting to Snapshot copies of shared storage entities other than LUNs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the snapdrive snap connect command to connect to a Snapshot copy of shared storage entities other than LUNs.
+
+. Enter the following command: snapdrive snap connectfspec_set [fspec_set...] -snapname long_snap_name [-devicetype shared] [-split]
++
+In this syntax, fspec_set is: {-dg | -fs}src_file_spec [dest_file_spec ] [-destdg dgname]
+
+The following example connects to a Snapshot copy that contains shared storage entities on an originating host cluster. The operation is executed from the non-cluster-master node, but the command is shipped to the master node and executed:
+
+----
+# snapdrive snap connect -fs /mnt/sfortesting /mnt/sfortesting2 -
+snapname f270-
+197-109:/vol/vol2:testsfarcsnap -devicetype shared -autorename
+Execution started on cluster master: sfrac-57
+connecting sfortesting_SdDg:
+LUN copy sfortesting_SdLun_0 ... created
+(original: f270-197-109:/vol/vol2/sfortesting_SdLun)
+mapping new lun(s) ... done
+discovering new lun(s) ... done
+Connecting cluster node: sfrac-58 mapping lun\(s\) ... done
+discovering lun(s) ... done
+LUN f270-197-109:/vol/vol2/sfortesting_SdLun_0 connected
+- device filename(s): /dev/vx/dmp/c3t0d22s2
+Importing sfortesting_SdDg_0
+Activating hostvol sfracvxfstestfs_SdHv_0
+Successfully connected to snapshot f270-197-
+109:/vol/vol2:testsfarcsnap
+disk group sfortesting_SdDg_0 containing host volumes
+sfortesting_SdHv_0 (filesystem: /mnt/sfortesting2)
+----
+
+The following example connects to a Snapshot copy that contains shared storage entities on a non-originating host cluster. The operation is executed from the non-cluster-master node, but the command is shipped to the master node and executed:
+
+----
+# snapdrive snap connect -fs /mnt/sfortesting -snapname f270-197-
+109:/vol/vol2:testsfarcsnap -devicetype shared
+Execution started on cluster master: sfrac-57
+connecting sfortesting_SdDg:
+LUN copy sfortesting_SdLun_0 ... created
+(original: f270-197-109:/vol/vol2/sfortesting_SdLun)
+Step Action
+184 Connecting to a Snapshot copy
+mapping new lun(s) ... done
+discovering new lun(s) ... done
+Connecting cluster node: sfrac-58
+mapping lun(s) ... done
+discovering lun(s) ... done
+LUN f270-197-109:/vol/vol2/sfortesting_SdLun_0 connected
+- device filename(s): /dev/vx/dmp/c3t0d1s2
+Importing sfortesting_SdDg
+Activating hostvol sfortesting_SdHv
+Successfully connected to snapshot f270-197-
+109:/vol/vol2:testsfarcsnap
+disk group sfortesting_SdDg containing host volumes
+sfortesting_SdHv (filesystem: /mnt/sfortesting)
+----

@@ -1,0 +1,20 @@
+---
+permalink: aix/concept_support_for_volume_migration.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX supports volume migration, which enables you to nondisruptively move a volume from one aggregate to another within the same controller for capacity utilization, improved performance, and to satisfy service-level agreements. In a SAN environment, FlexVol volumes and the LUNs in the volumes are moved nondisruptively from one aggregate to another.'
+---
+= Support for volume migration
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX supports volume migration, which enables you to nondisruptively move a volume from one aggregate to another within the same controller for capacity utilization, improved performance, and to satisfy service-level agreements. In a SAN environment, FlexVol volumes and the LUNs in the volumes are moved nondisruptively from one aggregate to another.
+
+You must set the volmove-cutover-retry and the volmove-cutover-retry-sleep variables in the snapdrive.conf file to execute SnapDrive operations.
+
+*Related information*
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1368525[Data ONTAP 8.2 SAN Administration Guide for 7-Mode]

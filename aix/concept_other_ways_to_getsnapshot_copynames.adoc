@@ -1,0 +1,16 @@
+---
+permalink: aix/concept_other_ways_to_getsnapshot_copynames.html
+sidebar: sidebar
+keywords: 
+summary: 'Use the snapdrive snap list command to display the Snapshot copy name.'
+---
+= Other ways to get Snapshot copy names
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use the snapdrive snap list command to display the Snapshot copy name.
+
+Another way to get a Snapshot copy name is to log in to the storage system and use the snapdrive snap list command there. This command displays the names of the Snapshot copies.
+
+NOTE: The snapdrive snap show command is equivalent to the storage system snapdrive snap list command.

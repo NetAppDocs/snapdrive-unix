@@ -1,0 +1,12 @@
+---
+permalink: solaris/concept_management_of_lvm_and_raw_entities.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX enables you to manage VxVM \(Veritas Volume Manager\) and raw entities. SnapDrive for UNIX also provides commands that help in provisioning and managing storage when you create storage entities.'
+---
+= Management of VxVM and raw entities
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX enables you to manage VxVM (Veritas Volume Manager) and raw entities. SnapDrive for UNIX also provides commands that help in provisioning and managing storage when you create storage entities.

@@ -1,0 +1,21 @@
+---
+permalink: aix/concept_diagnostic_files_installed_by_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX installs diagnostic files that help detect problems in SnapDrive for UNIX.'
+---
+= Diagnostic files installed by SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX installs diagnostic files that help detect problems in SnapDrive for UNIX.
+
+* /opt/NetApp/snapdrive/diag/snapdrive.dc
+* /opt/NetApp/snapdrive/diag/filer_info
+* /opt/NetApp/snapdrive/diag/brocade_info
+* /opt/NetApp/snapdrive/diag/cisco_info
+* /opt/NetApp/snapdrive/diag/mcdata_info
+* /opt/NetApp/snapdrive/diag/SHsupport.pm
+* /opt/NetApp/snapdrive/diag/Telnet.pm
+* /opt/NetApp/snapdrive/diag/aix_info

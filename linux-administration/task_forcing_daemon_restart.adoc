@@ -1,0 +1,18 @@
+---
+permalink: linux-administration/task_forcing_daemon_restart.html
+sidebar: sidebar
+keywords: 
+summary: 'You can force the daemon to restart. A forceful restart of the daemon stops the execution of all running commands.'
+---
+= Forcing daemon restart
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can force the daemon to restart. A forceful restart of the daemon stops the execution of all running commands.
+
+Ensure that you are logged in as a root user.
+
+. Enter the following command to forcefully restart the daemon:snapdrived -force restart
++
+After the force restart request is received, the daemon stops all the commands in execution and in queue. The daemon is restarted only after cancelling execution of all running commands.

@@ -1,0 +1,28 @@
+---
+permalink: linux-administration/concept_snapshot_restore_operation_fails_to_restore_file_system_on_raw_lun.html
+sidebar: sidebar
+keywords: 
+summary: 'The Snapshot restore operation of the file system on raw LUN fails after performing a Snapshot connect operation on a non-originating host.'
+---
+= Snapshot restore operation fails to restore file system on raw LUN
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The Snapshot restore operation of the file system on raw LUN fails after performing a Snapshot connect operation on a non-originating host.
+
+When the cloned LUN is connected to the same filespec in a Snapshot copy and then you try to execute the snapdrive snap restore command, the following error message appears.
+
+----
+"0001-034 Command error: mount failed: mount: <device name> is not
+a valid block device"
+----
+
+The command fails because the iSCSI daemon remaps the device entry for the restored LUN when you delete the cloned LUN.
+
+== Workaround
+
+You can do any of the following:
+
+* Execute the snapdrive snap restore command again.
+* Delete the connected LUN (if it is mounted on the same filespec as in Snapshot copy) before trying to restore a Snapshot copy of an original LUN.

@@ -1,0 +1,155 @@
+---
+permalink: solaris/task_enabling_multipathing.html
+sidebar: sidebar
+keywords: SnapDrive for UNIX
+summary: 'To use multipathing in SnapDrive for UNIX, you must complete steps that include installing and starting the HBA. If you are using a non-NetApp multipathing solution, you must download the software and application package from the HBA vendor’s web site.'
+---
+= Enabling multipathing
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To use multipathing in SnapDrive for UNIX, you must complete steps that include installing and starting the HBA. If you are using a non-NetApp multipathing solution, you must download the software and application package from the HBA vendor's web site.
+
+Your system must be running current versions of FC and iSCSI system components.
+
+http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
+
+. Install the supported HBAs before you install the appropriate Host Utilities software.
++
+NOTE: SnapDrive for UNIX supports multivendor HBAs.
+
+. Start the HBA service.
++
+If the HBA service is not running, the following error message is displayed when you run SnapDrive for UNIX commands, such as snapdrive storage create and snapdrive config prepare luns:
++
+----
+0001-876 Admin error: HBA assistant not found
+----
++
+You must verify that the required number of paths are up and running. You can verify the paths by using the sanlun utility, which is included with the Host Utilities software. For example, in the FC multipathing configuration, you can use the sanlun fcp show adapter -v command.
++
+In the following example, there are two HBA ports (fcd0 and fcd1) connected to the host that are operational (port state). You can have only one HBA or iSCSI initiator and you must configure multipathing by providing more than one path to the target LUNs.
++
+----
+# sanlun fcp show adapter -v
+adapter name: fcd0
+WWPN: 50060b000038c428
+WWNN: 50060b000038c429
+driver name: fcd
+model: A6826A
+model description: Fibre Channel Mass Storage Adapter
+(PCI/PCI-X)
+serial number: Not Available
+hardware version: 3
+driver version: @(#) libfcd.a HP Fibre Channel
+ISP 23xx & 24xx Driver B.11.23.04
+/ux/core/isu/FCD/kern/src/common/wsio/fcd_init.c:Oct 18
+2005,08:19:50
+firmware version: 3.3.18
+Number of ports: 1 of 2
+port type: Fabric
+port state: Operational
+supported speed: 2 GBit/sec
+negotiated speed: 2 GBit/sec
+OS device name: /dev/fcd0
+adapter name: fcd1
+WWPN: 50060b000038c42a
+WWNN: 50060b000038c42b
+driver name: fcd
+model: A6826A
+model description: Fibre Channel Mass Storage Adapter
+(PCI/PCI-X)
+serial number: Not Available
+hardware version: 3
+driver version: @(#) libfcd.a HP Fibre Channel
+ISP 23xx & 24xx Driver B.11.23.04
+/ux/core/isu/FCD/kern/src/common/wsio/fcd_init.c:Oct 18
+2005,08:19:50
+firmware version: 3.3.18
+Number of ports: 2 of 2 port type: Fabric
+port state: Operational
+supported speed: 2 GBit/sec
+negotiated speed: 2 GBit/sec
+OS device name: /dev/fcd1
+----
++
+If multipathing is enabled on a host, multiple paths are visible for the same LUN. You can use the sanlun lun show all command to verify the paths. In the following example, you can find multiple paths to the same LUN (fish: /vol/vol1/lun):
++
+----
+# sanlun lun show all
+filer: lun-pathname device filename adapter protocol lun size      lun state
+fish: /vol/vol1/lun /dev/rdsk/c15t0d0 fcd0 FCP       10m (10485760) GOOD
+fish: /vol/vol1/lun /dev/rdsk/c14t0d0 fcd1 FCP       10m (10485760) GOOD
+----
+
+. In an FC configuration, zone the host HBA ports and target ports by using the switch zoning configuration.
+. Install and set up the appropriate FC or iSCSI switch.
+. Check the SnapDrive for UNIX stack requirements.
+. Install or upgrade SnapDrive for UNIX.
+. Verify the SnapDrive for UNIX installation.
+. Locate the snapdrive.conf file path.
+. Configure the following configuration variables in the snapdrive.conf file:
+ ** multipathing-type
+ ** default-transport
+ ** fstype
+ ** vmtype
+For every host, the multipathing type, transport type, file system, and volume manager type are dependent on each other. The following table describes all the possible combinations:
+
++
+|===
+| Host platform| Default transport type| Multipathing type| fstype| vmtype
+a|
+Solaris
+a|
+iscsi (hardware)
+a|
+none
+a|
+ufs
+a|
+none
+a|
+iscsi (software)
+a|
+mpxio
+a|
+ufs
+a|
+none
+a|
+none
+a|
+ufs
+a|
+svm
+a|
+FCP
+a|
+dmp
+a|
+vxfs
+a|
+vxvm
+a|
+FCP
+a|
+mpxio
+a|
+ufs
+a|
+svm
+|===
+The preceding table gives the supported values of the multipathing-type, default-transport, fstype, and vmtype configuration variables.
+. For the SFRAC environment, run the snapdrive config check cluster command.
+. Save the snapdrive.conf file.
++
+SnapDrive for UNIX automatically checks this file each time it starts. You must restart the SnapDrive for UNIX daemon for the changes to take effect.
+
+*Related information*
+
+http://mysupport.netapp.com[NetApp Support]
+
+https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1148981[Solaris Host Utilities 6.1 Installation and Setup Guide]

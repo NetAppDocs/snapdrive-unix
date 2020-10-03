@@ -1,0 +1,22 @@
+---
+permalink: solaris/concept_supported_fc_iscsi_or_nfs_configurations.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX supports host cluster and HA pair topologies. FC or iSCSI configurations support the same host cluster and HA pair configurations that the FC Host Utilities or iSCSI Host Utilities supports.'
+---
+= Supported FC, iSCSI, or NFS configurations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX supports host cluster and HA pair topologies. FC or iSCSI configurations support the same host cluster and HA pair configurations that the FC Host Utilities or iSCSI Host Utilities supports.
+
+SnapDrive for UNIX supports the following host cluster and HA pair topologies:
+
+* A stand-alone configuration in which a single host is connected to a single storage system
+* Any topology that involves HA pair failover of a storage system
+* Any topology that has host clusters supported by NetApp
+
+For more information about the recommended configurations for your host and the storage systems you are using, see the Solaris Host Utilities documentation.
+
+NOTE: If you need a SnapDrive for UNIX configuration that is not mentioned in the utilities documentation, contact technical support.

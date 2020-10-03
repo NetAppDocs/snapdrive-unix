@@ -1,0 +1,31 @@
+---
+permalink: linux-administration/concept_snapshot_copiesthat_span_storagesystems_orvolumes.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX enables you to take Snapshot copies that reside in multiple storage system volumes on the same or different storage systems.'
+---
+= Snapshot copies that span storage systems or volumes
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX enables you to take Snapshot copies that reside in multiple storage system volumes on the same or different storage systems.
+
+SnapDrive for UNIX allows you to take Snapshot copies that span across multiple storage system volumes or multiple storage systems. These volumes can reside on the same storage system or different storage systems. Although the snapdrive snap create command creates a Snapshot copy of all the volumes that comprise the entity you request, SnapDrive for UNIX restores only the entities that you specify in the snapdrive snap create command.
+
+When you use the snapdrive snap create command to make a Snapshot copy that spans multiple volumes, you do not need to name the volumes on the command prompt. SnapDrive for UNIX gets this information from the file_spec argument that you specify.
+
+* If the file_spec you enter requests a disk group, or a file system or host volume that resides on a disk group, SnapDrive for UNIX automatically creates a Snapshot copy that includes all the storage system volumes for the disk group, volume, or file system you specified.
+* If the file_spec you enter requests a LUN, SnapDrive for UNIX takes a Snapshot copy of the storage system volume that contains the LUN.
+* If the file_spec you enter requests a file system that resides directly on a LUN, SnapDrive for UNIX takes a Snapshot copy of the storage system volume that contains the LUN and file system that you specified.
+* If the file_spec you enter requests an NFS directory, SnapDrive for UNIX creates a Snapshot copy of the volume that contains the NFS directory tree.
+
+In addition to using a file_spec argument that is built on entities from multiple storage systems and storage system volumes, you can also use a combination of file_spec arguments where each value is based on single storage system or storage system volume. For example, suppose you have a setup where the disk group dg1 spans the storage systems storage system2 and storage system3, dg2 is on storage system2, and dg3 is on storage system3. In this case, any of the following command lines would be correct:
+
+snapdrive snap create -dg dg1 -snapname snapdg1
+
+snapdrive snap create -dg dg2 dg3 -snapname snapdg23
+
+snapdrive snap create -dg dg1 dg2 dg3 -snapname snapdg123
+
+Something to keep in mind when creating Snapshot copies that span storage systems and volumes is that SnapDrive for UNIX creates the Snapshot copy on each storage systems volume using a short name. It does not include the full path name in the name, even if the volumes are on different storage system. This means that if you later rename the Snapshot copy, you must go to each storage system and volume and rename it there as well.

@@ -1,0 +1,14 @@
+---
+permalink: linux-installation-cmode/task_verifying_the_snapshot_copy.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Verifying the Snapshot copy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can verify your Snapshot copy by restoring the data.
+
+For more information, see https://library.netapp.com/ecm/ecm_download_file/ECMLP2849340[SnapDrive 5.3.2 for UNIX Administration Guide for Linux].

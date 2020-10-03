@@ -1,0 +1,22 @@
+---
+permalink: linux-administration/task_disconnectingsnapshot_copy_withluns_and_nostorage_entities.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains LUNs having no storage entities.'
+---
+= Disconnecting Snapshot copy with LUNs and no storage entities
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains LUNs having no storage entities.
+
+. Enter the following command syntax: snapdrive snap disconnect -lunlong_lun_name [lun_name...]
+
+SnapDrive for UNIX removes the mappings for the storage entities specified in the command line.
+
+The following command removes the mappings to luna and lunb on the storage system toaster:
+
+----
+# snapdrive snap disconnect -lun toaster:/vol/vol1/luna lunb
+----

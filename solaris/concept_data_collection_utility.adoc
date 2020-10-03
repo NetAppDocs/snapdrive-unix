@@ -1,0 +1,14 @@
+---
+permalink: solaris/concept_data_collection_utility.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive Data collection utility is a troubleshooting tool that gathers information to diagnose the problems.'
+---
+= Data collection utility
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive Data collection utility is a troubleshooting tool that gathers information to diagnose the problems.
+
+SnapDrive for UNIX provides a data collection utility (snapdrive.dc) that collects diagnostic information about SnapDrive for UNIX, SnapDrive configuration checker, and your system setup.

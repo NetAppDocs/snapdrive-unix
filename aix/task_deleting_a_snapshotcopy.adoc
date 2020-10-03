@@ -1,0 +1,28 @@
+---
+permalink: aix/task_deleting_a_snapshotcopy.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use the snapdrive snap delete command to delete a Snapshot copy.'
+---
+= Deleting a Snapshot copy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use the snapdrive snap delete command to delete a Snapshot copy.
+
+. Enter the following command: snapdrive snap delete [-snapname]long_snap_name [snap_name...] [-verbose] [-force [-noprompt]]
++
+NOTE: If the Snapshot copy you specify is in use, this operation fails. SnapDrive for UNIX reports that this operation has completed successfully only, if all the Snapshot copies are removed.
+
+SnapDrive for UNIX deletes the existing contents of the LUNs you specify in the snap delete command line and replaces them with the contents of the LUNs in the Snapshot copy you specify.
+
+This example displays a list of what is being deleted:
+
+----
+# snapdrive snap delete -v filer1:/vol/vol1/snap1 snap2 snap3
+snapdrive: deleting
+filer1:/vol/vol1/snap1
+filer1:/vol/vol1/snap2
+filer1:/vol/vol1/snap3
+----

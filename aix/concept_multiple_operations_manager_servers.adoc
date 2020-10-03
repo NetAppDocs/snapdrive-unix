@@ -1,0 +1,31 @@
+---
+permalink: aix/concept_multiple_operations_manager_servers.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX supports multiple Operations Manager console servers. This feature is required when a group of storage systems is managed by more than one Operations Manager console server. SnapDrive for UNIX contacts the Operations Manager console servers in the same order that the Operations Manager console servers are configured in SnapDrive for UNIX. You can run the snapdrive config list command to obtain the configuration order.'
+---
+= Multiple Operations Manager console servers
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX supports multiple Operations Manager console servers. This feature is required when a group of storage systems is managed by more than one Operations Manager console server. SnapDrive for UNIX contacts the Operations Manager console servers in the same order that the Operations Manager console servers are configured in SnapDrive for UNIX. You can run the snapdrive config list command to obtain the configuration order.
+
+The following example shows output for multiple Operations Manager console servers:
+
+----
+# snapdrive config list
+username    appliance name     appliance type
+---------------------------------------------
+root        storage_array1     StorageSystem
+root        storage_array2     StorageSystem
+sd-admin    ops_mngr_server1   DFM
+sd-admin    ops_mngr_server2   DFM
+----
+
+In the preceding example, storage_array1 is managed by ops_mngr_server1 and storage_array2 is managed by ops_mngr_server2. In this example, SnapDrive for UNIX contacts ops_mngr_server1 first. If ops_mngr_server1 is not able to determine access, SnapDrive for UNIX contacts ops_mngr_server2.
+
+SnapDrive for UNIX contacts the second Operations Manager console only under the following conditions:
+
+* When the first Operations Manager console is unable to determine access. This situation might occur because the first Operations Manager console is not managing the storage system.
+* When the first Operations Manager console is down.

@@ -1,0 +1,96 @@
+---
+permalink: aix/concept_informationrequired_forusing_the_snapdrive_snaprestore_command.html
+sidebar: sidebar
+keywords: 
+summary: 'To restore a Snapshot copy, determine which storage entity you want to restore, specify the name of the Snapshot copy, and so on.'
+---
+= Information required for using the snapdrive snap restore command
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To restore a Snapshot copy, determine which storage entity you want to restore, specify the name of the Snapshot copy, and so on.
+
+The following table gives the information you need to supply when you use the snapdrive snap restore command.
+
+|===
+| Requirement/Option| Argument
+a|
+Decide the type of storage entity that you wish to restore and enter that entity's name with the appropriate argument.
+
+* If you specify a host volume or file system to be restored, the argument you give is translated to the disk group containing it. SnapDrive for UNIX then restores the entire disk group. SnapDrive for UNIX freezes any file systems in host volumes in those disk groups and takes a Snapshot copy of all storage system volumes containing LUNs in those disk groups.
+* If you specify a file specification that is an NFS mountpoint, the argument translates to a directory tree. SnapDrive for UNIX restores only the NFS directory tree or file. Within the directory tree, SnapDrive for UNIX deletes any new NFS files or directories that you created after you created the Snapshot copy. This ensures that the state of the restored directory tree will be the same as when the Snapshot copy of the tree was made.
+* If you restore a LUN, SnapDrive for UNIX restores the LUN you specify.
+* If you restore a file system that is created directly on a LUN, SnapDrive for UNIX restores the LUN and the file system.
+* If the Snapshot copy contains storage entities that span multiple storage system volumes, you can restore any of the entities in that Snapshot copy.
+
+a|
+LUN (-lunfile_spec)
+a|
+_name of the LUN. You must include the name of the storage system, volume, and LUN._
+a|
+Disk group (-dgfile_spec c) or volume group (-vgfile_spec )
+
+a|
+_name of the disk or volume group_
+a|
+File system (-fsfile_spec )
+a|
+_name of the file system_
+a|
+File (-filefile_spec )
+a|
+_name of the NFS file_
+a|
+Host volume (-hostvolfile_spec ) or logical volume (-lvolfile_spec )
+a|
+_name of the host or logical volume. You must supply both the requested volume and the disk group containing it; for example, - hostvol dg3/acct_volume._
+a|
+Specify the name for the Snapshot copy. If any of the file_spec arguments you supply at the command prompt currently exist on the local host, you can use a short form of the Snapshot copy name. If none of the file_spec arguments exist on the host, you must use a long form of the Snapshot copy name where you enter the storage system name, volume, and Snapshot copy name. If you use a long name for the Snapshot copy and the path name does not match the storage system and/or storage volume information at the command prompt, SnapDrive for UNIX fails. The following is an example of a long Snapshot copy name: big_filer:/vol/account_vol:snap_20031115
+
+Sometimes, the value supplied with the file_spec argument might not exist on the host. For example, if you had unmounted a file system or removed a disk group by exporting, deporting, or destroying, that file system or disk group could still be a value for the file_spec argument. It would, however, be considered a non-existent value. SnapDrive for UNIX can restore Snapshot copies for such a non-existent file_spec, but you must use the long Snapshot copy name.
+
+When you restore Snapshot copies that span multiple storage systems and volumes, and contain a nonexistent file_spec argument, SnapDrive for UNIX permits an inconsistency in the command line. It does not allow for existing file_spec arguments. If you want to restore only one storage entity from a multiple storage system Snapshot copy, the Snapshot copy you specify does not need to be on the same storage system as the storage system containing the storage entity.
+
+The short form of the same Snapshot copy name would omit the storage system and storage system volume name, so it would appear as: snap_20031115
+
+a|
+Snapshot copy name (-snapname)
+a|
+snap_name
+a|
+It can be either a short name, such as mysnap1, or a long name that includes the storage system name, volume, and Snapshot copy name. Generally, NetApp recommends that you use the short name. If the file_spec argument is non-existent: that is, it no longer exists on the host; see the explanation of the file_spec argument. Then you must use the long name for the Snapshot copy.
+
+a|
+-reserve | -noreserve
+a|
+ 
+a|
+Optional: If you want SnapDrive for UNIX to create a space reservation when you restore the Snapshot copy.
+
+a|
+-force
+a|
+~
+a|
+-noprompt
+a|
+~
+a|
+Optional: Decide if you want to overwrite an existing Snapshot copy. Without this option, this operation halts if you supply the name of an existing Snapshot copy. When you supply this option and specify the name of an existing Snapshot copy, it prompts you to confirm that you want to overwrite the Snapshot copy. To prevent SnapDrive for UNIX from displaying the prompt, include the -noprompt option also. (You must always include the -force option if you want to use the -noprompt option.) You must include the -force option at the command prompt if you attempt to restore a disk group where the configuration has changed since the last Snapshot copy. For example, if you changed the way data is striped on the disks since you took a Snapshot copy, you would need to include the -force option. Without the -force option, this operation fails. This option asks you to confirm that you want to continue the operation unless you include the -noprompt option with it.
+
+NOTE: If you added or deleted a LUN, the restore operation fails, even if you include the -force option.
+
+a|
+mntopts
+a|
+~
+a|
+*Optional:* If you are creating a file system, you can specify the following options:
+
+* Use -mntopts to specify options that you want to pass to the host mount command (for example, to specify host system logging behavior). The options you specify are stored in the host file system table file. Allowed options depend on the host file system type.
+* The-mntopts argument is a file system -type option that is specified using the mount command -o flag. Do not include the -o flag in the -mntopts argument. For example, the sequence -mntopts tmplog passes the string -otmplog to the mount command, and inserts the text tmplog on a new command line.
++
+NOTE: If you pass any invalid -mntopts options for storage and snap operations, SnapDrive for UNIX does not validate those invalid mount options.
+
+|===

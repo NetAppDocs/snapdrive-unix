@@ -1,0 +1,21 @@
+---
+permalink: linux-administration/task_deleting_a_storage_system_entry.html
+sidebar: sidebar
+keywords: 
+summary: 'You can delete the storage system mapping information from the host system.'
+---
+= Deleting the storage system mapping information from the host system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can delete the storage system mapping information from the host system.
+
+. Enter the following command: snapdrive config migrate deletenew_storage_system_name [new_storage_system_name...]
+ ** new_storage_system_name is the name of the new storage system.
+ ** [new_storage_system_name...] defines that you can delete multiple storage system names on one command line.
++
+----
+snapdrive config migrate delete roaster
+Deleted entry for appliance: roaster
+----

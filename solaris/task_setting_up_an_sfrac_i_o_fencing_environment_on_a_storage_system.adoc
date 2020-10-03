@@ -1,0 +1,48 @@
+---
+permalink: solaris/task_setting_up_an_sfrac_i_o_fencing_environment_on_a_storage_system.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX provides storage provisioning and Snapshot management options to manage host cluster-wide shared and node-local disk groups, and file systems in an SFRAC environment.'
+---
+= Setting up an SFRAC I/O fencing environment on a storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX provides storage provisioning and Snapshot management options to manage host cluster-wide shared and node-local disk groups, and file systems in an SFRAC environment.
+
+. Set up rsh or ssh manually to use the access-without-password-prompt for the root user on all host cluster nodes.
++
+For setup instructions, see the _Veritas Cluster Server Installation Guide for Solaris_.
+
+. Install SnapDrive for UNIX on all the nodes in the host cluster.
++
+If different versions of SnapDrive for UNIX are installed on different nodes, SnapDrive for UNIX operations fail.
+
+. Check the FC connectivity among the storage systems.
++
+To learn about hardware requirements for hosts, see the SFRAC _Release Notes_.
++
+NOTE: The /opt/NTAPsnapdrive/snapdrive.conf file on all the nodes must have the default-transportconfiguration variable set to FCP.
+
+. Set a value for the secure-communication-among-cluster-nodesconfiguration variable, to ensure that the rsh or ssh access-without-password-prompt for the root user is configured for all nodes in the cluster.
++
+This value is necessary because, if you initiate the SnapDrive for UNIX commands from any node (master or nonmaster) in the host cluster, SnapDrive for UNIX carries out operations on other nodes in the host cluster.
+
+. Check for device discovery on the host cluster nodes by executing the following command on each node in the host cluster: snapdrive storage create -lun long_lun_name [lun_name...] -lunsize size [{-reserve | -noreserve}] [-igroupig_name [ig_name ...]]
++
+----
+
+	# snapdrive storage create -lun f270-197-109:/vol/vol2/luntest -lunsize 20m
+
+		LUN f270-197-109:/vol/vol2/luntest ... created
+
+		mapping new lun(s) ... done
+		discovering new lun(s) ... done
+
+		LUN to device file mappings:
+	-f270-197-109:/vol/vol2/luntest => /dev/vx/dmp/c5t0d6s2
+
+	# snapdrive storage delete -lun f270-197-109:/vol/vol2/luntest -lunsize 20m
+	- LUN f270-197-109:/vol/vol2/luntest ... deleted
+----

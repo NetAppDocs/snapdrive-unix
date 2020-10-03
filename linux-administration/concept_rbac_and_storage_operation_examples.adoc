@@ -1,0 +1,12 @@
+---
+permalink: linux-administration/concept_rbac_and_storage_operation_examples.html
+sidebar: sidebar
+keywords: 
+summary: 'Role-based access control allows storage operations depending on the capabilities assigned to you. You receive an error message if you do not have the right capabilities to carry out the storage operation.'
+---
+= RBAC and storage operation examples
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Role-based access control allows storage operations depending on the capabilities assigned to you. You receive an error message if you do not have the right capabilities to carry out the storage operation.

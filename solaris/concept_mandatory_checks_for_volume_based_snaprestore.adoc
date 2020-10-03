@@ -1,0 +1,27 @@
+---
+permalink: solaris/concept_mandatory_checks_for_volume_based_snaprestore.html
+sidebar: sidebar
+keywords: 
+summary: 'Before volume based SnapRestore is carried out, SnapDrive for UNIX does some mandatory checks with the system. These checks are required so that volume based SnapRestore is used safely. The mandatory checks cannot be over-ridden by the user.'
+---
+= Mandatory checks for volume-based SnapRestore
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Before volume based SnapRestore is carried out, SnapDrive for UNIX does some mandatory checks with the system. These checks are required so that volume based SnapRestore is used safely. The mandatory checks cannot be over-ridden by the user.
+
+The following are the mandatory checks which SnapDrive for UNIX makes before implementing volume-based SnapRestore:
+
+* Volume-based SnapRestore works only with Snapshots which are created using SnapDrive for UNIX.
+* The volume in volume-based SnapRestore should not be a storage system's root volume.
+* SnapDrive for UNIX checks for volume clones. It does not allow the volume restore operation if there are any volume clones from new Snapshot copies. This is a limitation imposed by Data ONTAP.
+* The volume in volume-based SnapRestore should not have any mapped LUNs apart from the LUNs specified (raw LUN or LUNs present in file system, disk group or host volume) for restore.
+* SnapDrive for UNIX checks whether the volume exists in a SnapMirror relationship.
+* SnapDrive for UNIX checks whether the volume exists in a SnapVault relationship.
+
+The SnapMirror and SnapVault checks can be overridden if SnapDrive for UNIX is using Operations Manager for RBAC and user has SD.SnapShot.DisruptBaseline capability on volume. For more information about the specific RBAC capability for user to override these checks, you can see Role Based Access Control in SnapDrive for UNIX.
+
+*Related information*
+
+xref:concept_role_based_access_control_in_snapdrive_for_unix.adoc[Role-based access control in SnapDrive for UNIX]

@@ -1,0 +1,21 @@
+---
+permalink: solaris/concept_increase_in_storage_size_using_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX lets you increase the size of the storage system volume group or disk group. You use the snapdrive storage resize command to do this.'
+---
+= Increase in storage size using SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX lets you increase the size of the storage system volume group or disk group. You use the snapdrive storage resize command to do this.
+
+NOTE: This command does not let you resize host volumes or file systems. For example, you cannot use the resize command to change the size of a file system on a LUN. You need to use the LVM commands to resize host volumes and file systems after you have resized the underlying disk group.
+
+You can put the storage resize operations into the following general categories:
+
+* Setting a target size in bytes to which you want to increase the storage
+* Specifying a number of bytes by which you want to increase the storage
+
+SnapDrive for UNIX adds a system-generated LUN. If you specify an amount by which you want to increase the storage, such as 50 MB, it makes the LUN 50 MB. If you specify a target size for the storage, it calculates the difference between the current size and the target size. The difference becomes the size of the LUN it then creates.

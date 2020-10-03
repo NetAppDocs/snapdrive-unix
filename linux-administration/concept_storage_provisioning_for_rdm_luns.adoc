@@ -1,0 +1,34 @@
+---
+permalink: linux-administration/concept_storage_provisioning_for_rdm_luns.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX enables you to disconnect and connect the RDM LUNs before and after VMware VMotion. After the VMotion operation is complete, you can perform the storage operations that are required for your storage system.'
+---
+= VMware VMotion support in SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX enables you to disconnect and connect the RDM LUNs before and after VMware VMotion. After the VMotion operation is complete, you can perform the storage operations that are required for your storage system.
+
+*About VMware VMotion:*
+
+VMware VMotion enables you to move a guest system from one ESX server to another ESX server.
+
+The following operations must be executed to disconnect and connect the RDM LUNs in SnapDrive for UNIX.
+
+*Before VMotion*
+
+You need to use the snapdrive storage disconnect command to remove the mappings for the RDM LUNs. The following syntax: snapdrive storage disconnect -lunlong_lun_name[lun_name...]
+
+*After VMotion*
+
+After the VMotion is complete, you must use the snapdrive storage connect command to connect RDM LUNs. The following syntax: snapdrive storage connect -lunlong_lun_name[lun_name...]
+
+*Related information*
+
+xref:concept_limitations_of_rdm_luns_managed_by_snapdrive.adoc[Limitations of RDM LUNs managed by SnapDrive]
+
+xref:task_configuring_virtual_storage_console_in_snapdrive_for_unix.adoc[Configuring Virtual Storage Console for SnapDrive for UNIX]
+
+xref:task_considerations_for_provisioning_rdm_luns.adoc[Considerations for provisioning RDM LUNs]

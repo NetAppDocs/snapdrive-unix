@@ -1,0 +1,18 @@
+---
+permalink: solaris/task_resetting_the_snap_reserve_option_by_using_filerview.html
+sidebar: sidebar
+keywords: 
+summary: 'When you use Data ONTAP in an FC or iSCSI environment, you should reset the snap reserve option to 0 percent by using FilerView.'
+---
+= Resetting the snap reserve option by using FilerView
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you use Data ONTAP in an FC or iSCSI environment, you should reset the snap reserve option to 0 percent by using FilerView.
+
+. Open a FilerView session to the storage system holding the volume whose snap reserve setting is to be changed.
+. From the main FilerView, navigate to *Volumes* > *Snapshot* > *Configure*.
+. In the *Volume* field, select the volume whose snap reserve setting is to be changed.
+. In the *Snapshot Reserve* field, enter 0.
+. Click *Apply*.

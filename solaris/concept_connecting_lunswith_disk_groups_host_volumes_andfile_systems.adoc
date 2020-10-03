@@ -1,0 +1,34 @@
+---
+permalink: solaris/concept_connecting_lunswith_disk_groups_host_volumes_andfile_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'To use the snapdrive storage connect command to connect LUNs that have disk groups, host volumes and file systems, you need to follow the syntax.'
+---
+= Connecting LUNs with disk groups, host volumes, and file systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To use the snapdrive storage connect command to connect LUNs that have disk groups, host volumes and file systems, you need to follow the syntax.
+
+Enter the following command: snapdrive storage connect-fsfile_spec -hostvolfile_spec -lunlong_lun_name [lun_name...] [-igroupig_name [ig_name...]] [-nopersist] [-mntoptsoptions] [-fstypetype] [-vmtypetype]
+
+== Example: Connecting a file system created on a LUN
+
+----
+# snapdrive storage connect -fs /mnt/fs -lun f270-221-189:/vol/vol0/lun111 -nolvm
+mapping lun(s) ... done
+discovering lun(s) ... done
+LUN f270-221-189:/vol/vol0/lun111 connected
+- device filename(s): /dev/vx/dmp/fas2700_939
+----
+
+== Example: Connecting a file system created on a RDM LUN
+
+----
+# snapdrive storage connect -fs /mnt/fs -lun lech:/vol/vol1/lun1 -nolvm
+exporting new lun(s) to Guest OS ... done
+discovering lun(s) ... done
+LUN lech:/vol/vol1/lun1 connected
+- device filename(s): /dev/sdb
+----

@@ -1,0 +1,14 @@
+---
+permalink: solaris/task_recieving_error_does_not_look_snapdrive_generated.html
+sidebar: sidebar
+keywords: 
+summary: 'In some cases, snapdrive snap disconnect operation fails to delete cloned volume and the error message does not look SnapDrive-generated appears.'
+---
+= Snap disconnect operation fails to delete cloned volume
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+In some cases, snapdrive snap disconnect operation fails to delete cloned volume and the error message does not look SnapDrive-generated appears.
+
+The workaround for the problem is to revert to the original name of the Snapshot copy, and ensure that the bypass-snapdrive-clone-generated-check is set to on in the snapdrive.conf file.

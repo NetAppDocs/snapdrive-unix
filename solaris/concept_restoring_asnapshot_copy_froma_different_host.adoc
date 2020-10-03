@@ -1,0 +1,14 @@
+---
+permalink: solaris/concept_restoring_asnapshot_copy_froma_different_host.html
+sidebar: sidebar
+keywords: 
+summary: 'Use the snapdrive snap restore command to restore a Snapshot copy from a different host.'
+---
+= Restoring a Snapshot copy from a different host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use the snapdrive snap restore command to restore a Snapshot copy from a different host.
+
+Usually, you can restore a Snapshot copy from the host where you took the Snapshot copy. Occasionally, you might need to restore a Snapshot copy using a different or non-originating host. To restore a Snapshot copy using a non-originating host, use the same snapdrive snap restore command that you would normally use. If the Snapshot copy you restore contains NFS entities, the non-originating host must have permission to access the NFS directory.

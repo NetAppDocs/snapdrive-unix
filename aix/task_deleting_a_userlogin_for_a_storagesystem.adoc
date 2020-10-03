@@ -1,0 +1,22 @@
+---
+permalink: aix/task_deleting_a_userlogin_for_a_storagesystem.html
+sidebar: sidebar
+keywords: 
+summary: 'You can delete a user login for one or more storage systems, by executing the snapdrive config delete command.'
+---
+= Deleting a user login for a storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can delete a user login for one or more storage systems, by executing the snapdrive config delete command.
+
+Ensure that you are logged in as a root user.
+
+. Enter the following command: snapdrive config delete appliance_name [appliance_name]
++
+appliance_name is the name of the storage system for which you want to delete the user login information.
++
+SnapDrive for UNIX removes the user name or password login information for the storage systems you specify.
++
+NOTE: To enable SnapDrive for UNIX to access the storage system, you must specify a new user login.

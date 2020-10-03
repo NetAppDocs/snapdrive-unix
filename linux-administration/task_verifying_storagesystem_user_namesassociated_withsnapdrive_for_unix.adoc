@@ -1,0 +1,28 @@
+---
+permalink: linux-administration/task_verifying_storagesystem_user_namesassociated_withsnapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'You can verify which user name SnapDrive for UNIX has associated with a storage system by executing the snapdrive config list command.'
+---
+= Verifying storage system user names associated with SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can verify which user name SnapDrive for UNIX has associated with a storage system by executing the snapdrive config list command.
+
+You must have logged in as root user.
+
+. Enter the following command: snapdrive config list
++
+This command displays the user name or storage system pairs for all systems that have users specified within SnapDrive for UNIX. It does not display the passwords for the storage systems.
++
+This example displays the users associated with the storage systems named rapunzel and medium storage system:
++
+----
+# snapdrive config list
+user name           storage system name
+-----------------------------
+rumplestiltskins    rapunzel
+longuser            mediumstoragesystem
+----

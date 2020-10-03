@@ -1,0 +1,28 @@
+---
+permalink: solaris/concept_using_the_snapshotdisconnectoperation.html
+sidebar: sidebar
+keywords: 
+summary: 'Use the snapdrive snap disconnect command to disconnect a Snapshot copy that is across multiple storage systems or storage system volumes.'
+---
+= Using the Snapshot disconnect operation
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Use the snapdrive snap disconnect command to disconnect a Snapshot copy that is across multiple storage systems or storage system volumes.
+
+You use the snapdrive snap disconnectcommand to remove the mappings for LUNs, or for storage entities and the underlying LUNs, or for NFS directories in the Snapshot copy.
+
+You can use this command to disconnect Snapshot copies that span multiple storage system volumes or multiple storage systems. The storage entities and volumes can reside on the same storage system or different storage systems.
+
+Use this command to disconnect any of the following:
+
+* LUNs
+* A file system created directly on a LUN
+* Disk groups, host volumes, and file systems created on LUNs
+* NFS directory trees
+* Shared disk groups, host volumes, and file systems created on LUNs
+
+The disconnect operation does not modify the connected Snapshot copy. However, by default, the operation does delete any temporary LUNs or clones created by the corresponding connect operation.
+
+NOTE: For LUNs, file systems on LUNs, and LVM entities, this command is equivalent to snapdrive storage delete.

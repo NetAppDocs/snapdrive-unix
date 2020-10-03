@@ -1,0 +1,14 @@
+---
+permalink: linux-administration/concept_command_syntax_for_disconnectingluns_from_the_host.html
+sidebar: sidebar
+keywords: 
+summary: 'To use the snapdrive storage disconnect command to remove the mappings for the LUNs you specify, use the following syntax:'
+---
+= Command syntax for disconnecting LUNs from the host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To use the snapdrive storage disconnect command to remove the mappings for the LUNs you specify, use the following syntax:
+
+snapdrive storage disconnect -lun long_lun_name [lun_name...]

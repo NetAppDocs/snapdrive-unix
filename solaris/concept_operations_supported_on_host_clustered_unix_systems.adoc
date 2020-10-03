@@ -1,0 +1,16 @@
+---
+permalink: solaris/concept_operations_supported_on_host_clustered_unix_systems.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX on host clustered UNIX systems enables you to create storage and perform Snapshot operations on a host cluster-wide shared storage.'
+---
+= Operations supported on host clustered UNIX systems
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX on host clustered UNIX systems enables you to create storage andperform Snapshot operations on a host cluster-wide shared storage.
+
+Snapshot operations are performed on a storage system that includes disk groups, file systems, and LUNs. You can perform Snapshot operations such as create, rename, restore, connect, disconnect, display, and delete.
+
+NOTE: The operations for host clustered systems are available only for Veritas SFRAC on a Solaris host.

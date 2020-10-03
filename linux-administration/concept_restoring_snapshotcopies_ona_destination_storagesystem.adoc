@@ -1,0 +1,27 @@
+---
+permalink: linux-administration/concept_restoring_snapshotcopies_ona_destination_storagesystem.html
+sidebar: sidebar
+keywords: 
+summary: 'You can restore Snapshot copies on the storage system from which it is created.'
+---
+= Restoring Snapshot copies on a destination storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can restore Snapshot copies on the storage system from which it is created.
+
+When you create a Snapshot copy on a destination storage system, the Snapshot copy is automatically replicated, from the source system, where it is created to the destination storage system. SnapDrive for UNIX allows you to restore the Snapshot copy on the source storage system. You can also restore the Snapshot copy on the destination storage system.
+
+If you are performing a single file snap restore in a SnapMirror relationship, then the source and destination volume names should not be the same. SnapDrive for UNIX displays the following error message if the source and destination volume name are the same:
+
+----
+0001-636 Command error: Snapdrive cannot restore LUNs on SnapMirror
+destination filer volumes: <filer-vol-name>
+----
+
+In SnapDrive 4.0 for UNIX and later, if Role Based Access Control is enabled, then you can perform snap restore on vFiler unit only when you have the Snapshot Restore capability on the vFiler unit.
+
+*Related information*
+
+xref:concept_role_based_access_control_in_snapdrive_for_unix.adoc[Role-based access control in SnapDrive for UNIX]

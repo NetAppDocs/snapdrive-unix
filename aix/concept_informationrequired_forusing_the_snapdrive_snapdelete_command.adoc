@@ -1,0 +1,47 @@
+---
+permalink: aix/concept_informationrequired_forusing_the_snapdrive_snapdelete_command.html
+sidebar: sidebar
+keywords: 
+summary: 'To delete a Snapshot copy, specify the name of the Snapshot copy to be deleted. Using the snapdrive snap delete command you can view the list of Snapshot copies that are deleted.'
+---
+= Information required for using the snapdrive snap delete command
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To delete a Snapshot copy, specify the name of the Snapshot copy to be deleted. Using the snapdrive snap delete command you can view the list of Snapshot copies that are deleted.
+
+The following table gives the information about the snapdrive snap delete command.
+
+|===
+| Requirement/Option| Argument
+a|
+Specify the name for the Snapshot copy. Use the long form of the Snapshot copy name where you enter the storage system name, volume, and Snapshot copy name. The following is an example of a long Snapshot copy name:big_filer:/vol/account_vol:snap_20031115If you want to specify additional Snapshot copies, you can use the short form of the name if they are on the same storage system and volume as the first Snapshot copy. Otherwise, use the long form of the name again.
+
+a|
+Snapshot copy name (-snapname)
+a|
+long_Snapshot copy_name
+a|
+Additional Snapshot copies
+a|
+Snapshot copy_name(either long or short form)
+a|
+-verbose
+a|
+~
+a|
+To display a list of the Snapshot copies that is deleted, include the -verbose option. This option fills in the missing storage system and volume information in case where you used the short form of the Snapshot copy name.
+
+a|
+-force
+a|
+~
+a|
+-noprompt
+a|
+~
+a|
+Optional: Decide if you want to overwrite an existing Snapshot copy. Without this option, this operation halts if you supply the name of an existing Snapshot copy. When you supply this option and specify the name of an existing Snapshot copy, it prompts you to confirm that you want to overwrite the Snapshot copy. To prevent SnapDrive for UNIX from displaying the prompt, include the -noprompt option also. (You must always include the -force option if you want to use the -noprompt option.)
+
+|===

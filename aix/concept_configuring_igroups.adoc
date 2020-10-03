@@ -1,0 +1,14 @@
+---
+permalink: aix/concept_configuring_igroups.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX allows you to configure an igroup that exists on the storage system. The configured igroup is used to map the LUNs on the storage system. You must configure an igroup for a storage system for seamless migration in a virtualized environment.'
+---
+= Configuring igroups
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX allows you to configure an igroup that exists on the storage system. The configured igroup is used to map the LUNs on the storage system. You must configure an igroup for a storage system for seamless migration in a virtualized environment.
+
+NOTE: The igroups must contain the source initiator and the destination initiator.

@@ -1,0 +1,35 @@
+---
+permalink: linux-administration/concept_considerations_when_working_with_snapshot_copies.html
+sidebar: sidebar
+keywords: 
+summary: 'There are certain considerations that you should keep in mind when using a Snapshot copy, such as the fact that SnapDrive for UNIX works only with Snapshot copies that it creates, or that Snapshot copies are automatically replicated from the storage system to the host, and so on.'
+---
+= Considerations when working with Snapshot copies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+There are certain considerations that you should keep in mind when using a Snapshot copy, such as the fact that SnapDrive for UNIX works only with Snapshot copies that it creates, or that Snapshot copies are automatically replicated from the storage system to the host, and so on.
+
+When working with Snapshot operations, you should consider the following:
+
+* SnapDrive for UNIX works only with Snapshot copies that it creates.
++
+It cannot restore Snapshot copies that it did not create.
+
+* When you create a Snapshot copy on a destination storage system, the Snapshot copy is automatically replicated from the source storage system on which it is created to the destination storage system.
++
+SnapDrive for UNIX enables you to restore the Snapshot copy on the destination storage system as well.
+
+* Connecting to the originating host occurs when you use the snapdrive snap connect command to connect to a Snapshot copy at a new location on the same host where it was last connected (or is still connected).
+* On Linux hosts, SnapDrive 3.0 for UNIX and later supports Snapshot connect operations on the originating host, unless the LUN or a LUN with a file system is part of the Linux LVM1 volume manager.
+* In Data ONTAP operating in 7-Mode, SnapDrive supports symbolic links that reside inside a mount point.
+* Snapshot support for storage entities spanning multiple storage system volumes or multiple storage systems is limited on configurations that do not allow a freeze operation in the software stack.
+* When you export the volume through the NFS protocol, you must set the Anonymous User ID option to 0 for the SnapDrive for UNIX commands to work.
+* A Single-File SnapRestore (SFSR) operation followed immediately by the creation of a Snapshot copy fails.
++
+You must retry the operation after some time passes. For more information, see the _Clustered Data ONTAP Logical Storage Management Guide_.
+
+*Related information*
+
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide]

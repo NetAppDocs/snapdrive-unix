@@ -1,0 +1,34 @@
+---
+permalink: aix/concept_reason_to_refresh_the_dmp_paths.html
+sidebar: sidebar
+keywords: 
+summary: 'On hosts with FC and DMP configurations, the snapdrive storage delete - lun command can hang.'
+---
+= Reason to refresh the DMP paths
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+On hosts with FC and DMP configurations, the snapdrive storage delete - lun command can hang.
+
+The command may hang because of inappropriate installation or configuration of the following components:
+
+* NTAPasl
+* Veritas stack (storage foundation)
+* Multipathing licenses
+
+You must refresh the DMP paths information properly after any FC path is enabled, disabled, or added. To refresh the DMP paths, execute the following commands in the sequential manner as listed below.
+
+|===
+a|
+*Platform*
+a|
+*Command*
+a|
+AIX
+a|
+
+* cfgmg
+* vxdisk scandisk
+
+|===

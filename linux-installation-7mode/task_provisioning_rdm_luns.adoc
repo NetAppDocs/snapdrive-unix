@@ -1,0 +1,33 @@
+---
+permalink: linux-installation-7mode/task_provisioning_rdm_luns.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX enables you to create and provision RDM LUNs with the FC protocol enabled on a guest operating system in a VMware virtual environment. You can also provision RDM LUNs by using ONTAP.'
+---
+= Provisioning RDM LUNs
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX enables you to create and provision RDM LUNs with the FC protocol enabled on a guest operating system in a VMware virtual environment. You can also provision RDM LUNs by using ONTAP.
+
+* NetApp Virtual Storage Console (VSC) must be installed and configured with VMware vCenter™.
+* The backup and recovery capability of NetApp Virtual Storage Console for VMware vSphere™ must be installed in the Windows operating system that is registered with vCenter™.
+* default-transport must be set as fcp in the snapdrive.conf file, and the SnapDrive for UNIX daemon must be restarted.
+
+. Configure the guest operating system for creating an RDM LUN: snapdrive config set-viadminuserviadmin_name
+ ** user is the name of the virtual interface system.
+ ** viadmin_name is the name of the IP address of the virtual interface system.
+. Verify the login information for Virtual Storage Console: snapdrive config list
++
+This command displays the user name or virtual interface that is specified in SnapDrive for UNIX.
+
+. Verify that the guest operating system can communicate with the storage system: storage show-allcommand
+. Create an RDM LUN on the storage system: snapdrive storage create-lunlong_lun_name-lunsizesize_of_the_lun
+. Connect the RDM LUN to the host: snapdrive storage connect-lunlong_lun_name
+
+*Related information*
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2843698[Virtual Storage Console, VASA Provider, and Storage Replication Adapter for VMware vSphere Administration Guide for 7.2 release]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMP1368859[Data ONTAP 8.2 Storage Management Guide For 7-Mode]

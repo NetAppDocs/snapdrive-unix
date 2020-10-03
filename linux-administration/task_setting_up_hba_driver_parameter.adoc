@@ -1,0 +1,27 @@
+---
+permalink: linux-administration/task_setting_up_hba_driver_parameter.html
+sidebar: sidebar
+keywords: 
+summary: 'To set up HBA driver for Linux MPIO, the exact sequence of steps required depends on the operating system used. The setup also depends on the HBA card used.'
+---
+= Setting up HBA driver parameter
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To set up HBA driver for Linux MPIO, the exact sequence of steps required depends on the operating system used. The setup also depends on the HBA card used.
+
+The following steps are required to set up the HBA driver parameter for Linux MPIO:
+
+. Uninstall the built-in drivers.
+. Install the latest drivers from the vendor's web site.
+. Set the driver parameters using the vendor's CLI Configuration tool.
+. Edit the /etc/modprobe.conf file to set up default parameters for the HBA driver.
+. Regenerate the initrd (Ram Disk Image) with the HBA driver parameters.
+. Reboot the host for the new HBA Driver settings to be effective.
+
+*Related information*
+
+http://mysupport.netapp.com[NetApp Support]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936[Linux Unified Host Utilities 7.1 Installation Guide]

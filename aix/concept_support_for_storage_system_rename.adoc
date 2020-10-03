@@ -1,0 +1,14 @@
+---
+permalink: aix/concept_support_for_storage_system_rename.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive allows renaming of storage systems. If a Snapshot copy is created and the storage system is renamed after the copy was created, SnapDrive allows you to execute Snapshot operations as long as you have re-authenticated all of your clients \(hosts\).'
+---
+= Support for storage system rename
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive allows renaming of storage systems. If a Snapshot copy is created and the storage system is renamed after the copy was created, SnapDrive allows you to execute Snapshot operations as long as you have re-authenticated all of your clients (hosts).
+
+Snapshot operations such as restore, connect, disconnect, display, and delete continues to work in the host system only after you re-authenticate your clients. You must re-authenticate because the host name is used as part of the registry key to hold the password.

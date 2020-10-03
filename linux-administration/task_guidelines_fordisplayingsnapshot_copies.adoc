@@ -1,0 +1,24 @@
+---
+permalink: linux-administration/task_guidelines_fordisplayingsnapshot_copies.html
+sidebar: sidebar
+keywords: 
+summary: 'You can use wildcards to display the Snapshot copies. You can display all the Snapshot copies present in a specific object.'
+---
+= Guidelines for displaying Snapshot copies
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can use wildcards to display the Snapshot copies. You can display all the Snapshot copies present in a specific object.
+
+Keep the following points in mind, before working with Snapshot copies:
+
+* You can use the wildcard (*) character in Snapshot copy names. The Snapshot show operation lets you use the wildcard character to show all Snapshot copy names that match a certain pattern or all Snapshot copy names on a particular volume. The following rules apply while using wildcard in Snapshot copy names:
+ ** You can use a wildcard at the end of the name only. You cannot use the wildcard at the beginning or the middle of a Snapshot copy name.
+ ** You cannot use the wildcard in the storage system or storage system volume fields of a Snapshot copy name.
+* You can also use this command to list all of the Snapshot copies on specific objects, including storage systems and their volumes, disk groups, host volume groups, file systems, host volumes, and logical volumes.
+* If you enter a snapdrive snap show command and SnapDrive for UNIX does not locate any Snapshot copies, it displays the message "`no matching Snapshot copies.`" If you specify arguments on the command line, and some portions of them do not exist, SnapDrive for UNIX returns a partial listing of those for which Snapshot copies are found. It also lists the arguments that were invalid.
+* If the snapdrive snap create command is abruptly aborted, an incomplete .stoc.xml file is stored in the volume on the storage system. Due to this, all scheduled Snapshot copies made by the storage system will have a copy of the incomplete .stoc.xml file. For the snapdrive snap list command to work successfully, complete the following steps:
+
+. Delete the incomplete .stoc.xml file in the volume.
+. Delete the scheduled Snapshot copies made by the storage system containing the incomplete .stoc.xmlfile.

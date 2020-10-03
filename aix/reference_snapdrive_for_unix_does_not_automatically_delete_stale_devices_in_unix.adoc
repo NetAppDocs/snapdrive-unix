@@ -1,0 +1,16 @@
+---
+permalink: aix/reference_snapdrive_for_unix_does_not_automatically_delete_stale_devices_in_unix.html
+sidebar: sidebar
+keywords: SnapDrive for UNIX
+summary: 'Stale devices can be left behind in the Fibre Channel over Ethernet \(FCoE\) environment when SnapDrive for UNIX operations fail due to configuration issues. These stale devices are not automatically deleted, so you need to know the workaround.'
+---
+= SnapDrive for UNIX does not automatically delete stale devices in UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Stale devices can be left behind in the Fibre Channel over Ethernet (FCoE) environment when SnapDrive for UNIX operations fail due to configuration issues. These stale devices are not automatically deleted, so you need to know the workaround.
+
+== Workaround
+
+Run either the native rescan script provided by the vendor to remove all old entries or the rescan script using the rescan-scsibus.sh --r command that is included with sg3 packages.

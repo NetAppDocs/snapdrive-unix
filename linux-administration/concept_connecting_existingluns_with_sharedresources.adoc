@@ -1,0 +1,14 @@
+---
+permalink: linux-administration/concept_connecting_existingluns_with_sharedresources.html
+sidebar: sidebar
+keywords: 
+summary: 'If a new node is added to the host cluster configuration that uses a shared disk group or file system, you need to follow a different syntax.'
+---
+= Connecting existing LUNs with shared resources
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If a new node is added to the host cluster configuration that uses a shared disk group or file system, you need to follow a different syntax.
+
+snapdrive storage connect -fsfile_spec -lunlong_lun_name [lun_name...] [-mntopts options]

@@ -1,0 +1,12 @@
+---
+permalink: aix/concept_standard_exit_status_values.html
+sidebar: sidebar
+keywords: 
+summary: 'Error messages IDs in SnapDrive for UNIX have exit status values associated with them. You can use the exit status value to determine the success or failure of a SnapDrive for UNIX command.'
+---
+= Standard exit status values
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Error messages IDs in SnapDrive for UNIX have exit status values associated with them. You can use the exit status value to determine the success or failure of a SnapDrive for UNIX command.

@@ -1,0 +1,22 @@
+---
+permalink: linux-administration/concept_data_disappears_when_you_add_luns_to_a_volume_group.html
+sidebar: sidebar
+keywords: 
+summary: 'Data on the LUN disappears, when you add an existing LUN to a volume group.'
+---
+= Data disappears when you add LUNs to a volume group
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Data on the LUN disappears, when you add an existing LUN to a volume group.
+
+If you add an existing LUN to a volume group that is managed by the LVM, and then execute a pvcreate command, the data is overwritten.
+
+== Workaround
+
+If you need data that is on an existing LUN, you must migrate that data to a LUN that you create using the LVM. Complete the following steps.
+
+. Create new LUNs.
+. Place the LUNs under LVM control by using the pvcreate, the vgcreate, and the lvcreate commands.
+. Copy data from the existing LUNs to the LUNs you created and placed under LVM control.

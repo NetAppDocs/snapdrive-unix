@@ -1,0 +1,38 @@
+---
+permalink: linux-administration/task_configuring_virtual_storage_console_in_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'You must configure Virtual Storage Console to access the storage system, and use the login names and passwords assigned to the storage system.'
+---
+= Configuring Virtual Storage Console for SnapDrive for UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You must configure Virtual Storage Console to access the storage system, and use the login names and passwords assigned to the storage system.
+
+Ensure that Virtual Storage Console is installed in the windows system where VMware vCenter resides.
+
+. In the *vCenter Home* view, under *Solutions and Applications* click *NetApp* in the *NetApp Virtual Console* screen.
+. Click the *Backup and Recovery*, and then click the *Setup* to view the storage system entries.
+. If there are no storage system entries, then click *Add* to add the required storage system in the Virtual Storage Console.
++
+The *Add Storage System* dialog box appears.
+
+. In the *Add Storage System* window, enter the IP address, user name and password of the storage system. Then click *OK*.
++
+The storage system is now ready to communicate with the Virtual Storage Console.
+
+*Related information*
+
+xref:task_verifying_virtual_storage_console.adoc[Verifying login information for Virtual Storage Console]
+
+xref:task_deleting_a_user_login_for_a_virtual_storage_console.adoc[Deleting a user login for a Virtual Storage Console]
+
+xref:concept_storage_provisioning_for_rdm_luns.adoc[VMware VMotion support in SnapDrive for UNIX]
+
+xref:concept_configuration_options_and_their_default_values.adoc[Configuration options and their default values]
+
+xref:task_considerations_for_provisioning_rdm_luns.adoc[Considerations for provisioning RDM LUNs]
+
+xref:concept_limitations_of_rdm_luns_managed_by_snapdrive.adoc[Limitations of RDM LUNs managed by SnapDrive]

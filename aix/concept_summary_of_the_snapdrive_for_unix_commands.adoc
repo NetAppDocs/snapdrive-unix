@@ -1,0 +1,12 @@
+---
+permalink: aix/concept_summary_of_the_snapdrive_for_unix_commands.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX commands are used for configuration, storage provisioning, host-side management, and Snapshot operation.'
+---
+= Summary of the SnapDrive for UNIX commands
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX commands are used for configuration, storage provisioning, host-side management, and Snapshot operation.

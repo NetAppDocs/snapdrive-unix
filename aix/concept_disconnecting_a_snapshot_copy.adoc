@@ -1,0 +1,14 @@
+---
+permalink: aix/concept_disconnecting_a_snapshot_copy.html
+sidebar: sidebar
+keywords: 
+summary: 'You can disconnect a Snapshot copy from a LUN, a file system on a LUN, disk groups, NFS directories, or shared disk groups, host volumes, and file systems on a LUN.'
+---
+= Disconnecting a Snapshot copy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can disconnect a Snapshot copy from a LUN, a file system on a LUN, disk groups, NFS directories, or shared disk groups, host volumes, and file systems on a LUN.
+
+NOTE: You can disconnect the split clone volumes from SnapDrive for UNIX 4.2 and later versions.

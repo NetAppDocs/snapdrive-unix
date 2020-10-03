@@ -1,0 +1,89 @@
+---
+permalink: linux-administration/concept_informationrequired_forusing_the_snapdrive_snapcreate_command.html
+sidebar: sidebar
+keywords: 
+summary: 'When you create a Snapshot copy, you should determine the storage entity that you want to capture and specify a name of the Snapshot copy.'
+---
+= Information required for using the snapdrive snap create command
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you create a Snapshot copy, you should determine the storage entity that you want to capture and specify a name of the Snapshot copy.
+
+The following table provides the information you need when you use the snapdrive snap create command:
+
+|===
+| Requirement/Options| Argument
+a|
+Determine the type of storage entity you want to capture in the Snapshot copy. You can specify NFS entities, LUNs, file systems created directly on LUNs, and LVM entities on a single command line.
+
+Supply that entity's name with the appropriate argument. This is the value for the file_spec argument.
+
+* If you specify a disk group that has a host volume or file specification, the argument translates into a set of disk groups on the storage system. SnapDrive for UNIX creates the entire disk group containing the entity, even if the entity is a host volume or file system.
+* If you specify a file specification that is an NFS mount point, the argument translates to the directory tree on the storage system volume.
+* If you specify a LUN, or a LUN that has a file system, the argument translates to the LUN, or to the LUN that has the file system.
++
+NOTE: You cannot specify special characters with the storage entities such as -vg, -dg, -fs, -lvol, and - hostvol. However, slash (/) is allowed for storage entities such as -fs, -lvol, and- hostvol.
+
+a|
+LUN (-lunfile_spec)
+a|
+Name of the LUN
+
+You must include the name of the storage system, volume, and LUN.
+
+a|
+Disk group (-dgfile_spec) or volume group (-vgfile_spec)
+
+a|
+Name of the disk or volume group
+a|
+File system (-fsfile_spec)
+a|
+filesystem_name
+a|
+Host volume (-hostvolfile_spec ) or logical volume (-lvolfile_spec )
+
+a|
+Name of the host or logical volume *Note:* You must supply both the requested volume and the disk group containing it; for example, -hostvol dg3/acct_volume.
+
+a|
+Snapshot copy name (-snapnamesnap_name)
+
+a|
+Snapshot copy_name
+a|
+Specify the name for the Snapshot copy. This can be either the long version of the name that includes the storage system and volume with the Snapshot copy name or the short version that is the Snapshot copy name.
+
+NOTE: You must ensure that the value specified for snapname does not exceed 200 characters.
+
+a|
+-unrelated
+a|
+~
+a|
+Optional: To create a Snapshot copy of storage entities that have no dependent writes when the Snapshot copy is created, SnapDrive for UNIX creates a crash-consistent Snapshot copy of the individual storage entities, but does not try to make the entities consistent with each other.
+
+a|
+-force
+a|
+~
+a|
+-noprompt
+a|
+~
+a|
+Optional: Decide if you want to overwrite an existing Snapshot copy. Without this option, this operation halts if you supply the name of an existing Snapshot copy. When you supply this option and specify the name of an existing Snapshot copy, the command prompts you to confirm that you want to overwrite the Snapshot copy. To prevent SnapDrive for UNIX from displaying the prompt, include the -noprompt option also. (You must always include the -force option if you want to use the -noprompt option.)
+a|
+-fstype
+a|
+type
+a|
+-vmtype
+a|
+type
+a|
+Optional: Specify the type of file system and volume manager to be used for SnapDrive for UNIX operations.
+
+|===

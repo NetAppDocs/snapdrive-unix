@@ -1,0 +1,20 @@
+---
+permalink: linux-administration/concept_connecting_multiple_storage_entities.html
+sidebar: sidebar
+keywords: 
+summary: 'You can connect a Snapshot copy containing multiple storage entities.'
+---
+= Connecting multiple storage entities
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can connect a Snapshot copy containing multiple storage entities.
+
+To connect a Snapshot copy that contains storage entities that reside on multiple destination storage systems you must meet the following requirements:
+
+* The storage entities you specify at the command prompt must reside on a single storage system, or on a HA pair.
+* The name of the volume of the source storage system must match the name of the volume of the destination storage system.
+* You must set the snapmirror-dest-multiple-filervolumes-enabled variable in the snapdrive.conf file to "`on`".
+
+You can use one command to connect storage entities that reside on a single storage system or on a HA pair.

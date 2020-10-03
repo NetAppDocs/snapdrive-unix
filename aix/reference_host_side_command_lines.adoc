@@ -1,0 +1,32 @@
+---
+permalink: aix/reference_host_side_command_lines.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX commands are used for host-side operations.'
+---
+= Host-side command lines
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX commands are used for host-side operations.
+
+The following table gives various command-line options for host-side operations.
+
+|===
+| Operation| Command-line option
+a|
+Host connect
+a|
+snapdrive host connect -lunlong_lun_name [lun_name ...] [-vmtypetype]
+a|
+snapdrive host connect -fsfile_spec -nolvm -lunlong_lun_name [-nopersist][-mntopts options] [-fstypetype] [-vmtypetype]
+a|
+snapdrive host connect -fsfile_spec -hostvolfile_spec -lunlong_lun_name [lun_name][-nopersist] [-mntopts options][-vmtypetype]
+a|
+Host disconnect
+a|
+snapdrive host disconnect-lunlong_lun_name [lun_name...] [-vmtypetype]
+a|
+snapdrive host disconnect {-vg | -dg | -fs | -lvol | -hostvol} file_spec[file_spec ...][{-vg | -dg | -fs | -lvol | -hostvol} file_spec [file_spec ...]...] [-full] [-fstypetype] [-vmtypetype]
+|===

@@ -1,0 +1,80 @@
+---
+permalink: solaris/concept_after_rebooting_the_host_os_and_cluster_services_fail_to_start.html
+sidebar: sidebar
+keywords: 
+summary: 'On a Solaris 10 host, if the file system fails to mount after reboot, OS and cluster does not start.'
+---
+= After rebooting the host, OS and cluster services fail to start
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+On a Solaris 10 host, if the file system fails to mount after reboot, OS and cluster does not start.
+
+After rebooting the Solaris 10 host, if the service svc:/system/filesystem/localfails to mount any of the following file system, the dependent OS or cluster services does not start.
+
+* Local file system
+* Shared file system
+
+NOTE: The preceding file system must be created by SnapDrive for UNIX.
+
+== Workaround
+
+. Find the service that failed to start after the reboot by using the following command:
++
+svcs -vx /network/inetd
++
+*Example:*
++
+----
+# svcs -vx /network/inetd
+svc:/network/inetd:default (inetd)
+State: offline since Fri 25 May 2008 04:06:59 PM IST
+Reason: Service svc:/system/filesystem/local:default
+is not running because a method failed.
+----
+
+. If the service/system/filesystem/local:default fails, find the persistent file system that is failed to mount by using the following command:
++
+tail /var/svc/log/system-filesystem-local:default.log
++
+*Example:*
++
+----
+# tail /var/svc/log/system-filesystem-local:default.log
+[ May 25 15:58:35 Method "start" exited with status 95 ]
+[ May 25 16:07:17 Executing start method
+("/lib/svc/method/fs-local") ]
+UX:vxfs fsck: ERROR: V-3-20693: cannot access device
+/dev/vx/rdsk/dg2/fs1_SdHv:
+UX:vxfs mount: ERROR: V-3-20003: Cannot open
+/dev/vx/dsk/dg2/fs1_SdHv: No such device or address
+UX:vxfs mount: ERROR: V-3-24996: Unable to get disk
+layout version
+WARNING: /sbin/mountall -l failed: exit status 1
+[ May 25 16:07:18 Method "start" exited with status 95 ]
+----
+
+. Comment the entries in /etc/vfstab for the file system that failed to mount after rebooting the host.
+. Restart the OS service: svc:/system/filesystem/local:default by executing the following commands:
+ .. svcadm disable
++
+svc:/system/filesystem/local:default
+
+ .. svcadm enable
++
+svc:/system/filesystem/local:default
+
++
+The OS and cluster service starts.
+. For local file system that is failed to mount, complete the following steps:
+ .. Manually mount the file system.
+ .. Uncomment the /etc/vfstab entry.
+. For cluster services, complete the following steps:
+ .. Use the cfsmountcommand to check if the shared file systems are properly mounted.
+ .. Uncomment the /etc/vfstab entry on all cluster nodes for this file system.
++
+svcadm enable
++
+svc:/system/filesystem/local:default
+. If local or cluster file system fails to mount even after completing the preceding steps, contact NetApp technical support.

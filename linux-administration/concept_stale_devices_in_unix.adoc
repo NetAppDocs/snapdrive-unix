@@ -1,0 +1,16 @@
+---
+permalink: linux-administration/concept_stale_devices_in_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'Deleting LUNS and clones might leave stale devices in UNIX and deleting these stale devices is not performed by SnapDrive for UNIX.'
+---
+= Deleting LUNs and clones leave stale devices in UNIX
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Deleting LUNS and clones might leave stale devices in UNIX and deleting these stale devices is not performed by SnapDrive for UNIX.
+
+When you create devices for LUNs and clones of LUNs from Snapshot copies, either manually or with SnapDrive for UNIX, device entries are automatically created in UNIX. Deletion of devices for LUNs and clones of LUNs from Snapshot copies with SnapDrive for UNIX might lead to stale devices in UNIX.
+
+Deleting stale devices is an end-user responsibility and must be performed by a UNIX administrator.

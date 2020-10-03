@@ -1,0 +1,61 @@
+---
+permalink: linux-administration/task_configuring_sd_admin_using_cli.html
+sidebar: sidebar
+keywords: 
+summary: 'The storage system administrator can configure sd-admin user using command-line interface.'
+---
+= Configuring sd-admin using command-line interface
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The storage system administrator can configure sd-admin user using command-line interface.
+
+. Add a user named sd-admin.
++
+----
+# useradd sd-admin
+----
++
+----
+# passwd sd-admin
+Changing password for sd-admin.
+New password:
+Re-enter new password:
+Password changed
+----
+
+. Add an administrator named sd-admin.
++
+----
+# dfm user add sd-admin
+Added administrator sd-admin.
+----
+
+. Create a role named sd-admin-role.
++
+----
+# dfm role create sd-admin-role
+Created role sd-admin-role.
+----
+
+. Add a capability to the role created in step 3.
++
+----
+# dfm role add sd-admin-role DFM.Core.AccessCheck Global
+Added 1 capability to role sd-admin-role.
+----
+
+. The Operations Manager administrator can also grant DFM.Database.Write capability on the global group to <sd-admin> to enable SnapDrive for UNIX to refresh storage system entities in Operations Manager.
++
+----
+# dfm role add sd-admin-role DFM.Database.Write Global
+Added 1 capability to role sd-admin-role.
+----
+
+. Add an sd-admin-role role to the sd-admin user.
++
+----
+# dfm user role set sd-admin sd-admin-role
+Set 1 role for administrator sd-admin.
+----

@@ -1,0 +1,23 @@
+---
+permalink: solaris/concept_what_rbac_in_snapdrive_for_unix_is.html
+sidebar: sidebar
+keywords: 
+summary: 'RBAC allows SnapDrive administrators to restrict access to a storage system for various SnapDrive operations. This limited or full access for storage operations depends on the role that is assigned to the user.'
+---
+= What role-based access control (RBAC) in SnapDrive for UNIX is
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+RBAC allows SnapDrive administrators to restrict access to a storage system for various SnapDrive operations. This limited or full access for storage operations depends on the role that is assigned to the user.
+
+SnapDrive 4.0 for UNIX and later requires an RBAC access check for all the SnapDrive for UNIX operations. This behavior allows the storage administrators to limit the operations that SnapDrive users can perform depending on their assigned roles. RBAC is implemented using the Operations Manager infrastructure. In releases earlier than SnapDrive 4.0 for UNIX, there was limited access control and only the root user could perform SnapDrive for UNIX operations. SnapDrive 4.0 for UNIX and later provides support for nonroot local users and Network Information System (NIS) users by using the RBAC infrastructure of Operations Manager console. SnapDrive for UNIX does not require the root password of the storage system; it communicates with the storage system using sd-<hostname> user.
+
+By default, Operations Manager console RBAC functionality is not used. You must turn on RBAC functionality by setting the variable rbac-method=dfm in the snapdrive.conf file and restart the SnapDrive for UNIX daemon.
+
+The following requirements must be fulfilled before you can use this feature:
+
+* Operations Manager console 3.7 or later.
+* Operations Manager console server must be present and configured in the IP network that contains the SnapDrive hosts and the storage systems.
+* Operations Manager console communication settings must be configured during SnapDrive installation.
+* SnapDrive for UNIX daemon should be running.

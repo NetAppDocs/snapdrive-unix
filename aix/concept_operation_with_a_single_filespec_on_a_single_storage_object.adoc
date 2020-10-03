@@ -1,0 +1,21 @@
+---
+permalink: aix/concept_operation_with_a_single_filespec_on_a_single_storage_object.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX displays an error message when you are not an authorized user to create a filespec on a specified volume.'
+---
+= Operation with a single filespec on a single storage object
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX displays an error message when you are not an authorized user to create a filespec on a specified volume.
+
+Filespec: Filespec can be a file system, host volume, disk group, or LUN.
+
+----
+[john]$ snapdrive storage create -fs /mnt/testfs -filervol storage_array1:/vol/vol1 -dgsize 100m
+0002-332 Admin error:SD.Storage.Write access denied on volume storage_array1:/vol/vol1 for user unix_host\john on Operations Manager server ops_mngr_server
+----
+
+In this example, John is a nonroot user and is not authorized to create a filespec on the specified volume. John must ask the Operations Manager console administrator to grant SD.Storage.Write access on the volume storage_array1:/vol/vol1.

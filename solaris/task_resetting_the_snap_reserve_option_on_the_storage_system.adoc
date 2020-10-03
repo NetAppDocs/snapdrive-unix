@@ -1,0 +1,17 @@
+---
+permalink: solaris/task_resetting_the_snap_reserve_option_on_the_storage_system.html
+sidebar: sidebar
+keywords: 
+summary: 'When you use Data ONTAP in a Fibre Channel or Internet Small Computer System Interface \(iSCSI\) environment, you should reset the snap reserve option to zero percent on the storage system, for volume optimization.'
+---
+= Resetting the snap reserve option on the storage system
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+When you use Data ONTAP in a Fibre Channel or Internet Small Computer System Interface (iSCSI) environment, you should reset the snap reserve option to zero percent on the storage system, for volume optimization.
+
+. Access the storage system either by running the telnet command from the host or from the storage system console.
+. Enter the following command: snap reservevol_name 0
++
+vol_name is the name of the volume on which you want to set the snap reserve option.

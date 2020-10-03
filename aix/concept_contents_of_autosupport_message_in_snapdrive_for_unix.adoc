@@ -1,0 +1,40 @@
+---
+permalink: aix/concept_contents_of_autosupport_message_in_snapdrive_for_unix.html
+sidebar: sidebar
+keywords: 
+summary: 'AutoSupport messages contain the following information.'
+---
+= Contents of AutoSupport messages
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+AutoSupport messages contain the following information.
+
+* Event source
+* Event ID
+* Version of SnapDrive for UNIX
+* Message status: Log level messages, for example 1 for alert, 2 for critical, 3 for error, 4 for warning, 5 for notice, 6 for information, and 7 for debug
+* Host name
+* Host operating system
+* Release version of the host operating system
+* Name of the storage system
+* Usage of Protection Manager/Role Based Access Control
+* Error category
+* AutoSupport Flag message entry as FALSE
+* Host multipathing type: The value configured in snapdrive.conf file is logged. If the assistant is not loaded due to incorrect configuration value, no host multipathing type is logged.
+* Host virtualization enabled: This is captured only for VMware guest operating system.
+* Protocol: The value configured for default-transport in the snapdrive.conf file.
+* Protection enabled: If OnCommand Data Fabric Manager (DFM) is configured with SnapDrive for UNIX, the value Yes is logged.
++
+NOTE: SnapDrive for UNIX does not verify whether OnCommand DFM is in use.
+
+The following additional information is available when you run the snapdrive storage show -all command:
+
+* Type of protocols (FCP/iSCSI): Protocols used to create the luns, if any.
+* Number of connected LUNs
+* Number of disk or volume groups
+* Number of file specifications
+* Number of host volumes
+
+NOTE: When AutoSupport is enabled in SnapDrive for UNIX, upon any operation failures, the error messages are logged in the Event Management System (EVM) storage system. If the error message contains any special characters such as (<, >, &, ', ", \r), garbled values are displayed in the EMS log view of the storage system.

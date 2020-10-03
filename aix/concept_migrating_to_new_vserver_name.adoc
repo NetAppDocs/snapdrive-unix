@@ -1,0 +1,29 @@
+---
+permalink: aix/concept_migrating_to_new_vserver_name.html
+sidebar: sidebar
+keywords: 
+summary: 'If you have migrated from an old Vserver to a new Vserver, you must ensure that the new Vserver name is configured on the host system to execute any SnapDrive operations on the Vserver.'
+---
+= Migrating to new Vserver name
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+If you have migrated from an old Vserver to a new Vserver, you must ensure that the new Vserver name is configured on the host system to execute any SnapDrive operations on the Vserver.
+
+The following steps must be performed on the host system whenever you migrate to a new Vserver name:
+
+. Delete the old Vserver name that is configured using the following command: snapdrive config deleteappliance_name
++
+The old configured Vserver name is removed from the host system.
+
+. Delete the port set that is assigned to the old configured Vserver using the following command: snapdrive portset deletefilername [filername...]
+. Configure the new Vserver name using the following command: snapdrive config setvsadminfilername [filername...]
+. Assign the port set using the following command:snapdrive portset addportset_name filername [filername...]
+. Migrate the new Vserver name using the following command: snapdrive config migrate setold_entrynew_entry
+
+After you have migrated to the new Vserver, you are ready to execute SnapDrive operations in the host system for this new Vserver name.
+
+*Related information*
+
+xref:task_migrating_from_old_host_name_to_new_host_name.adoc[Migrating from old storage system to new storage system]

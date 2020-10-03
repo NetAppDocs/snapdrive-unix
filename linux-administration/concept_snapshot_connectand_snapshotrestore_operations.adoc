@@ -1,0 +1,19 @@
+---
+permalink: linux-administration/concept_snapshot_connectand_snapshotrestore_operations.html
+sidebar: sidebar
+keywords: 
+summary: 'Snapshot copy clones the information when you connect to the Snapshot copy.'
+---
+= Snapshot connect and Snapshot restore operations
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Snapshot copy clones the information when you connect to the Snapshot copy.
+
+Unlike the Snapshot restore operation, the Snapshot connect operation does not replace the existing contents of the LUNs that make up the host entity with the Snapshot copy contents. It clones the information.
+
+After the connection is established, both Snapshot connect and Snapshot restore operations perform similar activities:
+
+* The Snapshot connect operation activates logical volumes for the storage entity, mounts file systems, and optionally adds an entry to the host file system table.
+* The Snapshot restore operation activates the logical volumes for the storage entity, mounts the file systems, and applies the host file system mount entries that were preserved in the Snapshot copy.

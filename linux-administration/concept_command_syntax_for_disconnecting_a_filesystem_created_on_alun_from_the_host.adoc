@@ -1,0 +1,28 @@
+---
+permalink: linux-administration/concept_command_syntax_for_disconnecting_a_filesystem_created_on_alun_from_the_host.html
+sidebar: sidebar
+keywords: 
+summary: 'To use the snapdrive storage disconnect command to remove a file system created directly on a LUN, use the following syntax:'
+---
+= Command syntax for disconnecting a file system created on a LUN from the host
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+To use the snapdrive storage disconnect command to remove a file system created directly on a LUN, use the following syntax:
+
+snapdrive storage disconnect -fs file_spec [-fstype type] [-vmtype type]
+
+== Example: Disconnecting a file system created on a RDM LUN
+
+----
+
+#snapdrive storage disconnect -fs /mnt/fs
+disconnect file system /mnt/fs
+  - fs /mnt/fs ... disconnected
+  deporting lun(s) from Guest OS ... done
+   - LUN lech:/vol/vol1/lun1 ... disconnected
+0001-669 Warning:
+      Please save information provided by this command.
+      You will need it to re-connect disconnected filespecs.
+----

@@ -1,0 +1,26 @@
+---
+permalink: aix/concept_executing_the_data_collection_utility.html
+sidebar: sidebar
+keywords: 
+summary: 'You need to complete few steps to run the data collection utility.'
+---
+= Executing the data collection utility
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You need to complete few steps to run the data collection utility.
+
+Ensure that you are logged in as a root user.
+
+. Change to the SnapDrive for UNIX diagnostic directory. The path is: install_directory/diag
++
+install_directory is the SnapDrive for UNIX installation directory for your host operating system. This directory can vary depending on your host operating system.
+
+. At the command prompt, enter the following command: snapdrive.dc [-d directory] [-n file_name] [-f]
++
+-ddirectory specifies the location for the compressed file that this utility creates. The default location is /tmp/netapp.
++
+-nfile_name specifies a string to be included in the name for the directory and compressed output file. If you supply a value for this argument, the snapdrive.dc utility creates a directory called ntap_snapdrive_name and a file name called ntap_snapdrive_name.tar.Z The default path name is /tmp/netapp/ntap_snapdrive_info.tar.Z
+
+. Send the directory/ntap_snapdrive_name.tar.Z file to NetApp technical support for analysis.

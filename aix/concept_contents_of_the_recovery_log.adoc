@@ -1,0 +1,18 @@
+---
+permalink: aix/concept_contents_of_the_recovery_log.html
+sidebar: sidebar
+keywords: 
+summary: 'The recovery log helps you to trace the reasons for an inconsistent system state. SnapDrive for UNIX generates this file when some operation stops working.'
+---
+= Contents of the recovery log
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The recovery log helps you to trace the reasons for an inconsistent system state. SnapDrive for UNIX generates this file when some operation stops working.
+
+If you press Ctrl-C to halt SnapDrive for UNIX, or if the host or storage system fails in the middle of an operation, the system might not be able to recover automatically.
+
+During any operation that, if interrupted, could leave the system in an inconsistent state, SnapDrive for UNIX writes information to a recovery log file. If a problem occurs, you can send this file to NetApp technical support so they can assist you in recovering the system's state.
+
+The recovery log utility maintains the records of the commands that are issued during the operation. Each command is marked with an operation_index (a number that uniquely identifies the operation being executed), followed by the date/time stamp and the message text.

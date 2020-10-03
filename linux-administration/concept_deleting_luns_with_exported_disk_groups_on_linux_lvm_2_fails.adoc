@@ -1,0 +1,18 @@
+---
+permalink: linux-administration/concept_deleting_luns_with_exported_disk_groups_on_linux_lvm_2_fails.html
+sidebar: sidebar
+keywords: 
+summary: 'SnapDrive for UNIX does not delete LUNs with exported disk groups on Linux LVM2.'
+---
+= Deleting LUNs with exported disk groups on Linux LVM2 fails
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+SnapDrive for UNIX does not delete LUNs with exported disk groups on Linux LVM2.
+
+If you export a disk group (dg) on Linux LVM2 and try to delete the LUN, the delete operation fails.
+
+== Workaround
+
+You have to use vgimport <dgname>to import the disk group and then use the following command to delete the disk group and LUN:# snapdrive storage delete - dg <dgname> [-full]

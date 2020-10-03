@@ -1,0 +1,24 @@
+---
+permalink: linux-administration/concept_connecting_to_asnapshot_copy.html
+sidebar: sidebar
+keywords: 
+summary: 'You can connect a Snapshot copy from one host to a different host.'
+---
+= Connecting to a Snapshot copy
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can connect a Snapshot copy from one host to a different host.
+
+SnapDrive for UNIX lets you connect a host to a Snapshot copy from a different location on a host. This new location can be on the host where you took the Snapshot copy (the originating host) or on a different host (the non-originating host).
+
+Being able to set up the Snapshot copies in a new location means you can back up a Snapshot copy to another medium, perform maintenance on a disk group, or access the Snapshot copy data without disrupting the original copy of the data.
+
+With this command, you can connect a host to a Snapshot copy that contains any of the following:
+
+* LUNs
+* A file system created directly on a LUN
+* Disk groups, host volumes, and file systems created on LUNs
+* NFS directory trees
+* Disk groups, host volumes, and file systems on shared storage system
