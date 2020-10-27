@@ -2,14 +2,16 @@
 permalink: aix/concept_thin_provisioning_in_snapdrive_for_unix.html
 sidebar: sidebar
 keywords: 
-summary: 'You cannot set the fractional reserve value, and there is no integration with Data ONTAP capabilities such as autodelete and autosize in SnapDrive for UNIX. Although you can safely use the Data ONTAP capabilities with SnapDrive for UNIX, SnapDrive for UNIX does not register autodelete or autosize events.'
+summary: 'The thin provisioning feature in SnapDrive for UNIX allows the user to have more storage space for the hosts than is actually available on the storage system.'
 ---
 = Thin provisioning in SnapDrive for UNIX
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You cannot set the fractional reserve value, and there is no integration with Data ONTAP capabilities such as autodelete and autosize in SnapDrive for UNIX. Although you can safely use the Data ONTAP capabilities with SnapDrive for UNIX, SnapDrive for UNIX does not register autodelete or autosize events.
+The thin provisioning feature in SnapDrive for UNIX allows the user to have more storage space for the hosts than is actually available on the storage system.
+
+Within SnapDrive for UNIX, you cannot set the fractional reserve value, and there is no integration with Data ONTAP features such as autodelete and autosize. These Data ONTAP features can be safely used with SnapDrive for UNIX; however, there is no awareness within SnapDrive for UNIX, if an autodelete or autosize event occurs.
 
 *Related information*
 

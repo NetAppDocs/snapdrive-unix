@@ -1,7 +1,9 @@
 ---
-title: helpData.xml
 entries:
+- title: Home
+  url: "/index.html"
 - title: aix
+  url: "/aix/index.html"
   entries:
   - title: SnapDrive for UNIX overview
     url: "/aix/concept_snapdrive_for_unix_overview.html"
@@ -55,7 +57,7 @@ entries:
     - title: Multipathing in SnapDrive for UNIX
       url: "/aix/concept_multipathing_in_snapdrive_for_unix.html"
     - title: Thin provisioning in SnapDrive for UNIX
-      url: "/aix/concept_thin_provisioning_in_snapdrive_for_unix.html"
+      url: "/aix/concept_thin_provisioning_in_snapdrive_for_unix_overview.html"
     - title: Volume managers on SnapDrive for UNIX
       url: "/aix/concept_volume_managers_on_snapdrive_for_unix.html"
   - title: Preparing to install SnapDrive for UNIX
@@ -806,6 +808,7 @@ entries:
         - title: Command-line arguments
           url: "/aix/reference_command_line_arguments.html"
 - title: linux-administration
+  url: "/linux-administration/index.html"
   entries:
   - title: Product overview
     url: "/linux-administration/reference_product_overview.html"
@@ -853,7 +856,7 @@ entries:
     - title: Limitations for NFS files or directory trees
       url: "/linux-administration/concept_limitations_for_nfs_file_or_directory_trees.html"
     - title: Thin provisioning in SnapDrive for UNIX
-      url: "/linux-administration/concept_thin_provisioning_in_snapdrive_for_unix.html"
+      url: "/linux-administration/concept_thin_provisioning_in_snapdrive_for_unix_overview.html"
     - title: Volume managers on SnapDrive for UNIX
       url: "/linux-administration/concept_volume_managers_on_snapdrive_for_unix.html"
   - title: New in this release
@@ -1471,7 +1474,7 @@ entries:
       url: "/linux-administration/concept_snapdrive_storage_show_command_returns_incorrect_path_if_volume_deleted_without_unmount.html"
     - title: Snap management operation fails in RHEL/OEL 5.x due to an issue with
         umount command
-      url: "/linux-administration/concept_snap_management_operation_fails_in_rhel-oel_5.x_due_to_an_issue_with_umount_command.html"
+      url: "/linux-administration/concept_snap_management_operation_fails_in_rhel_or_oel_5.x_due_to_an_issue_with_umount_command.html"
     - title: Snap restore operation fails when you have nfsv3 and nfsv4 versions enabled
         in the host and storage system
       url: "/linux-administration/concept_snap_restore_operation_fails_nfsv3_and_nfsv4_versions_enabled_in_host_and_storage_system.html"
@@ -1612,6 +1615,7 @@ entries:
         - title: Command-line arguments
           url: "/linux-administration/reference_command_line_arguments.html"
 - title: linux-installation-7mode
+  url: "/linux-installation-7mode/index.html"
   entries:
   - title: Product overview
     url: "/linux-installation-7mode/reference_product_overview.html"
@@ -1659,6 +1663,7 @@ entries:
   - title: Where to go next
     url: "/linux-installation-7mode/reference_where_to_go_next.html"
 - title: linux-installation-cmode
+  url: "/linux-installation-cmode/index.html"
   entries:
   - title: Product overview
     url: "/linux-installation-cmode/reference_product_overview.html"
@@ -1706,6 +1711,7 @@ entries:
   - title: Where to go next
     url: "/linux-installation-cmode/reference_where_to_go_next.html"
 - title: solaris
+  url: "/solaris/index.html"
   entries:
   - title: SnapDrive for UNIX overview
     url: "/solaris/concept_snapdrive_for_unix_overview.html"
@@ -1765,7 +1771,7 @@ entries:
     - title: Limitations for NFS files or directory trees
       url: "/solaris/concept_limitations_for_nfs_file_or_directory_trees.html"
     - title: Thin provisioning in SnapDrive for UNIX
-      url: "/solaris/concept_thin_provisioning_in_snapdrive_for_unix.html"
+      url: "/solaris/concept_thin_provisioning_in_snapdrive_for_unix_overview.html"
     - title: Volume managers on SnapDrive for UNIX
       url: "/solaris/concept_volume_managers_on_snapdrive_for_unix.html"
     - title: Host cluster environment for SnapDrive for UNIX

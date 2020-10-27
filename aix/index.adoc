@@ -32,7 +32,7 @@ summary: ''
  ** xref:concept_what_configuration_checker_is.adoc[SnapDrive for UNIX configuration checker]
  ** xref:concept_limitations_for_nfs_file_or_directory_trees.adoc[Limitations for NFS files or directory trees]
  ** xref:concept_multipathing_in_snapdrive_for_unix.adoc[Multipathing in SnapDrive for UNIX]
- ** xref:concept_thin_provisioning_in_snapdrive_for_unix.adoc[Thin provisioning in SnapDrive for UNIX]
+ ** xref:concept_thin_provisioning_in_snapdrive_for_unix_overview.adoc[Thin provisioning in SnapDrive for UNIX]
  ** xref:concept_volume_managers_on_snapdrive_for_unix.adoc[Volume managers on SnapDrive for UNIX]
 * xref:concept_preparation_for_installing_snapdrive_for_unix.adoc[Preparing to install SnapDrive for UNIX]
  ** xref:concept_prerequisites_for_using_snapdrive_for_unix.adoc[Hardware and software configuration]

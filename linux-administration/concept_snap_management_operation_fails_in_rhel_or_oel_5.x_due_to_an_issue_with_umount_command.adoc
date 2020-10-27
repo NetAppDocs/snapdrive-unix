@@ -1,5 +1,5 @@
 ---
-permalink: linux-administration/concept_snap_management_operation_fails_in_rhel-oel_5.x_due_to_an_issue_with_umount_command.html
+permalink: linux-administration/concept_snap_management_operation_fails_in_rhel_or_oel_5.x_due_to_an_issue_with_umount_command.html
 sidebar: sidebar
 keywords: 
 summary: 'Snap management operation fails in RHEL/OEL 5.x due to an issue with the umount command. To overcome this, ensure that the NFS entity is mounted using -o vers=3 in the command line interface.'
