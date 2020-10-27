@@ -11,4 +11,4 @@ summary: 'Before you can create Snapshot copies with SnapDrive, you must install
 [.lead]
 Before you can create Snapshot copies with SnapDrive, you must install Linux Host Utilities (if using FC or iSCSI protocol), install SnapDrive for UNIX, check the supported configurations for SnapDrive, provision the storage, and then set up connection from the Linux host to the NetApp storage system.
 
-image::../media/sdu_deployment_workflow.gif[]
+image::../media/sdu_deployment_workflow_7mode.gif[]

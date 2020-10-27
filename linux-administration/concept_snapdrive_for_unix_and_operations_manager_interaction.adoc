@@ -13,7 +13,7 @@ Use of Role-based access control (RBAC) depends on the Operations Manager consol
 
 The following diagram illustrates the entire RBAC for storage operations.
 
-image::../media/sdu_rbac_process_01.gif[]
+image::../media/sdu_rbac_process_01_linux.gif[]
 
 . Operations Manager console administrator adds sd-admin user on Operations Manager console.
 . Operations Manager console administrator creates sd-hostname user on the storage system.
