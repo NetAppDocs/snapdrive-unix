@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_thin_provisioning_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, thin, provisioning, host, storage
 summary: 'The thin provisioning feature in SnapDrive for UNIX allows the user to have more storage space for the hosts than is actually available on the storage system.'
 ---
 = Thin provisioning in SnapDrive for UNIX

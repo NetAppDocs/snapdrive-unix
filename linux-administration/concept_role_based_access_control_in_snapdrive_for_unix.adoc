@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_role_based_access_control_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, rbac, role, access, control, permission, login, user
 summary: 'Role-based access control \(RBAC\) is used for user login and role permissions. RBAC allows administrators to manage groups of users by defining roles. If you need to restrict access to the database to specific administrators, you must set up administrator accounts for them. Additionally, if you want to restrict the information, these administrators can view, and the operations they can perform, you must apply roles to the administrator accounts you create.'
 ---
 = Role-based access control in SnapDrive for UNIX

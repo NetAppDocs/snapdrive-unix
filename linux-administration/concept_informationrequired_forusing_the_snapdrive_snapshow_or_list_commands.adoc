@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_informationrequired_forusing_the_snapdrive_snapshow_or_list_commands.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, list, command, storage, display, show
 summary: 'You can use the command snapdrive snap show or list to display information about storage systems, storage system volumes, disks, or volume groups, file system, Snapshot copies, and so on.'
 ---
 = Information required for using the snapdrive snap show or list commands

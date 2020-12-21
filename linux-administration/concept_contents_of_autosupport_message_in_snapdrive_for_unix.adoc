@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_contents_of_autosupport_message_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, autosupport, message, error
 summary: 'AutoSupport messages contain the following information.'
 ---
 = Contents of AutoSupport messages

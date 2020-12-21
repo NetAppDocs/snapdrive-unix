@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_contents_of_an_audit_log_file.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, audit, log, file
 summary: 'The audit log shows information about commands you issued with SnapDrive for UNIX.'
 ---
 = Contents of an audit log file

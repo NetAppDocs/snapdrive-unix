@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_operation_with_a_single_filespec_on_multiple_storage_objects.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, filespec, storage, objects, single, operation
 summary: 'SnapDrive for UNIX displays an error message when the administrator does not have the required permission on multiple storage objects to carry out the storage operations.'
 ---
 = Operation with a single filespec on multiple storage objects

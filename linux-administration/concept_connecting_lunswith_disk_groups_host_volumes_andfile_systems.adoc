@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_connecting_lunswith_disk_groups_host_volumes_andfile_systems.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, lun, disk, host, volumes, file
 summary: 'To use the snapdrive storage connect command to connect LUNs that have disk groups, host volumes and file systems, you need to follow the syntax.'
 ---
 = Connecting LUNs with disk groups, host volumes, and file systems

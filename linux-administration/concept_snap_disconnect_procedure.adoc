@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_snap_disconnect_procedure.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, disconnect, procedure, steps
 summary: 'This section explains the procedure followed for snap disconnect.'
 ---
 = Snap disconnect procedure

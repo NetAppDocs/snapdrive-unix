@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_hostvolumes_and_filesystem_resize_operation.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, host, file, resize, operation, storage, command, volume
 summary: 'The snapdrive storage resize command applies only to storage system disk groups and volume groups. If you want to increase the size of your host volume or file system, you must use LVM commands.'
 ---
 = Host volumes and file system resize operation

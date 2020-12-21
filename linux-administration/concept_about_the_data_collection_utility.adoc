@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_about_the_data_collection_utility.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, data, utility, admin, connection
 summary: 'SnapDrive for UNIX provides a data collection utility \(snapdrive.dc\) that collects diagnostic information about SnapDrive for UNIX, SnapDrive configuration checker, and your system setup.'
 ---
 = About the data collection utility

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_methods_forcreating_storage.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, create, storage, command, lun
 summary: 'SnapDrive for UNIX provides some basic formats for the snapdrive storage create command to make it easier to create the storage you want. The storage create operation falls into various general categories.'
 ---
 = Methods for creating storage

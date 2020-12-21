@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_snapdrive_for_unix_provisioning_in_an_lvma_vxvm_environment.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, lvm, objects, storage, commands
 summary: ''
 ---
 = SnapDrive for UNIX provisioning in an LVM environment

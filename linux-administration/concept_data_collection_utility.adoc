@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_data_collection_utility.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, data, collection, utility, troubleshooting
 summary: 'SnapDrive Data collection utility is a troubleshooting tool that gathers information to diagnose the problems.'
 ---
 = Data collection utility

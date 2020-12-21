@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_guidelines_forsnapshot_copycreation.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snapshot, copy, create
 summary: 'Consider the following while creating Snapshot copies using SnapDrive for UNIX: you can keep maximum 255 Snapshot copies per volume, SnapDrive for UNIX supports only the Snapshot copies that it creates, you cannot create Snapshot copies of root disk groups, and boot device or swap device, and SnapDrive for UNIX requires a freeze operation to maintain crash-consistency.'
 ---
 = Guidelines for Snapshot copy creation

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_command_syntax_to_increase_the_sizeof_the_storage.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, command, syntax, size, storage, increase
 summary: 'To increase the size of the storage, you should know the correct syntax to be used.'
 ---
 = Command syntax to increase the size of the storage

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_command_to_use_torestore_snapshotcopies.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, command, snapshot, copy, restore
 summary: 'Use the command snapdrive snap restore to restore a Snapshot copy.'
 ---
 = Command to use to restore Snapshot copies

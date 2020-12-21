@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_command_to_use_todisplay_snapshotcopy_information.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, command, snapshot, copy, list
 summary: 'Use the snapdrive snap show \(or list\) command to display information about the Snapshot copies.'
 ---
 = Command to use to display Snapshot copy information

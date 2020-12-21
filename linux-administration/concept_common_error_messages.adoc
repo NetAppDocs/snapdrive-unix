@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_common_error_messages.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, error, message, common
 summary: 'SnapDrive for UNIX has some common error messages. View the list of the common error messages.'
 ---
 = Common error messages

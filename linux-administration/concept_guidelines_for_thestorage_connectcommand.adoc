@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_guidelines_for_thestorage_connectcommand.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, storage, connect, command, guidelines, lvm
 summary: 'You need to follow few guidelines to use the snapdrive storage connect command.'
 ---
 = Guidelines for the storage connect command

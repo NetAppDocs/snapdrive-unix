@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_snapdrive_for_unix_options_keywords_and_arguments.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, keywords, arguments, options
 summary: 'SnapDrive for UNIX commands has options, keywords, and arguments associated with them.'
 ---
 = SnapDrive for UNIX options, keywords, and arguments

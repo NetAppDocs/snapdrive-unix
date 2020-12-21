@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_support_for_vserver.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, support, vserver, storage, lif, data
 summary: 'SnapDrive for UNIX supports Vserver. Vserver is a secure virtual storage server that supports multiple protocols and unified storage. A Vserver contains data volumes and one or more LIFs, which it uses to serve data to clients.'
 ---
 = Support for Vserver

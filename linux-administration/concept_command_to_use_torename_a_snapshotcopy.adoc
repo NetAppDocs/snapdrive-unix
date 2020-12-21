@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_command_to_use_torename_a_snapshotcopy.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, command, rename, snapshot, copy
 summary: 'Use the snapshot snap rename command to rename a Snapshot copy.'
 ---
 = Command to use to rename a Snapshot copy

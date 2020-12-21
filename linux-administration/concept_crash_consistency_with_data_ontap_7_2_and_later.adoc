@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_crash_consistency_with_data_ontap_7_2_and_later.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, crash, ontap, consistency, fences
 summary: 'SnapDrive for UNIX uses the support for consistency groups provided by Data ONTAP 7.2 and later versions, such that all Snapshot copies that span multiple volumes are crash consistent.'
 ---
 = Crash consistency with Data ONTAP 7.2 and later

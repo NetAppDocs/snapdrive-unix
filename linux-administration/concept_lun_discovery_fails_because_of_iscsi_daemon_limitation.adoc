@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_lun_discovery_fails_because_of_iscsi_daemon_limitation.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, lun, discovery, fail, iscsi, daemon, limitation
 summary: 'SnapDrive for UNIX commands fail to discover the LUNs after continuous multiple iterations.'
 ---
 = LUN discovery fails due to iSCSI daemon limitation

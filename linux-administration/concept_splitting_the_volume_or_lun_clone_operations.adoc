@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_splitting_the_volume_or_lun_clone_operations.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, clone, lun, volume, split, parent
 summary: 'SnapDrive for UNIX enables you to split a volume clone or LUN clone. After the clone split is complete, the relationship between the parent volume and the clone is destroyed, and both the entities are independent of each other, and have their own individual storage space.'
 ---
 = Splitting a volume clone or LUN clone

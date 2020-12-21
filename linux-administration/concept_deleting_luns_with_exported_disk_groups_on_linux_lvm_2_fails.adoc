@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_deleting_luns_with_exported_disk_groups_on_linux_lvm_2_fails.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, delete, exported, disk, group, lvm2, fail, lun
 summary: 'SnapDrive for UNIX does not delete LUNs with exported disk groups on Linux LVM2.'
 ---
 = Deleting LUNs with exported disk groups on Linux LVM2 fails

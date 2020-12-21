@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_restoring_asnapshot_copy_froma_different_host.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, restore, snapshot, copy, host, command
 summary: 'Use the snapdrive snap restore command to restore a Snapshot copy from a different host.'
 ---
 = Restoring a Snapshot copy from a different host

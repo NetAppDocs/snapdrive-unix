@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_snapshot_copiesthat_span_storagesystems_orvolumes.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snapshot, storage, volume
 summary: 'SnapDrive for UNIX enables you to take Snapshot copies that reside in multiple storage system volumes on the same or different storage systems.'
 ---
 = Snapshot copies that span storage systems or volumes

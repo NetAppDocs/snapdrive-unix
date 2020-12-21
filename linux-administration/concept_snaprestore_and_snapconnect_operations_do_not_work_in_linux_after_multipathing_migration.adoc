@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_snaprestore_and_snapconnect_operations_do_not_work_in_linux_after_multipathing_migration.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snaprestore, snapconnect, migration, multipathing, operations
 summary: 'The SnapRestore and SnapConnect operations does not work if the multipathing type is migrated.'
 ---
 = SnapRestore and Snapconnect operations does not work in Linux after multipathing type migration

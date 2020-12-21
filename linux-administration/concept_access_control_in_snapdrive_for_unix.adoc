@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_access_control_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, access, control
 summary: 'SnapDrive for UNIX allows you to control the level of access that each host has to each storage system to which the host is connected.'
 ---
 = Access control in SnapDrive for UNIX

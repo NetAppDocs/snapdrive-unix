@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_available_access_control_levels.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, control, access
 summary: 'SnapDrive for UNIX provides various access control levels to the users. These access levels are related to the Snapshot copies and storage system operations.'
 ---
 = Available access control levels

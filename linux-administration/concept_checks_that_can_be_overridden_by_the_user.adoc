@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_checks_that_can_be_overridden_by_the_user.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, override, check
 summary: 'Before volume-based SnapRestore is carried out, SnapDrive for UNIX performs some checks that a user can override using -force option. These checks are required so that volume-based SnapRestore is used safely.'
 ---
 = Checks that can be overridden by the user

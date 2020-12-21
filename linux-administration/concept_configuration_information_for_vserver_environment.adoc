@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_configuration_information_for_vserver_environment.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, configuration, vserver
 summary: 'You must configure Vserver in SnapDrive for UNIX, to perform SnapDrive operations.'
 ---
 = Configuration information for Vserver

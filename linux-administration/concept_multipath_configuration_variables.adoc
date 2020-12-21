@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_multipath_configuration_variables.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, multipath, configuration, variables, file, mpio
 summary: 'You need to change few configuration variables in the snapdrive.conf file for MPIO to work with Linux.'
 ---
 = Multipath configuration variables

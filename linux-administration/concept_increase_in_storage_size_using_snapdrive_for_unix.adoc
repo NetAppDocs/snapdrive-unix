@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_increase_in_storage_size_using_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, storage, unix, increase, size
 summary: 'SnapDrive for UNIX lets you increase the size of the storage system volume group or disk group. You use the snapdrive storage resize command to do this.'
 ---
 = Increase in storage size using SnapDrive for UNIX

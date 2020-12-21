@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_log_file_rotation_settings.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, log, file, rotation, settings, log
 summary: 'The values you specify for the variable in the snapdrive.conf file affect the log file rotation.'
 ---
 = Log file rotation settings

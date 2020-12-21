@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_informationrequired_forusing_the_snapdrive_storageconnect_command.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, connect, command
 summary: 'There is some information that you need to supply when you use the snapdrive storage connect command. This information helps you to use the command correctly.'
 ---
 = Information required for using the snapdrive storage connect command
@@ -44,7 +44,7 @@ To connect a file system that is created on a LUN without activating the host LV
 a|
 -nolvm
 a|
- 
+
 a|
 To connect a file system on a host volume: The -fsfile_spec and -hostvolfile_spec you supply identify the LVM file system, disk group, and host volumes that you want to connect to a new host.
 

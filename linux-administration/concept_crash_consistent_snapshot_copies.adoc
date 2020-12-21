@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_crash_consistent_snapshot_copies.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, copy, snapshot, crash, consistent
 summary: 'You might have to create a crash-consistent Snapshot copies of your file system or disk groups. SnapDrive for UNIX creates Snapshot copies that contain the image of all the storage system volumes specified in the entity.'
 ---
 = Crash-consistent Snapshot copies

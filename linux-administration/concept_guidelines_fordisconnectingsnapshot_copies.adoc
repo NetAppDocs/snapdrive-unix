@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_guidelines_fordisconnectingsnapshot_copies.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, disconnect, snapshot, copy, lun, storage, nfs
 summary: 'The following are the guidelines to disconnect a Snapshot copy for LUNs, storage entities, or NFS directories.'
 ---
 = Guidelines for disconnecting Snapshot copies

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_0001_680_admin_error_host_os_requires_an_update_to_internal_data_after_each_reboot.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, reboot, error, update, connect, admin
 summary: 'On Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts, after every reboot the Snapshot connect and storage create operations encounters an error message.'
 ---
 = After each reboot snap connect yields "0001-680 Admin error: Host OS requires an update to internal data"

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_guidelines_forconnectingsnapshot_copies.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, connect, snapshot, copy, guidelines
 summary: 'Follow the guidelines when connecting to Snapshot copies.'
 ---
 = Guidelines for connecting Snapshot copies

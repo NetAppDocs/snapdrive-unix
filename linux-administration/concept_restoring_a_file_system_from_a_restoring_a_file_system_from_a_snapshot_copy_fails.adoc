@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_restoring_a_file_system_from_a_restoring_a_file_system_from_a_snapshot_copy_fails.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, restore, file, snapshot, copy, fail, error
 summary: 'After migration from Red Hat Enterprise Linux 3 updates to Red Hat Enterprise Linux 4 updates, that is, from LVM1 to LVM2, restoring a file system from a Snapshot copy fails.'
 ---
 = Restoring a file system from a Snapshot copy fails

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_role_based_access_control_for_flexclone_volume_operations.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, role, access, control, rbac, flexcone, volume, manager, operations, storage
 summary: 'If Operations Manager is configured with the system, the Operations Manager administrator must grant you the required capabilities to carry out storage operations on FlexClone volumes.'
 ---
 = Role-based access control for FlexClone volume operations

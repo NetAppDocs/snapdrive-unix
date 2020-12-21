@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_data_disappears_when_you_add_luns_to_a_volume_group.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, data, lun, volume, group, disappear
 summary: 'Data on the LUN disappears, when you add an existing LUN to a volume group.'
 ---
 = Data disappears when you add LUNs to a volume group

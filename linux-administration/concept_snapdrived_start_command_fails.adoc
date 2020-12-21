@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_snapdrived_start_command_fails.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, start, command, fails, troubleshoot, resolve, issue
 summary: 'In some conditions snapdrived start command may fail. There are a few troubleshooting steps to resolve this.'
 ---
 = snapdrived start command fails

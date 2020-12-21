@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_informationrequired_forusing_the_snapdrive_storageresize_command.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, resize, command, storage
 summary: 'There is some information that you need to supply before you can use the snapdrive storage resize command. This information helps you in using the command correctly.'
 ---
 = Information required for using the snapdrive storage resize command

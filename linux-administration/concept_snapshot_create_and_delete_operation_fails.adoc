@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_snapshot_create_and_delete_operation_fails.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snapshot, create, delete, fail, remove, lun
 summary: 'The Snapshot create and delete operation fails to remove Snapshot copies on the storage system because the LUNs are busy.'
 ---
 = Snapshot create and delete operation fails

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_snap_connect_procedure.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, connect, procedure, ontap, operation
 summary: 'The snap connect procedure is valid for Data ONTAP 7.2 or later and explain the steps for snap connect operation.'
 ---
 = Snap connect procedure

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_snapdrive_for_unix_security.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, security, unix, access
 summary: 'Before you use SnapDrive for UNIX, you must understand its security features and learn how to access them.'
 ---
 = Security features in SnapDrive for UNIX

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_benefits_of_flexclone_volumes.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, flexclone, volumes
 summary: 'FlexClone volumes provide data management and performance benefits.'
 ---
 = Benefits of FlexClone volumes

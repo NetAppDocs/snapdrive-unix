@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_guidelines_fordisconnectingsnapshot_copies_for_nfs_entities.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snapshot, copy, nfs, disconnect, host, command
 summary: 'The disconnect operation for a Snapshot copy can be executed from any node in a host cluster environment. Use command options to disconnect a storage entity from a specific node.'
 ---
 = Guidelines for disconnecting Snapshot copies for NFS entities

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_clustered_data_ontap_features_available_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, data, ontap, clustered
 summary: 'SnapDrive for UNIX 5.0 and later versions support some features of clustered Data ONTAP.'
 ---
 = Clustered Data ONTAP features available in SnapDrive for UNIX

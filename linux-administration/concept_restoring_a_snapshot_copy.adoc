@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_restoring_a_snapshot_copy.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, restore, snapshot, copy
 summary: 'You can restore a Snapshot copy of a single storage entity or multiple storage entities.'
 ---
 = Restoring a Snapshot copy

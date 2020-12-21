@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_connecting_to_a_single_filespec_in_a_lun.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, filespec, connect, lun
 summary: 'You can connect to a single filespec which resides in a LUN. The following example describes how you can complete this operation.'
 ---
 = Connecting to a single filespec in a LUN
@@ -20,7 +20,7 @@ The layout of the source file system /mnt/fs1 is given below:
 ----
 # snapdrive storage show -fs /mnt/fs_1 -capabilities
 raw device: /dev/sdc1 mount point: /mnt/fs_1 (persistent) fstype ext3
-				
+
 allowed operations: all
 
 device filename adapter path size proto state clone lun path backing snapshot

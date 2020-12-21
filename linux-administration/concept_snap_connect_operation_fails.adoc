@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_snap_connect_operation_fails.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, connect, fail, error, operation, reboot, reload
 summary: 'The Snap connect operation fails and the original volume group does not load after rebooting the host.'
 ---
 = Snap connect operation fails
