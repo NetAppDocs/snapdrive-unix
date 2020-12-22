@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_unable_to_restore_a_snapshot_copy.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snapshot, restore, command, issuelun, scsi
 summary: 'There are few conditions that affect the snapdrive snap restore command’s ability to restore a Snapshot copy.'
 ---
 = Unable to restore a Snapshot copy

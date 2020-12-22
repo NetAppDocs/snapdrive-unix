@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_host_side_command_lines.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, host, command, operations
 summary: 'SnapDrive for UNIX commands are used for host-side operations.'
 ---
 = Host-side command lines

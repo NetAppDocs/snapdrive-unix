@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_estimating_the_storage_space_to_split_a_lun_clone.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, lun, clone, split, storage, space, 
 summary: 'The clone split estimation helps you to estimate the required storage space \(in MB\) to split a LUN clone. Depending on the clone split estimation provided by SnapDrive for UNIX, you can determine the space availability to split a LUN clone.'
 ---
 = Estimating the storage space to split a LUN clone

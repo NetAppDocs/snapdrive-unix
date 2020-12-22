@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_guidelines_fordisplayingsnapshot_copies.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snapshot, wildcard, copy
 summary: 'You can use wildcards to display the Snapshot copies. You can display all the Snapshot copies present in a specific object.'
 ---
 = Guidelines for displaying Snapshot copies

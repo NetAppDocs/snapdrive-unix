@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_some_configuration_commands.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, command, configuration, config
 summary: 'There are few commands that help you in configuring SnapDrive for UNIX.'
 ---
 = Some configuration commands

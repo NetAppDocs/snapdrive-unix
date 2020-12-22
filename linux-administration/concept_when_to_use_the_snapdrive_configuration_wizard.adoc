@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_when_to_use_the_snapdrive_configuration_wizard.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, configuration, wizard, update
 summary: 'Use the SnapDrive configuration wizard to update the configuration variables in the wizard. You can run the configuration wizard at any time to modify your configuration changes to SnapDrive.'
 ---
 = SnapDrive configuration wizard

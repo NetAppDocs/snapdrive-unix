@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_enabling_and_disabling_log_files.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, enable, disable, log, file, name
 summary: 'If you want to enable a log file, specify a file name as the value in the name-value pair of the log file you want to enable. If you want to disable a file, do not enter a value for the log file name parameter.'
 ---
 = Enabling and disabling log files

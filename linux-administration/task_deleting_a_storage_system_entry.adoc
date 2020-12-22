@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_deleting_a_storage_system_entry.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, delete, storage, host, map
 summary: 'You can delete the storage system mapping information from the host system.'
 ---
 = Deleting the storage system mapping information from the host system

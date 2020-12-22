@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_creating_an_lvm_a_vxvm_entity_and_settingup_the_lunautomatically.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, lvm, lun, logical, disk, unix
 summary: 'You can create an entity such as a file system, logical volume, or disk group on the host and have SnapDrive for UNIX automatically create the associated LUN.'
 ---
 = Creating an LVM entity and setting up the LUN automatically

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_adding_host_entries_for_new_luns.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, host, entries, lun, command
 summary: 'You can create a specific number of new LUNs using SnapDrive for UNIX. SnapDrive for UNIX provides specific commands for this purpose.'
 ---
 = Adding host entries for new LUNs

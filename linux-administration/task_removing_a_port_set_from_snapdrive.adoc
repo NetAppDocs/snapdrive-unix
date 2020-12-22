@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_removing_a_port_set_from_snapdrive.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, remove, portset, delete, command, port, set
 summary: 'You can use the snapdrive portset delete command to delete a port set that is configured in SnapDrive.'
 ---
 = Removing a port set from SnapDrive

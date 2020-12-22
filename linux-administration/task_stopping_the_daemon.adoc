@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_stopping_the_daemon.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, daemon, configuration
 summary: 'If you change the SnapDrive for UNIX configuration file, you must stop and restart the daemon. You can stop the daemon nonforcibly or forcibly.'
 ---
 = Stopping the daemon

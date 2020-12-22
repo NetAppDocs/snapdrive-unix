@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_configuration_command_lines.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, configuration, command, line, operations, config
 summary: 'SnapDrive for UNIX commands are used for configuration operations.'
 ---
 = Configuration command lines

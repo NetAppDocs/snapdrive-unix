@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_command_line_arguments.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, command, argument, format, copy, snapshot
 summary: 'The SnapDrive for UNIX takes arguments in a specific format.'
 ---
 = Command-line arguments

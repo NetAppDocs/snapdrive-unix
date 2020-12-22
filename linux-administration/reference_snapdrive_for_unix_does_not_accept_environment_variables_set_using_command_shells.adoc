@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_snapdrive_for_unix_does_not_accept_environment_variables_set_using_command_shells.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, commands, fail, shell, snapcreate
 summary: 'You are unable to execute SnapDrive for UNIX commands, both because the environment variables set through a command shell are not accepted in SnapDrive for UNIX, and when $LD_LIBRARY_PATH and snapcreate-check-nonpersistent-nfs parameters are set to off.'
 ---
 = SnapDrive for UNIX commands fail when environment variables are set using a command shell

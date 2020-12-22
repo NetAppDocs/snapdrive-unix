@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_generating_self_signed_certificates.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, certificate, self, signed, daemon, cli
 summary: 'The SnapDrive for UNIX daemon service requires that you generate a self-signed certificate for authentication. This authentication is required while communicating with the CLI.'
 ---
 = Generating self-signed certificates

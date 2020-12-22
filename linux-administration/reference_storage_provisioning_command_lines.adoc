@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_storage_provisioning_command_lines.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, storage, command, provisioning
 summary: 'Some SnapDrive for UNIX commands are used for storage provisioning.'
 ---
 = Storage provisioning command lines

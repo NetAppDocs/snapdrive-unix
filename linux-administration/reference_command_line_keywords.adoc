@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_command_line_keywords.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, command, keywords, host, destination, flexcone, nfs, storage, lvm
 summary: 'The SnapDrive for UNIX uses keywords to specify the name of host disk group, the destination group, volume, or FlexClone, the NFS file, the storage system, and so on.'
 ---
 = Command-line keywords

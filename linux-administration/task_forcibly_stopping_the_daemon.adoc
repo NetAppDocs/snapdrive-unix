@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_forcibly_stopping_the_daemon.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, daemon, stop, force, cancel, undefined
 summary: 'You can forcibly stop the daemon when you do not want to wait for all the commands to complete execution. After the request to forcibly stop the daemon is received, the SnapDrive for UNIX daemon cancels any commands that are in execution or in queue. When you forcibly stop the daemon, the state of your system might be undefined. This method is not recommended.'
 ---
 = Forcibly stopping the daemon

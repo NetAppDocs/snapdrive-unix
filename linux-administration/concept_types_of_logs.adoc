@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_types_of_logs.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, log, file, troubleshoot, audit, recovery, trace
 summary: 'SnapDrive for UNIX supports various types of log files, which help you troubleshoot when SnapDrive for UNIX is not working as expected.'
 ---
 = Types of logs

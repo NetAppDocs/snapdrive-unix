@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_general_notes_about_the_commands.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, general, commands, dg, vg, lvol, hostvol, unix
 summary: 'SnapDrive for UNIX commands have options such as -dg, -vg, -lvol and -hostvol.'
 ---
 = General notes about the commands

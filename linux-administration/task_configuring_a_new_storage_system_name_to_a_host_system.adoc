@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_configuring_a_new_storage_system_name_to_a_host_system.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, name, host, configuring, configure
 summary: 'You must configure the new storage system name in the host system to execute SnapDrive operations using the new storage system.'
 ---
 = Configuring the new storage system name in a host system

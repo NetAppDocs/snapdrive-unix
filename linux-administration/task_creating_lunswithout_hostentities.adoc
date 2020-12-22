@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_creating_lunswithout_hostentities.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, lun, host, command, storage
 summary: 'You can use SnapDrive for UNIX commands to provision storage by creating a LUN on the storage system.'
 ---
 = Creating LUNs without host entities

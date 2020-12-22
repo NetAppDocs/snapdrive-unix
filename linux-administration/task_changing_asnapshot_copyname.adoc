@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_changing_asnapshot_copyname.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snapshot, rename, command, source, name
 summary: 'You can change the name of a Snapshot copy by using the snapdrive snap rename command. The Snapshot rename operation changes the name of the source Snapshot copy to the name specified by the target argument.'
 ---
 = Changing a Snapshot copy name

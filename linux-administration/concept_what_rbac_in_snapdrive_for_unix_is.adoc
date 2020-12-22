@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_what_rbac_in_snapdrive_for_unix_is.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, rbac, access, control, role, storage, limited, user
 summary: 'RBAC allows SnapDrive administrators to restrict access to a storage system for various SnapDrive operations. This limited or full access for storage operations depends on the role that is assigned to the user.'
 ---
 = What role-based access control (RBAC) in SnapDrive for UNIX is

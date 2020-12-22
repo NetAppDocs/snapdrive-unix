@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_enabling_thin_provisioning_for_luns.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, enable, lun, thin, provisioning, reservation, space
 summary: 'You can use SnapDrive for UNIX to carry out thin provisioning on your storage system. Thin provisioning is also referred as space-reservation.'
 ---
 = Enabling thin provisioning for LUNs

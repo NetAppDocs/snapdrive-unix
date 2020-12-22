@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_verifying_storagesystem_user_namesassociated_withsnapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, verfiy, user, name, config, command
 summary: 'You can verify which user name SnapDrive for UNIX has associated with a storage system by executing the snapdrive config list command.'
 ---
 = Verifying storage system user names associated with SnapDrive for UNIX

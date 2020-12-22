@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_unable_to_create_a_snapshot_copy.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snapshot, copy, create, command
 summary: 'There are few conditions that affect the snapdrive snap create command’s ability to create a Snapshot copy.'
 ---
 = Unable to create a Snapshot copy

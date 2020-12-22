@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_understanding_exit_status_values_of_error_messages.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, exit, error, status, warning, admin, command, fatal
 summary: 'Each SnapDrive for UNIX error message is associated with an exit status value. The exit status value contains cause of the error, and its type-Warning, Command, Admin, or Fatal.'
 ---
 = Understanding exit status values of error messages

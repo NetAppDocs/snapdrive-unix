@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_volume_based_snaprestore_for_space_reservation.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snaprestore, space, reservation, volume, file, reserve
 summary: 'For space reservation with volume based snap reserve you need to set space-reservations-volume-enabled option in the snapdrive.conf file.'
 ---
 = Volume-based SnapRestore for space reservation

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_volume_managers_on_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, volume, manager, native, lvm2
 summary: 'On Linux, the volume manager is Native LVM2.'
 ---
 = Volume managers on SnapDrive for UNIX

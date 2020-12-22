@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_snapshot_operation_command_lines.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snapshot, command, unix
 summary: 'SnapDrive for UNIX commands are used for Snapshot operations.'
 ---
 = Snapshot operation command lines

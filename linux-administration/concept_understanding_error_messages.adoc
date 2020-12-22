@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_understanding_error_messages.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, error, message, location, format
 summary: 'SnapDrive for UNIX provides information about error messages, which appear at different locations and in various formats.'
 ---
 = Understanding error messages

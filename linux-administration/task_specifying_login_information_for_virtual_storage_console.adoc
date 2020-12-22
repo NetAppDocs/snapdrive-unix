@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_specifying_login_information_for_virtual_storage_console.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, login, virtual, storage, console, rdm, lun
 summary: 'The Virtual Storage Console must be configured in SnapDrive for UNIX for provisioning RDM LUNs in the guest operating system. However, there is a user name and password that allows SnapDrive for UNIX to access the Virtual Storage Console. The Virtual Storage Console does not authenticate these login credentials.'
 ---
 = Specifying login information for Virtual Storage Console

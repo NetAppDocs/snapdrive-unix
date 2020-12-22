@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_unable_to_start_daemon.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, restart, daemon, host, storage, communicate, start
 summary: 'The daemon cannot be started when the host is not able to communicate to any configured storage system.'
 ---
 = Unable to restart the daemon when host cannot communicate to the storage system

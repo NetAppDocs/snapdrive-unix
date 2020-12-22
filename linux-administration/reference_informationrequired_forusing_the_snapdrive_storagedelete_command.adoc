@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_informationrequired_forusing_the_snapdrive_storagedelete_command.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, storage, delete, command
 summary: 'There is some information that you need to supply before you can use the snapdrive storage delete command. This information helps you in using the command correctly.'
 ---
 = Information required for using the snapdrive storage delete command

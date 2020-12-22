@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/index.html
 sidebar: sidebar
-keywords: 
+keywords: index, snap, snapdrive, administration, guide
 summary: ''
 ---
 = Administration Guide for Linux®

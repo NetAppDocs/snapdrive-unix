@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_verifying_login_information_for_vserver.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, login, vserver, verify, config, command
 summary: 'You can verify if the Vserver is configured in SnapDrive for UNIX using the snapdrive config list command.'
 ---
 = Verifying login information for Vserver

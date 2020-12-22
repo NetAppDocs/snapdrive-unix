@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_disabling_consistency_group_snapshots.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, disable, group, snapshot, consistency, configure
 summary: 'You can configure SnapDrive for UNIX to disable a consistency group Snapshot copy.'
 ---
 = Disabling consistency group Snapshots copies

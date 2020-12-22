@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_creating_asnapshot_copy.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, snapshot, create, command
 summary: 'To create a Snapshot copy, run the snapdrive snap create command.'
 ---
 = Creating a Snapshot copy

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_viewing_the_list_of_igroups.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, igroups, configure, host
 summary: 'You can view all the igroups that are configured on the host.'
 ---
 = Viewing the list of igroups

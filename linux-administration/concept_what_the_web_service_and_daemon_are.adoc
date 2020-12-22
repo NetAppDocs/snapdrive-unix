@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_what_the_web_service_and_daemon_are.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, web, service, daemon, interface, snapmanager, cli, command
 summary: 'The SnapDrive for UNIX Web service provides a uniform interface for all the NetApp SnapManager and third-party products to integrate seamlessly with SnapDrive for UNIX. To use command-line interface \(CLI\) commands in SnapDrive for UNIX, you need to start the daemon.'
 ---
 = What the Web service and daemon are

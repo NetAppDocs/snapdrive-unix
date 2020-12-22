@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/concept_unable_to_start_the_daemon.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, daemon, start, problem, stale, entry
 summary: 'The daemon cannot be started when the daemon finds few stale entries in the snapdrive process.'
 ---
 = Unable to start the daemon

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/delete_reference_trademark.html
 sidebar: sidebar
-keywords: 
+keywords: trademark, netapp, logo, owner, company
 summary: ''
 ---
 = Trademark

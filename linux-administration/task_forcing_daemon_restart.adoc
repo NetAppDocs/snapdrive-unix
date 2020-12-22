@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_forcing_daemon_restart.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, force, restart, daemon, stop
 summary: 'You can force the daemon to restart. A forceful restart of the daemon stops the execution of all running commands.'
 ---
 = Forcing daemon restart

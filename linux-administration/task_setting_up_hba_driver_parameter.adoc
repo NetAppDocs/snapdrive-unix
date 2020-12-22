@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_setting_up_hba_driver_parameter.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, hba, driver, parameter, mpio
 summary: 'To set up HBA driver for Linux MPIO, the exact sequence of steps required depends on the operating system used. The setup also depends on the HBA card used.'
 ---
 = Setting up HBA driver parameter

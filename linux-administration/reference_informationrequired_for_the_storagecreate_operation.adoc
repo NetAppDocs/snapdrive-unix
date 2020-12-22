@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_informationrequired_for_the_storagecreate_operation.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, storage, create, operation
 summary: 'You must supply some information when you complete the storage create operation.'
 ---
 = Information required for the storage create operation

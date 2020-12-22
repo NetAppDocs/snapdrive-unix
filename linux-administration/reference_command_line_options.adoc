@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_command_line_options.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, commands, unix, command, options
 summary: 'There are various options that are used with SnapDrive for UNIX commands.'
 ---
 = Command-line options

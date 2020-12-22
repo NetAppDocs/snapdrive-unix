@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_recieving_error_does_not_look_snapdrive_generated.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, disconnect, delete, clone, fail, error
 summary: 'In some cases, snapdrive snap disconnect operation fails to delete cloned volume and the error message does not look SnapDrive-generated appears.'
 ---
 = Snap disconnect operation fails to delete cloned volume

@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_error_message_values.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, error, message, value, common
 summary: 'It is helpful for you to be aware of some of the more common error messages that you might see when using SnapDrive for UNIX, and to know how to address them.'
 ---
 = Error message values
@@ -165,7 +165,7 @@ In the snapdrive.conf file, ensure that the check-export-permission-nfs-clone co
 a|
 0002-253
 a|
- 
+
 a|
 Admin
 a|
@@ -176,7 +176,7 @@ It is a storage system side error. Please collect the sd-trace.log and storage s
 a|
 0002-264
 a|
- 
+
 a|
 Admin
 a|
@@ -187,7 +187,7 @@ FlexClone is not supported with the current Data ONTAP version of the storage sy
 a|
 0002-265
 a|
- 
+
 a|
 Admin
 a|
@@ -266,7 +266,7 @@ FlexClones cannot be created for traditional volumes.
 a|
 0003-003
 a|
- 
+
 a|
 Admin
 a|
@@ -281,7 +281,7 @@ a|
 a|
 0003-012
 a|
- 
+
 a|
 Admin
 a|
@@ -318,7 +318,7 @@ Clone-split continues the splitting process and suddenly, the clone split stops 
 a|
 0003-002
 a|
- 
+
 a|
 Command
 a|

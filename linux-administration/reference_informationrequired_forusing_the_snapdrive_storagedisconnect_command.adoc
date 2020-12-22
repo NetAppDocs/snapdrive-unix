@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/reference_informationrequired_forusing_the_snapdrive_storagedisconnect_command.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, disconnect, command, storage
 summary: 'The following table gives the information you need to supply when you use the snapdrive storage disconnect command:'
 ---
 = Information required for using the snapdrive storage disconnect command

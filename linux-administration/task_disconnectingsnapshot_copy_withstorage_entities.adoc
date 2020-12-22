@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_disconnectingsnapshot_copy_withstorage_entities.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, disconnect, snapshot, command
 summary: 'You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains storage entities.'
 ---
 = Disconnecting Snapshot copy with storage entities
@@ -62,7 +62,7 @@ This example disconnects a Snapshot copy with file system, disk group on LVM sta
 
 ----
 # snapdrive snap disconnect -fs /mnt/fs1_clone -fstype ext3
-					
+
 delete file system /mnt/fs1_clone
 - fs /mnt/fs1_clone ... deleted
 - hostvol lvm1_0/fs1_SdHv_0 ... deleted

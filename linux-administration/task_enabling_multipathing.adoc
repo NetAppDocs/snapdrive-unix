@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_enabling_multipathing.html
 sidebar: sidebar
-keywords: SnapDrive for UNIX
+keywords: snap, snapdrive, multipathing, enable, hba
 summary: 'To use multipathing in SnapDrive for UNIX, you must complete steps that include installing and starting the HBA. If you are using a non-NetApp multipathing solution, you must download the software and application package from the HBA vendor’s web site.'
 ---
 = Enabling multipathing

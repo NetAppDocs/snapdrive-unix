@@ -1,7 +1,7 @@
 ---
 permalink: linux-administration/task_deleting_a_data_interface_entry_of_a_management_interface.html
 sidebar: sidebar
-keywords: 
+keywords: snap, snapdrive, delete, interface, management, config, nfs, command
 summary: 'You can delete a data interface entry that is associated with a specific management interface in an NFS environment by using the snapdrive config delete -mgmtpath command.'
 ---
 = Deleting a data interface entry for a management interface
