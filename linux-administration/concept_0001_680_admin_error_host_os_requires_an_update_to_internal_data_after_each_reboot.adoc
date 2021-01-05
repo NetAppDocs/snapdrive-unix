@@ -26,4 +26,5 @@ lsmod
 . If the sg and iSCSI (if iSCSI setup is used) services are not loaded, enter the following commands:
  ** modprobe sg
  ** service iscsi start
-*Note:* If you do not want to perform steps 2 and 3 manually, add the modprobe sg and service iscsi start commands in the host startup script.
+
+NOTE: If you do not want to perform steps 2 and 3 manually, add the modprobe sg and service iscsi start commands in the host startup script.

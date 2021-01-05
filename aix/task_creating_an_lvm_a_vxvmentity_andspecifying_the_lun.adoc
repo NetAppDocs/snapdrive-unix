@@ -1,7 +1,7 @@
 ---
 permalink: aix/task_creating_an_lvm_a_vxvmentity_andspecifying_the_lun.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can create a host entity such as a file system, logical volume, or disk group and specify the LUN that is created as part of it.'
 ---
 = Creating an LVM entity and specifying the LUN
@@ -11,9 +11,13 @@ summary: 'You can create a host entity such as a file system, logical volume, or
 [.lead]
 You can create a host entity such as a file system, logical volume, or disk group and specify the LUN that is created as part of it.
 
-. At the command line, enter the following command: snapdrive storage create-host_lvm_fspec -lunlong_lun_name [lun_name...] -lunsize size [-igroup ig_name [ig_name...]] [{ -reserve | -noreserve }]
+. At the command line, enter the following command:
 +
-This example creates the file system /mnt/acctfs with file system depending on your host. It sets up three LUNs on the storage system acctfiler. Each LUN is 10 GB:# snapdrive storage create -fs /mnt/acctfs -fstype jfs2 -lun acctfiler:/vol/vol1/lunA lunB lunC -lunsize 10g
+`*snapdrive storage create-host_lvm_fspec -lunlong_lun_name [lun_name...] -lunsize size [-igroup ig_name [ig_name...]] [{ -reserve | -noreserve }]*`
++
+This example creates the file system /mnt/acctfs with file system depending on your host. It sets up three LUNs on the storage system acctfiler. Each LUN is 10 GB:
++
+`*# snapdrive storage create -fs /mnt/acctfs -fstype jfs2 -lun acctfiler:/vol/vol1/lunA lunB lunC -lunsize 10g*`
 +
 ----
 LUN acctfiler:/vol/vol1/lunA ... created

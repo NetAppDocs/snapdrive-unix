@@ -13,6 +13,8 @@ You can forcibly stop the daemon when you do not want to wait for all the comman
 
 You must be logged in as a root user.
 
-NOTE:
+.Steps
 
-. Forcibly stop the daemon: snapdrived -force stop
+. Forcibly stop the daemon:
++
+snapdrived -force stop

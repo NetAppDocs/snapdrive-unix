@@ -11,7 +11,10 @@ summary: 'You can use the snapdrive snap disconnect command to disconnect a Snap
 [.lead]
 You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains LUNs having no storage entities.
 
-. Enter the following command syntax: snapdrive snap disconnect -lunlong_lun_name [lun_name...]
+.Steps
+. Enter the following command syntax:
++
+snapdrive snap disconnect -lunlong_lun_name [lun_name...]
 
 SnapDrive for UNIX removes the mappings for the storage entities specified in the command line.
 

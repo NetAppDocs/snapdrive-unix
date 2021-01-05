@@ -11,7 +11,11 @@ summary: 'The clone split estimation helps you to estimate the required storage 
 [.lead]
 The clone split estimation helps you to estimate the required storage space (in MB) to split a volume clone. Depending on the clone split estimation provided by SnapDrive for UNIX, you can determine the space availability to split a volume clone.
 
-. Enter the following command to estimate the required storage space to split a volume clone. snapdrive clone split estimate [-lun]long_lun_name [long_lun_name...] | [{-dg | -vg | -fs | -hostvol | -lvol} file_spec [file_spec...]] | [-snapname long_snap_name] {-volclone|-lunclone}] [-v | -verbose] [-dump | -dumpall]
+.Steps
+
+. Enter the following command to estimate the required storage space to split a volume clone.
++
+snapdrive clone split estimate [-lun]long_lun_name [long_lun_name...] | [{-dg | -vg | -fs | -hostvol | -lvol} file_spec [file_spec...]] | [-snapname long_snap_name] {-volclone|-lunclone}] [-v | -verbose] [-dump | -dumpall]
 +
 This operation displays the following information:
 
@@ -22,6 +26,8 @@ This operation displays the following information:
  ** Storage Status - indicates the space availability for a volume clone split
  ** Owned Space - space occupied by the volume clone
  ** Shared space - space occupied by the volume clone along with the parent
+
++
 The Owned Space and Shared Space is displayed when you use -verbose option.
 
 The following example estimates the storage space to split a volume clone.

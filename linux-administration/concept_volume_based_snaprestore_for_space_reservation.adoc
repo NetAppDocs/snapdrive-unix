@@ -52,4 +52,4 @@ volume
 a|
 Attempt to set space guarantee for volumes as "volume"
 |===
-*Note:* --vbsr preview does not check for any of the space reservation options.
+NOTE: --vbsr preview does not check for any of the space reservation options.

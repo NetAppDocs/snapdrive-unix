@@ -9,7 +9,7 @@ summary: 'When you mount a FlexVol volume, an entry is added in the /etc/exports
 :imagesdir: ../media/
 
 [.lead]
-When you mount a FlexVol volume, an entry is added in the /etc/exports file. In NFS environment, SnapDrive for UNIX fails, and an error message is generated.
+When you mount a FlexVol volume, an entry is added in the `/etc/exports` file. In NFS environment, SnapDrive for UNIX fails, and an error message is generated.
 
 The error message is
 
@@ -18,12 +18,13 @@ The error message is
 dub12137:/vol/vn_dub12137_testprisredo_0: Permission denied.
 ----
 
-SnapDrive for UNIX might encounter the error message due to the option nfs.export.auto-update set to off. The option nfs.export.auto-update controls whether the automatic updates are performed on the /etc/exports file.
+SnapDrive for UNIX might encounter the error message due to the option `nfs.export.auto-update` set to `off`. The option `nfs.export.auto-update` controls whether the automatic updates are performed on the `/etc/exports` file.
 
 NOTE: The AutoSupport does not send the message to the storage system when the FlexVol volume fails in NFS environment.
 
-. Set the nfs.export.auto-update option on so that the /etc/exports file is updated automatically.
+.Steps
+. Set the `nfs.export.auto-update` option `on` so that the `/etc/exports` file is updated automatically.
 +
 SnapDrive for UNIX can now mount the FlexVol volume.
 
-In an HA pair active/active configuration, ensure you set the NFS exports option on for both the storage systems.
+In an HA pair active/active configuration, ensure you set the NFS exports option `on` for both the storage systems.

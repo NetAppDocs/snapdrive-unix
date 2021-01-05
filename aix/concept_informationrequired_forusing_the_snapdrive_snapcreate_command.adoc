@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_informationrequired_forusing_the_snapdrive_snapcreate_command.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When you create a Snapshot copy, you should determine the storage entity that you want to capture and specify a name of the Snapshot copy.'
 ---
 = Information required for using the snapdrive snap create command
@@ -46,7 +46,9 @@ a|
 Host volume (-hostvolfile_spec ) or logical volume (-lvolfile_spec )
 
 a|
-Name of the host or logical volume *Note:* You must supply both the requested volume and the disk group containing it; for example, -hostvol dg3/acct_volume.
+Name of the host or logical volume
+
+NOTE: You must supply both the requested volume and the disk group containing it; for example, -hostvol dg3/acct_volume.
 
 a|
 Snapshot copy name (-snapnamesnap_name)

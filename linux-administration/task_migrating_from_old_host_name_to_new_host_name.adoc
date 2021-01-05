@@ -11,7 +11,11 @@ summary: 'You can migrate from the old storage system to a new storage system by
 [.lead]
 You can migrate from the old storage system to a new storage system by using the snapdrive config migrate set command. After the migration, you can perform all the SnapDrive operations in the host system by using the new storage system.
 
-. Enter the following command: snapdrive config migrate set old_storage_system_namenew_storage_system_name
+.Steps
+
+. Enter the following command: 
++
+snapdrive config migrate set old_storage_system_namenew_storage_system_name
 
 The following example shows that you can migrate from the old storage system "tuffleskin" to the new storage system "roaster".
 

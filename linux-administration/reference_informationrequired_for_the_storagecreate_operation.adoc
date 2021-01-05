@@ -34,7 +34,8 @@ If you create a LUN on a Linux host, SnapDrive for UNIX performs the following a
 
  ** Creates the LUN.
  ** Configures the LUN into one partition.
-*Note:* If you are using SLES10 update 2, then raw device is used to create a file system.
+
+NOTE: If you are using SLES10 update 2, then raw device is used to create a file system.
 
 * LVM disk groups with host volumes and file systems
 +

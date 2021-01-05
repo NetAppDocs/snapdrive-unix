@@ -11,7 +11,10 @@ summary: 'You can verify if the migrated storage system is included in the host 
 [.lead]
 You can verify if the migrated storage system is included in the host system by running the snapdrive config migrate listcommand.
 
-. Enter the following command:snapdrive config migrate list
+.Steps
+. Enter the following command:
++
+snapdrive config migrate list
 +
 ----
 New Entry            Old Entry

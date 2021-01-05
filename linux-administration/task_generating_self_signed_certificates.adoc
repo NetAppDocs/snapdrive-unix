@@ -11,7 +11,10 @@ summary: 'The SnapDrive for UNIX daemon service requires that you generate a sel
 [.lead]
 The SnapDrive for UNIX daemon service requires that you generate a self-signed certificate for authentication. This authentication is required while communicating with the CLI.
 
-. Generate an RSA key: $ openssl genrsa 1024 > host.key $ chmod 400 host.key
+.Steps
+. Generate an RSA key:
++
+$ openssl genrsa 1024 > host.key $ chmod 400 host.key
 +
 ----
 # openssl genrsa 1024 > host.key Generating
@@ -20,7 +23,9 @@ RSA private key, 1024 bit long modulus
 # chmod 400 host.key
 ----
 
-. Create the certificate: $ openssl req -new -x509 -nodes -sha1 -days 365 -key host.key > host.cert
+. Create the certificate:
++
+$ openssl req -new -x509 -nodes -sha1 -days 365 -key host.key > host.cert
 +
 The -new, -x509, and -nodes options are used to create an unencrypted certificate. The -days option specifies the number of days the certificate remains valid.
 

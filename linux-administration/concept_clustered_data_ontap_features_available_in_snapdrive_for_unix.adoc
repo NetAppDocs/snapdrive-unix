@@ -24,10 +24,12 @@ The following features are supported:
 +
 A load-sharing mirror reduces the network traffic to a FlexVol volume by providing additional read-only access to the clients. You can create and manage the load-sharing mirrors to distribute read-only traffic away from a FlexVol volume. Load-sharing mirrors do not support Infinite Volumes. A set of load-sharing mirrors consists of a source volume that can connect with one or more destination volumes. Each load-sharing mirror in the set must belong to the same Storage Virtual Machine (SVM) as the source volume of the set. The load-sharing mirrors should also be created on different aggregates and accessed by different nodes in the cluster to achieve proper load balancing of client requests. For more information, see the _Clustered Data ONTAP Logical Storage Management Guide_.
 +
-NOTE:
 
- ** LSM is supported with clustered Data ONTAP 8.2 and higher version of ONTAP. But you will have to configure cluster administrator if you are using clustered Data ONTAP 8.2.2 and below version using snapdrive config set-cserver command.
- ** LSM is not supported on any versions earlier than ONTAP 8.2 even if the cluster administrator is configured.
+[NOTE]
+====
+* LSM is supported with clustered Data ONTAP 8.2 and higher version of ONTAP. But you will have to configure cluster administrator if you are using clustered Data ONTAP 8.2.2 and below version using snapdrive config set-cserver command.
+* LSM is not supported on any versions earlier than ONTAP 8.2 even if the cluster administrator is configured.
+====
 
 * IPspaces
 +

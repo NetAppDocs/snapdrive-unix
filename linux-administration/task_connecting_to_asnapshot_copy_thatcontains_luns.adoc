@@ -11,7 +11,11 @@ summary: 'You can connect to a Snapshot copy that contains LUNs by using the sna
 [.lead]
 You can connect to a Snapshot copy that contains LUNs by using the snapdrive snap connect command.
 
-. Enter the following command syntax to connect to a Snapshot copy that contains LUNs: snapdrive snap connect -luns_lun_named_lun_name [[-lun] s_lun_named_lun_name... -snapname long_snap_name [-igroup ig_name [ig_name...]] [-split]
+.Steps
+
+. Enter the following command syntax to connect to a Snapshot copy that contains LUNs:
++
+snapdrive snap connect -luns_lun_named_lun_name [[-lun] s_lun_named_lun_name... -snapname long_snap_name [-igroup ig_name [ig_name...]] [-split]
 +
 NOTE: The s_lun_name and d_lun_name should be in the format lun_name or qtree_name/lun_name.
 

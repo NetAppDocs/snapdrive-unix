@@ -11,6 +11,8 @@ summary: 'You can stop the clone split for a volume clone or LUN clone using the
 [.lead]
 You can stop the clone split for a volume clone or LUN clone using the job ID or file specification.
 
+.Steps
+
 . Enter the following command:
 +
 snapdrive clone split stop [-lun] long_lun_name [long_lun_name...] |[{-dg | -vg | -fs | -hostvol | -lvol} file_spec [file_spec...]] | [-job <jobid>]
@@ -41,7 +43,8 @@ Clone-Split for "/mnt/my_mnt3" is not stopped : No split is in progress for this
 Clone-Split for "/mnt/my_mnt4" is not stopped : No split is in progress for this resource
 ----
 
-NOTE:
-
+[NOTE]
+====
 * If the clone split is stopped for a particular file specification in the job id and the clone split stop is successful, then file specification is removed from the job.
 * If the clone split is stopped for a job, and the clone split stop is successful for all the file specification in the job, the job is removed from the job set.
+====

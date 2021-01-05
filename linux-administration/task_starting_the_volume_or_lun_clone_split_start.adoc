@@ -11,13 +11,18 @@ summary: 'You can start a volume clone or LUN clone split operation.'
 [.lead]
 You can start a volume clone or LUN clone split operation.
 
-. Enter the following command to start a volume clone or LUN clone split.# snapdrive clone split start [-lun]long_lun_name [long_lun_name...] | [{-dg | -vg | -fs | -hostvol | -lvol} file_spec [file_spec ...]] [-force][-noprompt] [-dump | -dumpall]
+.Steps
+
+. Enter the following command to start a volume clone or LUN clone split.
++
+# snapdrive clone split start [-lun]long_lun_name [long_lun_name...] | [{-dg | -vg | -fs | -hostvol | -lvol} file_spec [file_spec ...]] [-force][-noprompt] [-dump | -dumpall]
 +
 The following options can be used when the storage status displays as NOT AVAILABLE.
 
  ** You can use the -force option to forcibly start the clone split operation and receive a confirmation message that the operation has started.
  ** You can use the -noprompt along with -force option to start the clone split start operation without receiving any confirmation message.
-*Note:* When you start another clone split operation soon after stopping a clone split operation that was in progress, the operation might fail. This issue might occur if the delay between the starting and stopping of the clone split operation was not sufficient to allow the storage system to sync the stop operation.
+
+NOTE: When you start another clone split operation soon after stopping a clone split operation that was in progress, the operation might fail. This issue might occur if the delay between the starting and stopping of the clone split operation was not sufficient to allow the storage system to sync the stop operation.
 
 The following example displays how to split a volume clone:
 

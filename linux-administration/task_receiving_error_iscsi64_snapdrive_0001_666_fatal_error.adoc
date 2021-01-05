@@ -9,7 +9,8 @@ summary: 'If your snapdrive snap connect command fails with iscsi64 snapdrive: 0
 :imagesdir: ../media/
 
 [.lead]
-If your snapdrive snap connect command fails with iscsi64 snapdrive: 0001-666 FATAL error:, following is the workaround described.
+If your `snapdrive snap connect` command fails with `iscsi64 snapdrive: 0001-666 FATAL error`:, following is the workaround described.
 
-. Add filter = [ "r|/dev/cciss/.*|" ] as the first filter to /etc/lvm/lvm.conf file, if the filter is not specified already.
-. Remove /etc/lvm/.cache and issue pvscan to confirm that none of the /dev/cciss/* entries show.
+.Steps
+. Add `filter = [ "r|/dev/cciss/.*|" ]` as the first filter to `/etc/lvm/lvm.conf` file, if the filter is not specified already.
+. Remove `/etc/lvm/.cache` and issue `pvscan` to confirm that none of the `/dev/cciss/*` entries show.

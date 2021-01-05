@@ -13,4 +13,6 @@ You can check the status of the daemon to see whether the daemon is running. If 
 
 You must be logged in as a root user.
 
+.Steps
+
 . Check the status of the daemon: snapdrived status

@@ -16,6 +16,7 @@ You must clean up the RDM LUNs in the guest operating system as well as in ESX s
 [.lead]
 The following steps must be done in the guest operating system.
 
+.Steps
 . From the *vCenter* navigation pane, select the Virtual Machine in which the RDM mapping is done.
 . Right-click the virtual machine and turn off your guest operating system.
 . Right-click the virtual machine and select *Edit settings*.
@@ -44,6 +45,7 @@ The following steps must be done only by the ESX server administrator for a comp
 
 Turn off your virtual machine before working on the virtual machine directory.
 
+.Steps
 . Go to the virtual machine directory.
 . Change to the directory cd /vmfs/volumes/Data store path.
 +

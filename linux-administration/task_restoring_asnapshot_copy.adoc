@@ -11,7 +11,11 @@ summary: 'You can restore a Snapshot copy by using the snapdrive snap restore co
 [.lead]
 You can restore a Snapshot copy by using the snapdrive snap restore command. The restore operation can take several minutes, depending on the type, and amount of data being restored.
 
-. Enter the following command to restore a Snapshot copy: snapdrive snap restore -snapnamesnap_name {-lun |-dg |-fs | - hostvol |-file }file_spec [file_spec...] [{ -lun | -dg | -fs |-hostvol |-file } file_spec [file_spec ...] [-force [-noprompt]] [-mntopts options]][{-reserve |-noreserve}]
+.Steps
+
+. Enter the following command to restore a Snapshot copy:
++
+snapdrive snap restore -snapnamesnap_name {-lun |-dg |-fs | - hostvol |-file }file_spec [file_spec...] [{ -lun | -dg | -fs |-hostvol |-file } file_spec [file_spec ...] [-force [-noprompt]] [-mntopts options]][{-reserve |-noreserve}]
 
 SnapDrive for UNIX replaces the contents of the LUNs you specify in the snapdrive snap restore command line with the contents of the LUNs in the Snapshot copy you specify. This operation can take several minutes. When the operation is complete, SnapDrive for UNIX displays a message similar to the following:snap restore <filespec list> succeeded
 

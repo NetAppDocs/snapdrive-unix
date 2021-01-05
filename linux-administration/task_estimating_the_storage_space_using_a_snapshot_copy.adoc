@@ -11,7 +11,11 @@ summary: 'The clone split estimation helps you to estimate the required storage 
 [.lead]
 The clone split estimation helps you to estimate the required storage space (in MB) using a Snapshot copy, when there is no clone available for a Snapshot copy in the storage system.
 
-. Enter the following command to estimate the required storage space. snapdrive clone split estimate -snapname [long_snap_name] {-volclone|-lunclone}] [-v | -verbose]
+.Steps
+
+. Enter the following command to estimate the required storage space.
++
+snapdrive clone split estimate -snapname [long_snap_name] {-volclone|-lunclone}] [-v | -verbose]
 
 The following example estimates the storage space to split a LUN clone using a Snapshot copy.
 
@@ -53,8 +57,10 @@ f3050-220-112:  f3050-220 54019    54517    AVAILABLE
 /vol/vol0:snap_1 112:aggr0
 ----
 
-NOTE:
+[NOTE]
+====
 
 * The "Resource" field contains the Snapshot copy name, if the clone split estimate is done for a Snapshot copy.
 * If you provide any dead file specification along with the Snapshot copy with-lunclone option, the "Required Space" shows as 0.
 * The LUN clone split estimation using Snapshot is available only for Snapshot copies that are created from SnapDrive 4.2 for UNIX and later.
+====

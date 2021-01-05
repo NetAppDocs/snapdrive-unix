@@ -102,7 +102,7 @@ ext3
 a|
 lvm
 |===
-*Note:* SnapDrive for UNIX does not support the Ext2 file system.
+NOTE: SnapDrive for UNIX does not support the Ext2 file system.
 
 * If you have FCP and iSCSI storage stacks, SnapDrive will only support FCP storage stacks.
 +

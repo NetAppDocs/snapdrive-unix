@@ -13,7 +13,11 @@ You can change the name of a Snapshot copy by using the snapdrive snap rename co
 
 Before you execute this syntax, you must understand the options, keywords, and arguments mentioned in this command.
 
-. Enter the following command to change the Snapshot copy name: snapdrive snap rename [-snapname]old_long_snap_namenew_snap_name [-force [-noprompt]]
+.Steps
+
+. Enter the following command to change the Snapshot copy name:
++
+snapdrive snap rename [-snapname]old_long_snap_namenew_snap_name [-force [-noprompt]]
 
 The following are examples of the snapdrive snap rename command. The first command line includes the-force option because a Snapshot copy named new snapshot copy already exists. In the second example, both Snapshot copy names use the long form of the name, but they both resolve to the same storage system volume.
 

@@ -162,4 +162,5 @@ config migrate list
 a|
 SD.Config.Read on at least one storage system
 |===
-*Note:* SnapDrive for UNIX does not check any capability for administrator (root).
+
+NOTE: SnapDrive for UNIX does not check any capability for administrator (root).

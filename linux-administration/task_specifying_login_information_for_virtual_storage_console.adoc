@@ -35,4 +35,5 @@ Retype Password:
 +
 SnapDrive for UNIX is now ready to provision RDM LUNs in the guest operating system.
 +
+
 NOTE: If you wish to configure a new virtual interface, the existing virtual interface details are overwritten, as SnapDrive for UNIX allows you to have only one virtual interface configured to a guest operating system.

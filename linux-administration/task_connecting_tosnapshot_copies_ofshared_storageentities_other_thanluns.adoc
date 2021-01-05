@@ -11,6 +11,12 @@ summary: 'You can use the snapdrive snap connect command to connect to a Snapsho
 [.lead]
 You can use the snapdrive snap connect command to connect to a Snapshot copy of shared storage entities other than LUNs.
 
-. Enter the following command: snapdrive snap connectfspec_set [fspec_set...] -snapname long_snap_namefspec_set [fspec_set...] -snapname long_snap_name [-devicetype shared] [-split]
+.Steps
+
+. Enter the following command:
++
+snapdrive snap connectfspec_set [fspec_set...] -snapname long_snap_name
++
+fspec_set [fspec_set...] -snapname long_snap_name [-devicetype shared] [-split]
 +
 In this syntax, fspec_set is: {-dg | -fs}src_file_spec [dest_file_spec ] [-destdg dgname]

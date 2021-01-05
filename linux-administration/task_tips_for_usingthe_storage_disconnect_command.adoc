@@ -9,16 +9,18 @@ summary: 'When you use the snapdrive storage disconnect command on some operatin
 :imagesdir: ../media/
 
 [.lead]
-When you use the snapdrive storage disconnect command on some operating systems, you lose information such as the host volume names, the file system mountpoint, the storage system volume names, and the names of the LUNs. Without this information, you can connect again to the storage at a later point in time is difficult.
+When you use the `snapdrive storage disconnect` command on some operating systems, you lose information such as the host volume names, the file system mountpoint, the storage system volume names, and the names of the LUNs. Without this information, you can connect again to the storage at a later point in time is difficult.
 
-To avoid losing information, you should first create a Snapshot copy of the storage using the snapdrive snap create command before you execute the snapdrive storage disconnect command.
+To avoid losing information, you should first create a Snapshot copy of the storage using the `snapdrive snap create` command before you execute the `snapdrive storage disconnect` command.
 
 That way, if you want to reconnect the storage later, you can use the following workaround:
 
+.Steps
+
 . Execute the following command:
 +
-snapdrive snap restore filespec -snapname long_snap_name
+`snapdrive snap restore filespec -snapname long_snap_name`
 +
 Include the full path to the Snapshot copy in this command.
 
-. Optionally, remove the Snapshot copy by executing the snapdrive snap delete command.
+. Optionally, remove the Snapshot copy by executing the `snapdrive snap delete` command.

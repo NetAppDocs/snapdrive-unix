@@ -145,7 +145,9 @@ a|
 lvm
 |===
 The preceding table gives the supported values of the multipathing-type, default-transport, fstype, and vmtype configuration variables.
+
 +
+
 NOTE: If the transport protocol is iSCSI, and the multipathing type is set as none, you should stop the multipath daemon and execute SnapDrive for UNIX commands.
 . Save the snapdrive.conf file.
 +

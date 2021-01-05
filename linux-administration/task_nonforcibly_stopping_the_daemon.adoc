@@ -13,4 +13,8 @@ If your SnapDrive for UNIX configuration file is changed, you must stop the daem
 
 You must be logged in as a root user.
 
-. Enter the following command to nonforcibly stop the daemon: snapdrived stop
+.Steps
+
+. Enter the following command to nonforcibly stop the daemon:
++
+snapdrived stop

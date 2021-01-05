@@ -11,7 +11,11 @@ summary: 'The command snapdrive snap show or list displays the name of the stora
 [.lead]
 The command snapdrive snap show or list displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.
 
-. Enter the following command syntax to display a Snapshot copy: snapdrive snap show [-snapname] long_snap_name [snap_name...] [-verbose]
+.Steps
+
+. Enter the following command syntax to display a Snapshot copy:
++
+snapdrive snap show [-snapname] long_snap_name [snap_name...] [-verbose]
 
 This operation displays, at a minimum, the following information about the Snapshot copy:
 

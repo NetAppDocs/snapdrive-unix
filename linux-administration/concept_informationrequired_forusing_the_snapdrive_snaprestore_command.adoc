@@ -91,6 +91,7 @@ a|
 * Use -mntopts to specify options that you want to pass to the host mount command (for example, to specify host system logging behavior). The options you specify are stored in the host file system table file. Allowed options depend on the host file system type.
 * The-mntopts argument is a file system -type option that is specified using the mount command -o flag. Do not include the -o flag in the -mntopts argument. For example, the sequence -mntopts tmplog passes the string -otmplog to the mount command, and inserts the text tmplog on a new command line.
 +
+
 NOTE: If you pass any invalid -mntopts options for storage and snap operations, SnapDrive for UNIX does not validate those invalid mount options.
 
 |===

@@ -11,7 +11,11 @@ summary: 'You can use the snapdrive snap delete command to delete a Snapshot cop
 [.lead]
 You can use the snapdrive snap delete command to delete a Snapshot copy.
 
-. Enter the following command: snapdrive snap delete [-snapname]long_snap_name [snap_name...] [-verbose] [-force [-noprompt]]
+.Steps
+
+. Enter the following command:
++
+snapdrive snap delete [-snapname]long_snap_name [snap_name...] [-verbose] [-force [-noprompt]]
 +
 NOTE: If the Snapshot copy you specify is in use, this operation fails. SnapDrive for UNIX reports that this operation has completed successfully only, if all the Snapshot copies are removed.
 

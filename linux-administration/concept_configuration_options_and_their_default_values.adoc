@@ -31,7 +31,9 @@ If you want SnapDrive to ignore some of the interfaces, you can specify those in
 a|
 enable-mount-with-netdev
 a|
-When operating in iSCSI in a Linux environment, enables you to include the _netdev file system option in the /etc/fstab file.*Note:* The _netdev file system option is only for iSCSI transport protocol in Linux environment.
+When operating in iSCSI in a Linux environment, enables you to include the _netdev file system option in the /etc/fstab file.
+
+NOTE: The _netdev file system option is only for iSCSI transport protocol in Linux environment.
 
 The default value set for enable-mount-with-netdev is off, which requires you to manually specify -mntopts _netdev in the snapdrive storage create command. However, if you change the value to on, the -mntopts _netdev is executed automatically when you run the snapdrive storage create command.
 
@@ -663,7 +665,9 @@ The path shown in this example is the default path for a Linux host.
 a|
 trace-log-max-size=0
 a|
-Specifies the maximum size of the log file in bytes. When the log file reaches this size, SnapDrive for UNIX renames it and starts a new log file.*Note:* However, no new trace log file is created when the trace log file reaches the maximum size. For the daemon trace log file, new log file is created when the log file reaches the maximum size.
+Specifies the maximum size of the log file in bytes. When the log file reaches this size, SnapDrive for UNIX renames it and starts a new log file.
+
+NOTE: However, no new trace log file is created when the trace log file reaches the maximum size. For the daemon trace log file, new log file is created when the log file reaches the maximum size.
 
 The default value is 0. SnapDrive for UNIX never starts a new log file in the middle of an operation. The actual size of the file could vary slightly from the value specified here.
 

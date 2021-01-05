@@ -32,10 +32,14 @@ snapdrive snap{show|list} [-verbose] [-lun | -vg | -dg | -fs | -lvol | -hostvol]
 a|
 Connect
 a|
-snapdrive snap connect -luns_lun_named_lun_name [[-lun] s_lun_named_lun_name ...] -snapnamelong_snap_name [-split] [-clone {lunclone | optimal | unrestricted}] [-prefixfvprefixstr] [-verbose]*Note:* In a snapdrive snap connect command, the LUN name should be in the format lun_name or qtree_name/lun_name.
+snapdrive snap connect -luns_lun_named_lun_name [[-lun] s_lun_named_lun_name ...] -snapnamelong_snap_name [-split] [-clone {lunclone | optimal | unrestricted}] [-prefixfvprefixstr] [-verbose]
+
+NOTE: In a snapdrive snap connect command, the LUN name should be in the format lun_name or qtree_name/lun_name.
 
 a|
-snapdrive snap connectfspec_set [fspec_set...] -snapnamelong_snap_name [-autoexpand] [-autorename] [-nopersist] [-mntopts options] [{-reserve | -noreserve}] [-readonly] [-split] [-clone {lunclone | optimal | unrestricted}] [-prefixfv prefixstr] [-verbose]*Note:* The fspec_set argument has the following format:
+snapdrive snap connectfspec_set [fspec_set...] -snapnamelong_snap_name [-autoexpand] [-autorename] [-nopersist] [-mntopts options] [{-reserve | -noreserve}] [-readonly] [-split] [-clone {lunclone | optimal | unrestricted}] [-prefixfv prefixstr] [-verbose]
+
+NOTE: The fspec_set argument has the following format:
 
 [-vg | -dg| -fs | -lvol | -hostvol] src_file_spec[dest_file_spec] [{-destdg | -destvg} dgname] [{-destlv | -desthv} lvname]
 

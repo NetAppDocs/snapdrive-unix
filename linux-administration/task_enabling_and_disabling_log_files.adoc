@@ -26,7 +26,8 @@ a|
  ** Audit log: sd-audit.log
  ** Recovery log: sd-recovery.log
  ** Trace log: sd-trace.log
- *Note:* The path to these files might vary depending on your host operating system.
+
+NOTE: The path to these files might vary depending on your host operating system.
 
 a|
 *Disable a log file*
