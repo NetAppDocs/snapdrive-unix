@@ -15,51 +15,63 @@ The configuration wizard allows you to configure in NFS, SAN or Mixed environmen
 
 The following are the steps to configure in NFS environment.
 
+.Steps
+
 . Select the *NFS* profile.
 . Enable the Protection Manager Integration.
- ** Select Yes to enable the access permission checks by using the DataFabric Manager.
+ ** Select `Yes` to enable the access permission checks by using the DataFabric Manager.
   *** Enter the DataFabric Manager server name or IP address followed by user name and password.
-  *** Enter the http/https port to communicate with the DataFabric Manager. The default value is 8088.
-  *** Enter the SSL server port to access the DataFabric Manager. The default value is 8488.
+  *** Enter the `http/https` port to communicate with the DataFabric Manager. The default value is `8088`.
+  *** Enter the SSL server port to access the DataFabric Manager. The default value is `8488`.
   *** Enable the HTTPs enabled to communicate with the DataFabric Manager.
- ** Select No to enable the access permission checks by using the rbac.
-. Specify the role-based access control methods. The possible values are native and dfm.
- ** Select native to check the access permission for the host using the control file stored in /vol/vol0/sdprbac/sdhost-name.prbac or /vol/vol0/sdprbac/sdgenericname.prbac.
- ** Select dfm to check the access permission using the Operations Manager console.
-*Note:* If you select dfm as rbac-method without configuring DataFabric Manager, a warning message specifying that the RBAC method is selected as dfm without enabling Protection Manager Integration is displayed.
-. Specify https or http to communicate with the storage system.
-. The final step is to save the configuration changes in the snapdrive.conf file, and restart the daemon.
- ** If you select Yes, the SnapDrive daemon is restarted and the configuration changes are reflected.
- ** If you select No, the variable values are changed in snapdrive.conf file, but the changes are not reflected.
+ ** Select `No` to enable the access permission checks by using the rbac.
+. Specify the role-based access control methods. The possible values are `native` and `dfm`.
+ ** Select `native` to check the access permission for the host using the control file stored in `/vol/vol0/sdprbac/sdhost-name.prbac` or `/vol/vol0/sdprbac/sdgenericname.prbac`.
+ ** Select `dfm` to check the access permission using the Operations Manager console.
++
+NOTE: If you select `dfm` as `rbac-method` without configuring DataFabric Manager, a warning message specifying that the RBAC method is selected as `dfm` without enabling Protection Manager Integration is displayed.
+
+. Specify `https` or `http` to communicate with the storage system.
+. The final step is to save the configuration changes in the `snapdrive.conf` file, and restart the daemon.
+ ** If you select `Yes`, the SnapDrive daemon is restarted and the configuration changes are reflected.
+ ** If you select `No`, the variable values are changed in `snapdrive.conf` file, but the changes are not reflected.
 
 == Steps to configure in SAN environment
 
 The following are the steps to configure in SAN environment.
 
+.Steps
+
 . Select the SAN profile.
 . Select the required transport protocol.
- ** Select fcp to set the default-transport.
- ** Select iscsi to set the default-transport.
-. Select the SAN Storage Stack (combination of MPIO Solution, volume manager, and file system). The options are native, and none.
+ ** Select `fcp` to set the default-transport.
+ ** Select `iscsi` to set the default-transport.
+. Select the SAN Storage Stack (combination of MPIO Solution, volume manager, and file system). The options are `native`, and `none`.
 . Enable the Protection Manager Integration.
- ** Select Yes to enable the access permission checks by using the DataFabric Manager.
+ ** Select `Yes` to enable the access permission checks by using the DataFabric Manager.
   *** Enter the DataFabric Manager server name or IP address followed by user name and password.
-  *** Enter the http/https port to communicate with the DataFabric Manager. The default value is 8088.
-  *** Enter the SSL server port to access the DataFabric Manager. The default value is 8488.
+  *** Enter the `http/https` port to communicate with the DataFabric Manager. The default value is `8088`.
+  *** Enter the SSL server port to access the DataFabric Manager. The default value is `8488`.
   *** Enable the HTTPs enabled to communicate with the DataFabric Manager
- ** Select No to enable the access permission checks by using the rbac.
-. Specify the role-based access control methods. The possible values are native and dfm.
- ** Select native to check the access permission for the host using the control file stored in /vol/vol0/sdprbac/sdhost-name.prbac or /vol/vol0/sdprbac/sdgenericname.prbac.
- ** Select dfm to check the access permission using the Operations Manager.
-*Note:* If you select dfm as rbac-method without configuring DataFabric Manager, a warning message specifying that the RBAC method is selected as dfm without enabling Protection Manager Integration is displayed.
+ ** Select `No` to enable the access permission checks by using the rbac.
+. Specify the role-based access control methods. The possible values are `native` and `dfm`.
+ ** Select `native` to check the access permission for the host using the control file stored in `/vol/vol0/sdprbac/sdhost-name.prbac` or `/vol/vol0/sdprbac/sdgenericname.prbac`.
+ ** Select `dfm` to check the access permission using the Operations Manager.
+
++
+NOTE: If you select `dfm` as `rbac-method` without configuring DataFabric Manager, a warning message specifying that the RBAC method is selected as `dfm` without enabling Protection Manager Integration is displayed.
+
 . Enable SMVI integration to create RDM LUNs in the guest OS.
- ** Select yes to create RDM LUNs in the guest OS. Then enter the IP address, user name and the password of the SMVI server.
- ** Select no to skip this option.
-*Note:* SVMI integration is applicable only for FCP Protocol.
-. Specify https or http to communicate with the storage system.
-. The final step is to save the configuration changes in the snapdrive.conf file, and restart the daemon.
- ** If you select Yes, the SnapDrive daemon is restarted and the configuration changes are reflected.
- ** If you select No, the variable values are changed in snapdrive.conf file, but the changes are not reflected.
+ ** Select `yes` to create RDM LUNs in the guest OS. Then enter the IP address, user name and the password of the SMVI server.
+ ** Select `no` to skip this option.
+
++
+NOTE: SVMI integration is applicable only for FCP Protocol.
+
+. Specify `https` or `http` to communicate with the storage system.
+. The final step is to save the configuration changes in the `snapdrive.conf` file, and restart the daemon.
+ ** If you select `Yes`, the SnapDrive daemon is restarted and the configuration changes are reflected.
+ ** If you select `No`, the variable values are changed in `snapdrive.conf` file, but the changes are not reflected.
 
 == Steps to configure in Mixed SAN and NFS environment
 
@@ -67,38 +79,44 @@ The following are the steps to configure in Mixed SAN and NFS environment.
 
 . Select the Mixed profile.
 . Select the required transport protocol.
- ** Select fcp to set the default-transport.
- ** Select iscsi to set the default-transport.
-. Select the SAN Storage Stack (combination of MPIO Solution, volume manager, file system). The options are native, and none.
+ ** Select `fcp` to set the default-transport.
+ ** Select `iscsi` to set the default-transport.
+. Select the SAN Storage Stack (combination of MPIO Solution, volume manager, file system). The options are `native`, and `none`.
 . Enable the Protection Manager Integration.
- ** Select Yes to enable the access permission checks by using the DataFabric Manager
+ ** Select `Yes` to enable the access permission checks by using the DataFabric Manager
   *** Enter the DataFabric Manager server name or IP address followed by user name and password.
-  *** Enter the http/https port to communicate with the DataFabric Manager. The default value is 8088.
-  *** Enter the SSL server port to access the DataFabric Manager. The default value is 8488.
+  *** Enter the `http/https` port to communicate with the DataFabric Manager. The default value is `8088`.
+  *** Enter the SSL server port to access the DataFabric Manager. The default value is `8488`.
   *** Enable the HTTPs enabled to communicate with the DataFabric Manager.
- ** Select No to enable the access permission checks by using the rbac.
-. Specify the role-based access control methods. The possible values are native and dfm.
- ** Select native to check the access permission for the host using the control file stored in /vol/vol0/sdprbac/sdhost-name.prbac or /vol/vol0/sdprbac/sdgenericname.prbac
+ ** Select `No` to enable the access permission checks by using the rbac.
+. Specify the role-based access control methods. The possible values are `native` and `dfm`.
+ ** Select native to check the access permission for the host using the control file stored in `/vol/vol0/sdprbac/sdhost-name.prbac` or `/vol/vol0/sdprbac/sdgenericname.prbac`
  ** Select dfm to check the access permission using the Operations Manager console.
-*Note:* If you select dfm as rbac-method without configuring DataFabric Manager, a warning message specifying that the RBAC method is selected as dfm without enabling Protection Manager Integration is displayed.
+
++
+NOTE: If you select `dfm` as `rbac-method` without configuring DataFabric Manager, a warning message specifying that the RBAC method is selected as `dfm` without enabling Protection Manager Integration is displayed.
+
 . Enable SMVI integration to create RDM LUNs in the guest OS.
- ** Select yes to create RDM LUNs in the guest OS. Then enter the IP address, user name and the password of the SMVI server.
- ** Select no to skip this option.
-*Note:* SVMI integration is applicable only for FCP Protocol.
-. Specify https or http to communicate with the storage system.
-. The final step is to save the configuration changes in the snapdrive.conf file, and restart the daemon.
- ** If you select Yes, the SnapDrive daemon is restarted and the configuration changes are reflected.
- ** If you select No, the variable values are changed in snapdrive.conf file, but the changes are not reflected.
+ ** Select `yes` to create RDM LUNs in the guest OS. Then enter the IP address, user name and the password of the SMVI server.
+ ** Select `no` to skip this option.
 
-SnapDrive modifies the following variables in the snapdrive.conf file.
++
+NOTE: SVMI integration is applicable only for FCP Protocol.
 
-* contact-http-dfm-port
-* contact-ssl-dfm-port
-* use-https-to-dfm
-* default-transport
-* use-https-to-filer
-* fstype
-* multipathing-type
-* vmtype
-* rbac-method
-* rbac-cache
+. Specify `https` or `http` to communicate with the storage system.
+. The final step is to save the configuration changes in the `snapdrive.conf` file, and restart the daemon.
+ ** If you select `Yes`, the SnapDrive daemon is restarted and the configuration changes are reflected.
+ ** If you select `No`, the variable values are changed in `snapdrive.conf` file, but the changes are not reflected.
+
+SnapDrive modifies the following variables in the `snapdrive.conf` file.
+
+* `_contact-http-dfm-port_`
+* `_contact-ssl-dfm-port_`
+* `_use-https-to-dfm_`
+* `_default-transport_`
+* `_use-https-to-filer_`
+* `_fstype_`
+* `_multipathing-type_`
+* `_vmtype_`
+* `_rbac-method_`
+* `_rbac-cache_`

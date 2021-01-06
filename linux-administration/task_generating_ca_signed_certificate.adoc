@@ -9,18 +9,18 @@ summary: 'The SnapDrive for UNIX daemon service requires that you generate a CA-
 :imagesdir: ../media/
 
 [.lead]
-The SnapDrive for UNIX daemon service requires that you generate a CA-signed certificate for successful daemon communication. You must provide the CA-signed certificate at the path specified in the snapdrive.conf file.
+The SnapDrive for UNIX daemon service requires that you generate a CA-signed certificate for successful daemon communication. You must provide the CA-signed certificate at the path specified in the `snapdrive.conf` file.
 
 * You must be logged in as a root user.
-* You must have set the following parameters in the snapdrive.conf file to use HTTPS for communication:
+* You must have set the following parameters in the `snapdrive.conf` file to use HTTPS for communication:
  ** use-https-to-sdu-daemon=on
  ** contact-https-port-sdu-daemon=4095
- ** sdu-daemon-certificate-path=/opt/NetApp/snapdrive/snapdrive.pem
+ ** sdu-daemon-certificate-path=`/opt/NetApp/snapdrive/snapdrive.pem`
 
 .Steps
 . Generate a new unencrypted RSA private key in a pem format:
 +
-$ openssl genrsa -out privkey.pem 1024
+`*$ openssl genrsa -out privkey.pem 1024*`
 +
 ----
 Generating RSA private key, 1024 bit long modulus
@@ -28,10 +28,10 @@ Generating RSA private key, 1024 bit long modulus
 e is 65537 (0x10001)
 ----
 
-. Configure /etc/ssl/openssl.cnf to create the CA private key and the certificate vi /etc/ssl/openssl.cnf.
+. Configure `/etc/ssl/openssl.cnf` to create the CA private key and the certificate `vi /etc/ssl/openssl.cnf`.
 . Create an unsigned certificate using your RSA private key:
 +
-$ openssl req -new -x509 -key privkey.pem -out cert.pem
+`*$ openssl req -new -x509 -key privkey.pem -out cert.pem*`
 +
 ----
 You are about to be asked to enter information that will be
@@ -52,7 +52,7 @@ Email Address []:abc@example.org
 
 . Use your private key and your certificate to create a CSR:
 +
-cat cert.pem privkey.pem | openssl x509 -x509toreq -signkey privkey.pem -out certreq.csr
+`*cat cert.pem privkey.pem | openssl x509 -x509toreq -signkey privkey.pem -out certreq.csr*`
 +
 ----
 Getting request Private Key Generating certificate request
@@ -60,7 +60,7 @@ Getting request Private Key Generating certificate request
 
 . Sign the certificate with the CA private key by using the CSR that you have just created:
 +
-$ openssl ca -in certreq.csr -out newcert.pem
+`*$ openssl ca -in certreq.csr -out newcert.pem*`
 +
 ----
 Using configuration from /etc/pki/tls/openssl.cnf Check that the

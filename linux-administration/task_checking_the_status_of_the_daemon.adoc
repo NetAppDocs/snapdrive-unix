@@ -15,4 +15,6 @@ You must be logged in as a root user.
 
 .Steps
 
-. Check the status of the daemon: snapdrived status
+. Check the status of the daemon:
++
+`*snapdrived status*`

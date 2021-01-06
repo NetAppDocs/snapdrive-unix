@@ -47,7 +47,7 @@ Turn off your virtual machine before working on the virtual machine directory.
 
 .Steps
 . Go to the virtual machine directory.
-. Change to the directory cd /vmfs/volumes/Data store path.
+. Change to the directory `cd /vmfs/volumes/Data store path`.
 +
 ----
 # ls -l
@@ -67,48 +67,47 @@ The virtual machine directory is displayed here.
 +
 All the files are listed in the virtual machine directory.
 
-. Delete all vmdk files, which have SMVI string embedded. Alternatively, you can also identify the vmdk file using LUN name.
+. Delete all `vmdk` files, which have SMVI string embedded. Alternatively, you can also identify the `vmdk` file using LUN name.
 +
-Alternatively, you can also identify the vmdk file using LUN name.
+Alternatively, you can also identify the `vmdk` file using LUN name.
 +
-If you have a vmdk file of the LUN name as rdm1, delete only rhel4u8-141-232_SMVI_vol_esx3u5_rdm1-rdmp.vmdk and rhel4u8-141-232_SMVI_vol_esx3u5_rdm1.vmdk files.
+If you have a `vmdk` file of the LUN name as `_rdm1_`, delete only `_rhel4u8-141-232_SMVI_vol_esx3u5_rdm1-rdmp.vmdk_` and `_rhel4u8-141-232_SMVI_vol_esx3u5_rdm1.vmdk_` files.
 +
-Delete vmlnx5U4-197-23_SMVI_10.72.197.93_C4koV4XzK2HT_22-rdmp.vmdk and vmlnx5U4-197-23_SMVI_10.72.197.93_C4koV4XzK2HT_22.vmdk vmlnx5U4-197-23_SMVI_10.72.197.93_C4koV4YG4NuD_53-rdmp.vmdkfiles.
+Delete `_vmlnx5U4-197-23_SMVI_10.72.197.93_C4koV4XzK2HT_22-rdmp.vmdk_` and `_vmlnx5U4-197-23_SMVI_10.72.197.93_C4koV4XzK2HT_22.vmdk vmlnx5U4-197-23_SMVI_10.72.197.93_C4koV4YG4NuD_53-rdmp.vmdk_` files.
 
-. Remove the vmdk file entries from the virtual machine configuration file (vmx) as well.
+. Remove the `vmdk` file entries from the virtual machine configuration file (`vmx`) as well.
 +
-The following is an example of removing vmdk file entries from the vmx file.
+The following is an example of removing `vmdk` file entries from the `vmx` file.
 +
+[options="header"]
 |===
 a|
-    *Name*
+*Name* a|
+*Description*
 a|
-    *Description*
+`_rhel4u8-141-232_`
 a|
-rhel4u8-141-232
+Name of the virtual machine
 a|
-    Name of the virtual machine
+`_SMVI_`
 a|
-SMVI
+Indicates that this vmdk file is created by SnapManager for Virtual Infrastructure server
 a|
-    Indicates that this vmdk file is created by SnapManager for Virtual Infrastructure server
+`_vol_esx3u5_`
 a|
-vol_esx3u5
+Name of the volume where the LUN is created
 a|
-    Name of the volume where the LUN is created
+`_rdm1_`
 a|
-rdm1
+Name of the LUN
 a|
-    Name of the LUN
+`_rdmp_`
 a|
-rdmp
+Signifies that this is physically compatible RDM LUN
 a|
-    Signifies that this is physically compatible RDM LUN
+`_vmdk_`
 a|
-vmdk
-a|
-    Virtual Machine Disk File
-+
+Virtual Machine Disk File
 |===
 +
 ----
@@ -123,6 +122,6 @@ scsi3:1.present = "TRUE"
 scsi3:1.redo = ""
 ----
 
-. Delete the entries as specified in the preceding example, including quotes and commas except for the scsi3:1.present entry, which you should change to FALSE from TRUE.
+. Delete the entries as specified in the preceding example, including quotes and commas except for the `_scsi3:1.present_` entry, which you should change to `_FALSE_` from `_TRUE_`.
 . Save and quit the file.
 . Turn on the virtual machine.

@@ -22,14 +22,14 @@ AutoSupport messages contain the following information.
 * Usage of Protection Manager/Role Based Access Control
 * Error category
 * AutoSupport Flag message entry as FALSE
-* Host multipathing type: The value configured in snapdrive.conf file is logged. If the assistant is not loaded due to incorrect configuration value, no host multipathing type is logged.
+* Host multipathing type: The value configured in `snapdrive.conf` file is logged. If the assistant is not loaded due to incorrect configuration value, no host multipathing type is logged.
 * Host virtualization enabled: This is captured only for VMware guest operating system.
-* Protocol: The value configured for default-transport in the snapdrive.conf file.
+* Protocol: The value configured for `default-transport` in the `snapdrive.conf` file.
 * Protection enabled: If OnCommand Data Fabric Manager (DFM) is configured with SnapDrive for UNIX, the value Yes is logged.
 +
 NOTE: SnapDrive for UNIX does not verify whether OnCommand DFM is in use.
 
-The following additional information is available when you run the snapdrive storage show -all command:
+The following additional information is available when you run the `snapdrive storage show -all` command:
 
 * Type of protocols (FCP/iSCSI): Protocols used to create the luns, if any.
 * Number of connected LUNs

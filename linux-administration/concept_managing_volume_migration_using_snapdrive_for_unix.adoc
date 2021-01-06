@@ -19,6 +19,6 @@ The volume migration consists of the following three phases:
 
 SnapDrive for UNIX operations function smoothly in setup and move phases.
 
-When you execute any SnapDrive commands during the cutover phase, SnapDrive for UNIX can retry the operation as defined in the variables volmove-cutover-retry and volmove-cutover-retry-sleep in the snapdrive.conf file.
+When you execute any SnapDrive commands during the cutover phase, SnapDrive for UNIX can retry the operation as defined in the variables `volmove-cutover-retry` and `volmove-cutover-retry-sleep` in the `snapdrive.conf` file.
 
 NOTE: If SnapDrive for UNIX operations fail during the volume migration, you must perform the SnapDrive for UNIX operations after the volume migration operations are completed.

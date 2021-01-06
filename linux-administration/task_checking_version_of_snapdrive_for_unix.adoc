@@ -11,14 +11,14 @@ summary: 'You can verify the version of SnapDrive for UNIX by entering the snapd
 [.lead]
 You can verify the version of SnapDrive for UNIX by entering the snapdrive version command.
 
-. At the CLI prompt, enter the following command: snapdrive version
-
-== Example
-
+. At the CLI prompt, enter the following command:
++
+`*snapdrive version*`
++
 ----
 # snapdrive version
 snapdrive Version 5.2
 snapdrive Daemon Version 5.2
 ----
 
-NOTE: The only argument this command accepts is -v, which displays additional version details. If you include additional arguments, SnapDrive for UNIX displays a warning and then the version number.
+NOTE: The only argument this command accepts is `-v`, which displays additional version details. If you include additional arguments, SnapDrive for UNIX displays a warning and then the version number.

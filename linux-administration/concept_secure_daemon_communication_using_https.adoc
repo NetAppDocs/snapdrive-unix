@@ -9,12 +9,12 @@ summary: 'You can use HTTPS for secure Web services and daemon communication. Se
 :imagesdir: ../media/
 
 [.lead]
-You can use HTTPS for secure Web services and daemon communication. Secure communication is enabled by setting some configuration variables in the snapdrive.conf file, and generating and installing the self-signed or CA-signed certificate.
+You can use HTTPS for secure Web services and daemon communication. Secure communication is enabled by setting some configuration variables in the `snapdrive.conf` file, and generating and installing the self-signed or CA-signed certificate.
 
-You must provide the self-signed or CA-signed certificate at the path specified in the snapdrive.conf file. To use HTTPS for communication, you must set the following parameters in the snapdrive.conf file:
+You must provide the self-signed or CA-signed certificate at the path specified in the `snapdrive.conf` file. To use HTTPS for communication, you must set the following parameters in the `snapdrive.conf` file:
 
-* use-https-to-sdu-daemon=on
-* contact-https-port-sdu-daemon=4095
-* sdu-daemon-certificate-path=/opt/NetApp/snapdrive/snapdrive.pem
+* `use-https-to-sdu-daemon=on`
+* `contact-https-port-sdu-daemon=4095`
+* `sdu-daemon-certificate-path=/opt/NetApp/snapdrive/snapdrive.pem`
 
-NOTE: SnapDrive 5.0 for UNIX and later versions support HTTPS for daemon communication. By default, the option is set to off.
+NOTE: SnapDrive 5.0 for UNIX and later versions support HTTPS for daemon communication. By default, the option is set to `off`.

@@ -18,4 +18,4 @@ You must be aware of some considerations related to SnapDrive for UNIX supportin
 These operations are allowed if the vFiler unit owns the entire storage volume.
 
 * When configuring SnapDrive to support vFiler units, you must ensure that the management and data paths are not configured for an interface on vFiler0.
-* In Data ONTAP operating in 7-Mode, you must ensure that the Data ONTAP configuration variable vfiler.vol_clone_zapi_allow is set to on to connect to a Snapshot copy for a volume or LUN in a vFiler unit.
+* In Data ONTAP operating in 7-Mode, you must ensure that the Data ONTAP configuration variable `vfiler.vol_clone_zapi_allow` is set to `on` to connect to a Snapshot copy for a volume or LUN in a vFiler unit.

@@ -9,12 +9,12 @@ summary: 'You can verify if the migrated storage system is included in the host 
 :imagesdir: ../media/
 
 [.lead]
-You can verify if the migrated storage system is included in the host system by running the snapdrive config migrate listcommand.
+You can verify if the migrated storage system is included in the host system by running the `snapdrive config migrate list` command.
 
 .Steps
 . Enter the following command:
 +
-snapdrive config migrate list
+`*snapdrive config migrate list*`
 +
 ----
 New Entry            Old Entry

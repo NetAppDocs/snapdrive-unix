@@ -9,4 +9,4 @@ summary: 'The SnapDrive configuration wizard enables you to configure SnapDrive 
 :imagesdir: ../media/
 
 [.lead]
-The SnapDrive configuration wizard enables you to configure SnapDrive for UNIX, and the NFS or SAN settings, depending on the environment. Alternatively, you can also open the snapdrive.conf file and edit the configuration variables.
+The SnapDrive configuration wizard enables you to configure SnapDrive for UNIX, and the NFS or SAN settings, depending on the environment. Alternatively, you can also open the `snapdrive.conf` file and edit the configuration variables.

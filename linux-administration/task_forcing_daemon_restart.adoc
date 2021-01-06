@@ -16,6 +16,6 @@ Ensure that you are logged in as a root user.
 .Steps
 . Enter the following command to forcefully restart the daemon:
 +
-snapdrived -force restart
+`*snapdrived -force restart*`
 +
 After the force restart request is received, the daemon stops all the commands in execution and in queue. The daemon is restarted only after cancelling execution of all running commands.

@@ -9,11 +9,11 @@ summary: 'You can view all the storage systems by using the snapdrive config lis
 :imagesdir: ../media/
 
 [.lead]
-You can view all the storage systems by using the snapdrive config list command in the host system.
+You can view all the storage systems by using the `snapdrive config list` command in the host system.
 
 . Enter the following command:
 +
-snapdrive config list
+`*snapdrive config list*`
 +
 ----
 snapdrive config list

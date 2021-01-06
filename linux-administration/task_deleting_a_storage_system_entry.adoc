@@ -12,12 +12,12 @@ summary: 'You can delete the storage system mapping information from the host sy
 You can delete the storage system mapping information from the host system.
 
 .Steps
-. Enter the following command: 
+. Enter the following command:
 +
-snapdrive config migrate deletenew_storage_system_name [new_storage_system_name...]
+`*snapdrive config migrate delete _new_storage_system_name_ [_new_storage_system_name..._]*`
 
- ** new_storage_system_name is the name of the new storage system.
- ** [new_storage_system_name...] defines that you can delete multiple storage system names on one command line.
+ ** `_new_storage_system_name_` is the name of the new storage system.
+ ** `_[new_storage_system_name...]_` defines that you can delete multiple storage system names on one command line.
 +
 ----
 snapdrive config migrate delete roaster

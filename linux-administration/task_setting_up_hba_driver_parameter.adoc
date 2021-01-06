@@ -16,7 +16,7 @@ The following steps are required to set up the HBA driver parameter for Linux MP
 . Uninstall the built-in drivers.
 . Install the latest drivers from the vendor's web site.
 . Set the driver parameters using the vendor's CLI Configuration tool.
-. Edit the /etc/modprobe.conf file to set up default parameters for the HBA driver.
+. Edit the `/etc/modprobe.conf` file to set up default parameters for the HBA driver.
 . Regenerate the initrd (Ram Disk Image) with the HBA driver parameters.
 . Reboot the host for the new HBA Driver settings to be effective.
 

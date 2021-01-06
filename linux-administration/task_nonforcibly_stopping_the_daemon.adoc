@@ -17,4 +17,4 @@ You must be logged in as a root user.
 
 . Enter the following command to nonforcibly stop the daemon:
 +
-snapdrived stop
+`*snapdrived stop*`

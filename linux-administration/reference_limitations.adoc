@@ -18,9 +18,9 @@ When working with SnapDrive for UNIX, you must be aware of certain limitations t
 * SnapDrive for UNIX does not support Snapshot operations on an NFS mount point when the volume is exported with Kerberos security authentication types krb5, krb5i, or krb5p.
 * Snapshot operations might be inconsistent if you perform a snap restore operation on a mount point where a different entity other than the one created in the Snapshot copy is mounted.
 * SnapDrive for UNIX does not support operations on file specifications or LUNs if they are located across Data ONTAP operating in 7-Mode and clustered Data ONTAP storage systems.
-* If you are using clustered DATA ONTAP to configure a storage virtual machine (SVM) with SnapDrive for UNIX, check that the IP address of the SVM's LIF is mapped to the SVM name either in the DNS or in the /etc/hosts file.
+* If you are using clustered DATA ONTAP to configure a storage virtual machine (SVM) with SnapDrive for UNIX, check that the IP address of the SVM's LIF is mapped to the SVM name either in the DNS or in the `/etc/hosts` file.
 +
-You must also check that the SVM name is configured in SnapDrive for UNIX by using the snapdrive config setvsadminVserver name command.
+You must also check that the SVM name is configured in SnapDrive for UNIX by using the `snapdrive config setvsadminVserver name` command.
 
 * SnapDrive for UNIX modifies the mount point permissions from a nonroot user to a root user for a qtree after VBSR operations.
 * SnapDrive for UNIX does not support non-English language environments.
@@ -37,7 +37,7 @@ You must retry the operation later.
 
 == Limitations on Linux
 
-* In a multipath environment, the snapdrive snap list-v or snapdrive snap show-v operation does not show the development path in a raw LUN, and the snapdrive storage show-all operation does not show a raw device and mount point while in case of host LVM not been involved.
+* In a multipath environment, the `snapdrive snap list-v` or `snapdrive snap show-v` operation does not show the development path in a raw LUN, and the `snapdrive storage show-all` operation does not show a raw device and mount point while in case of host LVM not been involved.
 * SnapDrive for UNIX does not show the complete alias name if the alias name has the special character "` - `". SnapDrive for UNIX supports only "`_`" special character in alias name.
-* The snapdrive config prepare luns command is not supported in the RDM LUN environment.
-* The snapdrive lun fixpaths command is not supported in a guest operating system.
+* The `snapdrive config prepare luns` command is not supported in the RDM LUN environment.
+* The `snapdrive lun fixpaths` command is not supported in a guest operating system.

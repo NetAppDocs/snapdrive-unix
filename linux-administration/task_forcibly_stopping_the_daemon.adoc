@@ -17,4 +17,4 @@ You must be logged in as a root user.
 
 . Forcibly stop the daemon:
 +
-snapdrived -force stop
+`*snapdrived -force stop*`

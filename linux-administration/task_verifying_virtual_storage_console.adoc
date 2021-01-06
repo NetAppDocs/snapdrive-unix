@@ -9,9 +9,9 @@ summary: 'You can verify if the virtual interface is configured in SnapDrive for
 :imagesdir: ../media/
 
 [.lead]
-You can verify if the virtual interface is configured in SnapDrive for UNIX using the snapdrive config list command.
+You can verify if the virtual interface is configured in SnapDrive for UNIX using the `snapdrive config list` command.
 
-. Enter the following command: snapdrive config list
+. Enter the following command: `snapdrive config list`
 +
 This command displays the user name or virtual interface specified in SnapDrive for UNIX. This does not display the passwords for the virtual interface system.
 +

@@ -13,7 +13,7 @@ SnapDrive for UNIX provides examples for different scenarios. The content of an 
 
 Example: Adding a new storage system
 
-The following example is a message sent from a host named x336-207-58:
+The following example is a message sent from a host named `_x336-207-58_`:
 
 ----
 computerName="x336-207-58"
@@ -37,7 +37,7 @@ computerName="x336-207-58"
         subject="host_name=x336-207-58, host_os=Linux, host_os_release=2.6.32-279.el6.x86_64, host_os_version=#1 SMP Wed Jun 13 18:24:36 EDT 2012, No of controller=2, PM/RBAC=native, Host Virtualization=No, Multipath-type=nativempio, Protection Enabled=No, Protocol=fcp
 ----
 
-SnapDrive for UNIX sends the following AutoSupport message to the storage system, if dfm is configured and rbac-method is set to dfm:
+SnapDrive for UNIX sends the following AutoSupport message to the storage system, if `dfm` is configured and `rbac-method` is set to `dfm`:
 
 ----
 computerName="x336-207-58"
@@ -48,7 +48,7 @@ computerName="x336-207-58"
         subject="host_name=x336-207-58, host_os=Linux, host_os_release=2.6.32-279.el6.x86_64, host_os_version=#1 SMP Wed Jun 13 18:24:36 EDT 2012, No of controller=2, PM/RBAC=dfm, Host Virtualization=No, Multipath-type=nativempio, Protection Enabled=Yes, Protocol=fcp"
 ----
 
-SnapDrive for UNIX sends the following AutoSupport message to the storage system, if dfm is configured and rbac-method is set to native.
+SnapDrive for UNIX sends the following AutoSupport message to the storage system, if `dfm` is configured and `rbac-method` is set to native.
 
 ----
 computerName="x336-207-58"
@@ -59,7 +59,7 @@ computerName="x336-207-58"
         subject="host_name=x336-207-58, host_os=Linux, host_os_release=2.6.32-279.el6.x86_64, host_os_version=#1 SMP Wed Jun 13 18:24:36 EDT 2012, No of controller=2, PM/RBAC=native, Host Virtualization=No, Multipath-type=nativempio, Protection Enabled=Yes, Protocol=fcp"
 ----
 
-SnapDrive for UNIX sends the following AutoSupport message to the storage system when a snap create operation succeeds:
+SnapDrive for UNIX sends the following AutoSupport message to the storage system when a `snap create` operation succeeds:
 
 ----
 computerName="x336-207-58"
