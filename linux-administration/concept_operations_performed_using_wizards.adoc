@@ -13,8 +13,8 @@ You can use different wizards to create storage entities and manipulate SnapDriv
 
 The following SnapDrive for UNIX commands have an equivalent wizard to perform operations:
 
-* storage create
-* storage delete
-* snap restore
-* snap connect
-* snap disconnect
+* `storage create`
+* `storage delete`
+* `snap restore`
+* `snap connect`
+* `snap disconnect`

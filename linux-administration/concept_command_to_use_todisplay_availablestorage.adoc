@@ -9,7 +9,7 @@ summary: 'The snapdrive storage show or snapdrive storage list show LUNs or NFS 
 :imagesdir: ../media/
 
 [.lead]
-The snapdrive storage show or snapdrive storage list show LUNs or NFS directory trees underlying one or more storage entities. You can use the snapdrive storage show command to learn and know what is in a Snapshot copy of a disk group, host volume, file system, or NFS directory tree.
+The `snapdrive storage show` or `snapdrive storage list` show LUNs or NFS directory trees underlying one or more storage entities. You can use the `snapdrive storage show` command to learn and know what is in a Snapshot copy of a disk group, host volume, file system, or NFS directory tree.
 
 You can use these commands to display the following information:
 
@@ -20,4 +20,4 @@ You can use these commands to display the following information:
 * Devices known to a specific host
 * Resources on the shared and dedicated hosts
 
-NOTE: You can use either snapdrive storage show or snapdrive storage list at the command line.
+NOTE: You can use either `snapdrive storage show` or `snapdrive storage list` at the command line.

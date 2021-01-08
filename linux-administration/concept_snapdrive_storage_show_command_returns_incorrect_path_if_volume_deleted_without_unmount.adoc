@@ -9,7 +9,7 @@ summary: 'If a volume is deleted on the Vserver without unmounting the volume on
 :imagesdir: ../media/
 
 [.lead]
-If a volume is deleted on the Vserver without unmounting the volume on the host system, and when you execute snapdrive storage show -vcommand, the actual path is incorrect.
+If a volume is deleted on the Vserver without unmounting the volume on the host system, and when you execute `snapdrive storage show -v` command, the actual path is incorrect.
 
 You might also experience the same when the volume is not junctioned on the Vserver. The following example show the incorrect actual path:
 

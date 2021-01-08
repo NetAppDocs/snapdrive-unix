@@ -9,15 +9,15 @@ summary: 'You can connect to a Snapshot copy that contains LUNs by using the sna
 :imagesdir: ../media/
 
 [.lead]
-You can connect to a Snapshot copy that contains LUNs by using the snapdrive snap connect command.
+You can connect to a Snapshot copy that contains LUNs by using the `snapdrive snap connect` command.
 
 .Steps
 
 . Enter the following command syntax to connect to a Snapshot copy that contains LUNs:
 +
-snapdrive snap connect -luns_lun_named_lun_name [[-lun] s_lun_named_lun_name... -snapname long_snap_name [-igroup ig_name [ig_name...]] [-split]
+`*snapdrive snap connect -lun _s_lun_named_lun_name_ [[-lun] _s_lun_named_lun_name..._ -snapname _long_snap_name_ [-igroup _ig_name_ [_ig_name..._]] [-split]*``
 +
-NOTE: The s_lun_name and d_lun_name should be in the format lun_name or qtree_name/lun_name.
+NOTE: The `_s_lun_name_` and `_d_lun_name_` should be in the format lun_name or qtree_name/lun_name.
 
 SnapDrive for UNIX clones the LUNs you specify and connects them to a new location.
 

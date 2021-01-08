@@ -9,4 +9,4 @@ summary: 'You can display Snapshot copies for a storage system, a storage system
 :imagesdir: ../media/
 
 [.lead]
-You can display Snapshot copies for a storage system, a storage system volume, LUNs, and other storage entities. Use the command snapdrive snap show (or list) to display a Snapshot copy.
+You can display Snapshot copies for a storage system, a storage system volume, LUNs, and other storage entities. Use the command `snapdrive snap show` (or list) to display a Snapshot copy.

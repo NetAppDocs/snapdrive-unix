@@ -17,11 +17,11 @@ This happens after one of the following situations occurs:
 * A takeover has happened and the iSCSI service has not started yet.
 * A giveback is happening and the iSCSI service has not started yet.
 
-For SnapDrive for UNIX to execute, the iSCSI service must be running. If the service is halted, SnapDrive for UNIX returns an error message. For example, if you execute the snapdrive storage show command when the iSCSI service is not running, you might view the output similar to the following: # snapdrive storage show -dg toaster1 0001-877 Admin error: HBA assistant not found. Commands involving LUNs should fail.
+For SnapDrive for UNIX to execute, the iSCSI service must be running. If the service is halted, SnapDrive for UNIX returns an error message. For example, if you execute the snapdrive storage show command when the iSCSI service is not running, you might view the output similar to the following: `# snapdrive storage show -dg toaster1 0001-877 Admin error: HBA assistant not found. Commands involving LUNs should fail.`
 
 == Workaround
 
-Ensure the iSCSI service is running. If the storage system is in the process of a takeover or giveback, wait until it starts the iSCSI service. If the storage system is in normal running mode, restart the iSCSI service and then restart the SnapDrive for UNIX daemon by running the snapdrived restart command. After the service is running, reissue the snapdrive storage show command. This time you should see output similar to the following:
+Ensure the iSCSI service is running. If the storage system is in the process of a takeover or giveback, wait until it starts the iSCSI service. If the storage system is in normal running mode, restart the iSCSI service and then restart the SnapDrive for UNIX daemon by running the `snapdrived restart` command. After the service is running, reissue the `snapdrive storage show` command. This time you should see output similar to the following:
 
 ----
 # snapdrive storage show -dg toaster1

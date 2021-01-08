@@ -11,15 +11,15 @@ summary: 'The data collection utility runs the NetApp diagnostic utilities, copi
 [.lead]
 The data collection utility runs the NetApp diagnostic utilities, copies SnapDrive for UNIX log files, and creates a compressed file that is used for analysis.
 
-The snapdrive.dc utility performs the following tasks:
+The `snapdrive.dc` utility performs the following tasks:
 
-* Runs the host_info and filer_info utilities to collect information about the host and the storage systems connected to the host, and saves this information in a compressed file. The host_info utility and filer_info utility comes along with SnapDrive for UNIX installation package.
+* Runs the `host_info` and `filer_info` utilities to collect information about the host and the storage systems connected to the host, and saves this information in a compressed file. The `host_info` utility and `filer_info` utility comes along with SnapDrive for UNIX installation package.
 +
-For example, on Linux, it is the linux_info utility.
+For example, on Linux, it is the `linux_info` utility.
 
 * Creates a directory called /tmp/netapp/ntap_snapdrive_name. The tool places copies of the following files in the directory:
  ** SnapDrive for UNIX version, as indicated by running the snapdrive version command
- ** The snapdrive.conffile
+ ** The `snapdrive.conf` file
  ** The audit log files
  ** The trace log files
  ** The recovery log files

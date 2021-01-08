@@ -9,11 +9,13 @@ summary: 'When you run the storage show or snap create command in RHEL 5.11, the
 :imagesdir: ../media/
 
 [.lead]
-When you run the storage show or snap create command in RHEL 5.11, the command displays the following error message: Status call to SDU daemon failed and in SLES11SP3 host with --nolvm option when the host LVM is not involved.
+When you run the `storage show` or `snap create` command in RHEL 5.11, the command displays the following error message:
 
-* *snapdrive storage show -all command fails to show proper alias name*
+`Status call to SDU daemon failed and in SLES11SP3 host with --nolvm option when the host LVM is not involved.`
+
+* *`snapdrive storage show -all` command fails to show proper alias name*
 +
-SnapDrive for UNIX does not show proper alias name for the mapper devices. This issue occurs when multipaths{ } section is not proper in the multipath.conf file.
+SnapDrive for UNIX does not show proper alias name for the mapper devices. This issue occurs when multipaths{ } section is not proper in the `multipath.conf` file.
 
 * *Workaround*
 +
@@ -30,4 +32,4 @@ This issue occurs when the alias name mapping with the devices is not proper.
 
 * *Workaround*
 +
-Perform multipath-ll and make sure that the alias name mapping with the devices is proper, and then perform the SnapDrive for UNIX operations.
+Perform `multipath-ll` and make sure that the alias name mapping with the devices is proper, and then perform the SnapDrive for UNIX operations.

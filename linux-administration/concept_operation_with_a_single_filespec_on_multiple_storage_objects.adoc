@@ -11,7 +11,7 @@ summary: 'SnapDrive for UNIX displays an error message when the administrator do
 [.lead]
 SnapDrive for UNIX displays an error message when the administrator does not have the required permission on multiple storage objects to carry out the storage operations.
 
-Filespec: Filespec can be anyone of file system, host volume, disk group, or LUN
+`_Filespec: Filespec can be anyone of file system, host volume, disk group, or LUN_`
 
 ----
 [root]# snapdrive storage create -fs /mnt/testfs -lun storage_array1:/vol/vol1/lun2 -lun storage_array1:/vol/vol2/lun2  -lunsize 100m
@@ -19,4 +19,4 @@ Filespec: Filespec can be anyone of file system, host volume, disk group, or LUN
 SD.Storage.Write access denied on volume storage_array1:/vol/vol2 for user unix_host\root on Operations Manager server ops_mngr_server
 ----
 
-In this example the filespec spans over two storage system volumes, vol1 and vol2. The administrator (root) of unix_host does not have SD.Storage.Write access on both volumes. Therefore, SnapDrive for UNIX shows one error message for each volume. To proceed with storage create, the administrator (root) must ask the Operations Manager console administrator to grant SD.Storage.Write access on both the volumes.
+In this example the filespec spans over two storage system volumes, vol1 and vol2. The administrator (root) of unix_host does not have `SD.Storage.Write` access on both volumes. Therefore, SnapDrive for UNIX shows one error message for each volume. To proceed with `storage create`, the administrator (root) must ask the Operations Manager console administrator to grant `SD.Storage.Write` access on both the volumes.

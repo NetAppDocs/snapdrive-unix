@@ -24,5 +24,5 @@ The command fails because the iSCSI daemon remaps the device entry for the resto
 
 You can do any of the following:
 
-* Execute the snapdrive snap restore command again.
+* Execute the `snapdrive snap restore` command again.
 * Delete the connected LUN (if it is mounted on the same filespec as in Snapshot copy) before trying to restore a Snapshot copy of an original LUN.

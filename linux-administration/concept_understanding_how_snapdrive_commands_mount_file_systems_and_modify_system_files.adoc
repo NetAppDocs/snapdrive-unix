@@ -13,30 +13,28 @@ Certain SnapDrive for UNIX commands can cause file systems to be mounted or unmo
 
 The name of the system file varies depending on your host platform. The following table lists the host platforms and their system files.
 
+[options="header"]
 |===
 a|
-*Host*
-
-a|
-*System file*
+*Host*|*System file*
 
 a|
 Linux
 a|
-etc/fstab
+`etc/fstab`
 |===
 Any of the following commands can mount file systems:
 
-* snapdrive snap restore
-* snapdrive snap connect
-* snapdrive storage create
-* snapdrive host connect
-* snapdrive storage connect
+* `snapdrive snap restore`
+* `snapdrive snap connect`
+* `snapdrive storage create`
+* `snapdrive host connect`
+* `snapdrive storage connect`
 
 The following commands perform operations that can unmount a file system:
 
-* snapdrive snap restore
-* snapdrive snap disconnect
-* snapdrive storage disconnect
-* snapdrive storage delete
-* snapdrive host disconnect
+* `snapdrive snap restore`
+* `snapdrive snap disconnect`
+* `snapdrive storage disconnect`
+* `snapdrive storage delete`
+* `snapdrive host disconnect`

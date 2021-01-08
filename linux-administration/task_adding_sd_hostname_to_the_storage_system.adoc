@@ -16,6 +16,6 @@ The Operations Manager console administrator can create the sd-hostname user on 
 To add the password for the storage system, select *Management* > *Storage System*.
 
 . Create an sd-hostname user for each UNIX system.
-. Assign capabilities api-* and login-* to a role, such as sd-role.
+. Assign capabilities `api-*` and `login-*` to a role, such as sd-role.
 . Include this role (sd-role) in a new usergroup, such as sd-usergroup.
 . Associate this usergroup (sd-usergroup) with the sd-hostname user on the storage system.

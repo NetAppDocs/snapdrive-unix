@@ -21,7 +21,7 @@ It cannot restore Snapshot copies that it did not create.
 +
 SnapDrive for UNIX enables you to restore the Snapshot copy on the destination storage system as well.
 
-* Connecting to the originating host occurs when you use the snapdrive snap connect command to connect to a Snapshot copy at a new location on the same host where it was last connected (or is still connected).
+* Connecting to the originating host occurs when you use the `snapdrive snap connect` command to connect to a Snapshot copy at a new location on the same host where it was last connected (or is still connected).
 * On Linux hosts, SnapDrive 3.0 for UNIX and later supports Snapshot connect operations on the originating host, unless the LUN or a LUN with a file system is part of the Linux LVM1 volume manager.
 * In Data ONTAP operating in 7-Mode, SnapDrive supports symbolic links that reside inside a mount point.
 * Snapshot support for storage entities spanning multiple storage system volumes or multiple storage systems is limited on configurations that do not allow a freeze operation in the software stack.

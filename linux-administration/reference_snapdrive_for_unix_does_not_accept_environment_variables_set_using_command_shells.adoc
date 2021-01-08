@@ -9,7 +9,7 @@ summary: 'You are unable to execute SnapDrive for UNIX commands, both because th
 :imagesdir: ../media/
 
 [.lead]
-You are unable to execute SnapDrive for UNIX commands, both because the environment variables set through a command shell are not accepted in SnapDrive for UNIX, and when $LD_LIBRARY_PATH and snapcreate-check-nonpersistent-nfs parameters are set to off.
+You are unable to execute SnapDrive for UNIX commands, both because the environment variables set through a command shell are not accepted in SnapDrive for UNIX, and when `*$LD_LIBRARY_PATH*` and `*snapcreate-check-nonpersistent-nfs*` parameters are set to off.
 
 == Workaround
 

@@ -11,7 +11,7 @@ summary: 'The SnapRestore and SnapConnect operations does not work if the multip
 [.lead]
 The SnapRestore and SnapConnect operations does not work if the multipathing type is migrated.
 
-If you have an existing multipathing type set as None, and later you tend to change the multipathing type as NativeMPIO, when you execute Snapconnect and SnapRestore operations for the existing Snapshot copies, you might encounter an error message as "Unable to find multipathing software linuxnull as present in the snapshot".
+If you have an existing multipathing type set as `_None_`, and later you tend to change the multipathing type as `_NativeMPIO_`, when you execute Snapconnect and SnapRestore operations for the existing Snapshot copies, you might encounter an error message as `"Unable to find multipathing software linuxnull as present in the snapshot"`.
 
 Example for SnapRestore operation
 

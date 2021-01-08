@@ -9,4 +9,4 @@ summary: 'Use the snapshot snap rename command to rename a Snapshot copy.'
 :imagesdir: ../media/
 
 [.lead]
-Use the snapshot snap rename command to rename a Snapshot copy.
+Use the `snapshot snap rename` command to rename a Snapshot copy.

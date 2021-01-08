@@ -9,9 +9,9 @@ summary: 'SnapDrive for UNIX errors out if the /lib/libgcc_s.so.1 path is not in
 :imagesdir: ../media/
 
 [.lead]
-SnapDrive for UNIX errors out if the /lib/libgcc_s.so.1path is not installed on 64-bit Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts.
+SnapDrive for UNIX errors out if the `/lib/libgcc_s.so.1path` is not installed on 64-bit Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts.
 
-If the path /lib/libgcc_s.so.1 is not installed on a 64-bit Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts, SnapDrive for UNIX displays the following error message:
+If the path `/lib/libgcc_s.so.1` is not installed on a 64-bit Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts, SnapDrive for UNIX displays the following error message:
 
 ----
 libgcc_s.so.1 must be installed for pthread_cancel to work

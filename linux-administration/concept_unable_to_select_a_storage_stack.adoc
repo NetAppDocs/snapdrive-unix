@@ -9,7 +9,7 @@ summary: 'You cannot select a storage stack due to inappropriate values specifie
 :imagesdir: ../media/
 
 [.lead]
-You cannot select a storage stack due to inappropriate values specified in the snapdrive.conf file.
+You cannot select a storage stack due to inappropriate values specified in the `snapdrive.conf` file.
 
 The following warning message appears.
 
@@ -18,7 +18,7 @@ WARNING!!! Unable to find a SAN storage stack. Please verify that the appropriat
 ----
 
 * If you are using an NFS environment, ignore the warning message and continue to use SnapDrive operations on your host system.
-* If you are using SAN environment, ensure that the appropriate acceptable values are specified in the snapdrive.conf file as provided in the Linux matrix stack. Then, restart the daemon.
+* If you are using SAN environment, ensure that the appropriate acceptable values are specified in the `snapdrive.conf` file as provided in the Linux matrix stack. Then, restart the daemon.
 
 *Related information*
 

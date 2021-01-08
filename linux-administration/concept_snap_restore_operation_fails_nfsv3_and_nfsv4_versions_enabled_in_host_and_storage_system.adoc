@@ -11,8 +11,8 @@ summary: 'Snap restore operation fails when there are nfsv3 and nfsv4 versions e
 [.lead]
 Snap restore operation fails when there are nfsv3 and nfsv4 versions enabled in the host and storage system.
 
-If you have nfsv3 and nfsv4 versions enabled in the host and storage system, and mount the volume on the host without -o vers option, then nobody:nobody ownership is set for files and directories.
+If you have nfsv3 and nfsv4 versions enabled in the host and storage system, and mount the volume on the host without `-o vers` option, then `nobody:nobody` ownership is set for files and directories.
 
 == Workaround
 
-It is recommended to use -o vers option while mounting the nfs volume or check the nfs default options to an appropriate value on the host.
+It is recommended to use `-o vers` option while mounting the nfs volume or check the nfs default options to an appropriate value on the host.

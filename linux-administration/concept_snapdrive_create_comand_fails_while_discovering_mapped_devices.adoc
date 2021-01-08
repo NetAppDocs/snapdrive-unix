@@ -9,11 +9,11 @@ summary: 'When you run the storage create command in SnapDrive for UNIX, during 
 :imagesdir: ../media/
 
 [.lead]
-When you run the storage create command in SnapDrive for UNIX, during the discovery stage, the discovery of some of the mapped devices is rejected and the command fails.
+When you run the `storage create` command in SnapDrive for UNIX, during the discovery stage, the discovery of some of the mapped devices is rejected and the command fails.
 
 == Workaround
 
-For all devices to be accepted, edit the filter section of the /etc/lvm/lvm.conf file:
+For all devices to be accepted, edit the filter section of the `/etc/lvm/lvm.conf` file:
 
 ----
 filter = [ "a/.*/" ]

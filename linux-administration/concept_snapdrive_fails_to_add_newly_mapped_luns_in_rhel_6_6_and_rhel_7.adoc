@@ -9,9 +9,9 @@ summary: 'The rescan script /usr/bin/rescan-scsi-bus.sh bundled with the sg3_uti
 :imagesdir: ../media/
 
 [.lead]
-The rescan script /usr/bin/rescan-scsi-bus.sh bundled with the sg3_utils package fails to add the newly mapped LUNs in SnapDrive for UNIX running on Red Hat Enterprise Linux 6.6 and later.
+The rescan script `/usr/bin/rescan-scsi-bus.sh` bundled with the sg3_utils package fails to add the newly mapped LUNs in SnapDrive for UNIX running on Red Hat Enterprise Linux 6.6 and later.
 
 == Workaround
 
-. Create a file called dynamic-lun-rescan.sh in the /root directory and provide full permission to the file.
-. Add the command /usr/bin/rescan-scsi-bus.sh -a -r in the dynamic-lun-rescan.sh file.
+. Create a file called `dynamic-lun-rescan.sh` in the `/root` directory and provide full permission to the file.
+. Add the command `/usr/bin/rescan-scsi-bus.sh -a -r` in the `dynamic-lun-rescan.sh` file.

@@ -9,11 +9,15 @@ summary: 'You can use the snapdrive portset delete command to delete a port set 
 :imagesdir: ../media/
 
 [.lead]
-You can use the snapdrive portset delete command to delete a port set that is configured in SnapDrive.
+You can use the `snapdrive portset delete` command to delete a port set that is configured in SnapDrive.
 
-. Enter the following command on the host system:snapdrive portset delete filername [filername...]
+.Steps
+
+. Enter the following command on the host system:
 +
-filername is the Vserver name on which the port set is configured.
+`*snapdrive portset delete filername [filername...]*`
++
+`_filername_` is the Vserver name on which the port set is configured.
 +
 ----
 snapdrive portset delete vs91

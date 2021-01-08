@@ -15,4 +15,4 @@ If you export a disk group (dg) on Linux LVM2 and try to delete the LUN, the del
 
 == Workaround
 
-You have to use vgimport <dgname>to import the disk group and then use the following command to delete the disk group and LUN:# snapdrive storage delete - dg <dgname> [-full]
+You have to use `vgimport <dgname> to import the disk group and then use the following command to delete the disk group and LUN:# snapdrive storage delete - dg <dgname> [-full]`

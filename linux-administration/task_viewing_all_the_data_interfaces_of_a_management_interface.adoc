@@ -9,9 +9,11 @@ summary: 'You can view all the data interfaces for a management interface by usi
 :imagesdir: ../media/
 
 [.lead]
-You can view all the data interfaces for a management interface by using the snapdrive config list command in an NFS environment.
+You can view all the data interfaces for a management interface by using the `snapdrive config list` command in an NFS environment.
 
-. At the CLI, enter the following command:snapdrive config list -mgmtpath
+. At the CLI, enter the following command:
++
+`*snapdrive config list -mgmtpath*`
 +
 ----
 #snapdrive config list -mgmtpath

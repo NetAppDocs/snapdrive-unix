@@ -11,6 +11,8 @@ summary: 'The storage system administrator can create and configure the sd-hostn
 [.lead]
 The storage system administrator can create and configure the sd-hostname user using the useradmin command.
 
+.Steps
+
 . Add storage.
 +
 ----

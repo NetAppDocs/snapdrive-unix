@@ -9,4 +9,4 @@ summary: 'Snap management operation fails in RHEL/OEL 5.x due to an issue with t
 :imagesdir: ../media/
 
 [.lead]
-Snap management operation fails in RHEL/OEL 5.x due to an issue with the umount command. To overcome this, ensure that the NFS entity is mounted using -o vers=3 in the command line interface.
+Snap management operation fails in RHEL/OEL 5.x due to an issue with the `umount` command. To overcome this, ensure that the NFS entity is mounted using `-o vers=3` in the command line interface.

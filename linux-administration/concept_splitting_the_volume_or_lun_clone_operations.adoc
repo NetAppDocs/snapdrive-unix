@@ -22,7 +22,7 @@ The following are the clone split operations:
 ====
 * If a volume clone is split, all Snapshot copies in the cloned volume are deleted.
 * It is mandatory to run the clone split estimate command before splitting the file specification to determine, if there are any Snapshot copies taken in the cloned volume.
-* For all clone split commands, only long LUN name must be specified with -lun option. You cannot specify -lun option on the same command line along with other storage entities (-vg, -dg, -fs, - lvol, or -hostvol options).
+* For all clone split commands, only long LUN name must be specified with `-lun` option. You cannot specify `-lun` option on the same command line along with other storage entities (-vg, -dg, -fs, - lvol, or -hostvol options).
 * It is always mandatory to use the absolute pathname for the file specifications with clone split commands.
 * The LUN clone split estimation using Snapshot is available only for Snapshot copies that are created from SnapDrive 4.2 for UNIX and later.
 ====

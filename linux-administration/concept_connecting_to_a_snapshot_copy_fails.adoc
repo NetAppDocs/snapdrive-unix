@@ -20,8 +20,8 @@ Volume manager configuration file has tags that are added by SnapDrive for UNIX.
 == Workaround
 
 . Ensure that the LUN clones of devices associated to the disk groups are not mapped to the host. If they are mapped to the host, then unmap and delete them. They might have been present from a previously failed SnapDrive operation.
-. Edit the lvm.configfile (located at /etc/lvm/) in the following manner:
- .. Remove all lines with suffix ##SDUTEMP.
- .. Restore all lines that are preceded by the comment tag #SDUEXISTING.
+. Edit the `lvm.configfile` (located at `/etc/lvm/`) in the following manner:
+ .. Remove all lines with suffix `##SDUTEMP`.
+ .. Restore all lines that are preceded by the comment tag `#SDUEXISTING`.
 +
 If any of the above does not work, contact NetApp technical support.

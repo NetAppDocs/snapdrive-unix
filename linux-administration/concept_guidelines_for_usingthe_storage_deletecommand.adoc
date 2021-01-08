@@ -9,13 +9,13 @@ summary: 'The snapdrive storage delete command has some restrictions in SnapDriv
 :imagesdir: ../media/
 
 [.lead]
-The snapdrive storage delete command has some restrictions in SnapDrive for UNIX.
+The `snapdrive storage delete` command has some restrictions in SnapDrive for UNIX.
 
 * When you delete a file system, SnapDrive for UNIX always removes the file system's mount point.
 +
-Linux hosts allow you to attach multiple file systems to a single mountpoint. However, SnapDrive for UNIX requires a unique mountpoint for each file system. The snapdrive storage delete command fails if you use it to delete file systems that are attached to a single mount point.
+Linux hosts allow you to attach multiple file systems to a single mountpoint. However, SnapDrive for UNIX requires a unique mountpoint for each file system. The `snapdrive storage delete` command fails if you use it to delete file systems that are attached to a single mount point.
 
-* If you use the -lun option to specify the name of a LUN that is a member of either a host disk group or a file system, the snapdrive storage delete command fails.
-* If you use -lun option to specify the name of the LUN that is not discovered by multipathing software on the host, the snapdrive storage delete command fails.
+* If you use the `-lun` option to specify the name of a LUN that is a member of either a host disk group or a file system, the `snapdrive storage delete` command fails.
+* If you use `-lun` option to specify the name of the LUN that is not discovered by multipathing software on the host, the `snapdrive storage delete` command fails.
 
-NOTE: snapdrive storage delete command fails while using RDM LUN, if the mapping igroup has more than two World Wide Port Names (WWPN) in releases prior to SnapDrive 5.2 for UNIX.
+NOTE: `snapdrive storage delete` command fails while using RDM LUN, if the mapping igroup has more than two World Wide Port Names (WWPN) in releases prior to SnapDrive 5.2 for UNIX.

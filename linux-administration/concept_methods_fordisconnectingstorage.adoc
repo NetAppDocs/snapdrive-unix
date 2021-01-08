@@ -9,7 +9,7 @@ summary: 'To make it easier to disconnect the storage, SnapDrive for UNIX provid
 :imagesdir: ../media/
 
 [.lead]
-To make it easier to disconnect the storage, SnapDrive for UNIX provides several formats for the snapdrive storage disconnect command.
+To make it easier to disconnect the storage, SnapDrive for UNIX provides several formats for the `snapdrive storage disconnect` command.
 
 This is because the disconnect operations fall into the following general categories:
 

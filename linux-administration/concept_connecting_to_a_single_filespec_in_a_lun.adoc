@@ -13,9 +13,9 @@ You can connect to a single filespec which resides in a LUN. The following examp
 
 NOTE: Filespec can be any one of file system, host volume, disk group, or a LUN.
 
-For creating restricted FlexClone, you need to set the option san-clone-method =optimal in snapdrive.conf file or give -clone optimal before you can connect the filespec. This example displays the results when you want to connect a filespec /mnt/fs1 which resides in a LUN homer:/vol/vol1/lun1
+For creating restricted FlexClone, you need to set the option `san-clone-method =optimal` in `snapdrive.conf` file or give `-clone optimal` before you can connect the filespec. This example displays the results when you want to connect a filespec `/mnt/fs1` which resides in a LUN `homer:/vol/vol1/lun1`
 
-The layout of the source file system /mnt/fs1 is given below:
+The layout of the source file system `/mnt/fs1` is given below:
 
 ----
 # snapdrive storage show -fs /mnt/fs_1 -capabilities
@@ -40,7 +40,7 @@ Successfully connected to snapshot homer:/vol/vol1:snap1
         file system: /mnt/fs_1_0
 ----
 
-Here, SnapDrive for UNIX automatically chose to create a restricted FlexClone Snapdrive_vol1_0_volume_clone_from_snap1_snapshot from snapshot snap1 and connected it to the LUN testlun1 in this FlexClone to create a cloned host file system /mnt/fs_1_0.
+Here, SnapDrive for UNIX automatically chose to create a restricted FlexClone `Snapdrive_vol1_0_volume_clone_from_snap1_snapshot` from snapshot snap1 and connected it to the LUN testlun1 in this FlexClone to create a cloned host file system /mnt/fs_1_0.
 
 ----
 # snapdrive storage show -fs /mnt/fs_1_0 -capabilities
@@ -55,8 +55,8 @@ device filename adapter path size  proto  state  clone  lun path backing snapsho
 
 SnapDrive for UNIX names the destination FlexClone with the prefix mentioned in the CLI.
 
-If the generated FlexClone name (with prefix) is already in use, SnapDrive for UNIX gives an error message. In this case, you can use --autorename option along with --prefixfv to auto generate clone volume names.
+If the generated FlexClone name (with prefix) is already in use, SnapDrive for UNIX gives an error message. In this case, you can use `-autorename` option along with `-prefixfv` to auto generate clone volume names.
 
---prefixfv CLI option is applicable only for SAN based filespecs. The -destfv CLI option is ignored by SnapDrive for UNIX for SAN based filespecs during FlexClone operation.
+`-prefixfv` CLI option is applicable only for SAN based filespecs. The `-destfv` CLI option is ignored by SnapDrive for UNIX for SAN based filespecs during FlexClone operation.
 
-NOTE: SnapDrive for UNIX displays a warning when a Snapshot copy is locked due to LUN clones. However, SnapDrive for UNIX proceeds with the snap connect operation.
+NOTE: SnapDrive for UNIX displays a warning when a Snapshot copy is locked due to LUN clones. However, SnapDrive for UNIX proceeds with the `snap connect` operation.

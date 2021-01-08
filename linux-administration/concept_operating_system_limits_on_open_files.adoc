@@ -15,4 +15,6 @@ SnapDrive for UNIX checks for operating system limitations on the number of file
 
 NOTE: The default limit for the number of file handles opened simultaneously by one process varies based on your operating system. Check your operating system documentation to determine the limit.
 
-If the number of open LUNs for one operation exceeds the operating system limit on the number of file handles opened simultaneously by one process, SnapDrive for UNIX exits with the following error message:0001-001 Admin error: Unable to open device path-to-device
+If the number of open LUNs for one operation exceeds the operating system limit on the number of file handles opened simultaneously by one process, SnapDrive for UNIX exits with the following error message:
+
+`0001-001 Admin error: Unable to open device path-to-device`

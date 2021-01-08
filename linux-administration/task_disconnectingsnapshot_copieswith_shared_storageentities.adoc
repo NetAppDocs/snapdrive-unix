@@ -9,12 +9,12 @@ summary: 'You can use the snapdrive snap disconnect command to disconnect a Snap
 :imagesdir: ../media/
 
 [.lead]
-You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains shared storage entities.
+You can use the `snapdrive snap disconnect` command to disconnect a Snapshot copy that contains shared storage entities.
 
 .Steps
 . Enter the following command syntax:
 +
-snapdrive snap disconnect {-dg | -fs}file_spec [file_spec...] {-dg | -fs} file_spec [file_spec...]...] long_snap_name[-full] [-fstype type] [-vmtype type] [-split]
+`*snapdrive snap disconnect {-dg | -fs} _file_spec_ [_file_spec..._] {-dg | -fs} _file_spec_ [file_spec...]...] _long_snap_name_ [-full] [-fstype _type_] [-vmtype _type_] [-split]*`
 
 This example disconnects shared file system:
 

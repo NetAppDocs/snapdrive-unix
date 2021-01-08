@@ -13,4 +13,4 @@ Stale devices can be left behind in the Fibre Channel over Ethernet (FCoE) envir
 
 == Workaround
 
-Run either the native rescan script provided by the vendor to remove all old entries or the rescan script using the rescan-scsibus.sh --r command that is included with sg3 packages.
+Run either the native rescan script provided by the vendor to remove all old entries or the rescan script using the `rescan-scsibus.sh --r` command that is included with sg3 packages.

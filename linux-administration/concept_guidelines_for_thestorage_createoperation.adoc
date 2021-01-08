@@ -9,26 +9,26 @@ summary: 'You should follow certain guidelines when you use the snapdrive storag
 :imagesdir: ../media/
 
 [.lead]
-You should follow certain guidelines when you use the snapdrive storage create command for the storage create operation.
+You should follow certain guidelines when you use the `snapdrive storage create` command for the storage create operation.
 
-* If you list LUNs from different storage system volumes with the -lun option, you cannot include the -dg, -hostvol, or -fs option at the command prompt.
-* The -nolvm option creates a file system directly on a LUN without activating the host LVM.
+* If you list LUNs from different storage system volumes with the -lun option, you cannot include the `-dg`, `-hostvol`, or `-fs` option at the command prompt.
+* The `-nolvm` option creates a file system directly on a LUN without activating the host LVM.
 +
 You cannot specify host volumes or disk groups when you use this option.
 
 * You cannot use SnapDrive for UNIX storage provisioning commands for NFS files or directory trees.
-* If you use the snapdrive storage create command to create a file system directly on a LUN, you cannot specify more than one LUN.
+* If you use the `snapdrive storage create` command to create a file system directly on a LUN, you cannot specify more than one LUN.
 +
 SnapDrive for UNIX always creates a new LUN when you use this form of the command.
 
 * Some operating systems have limits on how many LUNs you can create.
 +
-If your host is running one of these operating systems, you might want to run the snapdrive config check luns command.
+If your host is running one of these operating systems, you might want to run the `snapdrive config check luns` command.
 
 * Creating a file system on a raw LUN with DMP multipathing is supported.
-* The enable-mount-with-netdev parameter allows you to include the _netdev file system option with the /etc/fstab file.
+* The `enable-mount-with-netdev` parameter allows you to include the `_netdev` file system option with the `/etc/fstab` file.
 +
-When the value is set to off (default value), you must manually specify -mntopts _netdev in the snapdrive storage create command. However, if you change the value to on, the -mntopts _netdev is executed automatically when you run the snapdrive storage create command.
+When the value is set to off (default value), you must manually specify `-mntopts _netdev` in the `snapdrive storage create` command. However, if you change the value to on, the `-mntopts _netdev` is executed automatically when you run the `snapdrive storage create` command.
 
 *Related information*
 

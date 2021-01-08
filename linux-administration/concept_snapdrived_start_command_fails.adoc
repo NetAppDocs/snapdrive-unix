@@ -9,10 +9,10 @@ summary: 'In some conditions snapdrived start command may fail. There are a few 
 :imagesdir: ../media/
 
 [.lead]
-In some conditions snapdrived start command may fail. There are a few troubleshooting steps to resolve this.
+In some conditions `snapdrived start` command may fail. There are a few troubleshooting steps to resolve this.
 
-* Check whether daemon port specified in snapdrive.conf file is already in use by other application.
+* Check whether daemon port specified in `snapdrive.conf` file is already in use by other application.
 * Check whether an earlier instance of daemon is stopped properly.
 * Check whether system-wide semaphore limit is reached, in which case daemon start does not work.
 * Check whether any of the services like iSCSI, VxVM is not running on the machine.
-* If HTTPS is set to on, check whether self signed certificate is installed in the specified directory.
+* If HTTPS is set to `on`, check whether self signed certificate is installed in the specified directory.

@@ -21,9 +21,9 @@ It displays the following error message:
 The solution for this problem is to:
 
 . Verify that the storage resource is refreshed on Operations Manager. If storage resource is not refreshed on Operations Manager, then
- ** Manually execute dfm host discover <storage-system>.
- ** Assign {Global, DFM.Database.Write} capability to sd-admin
+ ** Manually execute `dfm host discover <storage-system>`.
+ ** Assign {Global, DFM.Database.Write} capability to `sd-admin`
 +
 In this case, SnapDrive for UNIX automatically refresh Operations Manager and reissue access check.
 
-The default refresh interval used by SnapDrive for UNIX is 15 seconds (dfm-rbac-retry-sleep-secs) and the default number of retries used by SnapDrive for UNIX is 12 (dfm-rbac-retries). If you still receive the above error message, then increase the value of dfm-rbac-retries configuration variable to 14, 16, 18... and so on to match your environment. The refresh interval required by Operations Manager depends on the number of LUNs and volumes you have in your storage system.
+The default refresh interval used by SnapDrive for UNIX is 15 seconds (`_dfm-rbac-retry-sleep-secs_`) and the default number of retries used by SnapDrive for UNIX is 12 (`_dfm-rbac-retries_`). If you still receive the above error message, then increase the value of `_dfm-rbac-retries_` configuration variable to 14, 16, 18... and so on to match your environment. The refresh interval required by Operations Manager depends on the number of LUNs and volumes you have in your storage system.

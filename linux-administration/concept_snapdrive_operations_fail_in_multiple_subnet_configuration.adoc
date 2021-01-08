@@ -13,4 +13,4 @@ SnapDrive operations fail in multiple subnet configurations, if the Internet Con
 
 == Workaround
 
-Ensure that enable-ping-to-check-filer-reachability is set to off.
+Ensure that `_enable-ping-to-check-filer-reachability_` is set to `off`.

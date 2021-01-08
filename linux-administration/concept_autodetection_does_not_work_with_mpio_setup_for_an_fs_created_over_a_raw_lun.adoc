@@ -13,4 +13,4 @@ Autodetection does not work with the file system on raw LUN on a Linux MPIO setu
 
 == Workaround
 
-Use the option -fs with all the SnapDrive operations.
+Use the option `-fs` with all the SnapDrive operations.

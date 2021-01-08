@@ -28,7 +28,7 @@ This happens because of the iSCSI daemon limitation in the following hosts:
 Before modifying the following system parameters, contact the OS vendor.
 ----
 
-. Add the fs.file-max parameter to the/etc/sysctl.conf file.
+. Add the `*fs.file-max*` parameter to the `/etc/sysctl.conf` file.
 +
 The following is an example in the command-line.
 +
@@ -36,11 +36,11 @@ The following is an example in the command-line.
 # sysctl -w fs.file-max=65536
 ----
 +
-NOTE: We recommend to set the parameter value to 65536, but you can also set the value depending on the applications on your host.
+NOTE: We recommend to set the parameter value to `65536`, but you can also set the value depending on the applications on your host.
 
-. Assign 65536 to the fs.file-max parameter.
-. Update the default shell start-up file for the root user's UNIX account.
- ** For the Bourne, Bash, or Korn shell, add the following lines to the /etc/profile file by running the following command:
+. Assign `65536` to the `*fs.file-max*` parameter.
+. Update the default shell `start-up` file for the root user's UNIX account.
+ ** For the Bourne, Bash, or Korn shell, add the following lines to the `/etc/profile` file by running the following command:
 +
 ----
 cat >> /etc/profile <<EOF
@@ -56,7 +56,7 @@ fi
 EOF
 ----
 
- ** For the C shell (csh or tcsh), add the following lines to the /etc/csh.login file by running the following command:
+ ** For the C shell (csh or tcsh), add the following lines to the `/etc/csh.login` file by running the following command:
 +
 ----
 cat >> /etc/csh.login <<EOF
@@ -66,11 +66,11 @@ limit descriptors 65536
 endif
 EOF
 ----
-. Add the following parameters to the /etc/security/limits.conf file by running the following command:
+. Add the following parameters to the `/etc/security/limits.conf` file by running the following command:
 +
 ----
 root soft nofile 65536
 root hard nofile 65536
 ----
 
-. Activate all the kernel parameters for the system by executing the following command:sysctl -p
+. Activate all the kernel parameters for the system by executing the following command: `sysctl -p`

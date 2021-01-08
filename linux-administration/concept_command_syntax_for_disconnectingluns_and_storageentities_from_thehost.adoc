@@ -9,6 +9,6 @@ summary: 'To use the snapdrive storage disconnect command to remove the mappings
 :imagesdir: ../media/
 
 [.lead]
-To use the snapdrive storage disconnect command to remove the mappings for the LUNs with storage entities, use the following syntax:
+To use the `snapdrive storage disconnect` command to remove the mappings for the LUNs with storage entities, use the following syntax:
 
-snapdrive storage disconnect { -dg | -fs | -hostvol } file_spec [file_spec...] [{ -dg | -fs | -hostvol } file_spec [file_spec...] ...] [-full] [-fstype type] [-vmtype type]
+`*snapdrive storage disconnect { -dg | -fs | -hostvol } _file_spec_ [_file_spec..._] [{ -dg | -fs | -hostvol } _file_spec_ [_file_spec..._] ...] [-full] [-fstype _type_] [-vmtype _type_]*`

@@ -19,4 +19,4 @@ The security features allow you to perform the following tasks:
 
 The access control feature allows you to specify which operations a host running SnapDrive for UNIX can perform on a storage system. You set these permissions individually for each host. In addition, to allow SnapDrive for UNIX to access a storage system, you must supply the login name and password for that storage system.
 
-The HTTPS feature lets you specify SSL encryption for all interactions with the storage system through the Manage ONTAP interface, including sending the passwords. This behavior is the default in SnapDrive 4.1 for UNIX and later releases for Linux hosts; however, you can disable SSL encryption by changing the value of the use-https-to-filer configuration variable to off.
+The HTTPS feature lets you specify SSL encryption for all interactions with the storage system through the Manage ONTAP interface, including sending the passwords. This behavior is the default in SnapDrive 4.1 for UNIX and later releases for Linux hosts; however, you can disable SSL encryption by changing the value of the `use-https-to-filer` configuration variable to `off`.

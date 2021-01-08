@@ -15,7 +15,7 @@ The clone split estimation helps you to estimate the required storage space (in 
 
 . Enter the following command to estimate the required storage space to split a LUN clone.
 +
-snapdrive clone split estimate [-lun]long_lun_name [long_lun_name...] | [{-dg | -vg | -fs | -hostvol | -lvol}file_spec [file_spec...]] | [-snapname long_snap_name] {-volclone|-lunclone}] [-v | -verbose]
+`*snapdrive clone split estimate [-lun]_long_lun_name_ [_long_lun_name..._] | [{-dg | -vg | -fs | -hostvol | -lvol}_file_spec_ [_file_spec..._]] | [-snapname _long_snap_name_] {-volclone|-lunclone}] [-v | -verbose]*`
 +
 This operation displays the following information:
 
@@ -28,7 +28,7 @@ This operation displays the following information:
  ** Shared Space - space occupied by the LUN clone along with the parent
 
 +
-The Owned Space and Shared Space is displayed when you use -verbose option.
+The `Owned Space` and `Shared Space` is displayed when you use `-verbose` option.
 
 The following example estimates the storage space to split a LUN clone.
 
@@ -40,7 +40,7 @@ Resource     Container Required Available Storage
              -112:/vol/vol_1
 ----
 
-The following is an example of using the -verbose option. Alternatively, you can use -v option.
+The following is an example of using the `-verbose` option. Alternatively, you can use `-v` option.
 
 ----
 # snapdrive clone split estimate -fs /mnt/my_mnt1 -verbose
