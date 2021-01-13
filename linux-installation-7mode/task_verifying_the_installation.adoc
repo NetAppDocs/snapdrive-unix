@@ -1,7 +1,7 @@
 ---
 permalink: linux-installation-7mode/task_verifying_the_installation.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'After you install SnapDrive for UNIX you must verify that the installation is successful. SnapDrive for UNIX installs multiple files on the host, such as executables, configuration files, uninstall files, diagnostic files, and man pages.'
 ---
 = Verifying the installation
@@ -11,10 +11,12 @@ summary: 'After you install SnapDrive for UNIX you must verify that the installa
 [.lead]
 After you install SnapDrive for UNIX you must verify that the installation is successful. SnapDrive for UNIX installs multiple files on the host, such as executables, configuration files, uninstall files, diagnostic files, and man pages.
 
-. Verify that the snapdrive.conf file is located at /opt/NetApp/snapdrive/ folder.
+.Steps
+
+. Verify that the `snapdrive.conf` file is located at `/opt/NetApp/snapdrive/` folder.
 . Verify that the SnapDrive for UNIX executables for a Linux operating system are installed in the following locations:
- ** /opt/NetApp/snapdrive/bin/snapdrive
- ** /opt/NetApp/snapdrive/bin/snapdrived
-. Verify that the SnapDrive for UNIX diagnostic files are installed in the /opt/NetApp/snapdrive/diag folder.
-. Verify that the SnapDrive for UNIX man pages are installed in the /opt/NetApp/snapdrive/docs folder.
-. Verify the details of the installed configuration components in the /var/log/sdconfcheck.out file.
+ ** `/opt/NetApp/snapdrive/bin/snapdrive`
+ ** `/opt/NetApp/snapdrive/bin/snapdrived`
+. Verify that the SnapDrive for UNIX diagnostic files are installed in the `/opt/NetApp/snapdrive/diag` folder.
+. Verify that the SnapDrive for UNIX man pages are installed in the `/opt/NetApp/snapdrive/docs` folder.
+. Verify the details of the installed configuration components in the `/var/log/sdconfcheck.out` file.
