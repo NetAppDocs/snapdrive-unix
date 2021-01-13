@@ -9,9 +9,9 @@ summary: 'For space reservation with volume based snap reserve you need to set s
 :imagesdir: ../media/
 
 [.lead]
-For space reservation with volume based snap reserve you need to set space-reservations-volume-enabled option in the snapdrive.conf file.
+For space reservation with volume based snap reserve you need to set `_space-reservations-volume-enabled_` option in the `snapdrive.conf` file.
 
-The space-reservations-volume-enabled option is used to set space guarantee policy on volume and can take the following three values.
+The `_space-reservations-volume-enabled_` option is used to set space guarantee policy on volume and can take the following three values.
 
 * *Snapshot*: This is the default value. Space guarantee on the volume does not change.
 * *volume*: Space guarantee on the volume is at the volume level.
@@ -19,8 +19,9 @@ The space-reservations-volume-enabled option is used to set space guarantee poli
 
 Following table describes the behavior of volume-based snap reserve for space reservation.
 
+[options="header"]
 |===
-| No space reserve CLI option used; -vbsr execute is specified| space-reservations-volume-enabled=| Result
+| No space reserve CLI option used; `-vbsr execute` is specified| space-reservations-volume-enabled=| Result
 a|
 none
 a|
@@ -34,13 +35,13 @@ none
 a|
 Attempt to set space guarantee as "`none`" for the volumes.
 a|
--reserve
+`-reserve`
 a|
 configuration value is over-ridden
 a|
 Attempt to set space guarantee for volumes as "volume"
 a|
--noreserve
+`-noreserve`
 a|
 configuration value is over-ridden
 a|
@@ -52,4 +53,4 @@ volume
 a|
 Attempt to set space guarantee for volumes as "volume"
 |===
-NOTE: --vbsr preview does not check for any of the space reservation options.
+NOTE: `-vbsr preview` does not check for any of the space reservation options.

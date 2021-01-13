@@ -1,7 +1,7 @@
 ---
 permalink: linux-installation-7mode/task_preparing_for_deployment.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The hosts on which you install SnapDrive for UNIX must meet the specific software, hardware, browser, database, and operating system requirements. For more information about the requirements, see the Interoperability Matrix tool.'
 ---
 = Preparing for deployment
@@ -10,6 +10,8 @@ summary: 'The hosts on which you install SnapDrive for UNIX must meet the specif
 
 [.lead]
 The hosts on which you install SnapDrive for UNIX must meet the specific software, hardware, browser, database, and operating system requirements. For more information about the requirements, see the Interoperability Matrix tool.
+
+.Steps
 
 . Verify that you have the required licenses.
 . Verify SnapDrive support for your configuration.

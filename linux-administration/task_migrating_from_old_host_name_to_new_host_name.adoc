@@ -15,7 +15,7 @@ You can migrate from the old storage system to a new storage system by using the
 
 . Enter the following command:
 +
-`*snapdrive config migrate set _old_storage_system_namenew_storage_system_name_*`
+`*snapdrive config migrate set __old_storage_system_name new_storage_system_name__*`
 
 The following example shows that you can migrate from the old storage system "tuffleskin" to the new storage system "roaster".
 

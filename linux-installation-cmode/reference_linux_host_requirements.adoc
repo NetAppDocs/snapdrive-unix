@@ -15,11 +15,11 @@ You must prepare the Linux host before you can install SnapDrive for UNIX.
 +
 http://mysupport.netapp.com/NOW/cgi-bin/software[NetApp Downloads: Software]
 +
-You must verify that the Linux Host Utilities are installed successfully by using the sanlun version command.
+You must verify that the Linux Host Utilities are installed successfully by using the `sanlun version` command.
 
-* You must install the sg3_utils package in all Linux systems so that the SnapDrive for UNIX commands function properly.
+* You must install the `sg3_utils` package in all Linux systems so that the SnapDrive for UNIX commands function properly.
 +
-NOTE: You must ensure that the sg3_utils and sg3_utils-libs libraries are available for Red Hat Enterprise Linux (RHEL) and Oracle Enterprise Linux (OEL). The sg3_utils libraries are available in the scsi* package for SUSE Linux Enterprise Server (SLES) 10 and earlier and in the sg3_utils* package for SLES 11 and later.
+NOTE: You must ensure that the `sg3_utils` and `sg3_utils-libs` libraries are available for Red Hat Enterprise Linux (RHEL) and Oracle Enterprise Linux (OEL). The `sg3_utils` libraries are available in the `scsi*` package for SUSE Linux Enterprise Server (SLES) 10 and earlier and in the `sg3_utils*` package for SLES 11 and later.
 
 * You must download and install these libraries or binary packages if your host is a 64-bit Linux operating system and you are trying to install the 32-bit SnapDrive for UNIX.
  ** 32-bit version of the `glibc`, `libnl`, `libhba`, `libgcc` packages from the _Red Hat Enterprise Linux site_.
@@ -28,11 +28,11 @@ http://www.redhat.com[Red Hat Enterprise Linux site]
 +
 The SnapDrive for UNIX installation fails if the 32-bit version of the``glibc`` package is missing in the host system.
 
- ** 32-bit binaries of the `QConvergeConsoleCLI` package from the _QLogic site_ . You must also change qla2xxx64 /usr/lib64/libqlsdm.so to qla2xxx /usr/lib/libqlsdm.so in the /etc/hba.conf file for QLogic HBAs if your host is a 64-bit Linux operating system and install 32-bit binaries of Emulex OnCommand Manager packages for Emulex HBA.
+ ** 32-bit binaries of the `QConvergeConsoleCLI` package from the _QLogic site_ . You must also change `qla2xxx64 /usr/lib64/libqlsdm.so` to `qla2xxx /usr/lib/libqlsdm.so` in the `/etc/hba.conf` file for QLogic HBAs if your host is a 64-bit Linux operating system and install 32-bit binaries of Emulex OnCommand Manager packages for Emulex HBA.
 +
 http://support.qlogic.com/[QLogic site]
 
- ** You must install the libHBAAPI package or a vendor-specific package if the transport protocol is FC for SnapDrive for UNIX to work on the host.
+ ** You must install the `libHBAAPI` package or a vendor-specific package if the transport protocol is FC for SnapDrive for UNIX to work on the host.
 * You must install the supported host Service Packs on the host before installing SnapDrive for UNIX.
 +
 The _Interoperability Matrix tool_ has more information about the supported service packs.

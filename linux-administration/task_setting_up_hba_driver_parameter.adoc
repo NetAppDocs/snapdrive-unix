@@ -13,6 +13,8 @@ To set up HBA driver for Linux MPIO, the exact sequence of steps required depend
 
 The following steps are required to set up the HBA driver parameter for Linux MPIO:
 
+.Steps
+
 . Uninstall the built-in drivers.
 . Install the latest drivers from the vendor's web site.
 . Set the driver parameters using the vendor's CLI Configuration tool.

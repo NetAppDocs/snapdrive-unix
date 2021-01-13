@@ -11,11 +11,12 @@ summary: 'Use the SnapDrive configuration wizard to update the configuration var
 [.lead]
 Use the SnapDrive configuration wizard to update the configuration variables in the wizard. You can run the configuration wizard at any time to modify your configuration changes to SnapDrive.
 
-You can run the configuration wizard from /opt/NetApp/snapdrive/setup/config_wizard
+You can run the configuration wizard from
+`/opt/NetApp/snapdrive/setup/config_wizard`
 
-Enter exit to close the configuration wizard, without saving the changes.
+Enter `exit` to close the configuration wizard, without saving the changes.
 
-Alternatively, you can modify the configuration variables value directly in the snapdrive.conf file.
+Alternatively, you can modify the configuration variables value directly in the `snapdrive.conf` file.
 
 *Related information*
 

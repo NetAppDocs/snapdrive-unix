@@ -9,25 +9,19 @@ summary: 'The snapdrive storage resize command applies only to storage system di
 :imagesdir: ../media/
 
 [.lead]
-The snapdrive storage resize command applies only to storage system disk groups and volume groups. If you want to increase the size of your host volume or file system, you must use LVM commands.
+The `snapdrive storage resize` command applies only to storage system disk groups and volume groups. If you want to increase the size of your host volume or file system, you must use LVM commands.
 
 The following table summarizes the LVM commands you can use on the different platforms. For more information about these commands, see their man pages.
 
+[options="header"]
 |===
-a|
-*Host*
-a|
-*Volume manager*
-a|
-*Host volume*
-a|
-*File systems*
+a|*Host* a|*Volume manager* a|*Host volume* a|*File systems*
 a|
 Linux
 a|
 LVM
 a|
-lvextend
+`lvextend`
 a|
-resize2fs
+`resize2fs`
 |===

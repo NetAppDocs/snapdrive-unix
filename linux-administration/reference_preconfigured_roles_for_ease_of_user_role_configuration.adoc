@@ -13,6 +13,7 @@ Preconfigured roles simplify the task of assigning roles to users.
 
 The following table lists the predefined roles:
 
+[options="header"]
 |===
 | Role Name| Description
 a|

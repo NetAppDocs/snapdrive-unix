@@ -9,7 +9,9 @@ summary: 'You can configure multiple network paths between the host and storage 
 :imagesdir: ../media/
 
 [.lead]
-You can configure multiple network paths between the host and storage system by setting up multipathing. SnapDrive for UNIX does support the use of aliases in multipath environments. You need to make sure that the proper alias name for the mapper devices is configured in the /etc/multipath.conf file.
+You can configure multiple network paths between the host and storage system by setting up multipathing. SnapDrive for UNIX does support the use of aliases in multipath environments. You need to make sure that the proper alias name for the mapper devices is configured in the `/etc/multipath.conf` file.
+
+.Steps
 
 . After the host reboots, the multipath daemon should be running as shown in the following example:
 +
@@ -26,7 +28,9 @@ If the multipath daemon is not running, ensure that you restart the daemon after
 ----
 +
 NOTE: The following table lists some of the SnapDrive operations which support the use of alias name in multipath environment.
+
 +
+[options="header"]
 |===
 | Operation| Alias name support| Device type
 a|
@@ -55,19 +59,20 @@ a|
 Un-aliased devices
 |===
 
- ** You do not have to set any values in the /etc/multipath.conf file if you are using either Red Hat Enterprise Linux (RHEL) 6.4 or later or Oracle Linux 6.4 or later.
 +
-However, you must still maintain a dummy /etc/multipath.conf file, which can either be empty or containing the blacklisted information and alias names, if required.
-
- ** You do not have to maintain a /etc/multipath.conf file if you are using SUSE Linux Enterprise Server (SLES) 11 SP3 or later.
+** You do not have to set any values in the `/etc/multipath.conf` file if you are using either Red Hat Enterprise Linux (RHEL) 6.4 or later or Oracle Linux 6.4 or later.
 +
-However, you can have a /etc/multipath.conf file to contain the blacklisting information and alias names, if required.
+However, you must still maintain a dummy `/etc/multipath.conf` file, which can either be empty or containing the blacklisted information and alias names, if required.
 
-. Replace the string HITACHI_HUS103073FL3800_V3WTL7XA with the output of the command scsi_id -gus /block/<LD>, where LD is the local block device name.
+ ** You do not have to maintain a `/etc/multipath.conf` file if you are using SUSE Linux Enterprise Server (SLES) 11 SP3 or later.
 +
-NOTE: For some local block devices, the scsi_id command might not return any strings. In that case, the local block device must be blacklisted by using devnode directive.
+However, you can have a `/etc/multipath.conf` file to contain the blacklisting information and alias names, if required.
 
-. Increase the number of file descriptors that a process can open in the host by appending the following lines in the /etc/security/limits.conf file:
+. Replace the string `HITACHI_HUS103073FL3800_V3WTL7XA` with the output of the command `scsi_id -gus /block/<LD>`, where `LD` is the local block device name.
++
+NOTE: For some local block devices, the `scsi_id` command might not return any strings. In that case, the local block device must be blacklisted by using devnode directive.
+
+. Increase the number of file descriptors that a process can open in the host by appending the following lines in the `/etc/security/limits.conf` file:
 +
 ----
 soft nofile 4096
@@ -82,7 +87,7 @@ echo "modprobe sg" >> /etc/rc.local
 
 . Reboot the host to ensure that settings are active.
 +
-NOTE: The lvm2-2.02.17-7.27.8 and the filter setting must be assigned as =["r|/dev/.*/by-path/.*|", "r|/dev/.*/by-id/.*|", "r|/dev/cciss/.*|", "a/.*/"] in the lvm.conf file in SLES10 SP2.
+NOTE: The lvm2-2.02.17-7.27.8 and the `_filter_` setting must be assigned as = `["r|/dev/.\*/by-path/.*|"`, `"r|/dev/.\*/by-id/.*|"`, `"r|/dev/cciss/.\*|", "a/.*/"]` in the `lvm.conf` file in SLES10 SP2.
 
 *Related information*
 

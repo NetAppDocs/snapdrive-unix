@@ -9,17 +9,17 @@ summary: 'To create a Snapshot copy, run the snapdrive snap create command.'
 :imagesdir: ../media/
 
 [.lead]
-To create a Snapshot copy, run the snapdrive snap create command.
+To create a Snapshot copy, run the `snapdrive snap create` command.
 
 Before you execute this syntax, you must understand the options, keywords, and arguments mentioned in this command.
 
 .Steps
 
-. Enter the following command syntax to create a Snapshot copy: 
+. Enter the following command syntax to create a Snapshot copy:
 +
-snapdrive snap create {-lun | -dg | -fs | -hostvol }file_spec[file_spec ...] [ {-lun |-dg | -fs | -hostvol } file_spec [file_spec...]] -snapname snap_name [ -force [-noprompt]][-unrelated] [-nofilerfence] [-fstype type][-vmtype type]
+`*snapdrive snap create {-lun | -dg | -fs | -hostvol } _file_spec[file_spec ...]_ [ {-lun |-dg | -fs | -hostvol } file_spec [file_spec...]] -snapname _snap_name_ [ -force [-noprompt]][-unrelated] [-nofilerfence] [-fstype _type_][-vmtype _type_]*`
 
-The file_spec arguments represent a set of storage entities on one or more storage systems. The Snapshot create operation takes a Snapshot copy of the storage system volume containing those entities and gives it the name specified in the snap_name argument.
+The `file_spec` arguments represent a set of storage entities on one or more storage systems. The Snapshot create operation takes a Snapshot copy of the storage system volume containing those entities and gives it the name specified in the `snap_name` argument.
 
 This example creates a multivolume Snapshot copy for a Linux host. The Snapshot copy contains the disk group vgmultivol, which include the host volumes lvol1 and lvol2:
 

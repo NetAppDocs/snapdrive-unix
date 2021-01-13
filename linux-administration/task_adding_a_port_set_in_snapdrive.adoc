@@ -15,9 +15,11 @@ NOTE: If you want to upgrade to SnapDrive 5.2 for UNIX, ensure that the earlier 
 
 In the following example, the storage administrator uses the Vserver name instead of an IP address, and verifies that the Vserver name is registered on a DNS server.
 
+.Steps
+
 . Enter the following command on the host:
 +
-`*snapdrive portset addportset_namefilername [filername...]*`
+`*snapdrive portset add _portset_name filername_ [_filername..._]*`
 +
 `_portset_name_` is the name of the port set.
 +

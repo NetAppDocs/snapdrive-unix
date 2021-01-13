@@ -13,15 +13,10 @@ Each exit status value has an error name, and the type associated with it. View 
 
 The following table contains information about exit status values. The exit status values are numbered sequentially. If SnapDrive for UNIX does not currently implement an error, that exit status value is not included in the table. As a result, there can be some gaps in the numbers.
 
+[options="header"]
 |===
 a|
-Exit value
-a|
-Error name
-a|
-Type
-a|
-Description
+Exit value a|Error name a|Type a|Description
 a|
 1
 a|
@@ -95,7 +90,7 @@ Command error
 a|
 You supplied a name on the command line that was not correctly formatted.
 
-For example, a storage system volume was not specified as filer:/vol/vol_name. This message also occurs when an invalid character is given in either a storage system or a volume manager based name.
+For example, a storage system volume was not specified as `filer:/vol/vol_name`. This message also occurs when an invalid character is given in either a storage system or a volume manager based name.
 
 a|
 11
@@ -234,7 +229,7 @@ Bad password file
 a|
 Admin error
 a|
-The password file has a bad entry. Use the snapdrive config delete command to delete the login entry for this storage system. Then reenter the login information using thesnapdrive config setuser_name command.
+The password file has a bad entry. Use the `snapdrive config delete` command to delete the login entry for this storage system. Then reenter the login information using the `snapdrive config set _user_name_` command.
 a|
 33
 a|
@@ -242,7 +237,7 @@ No password file entry
 a|
 Admin error
 a|
-The password file has no entry for this storage system. Run the snapdrive config setusernamefilername command for every storage system on which you need to run SnapDrive for UNIX. Then try this operation again.
+The password file has no entry for this storage system. Run the `snapdrive config set _username filername_` command for every storage system on which you need to run SnapDrive for UNIX. Then try this operation again.
 a|
 34
 a|
@@ -385,9 +380,9 @@ Disk group ID conflict
 a|
 Command error
 a|
-A snapdrive snap connect command requested a disk group ID that conflicts with an existing disk group.
+A `snapdrive snap connect` command requested a disk group ID that conflicts with an existing disk group.
 
-This usually means that a snapdrive snap connect command on an originating host is being attempted on a system that does not support it. To fix this problem, attempt the operation from a different host.
+This usually means that a `snapdrive snap connect` command on an originating host is being attempted on a system that does not support it. To fix this problem, attempt the operation from a different host.
 
 a|
 52
@@ -462,9 +457,11 @@ Admin error
 a|
 The host operating system requires an update to internal data in order to complete the current operation. This update is required to allow a new LUN to be created.
 
-SnapDrive for UNIX cannot perform the update, because automatic host preparation for provisioning has been disabled because the snapdrive.conf variable enable-implicit-host-preparation is set to "`off`". With automatic host preparation disabled, you should use either the snapdrive config prepare luns command to prepare the host to provision LUNs or perform the preparation steps manually.
+SnapDrive for UNIX cannot perform the update, because automatic host preparation for provisioning has been disabled because the `snapdrive.conf` variable `_enable-implicit-host-preparation_` is set to "`off`".
 
-To avoid this error message, set the enable-implicit-host-preparation value to "`on`" in the snapdrive.conf file.
+With automatic host preparation disabled, you should use either the snapdrive config prepare luns command to prepare the host to provision LUNs or perform the preparation steps manually.
+
+To avoid this error message, set the `_enable-implicit-host-preparation_` value to "`on`" in the `snapdrive.conf` file.
 
 a|
 62
@@ -501,7 +498,7 @@ Unknown error
 a|
 Admin error
 a|
-An unknown error occurred that might be serious. Run the snapdrive.dc utility and send its results to NetApp technical support for analysis.
+An unknown error occurred that might be serious. Run the `snapdrive.dc` utility and send its results to NetApp technical support for analysis.
 a|
 127
 a|
@@ -509,5 +506,5 @@ Internal error
 a|
 Fatal
 a|
-A SnapDrive for UNIX internal error occurred. Run the snapdrive.dc and send its results to NetApp technical support for analysis.
+A SnapDrive for UNIX internal error occurred. Run the `snapdrive.dc` and send its results to NetApp technical support for analysis.
 |===

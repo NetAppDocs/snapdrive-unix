@@ -28,8 +28,4 @@ SnapDrive for UNIX enables you to restore the Snapshot copy on the destination s
 * When you export the volume through the NFS protocol, you must set the Anonymous User ID option to 0 for the SnapDrive for UNIX commands to work.
 * A Single-File SnapRestore (SFSR) operation followed immediately by the creation of a Snapshot copy fails.
 +
-You must retry the operation after some time passes. For more information, see the _Clustered Data ONTAP Logical Storage Management Guide_.
-
-*Related information*
-
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[ONTAP 9 Logical Storage Management Guide]
+You must retry the operation after some time passes. For more information, see the link:https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html[Clustered Data ONTAP Logical Storage Management Guide].

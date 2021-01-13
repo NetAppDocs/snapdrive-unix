@@ -15,7 +15,7 @@ You can use the `snapdrive portset delete` command to delete a port set that is 
 
 . Enter the following command on the host system:
 +
-`*snapdrive portset delete filername [filername...]*`
+`*snapdrive portset delete _filername_ [_filername..._]*`
 +
 `_filername_` is the Vserver name on which the port set is configured.
 +
