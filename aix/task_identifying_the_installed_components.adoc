@@ -11,10 +11,14 @@ summary: 'You can identify the installed components on the host platform by usin
 [.lead]
 You can identify the installed components on the host platform by using the SnapDrive for UNIX configuration checker tool.
 
-. Identify the installed components: sdconfcheck detect
-+
-The sdconfcheck.out log file is used for identifying the installed components that are in the /var/log file. The log files are renamed incrementally as sdconfcheck.out.1, sdconfcheck.out.2, and so on.
-+
-The SnapDrive for UNIX configuration checker tool does not detect the Ext3 file system in a Red Hat Enterprise Linux 6 environment. You should run the modprobe -v ext3 command to load the Ext3 file system.
+.Steps
 
-. You might have to install or configure the component listed after you run the sdconfcheck detect command.
+. Identify the installed components:
++
+`*sdconfcheck detect*`
++
+The `sdconfcheck.out` log file is used for identifying the installed components that are in the `/var/log` file. The log files are renamed incrementally as `sdconfcheck.out.1`, `sdconfcheck.out.2`, and so on.
++
+The SnapDrive for UNIX configuration checker tool does not detect the Ext3 file system in a Red Hat Enterprise Linux 6 environment. You should run the `modprobe -v ext3` command to load the Ext3 file system.
+
+. You might have to install or configure the component listed after you run the `sdconfcheck detect` command.

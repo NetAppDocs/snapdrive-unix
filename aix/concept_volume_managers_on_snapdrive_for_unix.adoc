@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_volume_managers_on_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'On AIX, the volume manager is termed as Native LVM and Veritas Volume Manager \(VxVM\).'
 ---
 = Volume managers on SnapDrive for UNIX
@@ -13,25 +13,28 @@ On AIX, the volume manager is termed as Native LVM and Veritas Volume Manager (V
 
 The following table describes the volume managers on your host platform:
 
+[options="header"]
 |===
 | Host| Volume manager| Volume or disk groups| Location of logical volumes| Location of multipathing devices
-a|
+.2+a|
 AIX
 a|
 Native LVM
 a|
-Volume groups vg
+Volume groups `vg`
 a|
-dev/lvol All logical volumes share the same namespace
+`dev/lvol`
+
+All logical volumes share the same namespace
 
 a|
-/dev/hdisk (FC only) multipathing is not supported with ISCSI
+`/dev/hdisk` (FC only) multipathing is not supported with ISCSI
 a|
 Veritas Volume Manager (VxVM)
 a|
-Volume groups vg
+Volume groups `vg`
 a|
-/dev/vx/dsk/ dg/lvol
+`/dev/vx/dsk/ dg/lvol`
 a|
-/dev/vx/dmp/Disk_1
+`/dev/vx/dmp/Disk_1`
 |===

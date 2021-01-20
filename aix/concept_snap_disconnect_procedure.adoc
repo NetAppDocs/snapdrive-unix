@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_snap_disconnect_procedure.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'This section explains the procedure followed for snap disconnect.'
 ---
 = Snap disconnect procedure
@@ -13,7 +13,9 @@ This section explains the procedure followed for snap disconnect.
 
 The following steps depict the snap disconnect procedure:
 
-. SnapDrive for UNIX obtains host file specs from snap disconnect CLI and finds out the storage system volume.
+.Steps
+
+. SnapDrive for UNIX obtains host file specs from `snap disconnect` CLI and finds out the storage system volume.
 . After deleting host file specs and un-mapping the LUNs, SnapDrive for UNIX checks if the current volume is a clone created by SnapDrive.
 . If the FlexClone is created by SnapDrive, then SnapDrive for UNIX checks whether:
  .. There are any mapped LUNs in the clone volume

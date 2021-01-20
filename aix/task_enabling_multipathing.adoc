@@ -15,19 +15,21 @@ Your system must be running current versions of FC and iSCSI system components.
 
 http://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool]
 
+.Steps
+
 . Install the supported HBAs before you install the appropriate Host Utilities software.
 +
 NOTE: SnapDrive for UNIX supports multivendor HBAs.
 
 . Start the HBA service.
 +
-If the HBA service is not running, the following error message is displayed when you run SnapDrive for UNIX commands, such as snapdrive storage create and snapdrive config prepare luns:
+If the HBA service is not running, the following error message is displayed when you run SnapDrive for UNIX commands, such as `snapdrive storage create` and `snapdrive config prepare luns`:
 +
 ----
 0001-876 Admin error: HBA assistant not found
 ----
 +
-You must verify that the required number of paths are up and running. You can verify the paths by using the sanlun utility, which is included with the Host Utilities software. For example, in the FC multipathing configuration, you can use the sanlun fcp show adapter -v command.
+You must verify that the required number of paths are up and running. You can verify the paths by using the sanlun utility, which is included with the Host Utilities software. For example, in the FC multipathing configuration, you can use the `sanlun fcp show adapter -v` command.
 +
 In the following example, there are two HBA ports (fcd0 and fcd1) connected to the host that are operational (port state). You can have only one HBA or iSCSI initiator and you must configure multipathing by providing more than one path to the target LUNs.
 +
@@ -74,7 +76,7 @@ negotiated speed: 2 GBit/sec
 OS device name: /dev/fcd1
 ----
 +
-If multipathing is enabled on a host, multiple paths are visible for the same LUN. You can use the sanlun lun show all command to verify the paths. In the following example, you can find multiple paths to the same LUN (fish: /vol/vol1/lun):
+If multipathing is enabled on a host, multiple paths are visible for the same LUN. You can use the `sanlun lun show all` command to verify the paths. In the following example, you can find multiple paths to the same LUN (`fish: /vol/vol1/lun`):
 +
 ----
 filer:         lun-pathname        device filename  adapter    protocol   lun size              lun state
@@ -89,20 +91,23 @@ filer:         lun-pathname        device filename  adapter    protocol   lun si
 . Check the SnapDrive for UNIX stack requirements.
 . Install or upgrade SnapDrive for UNIX.
 . Verify the SnapDrive for UNIX installation.
-. Locate the snapdrive.conf file path.
-. Configure the following configuration variables in the snapdrive.conf file:
- ** multipathing-type
- ** default-transport
- ** fstype
- ** vmtype
+. Locate the `snapdrive.conf` file path.
+. Configure the following configuration variables in the `snapdrive.conf` file:
+ ** `_multipathing-type_`
+ ** `_default-transport_`
+ ** `_fstype_`
+ ** `_vmtype_`
+
++
 For every host, the multipathing type, transport type, file system, and volume manager type are dependent on each other. The following table describes all the possible combinations:
 
 +
+[options="header"]
 |===
 | Host platform| Default transport type| Multipathing type| fstype| vmtype
-a|
+.3+a|
 AIX
-a|
+.3+a|
 FCP
 a|
 absolute
@@ -123,8 +128,8 @@ vxfs
 a|
 vxvm
 |===
-The preceding table gives the supported values of the multipathing-type, default-transport, fstype, and vmtype configuration variables.
-. Save the snapdrive.conf file.
+The preceding table gives the supported values of the `_multipathing-type_`, `_default-transport_`, `_fstype_`, and `_vmtype_` configuration variables.
+. Save the `snapdrive.conf` file.
 +
 SnapDrive for UNIX automatically checks this file each time it starts. You must restart the SnapDrive for UNIX daemon for the changes to take effect.
 

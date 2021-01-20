@@ -1,7 +1,7 @@
 ---
 permalink: solaris/task_setting_values_in_the_snapdrive_conf_file.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can change the values in the snapdrive.conf file or add new name-value pairs.'
 ---
 = Setting values in the snapdrive.conf file
@@ -9,17 +9,19 @@ summary: 'You can change the values in the snapdrive.conf file or add new name-v
 :imagesdir: ../media/
 
 [.lead]
-You can change the values in the snapdrive.conf file or add new name-value pairs.
+You can change the values in the `snapdrive.conf` file or add new name-value pairs.
 
 You must be logged in as a root user.
 
-. Back up the snapdrive.conf file.
-. Open the snapdrive.conf file in a text editor.
+.Steps
+
+. Back up the `snapdrive.conf` file.
+. Open the `snapdrive.conf` file in a text editor.
 . To add a name-value pair, use the following format:
 +
-config-option-name=value value # optional comment
+`*config-option-name=value _value_ # optional comment*`
 +
-config-option-name is the name of the variable you want to configure; for example, audit-log-file. value is the value you want to assign to this option.
+`_config-option-name_` is the name of the variable you want to configure; for example, audit-log-file. `_value_` is the value you want to assign to this option.
 +
 If you want to include a comment with the name-value pair, precede the comment with a number sign (#).
 +
@@ -27,7 +29,11 @@ You should enter only one name-value pair, per line.
 +
 If the name or the value uses a string, enclose the string in either single ('`) or double (") quotation marks. You can place the quotation marks either around the entire name-value pair or around only the value. The following examples show how you can use quotation marks and comments with name-value pairs:
 +
-"config-option-one=string with white space" # double quotes around the pair config-option-two="string with white space" # double quotes around the value config-option-2B=`'string with white space`' # single quotes around the value
+`*"config-option-one=string with white space" # double quotes around the pair*`
++
+`*config-option-two="string with white space" # double quotes around the value*`
++
+`*config-option-2B=`'string with white space`' # single quotes around the value*`
 
 . To modify a name-value pair, replace the current value with the new value.
 +
@@ -45,6 +51,6 @@ If you want to specify a blank value (for example, to disable the audit log file
 +
 SnapDrive for UNIX automatically checks this file each time it starts. Your changes take effect the next time it starts.
 
-. Restart the SnapDrive for UNIX daemon by using the snapdrived restart command.
+. Restart the SnapDrive for UNIX daemon by using the `snapdrived restart` command.
 +
-Restarting the daemon is necessary for snapdrive.conf file changes to take effect.
+Restarting the daemon is necessary for `snapdrive.conf` file changes to take effect.

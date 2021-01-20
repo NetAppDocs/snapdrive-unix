@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_manual_pages_installed_by_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapDrive for UNIX provides man pages in several formats.'
 ---
 = Man pages installed by SnapDrive for UNIX
@@ -13,11 +13,11 @@ SnapDrive for UNIX provides man pages in several formats.
 
 The man pages are available at the following location:
 
-* /opt/NetApp/snapdrive/docs/snapdrive.dc.1
-* /opt/NetApp/snapdrive/docs/snapdrive.1
-* /opt/NetApp/snapdrive/docs/snapdrive.1.html
-* /opt/NetApp/snapdrive/docs/brocade_info.1
-* /opt/NetApp/snapdrive/docs/mcdata_info.1
-* /opt/NetApp/snapdrive/docs/cisco_info.1
-* /opt/NetApp/snapdrive/docs/filer_info.1
-* /opt/NetApp/snapdrive/docs/aix_info.1
+* `/opt/NetApp/snapdrive/docs/snapdrive.dc.1`
+* `/opt/NetApp/snapdrive/docs/snapdrive.1`
+* `/opt/NetApp/snapdrive/docs/snapdrive.1.html`
+* `/opt/NetApp/snapdrive/docs/brocade_info.1`
+* `/opt/NetApp/snapdrive/docs/mcdata_info.1`
+* `/opt/NetApp/snapdrive/docs/cisco_info.1`
+* `/opt/NetApp/snapdrive/docs/filer_info.1`
+* `/opt/NetApp/snapdrive/docs/aix_info.1`

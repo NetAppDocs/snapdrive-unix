@@ -1,7 +1,7 @@
 ---
 permalink: solaris/task_starting_the_snapdrive_for_unix_daemon.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You must start and run the SnapDrive for UNIX daemon before you can use any SnapDrive for UNIX command.'
 ---
 = Starting the SnapDrive for UNIX daemon
@@ -13,4 +13,8 @@ You must start and run the SnapDrive for UNIX daemon before you can use any Snap
 
 You must be logged in as a root user.
 
-. Start the daemon: snapdrived start
+.Steps
+
+. Start the daemon:
++
+`*snapdrived start*`

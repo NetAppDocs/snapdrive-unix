@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_considerations_forstorage_operations.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You must keep in mind a few considerations related to the various storage commands.'
 ---
 = Considerations for storage operations
@@ -11,17 +11,17 @@ summary: 'You must keep in mind a few considerations related to the various stor
 [.lead]
 You must keep in mind a few considerations related to the various storage commands.
 
-* Support is limited for volume groups spanning multiple storage system volumes or multiple storage systems. You cannot use the snapdrive storage create command to create volume groups that span across storage systems.
+* Support is limited for volume groups spanning multiple storage system volumes or multiple storage systems. You cannot use the `snapdrive storage create` command to create volume groups that span across storage systems.
 +
 In this case, SnapDrive for UNIX supports the following key commands:
 
- ** snapdrive snap create
- ** snapdrive snap restore
- ** snapdrive snap connect
- ** snapdrive snap disconnect
+ ** `snapdrive snap create`
+ ** `snapdrive snap restore`
+ ** `snapdrive snap connect`
+ ** `snapdrive snap disconnect`
 
-* The snapdrive storage resize command does not work with LUNs mapped directly to the host, or with the files systems that they contain.
+* The `snapdrive storage resize` command does not work with LUNs mapped directly to the host, or with the files systems that they contain.
 * SnapDrive for UNIX does not provide any options to control the formatting of host volumes that it creates. SnapDrive for UNIX creates only concatenated host volumes. It does operate correctly on host volumes of other formats (such as striped volumes) that were created using other application.
 * You cannot restore a portion of a disk group. SnapDrive for UNIX backs up and restores whole disk groups only.
 
-NOTE: The snapdrive operations performed from a non Linux operating system to a Linux operating system, using even the -mntopts command, for NFS, fail in all versions earlier than Red Hat Enterprise Linux 6.
+NOTE: The snapdrive operations performed from a non Linux operating system to a Linux operating system, using even the `-mntopts` command, for NFS, fail in all versions earlier than Red Hat Enterprise Linux 6.

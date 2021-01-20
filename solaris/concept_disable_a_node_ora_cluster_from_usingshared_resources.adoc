@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_disable_a_node_ora_cluster_from_usingshared_resources.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You have to modify the /etc/VRTSvcs/conf/config/main.cf file to disable a node from using a shared resource. For more information about the main.cf file, see the Veritas Cluster Server Installation Guide for Solaris.'
 ---
 = Disable a node or a cluster from using shared resources
@@ -9,8 +9,8 @@ summary: 'You have to modify the /etc/VRTSvcs/conf/config/main.cf file to disabl
 :imagesdir: ../media/
 
 [.lead]
-You have to modify the /etc/VRTSvcs/conf/config/main.cf file to disable a node from using a shared resource. For more information about the main.cf file, see the Veritas Cluster Server _Installation Guide for Solaris_.
+You have to modify the `/etc/VRTSvcs/conf/config/main.cf` file to disable a node from using a shared resource. For more information about the main.cf file, see the Veritas Cluster Server _Installation Guide for Solaris_.
 
 To disable a node from using a shared resource, use the following syntax:
 
-snapdrive storage disconnect -fs file_spec -lun long_lun_name [lun_name...] [-devicetype shared]
+`*snapdrive storage disconnect -fs _file_spec_ -lun _long_lun_name_ [_lun_name..._] [-devicetype shared]*`

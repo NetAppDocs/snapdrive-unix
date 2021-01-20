@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_types_of_logs.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapDrive for UNIX supports various types of log files, which help you troubleshoot when SnapDrive for UNIX is not working as expected.'
 ---
 = Types of logs
@@ -23,4 +23,4 @@ Some SnapDrive for UNIX operations have the potential to leave the system in an 
 +
 SnapDrive for UNIX reports information useful for diagnosing problems. If you have a problem, NetApp technical support might request this log file.
 +
-SnapDrive 4.0 for UNIX introduced SnapDrive for UNIX daemon service. For SnapDrive for UNIX commands to run, the daemon must be running. Daemon tracing must be carried out on for each individual command, even when commands are run in parallel. The location and name of the log file is /var/log/sd-trace.log. These trace files have only the command-specific trace entries. The trace logs for daemon execution are recorded in a different trace file /var/log/sd-daemon-trace.log.
+SnapDrive 4.0 for UNIX introduced SnapDrive for UNIX daemon service. For SnapDrive for UNIX commands to run, the daemon must be running. Daemon tracing must be carried out on for each individual command, even when commands are run in parallel. The location and name of the log file is `/var/log/sd-trace.log`. These trace files have only the command-specific trace entries. The trace logs for daemon execution are recorded in a different trace file `/var/log/sd-daemon-trace.log`.

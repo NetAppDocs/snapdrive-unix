@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_snapshot_copy_operations.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can create Snapshot copies by using the snapdrive snap create command.'
 ---
 = Snapshot copy operations
@@ -9,4 +9,4 @@ summary: 'You can create Snapshot copies by using the snapdrive snap create comm
 :imagesdir: ../media/
 
 [.lead]
-You can create Snapshot copies by using the snapdrive snap create command.
+You can create Snapshot copies by using the `snapdrive snap create` command.

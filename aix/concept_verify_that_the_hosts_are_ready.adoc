@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_verify_that_the_hosts_are_ready.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You must verify that the hosts are ready. To start the verification operations, you should first test whether the host is connected to the storage system by entering the ping filername command.'
 ---
 = Verifying the hosts are ready
@@ -9,9 +9,9 @@ summary: 'You must verify that the hosts are ready. To start the verification op
 :imagesdir: ../media/
 
 [.lead]
-You must verify that the hosts are ready. To start the verification operations, you should first test whether the host is connected to the storage system by entering the ping filername command.
+You must verify that the hosts are ready. To start the verification operations, you should first test whether the host is connected to the storage system by entering the `ping filername` command.
 
-You must also confirm that the hosts and the storage system can communicate with each other. To confirm this, execute the snapdrive storage show -all command and check if the hosts and storage system are communicating. Verify that the hosts are ready by performing certain operations:
+You must also confirm that the hosts and the storage system can communicate with each other. To confirm this, execute the `snapdrive storage show -all` command and check if the hosts and storage system are communicating. Verify that the hosts are ready by performing certain operations:
 
 * Confirm that you have set up the host and storage system correctly according to the instructions in the Host Utilities documentation for the host.
 * Confirm that you have a configuration that uses NFS, and configure the exports file.

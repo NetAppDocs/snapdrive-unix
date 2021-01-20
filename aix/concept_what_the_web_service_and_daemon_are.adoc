@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_what_the_web_service_and_daemon_are.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The SnapDrive for UNIX Web service provides a uniform interface for all the NetApp SnapManager and third-party products to integrate seamlessly with SnapDrive for UNIX. To use command-line interface \(CLI\) commands in SnapDrive for UNIX, you need to start the daemon.'
 ---
 = What the Web service and daemon are
@@ -15,10 +15,18 @@ Various NetApp SnapManager products use the command-line interface (CLI) to comm
 
 The SnapDrive for UNIX Web service allows third-party applications to integrate with SnapDrive for UNIX seamlessly. They interact with SnapDrive for UNIX using APIs.
 
-When you start the daemon, SnapDrive for UNIX daemon first checks whether the daemon is running. If the daemon is not running, it starts the daemon. If the daemon is already running and you try to start it, SnapDrive for UNIX displays the message: snapdrive daemon is already running
+When you start the daemon, SnapDrive for UNIX daemon first checks whether the daemon is running. If the daemon is not running, it starts the daemon. If the daemon is already running and you try to start it, SnapDrive for UNIX displays the message:
 
-You can check the status of the daemon to see whether SnapDrive for UNIX is running or not. You should check the status before deciding to start the daemon. If a user other than the root user tries to check the status, SnapDrive for UNIX checks the credentials of the user and displays the message: snapdrive daemon status can be seen only by root user
+`snapdrive daemon is already running`
 
-When you try to stop the daemon, SnapDrive for UNIX checks your credentials. If you are a user other than root user, SnapDrive for UNIX displays the message snapdrive daemon can be stopped only by root user
+You can check the status of the daemon to see whether SnapDrive for UNIX is running or not. You should check the status before deciding to start the daemon. If a user other than the root user tries to check the status, SnapDrive for UNIX checks the credentials of the user and displays the message:
 
-After you stop the daemon, you must restart the SnapDrive for UNIX daemon for any changes to the configuration file or any module to take effect. If a user other than the root user tries to restart the SnapDrive for UNIX daemon, SnapDrive for UNIX checks the credentials of the user and displays the message snapdrive daemon can be restarted only by root user
+`snapdrive daemon status can be seen only by root user`
+
+When you try to stop the daemon, SnapDrive for UNIX checks your credentials. If you are a user other than root user, SnapDrive for UNIX displays the message 
+
+`snapdrive daemon can be stopped only by root user`
+
+After you stop the daemon, you must restart the SnapDrive for UNIX daemon for any changes to the configuration file or any module to take effect. If a user other than the root user tries to restart the SnapDrive for UNIX daemon, SnapDrive for UNIX checks the credentials of the user and displays the message
+
+`snapdrive daemon can be restarted only by root user`

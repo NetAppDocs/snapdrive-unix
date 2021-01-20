@@ -1,7 +1,7 @@
 ---
 permalink: aix/reference_configuration_parameters_for_role_based_access_control.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You must set the various configuration variables related to role-based access control in the snapdrive.conf file.'
 ---
 = Configuration variables for role-based access control
@@ -9,38 +9,45 @@ summary: 'You must set the various configuration variables related to role-based
 :imagesdir: ../media/
 
 [.lead]
-You must set the various configuration variables related to role-based access control in the snapdrive.conf file.
+You must set the various configuration variables related to role-based access control in the `snapdrive.conf` file.
 
+[options="header"]
 |===
 | Variable| Description
 a|
-contact-http-dfm-port = 8088
+`_contact-http-dfm-port = 8088_`
 a|
 Specifies the HTTP port to use for communicating with an Operations Manager console server. The default value is 8088.
 a|
-contact-ssl-dfm-port = 8488
+`_contact-ssl-dfm-port = 8488_`
 a|
 Specifies the SSL port to use for communicating with an Operations Manager console server. The default value is 8488.
 a|
-rbac-method=dfm
+`_rbac-method=dfm_`
 a|
-Specifies the access control methods. The possible values are native and dfm. If the value is native, the access control file stored in /vol/vol0/sdprbac/sdhost-name.prbac is used for access checks.
+Specifies the access control methods. The possible values are `native` and `dfm`.
 
-If the value is set to dfm, Operations Manager console is a prerequisite. In such a case, SnapDrive for UNIX sends access checks to the Operations Manager console.
+If the value is `native`, the access control file stored in `/vol/vol0/sdprbac/sdhost-name.prbac` is used for access checks.
 
-a|
-rbac-cache=on
-a|
-SnapDrive for UNIX maintains a cache of access check queries and the corresponding results. SnapDrive for UNIX uses this cache only when all the configured Operations Manager console servers are down. You can set this value to either on to enable cache, or to off to disable it. The default value is off so that you can configure SnapDrive for UNIX to use Operations Manager console and set the rbac-method configuration variable to dfm.
+If the value is set to `dfm`, Operations Manager console is a prerequisite. In such a case, SnapDrive for UNIX sends access checks to the Operations Manager console.
 
 a|
-rbac-cache-timeout
+`_rbac-cache=on_`
 a|
-Specifies the rbac cache timeout period and is applicable only when the rbac-cache is enabled. The default value is 24 hrs.SnapDrive for UNIX uses this cache only when all the configured Operations Manager console servers are down.
+SnapDrive for UNIX maintains a cache of access check queries and the corresponding results. SnapDrive for UNIX uses this cache only when all the configured Operations Manager console servers are down.
+
+You can set this value to either `on` to enable cache, or to `off` to disable it. The default value is off so that you can configure SnapDrive for UNIX to use Operations Manager console and set the `rbac-method` configuration variable to `dfm`.
 
 a|
-use-https-to-dfm=on
+`_rbac-cache-timeout_`
 a|
-This variable lets you set SnapDrive for UNIX to use SSL encryption (HTTPS) when it communicates with Operations Manager console. The default value is on.
+Specifies the rbac cache timeout period and is applicable only when the `_rbac-cache_` is enabled. The default value is `24` hrs.
+
+SnapDrive for UNIX uses this cache only when all the configured Operations Manager console servers are down.
+
+a|
+`_use-https-to-dfm=on_`
+a|
+This variable lets you set SnapDrive for UNIX to use SSL encryption (HTTPS) when it communicates with Operations Manager console. The default value is `on`.
 
 |===

@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_snapdrive_create_comand_fails_while_discovering_mapped_devices.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When you run the storage create command in SnapDrive for UNIX, during the discovery stage, the discovery of some of the mapped devices is rejected and the command fails.'
 ---
 = SnapDrive for UNIX storage create command fails while discovering some mapped devices
@@ -9,11 +9,11 @@ summary: 'When you run the storage create command in SnapDrive for UNIX, during 
 :imagesdir: ../media/
 
 [.lead]
-When you run the storage create command in SnapDrive for UNIX, during the discovery stage, the discovery of some of the mapped devices is rejected and the command fails.
+When you run the `storage create` command in SnapDrive for UNIX, during the discovery stage, the discovery of some of the mapped devices is rejected and the command fails.
 
 == Workaround
 
-For all devices to be accepted, edit the filter section of the /etc/lvm/lvm.conf file:
+For all devices to be accepted, edit the filter section of the `/etc/lvm/lvm.conf` file:
 
 ----
 filter = [ "a/.*/" ]

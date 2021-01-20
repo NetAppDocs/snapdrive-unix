@@ -1,7 +1,7 @@
 ---
 permalink: aix/task_deleting_a_storage_system_entry.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can delete the storage system mapping information from the host system.'
 ---
 = Deleting the storage system mapping information from the host system
@@ -11,9 +11,16 @@ summary: 'You can delete the storage system mapping information from the host sy
 [.lead]
 You can delete the storage system mapping information from the host system.
 
-. Enter the following command: snapdrive config migrate deletenew_storage_system_name [new_storage_system_name...]
- ** new_storage_system_name is the name of the new storage system.
- ** [new_storage_system_name...] defines that you can delete multiple storage system names on one command line.
+.Steps
+
+. Enter the following command:
++
+`*snapdrive config migrate deletenew_storage_system_name [new_storage_system_name...]*`
+
+ ** `_new_storage_system_name_` is the name of the new storage system.
+
+ ** `_[new_storage_system_name...]_` defines that you can delete multiple storage system names on one command line.
+
 +
 ----
 snapdrive config migrate delete roaster

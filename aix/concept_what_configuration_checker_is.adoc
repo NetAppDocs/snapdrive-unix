@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_what_configuration_checker_is.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The SnapDrive configuration checker tool helps you to identify and verify the configurations supported by SnapDrive for UNIX.'
 ---
 = What configuration checker is
@@ -15,5 +15,5 @@ The configuration checker tool addresses the problem of multiple support configu
 
 The SnapDrive configuration checker tool supports the following configuration checks in SnapDrive for UNIX:
 
-* Checks the configuration specified in the snapdrive.conf file, which is available in the default location.
+* Checks the configuration specified in the `snapdrive.conf` file, which is available in the default location.
 * Checks the configuration specified using the CLI.

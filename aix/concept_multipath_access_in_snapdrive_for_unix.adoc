@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_multipath_access_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapDrive for UNIX supports FC multipath access to the storage systems using the standard multipathing software solution. By using multipathing, you can configure multiple network paths between the host and storage system.'
 ---
 = Support for multipath access in SnapDrive for UNIX
@@ -11,6 +11,7 @@ summary: 'SnapDrive for UNIX supports FC multipath access to the storage systems
 [.lead]
 SnapDrive for UNIX supports FC multipath access to the storage systems using the standard multipathing software solution. By using multipathing, you can configure multiple network paths between the host and storage system.
 
+[options="header"]
 |===
 | Platform| Multipathing solution
 a|

@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_guidelines_fordisconnectingsnapshot_copies.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The following are the guidelines to disconnect a Snapshot copy for LUNs, storage entities, or NFS directories.'
 ---
 = Guidelines for disconnecting Snapshot copies
@@ -13,4 +13,4 @@ The following are the guidelines to disconnect a Snapshot copy for LUNs, storage
 
 * When you disconnect a file system, SnapDrive for UNIX always removes the mountpoint.
 * To undo the effects of the Snapshot connect operation, use the Snapshot disconnect command.
-* If you set the enable-split-clone configuration variable value to on or sync during the Snapshot connect operation and off during the Snapshot disconnect operation, SnapDrive for UNIX does not delete the original volume or LUN that is present in the Snapshot copy.
+* If you set the `_enable-split-clone_` configuration variable value to `on` or `sync` during the Snapshot connect operation and `off` during the Snapshot disconnect operation, SnapDrive for UNIX does not delete the original volume or LUN that is present in the Snapshot copy.

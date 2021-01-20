@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_increase_in_storage_size_using_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapDrive for UNIX lets you increase the size of the storage system volume group or disk group. You use the snapdrive storage resize command to do this.'
 ---
 = Increase in storage size using SnapDrive for UNIX
@@ -9,7 +9,7 @@ summary: 'SnapDrive for UNIX lets you increase the size of the storage system vo
 :imagesdir: ../media/
 
 [.lead]
-SnapDrive for UNIX lets you increase the size of the storage system volume group or disk group. You use the snapdrive storage resize command to do this.
+SnapDrive for UNIX lets you increase the size of the storage system volume group or disk group. You use the `snapdrive storage resize` command to do this.
 
 NOTE: This command does not let you resize host volumes or file systems. For example, you cannot use the resize command to change the size of a file system on a LUN. You need to use the LVM commands to resize host volumes and file systems after you have resized the underlying disk group.
 

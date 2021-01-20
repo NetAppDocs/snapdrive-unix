@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_guidelines_for_thestorage_connectcommand.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You need to follow few guidelines to use the snapdrive storage connect command.'
 ---
 = Guidelines for the storage connect command
@@ -9,6 +9,6 @@ summary: 'You need to follow few guidelines to use the snapdrive storage connect
 :imagesdir: ../media/
 
 [.lead]
-You need to follow few guidelines to use the snapdrive storage connect command.
+You need to follow few guidelines to use the `snapdrive storage connect` command.
 
-Storage that includes LVM entities has special requirements. To use the snapdrive storage connect command to connect LVM entities, you must create the storage so that each entity in the storage hierarchy has exactly one instance of the next entity. For example, you can use the snapdrive storage connect command to connect a storage hierarchy that has one disk group (dg1) with one host volume (hostvol1) and one file system (fs1). However, you cannot use the snapdrive storage connect command to connect a hierarchy that has one disk group (dg1) with two host volumes (hostvol1 and hostvol2) and two file systems (fs1 and fs2).
+Storage that includes LVM entities has special requirements. To use the `snapdrive storage connect` command to connect LVM entities, you must create the storage so that each entity in the storage hierarchy has exactly one instance of the next entity. For example, you can use the `snapdrive storage connect` command to connect a storage hierarchy that has one disk group (dg1) with one host volume (hostvol1) and one file system (fs1). However, you cannot use the `snapdrive storage connect` command to connect a hierarchy that has one disk group (dg1) with two host volumes (hostvol1 and hostvol2) and two file systems (fs1 and fs2).

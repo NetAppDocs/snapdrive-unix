@@ -1,7 +1,7 @@
 ---
 permalink: aix/reference_limitations.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When working with SnapDrive for UNIX, you must be aware of certain limitations that might affect your environment.'
 ---
 = Limitations
@@ -18,9 +18,9 @@ When working with SnapDrive for UNIX, you must be aware of certain limitations t
 * SnapDrive for UNIX does not support Snapshot operations on an NFS mount point when the volume is exported with Kerberos security authentication types krb5, krb5i, or krb5p.
 * Snapshot operations might be inconsistent if you perform a snap restore operation on a mount point where a different entity other than the one created in the Snapshot copy is mounted.
 * SnapDrive for UNIX does not support operations on file specifications or LUNs if they are located across Data ONTAP operating in 7-Mode and clustered Data ONTAP storage systems.
-* If you are using clustered DATA ONTAP to configure a storage virtual machine (SVM) with SnapDrive for UNIX, check that the IP address of the SVM's LIF is mapped to the SVM name either in the DNS or in the /etc/hosts file.
+* If you are using clustered DATA ONTAP to configure a storage virtual machine (SVM) with SnapDrive for UNIX, check that the IP address of the SVM's LIF is mapped to the SVM name either in the DNS or in the `/etc/hosts` file.
 +
-You must also check that the SVM name is configured in SnapDrive for UNIX by using the snapdrive config setvsadminVserver name command.
+You must also check that the SVM name is configured in SnapDrive for UNIX by using the `snapdrive config set _vsadmin Vserver name_` command.
 
 * SnapDrive for UNIX modifies the mount point permissions from a nonroot user to a root user for a qtree after VBSR operations.
 * SnapDrive for UNIX does not support non-English language environments.

@@ -1,7 +1,7 @@
 ---
 permalink: solaris/task_viewing_the_migrated_new_storage_system.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can verify if the migrated storage system is included in the host system by running the snapdrive config migrate list command.'
 ---
 = Viewing the migrated new storage system
@@ -9,9 +9,13 @@ summary: 'You can verify if the migrated storage system is included in the host 
 :imagesdir: ../media/
 
 [.lead]
-You can verify if the migrated storage system is included in the host system by running the snapdrive config migrate listcommand.
+You can verify if the migrated storage system is included in the host system by running the `snapdrive config migrate list` command.
 
-. Enter the following command:snapdrive config migrate list
+.Steps
+
+. Enter the following command:
++
+`*snapdrive config migrate list*`
 +
 ----
 New Entry            Old Entry

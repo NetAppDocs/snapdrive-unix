@@ -1,7 +1,7 @@
 ---
 permalink: aix/task_estimating_the_storage_space_to_split_a_lun_clone.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The clone split estimation helps you to estimate the required storage space \(in MB\) to split a LUN clone. Depending on the clone split estimation provided by SnapDrive for UNIX, you can determine the space availability to split a LUN clone.'
 ---
 = Estimating the storage space to split a LUN clone
@@ -11,7 +11,11 @@ summary: 'The clone split estimation helps you to estimate the required storage 
 [.lead]
 The clone split estimation helps you to estimate the required storage space (in MB) to split a LUN clone. Depending on the clone split estimation provided by SnapDrive for UNIX, you can determine the space availability to split a LUN clone.
 
-. Enter the following command to estimate the required storage space to split a LUN clone. snapdrive clone split estimate [-lun]long_lun_name [long_lun_name...] | [{-dg | -vg | -fs | -hostvol | -lvol}file_spec [file_spec...]] | [-snapname long_snap_name] {-volclone|-lunclone}] [-v | -verbose]
+.Steps
+
+. Enter the following command to estimate the required storage space to split a LUN clone.
++
+`*snapdrive clone split estimate [-lun]_long_lun_name_ [_long_lun_name_...] | [{-dg | -vg | -fs | -hostvol | -lvol}__file_spec__ [_file_spec_...]] | [-snapname _long_snap_name_] {-volclone|-lunclone}] [-v | -verbose]*`
 +
 This operation displays the following information:
 
@@ -22,7 +26,9 @@ This operation displays the following information:
  ** Storage Status - indicates the space availability for a LUN clone split
  ** Owned Space - space occupied by the LUN clone
  ** Shared Space - space occupied by the LUN clone along with the parent
-The Owned Space and Shared Space is displayed when you use -verbose option.
+
++
+The `Owned Space` and `Shared Space` is displayed when you use `-verbose` option.
 
 The following example estimates the storage space to split a LUN clone.
 
@@ -34,7 +40,7 @@ Resource     Container Required Available Storage
              -112:/vol/vol_1
 ----
 
-The following is an example of using the -verbose option. Alternatively, you can use -v option.
+The following is an example of using the `-verbose` option. Alternatively, you can use `-v` option.
 
 ----
 # snapdrive clone split estimate -fs /mnt/my_mnt1 -verbose

@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_what_snapdrive_for_unix_does_when_you_upgrade_your_current_version.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can easily upgrade SnapDrive for UNIX to the latest version. As part of the upgrade process, few variables change in the snapdrive.conf file. To ensure that SnapDrive for UNIX is functioning correctly, check the various default values in the snapdrive.conf file.'
 ---
 = Upgrade SnapDrive for UNIX to current version
@@ -9,12 +9,12 @@ summary: 'You can easily upgrade SnapDrive for UNIX to the latest version. As pa
 :imagesdir: ../media/
 
 [.lead]
-You can easily upgrade SnapDrive for UNIX to the latest version. As part of the upgrade process, few variables change in the snapdrive.conf file. To ensure that SnapDrive for UNIX is functioning correctly, check the various default values in the snapdrive.conf file.
+You can easily upgrade SnapDrive for UNIX to the latest version. As part of the upgrade process, few variables change in the `snapdrive.conf` file. To ensure that SnapDrive for UNIX is functioning correctly, check the various default values in the `snapdrive.conf` file.
 
 To upgrade your current version of SnapDrive for UNIX, you do not have to uninstall it. Instead, you should install the latest version of the software on top of the current version.
 
-When you install a new version, SnapDrive for UNIX checks if you already have a version installed. If you do, it preserves the current snapdrive.conf file and renames the version of the file it is installing to snapdrive.conf.x. In this way, it avoids overwriting your snapdrive.conf file, so you do not lose any customized settings in the file.
+When you install a new version, SnapDrive for UNIX checks if you already have a version installed. If you do, it preserves the current `snapdrive.conf` file and renames the version of the file it is installing to `snapdrive.conf.x`. In this way, it avoids overwriting your `snapdrive.conf` file, so you do not lose any customized settings in the file.
 
-By default, SnapDrive for UNIX comments out the variables in the snapdrive.conf file. This means it automatically uses the default values for all variables except the ones you customize. If you want to change these values, you must add the variables to your current snapdrive.conf file and specify the values you want.
+By default, SnapDrive for UNIX comments out the variables in the `snapdrive.conf` file. This means it automatically uses the default values for all variables except the ones you customize. If you want to change these values, you must add the variables to your current `snapdrive.conf` file and specify the values you want.
 
-NOTE: When you perform a patch upgrade, the SnapDrive version in the snapdrive.conf file does not change. However, the snapdrive version command provides the appropriate version.
+NOTE: When you perform a patch upgrade, the SnapDrive version in the `snapdrive.conf` file does not change. However, the `snapdrive version` command provides the appropriate version.

@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_guidelines_for_the_storage_resize_command.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You need to follow few guidelines when you use the snapdrive storage resize command.'
 ---
 = Guidelines for the storage resize command
@@ -9,9 +9,9 @@ summary: 'You need to follow few guidelines when you use the snapdrive storage r
 :imagesdir: ../media/
 
 [.lead]
-You need to follow few guidelines when you use the snapdrive storage resize command.
+You need to follow few guidelines when you use the `snapdrive storage resize` command.
 
 * The storage resize operation can only increase the size of storage. You cannot use it to decrease the size of an entity.
 * All LUNs must reside in the same storage system volume.
 * The resize operation does not support directly on logical host volumes, or on file systems that reside on logical host volumes or on LUNs. In those cases, you must use the LVM commands to resize the storage.
-* You cannot resize a LUN; you must use the -addlun option to add a new LUN.
+* You cannot resize a LUN; you must use the `-addlun` option to add a new LUN.

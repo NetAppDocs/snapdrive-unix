@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_hostvolumes_and_filesystem_resize_operation.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The snapdrive storage resize command applies only to storage system disk groups and volume groups. If you want to increase the size of your host volume or file system, you must use LVM commands.'
 ---
 = Host volumes and file system resize operation
@@ -9,25 +9,22 @@ summary: 'The snapdrive storage resize command applies only to storage system di
 :imagesdir: ../media/
 
 [.lead]
-The snapdrive storage resize command applies only to storage system disk groups and volume groups. If you want to increase the size of your host volume or file system, you must use LVM commands.
+The `snapdrive storage resize` command applies only to storage system disk groups and volume groups. If you want to increase the size of your host volume or file system, you must use LVM commands.
 
 The following table summarizes the LVM commands you can use on the different platforms. For more information about these commands, see their man pages.
 
+[options="header"]
 |===
 a|
-*Host*
-a|
-*Volume manager*
-a|
-*Host volume*
-a|
-*File systems*
+*Host*|
+*Volume manager*|
+*Host volume*|*File systems*
 a|
 Solaris
 a|
 VxVM
 a|
-vxassist
+`vxassist`
 a|
-fsadm
+`fsadm`
 |===

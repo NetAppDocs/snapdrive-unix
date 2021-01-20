@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_guidelines_for_thesnapdrive_storagedisconnectcommand.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Follow these guidelines when using the snapdrive storage disconnect command:'
 ---
 = Guidelines for the snapdrive storage disconnect command
@@ -9,8 +9,8 @@ summary: 'Follow these guidelines when using the snapdrive storage disconnect co
 :imagesdir: ../media/
 
 [.lead]
-Follow these guidelines when using the snapdrive storage disconnect command:
+Follow these guidelines when using the `snapdrive storage disconnect` command:
 
 * When you disconnect a file system, SnapDrive for UNIX always removes the mountpoint.
-* If you use the -lun option to specify the name of a LUN that is a member of either a host disk group, or a file system, the snapdrive storage disconnect command fails.
-* If you use -lun option to specify the name of the LUN that is not discovered by multipathing software on the host, the snapdrive storage disconnect command fails.
+* If you use the `-lun` option to specify the name of a LUN that is a member of either a host disk group, or a file system, the `snapdrive storage disconnect` command fails.
+* If you use `-lun` option to specify the name of the LUN that is not discovered by multipathing software on the host, the `snapdrive storage disconnect` command fails.

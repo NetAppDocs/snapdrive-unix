@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_guidelines_for_thestorage_createoperation.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You should follow certain guidelines when you use the snapdrive storage create command for the storage create operation.'
 ---
 = Guidelines for the storage create operation
@@ -9,21 +9,21 @@ summary: 'You should follow certain guidelines when you use the snapdrive storag
 :imagesdir: ../media/
 
 [.lead]
-You should follow certain guidelines when you use the snapdrive storage create command for the storage create operation.
+You should follow certain guidelines when you use the `snapdrive storage create` command for the storage create operation.
 
-* If you list LUNs from different storage system volumes with the -lun option, you cannot include the -dg, -hostvol, or -fs option at the command prompt.
-* The -nolvm option creates a file system directly on a LUN without activating the host LVM.
+* If you list LUNs from different storage system volumes with the `-lun` option, you cannot include the `-dg`, `-hostvol`, or `-fs` option at the command prompt.
+* The `-nolvm` option creates a file system directly on a LUN without activating the host LVM.
 +
 You cannot specify host volumes or disk groups when you use this option.
 
 * You cannot use SnapDrive for UNIX storage provisioning commands for NFS files or directory trees.
-* If you use the snapdrive storage create command to create a file system directly on a LUN, you cannot specify more than one LUN.
+* If you use the `snapdrive storage create` command to create a file system directly on a LUN, you cannot specify more than one LUN.
 +
 SnapDrive for UNIX always creates a new LUN when you use this form of the command.
 
 * Some operating systems have limits on how many LUNs you can create.
 +
-If your host is running one of these operating systems, you might want to run the snapdrive config check luns command.
+If your host is running one of these operating systems, you might want to run the `snapdrive config check luns` command.
 
 * Creating a file system on a raw LUN with DMP multipathing is supported.
 

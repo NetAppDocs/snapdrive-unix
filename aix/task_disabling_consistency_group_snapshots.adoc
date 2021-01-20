@@ -1,7 +1,7 @@
 ---
 permalink: aix/task_disabling_consistency_group_snapshots.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can configure SnapDrive for UNIX to disable a consistency group Snapshot copy.'
 ---
 = Disabling consistency group Snapshots copies
@@ -11,6 +11,10 @@ summary: 'You can configure SnapDrive for UNIX to disable a consistency group Sn
 [.lead]
 You can configure SnapDrive for UNIX to disable a consistency group Snapshot copy.
 
-. Enter: snapdrive snap create -fs /mnt/fs3 -snapname nfs_snap -nofilerfence
+.Steps
+
+. Enter:
++
+`*snapdrive snap create -fs /mnt/fs3 _-snapname_ nfs_snap _-nofilerfence_*`
 +
 The consistency group Snapshot copy is successfully disabled.

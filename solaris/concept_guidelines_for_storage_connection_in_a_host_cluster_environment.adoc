@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_guidelines_for_storage_connection_in_a_host_cluster_environment.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You have to follow few guidelines before using the snapdrive storage connect command in a host cluster environment.'
 ---
 = Guidelines for storage connection in a host cluster environment
@@ -9,17 +9,17 @@ summary: 'You have to follow few guidelines before using the snapdrive storage c
 :imagesdir: ../media/
 
 [.lead]
-You have to follow few guidelines before using the snapdrive storage connect command in a host cluster environment.
+You have to follow few guidelines before using the `snapdrive storage connect` command in a host cluster environment.
 
-* If a new node is added to the host cluster configuration that uses a shared disk group or file system, use the snapdrive storage connect -devicetype shared command. You can execute the snapdrive storage connect operation from any node in the host cluster.
+* If a new node is added to the host cluster configuration that uses a shared disk group or file system, use the `snapdrive storage connect -devicetype shared` command. You can execute the snapdrive storage connect operation from any node in the host cluster.
 * For a storage connect operation to be successful, the following should not happen:
  ** The storage entities should not be present on any node in the host cluster.
  ** The LUNs should not be mapped to any node in the host cluster.
-* You can connect to a storage entity on a specific node either by using the -devicetype dedicated option or by omitting the -devicetype option in the command line syntax, because the default value is dedicated.
-* Host cluster-wide storage connection of file system is supported on disk groups that use Veritas volume manager with Veritas file system (VxFS). This operation does not support on raw LUNs; that is, the -nolvm option is not supported.
-* The -igroup option is not supported in the snapdrive storage connect command.
+* You can connect to a storage entity on a specific node either by using the `-devicetype dedicated` option or by omitting the `-devicetype` option in the command line syntax, because the default value is dedicated.
+* Host cluster-wide storage connection of file system is supported on disk groups that use Veritas volume manager with Veritas file system (VxFS). This operation does not support on raw LUNs; that is, the `-nolvm` option is not supported.
+* The `-igroup` option is not supported in the `snapdrive storage connect` command.
 * The storage connect operation fails if either of the following is true:
  ** If any error occurs during the process of connecting a storage entity. SnapDrive for UNIX executes this operation from the master node in a host cluster. Before creating the shared storage entities, it creates LUNs, maps the LUNs to the master node, and then map the LUNs to all the nonmaster nodes. SnapDrive for UNIX internally creates and manages the igroups for all the node.
- ** If a node in the host cluster shuts down and reboots before starting clustered volume manager (CVM), the shared disk group used by the LUNs should be discovered on the node. By default, the LUNs are visible, if the FC port address is not changed; otherwise, the LUNs have to be mapped using the snapdrive storage connect command.
+ ** If a node in the host cluster shuts down and reboots before starting clustered volume manager (CVM), the shared disk group used by the LUNs should be discovered on the node. By default, the LUNs are visible, if the FC port address is not changed; otherwise, the LUNs have to be mapped using the `snapdrive storage connect` command.
 * You can conduct the shared storage connect operation with storage entities on a LUN created with dedicated storage entity data and subsequently disconnected, only if the storage entities do not exist on any host cluster node.
 * You can conduct the dedicated storage connect operation with storage entities on a LUN with shared storage entity metadata, only if the current node is not part of the host cluster or the storage entities do not exist on the host cluster.

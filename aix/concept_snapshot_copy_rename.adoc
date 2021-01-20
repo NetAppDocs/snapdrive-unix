@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_snapshot_copy_rename.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can change the name of a Snapshot copy by using the snapshot snap rename command. A Snapshot copy that is across multiple storage systems or storage system volumes can also be renamed.'
 ---
 = Snapshot copy rename
@@ -9,4 +9,4 @@ summary: 'You can change the name of a Snapshot copy by using the snapshot snap 
 :imagesdir: ../media/
 
 [.lead]
-You can change the name of a Snapshot copy by using the snapshot snap rename command. A Snapshot copy that is across multiple storage systems or storage system volumes can also be renamed.
+You can change the name of a Snapshot copy by using the `snapshot snap rename` command. A Snapshot copy that is across multiple storage systems or storage system volumes can also be renamed.

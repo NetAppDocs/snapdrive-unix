@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_snapdrive_operations_fail_in_multiple_subnet_configuration.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapDrive operations fail in multiple subnet configurations, if the Internet Control Message Protocol \(ICMP\) access is disabled or if the ICMP packets are dropped between the host and storage system network.'
 ---
 = SnapDrive operations fail in multiple subnet configuration
@@ -13,4 +13,4 @@ SnapDrive operations fail in multiple subnet configurations, if the Internet Con
 
 == Workaround
 
-Ensure that enable-ping-to-check-filer-reachability is set to off.
+Ensure that `_enable-ping-to-check-filer-reachability_` is set to `off`.

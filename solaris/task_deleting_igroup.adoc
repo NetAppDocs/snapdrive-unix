@@ -1,7 +1,7 @@
 ---
 permalink: solaris/task_deleting_igroup.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can delete any igroup that is configured for a storage system but is not required anymore.'
 ---
 = Deleting an igroup
@@ -11,11 +11,15 @@ summary: 'You can delete any igroup that is configured for a storage system but 
 [.lead]
 You can delete any igroup that is configured for a storage system but is not required anymore.
 
-. Enter the following command on the host: snapdrive igroup deletefiler_name
+.Steps
+
+. Enter the following command on the host:
++
+`*snapdrive igroup delete _filer_name_*`
 +
 ----
 snapdrive igroup delete toaster
 Deleted igroup configuration for appliance: toaster
 ----
 +
-The igroup ig that is configured for the storage system toaster is removed successfully.
+The igroup `ig` that is configured for the storage system toaster is removed successfully.

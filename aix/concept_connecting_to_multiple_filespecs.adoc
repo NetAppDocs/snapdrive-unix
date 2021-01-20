@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_connecting_to_multiple_filespecs.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can connect to multiple filespecs that reside in a volume. The following example describes how you can complete this operation.'
 ---
 = Connecting to multiple filespecs
@@ -11,7 +11,7 @@ summary: 'You can connect to multiple filespecs that reside in a volume. The fol
 [.lead]
 You can connect to multiple filespecs that reside in a volume. The following example describes how you can complete this operation.
 
-For creating restricted FlexClone, you need to set the san-clone-method=unrestricted in the snapdrive.conf file or give -clone unrestricted before you can connect to multiple filespec. This example displays the results when you want to connect to multiple filespec /mnt/fs_1 and /mnt/fs_2 in snap1 which reside in volume vol1.
+For creating restricted FlexClone, you need to set the `san-clone-method=unrestricted` in the `snapdrive.conf` file or give `-clone unrestricted` before you can connect to multiple filespec. This example displays the results when you want to connect to multiple filespec `/mnt/fs_1` and `/mnt/fs_2` in snap1 which reside in volume vol1.
 
 The layout of /mnt/fs_1 and /mnt/fs_2 is given in the following:
 
@@ -32,7 +32,7 @@ device filename     adapter path    size     proto   state   clone    lun path  
 /dev/sdo               -     P      100m     iscsi   online   No      homer:/vol/vol1/lun2        -
 ----
 
-Here the user used Snapshot snap2 which contains application consistent Snapshots of /mnt/fs1 and /mnt/fs2 for snap connect.
+Here the user used Snapshot snap2 which contains application consistent Snapshots of `/mnt/fs1` and `/mnt/fs2` for snap connect.
 
 ----
  # snapdrive snap connect -fs /mnt/fs_1 -fs /mnt/fs_2 -snapname homer:/vol/vol1:snap2 -autorename -clone unrestricted
@@ -51,7 +51,7 @@ Successfully connected to snapshot homer:/vol/vol1:snap2
         file system: /mnt/fs_2_0
 ----
 
-Here, SnapDrive for UNIX has created a single unrestricted FlexClone Snapdrive_vol1_0_volume_clone_from_snap2_Snapshot from Snapshot snap2. This is then connected to LUN testlun1 and testlun2 to create a cloned host file system /mnt/fs1_0 and /mnt/fs2_0 respectively.
+Here, SnapDrive for UNIX has created a single unrestricted FlexClone `Snapdrive_vol1_0_volume_clone_from_snap2_Snapshot` from Snapshot snap2. This is then connected to LUN testlun1 and testlun2 to create a cloned host file system `/mnt/fs1_0` and `/mnt/fs2_0` respectively.
 
 ----
 # snapdrive storage show -fs /mnt/fs_1_0 /mnt/fs_2_0 -capabilities
