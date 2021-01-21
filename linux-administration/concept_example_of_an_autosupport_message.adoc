@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_example_of_an_autosupport_message.html
 sidebar: sidebar
 keywords: snap, snapdrive, autosupport, message, example
-summary: 'SnapDrive for UNIX provides examples for different scenarios. The content of an AutoSupport message in all the examples are essentially the same regardless of your operating system.'
+summary: SnapDrive for UNIX provides examples for different scenarios. The content of an AutoSupport message in all the examples are essentially the same regardless of your operating system.
 ---
 = Examples of AutoSupport messages
 :icons: font

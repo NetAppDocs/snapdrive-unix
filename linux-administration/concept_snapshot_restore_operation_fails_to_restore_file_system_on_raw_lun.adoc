@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_snapshot_restore_operation_fails_to_restore_file_system_on_raw_lun.html
 sidebar: sidebar
 keywords: snap, snapdrive, restore, fail, lun, snapshot, host
-summary: 'The Snapshot restore operation of the file system on raw LUN fails after performing a Snapshot connect operation on a non-originating host.'
+summary: The Snapshot restore operation of the file system on raw LUN fails after performing a Snapshot connect operation on a non-originating host.
 ---
 = Snapshot restore operation fails to restore file system on raw LUN
 :icons: font

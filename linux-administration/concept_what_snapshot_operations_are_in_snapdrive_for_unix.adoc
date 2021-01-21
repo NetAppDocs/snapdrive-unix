@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_what_snapshot_operations_are_in_snapdrive_for_unix.html
 sidebar: sidebar
 keywords: snap, snapdrive, snapshot, ontap, image, host, storage, data, unix
-summary: 'SnapDrive for UNIX enables you to use Data ONTAP Snapshot technology to make an image \(Snapshot copy\) of host data that is stored on a storage system.'
+summary: SnapDrive for UNIX enables you to use Data ONTAP Snapshot technology to make an image \(Snapshot copy\) of host data that is stored on a storage system.
 ---
 = What Snapshot operations are in SnapDrive for UNIX
 :icons: font

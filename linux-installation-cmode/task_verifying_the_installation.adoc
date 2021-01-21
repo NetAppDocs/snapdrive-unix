@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-cmode/task_verifying_the_installation.html
 sidebar: sidebar
-keywords:
-summary: 'After you install SnapDrive for UNIX you must verify that the installation is successful. SnapDrive for UNIX installs multiple files on the host, such as executables, configuration files, uninstall files, diagnostic files, and man pages.'
+keywords: snap, snapdrive, verify, installation, install
+summary: After you install SnapDrive for UNIX you must verify that the installation is successful. SnapDrive for UNIX installs multiple files on the host, such as executables, configuration files, uninstall files, diagnostic files, and man pages.
 ---
 = Verifying the installation
 :icons: font

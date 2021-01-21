@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_snapshot_connectand_snapshotrestore_operations.html
 sidebar: sidebar
 keywords: snap, snapdrive, connect, restore, clones, copy, snapshot
-summary: 'Snapshot copy clones the information when you connect to the Snapshot copy.'
+summary: Snapshot copy clones the information when you connect to the Snapshot copy.
 ---
 = Snapshot connect and Snapshot restore operations
 :icons: font

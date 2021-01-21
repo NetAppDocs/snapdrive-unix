@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_what_the_trace_log_file_is.html
 sidebar: sidebar
 keywords: snap, snapdrive, trace, log, file, troubelshoot, problem, issue
-summary: 'Technical support uses the trace log file to troubleshoot problems.'
+summary: Technical support uses the trace log file to troubleshoot problems.
 ---
 = What the trace log file is
 :icons: font

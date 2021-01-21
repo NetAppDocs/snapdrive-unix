@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_configuration_options_and_their_default_values.html
 sidebar: sidebar
 keywords: snap, snapdrive, configuration, default, value, variable, command
-summary: 'You can determine the current configurable variables and their settings by running the snapdrive config show command.'
+summary: You can determine the current configurable variables and their settings by running the snapdrive config show command.
 ---
 = Configuration options and their default values
 :icons: font
@@ -784,6 +784,6 @@ The default value is `3`.
 |===
 *Related information*
 
-xref:task_configuring_virtual_storage_console_in_snapdrive_for_unix.adoc[Configuring Virtual Storage Console for SnapDrive for UNIX]
+link:task_configuring_virtual_storage_console_in_snapdrive_for_unix.adoc[Configuring Virtual Storage Console for SnapDrive for UNIX]
 
-xref:task_considerations_for_provisioning_rdm_luns.adoc[Considerations for provisioning RDM LUNs]
+link:task_considerations_for_provisioning_rdm_luns.adoc[Considerations for provisioning RDM LUNs]

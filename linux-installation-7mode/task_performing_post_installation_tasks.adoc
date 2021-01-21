@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-7mode/task_performing_post_installation_tasks.html
 sidebar: sidebar
-keywords:
-summary: 'After the installation is complete, you must configure additional features and functions. You must install the server certificate and configure SnapDrive for UNIX to use a secure connection with the storage system and daemon service.'
+keywords: snap, snapdrive, post, install, configure, task
+summary: After the installation is complete, you must configure additional features and functions. You must install the server certificate and configure SnapDrive for UNIX to use a secure connection with the storage system and daemon service.
 ---
 = Performing post-installation tasks
 :icons: font

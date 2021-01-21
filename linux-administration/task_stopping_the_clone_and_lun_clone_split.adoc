@@ -2,7 +2,7 @@
 permalink: linux-administration/task_stopping_the_clone_and_lun_clone_split.html
 sidebar: sidebar
 keywords: snap, snapdrive, clone, split, lun, volume, specification
-summary: 'You can stop the clone split for a volume clone or LUN clone using the job ID or file specification.'
+summary: You can stop the clone split for a volume clone or LUN clone using the job ID or file specification.
 ---
 = Stopping the volume clone or LUN clone split operation
 :icons: font

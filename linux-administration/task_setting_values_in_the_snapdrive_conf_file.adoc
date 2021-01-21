@@ -2,7 +2,7 @@
 permalink: linux-administration/task_setting_values_in_the_snapdrive_conf_file.html
 sidebar: sidebar
 keywords: snap, snapdrive, conf, value, name
-summary: 'You can change the values in the snapdrive.conf file or add new name-value pairs.'
+summary: You can change the values in the snapdrive.conf file or add new name-value pairs.
 ---
 = Setting values in the snapdrive.conf file
 :icons: font

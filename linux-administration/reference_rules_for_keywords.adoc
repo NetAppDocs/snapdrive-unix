@@ -2,7 +2,7 @@
 permalink: linux-administration/reference_rules_for_keywords.html
 sidebar: sidebar
 keywords: snap, snapdrive, rules, keywords, unix
-summary: 'SnapDrive for UNIX uses keywords to specify the target of the SnapDrive for UNIX operations.'
+summary: SnapDrive for UNIX uses keywords to specify the target of the SnapDrive for UNIX operations.
 ---
 = Rules for keywords
 :icons: font

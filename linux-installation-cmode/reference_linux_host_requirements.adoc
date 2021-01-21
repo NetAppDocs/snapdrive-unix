@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-cmode/reference_linux_host_requirements.html
 sidebar: sidebar
-keywords: SnapDrive for UNIX
-summary: 'You must prepare the Linux host before you can install SnapDrive for UNIX.'
+keywords: snapdrive, snap, linux, host, requirements
+summary: You must prepare the Linux host before you can install SnapDrive for UNIX.
 ---
 = Linux host requirements
 :icons: font

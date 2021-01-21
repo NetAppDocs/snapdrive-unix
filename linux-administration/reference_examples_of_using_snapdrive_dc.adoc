@@ -2,7 +2,7 @@
 permalink: linux-administration/reference_examples_of_using_snapdrive_dc.html
 sidebar: sidebar
 keywords: snap, snapdrive, command, example, data, collection
-summary: 'This is an example of the data collection command.'
+summary: This is an example of the data collection command.
 ---
 = Examples of using snapdrive.dc
 :icons: font

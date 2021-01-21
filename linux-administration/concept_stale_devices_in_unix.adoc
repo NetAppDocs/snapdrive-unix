@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_stale_devices_in_unix.html
 sidebar: sidebar
 keywords: snap, snapdrive, delete, lun, clone, stale
-summary: 'Deleting LUNS and clones might leave stale devices in UNIX and deleting these stale devices is not performed by SnapDrive for UNIX.'
+summary: Deleting LUNS and clones might leave stale devices in UNIX and deleting these stale devices is not performed by SnapDrive for UNIX.
 ---
 = Deleting LUNs and clones leave stale devices in UNIX
 :icons: font

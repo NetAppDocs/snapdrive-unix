@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_types_of_logs.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX supports various types of log files, which help you troubleshoot when SnapDrive for UNIX is not working as expected.'
+keywords: snap, snapdrive, log, type, troubleshoot
+summary: SnapDrive for UNIX supports various types of log files, which help you troubleshoot when SnapDrive for UNIX is not working as expected.
 ---
 = Types of logs
 :icons: font

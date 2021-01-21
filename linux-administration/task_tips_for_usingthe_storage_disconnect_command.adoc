@@ -2,7 +2,7 @@
 permalink: linux-administration/task_tips_for_usingthe_storage_disconnect_command.html
 sidebar: sidebar
 keywords: snap, snapdrive, storage, disconnect, command, lun
-summary: 'When you use the snapdrive storage disconnect command on some operating systems, you lose information such as the host volume names, the file system mountpoint, the storage system volume names, and the names of the LUNs. Without this information, you can connect again to the storage at a later point in time is difficult.'
+summary: When you use the snapdrive storage disconnect command on some operating systems, you lose information such as the host volume names, the file system mountpoint, the storage system volume names, and the names of the LUNs. Without this information, you can connect again to the storage at a later point in time is difficult.
 ---
 = Tips for using the storage disconnect command
 :icons: font

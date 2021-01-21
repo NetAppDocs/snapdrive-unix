@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_snapdrive_commands_and_capabilities.html
 sidebar: sidebar
-keywords:
-summary: 'In role-based access control \(RBAC\), a specific capability is required for each operation to be successful. A user must have the correct set of capabilities assigned to carry out storage operations.'
+keywords: snap, snapdrive, command, capability, storage, operations
+summary: In role-based access control \(RBAC\), a specific capability is required for each operation to be successful. A user must have the correct set of capabilities assigned to carry out storage operations.
 ---
 = SnapDrive commands and capabilities
 :icons: font

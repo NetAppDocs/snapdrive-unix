@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_snapdrive_for_unix_provisioning_in_an_lvma_vxvm_environment.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: snap, snapdrive, lvm, provisioning, environment
+summary:
 ---
 = SnapDrive for UNIX provisioning in an LVM environment
 :icons: font

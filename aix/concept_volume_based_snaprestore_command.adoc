@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_volume_based_snaprestore_command.html
 sidebar: sidebar
-keywords:
-summary: 'This section describes the commands and the options to use volume based SnapRestore.'
+keywords: snap, snapdrive, snaprestore, command, volume
+summary: This section describes the commands and the options to use volume based SnapRestore.
 ---
 = Volume-based SnapRestore command
 :icons: font

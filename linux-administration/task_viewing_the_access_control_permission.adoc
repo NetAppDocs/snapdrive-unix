@@ -2,7 +2,7 @@
 permalink: linux-administration/task_viewing_the_access_control_permission.html
 sidebar: sidebar
 keywords: snap, snapdrive, access, control, permission, config, command
-summary: 'You can view the access control permissions by running the snapdrive config access show command.'
+summary: You can view the access control permissions by running the snapdrive config access show command.
 ---
 = Viewing the access control permission
 :icons: font

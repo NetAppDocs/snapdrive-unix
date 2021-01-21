@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_operating_system_limits_on_open_files.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX checks for the number of files opened simultaneously. If it crosses the limit, SnapDrive for UNIX throws an error.'
+keywords: snap, snapdrive, operating, system, limit, open, files
+summary: SnapDrive for UNIX checks for the number of files opened simultaneously. If it crosses the limit, SnapDrive for UNIX throws an error.
 ---
 = Operating system limits on open files
 :icons: font

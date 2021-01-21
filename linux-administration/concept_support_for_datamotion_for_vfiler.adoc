@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_support_for_datamotion_for_vfiler.html
 sidebar: sidebar
 keywords: snap, snapdrive, vfiler, datamotion, fail, support, netappdatamotion
-summary: 'SnapDrive for UNIX supports DataMotion for vFiler. When you perform DataMotion for vFiler, few SnapDrive for UNIX operations might fail during the cutover phase.'
+summary: SnapDrive for UNIX supports DataMotion for vFiler. When you perform DataMotion for vFiler, few SnapDrive for UNIX operations might fail during the cutover phase.
 ---
 = Support for NetApp DataMotion for vFiler
 :icons: font

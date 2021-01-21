@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_operation_with_multiple_filespec_and_storage_objects.html
 sidebar: sidebar
 keywords: snap, snapdrive, filespec, storage, objects, operation, multiple
-summary: 'The following example shows the error message you would receive when you are not an authorized user to carry out the specific operation.'
+summary: The following example shows the error message you would receive when you are not an authorized user to carry out the specific operation.
 ---
 = Operation with multiple filespec and storage objects
 :icons: font

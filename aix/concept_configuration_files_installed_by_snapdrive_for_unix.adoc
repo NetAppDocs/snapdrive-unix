@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_configuration_files_installed_by_snapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX installs the snapdrive.conf file, which stores configuration information for the current version of the product.'
+keywords: snap, snapdrive, configuration, file, install
+summary: SnapDrive for UNIX installs the snapdrive.conf file, which stores configuration information for the current version of the product.
 ---
 = Configuration files installed by SnapDrive for UNIX
 :icons: font

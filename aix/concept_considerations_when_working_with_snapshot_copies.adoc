@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_considerations_when_working_with_snapshot_copies.html
 sidebar: sidebar
-keywords:
-summary: 'There are certain considerations that you should keep in mind when using a Snapshot copy, such as the fact that SnapDrive for UNIX works only with Snapshot copies that it creates, or that Snapshot copies are automatically replicated from the storage system to the host, and so on.'
+keywords: snap, snapdrive, considerations, snapshot, copy
+summary: There are certain considerations that you should keep in mind when using a Snapshot copy, such as the fact that SnapDrive for UNIX works only with Snapshot copies that it creates, or that Snapshot copies are automatically replicated from the storage system to the host, and so on.
 ---
 = Considerations when working with Snapshot copies
 :icons: font

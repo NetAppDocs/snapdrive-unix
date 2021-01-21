@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_default_values_for_the_recovery_logs.html
 sidebar: sidebar
 keywords: snap, snapdrive, default, recovery, log, value
-summary: 'You can change the name of the recovery log file and the maximum number of old recovery log files that SnapDrive for UNIX saves.'
+summary: You can change the name of the recovery log file and the maximum number of old recovery log files that SnapDrive for UNIX saves.
 ---
 = Default values for the recovery logs
 :icons: font

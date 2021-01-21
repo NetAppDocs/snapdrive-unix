@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_supported_fc_iscsi_or_nfs_configurations.html
 sidebar: sidebar
 keywords: snap, snapdrive, fc, iscsi, nfs, support, ha, host, cluster
-summary: 'SnapDrive for UNIX supports host cluster and HA pair topologies. FC or iSCSI configurations support the same host cluster and HA pair configurations that the FC Host Utilities or iSCSI Host Utilities supports.'
+summary: SnapDrive for UNIX supports host cluster and HA pair topologies. FC or iSCSI configurations support the same host cluster and HA pair configurations that the FC Host Utilities or iSCSI Host Utilities supports.
 ---
 = Supported FC, iSCSI, or NFS configurations
 :icons: font

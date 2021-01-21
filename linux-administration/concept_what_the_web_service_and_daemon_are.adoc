@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_what_the_web_service_and_daemon_are.html
 sidebar: sidebar
 keywords: snap, snapdrive, web, service, daemon, interface, snapmanager, cli, command
-summary: 'The SnapDrive for UNIX Web service provides a uniform interface for all the NetApp SnapManager and third-party products to integrate seamlessly with SnapDrive for UNIX. To use command-line interface \(CLI\) commands in SnapDrive for UNIX, you need to start the daemon.'
+summary: The SnapDrive for UNIX Web service provides a uniform interface for all the NetApp SnapManager and third-party products to integrate seamlessly with SnapDrive for UNIX. To use command-line interface \(CLI\) commands in SnapDrive for UNIX, you need to start the daemon.
 ---
 = What the Web service and daemon are
 :icons: font
@@ -19,7 +19,7 @@ When you start the daemon, SnapDrive for UNIX daemon first checks whether the da
 
 `snapdrive daemon is already running`
 
-You can check the status of the daemon to see whether SnapDrive for UNIX is running or not. You should check the status before deciding to start the daemon. If a user other than the root user tries to check the status, SnapDrive for UNIX checks the credentials of the user and displays the message: 
+You can check the status of the daemon to see whether SnapDrive for UNIX is running or not. You should check the status before deciding to start the daemon. If a user other than the root user tries to check the status, SnapDrive for UNIX checks the credentials of the user and displays the message:
 
 `snapdrive daemon status can be seen only by root user`
 

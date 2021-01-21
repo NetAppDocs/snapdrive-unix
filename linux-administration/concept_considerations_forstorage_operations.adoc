@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_considerations_forstorage_operations.html
 sidebar: sidebar
 keywords: snap, snapdrive, storage, operations, commands
-summary: 'You must keep in mind a few considerations related to the various storage commands.'
+summary: You must keep in mind a few considerations related to the various storage commands.
 ---
 = Considerations for storage operations
 :icons: font

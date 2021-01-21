@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_restoring_multiple_storage_entities.html
 sidebar: sidebar
 keywords: snap, snapdrive, restore, storage, snapshot, multiple
-summary: 'You can restore a Snapshot copy that contains multiple storage entities.'
+summary: You can restore a Snapshot copy that contains multiple storage entities.
 ---
 = Restoring multiple storage entities
 :icons: font

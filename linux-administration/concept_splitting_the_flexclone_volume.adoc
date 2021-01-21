@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_splitting_the_flexclone_volume.html
 sidebar: sidebar
 keywords: snap, snapdrive, flexclone, volume, splitting, command
-summary: 'You can split the existing FlexClone volume using the SnapDrive for UNIX commands.'
+summary: You can split the existing FlexClone volume using the SnapDrive for UNIX commands.
 ---
 = Splitting the FlexClone volume
 :icons: font

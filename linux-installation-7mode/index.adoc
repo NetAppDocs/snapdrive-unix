@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-7mode/index.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords:
+summary: 
 ---
 = Installation and Setup Guide for Linux®
 :icons: font

@@ -2,7 +2,7 @@
 permalink: linux-administration/task_connecting_tosnapshot_copies_ofshared_storageentities_other_thanluns.html
 sidebar: sidebar
 keywords: snap, snapdrive, snapshot, storage, lun, command, connect
-summary: 'You can use the snapdrive snap connect command to connect to a Snapshot copy of shared storage entities other than LUNs.'
+summary: You can use the snapdrive snap connect command to connect to a Snapshot copy of shared storage entities other than LUNs.
 ---
 = Connecting to Snapshot copies of shared storage entities other than LUNs
 :icons: font

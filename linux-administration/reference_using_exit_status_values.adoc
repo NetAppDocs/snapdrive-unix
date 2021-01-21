@@ -2,7 +2,7 @@
 permalink: linux-administration/reference_using_exit_status_values.html
 sidebar: sidebar
 keywords: snap, snapdrive, exit, status, command, scripts
-summary: 'Exit status values are used in scripts to determine the success or failure of a SnapDrive for UNIX command.'
+summary: Exit status values are used in scripts to determine the success or failure of a SnapDrive for UNIX command.
 ---
 = Using exit status values
 :icons: font

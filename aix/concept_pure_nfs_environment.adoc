@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_pure_nfs_environment.html
 sidebar: sidebar
-keywords:
-summary: 'If you configure a system for multiple subnets and one or more NFS volumes are mounted through the management interface, then you should always configure the first data interface as the management interface.'
+keywords: snap, snapdrive, pure, nfs, environment
+summary: If you configure a system for multiple subnets and one or more NFS volumes are mounted through the management interface, then you should always configure the first data interface as the management interface.
 ---
 = Pure NFS environment
 :icons: font

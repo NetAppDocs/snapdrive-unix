@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_managing_storage_using_a_wizard.html
 sidebar: sidebar
-keywords:
-summary: 'You can use the SnapDrive for UNIX wizard to create storage in an interactive and efficient manner. The wizard leads you through a set of questions to help you to create storage.'
+keywords: snap, snapdrive, storage, wizard, manage
+summary: You can use the SnapDrive for UNIX wizard to create storage in an interactive and efficient manner. The wizard leads you through a set of questions to help you to create storage.
 ---
 = Managing storage using a wizard
 :icons: font

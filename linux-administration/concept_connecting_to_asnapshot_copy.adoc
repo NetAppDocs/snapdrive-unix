@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_connecting_to_asnapshot_copy.html
 sidebar: sidebar
 keywords: snap, snapdrive, connect, copy, snapshot, host
-summary: 'You can connect a Snapshot copy from one host to a different host.'
+summary: You can connect a Snapshot copy from one host to a different host.
 ---
 = Connecting to a Snapshot copy
 :icons: font

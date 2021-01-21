@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_default_vaules_for_the_trace_log_files.html
 sidebar: sidebar
 keywords: snap, snapdrive, default, value, trace, log, file
-summary: 'The trace log files allow you to set various parameters and also change them. These parameters must be set in the snapdrive.conf file.'
+summary: The trace log files allow you to set various parameters and also change them. These parameters must be set in the snapdrive.conf file.
 ---
 = Default values for the trace log files
 :icons: font

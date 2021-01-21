@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-7mode/task_provisioning_rdm_luns.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX enables you to create and provision RDM LUNs with the FC protocol enabled on a guest operating system in a VMware virtual environment. You can also provision RDM LUNs by using ONTAP.'
+keywords: snap, snapdrive, rdm, lun, provision, create
+summary: SnapDrive for UNIX enables you to create and provision RDM LUNs with the FC protocol enabled on a guest operating system in a VMware virtual environment. You can also provision RDM LUNs by using ONTAP.
 ---
 = Provisioning RDM LUNs
 :icons: font

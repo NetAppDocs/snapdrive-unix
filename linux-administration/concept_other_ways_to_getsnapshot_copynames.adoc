@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_other_ways_to_getsnapshot_copynames.html
 sidebar: sidebar
 keywords: snap, snapdrive, list, command, snapshot, copy, name
-summary: 'Use the snapdrive snap list command to display the Snapshot copy name.'
+summary: Use the snapdrive snap list command to display the Snapshot copy name.
 ---
 = Other ways to get Snapshot copy names
 :icons: font

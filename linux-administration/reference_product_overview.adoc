@@ -2,7 +2,7 @@
 permalink: linux-administration/reference_product_overview.html
 sidebar: sidebar
 keywords: snap, snapdrive, product, overview, unix, data, management, snapshot
-summary: 'SnapDrive for UNIX is a host-based storage and data management solution for UNIX environments. SnapDrive for UNIX simplifies data management, improves data availability, and increases the reliability of application data through simplified storage provisioning and file system consistent Snapshot copies.'
+summary: SnapDrive for UNIX is a host-based storage and data management solution for UNIX environments. SnapDrive for UNIX simplifies data management, improves data availability, and increases the reliability of application data through simplified storage provisioning and file system consistent Snapshot copies.
 ---
 = Product overview
 :icons: font

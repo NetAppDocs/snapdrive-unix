@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-7mode/task_installing_snapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'You can install SnapDrive for UNIX on the Linux host from the command-line interface.'
+keywords: snap, snapdrive, install, linux
+summary: You can install SnapDrive for UNIX on the Linux host from the command-line interface.
 ---
 = Installing SnapDrive for UNIX
 :icons: font
@@ -19,7 +19,7 @@ You can install SnapDrive for UNIX on the Linux host from the command-line inter
 If you are running the installer file remotely and if the system configuration does not allow you to log in as the root user, use the `su` command to log in as root user.
 
 . Navigate to the directory on your Linux host to which you have copied the installer.
-. Install SnapDrive for UNIX: 
+. Install SnapDrive for UNIX:
 +
 `*rpm-ivh _installer_file_name_*`
 

@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_informationrequired_forusing_the_snapdrive_snaprestore_command.html
 sidebar: sidebar
 keywords: snap, snapdrive, restore, command
-summary: 'To restore a Snapshot copy, determine which storage entity you want to restore, specify the name of the Snapshot copy, and so on.'
+summary: To restore a Snapshot copy, determine which storage entity you want to restore, specify the name of the Snapshot copy, and so on.
 ---
 = Information required for using the snapdrive snap restore command
 :icons: font

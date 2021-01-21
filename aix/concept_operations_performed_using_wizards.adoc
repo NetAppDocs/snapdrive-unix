@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_operations_performed_using_wizards.html
 sidebar: sidebar
-keywords:
-summary: 'You can use different wizards to create storage entities and manipulate SnapDrive for UNIX in an efficient manner.'
+keywords: snap, snapdrive, operations, wizard
+summary: You can use different wizards to create storage entities and manipulate SnapDrive for UNIX in an efficient manner.
 ---
 = Operations performed using wizards
 :icons: font

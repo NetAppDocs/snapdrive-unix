@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_considerations_forrestoring_asnapshot_copy.html
 sidebar: sidebar
 keywords: snap, snapdrive, restore, snapshot, copy
-summary: 'Before restoring Snapshot copies, ensure that you are not using the file system, and that you do not interrupt the restore process.'
+summary: Before restoring Snapshot copies, ensure that you are not using the file system, and that you do not interrupt the restore process.
 ---
 = Considerations for restoring a Snapshot copy
 :icons: font

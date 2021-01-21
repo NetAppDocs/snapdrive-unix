@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_the_snapdrive_for_unix_daemon.html
 sidebar: sidebar
 keywords: snap, snapdrive, daemon, commands, web
-summary: 'Before you run any SnapDrive for UNIX command, you must understand the web services and daemon and how to use them. All the SnapDrive for UNIX commands work using the daemon service. Before you can use SnapDrive for UNIX on your Linux host, you must start the daemon, which enables SnapDrive for UNIX to integrate seamlessly and securely with other NetApp and non-NetApp products.'
+summary: Before you run any SnapDrive for UNIX command, you must understand the web services and daemon and how to use them. All the SnapDrive for UNIX commands work using the daemon service. Before you can use SnapDrive for UNIX on your Linux host, you must start the daemon, which enables SnapDrive for UNIX to integrate seamlessly and securely with other NetApp and non-NetApp products.
 ---
 = Understanding the SnapDrive for UNIX daemon
 :icons: font

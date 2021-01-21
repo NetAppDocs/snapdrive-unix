@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_informationrequired_forusing_the_snapdrive_storageconnect_command.html
 sidebar: sidebar
-keywords:
-summary: 'There is some information that you need to supply when you use the snapdrive storage connect command. This information helps you to use the command correctly.'
+keywords: snap, snapdrive, storage, connect, command, information, required
+summary: There is some information that you need to supply when you use the snapdrive storage connect command. This information helps you to use the command correctly.
 ---
 = Information required for using the snapdrive storage connect command
 :icons: font

@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_considerations_for_using_volume_based_snaprestore.html
 sidebar: sidebar
 keywords: snap, snapdrive, snaprestore, volume
-summary: 'You can use volume-based SnapRestore \(VBSR\) with keeping few points in mind. Keeping these points in mind helps you to use the VBSR feature safely.'
+summary: You can use volume-based SnapRestore \(VBSR\) with keeping few points in mind. Keeping these points in mind helps you to use the VBSR feature safely.
 ---
 = Considerations for using volume-based SnapRestore
 :icons: font

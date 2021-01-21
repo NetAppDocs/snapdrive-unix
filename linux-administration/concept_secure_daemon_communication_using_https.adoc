@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_secure_daemon_communication_using_https.html
 sidebar: sidebar
 keywords: snap, snapdrive, secure, daemon, https, communication, install, variables, configuration
-summary: 'You can use HTTPS for secure Web services and daemon communication. Secure communication is enabled by setting some configuration variables in the snapdrive.conf file, and generating and installing the self-signed or CA-signed certificate.'
+summary: You can use HTTPS for secure Web services and daemon communication. Secure communication is enabled by setting some configuration variables in the snapdrive.conf file, and generating and installing the self-signed or CA-signed certificate.
 ---
 = Secure daemon communication using HTTPS
 :icons: font

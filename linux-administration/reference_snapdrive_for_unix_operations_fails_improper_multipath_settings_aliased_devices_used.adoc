@@ -2,7 +2,7 @@
 permalink: linux-administration/reference_snapdrive_for_unix_operations_fails_improper_multipath_settings_aliased_devices_used.html
 sidebar: sidebar
 keywords: snap, snapdrive, unix, fail, multipath, settings, device, error, sdu, rhel, command
-summary: 'When you run the storage show or snap create command in RHEL 5.11, the command displays the following error message: Status call to SDU daemon failed and in SLES11SP3 host with –nolvm option when the host LVM is not involved.'
+summary: When you run the storage show or snap create command in RHEL 5.11, the command displays the following error message: Status call to SDU daemon failed and in SLES11SP3 host with –nolvm option when the host LVM is not involved.
 ---
 = SnapDrive for UNIX operations fails due to improper multipath settings when aliased devices are used.
 :icons: font

@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_snapdrive_commands_fails_when_the_transport_protocol_connectivity_fails.html
 sidebar: sidebar
 keywords: snap, snapdrive, command, fail, transport, fc, iscsi, storage
-summary: 'SnapDrive command fails when the iSCSI or FC connection between the host and storage system fails, or if iSCSI or FC on the storage system fails.'
+summary: SnapDrive command fails when the iSCSI or FC connection between the host and storage system fails, or if iSCSI or FC on the storage system fails.
 ---
 = SnapDrive command fails when the transport protocol connectivity fails
 :icons: font

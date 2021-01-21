@@ -2,7 +2,7 @@
 permalink: linux-administration/task_disconnectingsnapshot_copy_withluns_and_nostorage_entities.html
 sidebar: sidebar
 keywords: snap, snapdrive, disconnect, lun, snapshot, command
-summary: 'You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains LUNs having no storage entities.'
+summary: You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains LUNs having no storage entities.
 ---
 = Disconnecting Snapshot copy with LUNs and no storage entities
 :icons: font

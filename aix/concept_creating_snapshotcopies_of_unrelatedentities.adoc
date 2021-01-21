@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_creating_snapshotcopies_of_unrelatedentities.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX creates Snapshot copies of unrelated entities by maintaining individual crash-consistent Snapshot copies.'
+keywords: snap, snapdrive, create, snapshot, copy, unrelated, entity
+summary: SnapDrive for UNIX creates Snapshot copies of unrelated entities by maintaining individual crash-consistent Snapshot copies.
 ---
 = Creating Snapshot copies of unrelated entities
 :icons: font

@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_executing_the_data_collection_utility.html
 sidebar: sidebar
 keywords: snap, snapdrive, data, collection, utility, installation
-summary: 'You need to complete few steps to run the data collection utility.'
+summary: You need to complete few steps to run the data collection utility.
 ---
 = Executing the data collection utility
 :icons: font

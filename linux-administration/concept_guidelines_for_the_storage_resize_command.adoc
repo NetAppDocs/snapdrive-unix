@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_guidelines_for_the_storage_resize_command.html
 sidebar: sidebar
 keywords: snap, snapdrive, storage, command, resize, guidelines
-summary: 'You need to follow few guidelines when you use the snapdrive storage resize command.'
+summary: You need to follow few guidelines when you use the snapdrive storage resize command.
 ---
 = Guidelines for the storage resize command
 :icons: font

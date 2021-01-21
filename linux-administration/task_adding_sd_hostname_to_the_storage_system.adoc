@@ -2,7 +2,7 @@
 permalink: linux-administration/task_adding_sd_hostname_to_the_storage_system.html
 sidebar: sidebar
 keywords: snap, snapdrive, sd, hostname, storage, manager, operations, administrator
-summary: 'The Operations Manager console administrator can create the sd-hostname user on the storage system using Operations Manager console. After the steps are completed, the Operations Manager console administrator must manually send the credentials to the SnapDrive for UNIX administrator. You can use any name in place of sd-hostname; however it is best to use sd-hostname.'
+summary: The Operations Manager console administrator can create the sd-hostname user on the storage system using Operations Manager console. After the steps are completed, the Operations Manager console administrator must manually send the credentials to the SnapDrive for UNIX administrator. You can use any name in place of sd-hostname; however it is best to use sd-hostname.
 ---
 = Adding sd-hostname to the storage system
 :icons: font

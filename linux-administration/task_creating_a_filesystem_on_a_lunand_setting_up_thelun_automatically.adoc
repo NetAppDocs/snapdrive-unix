@@ -2,7 +2,7 @@
 permalink: linux-administration/task_creating_a_filesystem_on_a_lunand_setting_up_thelun_automatically.html
 sidebar: sidebar
 keywords: snap, snapdrive, lun, create, file
-summary: 'You can create a file system on a LUN using SnapDrive for UNIX. SnapDrive for UNIX automatically create the associated LUN.'
+summary: You can create a file system on a LUN using SnapDrive for UNIX. SnapDrive for UNIX automatically create the associated LUN.
 ---
 = Creating a file system on a LUN and setting up the LUN automatically
 :icons: font

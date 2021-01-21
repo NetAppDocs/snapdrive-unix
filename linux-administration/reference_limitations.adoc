@@ -2,7 +2,7 @@
 permalink: linux-administration/reference_limitations.html
 sidebar: sidebar
 keywords: snap, snapdrive, limitations, limits
-summary: 'When working with SnapDrive for UNIX, you must be aware of certain limitations that might affect your environment.'
+summary: When working with SnapDrive for UNIX, you must be aware of certain limitations that might affect your environment.
 ---
 = Limitations
 :icons: font

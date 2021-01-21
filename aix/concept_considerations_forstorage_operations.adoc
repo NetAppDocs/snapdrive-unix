@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_considerations_forstorage_operations.html
 sidebar: sidebar
-keywords:
-summary: 'You must keep in mind a few considerations related to the various storage commands.'
+keywords: snap, snapdrive, considerations, storage, operations
+summary: You must keep in mind a few considerations related to the various storage commands.
 ---
 = Considerations for storage operations
 :icons: font

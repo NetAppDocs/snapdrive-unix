@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_storage_creation_for_a_file_system_that_resides_on_a_lun.html
 sidebar: sidebar
 keywords: snap, snapdrive, storage, create, file, lun, host, lvm
-summary: 'If you use SnapDrive for UNIX to create a file system that resides directly on a LUN, SnapDrive for UNIX creates and maps the LUN, and then creates and mounts the file system without involving the host LVM.'
+summary: If you use SnapDrive for UNIX to create a file system that resides directly on a LUN, SnapDrive for UNIX creates and maps the LUN, and then creates and mounts the file system without involving the host LVM.
 ---
 = Storage creation for a file system that resides on a LUN
 :icons: font

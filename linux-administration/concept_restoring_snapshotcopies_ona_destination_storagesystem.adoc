@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_restoring_snapshotcopies_ona_destination_storagesystem.html
 sidebar: sidebar
 keywords: snap, snapdrive, restore, storage, system, snapshot, copy
-summary: 'You can restore Snapshot copies on the storage system from which it is created.'
+summary: You can restore Snapshot copies on the storage system from which it is created.
 ---
 = Restoring Snapshot copies on a destination storage system
 :icons: font

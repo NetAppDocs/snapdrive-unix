@@ -2,7 +2,7 @@
 permalink: linux-administration/reference_script_example.html
 sidebar: sidebar
 keywords: snap, snapdrive, script, example, exit, status
-summary: 'This is an example of a script that uses exit status values.'
+summary: This is an example of a script that uses exit status values.
 ---
 = Script example
 :icons: font

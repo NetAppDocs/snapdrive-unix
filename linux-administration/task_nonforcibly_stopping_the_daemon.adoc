@@ -2,7 +2,7 @@
 permalink: linux-administration/task_nonforcibly_stopping_the_daemon.html
 sidebar: sidebar
 keywords: snap, snapdrive, daemon, stop, nonforcibly, command, configuration
-summary: 'If your SnapDrive for UNIX configuration file is changed, you must stop the daemon for the configuration file changes to take effect. After the daemon is stopped and restarted, the changes in the configuration file take effect. Nonforcibly stopping the daemon allows all queued commands to complete execution. After the stop request is received, no new commands are executed.'
+summary: If your SnapDrive for UNIX configuration file is changed, you must stop the daemon for the configuration file changes to take effect. After the daemon is stopped and restarted, the changes in the configuration file take effect. Nonforcibly stopping the daemon allows all queued commands to complete execution. After the stop request is received, no new commands are executed.
 ---
 = Nonforcibly stopping the daemon
 :icons: font

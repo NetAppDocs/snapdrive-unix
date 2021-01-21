@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_command_syntax_for_disconnectingluns_from_the_host.html
 sidebar: sidebar
 keywords: snap, snapdrive, command, syntax, disconnect, lun, host
-summary: 'To use the snapdrive storage disconnect command to remove the mappings for the LUNs you specify, use the following syntax:'
+summary: To use the snapdrive storage disconnect command to remove the mappings for the LUNs you specify, use the following syntax:
 ---
 = Command syntax for disconnecting LUNs from the host
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-cmode/task_installing_snapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'You can install SnapDrive for UNIX on the Linux host from the command-line interface.'
+keywords: snap, snapdrive, install, unix, host, command, interface
+summary: You can install SnapDrive for UNIX on the Linux host from the command-line interface.
 ---
 = Installing SnapDrive for UNIX
 :icons: font

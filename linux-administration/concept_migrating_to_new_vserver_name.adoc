@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_migrating_to_new_vserver_name.html
 sidebar: sidebar
 keywords: snap, snapdrive, vserver, name, migrate, host, operations
-summary: 'If you have migrated from an old Vserver to a new Vserver, you must ensure that the new Vserver name is configured on the host system to execute any SnapDrive operations on the Vserver.'
+summary: If you have migrated from an old Vserver to a new Vserver, you must ensure that the new Vserver name is configured on the host system to execute any SnapDrive operations on the Vserver.
 ---
 = Migrating to new Vserver name
 :icons: font

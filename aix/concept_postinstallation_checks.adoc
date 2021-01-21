@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_postinstallation_checks.html
 sidebar: sidebar
-keywords:
-summary: 'After the installation is complete, you must perform a few tasks to ensure that SnapDrive for UNIX is installed successfully.'
+keywords: snap, snapdrive, check, post, installation
+summary: After the installation is complete, you must perform a few tasks to ensure that SnapDrive for UNIX is installed successfully.
 ---
 = Performing post-installation checks
 :icons: font

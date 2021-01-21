@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_hba_setup.html
 sidebar: sidebar
 keywords: snap, snapdrive, hba, setup, install
-summary: 'HBA Setup is the process of installing an appropriate HBA Card and the supported drivers on a Linux host.'
+summary: HBA Setup is the process of installing an appropriate HBA Card and the supported drivers on a Linux host.
 ---
 = HBA setup
 :icons: font

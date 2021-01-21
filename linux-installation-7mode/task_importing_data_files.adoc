@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-7mode/task_importing_data_files.html
 sidebar: sidebar
-keywords:
-summary: 'You can download the latest support matrix data and update the configuration checker tool before running the tool, so that the tool lists the latest supported configuration for SnapDrive for UNIX. The configuration checker tool with the updated data file checks for the configurations supported by SnapDrive for UNIX and lists all the supported components in the system.'
+keywords: snap, snapdrive, import, data, file, configuration, check
+summary: You can download the latest support matrix data and update the configuration checker tool before running the tool, so that the tool lists the latest supported configuration for SnapDrive for UNIX. The configuration checker tool with the updated data file checks for the configurations supported by SnapDrive for UNIX and lists all the supported components in the system.
 ---
 = Importing data files
 :icons: font

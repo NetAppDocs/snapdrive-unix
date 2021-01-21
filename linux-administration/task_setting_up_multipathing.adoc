@@ -2,7 +2,7 @@
 permalink: linux-administration/task_setting_up_multipathing.html
 sidebar: sidebar
 keywords: snap, snapdrive, multipathing, configure
-summary: 'You can configure multiple network paths between the host and storage system by setting up multipathing. SnapDrive for UNIX does support the use of aliases in multipath environments. You need to make sure that the proper alias name for the mapper devices is configured in the /etc/multipath.conf file.'
+summary: You can configure multiple network paths between the host and storage system by setting up multipathing. SnapDrive for UNIX does support the use of aliases in multipath environments. You need to make sure that the proper alias name for the mapper devices is configured in the /etc/multipath.conf file.
 ---
 = Setting up multipathing
 :icons: font

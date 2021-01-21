@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-cmode/task_connecting_linux_host_to_the_storage_system.html
 sidebar: sidebar
-keywords: SnapDrive for UNIX
-summary: 'For successful SnapDrive for UNIX operations, you must set up your storage virtual machines \(SVMs, formerly known as Vservers\)'
+keywords: snapdrive, snap, connect, hosts, storage, system
+summary: For successful SnapDrive for UNIX operations, you must set up your storage virtual machines \(SVMs, formerly known as Vservers\)
 ---
 = Connecting Linux hosts to storage systems
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_guidelines_forrenaming_snapshotcopies.html
 sidebar: sidebar
-keywords:
-summary: 'While renaming Snapshot copies, ensure that the two Snapshot copies do not have the same name.'
+keywords: snap, snapdrive, guidelines, snapshot, copy
+summary: While renaming Snapshot copies, ensure that the two Snapshot copies do not have the same name.
 ---
 = Guidelines for renaming Snapshot copies
 :icons: font

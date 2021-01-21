@@ -2,7 +2,7 @@
 permalink: linux-administration/delete_reference_copyright.html
 sidebar: sidebar
 keywords: copyright
-summary: ''
+summary:
 ---
 = Copyright
 :icons: font

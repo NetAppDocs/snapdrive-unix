@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_clustering_message_appears_during_snap.html
 sidebar: sidebar
-keywords:
-summary: 'There is a generic message that applies to any SnapDrive for UNIX host operating system with host cluster monitoring. It appears even if your system does not provide host cluster monitoring or you have it turned off.'
+keywords: snap, snapdrive, cluster, message, snaprestore, restore
+summary: There is a generic message that applies to any SnapDrive for UNIX host operating system with host cluster monitoring. It appears even if your system does not provide host cluster monitoring or you have it turned off.
 ---
 = Clustering message appears during SnapRestore
 :icons: font

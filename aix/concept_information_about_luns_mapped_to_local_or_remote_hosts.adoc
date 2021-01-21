@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_information_about_luns_mapped_to_local_or_remote_hosts.html
 sidebar: sidebar
-keywords:
-summary: 'The only mapping information available from the volume to SnapDrive for UNIX during volume based SnapRestore is the initiator group information for a LUN. If the initiator groups used by you are always created by SnapDrive for UNIX, then the fully qualified domain name of the host is part of the initiator group name.'
+keywords: snap, snapdrive, lun, mapped, local, remote, hosts
+summary: The only mapping information available from the volume to SnapDrive for UNIX during volume based SnapRestore is the initiator group information for a LUN. If the initiator groups used by you are always created by SnapDrive for UNIX, then the fully qualified domain name of the host is part of the initiator group name.
 ---
 = Information about LUNs mapped to local or remote hosts
 :icons: font

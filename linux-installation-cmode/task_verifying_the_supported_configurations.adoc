@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-cmode/task_verifying_the_supported_configurations.html
 sidebar: sidebar
-keywords:
-summary: 'You can verify the supported configurations in SnapDrive for UNIX by examining the components in the host system \(such as, operating system, version of software installed on the host, protocol, file systems on the host, and so on\) and the value specified for each configuration parameter in the snapdrive.conf file.'
+keywords: snap, snapdrive, verfiy, supported, configurations
+summary: You can verify the supported configurations in SnapDrive for UNIX by examining the components in the host system \(such as, operating system, version of software installed on the host, protocol, file systems on the host, and so on\) and the value specified for each configuration parameter in the snapdrive.conf file.
 ---
 = Verifying the supported configurations
 :icons: font

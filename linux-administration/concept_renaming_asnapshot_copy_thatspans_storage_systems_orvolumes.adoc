@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_renaming_asnapshot_copy_thatspans_storage_systems_orvolumes.html
 sidebar: sidebar
 keywords: snap, snapdrive, rename, copy, snapshot, storage, volume
-summary: 'For Snapshot copies that cross multiple storage systems or storage system volumes, rename all the related Snapshot copies.'
+summary: For Snapshot copies that cross multiple storage systems or storage system volumes, rename all the related Snapshot copies.
 ---
 = Renaming a Snapshot copy that spans storage systems or volumes
 :icons: font

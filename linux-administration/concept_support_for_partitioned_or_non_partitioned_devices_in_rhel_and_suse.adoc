@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_support_for_partitioned_or_non_partitioned_devices_in_rhel_and_suse.html
 sidebar: sidebar
 keywords: snap, snapdrive, suse, server, sles, partitioning, scheme, rhel, red, enterprise
-summary: 'On RHEL, SnapDrive for UNIX partitions the disks to provision host storage entities. However, SnapDrive for UNIX allows to provisioning and managing SnapDrive operations for both partitioning and non-partitioning devices on SLES 11, and only non-partitioning devices on SLES 10.'
+summary: On RHEL, SnapDrive for UNIX partitions the disks to provision host storage entities. However, SnapDrive for UNIX allows to provisioning and managing SnapDrive operations for both partitioning and non-partitioning devices on SLES 11, and only non-partitioning devices on SLES 10.
 ---
 = Storage partitioning scheme in Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES)
 :icons: font

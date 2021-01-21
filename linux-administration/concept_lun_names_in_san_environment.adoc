@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_lun_names_in_san_environment.html
 sidebar: sidebar
 keywords: snap, snapdrive, lun, names, san, host
-summary: 'In all the SAN operations, the format of LUN names should always be of the host name, irrespective of whether it resolves to an IP address. In a pure SAN environment, there is no concept of data path. The management interface mapping must be the same as the data path interface.'
+summary: In all the SAN operations, the format of LUN names should always be of the host name, irrespective of whether it resolves to an IP address. In a pure SAN environment, there is no concept of data path. The management interface mapping must be the same as the data path interface.
 ---
 = LUN names in SAN environment
 :icons: font

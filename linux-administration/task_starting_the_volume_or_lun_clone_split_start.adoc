@@ -2,7 +2,7 @@
 permalink: linux-administration/task_starting_the_volume_or_lun_clone_split_start.html
 sidebar: sidebar
 keywords: snap, snapdrive, clone, lun, split, volume
-summary: 'You can start a volume clone or LUN clone split operation.'
+summary: You can start a volume clone or LUN clone split operation.
 ---
 = Starting the volume clone or LUN clone split
 :icons: font

@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_considerations_for_using_snapdrive_for_unix.html
 sidebar: sidebar
 keywords: snap, snapdrive, considerations
-summary: 'You must be aware of various considerations for using SnapDrive for UNIX.'
+summary: You must be aware of various considerations for using SnapDrive for UNIX.
 ---
 = Considerations for using SnapDrive for UNIX
 :icons: font

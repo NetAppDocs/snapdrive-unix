@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_configuring_sd_admin_in_operations_manager.html
 sidebar: sidebar
 keywords: snap, snapdrive, configure, admin, operations, console, manager
-summary: 'The Operations Manager console administrator can create the sd-admin user.'
+summary: The Operations Manager console administrator can create the sd-admin user.
 ---
 = Configuring sd-admin in Operations Manager console
 :icons: font

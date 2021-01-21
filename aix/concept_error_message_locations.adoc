@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_error_message_locations.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX provides information about error messages as command output and in various log files.'
+keywords: snap, snapdrive, error, message, location
+summary: SnapDrive for UNIX provides information about error messages as command output and in various log files.
 ---
 = Error message locations
 :icons: font

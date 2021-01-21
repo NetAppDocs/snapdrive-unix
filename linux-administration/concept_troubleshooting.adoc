@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_troubleshooting.html
 sidebar: sidebar
 keywords: snap, snapdrive, troubleshooting, problem, solve
-summary: 'The troubleshooting tool in SnapDrive for UNIX enables you to find information in addition to solving problems.'
+summary: The troubleshooting tool in SnapDrive for UNIX enables you to find information in addition to solving problems.
 ---
 = Troubleshooting
 :icons: font

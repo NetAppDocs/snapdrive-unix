@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_automatic_storage_system_update_on_operations_manager.html
 sidebar: sidebar
-keywords:
-summary: 'Operations Manager console discovers the storage systems supported on your network. It periodically monitors data that it collects from the discovered storage systems. The data is refreshed at a set interval. The Operations Manager console administrator can configure the refresh interval.'
+keywords: snap, snapdrive, automatic, storage, update, operations, manager, console
+summary: Operations Manager console discovers the storage systems supported on your network. It periodically monitors data that it collects from the discovered storage systems. The data is refreshed at a set interval. The Operations Manager console administrator can configure the refresh interval.
 ---
 = Automatic storage system update on Operations Manager console
 :icons: font

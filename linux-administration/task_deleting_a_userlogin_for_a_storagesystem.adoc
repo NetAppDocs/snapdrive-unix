@@ -2,7 +2,7 @@
 permalink: linux-administration/task_deleting_a_userlogin_for_a_storagesystem.html
 sidebar: sidebar
 keywords: snap, snapdrive, delete, user, login, command, config
-summary: 'You can delete a user login for one or more storage systems, by executing the snapdrive config delete command.'
+summary: You can delete a user login for one or more storage systems, by executing the snapdrive config delete command.
 ---
 = Deleting a user login for a storage system
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_changing_the_defaults_for_the_audit_logs.html
 sidebar: sidebar
-keywords:
-summary: 'You can use snapdrive.conf file to change the logging parameters of the audit log files such as maximum size of audit log file, and maximum number of old audit files.'
+keywords: snap, snapdrive, default, change, audit, log
+summary: You can use snapdrive.conf file to change the logging parameters of the audit log files such as maximum size of audit log file, and maximum number of old audit files.
 ---
 = Changing the defaults for the audit logs
 :icons: font

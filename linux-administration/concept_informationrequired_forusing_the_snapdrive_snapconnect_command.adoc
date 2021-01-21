@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_informationrequired_forusing_the_snapdrive_snapconnect_command.html
 sidebar: sidebar
 keywords: snap, snapdrive, connect, command
-summary: 'To connect to a Snapshot copy, determine the type of storage entity, connect a Snapshot copy with the NFS directory tree to Data ONTAP 7.3 configurations, and so on.'
+summary: To connect to a Snapshot copy, determine the type of storage entity, connect a Snapshot copy with the NFS directory tree to Data ONTAP 7.3 configurations, and so on.
 ---
 = Information required for using the snapdrive snap connect command
 :icons: font

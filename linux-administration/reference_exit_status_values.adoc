@@ -2,7 +2,7 @@
 permalink: linux-administration/reference_exit_status_values.html
 sidebar: sidebar
 keywords: snap, snapdrive, exit, status, error, value
-summary: 'Each exit status value has an error name, and the type associated with it. View the table to learn about the exit status value, error name, the type, and the description.'
+summary: Each exit status value has an error name, and the type associated with it. View the table to learn about the exit status value, error name, the type, and the description.
 ---
 = Exit status values
 :icons: font

@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_connecting_to_multiple_filespecs.html
 sidebar: sidebar
 keywords: snap, snapdrive, connect, filespec, multiple
-summary: 'You can connect to multiple filespecs that reside in a volume. The following example describes how you can complete this operation.'
+summary: You can connect to multiple filespecs that reside in a volume. The following example describes how you can complete this operation.
 ---
 = Connecting to multiple filespecs
 :icons: font

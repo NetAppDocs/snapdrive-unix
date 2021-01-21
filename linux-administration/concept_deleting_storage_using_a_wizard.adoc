@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_deleting_storage_using_a_wizard.html
 sidebar: sidebar
 keywords: snap, snapdrive, delete, wizard, storage
-summary: 'You can use the storage delete wizard to perform certain delete operations.'
+summary: You can use the storage delete wizard to perform certain delete operations.
 ---
 = Deleting storage using a wizard
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_tasks_performed_by_snapdrive_dc.html
 sidebar: sidebar
-keywords:
-summary: 'The data collection utility runs the NetApp diagnostic utilities, copies SnapDrive for UNIX log files, and creates a compressed file that is used for analysis.'
+keywords: snap, snapdrive, data, collection, utility
+summary: The data collection utility runs the NetApp diagnostic utilities, copies SnapDrive for UNIX log files, and creates a compressed file that is used for analysis.
 ---
 = Tasks performed by snapdrive.dc
 :icons: font

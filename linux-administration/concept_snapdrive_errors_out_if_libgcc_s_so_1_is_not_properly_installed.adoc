@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_snapdrive_errors_out_if_libgcc_s_so_1_is_not_properly_installed.html
 sidebar: sidebar
 keywords: snap, snapdrive, error, install, red, enterprise, oracle
-summary: 'SnapDrive for UNIX errors out if the /lib/libgcc_s.so.1 path is not installed on 64-bit Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts.'
+summary: SnapDrive for UNIX errors out if the /lib/libgcc_s.so.1 path is not installed on 64-bit Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts.
 ---
 = SnapDrive errors out if libgcc_s.so.1 is not installed
 :icons: font

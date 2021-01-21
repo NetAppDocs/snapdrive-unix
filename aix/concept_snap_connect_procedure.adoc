@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_snap_connect_procedure.html
 sidebar: sidebar
-keywords:
-summary: 'The snap connect procedure is valid for Data ONTAP 7.2 or later and explain the steps for snap connect operation.'
+keywords: snap, snapdrive, connect, procedure
+summary: The snap connect procedure is valid for Data ONTAP 7.2 or later and explain the steps for snap connect operation.
 ---
 = Snap connect procedure
 :icons: font

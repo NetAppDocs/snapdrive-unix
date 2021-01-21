@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_managing_volume_migration_using_snapdrive_for_unix.html
 sidebar: sidebar
 keywords: snap, snapdrive, volume, migration, setup, cutover, move
-summary: 'You can execute SnapDrive operations during volume migration.'
+summary: You can execute SnapDrive operations during volume migration.
 ---
 = Volume migration in SnapDrive for UNIX
 :icons: font

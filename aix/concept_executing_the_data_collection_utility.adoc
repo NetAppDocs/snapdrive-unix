@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_executing_the_data_collection_utility.html
 sidebar: sidebar
-keywords:
-summary: 'You need to complete few steps to run the data collection utility.'
+keywords: snap, snapdrive, data, collection, utility, executing
+summary: You need to complete few steps to run the data collection utility.
 ---
 = Executing the data collection utility
 :icons: font

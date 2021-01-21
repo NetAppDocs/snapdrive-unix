@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_host_filespec_information_for_a_particular_volume.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX as part of volume restore preview report displays the LUN mapping information. This displayed information is relevant for the checks and the normal files are reverted. Finding out all the host filespecs based on LUNs on a particular volume is a time consuming process and slows down the volume restore process.'
+keywords: snap, snapdrive, host, filespec, information, volume
+summary: SnapDrive for UNIX as part of volume restore preview report displays the LUN mapping information. This displayed information is relevant for the checks and the normal files are reverted. Finding out all the host filespecs based on LUNs on a particular volume is a time consuming process and slows down the volume restore process.
 ---
 = Host filespec information for a particular volume
 :icons: font

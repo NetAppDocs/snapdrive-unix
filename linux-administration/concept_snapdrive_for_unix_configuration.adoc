@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_snapdrive_for_unix_configuration.html
 sidebar: sidebar
 keywords: snap, snapdrive, configuration, unix
-summary: 'You must know the SnapDrive for UNIX configuration options and understand how to use SnapDrive for UNIX.'
+summary: You must know the SnapDrive for UNIX configuration options and understand how to use SnapDrive for UNIX.
 ---
 = SnapDrive for UNIX configuration
 :icons: font

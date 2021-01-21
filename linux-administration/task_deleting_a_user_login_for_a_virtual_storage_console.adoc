@@ -2,7 +2,7 @@
 permalink: linux-administration/task_deleting_a_user_login_for_a_virtual_storage_console.html
 sidebar: sidebar
 keywords: snap, snapdrive, delete, login, user, virtual, console, storage
-summary: 'You can delete a user login of a virtual interface, by executing the snapdrive config delete command.'
+summary: You can delete a user login of a virtual interface, by executing the snapdrive config delete command.
 ---
 = Deleting a user login for a Virtual Storage Console
 :icons: font

@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_command_syntax_for_disconnecting_a_filesystem_created_on_alun_from_the_host.html
 sidebar: sidebar
 keywords: snap, snapdrive, command, file, disconnect, syntax, lun
-summary: 'To use the snapdrive storage disconnect command to remove a file system created directly on a LUN, use the following syntax:'
+summary: To use the snapdrive storage disconnect command to remove a file system created directly on a LUN, use the following syntax:
 ---
 = Command syntax for disconnecting a file system created on a LUN from the host
 :icons: font

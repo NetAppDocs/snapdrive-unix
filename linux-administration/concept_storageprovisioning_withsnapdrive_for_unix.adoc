@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_storageprovisioning_withsnapdrive_for_unix.html
 sidebar: sidebar
 keywords: snap, snapdrive, storage, provision, lvm, logical, manager
-summary: 'SnapDrive for UNIX provides end-to-end storage management. You can provision storage from a host to a storage system and manage that storage with or without using the host Logical Volume Manager \(LVM\).'
+summary: SnapDrive for UNIX provides end-to-end storage management. You can provision storage from a host to a storage system and manage that storage with or without using the host Logical Volume Manager \(LVM\).
 ---
 = Storage operations in SnapDrive for UNIX
 :icons: font

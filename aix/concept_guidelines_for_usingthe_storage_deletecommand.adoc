@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_guidelines_for_usingthe_storage_deletecommand.html
 sidebar: sidebar
-keywords:
-summary: 'The snapdrive storage delete command has some restrictions in SnapDrive for UNIX.'
+keywords: snap, snapdrive, guidelines, storage, delete, command
+summary: The snapdrive storage delete command has some restrictions in SnapDrive for UNIX.
 ---
 = Guidelines for using the storage delete command
 :icons: font

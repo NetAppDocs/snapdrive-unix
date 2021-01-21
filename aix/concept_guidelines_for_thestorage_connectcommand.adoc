@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_guidelines_for_thestorage_connectcommand.html
 sidebar: sidebar
-keywords:
-summary: 'You need to follow few guidelines to use the snapdrive storage connect command.'
+keywords: guidelines, snap, snapdrive, storage, connect, command
+summary: You need to follow few guidelines to use the snapdrive storage connect command.
 ---
 = Guidelines for the storage connect command
 :icons: font

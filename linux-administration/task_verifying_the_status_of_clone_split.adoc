@@ -2,7 +2,7 @@
 permalink: linux-administration/task_verifying_the_status_of_clone_split.html
 sidebar: sidebar
 keywords: snap, snapdrive, status, clone, split, specification
-summary: 'You can query the clone split status by using a job ID or file specification. SnapDrive for UNIX indicates the current status of the clone split as in-progress, failed, or complete.'
+summary: You can query the clone split status by using a job ID or file specification. SnapDrive for UNIX indicates the current status of the clone split as in-progress, failed, or complete.
 ---
 = Viewing the status of a volume clone or LUN clone split
 :icons: font

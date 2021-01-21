@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_what_flexclone_volumes_are.html
 sidebar: sidebar
 keywords: snap, snapdrive, flexcone, volume, parent, clone
-summary: 'A flexible volume clone, FlexClone, is a point-in-time copy of a parent flexible volume. The FlexClone volume does not inherit the changes made to the parent flexible volume after the clone is created.'
+summary: A flexible volume clone, FlexClone, is a point-in-time copy of a parent flexible volume. The FlexClone volume does not inherit the changes made to the parent flexible volume after the clone is created.
 ---
 = What FlexClone volumes are
 :icons: font

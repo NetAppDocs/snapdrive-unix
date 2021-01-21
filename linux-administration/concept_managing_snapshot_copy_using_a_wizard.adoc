@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_managing_snapshot_copy_using_a_wizard.html
 sidebar: sidebar
 keywords: snap, snapdrive, snapshot, wizard, manage, restore, disconnect
-summary: 'You can use a wizard to manage Snapshot copies. This wizard runs you through a set of questions and helps you to perform the snap connect, snap restore, and snap disconnect operations.'
+summary: You can use a wizard to manage Snapshot copies. This wizard runs you through a set of questions and helps you to perform the snap connect, snap restore, and snap disconnect operations.
 ---
 = Managing Snapshot copies using a wizard
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_benefits_of_flexclone_volumes.html
 sidebar: sidebar
-keywords: 
-summary: 'FlexClone volumes provide data management and performance benefits.'
+keywords: snap, snapdrive, benefits, flexcone, volumes
+summary: FlexClone volumes provide data management and performance benefits.
 ---
 = Benefits of FlexClone volumes
 :icons: font

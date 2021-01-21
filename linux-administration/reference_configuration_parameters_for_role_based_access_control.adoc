@@ -2,7 +2,7 @@
 permalink: linux-administration/reference_configuration_parameters_for_role_based_access_control.html
 sidebar: sidebar
 keywords: snap, snapdrive, configuration, role, access, control, rbac
-summary: 'You must set the various configuration variables related to role-based access control in the snapdrive.conf file.'
+summary: You must set the various configuration variables related to role-based access control in the snapdrive.conf file.
 ---
 = Configuration variables for role-based access control
 :icons: font

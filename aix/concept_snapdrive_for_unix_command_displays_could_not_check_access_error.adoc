@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_snapdrive_for_unix_command_displays_could_not_check_access_error.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX may display error when it does have proper write access on the storage object.'
+keywords: snap, snapdrive, command, display, access, error, check
+summary: SnapDrive for UNIX may display error when it does have proper write access on the storage object.
 ---
 = SnapDrive for UNIX command displays could not check access error
 :icons: font

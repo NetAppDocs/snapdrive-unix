@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_informationrequired_forusing_the_snapdrive_snapdisconnect_command.html
 sidebar: sidebar
-keywords:
-summary: 'To disconnect a Snapshot copy, specify the type of storage entity to be used, such as, LUN, disk groups, file systems, or host volume.'
+keywords: snap, snapdrive, information, required, disconect, command
+summary: To disconnect a Snapshot copy, specify the type of storage entity to be used, such as, LUN, disk groups, file systems, or host volume.
 ---
 = Information required for using the snapdrive snap disconnect command
 :icons: font

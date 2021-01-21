@@ -1,7 +1,7 @@
 ---
 permalink: aix/concept_displayingsnapshot_copies_of_a_storage_system_volume.html
 sidebar: sidebar
-keywords:
+keywords: snap, snapdrive, display, snapshot, copy, storage, system, volume
 summary: 'You can use the SnapDrive command to display Snapshot copies on a storage system volume.'
 ---
 = Displaying Snapshot copies of a storage system volume

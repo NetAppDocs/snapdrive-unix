@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_informationrequired_forusing_the_snapdrive_snapdelete_command.html
 sidebar: sidebar
 keywords: snap, snapdrive, delete, command, copy, requirements
-summary: 'To delete a Snapshot copy, specify the name of the Snapshot copy to be deleted. Using the snapdrive snap delete command you can view the list of Snapshot copies that are deleted.'
+summary: To delete a Snapshot copy, specify the name of the Snapshot copy to be deleted. Using the snapdrive snap delete command you can view the list of Snapshot copies that are deleted.
 ---
 = Information required for using the snapdrive snap delete command
 :icons: font

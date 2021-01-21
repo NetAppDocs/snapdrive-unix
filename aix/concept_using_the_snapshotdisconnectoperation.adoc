@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_using_the_snapshotdisconnectoperation.html
 sidebar: sidebar
-keywords:
-summary: 'Use the snapdrive snap disconnect command to disconnect a Snapshot copy that is across multiple storage systems or storage system volumes.'
+keywords: snap, snapdrive, snapshot, disconnect, operation
+summary: Use the snapdrive snap disconnect command to disconnect a Snapshot copy that is across multiple storage systems or storage system volumes.
 ---
 = Using the Snapshot disconnect operation
 :icons: font

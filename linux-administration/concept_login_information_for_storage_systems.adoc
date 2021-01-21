@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_login_information_for_storage_systems.html
 sidebar: sidebar
 keywords: snap, snapdrive, storage, system, login
-summary: 'A user name or password allows SnapDrive for UNIX to access each storage system. It also provides security because, in addition to being logged in as root, the person running SnapDrive for UNIX must supply the correct user name or password when prompted for it. If a login is compromised, you can delete it and set a new user login.'
+summary: A user name or password allows SnapDrive for UNIX to access each storage system. It also provides security because, in addition to being logged in as root, the person running SnapDrive for UNIX must supply the correct user name or password when prompted for it. If a login is compromised, you can delete it and set a new user login.
 ---
 = Login information for storage systems
 :icons: font

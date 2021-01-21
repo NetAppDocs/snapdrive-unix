@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_clustered_data_ontap_features_available_in_snapdrive_for_unix.html
 sidebar: sidebar
 keywords: snap, snapdrive, data, ontap, clustered
-summary: 'SnapDrive for UNIX 5.0 and later versions support some features of clustered Data ONTAP.'
+summary: SnapDrive for UNIX 5.0 and later versions support some features of clustered Data ONTAP.
 ---
 = Clustered Data ONTAP features available in SnapDrive for UNIX
 :icons: font
@@ -55,10 +55,10 @@ NOTE: This feature is supported only if you are using clustered Data ONTAP 8.2.1
 
 *Related information*
 
-xref:concept_support_for_storage_system_rename.adoc[Support for storage system rename]
+link:concept_support_for_storage_system_rename.adoc[Support for storage system rename]
 
-xref:concept_using_port_set_in_snapdrive_for_unix.adoc[Using port set in SnapDrive for UNIX]
+link:concept_using_port_set_in_snapdrive_for_unix.adoc[Using port set in SnapDrive for UNIX]
 
-xref:concept_managing_volume_migration_using_snapdrive_for_unix.adoc[Volume migration in SnapDrive for UNIX]
+link:concept_managing_volume_migration_using_snapdrive_for_unix.adoc[Volume migration in SnapDrive for UNIX]
 
-xref:concept_support_for_vserver.adoc[Support for Vserver]
+link:concept_support_for_vserver.adoc[Support for Vserver]

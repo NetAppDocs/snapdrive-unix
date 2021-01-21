@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_error_message_format.html
 sidebar: sidebar
 keywords: snap, snapdrive, error, message, format
-summary: 'The format of the error message helps you determine the cause of the error.'
+summary: The format of the error message helps you determine the cause of the error.
 ---
 = Error message format
 :icons: font

@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_snapdrive_for_unix_faces_issue_after_sles_upgrade_from_version_10_to_11.html
 sidebar: sidebar
 keywords: snap, snapdrive, error, suse, upgrade, file, base, device
-summary: 'SnapDrive for UNIX displays an error after you upgrade the SUSE Linux Enterprise Server \(SLES\) from version 10 to 11. You must create a base device name and mount the file system.'
+summary: SnapDrive for UNIX displays an error after you upgrade the SUSE Linux Enterprise Server \(SLES\) from version 10 to 11. You must create a base device name and mount the file system.
 ---
 = SnapDrive for UNIX displays an error message after SUSE Linux Enterprise Server is upgraded from version 10 to 11
 :icons: font
@@ -15,7 +15,7 @@ When you perform storage operations, SnapDrive for UNIX reports the following er
 
 == Workaround
 
-. Use the options `-fs` and `-nopersist` to record the base device name, as shown in the following example: 
+. Use the options `-fs` and `-nopersist` to record the base device name, as shown in the following example:
 +
 `*IBMX336-250-111:/etc/udev/rules.d # snapdrive storage connect -fs /mnt/testfs -lun f3020-207-11:/vol/san1/lun200_0 -nolvm -nopersist*``
 +

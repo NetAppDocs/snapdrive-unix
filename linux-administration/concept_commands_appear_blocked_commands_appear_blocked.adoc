@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_commands_appear_blocked_commands_appear_blocked.html
 sidebar: sidebar
 keywords: snap, snapdrive, commands, blocked
-summary: 'You are unable to run SnapDrive for UNIX commands because the commands seem to be blocked for more than 10 minutes. You might have to wait for the command to complete.'
+summary: You are unable to run SnapDrive for UNIX commands because the commands seem to be blocked for more than 10 minutes. You might have to wait for the command to complete.
 ---
 = Commands appear blocked
 :icons: font

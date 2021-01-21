@@ -2,7 +2,7 @@
 permalink: linux-administration/task_disconnectingsnapshot_copieswith_shared_storageentities.html
 sidebar: sidebar
 keywords: snap, snapdrive, disconnect, command, snapshot, storage
-summary: 'You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains shared storage entities.'
+summary: You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains shared storage entities.
 ---
 = Disconnecting Snapshot copies with shared storage entities
 :icons: font

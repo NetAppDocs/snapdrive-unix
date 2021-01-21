@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_reasons_to_deletesnapshotcopies.html
 sidebar: sidebar
 keywords: snap, snapdrive, delete, why, snapshot, copy, old, space
-summary: 'Delete older Snapshot copies to free space on the storage system volume, or to keep fewer Snapshot copies.'
+summary: Delete older Snapshot copies to free space on the storage system volume, or to keep fewer Snapshot copies.
 ---
 = Reasons to delete Snapshot copies
 :icons: font

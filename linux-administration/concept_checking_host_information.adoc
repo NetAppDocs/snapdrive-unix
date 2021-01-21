@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_checking_host_information.html
 sidebar: sidebar
 keywords: snap, snapdrive, host, check
-summary: 'Some host systems require that you prepare them before you create new LUNs. SnapDrive for UNIX provides commands to complete these steps to prepare the host to create new LUNs.'
+summary: Some host systems require that you prepare them before you create new LUNs. SnapDrive for UNIX provides commands to complete these steps to prepare the host to create new LUNs.
 ---
 = Checking host information
 :icons: font

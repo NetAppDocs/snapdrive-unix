@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_what_access_control_settings_are.html
 sidebar: sidebar
 keywords: access, control, settings, snap, snapdrive, user, storage, files
-summary: 'To determine user access, SnapDrive for UNIX checks one of two permissions files in the root volume of the storage system. You must check the rules set in those file to evaluate access control.'
+summary: To determine user access, SnapDrive for UNIX checks one of two permissions files in the root volume of the storage system. You must check the rules set in those file to evaluate access control.
 ---
 = What access control settings are
 :icons: font

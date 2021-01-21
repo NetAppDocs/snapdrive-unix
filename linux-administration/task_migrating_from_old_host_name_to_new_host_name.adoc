@@ -2,7 +2,7 @@
 permalink: linux-administration/task_migrating_from_old_host_name_to_new_host_name.html
 sidebar: sidebar
 keywords: migrate, snap, snapdrive, storage, config, command
-summary: 'You can migrate from the old storage system to a new storage system by using the snapdrive config migrate set command. After the migration, you can perform all the SnapDrive operations in the host system by using the new storage system.'
+summary: You can migrate from the old storage system to a new storage system by using the snapdrive config migrate set command. After the migration, you can perform all the SnapDrive operations in the host system by using the new storage system.
 ---
 = Migrating from old storage system to new storage system
 :icons: font

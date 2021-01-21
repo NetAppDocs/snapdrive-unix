@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_limitations_for_nfs_file_or_directory_trees.html
 sidebar: sidebar
 keywords: snap, snapdrive, nfs, directory, file, limitations
-summary: 'SnapDrive does not provide storage provisioning commands for NFS files or directory trees. SnapDrive supports snapdrive snap create and snapdrive snap restore commands only if you are using Data ONTAP 7.3.5 and later.'
+summary: SnapDrive does not provide storage provisioning commands for NFS files or directory trees. SnapDrive supports snapdrive snap create and snapdrive snap restore commands only if you are using Data ONTAP 7.3.5 and later.
 ---
 = Limitations for NFS files or directory trees
 :icons: font

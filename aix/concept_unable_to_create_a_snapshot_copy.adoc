@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_unable_to_create_a_snapshot_copy.html
 sidebar: sidebar
-keywords:
-summary: 'There are few conditions that affect the snapdrive snap create command’s ability to create a Snapshot copy.'
+keywords: snap, snapdrive, create, snapshot, copy
+summary: There are few conditions that affect the snapdrive snap create command’s ability to create a Snapshot copy.
 ---
 = Unable to create a Snapshot copy
 :icons: font

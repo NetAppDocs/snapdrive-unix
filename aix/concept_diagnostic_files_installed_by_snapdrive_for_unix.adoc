@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_diagnostic_files_installed_by_snapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX installs diagnostic files that help detect problems in SnapDrive for UNIX.'
+keywords: snap, snapdrive, diagnostic, file, install
+summary: SnapDrive for UNIX installs diagnostic files that help detect problems in SnapDrive for UNIX.
 ---
 = Diagnostic files installed by SnapDrive for UNIX
 :icons: font

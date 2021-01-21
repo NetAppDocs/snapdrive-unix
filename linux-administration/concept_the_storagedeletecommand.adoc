@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_the_storagedeletecommand.html
 sidebar: sidebar
 keywords: snap, snapdrive, storage, delete, command, host, lun
-summary: 'The snapdrive storage delete command removes the storage entities on the host in addition to all underlying host side entities and storage system LUNs backing them.'
+summary: The snapdrive storage delete command removes the storage entities on the host in addition to all underlying host side entities and storage system LUNs backing them.
 ---
 = The storage delete command
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-cmode/task_creating_a_snapshot_copy.html
 sidebar: sidebar
-keywords:
-summary: 'You can create Snapshot copies of multiple file systems, host volumes, LUNs, or disk groups by using a single command while using storage area network \(SAN\) and NFS volumes in network-attached storage \(NAS\).'
+keywords: snap, snapdrive, create, snapshot, copy
+summary: You can create Snapshot copies of multiple file systems, host volumes, LUNs, or disk groups by using a single command while using storage area network \(SAN\) and NFS volumes in network-attached storage \(NAS\).
 ---
 = Creating a Snapshot copy
 :icons: font

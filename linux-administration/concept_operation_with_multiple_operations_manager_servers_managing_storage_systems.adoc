@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_operation_with_multiple_operations_manager_servers_managing_storage_systems.html
 sidebar: sidebar
 keywords: snap, snapdrive, storage, systems, operation, multiple, manager, console, server
-summary: 'The following output shows the error message you would receive when storage systems are managed by multiple Operations Managers console.'
+summary: The following output shows the error message you would receive when storage systems are managed by multiple Operations Managers console.
 ---
 = Operation with multiple Operations Manager console servers managing storage systems
 :icons: font

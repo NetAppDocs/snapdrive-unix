@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_error_loading_the_usr_lib_libqlsdm_so_in_hba_loadlibrary.html
 sidebar: sidebar
 keywords: snap, snapdrive, error, update, unloading, library
-summary: 'On all updates of Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts with iSCSI setup, all SnapDrive for UNIX commands error out.'
+summary: On all updates of Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts with iSCSI setup, all SnapDrive for UNIX commands error out.
 ---
 = Error loading the /usr/lib/libqlsdm.so in HBA_LoadLibrary
 :icons: font

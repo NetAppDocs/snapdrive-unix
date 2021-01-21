@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_access_permissions_on_a_storage_system.html
 sidebar: sidebar
-keywords:
-summary: 'Access permissions indicate whether a host can perform certain Snapshot copy and storage operations. Access permissions do not affect any of the SnapDrive storage show or storage list operations. SnapDrive enables you to specify the access permissions for each host in a file that resides on the storage system.'
+keywords: snap, snapdrive, access, permissions, storage, system
+summary: Access permissions indicate whether a host can perform certain Snapshot copy and storage operations. Access permissions do not affect any of the SnapDrive storage show or storage list operations. SnapDrive enables you to specify the access permissions for each host in a file that resides on the storage system.
 ---
 = Access permissions on a storage system
 :icons: font

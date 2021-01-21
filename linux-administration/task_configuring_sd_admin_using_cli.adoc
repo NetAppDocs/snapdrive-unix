@@ -2,7 +2,7 @@
 permalink: linux-administration/task_configuring_sd_admin_using_cli.html
 sidebar: sidebar
 keywords: snap, snapdrive, configure, admin, command, administrator, interface
-summary: 'The storage system administrator can configure sd-admin user using command-line interface.'
+summary: The storage system administrator can configure sd-admin user using command-line interface.
 ---
 = Configuring sd-admin using command-line interface
 :icons: font

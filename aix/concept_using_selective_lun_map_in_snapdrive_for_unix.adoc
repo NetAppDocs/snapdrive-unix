@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_using_selective_lun_map_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'Beginning with clustered Data ONTAP 8.3, Selective LUN Map \(SLM\) is enabled by default on all new LUN maps. When you create a new LUN map, the LUN is accessible only through paths found on the node that owns that LUN and its HA partner.'
+keywords: snap, snapdrive, selective, lun, map
+summary: Beginning with clustered Data ONTAP 8.3, Selective LUN Map \(SLM\) is enabled by default on all new LUN maps. When you create a new LUN map, the LUN is accessible only through paths found on the node that owns that LUN and its HA partner.
 ---
 = Using Selective LUN Map in SnapDrive for UNIX
 :icons: font

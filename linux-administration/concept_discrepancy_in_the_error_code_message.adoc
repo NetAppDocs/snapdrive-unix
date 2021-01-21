@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_discrepancy_in_the_error_code_message.html
 sidebar: sidebar
 keywords: snap, snapdrive, error, message, discrepancy
-summary: 'If you execute the snapdrive storage delete command when both the FC and iSCSI services are up or when they are down, SnapDrive for UNIX displays a wrong error message.'
+summary: If you execute the snapdrive storage delete command when both the FC and iSCSI services are up or when they are down, SnapDrive for UNIX displays a wrong error message.
 ---
 = Discrepancy in the error code message
 :icons: font

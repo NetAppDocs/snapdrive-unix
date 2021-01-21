@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_user_name_formats_for_access_check_with_operations_manager.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX uses the user name formats for performing access checks with Operations Manager console. These formats depends on whether you are a Network Information System \(NIS\) or a local user.'
+keywords: snap, snapdrive, user, name, access, check, operation, manager, console
+summary: SnapDrive for UNIX uses the user name formats for performing access checks with Operations Manager console. These formats depends on whether you are a Network Information System \(NIS\) or a local user.
 ---
 = User name formats for performing access checks with Operations Manager console
 :icons: font

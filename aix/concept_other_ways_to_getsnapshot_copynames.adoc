@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_other_ways_to_getsnapshot_copynames.html
 sidebar: sidebar
-keywords:
-summary: 'Use the snapdrive snap list command to display the Snapshot copy name.'
+keywords: snap, snapdrive, snapshot, copy, name
+summary: Use the snapdrive snap list command to display the Snapshot copy name.
 ---
 = Other ways to get Snapshot copy names
 :icons: font

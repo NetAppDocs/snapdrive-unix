@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_fc_and_iscsi_host_utilities.html
 sidebar: sidebar
-keywords: 
-summary: 'If your configuration requires AIX Host Utilities, you must install them and ensure that the system is set up correctly.'
+keywords: snap, snapdrive, install, aix, host, utilities
+summary: If your configuration requires AIX Host Utilities, you must install them and ensure that the system is set up correctly.
 ---
 = Installing AIX Host Utilities
 :icons: font

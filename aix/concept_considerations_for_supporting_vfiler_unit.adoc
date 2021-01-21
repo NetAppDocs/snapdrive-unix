@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_considerations_for_supporting_vfiler_unit.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX supports SnapDrive operations on a vFiler unit created on a FlexVol volume. However, SnapDrive for UNIX does not support vFiler units if you are using Fibre Channel \(FC\).'
+keywords: snap, snapdrive, vfiler, unit, support, issues
+summary: SnapDrive for UNIX supports SnapDrive operations on a vFiler unit created on a FlexVol volume. However, SnapDrive for UNIX does not support vFiler units if you are using Fibre Channel \(FC\).
 ---
 = vFiler unit support issues
 :icons: font

@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_creating_snapshotcopies_of_unrelatedentities.html
 sidebar: sidebar
 keywords: snap, snapdrive, snapshot, copy, unrelated, lun, disk
-summary: 'SnapDrive for UNIX creates Snapshot copies of unrelated entities by maintaining individual crash-consistent Snapshot copies.'
+summary: SnapDrive for UNIX creates Snapshot copies of unrelated entities by maintaining individual crash-consistent Snapshot copies.
 ---
 = Creating Snapshot copies of unrelated entities
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_guidelines_fordeleting_snapshotcopies.html
 sidebar: sidebar
-keywords:
-summary: 'You cannot delete a Snapshot copy that is in use, or if the Snapshot copy is across multiple storage system volumes.'
+keywords: snap, snapdrive, guidelines, delete, snapshot, copy
+summary: You cannot delete a Snapshot copy that is in use, or if the Snapshot copy is across multiple storage system volumes.
 ---
 = Guidelines for deleting Snapshot copies
 :icons: font

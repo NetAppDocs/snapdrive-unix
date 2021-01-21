@@ -2,7 +2,7 @@
 permalink: linux-administration/task_estimating_the_storage_space_to_split_a_volume_clone.html
 sidebar: sidebar
 keywords: clone, split, snap, snapdrive, volume, estimate
-summary: 'The clone split estimation helps you to estimate the required storage space \(in MB\) to split a volume clone. Depending on the clone split estimation provided by SnapDrive for UNIX, you can determine the space availability to split a volume clone.'
+summary: The clone split estimation helps you to estimate the required storage space \(in MB\) to split a volume clone. Depending on the clone split estimation provided by SnapDrive for UNIX, you can determine the space availability to split a volume clone.
 ---
 = Estimating the storage space to split a volume clone
 :icons: font

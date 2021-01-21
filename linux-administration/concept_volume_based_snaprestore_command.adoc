@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_volume_based_snaprestore_command.html
 sidebar: sidebar
 keywords: snap, snapdrive, snaprestore, volume, command
-summary: 'This section describes the commands and the options to use volume based SnapRestore.'
+summary: This section describes the commands and the options to use volume based SnapRestore.
 ---
 = Volume-based SnapRestore command
 :icons: font

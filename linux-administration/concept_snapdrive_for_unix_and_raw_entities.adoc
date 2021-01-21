@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_snapdrive_for_unix_and_raw_entities.html
 sidebar: sidebar
 keywords: snap, snapdrive, storage, raw, entity, lun, file, host, lvm
-summary: 'SnapDrive for UNIX enables storage operation for a raw entity such as a LUN, or a file system that can be created directly on a LUN, and performs the storage operation without using the host system, LVM.'
+summary: SnapDrive for UNIX enables storage operation for a raw entity such as a LUN, or a file system that can be created directly on a LUN, and performs the storage operation without using the host system, LVM.
 ---
 = SnapDrive for UNIX and raw entities
 :icons: font

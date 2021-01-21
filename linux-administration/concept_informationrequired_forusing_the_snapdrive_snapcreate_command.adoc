@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_informationrequired_forusing_the_snapdrive_snapcreate_command.html
 sidebar: sidebar
 keywords: create, command, snap, snapdrive, snapshot
-summary: 'When you create a Snapshot copy, you should determine the storage entity that you want to capture and specify a name of the Snapshot copy.'
+summary: When you create a Snapshot copy, you should determine the storage entity that you want to capture and specify a name of the Snapshot copy.
 ---
 = Information required for using the snapdrive snap create command
 :icons: font

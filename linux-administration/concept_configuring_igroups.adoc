@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_configuring_igroups.html
 sidebar: sidebar
 keywords: snap, snapdrive, igroup, storage, configure
-summary: 'SnapDrive for UNIX allows you to configure an igroup that exists on the storage system. The configured igroup is used to map the LUNs on the storage system.'
+summary: SnapDrive for UNIX allows you to configure an igroup that exists on the storage system. The configured igroup is used to map the LUNs on the storage system.
 ---
 = Configuring igroups
 :icons: font

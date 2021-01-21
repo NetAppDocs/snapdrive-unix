@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_snapdrive_create_comand_fails_while_discovering_mapped_devices.html
 sidebar: sidebar
 keywords: snap, snapdrive, storage, command, fail, discover, create, mapped, rejected
-summary: 'When you run the storage create command in SnapDrive for UNIX, during the discovery stage, the discovery of some of the mapped devices is rejected and the command fails.'
+summary: When you run the storage create command in SnapDrive for UNIX, during the discovery stage, the discovery of some of the mapped devices is rejected and the command fails.
 ---
 = SnapDrive for UNIX storage create command fails while discovering some mapped devices
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_operations_manager_unavailable.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX needs Operations Manager console for access checks. Sometimes Operations Manager console server might not be available for various reasons.'
+keywords: snap, snapdrive, manager, console, unavailable, operations
+summary: SnapDrive for UNIX needs Operations Manager console for access checks. Sometimes Operations Manager console server might not be available for various reasons.
 ---
 = Operations Manager console unavailable
 :icons: font

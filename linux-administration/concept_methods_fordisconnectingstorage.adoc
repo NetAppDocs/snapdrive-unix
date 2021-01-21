@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_methods_fordisconnectingstorage.html
 sidebar: sidebar
 keywords: snap, snapdrive, disconnect, storage, command
-summary: 'To make it easier to disconnect the storage, SnapDrive for UNIX provides several formats for the snapdrive storage disconnect command.'
+summary: To make it easier to disconnect the storage, SnapDrive for UNIX provides several formats for the snapdrive storage disconnect command.
 ---
 = Methods for disconnecting storage
 :icons: font

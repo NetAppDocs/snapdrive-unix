@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_restoring_asnapshot_copy_froma_different_host.html
 sidebar: sidebar
-keywords:
-summary: 'Use the snapdrive snap restore command to restore a Snapshot copy from a different host.'
+keywords: snap, snapdrive, restore, snapshot, copy, different, host
+summary: Use the snapdrive snap restore command to restore a Snapshot copy from a different host.
 ---
 = Restoring a Snapshot copy from a different host
 :icons: font

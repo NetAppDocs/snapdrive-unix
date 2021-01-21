@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_about_the_data_collection_utility.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX provides a data collection utility \(snapdrive.dc\) that collects diagnostic information about SnapDrive for UNIX, SnapDrive configuration checker, and your system setup.'
+keywords: snap, snapdrive, data, collection, utility
+summary: SnapDrive for UNIX provides a data collection utility \(snapdrive.dc\) that collects diagnostic information about SnapDrive for UNIX, SnapDrive configuration checker, and your system setup.
 ---
 = About the data collection utility
 :icons: font

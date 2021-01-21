@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_operation_with_a_single_filespec_on_a_single_storage_object.html
 sidebar: sidebar
 keywords: snap, snapdrive, filespec, single, storage, object
-summary: 'SnapDrive for UNIX displays an error message when you are not an authorized user to create a filespec on a specified volume.'
+summary: SnapDrive for UNIX displays an error message when you are not an authorized user to create a filespec on a specified volume.
 ---
 = Operation with a single filespec on a single storage object
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_volume_based_snaprestore_check_fails.html
 sidebar: sidebar
-keywords:
-summary: 'Volume-based SnapRestore \(Vbsr\) check fails, \(when NFS tries to export the list that do not have foreign hosts\) in the client machine \(SLES 11\) that has two different IPs for a host name in the /etc/hosts file.'
+keywords: snap, snapdrive, snaprestore, volume, based, check, fail
+summary: Volume-based SnapRestore \(Vbsr\) check fails, \(when NFS tries to export the list that do not have foreign hosts\) in the client machine \(SLES 11\) that has two different IPs for a host name in the /etc/hosts file.
 ---
 = Volume-based SnapRestore check fails
 :icons: font

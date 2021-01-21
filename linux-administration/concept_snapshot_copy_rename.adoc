@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_snapshot_copy_rename.html
 sidebar: sidebar
 keywords: snap, snapdrive, rename, snapshot, name, command, storage
-summary: 'You can change the name of a Snapshot copy by using the snapshot snap rename command. A Snapshot copy that is across multiple storage systems or storage system volumes can also be renamed.'
+summary: You can change the name of a Snapshot copy by using the snapshot snap rename command. A Snapshot copy that is across multiple storage systems or storage system volumes can also be renamed.
 ---
 = Snapshot copy rename
 :icons: font

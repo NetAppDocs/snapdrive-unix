@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_snapdrive_for_unix_overview.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX simplifies data management and increases the availability and reliability of application data through simplified storage provisioning and file system consistent Snapshot copies.'
+keywords: snap, snapdrive, overview, data, management
+summary: SnapDrive for UNIX simplifies data management and increases the availability and reliability of application data through simplified storage provisioning and file system consistent Snapshot copies.
 ---
 = SnapDrive for UNIX overview
 :icons: font

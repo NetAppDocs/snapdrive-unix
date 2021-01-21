@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_snapdrive_limitations_for_data_ontap_operating_in_cluster_mode.html
 sidebar: sidebar
 keywords: snap, snapdrive, clustered, ontap, limitations, operations
-summary: 'Some SnapDrive features and operations are not supported for clustered Data ONTAP.'
+summary: Some SnapDrive features and operations are not supported for clustered Data ONTAP.
 ---
 = SnapDrive limitations for clustered Data ONTAP
 :icons: font
