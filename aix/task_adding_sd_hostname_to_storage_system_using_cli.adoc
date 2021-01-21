@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_adding_sd_hostname_to_storage_system_using_cli.html
 sidebar: sidebar
-keywords:
-summary: 'The storage system administrator can create and configure the sd-hostname user using the useradmin command.'
+keywords: snap, snapdrive, add, cli, storage, system, hostname
+summary: The storage system administrator can create and configure the sd-hostname user using the useradmin command.
 ---
 = Adding sd- hostname to storage system using CLI
 :icons: font

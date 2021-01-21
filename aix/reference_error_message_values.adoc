@@ -1,8 +1,8 @@
 ---
 permalink: aix/reference_error_message_values.html
 sidebar: sidebar
-keywords:
-summary: 'It is helpful for you to be aware of some of the more common error messages that you might see when using SnapDrive for UNIX, and to know how to address them.'
+keywords: snap, snapdrive, error, message, value
+summary: It is helpful for you to be aware of some of the more common error messages that you might see when using SnapDrive for UNIX, and to know how to address them.
 ---
 = Error message values
 :icons: font

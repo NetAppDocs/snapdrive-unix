@@ -1,8 +1,8 @@
 ---
 permalink: aix/reference_host_side_command_lines.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX commands are used for host-side operations.'
+keywords: snap, snapdrive, host, side, command, line
+summary: SnapDrive for UNIX commands are used for host-side operations.
 ---
 = Host-side command lines
 :icons: font

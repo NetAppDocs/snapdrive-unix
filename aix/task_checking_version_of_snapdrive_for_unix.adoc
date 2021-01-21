@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_checking_version_of_snapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'You can verify the version of SnapDrive for UNIX by entering the snapdrive version command.'
+keywords: snap, snapdrive, command, version, check
+summary: You can verify the version of SnapDrive for UNIX by entering the snapdrive version command.
 ---
 = Checking the version of SnapDrive for UNIX
 :icons: font
@@ -13,7 +13,7 @@ You can verify the version of SnapDrive for UNIX by entering the `snapdrive vers
 
 .Steps
 
-. At the CLI prompt, enter the following command: 
+. At the CLI prompt, enter the following command:
 +
 `*snapdrive version*`
 

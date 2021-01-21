@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_estimating_the_storage_space_using_a_snapshot_copy.html
 sidebar: sidebar
-keywords:
-summary: 'The clone split estimation helps you to estimate the required storage space \(in MB\) using a Snapshot copy, when there is no clone available for a Snapshot copy in the storage system.'
+keywords: snap, snapdrive, storage, space, snapshot, copy
+summary: The clone split estimation helps you to estimate the required storage space \(in MB\) using a Snapshot copy, when there is no clone available for a Snapshot copy in the storage system.
 ---
 = Estimating the storage space using a Snapshot copy
 :icons: font

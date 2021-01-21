@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_what_the_trace_log_file_is.html
 sidebar: sidebar
-keywords:
-summary: 'Technical support uses the trace log file to troubleshoot problems.'
+keywords: snap, snapdrive, trace, log, file
+summary: Technical support uses the trace log file to troubleshoot problems.
 ---
 = What the trace log file is
 :icons: font

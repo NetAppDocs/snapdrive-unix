@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_decompressing_the_downloaded_software.html
 sidebar: sidebar
-keywords:
-summary: 'After you download the SnapDrive for UNIX software package from the NetApp Support Site, you should decompress the file to extract the software for installation.'
+keywords: snap, snapdrive, decompress, download, software
+summary: After you download the SnapDrive for UNIX software package from the NetApp Support Site, you should decompress the file to extract the software for installation.
 ---
 = Decompressing the downloaded software
 :icons: font

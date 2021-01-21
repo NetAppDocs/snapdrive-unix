@@ -1,8 +1,8 @@
 ---
 permalink: aix/reference_snapshot_operation_command_lines.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX commands are used for Snapshot operations.'
+keywords: snap, snapdrive, snapshot, command, operation, line
+summary: SnapDrive for UNIX commands are used for Snapshot operations.
 ---
 = Snapshot operation command lines
 :icons: font

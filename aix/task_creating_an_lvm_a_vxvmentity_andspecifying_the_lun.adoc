@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_creating_an_lvm_a_vxvmentity_andspecifying_the_lun.html
 sidebar: sidebar
-keywords:
-summary: 'You can create a host entity such as a file system, logical volume, or disk group and specify the LUN that is created as part of it.'
+keywords: snap, snapdrive, lvm, lun, specify, create
+summary: You can create a host entity such as a file system, logical volume, or disk group and specify the LUN that is created as part of it.
 ---
 = Creating an LVM entity and specifying the LUN
 :icons: font

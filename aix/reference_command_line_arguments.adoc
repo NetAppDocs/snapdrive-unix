@@ -1,8 +1,8 @@
 ---
 permalink: aix/reference_command_line_arguments.html
 sidebar: sidebar
-keywords:
-summary: 'The SnapDrive for UNIX takes arguments in a specific format.'
+keywords: snap, snapdrive, command, line, argument
+summary: The SnapDrive for UNIX takes arguments in a specific format.
 ---
 = Command-line arguments
 :icons: font

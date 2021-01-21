@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_creating_asnapshot_copy.html
 sidebar: sidebar
-keywords:
-summary: 'To create a Snapshot copy, run the snapdrive snap create command.'
+keywords: snap, snapdrive, create, snapshot, copy
+summary: To create a Snapshot copy, run the snapdrive snap create command.
 ---
 = Creating a Snapshot copy
 :icons: font
@@ -15,7 +15,7 @@ Before you execute this syntax, you must understand the options, keywords, and a
 
 .Steps
 
-. Enter the following command syntax to create a Snapshot copy: 
+. Enter the following command syntax to create a Snapshot copy:
 +
 `*snapdrive snap create {-lun | -dg | -fs | -hostvol } _file_spec[file_spec ...]_ [ {-lun |-dg | -fs | -hostvol } _file_spec_ [_file_spec_...]] -snapname _snap_name_ [ -force [-noprompt]][-unrelated] [-nofilerfence] [-fstype _type_][-vmtype _type_]*`
 

@@ -1,8 +1,8 @@
 ---
 permalink: aix/reference_informationrequired_for_the_storagecreate_operation.html
 sidebar: sidebar
-keywords:
-summary: 'You must supply some information when you complete the storage create operation.'
+keywords: snap, snapdrive, storage, create, command, operation, required
+summary: You must supply some information when you complete the storage create operation.
 ---
 = Information required for the storage create operation
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_adding_igroup.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX allows you to add a particular igroup for the storage system to the host and perform SnapDrive operations using the configured igroup. You must ensure that the igroup is available in the storage system.'
+keywords: snap, snapdrive, igroup, add
+summary: SnapDrive for UNIX allows you to add a particular igroup for the storage system to the host and perform SnapDrive operations using the configured igroup. You must ensure that the igroup is available in the storage system.
 ---
 = Adding an igroup
 :icons: font
@@ -13,7 +13,7 @@ SnapDrive for UNIX allows you to add a particular igroup for the storage system 
 
 .Steps
 
-. Enter the following command on the host: 
+. Enter the following command on the host:
 +
 `*snapdrive igroup add _igroup_name filer_name [filer_name...]_*`
 +

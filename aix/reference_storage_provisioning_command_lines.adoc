@@ -1,8 +1,8 @@
 ---
 permalink: aix/reference_storage_provisioning_command_lines.html
 sidebar: sidebar
-keywords:
-summary: 'Some SnapDrive for UNIX commands are used for storage provisioning.'
+keywords: snap, snapdrive, storage, provisioning, command, line
+summary: Some SnapDrive for UNIX commands are used for storage provisioning.
 ---
 = Storage provisioning command lines
 :icons: font

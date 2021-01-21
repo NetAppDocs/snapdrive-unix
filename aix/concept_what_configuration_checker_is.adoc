@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_what_configuration_checker_is.html
 sidebar: sidebar
-keywords:
-summary: 'The SnapDrive configuration checker tool helps you to identify and verify the configurations supported by SnapDrive for UNIX.'
+keywords: snap, snapdrive, configuration, checker, tool
+summary: The SnapDrive configuration checker tool helps you to identify and verify the configurations supported by SnapDrive for UNIX.
 ---
 = What configuration checker is
 :icons: font

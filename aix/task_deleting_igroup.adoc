@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_deleting_igroup.html
 sidebar: sidebar
-keywords:
-summary: 'You can delete any igroup that is configured for a storage system but is not required anymore.'
+keywords: snap, snapdrive, igroup, delete
+summary: You can delete any igroup that is configured for a storage system but is not required anymore.
 ---
 = Deleting an igroup
 :icons: font

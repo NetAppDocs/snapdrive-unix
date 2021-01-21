@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_changing_asnapshot_copyname.html
 sidebar: sidebar
-keywords:
-summary: 'You can change the name of a Snapshot copy by using the snapdrive snap rename command. The Snapshot rename operation changes the name of the source Snapshot copy to the name specified by the target argument.'
+keywords: snap, snapdrive, snapshot, copy, name, change
+summary: You can change the name of a Snapshot copy by using the snapdrive snap rename command. The Snapshot rename operation changes the name of the source Snapshot copy to the name specified by the target argument.
 ---
 = Changing a Snapshot copy name
 :icons: font
@@ -15,7 +15,7 @@ Before you execute this syntax, you must understand the options, keywords, and a
 
 .Steps
 
-. Enter the following command to change the Snapshot copy name: 
+. Enter the following command to change the Snapshot copy name:
 +
 `*snapdrive snap rename [-snapname] _old_long_snap_name_ _new_snap_name_ [-force [-noprompt]]*`
 

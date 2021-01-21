@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_connecting_to_asnapshot_copy_thatcontains_luns.html
 sidebar: sidebar
-keywords:
-summary: 'You can connect to a Snapshot copy that contains LUNs by using the snapdrive snap connect command.'
+keywords: snap, snapdrive, lun, snapshot, copy, connect
+summary: You can connect to a Snapshot copy that contains LUNs by using the snapdrive snap connect command.
 ---
 = Connecting to a Snapshot copy that contains LUNs
 :icons: font

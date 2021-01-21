@@ -1,8 +1,8 @@
 ---
 permalink: aix/reference_general_notes_about_the_commands.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX commands have options such as -dg, -vg, -lvol and -hostvol.'
+keywords: snap, snapdrive, command, dg, vg, lvol, hostvol
+summary: SnapDrive for UNIX commands have options such as -dg, -vg, -lvol and -hostvol.
 ---
 = General notes about the commands
 :icons: font

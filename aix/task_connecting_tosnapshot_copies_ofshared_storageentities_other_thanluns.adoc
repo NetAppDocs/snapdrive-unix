@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_connecting_tosnapshot_copies_ofshared_storageentities_other_thanluns.html
 sidebar: sidebar
-keywords:
-summary: 'You can use the snapdrive snap connect command to connect to a Snapshot copy of shared storage entities other than LUNs.'
+keywords: snap, snapdrive, lun, shared, storage, snapshot, copy
+summary: You can use the snapdrive snap connect command to connect to a Snapshot copy of shared storage entities other than LUNs.
 ---
 = Connecting to Snapshot copies of shared storage entities other than LUNs
 :icons: font
@@ -13,7 +13,7 @@ You can use the `snapdrive snap connect` command to connect to a Snapshot copy o
 
 .Steps
 
-. Enter the following command: 
+. Enter the following command:
 +
 `*snapdrive snap connect _fspec_set_ [_fspec_set_...] -snapname _long_snap_name_*`
 +
