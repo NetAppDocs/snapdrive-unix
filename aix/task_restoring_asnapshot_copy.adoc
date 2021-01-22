@@ -1,7 +1,7 @@
 ---
 permalink: aix/task_restoring_asnapshot_copy.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can restore a Snapshot copy by using the snapdrive snap restore command. The restore operation can take several minutes, depending on the type, and amount of data being restored.'
 ---
 = Restoring a Snapshot copy
@@ -9,15 +9,19 @@ summary: 'You can restore a Snapshot copy by using the snapdrive snap restore co
 :imagesdir: ../media/
 
 [.lead]
-You can restore a Snapshot copy by using the snapdrive snap restore command. The restore operation can take several minutes, depending on the type, and amount of data being restored.
+You can restore a Snapshot copy by using the `snapdrive snap restore` command. The restore operation can take several minutes, depending on the type, and amount of data being restored.
 
-. Enter the following command to restore a Snapshot copy: snapdrive snap restore -snapnamesnap_name {-lun |-dg |-fs | - hostvol |-file }file_spec [file_spec...] [{ -lun | -dg | -fs |-hostvol |-file } file_spec [file_spec ...] [-force [-noprompt]] [-mntopts options]][{-reserve |-noreserve}]
+.Steps
 
-SnapDrive for UNIX replaces the contents of the LUNs you specify in the snapdrive snap restore command line with the contents of the LUNs in the Snapshot copy you specify. This operation can take several minutes. When the operation is complete, SnapDrive for UNIX displays a message similar to the following:snap restore <filespec list> succeeded
+. Enter the following command to restore a Snapshot copy:
++
+`*snapdrive snap restore -snapname _snap_name_ {-lun |-dg |-fs | - hostvol |-file }file_spec [file_spec...] [{ -lun | -dg | -fs |-hostvol |-file } _file_spec_ [_file_spec_ ...] [-force [-noprompt]] [-mntopts _options_]][{-reserve |-noreserve}]*`
+
+SnapDrive for UNIX replaces the contents of the LUNs you specify in the `snapdrive snap restore` command line with the contents of the LUNs in the Snapshot copy you specify. This operation can take several minutes. When the operation is complete, SnapDrive for UNIX displays a message similar to the following: `snap restore <filespec list> succeeded`
 
 In the following example, file system 1 (fs1) resides on storage system1, and file system 2 (fs2) resides on storage system1 and also on storage system 2, which is the partner storage system. File system 3 (fs3) resides on storage system1, partner storage system 2, and storage system3, which is not part of the HA pair. An additional file system, fs4, resides entirely on storage system 4.
 
-The following command creates a Snapshot copy of fs1, fs2, fs3, and, fs4:
+The following command creates a Snapshot copy of `fs1`, `fs2`, `fs3`, and, `fs4`:
 
 ----
 # snapdrive snap create -fs /mnt/fs1 /mnt/fs2 /mnt/fs3 /mnt/fs4

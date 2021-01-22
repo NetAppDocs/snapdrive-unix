@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/task_enabling_and_disabling_log_files.html
 sidebar: sidebar
-keywords: 
-summary: 'If you want to enable a log file, specify a file name as the value in the name-value pair of the log file you want to enable. If you want to disable a file, do not enter a value for the log file name parameter.'
+keywords: snap, snapdrive, enable, disable, log, file, name
+summary: If you want to enable a log file, specify a file name as the value in the name-value pair of the log file you want to enable. If you want to disable a file, do not enter a value for the log file name parameter.
 ---
 = Enabling and disabling log files
 :icons: font
@@ -13,9 +13,12 @@ If you want to enable a log file, specify a file name as the value in the name-v
 
 You must have logged in as a root user.
 
-. Open the snapdrive.conf file in a text editor.
+.Steps
+
+. Open the `snapdrive.conf` file in a text editor.
 . Choose the appropriate option to either enable or disable a log file.
 +
+[options="header"]
 |===
 | If you want to...| Then...
 a|
@@ -23,20 +26,21 @@ a|
 a|
     Specify a file name as the value in the name-value pair of the log file you want to enable. SnapDrive for UNIX only writes log files if it has the name of a file to write to. The default names for the log files are as follows:
 
- ** Audit log: sd-audit.log
- ** Recovery log: sd-recovery.log
- ** Trace log: sd-trace.log
- *Note:* The path to these files might vary depending on your host operating system.
+ ** Audit log: `sd-audit.log`
+ ** Recovery log: `sd-recovery.log`
+ ** Trace log: `sd-trace.log`
+
+NOTE: The path to these files might vary depending on your host operating system.
 
 a|
 *Disable a log file*
 a|
     Do not enter a value for the log file name parameter. If you do not supply a value, there is no file name to which SnapDrive for UNIX can write the log information.
-+
-*Example* This example disables the audit log file. audit-log-file=""
-+
+
+*Example* This example disables the audit log file. `audit-log-file=""`
+
 |===
 
-. Save the snapdrive.conf file after you make all your changes.
+. Save the `snapdrive.conf` file after you make all your changes.
 +
 SnapDrive for UNIX automatically checks this file each time it starts. You must restart the SnapDrive for UNIX daemon for the changes to take effect.

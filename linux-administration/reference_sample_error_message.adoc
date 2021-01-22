@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/reference_sample_error_message.html
 sidebar: sidebar
-keywords: 
-summary: 'This is an error message in SnapDrive for UNIX.'
+keywords: snap, snapdrive, error, message, unix
+summary: This is an error message in SnapDrive for UNIX.
 ---
 = Sample error message
 :icons: font

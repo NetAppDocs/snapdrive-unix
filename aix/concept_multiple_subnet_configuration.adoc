@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_multiple_subnet_configuration.html
 sidebar: sidebar
-keywords: 
-summary: 'Multiple subnets are useful in an environment where you want to separate management traffic and data traffic. This separation creates a more secure environment for managing network traffic. SnapDrive 4.1.1 for UNIX and later versions running on servers in such environments supports all the SnapDrive operations available in stand-alone environments and host and HA pair environments.'
+keywords: snap, snapdrive, multiple, subnet, configuration
+summary: Multiple subnets are useful in an environment where you want to separate management traffic and data traffic. This separation creates a more secure environment for managing network traffic. SnapDrive 4.1.1 for UNIX and later versions running on servers in such environments supports all the SnapDrive operations available in stand-alone environments and host and HA pair environments.
 ---
 = Multiple subnet configuration
 :icons: font
@@ -13,7 +13,7 @@ Multiple subnets are useful in an environment where you want to separate managem
 
 Data related to the management of storage systems is transmitted through the management interface. DataFabric Manager, Protection Manager, and SnapDrive for UNIX can be part of the management interface. The data interface is used for data traffic between storage systems.
 
-To configure multiple subnets in your environment, you should use the mgmtpath option with the snapdrive config set command.
+To configure multiple subnets in your environment, you should use the `mgmtpath` option with the `snapdrive config set` command.
 
 SnapDrive for UNIX does not support operations in a SAN environment where the host name of the storage system is different from the public name, but both names resolve to the same IP address. To work around this situation, you can do one of the following:
 

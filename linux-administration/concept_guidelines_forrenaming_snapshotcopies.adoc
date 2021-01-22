@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_guidelines_forrenaming_snapshotcopies.html
 sidebar: sidebar
-keywords: 
-summary: 'While renaming Snapshot copies, ensure that the two Snapshot copies do not have the same name.'
+keywords: snap, snapdrive, rename, snapshot, copy, command
+summary: While renaming Snapshot copies, ensure that the two Snapshot copies do not have the same name.
 ---
 = Guidelines for renaming Snapshot copies
 :icons: font
@@ -11,7 +11,7 @@ summary: 'While renaming Snapshot copies, ensure that the two Snapshot copies do
 [.lead]
 While renaming Snapshot copies, ensure that the two Snapshot copies do not have the same name.
 
-Follow these guidelines when you use the snapdrive snap rename command:
+Follow these guidelines when you use the `snapdrive snap rename` command:
 
 * An error message occurs if you try to rename a Snapshot copy to a different storage system volume.
-* An error message occurs if the new name for the Snapshot copy already exists. You can use the -force option to force SnapDrive for UNIX to change the name without generating an error message.
+* An error message occurs if the new name for the Snapshot copy already exists. You can use the `-force` option to force SnapDrive for UNIX to change the name without generating an error message.

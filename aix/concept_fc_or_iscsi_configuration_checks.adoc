@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_fc_or_iscsi_configuration_checks.html
 sidebar: sidebar
-keywords: 
-summary: 'Although Fibre Channel Protocol \(FCP\) and Internet Small Computer System Interface \(iSCSI\) were once distributed as separate utilities, you can find both FCP and iSCSI configuration support available in AIX Host Utilities.'
+keywords: snap, snapdrive, fc, iscsi, configuration, check
+summary: Although Fibre Channel Protocol \(FCP\) and Internet Small Computer System Interface \(iSCSI\) were once distributed as separate utilities, you can find both FCP and iSCSI configuration support available in AIX Host Utilities.
 ---
 = FC or iSCSI configuration checks
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/task_adding_host_entries_for_new_luns.html
 sidebar: sidebar
-keywords: 
-summary: 'You can create a specific number of new LUNs using SnapDrive for UNIX. SnapDrive for UNIX provides specific commands for this purpose.'
+keywords: snap, snapdrive, host, entries, lun, command
+summary: You can create a specific number of new LUNs using SnapDrive for UNIX. SnapDrive for UNIX provides specific commands for this purpose.
 ---
 = Adding host entries for new LUNs
 :icons: font
@@ -13,10 +13,17 @@ You can create a specific number of new LUNs using SnapDrive for UNIX. SnapDrive
 
 Ensure that the host is ready to create specific number of new LUNs. These LUNs reside on a storage system that is mapped to the host.
 
-. snapdrive config prepare luns -count count
+.Steps
+
+. `snapdrive config prepare luns -count count`
 +
--count is the number of new LUNs for which you want the host to be prepared.
+`-count` is the number of new LUNs for which you want the host to be prepared.
 +
-On Linux, this command adds a new /dev/sg device file for each potential LUN for which a device file is not currently available.
+On Linux, this command adds a new `/dev/sg` device file for each potential LUN for which a device file is not currently available.
 +
-NOTE: If you have manually edited the /kernel/drv/lpfc.conf file for persistent bindings, ensure that the FC-bind-WWPN entry is after # BEGIN: LPUTIL-managed Persistent Bindings.
+[NOTE]
+====
+If you have manually edited the `/kernel/drv/lpfc.conf` file for persistent bindings, ensure that the FC-bind-WWPN entry is after
+
+`# BEGIN: LPUTIL-managed Persistent Bindings`.
+====

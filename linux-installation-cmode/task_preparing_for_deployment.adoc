@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-cmode/task_preparing_for_deployment.html
 sidebar: sidebar
-keywords: 
-summary: 'The hosts on which you install SnapDrive for UNIX must meet the specific software, hardware, browser, database, and operating system requirements. For more information about the requirements, see the Interoperability Matrix tool.'
+keywords: snap, snapdrive, prepare, deployment, host, requirements
+summary: The hosts on which you install SnapDrive for UNIX must meet the specific software, hardware, browser, database, and operating system requirements. For more information about the requirements, see the Interoperability Matrix tool.
 ---
 = Preparing for deployment
 :icons: font

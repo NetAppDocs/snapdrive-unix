@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_considerations_forrestoring_asnapshot_copy.html
 sidebar: sidebar
-keywords: 
-summary: 'Before restoring Snapshot copies, ensure that you are not using the file system, and that you do not interrupt the restore process.'
+keywords: snap, snapdrive, considerations, restore, snapshot, copy
+summary: Before restoring Snapshot copies, ensure that you are not using the file system, and that you do not interrupt the restore process.
 ---
 = Considerations for restoring a Snapshot copy
 :icons: font
@@ -13,6 +13,6 @@ Before restoring Snapshot copies, ensure that you are not using the file system,
 
 Before restoring a Snapshot copy, consider the following important information:
 
-* Ensure you are not in any directory on a file system that you want to restore. You can perform the snapdrive snap restore command from any directory except the one on a file system to which you want to restore the information.
+* Ensure you are not in any directory on a file system that you want to restore. You can perform the `snapdrive snap restore` command from any directory except the one on a file system to which you want to restore the information.
 * Do not interrupt the restore operation by entering Ctrl-C. Doing so could leave your system in an unusable configuration. If that happens, you might have to contact the NetApp technical support to recover.
-* When exporting the NFS entities to a volume, set the Anonymous User ID option to "`0`" for the snapdrive snap restore command to work successfully.
+* When exporting the NFS entities to a volume, set the Anonymous User ID option to "`0`" for the `snapdrive snap restore` command to work successfully.

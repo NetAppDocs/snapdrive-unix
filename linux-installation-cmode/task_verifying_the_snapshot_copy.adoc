@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-cmode/task_verifying_the_snapshot_copy.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: snap, snapdrive, snapshot, copy, verify
+summary:
 ---
 = Verifying the Snapshot copy
 :icons: font

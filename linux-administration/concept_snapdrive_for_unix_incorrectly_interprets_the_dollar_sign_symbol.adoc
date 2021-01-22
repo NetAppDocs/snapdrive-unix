@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_snapdrive_for_unix_incorrectly_interprets_the_dollar_sign_symbol.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX incorrectly interprets the dollar sign \($\) and all special characters differently, if the special characters are specified as part of a configuration value.'
+keywords: snap, snapdrive, dollar, sign, special, characters, value
+summary: SnapDrive for UNIX incorrectly interprets the dollar sign \($\) and all special characters differently, if the special characters are specified as part of a configuration value.
 ---
 = SnapDrive for UNIX incorrectly interprets the dollar sign
 :icons: font

@@ -1,16 +1,16 @@
 ---
 permalink: linux-administration/concept_snapdrived_stop_or_snapdrived_start_command_hangs.html
 sidebar: sidebar
-keywords: 
-summary: 'snapdrived stop or snapdrived start command might hang in some cases.'
+keywords: snap, snapdrive, stop, start, command, hangs
+summary: snapdrived stop or snapdrived start command might hang in some cases.
 ---
 = snapdrived stop or snapdrived start command hangs
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-snapdrived stop or snapdrived start command might hang in some cases.
+`snapdrived stop` or `snapdrived start` command might hang in some cases.
 
-To resolve this problem, run the snapdrived status to check how many commands are in execution and at what time they started. snapdrived stop command waits for all commands in execution to complete. If you believe that any command hangs, issue snapdrived -force stop or snapdrived -force restart command.
+To resolve this problem, run the `snapdrived status` to check how many commands are in execution and at what time they started. `snapdrived stop` command waits for all commands in execution to complete. If you believe that any command hangs, issue `snapdrived -force stop` or `snapdrived -force restart` command.
 
-IMPORTANT: The -force option kills all running commands and daemon stops. This can have side effects on system state like stale device entries and future daemon starts.
+IMPORTANT: The `-force` option kills all running commands and daemon stops. This can have side effects on system state like stale device entries and future daemon starts.

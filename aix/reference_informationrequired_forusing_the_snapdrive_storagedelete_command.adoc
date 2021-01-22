@@ -1,19 +1,20 @@
 ---
 permalink: aix/reference_informationrequired_forusing_the_snapdrive_storagedelete_command.html
 sidebar: sidebar
-keywords: 
-summary: 'There is some information that you need to supply before you can use the snapdrive storage delete command. This information helps you in using the command correctly.'
+keywords: snap, snapdrive, storage, delete, command, required
+summary: There is some information that you need to supply before you can use the snapdrive storage delete command. This information helps you in using the command correctly.
 ---
 = Information required for using the snapdrive storage delete command
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-There is some information that you need to supply before you can use the snapdrive storage delete command. This information helps you in using the command correctly.
+There is some information that you need to supply before you can use the `snapdrive storage delete` command. This information helps you in using the command correctly.
 
+[options="header"]
 |===
 | Requirement| Argument
-a|
+2+a|
 Based on the command you enter, you can delete any of the following types of storage:
 
 * LUNs
@@ -32,45 +33,49 @@ To specify additional LUNs, you can use the LUN name alone if the new LUN is on 
 The value you enter for the file_spec argument must identify the storage entity you are deleting.
 
 a|
-A LUN (-lun)
+A LUN (`-lun`)
 a|
-long_lun_name
+`_long_lun_name_`
 a|
 Additional LUNs
 a|
-lun_name(long or short form)
+`_lun_name_` (long or short form)
 a|
-Disk group (-dgfile_spec) or volume group (- vgfile_spec)
+Disk group (`-dg _file_spec_`) or volume group (`- vg _file_spec_`)
 
 a|
 name of the disk group or volume group
 a|
-File system (-fsfile_spec)
+File system (`-fs _file_spec_`)
 a|
-filesystem_name
+`_filesystem_name_`
 a|
-Host volume (-hostvolfile_spec) or logical volume (-lvolfile_spec)
+Host volume (`-hostvol _file_spec_`) or logical volume (`-lvol _file_spec_`)
 a|
-name of the host volume or logical volume *Note:* You must supply both the requested volume and the disk group containing it; for example, - hostvol dg3/acct_volume.
+name of the host volume or logical volume
+
+NOTE: You must supply both the requested volume and the disk group containing it; for example, `- hostvol dg3/acct_volume`.
+
+2+a|
+If you want SnapDrive for UNIX to delete the storage you specify even if you include at the command prompt a host-side entity that has other entities (such as a disk group that has one or more host volumes), include the `-full` option at the command prompt.
+
+If you do not include this option, you must specify only empty host-side entities.
 
 a|
-If you want SnapDrive for UNIX to delete the storage you specify even if you include at the command prompt a host-side entity that has other entities (such as a disk group that has one or more host volumes), include the -fulloption at the command prompt. If you do not include this option, you must specify only empty host-side entities.
-
-a|
--full
+`-full`
 a|
 ~
-a|
+2+a|
 To specify the shared host entity for which you want to delete the storage.
 a|
--fstype
+`-fstype`
 a|
-type
+`_type_`
 a|
--vmtype
+`-vmtype`
 a|
-type
-a|
+`_type_`
+2+a|
 *Optional:* Specifies the type of file system and volume manager to be used for SnapDrive for UNIX operations.
 
 |===

@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_nfs_configuration_checks.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'For configurations that use Network File System \(NFS\), you must check that NFS clients are operating correctly, before you set up your host and storage systems.'
 ---
 = NFS configuration checks
@@ -15,14 +15,8 @@ If you have a configuration that use NFS, you must complete the following tasks:
 
 * Ensure the NFS clients are operating correctly.
 +
-For more information about managing NFS protocols, see the _File Access and Protocols Management Guide for 7-Mode_ if you are using Data ONTAP 7-Mode; see the _File Access Management Guide for NFS_ if you are using clustered Data ONTAP.
+For more information about managing NFS protocols, see the link:https://library.netapp.com/ecm/ecm_download_file/ECMP1401220[File Access and Protocols Management Guide for 7-Mode] if you are using Data ONTAP 7-Mode; see the link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.cdot-famg-nfs/home.html[File Access Management Guide for NFS] if you are using clustered Data ONTAP.
 
 * Set up your host and storage systems.
 +
-To use SnapDrive for UNIX with NFS-mounted directories on the storage systems, you must ensure that the storage system directories are correctly exported to the host. If your host has multiple Internet Protocol (IP) interfaces as well as data and management interfaces to the storage system, then you must ensure that the directory is exported correctly to both the data and management interfaces. SnapDrive for UNIX issues warnings unless all such interfaces have read or write permissions, or in the case of the snapdrive snap connect command with the -readonly option, at least read-only permissions. The snapdrive snap restore and snapdrive snap connect commands fail if none of those interfaces have permission to access the directory.
-
-*Related information*
-
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.cdot-famg-nfs/home.html[ONTAP 9 NFS Reference]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMP1401220[Data ONTAP 8.2 File Access and Protocols Management Guide for 7-Mode]
+To use SnapDrive for UNIX with NFS-mounted directories on the storage systems, you must ensure that the storage system directories are correctly exported to the host. If your host has multiple Internet Protocol (IP) interfaces as well as data and management interfaces to the storage system, then you must ensure that the directory is exported correctly to both the data and management interfaces. SnapDrive for UNIX issues warnings unless all such interfaces have read or write permissions, or in the case of the `snapdrive snap connect` command with the `-readonly` option, at least read-only permissions. The `snapdrive snap restore` and `snapdrive snap connect` commands fail if none of those interfaces have permission to access the directory.

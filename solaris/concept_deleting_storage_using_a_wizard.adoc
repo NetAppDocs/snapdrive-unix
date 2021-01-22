@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_deleting_storage_using_a_wizard.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use the storage delete wizard to perform certain delete operations.'
 ---
 = Deleting storage using a wizard
@@ -11,7 +11,7 @@ summary: 'You can use the storage delete wizard to perform certain delete operat
 [.lead]
 You can use the storage delete wizard to perform certain delete operations.
 
-You can start the wizard by using the snapdrive storage wizard delete command.
+You can start the wizard by using the `snapdrive storage wizard delete` command.
 
 You can delete the following entities:
 

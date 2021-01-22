@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_error_loading_the_usr_lib_libqlsdm_so_in_hba_loadlibrary.html
 sidebar: sidebar
-keywords: 
-summary: 'On all updates of Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts with iSCSI setup, all SnapDrive for UNIX commands error out.'
+keywords: snap, snapdrive, error, update, unloading, library
+summary: On all updates of Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts with iSCSI setup, all SnapDrive for UNIX commands error out.
 ---
 = Error loading the /usr/lib/libqlsdm.so in HBA_LoadLibrary
 :icons: font
@@ -11,7 +11,7 @@ summary: 'On all updates of Red Hat Enterprise Linux 4 and Oracle Enterprise Lin
 [.lead]
 On all updates of Red Hat Enterprise Linux 4 and Oracle Enterprise Linux 4 hosts with iSCSI setup, all SnapDrive for UNIX commands error out.
 
-During unloading or uninstalling the QLogic driver, the libHBAAPI library remains in the /usr/lib file and is not removed by the QLogic ./install scripts. The following error message appears as
+During unloading or uninstalling the QLogic driver, the `libHBAAPI` library remains in the `/usr/lib` file and is not removed by the `QLogic ./install` scripts. The following error message appears as
 
 ----
 HBA_LoadLibrary: Encountered and error loading: /usr/lib/libqlsdm.so
@@ -19,4 +19,4 @@ HBA_LoadLibrary: Encountered and error loading: /usr/lib/libqlsdm.so
 
 == Workaround
 
-Rename or move (mv) the libqlsdm.so library. For example, mv /usr/lib/libqlsdm.so /usr/lib/libqlsdm.so.old.
+Rename or move (mv) the `_libqlsdm.so_` library. For example, `mv /usr/lib/libqlsdm.so /usr/lib/libqlsdm.so.old`.

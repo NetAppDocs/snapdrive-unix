@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_snapdrive_for_unix_faces_issue_after_sles_upgrade_from_version_10_to_11.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX displays an error after you upgrade the SUSE Linux Enterprise Server \(SLES\) from version 10 to 11. You must create a base device name and mount the file system.'
+keywords: snap, snapdrive, error, suse, upgrade, file, base, device
+summary: SnapDrive for UNIX displays an error after you upgrade the SUSE Linux Enterprise Server \(SLES\) from version 10 to 11. You must create a base device name and mount the file system.
 ---
 = SnapDrive for UNIX displays an error message after SUSE Linux Enterprise Server is upgraded from version 10 to 11
 :icons: font
@@ -11,16 +11,24 @@ summary: 'SnapDrive for UNIX displays an error after you upgrade the SUSE Linux 
 [.lead]
 SnapDrive for UNIX displays an error after you upgrade the SUSE Linux Enterprise Server (SLES) from version 10 to 11. You must create a base device name and mount the file system.
 
-When you perform storage operations, SnapDrive for UNIX reports the following error: 0001-791 Admin error: Device /dev/sdc does not have a partition. A single partition is required to support a persistent mount for file system /mnt/testfs. Retry command with '-nopersist' option
+When you perform storage operations, SnapDrive for UNIX reports the following error: `0001-791 Admin error: Device /dev/sdc does not have a partition. A single partition is required to support a persistent mount for file system /mnt/testfs. Retry command with '-nopersist' option`
 
 == Workaround
 
-. Use the options -fs and -nopersist`` to record the base device name, as shown in the following example: IBMX336-250-111:/etc/udev/rules.d # snapdrive storage connect -fs /mnt/testfs -lun f3020-207-11:/vol/san1/lun200_0 -nolvm -nopersist .
+. Use the options `-fs` and `-nopersist` to record the base device name, as shown in the following example:
 +
-A file system is not created as expected, but the base device name is recorded (in this case, /dev/sdc).
+`*IBMX336-250-111:/etc/udev/rules.d # snapdrive storage connect -fs /mnt/testfs -lun f3020-207-11:/vol/san1/lun200_0 -nolvm -nopersist*``
++
+A file system is not created as expected, but the base device name is recorded (in this case, `/dev/sdc`).
 
-. Create the mkdir --p /mnt/testfs directory in the base device name.
-. Run blkid.
-. Specify the following: UUID=239ae9a1-75fd-4faf-b9f4-a0b80bf7b62c /mnt/testfs ext3
-. Mount the file system: #mount /mnt/testfs
-. Display the storage options: #snapdrive storage show -fs /mnt/testfs3
+. Create the `mkdir --p /mnt/testfs` directory in the base device name.
+. Run `blkid`.
+. Specify the following:
++
+`*UUID=239ae9a1-75fd-4faf-b9f4-a0b80bf7b62c /mnt/testfs ext3*`
+. Mount the file system:
++
+`*#mount /mnt/testfs*``
+. Display the storage options:
++
+`*#snapdrive storage show -fs /mnt/testfs3*`

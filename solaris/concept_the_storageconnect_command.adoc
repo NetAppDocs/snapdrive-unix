@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_the_storageconnect_command.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'The snapdrive storage connect command connects storage entities to the host. Using this command you can connect LUNs and storage entities to the host'
 ---
 = The storage connect command
@@ -9,12 +9,12 @@ summary: 'The snapdrive storage connect command connects storage entities to the
 :imagesdir: ../media/
 
 [.lead]
-The snapdrive storage connect command connects storage entities to the host. Using this command you can connect LUNs and storage entities to the host
+The `snapdrive storage connect` command connects storage entities to the host. Using this command you can connect LUNs and storage entities to the host
 
-Use the snapdrive storage connect command to connect to:
+Use the `snapdrive storage connect` command to connect to:
 
 * LUNs
 * A file system created directly on a LUN
 * Disk groups, host volumes, and file systems created on LUNs
 
-When you enter the snapdrive storage connect command to connect LUNs to the host, SnapDrive for UNIX performs the necessary discovery and mapping. It does not modify LUN contents.
+When you enter the `snapdrive storage connect` command to connect LUNs to the host, SnapDrive for UNIX performs the necessary discovery and mapping. It does not modify LUN contents.

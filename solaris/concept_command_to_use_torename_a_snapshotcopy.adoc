@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_command_to_use_torename_a_snapshotcopy.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Use the snapshot snap rename command to rename a Snapshot copy.'
 ---
 = Command to use to rename a Snapshot copy
@@ -9,4 +9,4 @@ summary: 'Use the snapshot snap rename command to rename a Snapshot copy.'
 :imagesdir: ../media/
 
 [.lead]
-Use the snapshot snap rename command to rename a Snapshot copy.
+Use the `snapshot snap rename` command to rename a Snapshot copy.

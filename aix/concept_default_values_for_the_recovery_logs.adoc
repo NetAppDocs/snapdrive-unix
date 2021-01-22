@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_default_values_for_the_recovery_logs.html
 sidebar: sidebar
-keywords: 
-summary: 'You can change the name of the recovery log file and the maximum number of old recovery log files that SnapDrive for UNIX saves.'
+keywords: snap, snapdrive, default, value, recovery, log
+summary: You can change the name of the recovery log file and the maximum number of old recovery log files that SnapDrive for UNIX saves.
 ---
 = Default values for the recovery logs
 :icons: font
@@ -11,10 +11,10 @@ summary: 'You can change the name of the recovery log file and the maximum numbe
 [.lead]
 You can change the name of the recovery log file and the maximum number of old recovery log files that SnapDrive for UNIX saves.
 
-The snapdrive.conf file enables you to set the following values for recovery logging:
+The `snapdrive.conf` file enables you to set the following values for recovery logging:
 
-* The name of the file containing the recovery log, such as recovery.log.
-* The maximum number of old recovery files that SnapDrive for UNIX saves. The default is 20. SnapDrive for UNIX keeps this number of recovery logs, if the problem with the process is not identified immediately. SnapDrive for UNIX starts a new recovery log file each time it completes an operation. Then, renames the previous one by adding an arbitrary number to the name, such as recovery.log.0, recovery.log.1, and so on.
+* The name of the file containing the recovery log, such as `recovery.log`.
+* The maximum number of old recovery files that SnapDrive for UNIX saves. The default is 20. SnapDrive for UNIX keeps this number of recovery logs, if the problem with the process is not identified immediately. SnapDrive for UNIX starts a new recovery log file each time it completes an operation. Then, renames the previous one by adding an arbitrary number to the name, such as `recovery.log.0`, `recovery.log.1`, and so on.
 
 NOTE: The size of the recovery log file depends on the operation that is performed. Each recovery log contains information about a single operation. When that operation is complete, SnapDrive for UNIX starts a new recovery log, regardless of how large the previous file was. As a result, there is no maximum size for a recovery log file.
 

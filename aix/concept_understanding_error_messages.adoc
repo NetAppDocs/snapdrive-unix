@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_understanding_error_messages.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX provides information about error messages, which appear at different locations and in various formats.'
+keywords: snap, snapdrive, error, message
+summary: SnapDrive for UNIX provides information about error messages, which appear at different locations and in various formats.
 ---
 = Understanding error messages
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_operations_performed_on_stand_alone_unix_systems.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX on stand-alone UNIX systems enable you to create storage and manage Snapshot copy of LUNs, file systems, logical volumes, and disk groups.'
+keywords: snap, snapdrive, operation, stand, alone
+summary: SnapDrive for UNIX on stand-alone UNIX systems enable you to create storage and manage Snapshot copy of LUNs, file systems, logical volumes, and disk groups.
 ---
 = Operations performed on stand-alone UNIX systems
 :icons: font

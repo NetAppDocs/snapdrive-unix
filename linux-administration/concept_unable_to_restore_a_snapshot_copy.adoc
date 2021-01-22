@@ -1,32 +1,32 @@
 ---
 permalink: linux-administration/concept_unable_to_restore_a_snapshot_copy.html
 sidebar: sidebar
-keywords: 
-summary: 'There are few conditions that affect the snapdrive snap restore command’s ability to restore a Snapshot copy.'
+keywords: snap, snapdrive, snapshot, restore, command, issuelun, scsi
+summary: There are few conditions that affect the snapdrive snap restore command’s ability to restore a Snapshot copy.
 ---
 = Unable to restore a Snapshot copy
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-There are few conditions that affect the snapdrive snap restore command's ability to restore a Snapshot copy.
+There are few conditions that affect the `snapdrive snap restore` command's ability to restore a Snapshot copy.
 
-* The snapdrive snap restorecommand must be able to perform the following tasks:
+* The `snapdrive snap restore` command must be able to perform the following tasks:
  ** Query all disk groups for a list of LUNs.
  ** Query all LUNs via SCSI command.
-The host volumes and file systems do not need to be available and mounted for thesnapdrive snap restorecommand to succeed.
+The host volumes and file systems do not need to be available and mounted for the `snapdrive snap restore` command to succeed.
 * The access permissions must allow the host to create and restore a Snapshot copy of information on that storage system.
 * The NFS mounted directory must be exported correctly to the host, so that it can be mounted.
 
 NOTE: You should always take another Snapshot copy after you add a LUN to or remove a LUN from a disk group.
 
-* If you add a host volume or file systems to a disk group after taking a Snapshot copy and then try to restore the Snapshot copy, you receive an error message. You must include the force option (-f) on the command-line for the restore operation to succeed in this situation.
+* If you add a host volume or file systems to a disk group after taking a Snapshot copy and then try to restore the Snapshot copy, you receive an error message. You must include the `force` option (`-f`) on the command-line for the restore operation to succeed in this situation.
 +
 NOTE: Host volumes and file systems that you add after taking a Snapshot copy are no longer accessible when you create and restore the Snapshot copy.
 
-* If you rename a host volume or a file system or change the mountpoint after taking a Snapshot copy and then try to restore it, the restore operation fails. You must include the force option (-f) on the command-line for the restore operation to succeed in this situation.
+* If you rename a host volume or a file system or change the mountpoint after taking a Snapshot copy and then try to restore it, the restore operation fails. You must include the `force` option (`-f`) on the command-line for the restore operation to succeed in this situation.
 +
-NOTE: Use the -f option with great care to make sure you do not accidentally overwrite something that you did not intend to overwrite.
+NOTE: Use the `-f` option with great care to make sure you do not accidentally overwrite something that you did not intend to overwrite.
 
 * If you rename a LUN after taking a Snapshot copy and then try to restore that Snapshot copy, the restore operation fails. After you rename a LUN, you should take a new Snapshot copy.
 +

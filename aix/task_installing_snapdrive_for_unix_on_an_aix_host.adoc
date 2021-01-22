@@ -1,7 +1,7 @@
 ---
 permalink: aix/task_installing_snapdrive_for_unix_on_an_aix_host.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use the System Management Interface Tool \(SMIT\) to install SnapDrive for UNIX on the AIX host.'
 ---
 = Installing SnapDrive for UNIX on an AIX host
@@ -15,20 +15,28 @@ You must ensure that you are logged in as a root user.
 
 IMPORTANT: You should not delete the directory where SnapDrive for UNIX is installed. If you delete the directory, there can be problems with starting and stopping the daemon.
 
+.Steps
+
 . Download the software from the NetApp Support Site.
-. Change to the directory on which you placed the uncompressed NetApp.snapdrive_aix_5_2.z file.
-. Start SMIT by running the following command: smit
+. Change to the directory on which you placed the uncompressed `NetApp.snapdrive_aix_5_2.z file`.
+. Start SMIT by running the following command:
++
+`*smit*`
 . Select the *Software Installation and Maintenance* option.
 . At the next screen, select the *Install and Update Software* menu option.
 . At the Install Software screen, specify the location of the software in one of the following ways:
  ** Manually enter the path of the location of the software.
  ** Press F4 to display a list of options.
+
++
 If you want to use the F4 method, complete the following steps:
 
  .. Press F4.
- .. At the prompt asking which software you want to install, enter: NetApp.snapdrive.
+ .. At the prompt asking which software you want to install, enter:
++
+`*NetApp.snapdrive*`.
  .. At the prompt asking whether you want to continue or cancel, press Enter to complete the installation.
-. Verify the software package installation by using the lslpp -l NetApp.snapdrive command.
+. Verify the software package installation by using the `lslpp -l NetApp.snapdrive` command.
 . Complete the setup by configuring SnapDrive for UNIX for the system.
 +
 Most of this information is set by default; however, you need to specify the following information:
@@ -36,14 +44,16 @@ Most of this information is set by default; however, you need to specify the fol
  .. Login information for the storage system
  .. AutoSupport settings
  .. Set the correct configuration value for the following options,SnapDrive for UNIX based on whether you are using the FC protocol or the iSCSI protocol:
-  *** default-transport
+  *** `default-transport`
 +
-Select FCP or iscsi depending on the protocol.
+Select `FCP` or `iscsi` depending on the protocol.
 
-  *** multipathing-type
+  *** `multipathing-type`
 +
 For FC, set it to any one of the following values:
 
-   **** NativeMPIO
-   **** DMP
-For iSCSI, set this to NativeMPIO or DMP.
+   **** `NativeMPIO`
+   **** `DMP`
+
++
+For iSCSI, set this to `NativeMPIO` or `DMP`.

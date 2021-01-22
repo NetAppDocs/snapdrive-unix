@@ -1,7 +1,7 @@
 ---
 permalink: solaris/task_setting_up_an_sfrac_i_o_fencing_environment_on_a_storage_system.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapDrive for UNIX provides storage provisioning and Snapshot management options to manage host cluster-wide shared and node-local disk groups, and file systems in an SFRAC environment.'
 ---
 = Setting up an SFRAC I/O fencing environment on a storage system
@@ -11,7 +11,9 @@ summary: 'SnapDrive for UNIX provides storage provisioning and Snapshot manageme
 [.lead]
 SnapDrive for UNIX provides storage provisioning and Snapshot management options to manage host cluster-wide shared and node-local disk groups, and file systems in an SFRAC environment.
 
-. Set up rsh or ssh manually to use the access-without-password-prompt for the root user on all host cluster nodes.
+.Steps
+
+. Set up `rsh` or `ssh` manually to use the access-without-password-prompt for the root user on all host cluster nodes.
 +
 For setup instructions, see the _Veritas Cluster Server Installation Guide for Solaris_.
 
@@ -23,13 +25,15 @@ If different versions of SnapDrive for UNIX are installed on different nodes, Sn
 +
 To learn about hardware requirements for hosts, see the SFRAC _Release Notes_.
 +
-NOTE: The /opt/NTAPsnapdrive/snapdrive.conf file on all the nodes must have the default-transportconfiguration variable set to FCP.
+NOTE: The `/opt/NTAPsnapdrive/snapdrive.conf` file on all the nodes must have the `default-transport` configuration variable set to FCP.
 
-. Set a value for the secure-communication-among-cluster-nodesconfiguration variable, to ensure that the rsh or ssh access-without-password-prompt for the root user is configured for all nodes in the cluster.
+. Set a value for the `_secure-communication-among-cluster-nodes_` configuration variable, to ensure that the `rsh` or `ssh` access-without-password-prompt for the root user is configured for all nodes in the cluster.
 +
 This value is necessary because, if you initiate the SnapDrive for UNIX commands from any node (master or nonmaster) in the host cluster, SnapDrive for UNIX carries out operations on other nodes in the host cluster.
 
-. Check for device discovery on the host cluster nodes by executing the following command on each node in the host cluster: snapdrive storage create -lun long_lun_name [lun_name...] -lunsize size [{-reserve | -noreserve}] [-igroupig_name [ig_name ...]]
+. Check for device discovery on the host cluster nodes by executing the following command on each node in the host cluster: 
++
+`*snapdrive storage create -lun _long_lun_name_ [_lun_name..._] -lunsize size [{_-reserve_ | _-noreserve_}] [_-igroup ig_name_ [_ig_name ..._]]*`
 +
 ----
 

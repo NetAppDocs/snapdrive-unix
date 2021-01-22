@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_volume_based_snap_restore_operation_fails_in_slave_node.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'With SFRAC on Solaris, volume-based snap restore \(vbsr\) operation fails in slave node.'
 ---
 = Volume-based snap restore operation fails in slave node
@@ -19,4 +19,4 @@ Status call to SDU daemon failed
 
 == Workaround
 
-While running a snap restore command with -vbsroption, you must ensure to use -force along with -noprompt option on the slave node.
+While running a `snap restore` command with `-vbsr` option, you must ensure to use `-force` along with `-noprompt` option on the slave node.

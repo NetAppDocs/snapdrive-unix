@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_deleting_a_snapshot_copy.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can delete a Snapshot copy on a storage system by using the snapdrive snap delete command.'
 ---
 = Deleting a Snapshot copy
@@ -9,4 +9,4 @@ summary: 'You can delete a Snapshot copy on a storage system by using the snapdr
 :imagesdir: ../media/
 
 [.lead]
-You can delete a Snapshot copy on a storage system by using the snapdrive snap delete command.
+You can delete a Snapshot copy on a storage system by using the `snapdrive snap delete` command.

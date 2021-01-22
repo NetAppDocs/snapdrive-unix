@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_operation_with_multiple_operations_manager_servers_managing_storage_systems.html
 sidebar: sidebar
-keywords: 
-summary: 'The following output shows the error message you would receive when storage systems are managed by multiple Operations Managers console.'
+keywords: snap, snapdrive, multiple, console, server, storage, manager, operations
+summary: The following output shows the error message you would receive when storage systems are managed by multiple Operations Managers console.
 ---
 = Operation with multiple Operations Manager console servers managing storage systems
 :icons: font

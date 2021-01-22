@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_unable_to_start_the_daemon.html
 sidebar: sidebar
-keywords: 
-summary: 'The daemon cannot be started when the daemon finds few stale entries in the snapdrive process.'
+keywords: snap, snapdrive, daemon, start, error
+summary: The daemon cannot be started when the daemon finds few stale entries in the snapdrive process.
 ---
 = Unable to start the daemon
 :icons: font
@@ -26,4 +26,4 @@ During the daemon restart/start operation, you can encounter staled snapdrive pr
 The workaround for this problem is to execute the following:
 
 * Manually delete the stale entries in the snapdrive process.
-* Find the free ports that are available in the host. Then, in the snapdrive.conf file, specify the port in the option contact-http-port-sdu-daemon.
+* Find the free ports that are available in the host. Then, in the `snapdrive.conf` file, specify the port in the option `_contact-http-port-sdu-daemon_`.

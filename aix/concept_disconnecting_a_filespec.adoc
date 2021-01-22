@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_disconnecting_a_filespec.html
 sidebar: sidebar
-keywords: 
-summary: 'You can disconnect a file specification. The following example describes how you can complete this operation.'
+keywords: snap, snapdrive, disconnect, file, specification, filespec
+summary: You can disconnect a file specification. The following example describes how you can complete this operation.
 ---
 = Disconnecting a file specification
 :icons: font
@@ -11,7 +11,7 @@ summary: 'You can disconnect a file specification. The following example describ
 [.lead]
 You can disconnect a file specification. The following example describes how you can complete this operation.
 
-The layout of /mnt/fs1_0 is given in the following.
+The layout of `/mnt/fs1_0` is given in the following.
 
 ----
 # snapdrive storage show -fs /mnt/fs_1_0 -capabilities
@@ -23,7 +23,7 @@ device filename    adapter  path    size    proto   state   clone         lun pa
 /dev/sde              -      P      100m    iscsi   online  flex-clone    homer:/vol/Snapdrive_vol1_volume_clone_from_snap2_snapshot/lun1    vol1:snap2
 ----
 
-The following output shows how to disconnect the file system /mnt/fs_1_0:
+The following output shows how to disconnect the file system `/mnt/fs_1_0`:
 
 ----
 #snapdrive snap disconnect -fs /mnt/fs_1_0
@@ -33,7 +33,7 @@ The following output shows how to disconnect the file system /mnt/fs_1_0:
          - deleting volume clone ... homer:/vol/Snapdrive_vol1_volume_clone_from_snap2_snapshot  done
 ----
 
-After disconnecting the file system /mnt/fs_1_0, SnapDrive for UNIX also deletes the cloned volume Snapdrive_vol1_0_volume_clone_from_snap2_snapshot, if the following conditions are met:
+After disconnecting the file system `/mnt/fs_1_0`, SnapDrive for UNIX also deletes the cloned volume `Snapdrive_vol1_0_volume_clone_from_snap2_snapshot`, if the following conditions are met:
 
 * No mapped LUNs are present in the volume
 * No new LUNs are present

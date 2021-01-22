@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_operations_manager_unavailable.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX needs Operations Manager console for access checks. Sometimes Operations Manager console server might not be available for various reasons.'
+keywords: snap, snapdrive, operations, manager, access, check, console, unavailable
+summary: SnapDrive for UNIX needs Operations Manager console for access checks. Sometimes Operations Manager console server might not be available for various reasons.
 ---
 = Operations Manager console unavailable
 :icons: font
@@ -11,7 +11,7 @@ summary: 'SnapDrive for UNIX needs Operations Manager console for access checks.
 [.lead]
 SnapDrive for UNIX needs Operations Manager console for access checks. Sometimes Operations Manager console server might not be available for various reasons.
 
-When the RBAC method rbac-method = dfm is set and Operations Manager console is not available, SnapDrive for UNIX displays the following error message:
+When the RBAC method `rbac-method = dfm` is set and Operations Manager console is not available, SnapDrive for UNIX displays the following error message:
 
 ----
 [root]# snapdrive storage delete -lun storage_array1:/vol/vol2/qtree1/lun1
@@ -20,6 +20,6 @@ When the RBAC method rbac-method = dfm is set and Operations Manager console is 
 
 SnapDrive for UNIX can also maintain a cache of the user access check results returned by Operations Manager console. This cache is valid for 24 hours and is not configurable. If Operations Manager console is not available then SnapDrive for UNIX uses the cache to determine access. This cache is used only when all the configured Operations Manager console servers do not respond.
 
-For SnapDrive for UNIX to use the cache for an access check, you must turn on the rbac-cache configuration variable must be turned on to maintain the cache of access results. The rbac-cache configuration variable is off by default.
+For SnapDrive for UNIX to use the cache for an access check, you must turn on the `_rbac-cache_` configuration variable must be turned on to maintain the cache of access results. The `_rbac-cache_` configuration variable is off by default.
 
-To use SnapDrive for UNIX even when Operations Manager console is not available, the server administrator must reset the role-based access control (RBAC) method to rbac-method = native in the snapdrive.conf file. After you change the snapdrive.conf file, you must restart the SnapDrive for UNIX daemon. When rbac-method = native is set, only root user can use SnapDrive for UNIX.
+To use SnapDrive for UNIX even when Operations Manager console is not available, the server administrator must reset the role-based access control (RBAC) method to `_rbac-method = native_` in the snapdrive.conf file. After you change the snapdrive.conf file, you must restart the SnapDrive for UNIX daemon. When `_rbac-method = native_` is set, only root user can use SnapDrive for UNIX.

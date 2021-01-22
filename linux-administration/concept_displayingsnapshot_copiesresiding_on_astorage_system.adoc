@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_displayingsnapshot_copiesresiding_on_astorage_system.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the SnapDrive command to display Snapshot copies on a storage system.'
+keywords: snap, snapdrive, snapshot, storage, copy, display
+summary: You can use the SnapDrive command to display Snapshot copies on a storage system.
 ---
 = Displaying Snapshot copies residing on a storage system
 :icons: font
@@ -13,4 +13,4 @@ You can use the SnapDrive command to display Snapshot copies on a storage system
 
 To display information about Snapshot copies residing on a storage system, use the following syntax:
 
-snapdrive snap show -filer filername [filername...] [-verbose]
+`snapdrive snap show -filer filername [filername...] [-verbose]``

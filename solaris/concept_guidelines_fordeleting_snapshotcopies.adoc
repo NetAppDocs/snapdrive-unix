@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_guidelines_fordeleting_snapshotcopies.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You cannot delete a Snapshot copy that is in use, or if the Snapshot copy is across multiple storage system volumes.'
 ---
 = Guidelines for deleting Snapshot copies
@@ -11,7 +11,7 @@ summary: 'You cannot delete a Snapshot copy that is in use, or if the Snapshot c
 [.lead]
 You cannot delete a Snapshot copy that is in use, or if the Snapshot copy is across multiple storage system volumes.
 
-Follow these guidelines when you use the snapdrive snap delete command:
+Follow these guidelines when you use the `snapdrive snap delete` command:
 
-* The Snapshot delete operation fails if any of the Snapshot copies you want to delete are in use, or not created by SnapDrive for UNIX. You can override this behavior by including the -forceoption with the snapdrive snap delete command.
+* The Snapshot delete operation fails if any of the Snapshot copies you want to delete are in use, or not created by SnapDrive for UNIX. You can override this behavior by including the `-force` option with the `snapdrive snap delete` command.
 * If you have a Snapshot copy that spans multiple storage system volumes, you must manually delete the Snapshot copy on each volume.

@@ -1,7 +1,7 @@
 ---
 permalink: solaris/reference_stack_requirements.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapDrive for UNIX requires a host operating system, host file systems, NFS, volume managers, FC or iSCSI Host Utilities, storage system licenses, ONTAP software, MultiStore software, and Internet Protocol \(IP\) access. SnapDrive for UNIX also has certain stack requirements which it must fulfill.'
 ---
 = Stack requirements
@@ -31,11 +31,12 @@ The following is a list of guest-side entities:
 
 == SnapDrive for UNIX stack
 
-You must enter acceptable values for the multipathing-type, fstype, default-transport, and vmtype variables in the snapdrive.conf file as provided in the matrix stack. You must verify that the values entered are installed and running in your host system.
+You must enter acceptable values for the `_multipathing-type_`, `_fstype_`, `_default-transport_`, and `_vmtype_` variables in the `snapdrive.conf` file as provided in the matrix stack. You must verify that the values entered are installed and running in your host system.
 
+[options="header"]
 |===
 | Host platform| Default transport type| Multipathing type| fstype| vmtype
-a|
+.4+a|
 Solaris x86
 a|
 FCP
@@ -69,7 +70,7 @@ a|
 ufs
 a|
 svm
-a|
+.5+a|
 Solaris SPARC
 a|
 FCP

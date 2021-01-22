@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-7mode/task_provisioning_volumes.html
 sidebar: sidebar
-keywords: 
-summary: 'Data ONTAP enables you to provision storage by creating a volume on the storage system and mounting the volume to the host with NFS protocol enabled.'
+keywords: snap, snapdrive, volume, provision, storage
+summary: Data ONTAP enables you to provision storage by creating a volume on the storage system and mounting the volume to the host with NFS protocol enabled.
 ---
 = Provisioning volumes
 :icons: font

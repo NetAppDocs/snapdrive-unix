@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_snapdrive_for_unix_does_not_show_supported_file_system_types_for_storage_create_operation.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapDrive for UNIX does not show the supported file system types for storage create operation.'
 ---
 = SnapDrive for UNIX does not show the supported file system types for storage create operation
@@ -11,7 +11,7 @@ summary: 'SnapDrive for UNIX does not show the supported file system types for s
 [.lead]
 SnapDrive for UNIX does not show the supported file system types for storage create operation.
 
-The snapdrive storage create operation fails to create a UFS file system over raw LUNs (LUNs without any volume manager components), using the -fstype option and the iSCSI transport, if the following are true:
+The snapdrive storage create operation fails to create a UFS file system over raw LUNs (LUNs without any volume manager components), using the `-fstype` option and the iSCSI transport, if the following are true:
 
 * UFS file system is present
 * VxVM components (VxVM, VxFS and DMP) are not installed
@@ -25,4 +25,4 @@ The following error message is displayed, if the operation fails.
 
 == Workaround
 
-Unload the Emulex driver (lpfc) on the host using the modunloadcommand.
+Unload the Emulex driver (lpfc) on the host using the `modunload` command.

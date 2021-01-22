@@ -1,7 +1,7 @@
 ---
 permalink: solaris/task_configuring_virtual_storage_console_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You must configure Virtual Storage Console to access the storage system, and use the login names and passwords assigned to the storage system.'
 ---
 = Configuring Virtual Storage Console for SnapDrive for UNIX
@@ -12,6 +12,8 @@ summary: 'You must configure Virtual Storage Console to access the storage syste
 You must configure Virtual Storage Console to access the storage system, and use the login names and passwords assigned to the storage system.
 
 Ensure that Virtual Storage Console is installed in the windows system where VMware vCenter resides.
+
+.Steps
 
 . In the *vCenter Home* view, under *Solutions and Applications* click *NetApp* in the *NetApp Virtual Console* screen.
 . Click the *Backup and Recovery*, and then click the *Setup* to view the storage system entries.

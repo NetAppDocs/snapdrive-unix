@@ -1,17 +1,17 @@
 ---
 permalink: linux-administration/concept_the_storagedisconnect_command.html
 sidebar: sidebar
-keywords: 
-summary: 'The storage disconnect operation removes the LUNs, or the LUNs and storage entities that were mapped to the host using the snapdrive storage create or snapdrive storage connect command.'
+keywords: snap, snapdrive, storage, disconnect, lun, remove
+summary: The storage disconnect operation removes the LUNs, or the LUNs and storage entities that were mapped to the host using the snapdrive storage create or snapdrive storage connect command.
 ---
 = The storage disconnect command
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Thestorage disconnect operation removes the LUNs, or the LUNs and storage entities that were mapped to the host using the snapdrive storage create or snapdrive storage connect command.
+The `storage disconnect` operation removes the LUNs, or the LUNs and storage entities that were mapped to the host using the `snapdrive storage create` or `snapdrive storage connect` command.
 
-Use thesnapdrive storage disconnect command to disconnect:
+Use the `snapdrive storage disconnect` command to disconnect:
 
 * LUNs
 * A file system created directly on a LUN

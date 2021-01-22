@@ -1,23 +1,24 @@
 ---
 permalink: aix/concept_informationrequired_forusing_the_snapdrive_snapshow_or_list_commands.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the command snapdrive snap show or list to display information about storage systems, storage system volumes, disks, or volume groups, file system, Snapshot copies, and so on.'
+keywords: snap, snapdrive, show, list, command, information, required
+summary: You can use the command snapdrive snap show or list to display information about storage systems, storage system volumes, disks, or volume groups, file system, Snapshot copies, and so on.
 ---
 = Information required for using the snapdrive snap show or list commands
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the command snapdrive snap show or list to display information about storage systems, storage system volumes, disks, or volume groups, file system, Snapshot copies, and so on.
+You can use the command `snapdrive snap show` or `list` to display information about storage systems, storage system volumes, disks, or volume groups, file system, Snapshot copies, and so on.
 
-The following table gives the information you need to supply when you use the snapdrive snap show | list command.
+The following table gives the information you need to supply when you use the `snapdrive snap show | list` command.
 
-NOTE: You can use the same arguments regardless of whether you enter snapdrive snap show or snapdrive snap list as the command. These commands are synonyms.
+NOTE: You can use the same arguments regardless of whether you enter `snapdrive snap show` or `snapdrive snap list` as the command. These commands are synonyms.
 
+[options="header"]
 |===
 | Requirement/Option| Argument
-a|
+2+a|
 Based on the command you enter, you can display information about any of the following:
 
 * Storage systems
@@ -27,45 +28,45 @@ Based on the command you enter, you can display information about any of the fol
 * Host or logical volumes
 * Snapshot copies
 
-The value you enter for the file_spec argument must identify the storage entity about which you want to display information. The command assumes the entities are on the current host.
+The value you enter for the `file_spec` argument must identify the storage entity about which you want to display information. The command assumes the entities are on the current host.
 
 a|
-Storage system (-filer)
+Storage system (`-filer`)
 a|
-filername
+`_filername_`
 a|
-A volume on the storage system (-filervol)
+A volume on the storage system (`-filervol`)
 a|
-filervol
+`_filervol_`
 a|
-Disk group (-dgfile_spec) or volume group (-vgfile_spec)
+Disk group (`-dg _file_spec_`) or volume group (`-vg _file_spec_`)
 
 a|
-name of the disk or volume group
+`_name of the disk or volume group_`
 a|
-File system (-fsfile_spec)
+File system (`-fs _file_spec_`)
 a|
-filesystem_name
+`_filesystem_name_`
 a|
-Host volume (-hostvolfile_spec) or logical volume (-lvolfile_spec)
+Host volume (`-hostvol _file_spec_`) or logical volume (`-lvol _file_spec_`)
 
 a|
-name of the host or logical volume
+`_name of the host or logical volume_`
 a|
-Snapshot copy name (-snapnamelong_snap_name)
+Snapshot copy name (`-snapname _long_snap_name_`)
 a|
-long_snap_name
+`_long_snap_name_`
 a|
 Additional Snapshot copy names
 a|
-snap_name (long or short version)
-a|
-If you want to display information about a Snapshot copy, specify the name for the Snapshot copy. For the first Snapshot copy, long_snap_name, enter the long version of the name, which includes the storage system name, volume, and Snapshot copy name. You can use the short version of the Snapshot copy name if it is on the same storage system and volume.
+`_snap_name_` (long or short version)
+2+a|
+If you want to display information about a Snapshot copy, specify the name for the Snapshot copy. For the first Snapshot copy, `_long_snap_name_`, enter the long version of the name, which includes the storage system name, volume, and Snapshot copy name. You can use the short version of the Snapshot copy name if it is on the same storage system and volume.
 
 a|
--verbose
+`-verbose`
 a|
 ~
-a|
-To display additional information, include the -verbose option.
+2+a|
+To display additional information, include the `-verbose` option.
 |===

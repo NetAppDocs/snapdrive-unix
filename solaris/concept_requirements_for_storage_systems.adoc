@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_requirements_for_storage_systems.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You must consider the storage system requirements before setting it up.'
 ---
 = Requirements for storage systems
@@ -11,6 +11,7 @@ summary: 'You must consider the storage system requirements before setting it up
 [.lead]
 You must consider the storage system requirements before setting it up.
 
+[options="header"]
 |===
 | Component| Requirement
 a|
@@ -20,7 +21,7 @@ a|
 Data ONTAP 7.3.5 or later.
 
 * SnapDrive for UNIX supports FlexVol volumes but does not use all FlexVol volume features.
-* Configurations that use NFS must use Data ONTAP 7.3.5 or later and FlexVol volumes must use snapdrive snap connect to read and write to a connected NFS file or directory tree.
+* Configurations that use NFS must use Data ONTAP 7.3.5 or later and FlexVol volumes must use `snapdrive snap connect` to read and write to a connected NFS file or directory tree.
 +
 Configurations with traditional volumes are provided with read-only access to NFS files and directory trees.
 

@@ -1,14 +1,14 @@
 ---
 permalink: aix/concept_command_syntax_for_disconnectingluns_and_storageentities_from_thehost.html
 sidebar: sidebar
-keywords: 
-summary: 'To use the snapdrive storage disconnect command to remove the mappings for the LUNs with storage entities, use the following syntax:'
+keywords: snap, snapdrive, command, syntax, disconnect, lun, storage, host, entity
+summary: To use the snapdrive storage disconnect command to remove the mappings for the LUNs with storage entities, use the following syntax:
 ---
 = Command syntax for disconnecting LUNs and storage entities from the host
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To use the snapdrive storage disconnect command to remove the mappings for the LUNs with storage entities, use the following syntax:
+To use the `snapdrive storage disconnect` command to remove the mappings for the LUNs with storage entities, use the following syntax:
 
-snapdrive storage disconnect { -dg | -fs | -hostvol } file_spec [file_spec...] [{ -dg | -fs | -hostvol } file_spec [file_spec...] ...] [-full] [-fstype type] [-vmtype type]
+`*snapdrive storage disconnect { -dg | -fs | -hostvol } _file_spec_ [_file_spec_...] [{ -dg | -fs | -hostvol } _file_spec_ [_file_spec_...] ...] [-full] [-fstype _type_] [-vmtype _type_]*`

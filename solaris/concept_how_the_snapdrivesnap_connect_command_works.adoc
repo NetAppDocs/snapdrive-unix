@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_how_the_snapdrivesnap_connect_command_works.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When you use the snapdrive snap connect command, it clones the storage for the entity you specify and imports it to the host:'
 ---
 = How the snapdrive snap connect command works
@@ -9,14 +9,14 @@ summary: 'When you use the snapdrive snap connect command, it clones the storage
 :imagesdir: ../media/
 
 [.lead]
-When you use the snapdrive snap connect command, it clones the storage for the entity you specify and imports it to the host:
+When you use the `snapdrive snap connect` command, it clones the storage for the entity you specify and imports it to the host:
 
-* If you specify a Snapshot copy that contains a LUN (-lun), SnapDrive for UNIX maps a new copy of the LUN to the host. You cannot use the snapdrive snap connect command to specify a LUN on the same command line with other storage entities (-vg, -dg, -fs, -lvol, or - hostvol).
+* If you specify a Snapshot copy that contains a LUN (`-lun`), SnapDrive for UNIX maps a new copy of the LUN to the host. You cannot use the `snapdrive snap connect` command to specify a LUN on the same command line with other storage entities (`-vg`, `-dg`, `-fs`, `-lvol`, or `- hostvol`).
 * If you specify a file system that resides directly on a LUN, SnapDrive for UNIX maps the LUN to the host and mounts the file system.
-* If the source mount point is specified as the relative pathname in the snap connect command, SnapDrive for UNIX ignores the destination mount point specified in CLI and uses internal naming convention of the format source_mount_point_<N> to name the destination mount point.
-* If you specify a Snapshot copy that contains a disk group, or a host volume or file system that is part of a disk group, the snapdrive snap connect command connects the entire target disk group. To make the connection, SnapDrive for UNIX re-activates all of the logical volumes for the target disk group and mounts all the file systems on the logical volumes.
-* If you specify autorename option with the snap connect command, host volumes and file systems are always renamed. The disk groups are renamed only if they already exist on the host.
-* If you specify a Snapshot copy that contains an NFS directory tree, SnapDrive for UNIX creates a clone of the FlexVol volume that contains the NFS directory tree. SnapDrive for UNIX then connects the volume to the host and mounts the NFS file system. Within the directory tree, SnapDrive for UNIX deletes any new NFS files or directories that you create after you created the Snapshot copy. SnapDrive for UNIX deletes any files or directories from the FlexVol volume that are outside the NFS directories that you connect, if the snapconnect-nfs-removedirectories configuration option is set to on.
-* If you connect a Snapshot copy that contains NFS directory trees using the -readonly option, SnapDrive for UNIX mounts the Snapshot copy of the directory directly without creating a clone. You cannot use the snapdrive snap connect command to specify NFS mountpoints on the same command line as non-NFS entities; that is, using the options -vg, -dg, -fs, -lvol, or - hostvol.
+* If the source mount point is specified as the relative pathname in the `snap connect` command, SnapDrive for UNIX ignores the destination mount point specified in CLI and uses internal naming convention of the format `source_mount_point_<N>` to name the destination mount point.
+* If you specify a Snapshot copy that contains a disk group, or a host volume or file system that is part of a disk group, the `snapdrive snap connect` command connects the entire target disk group. To make the connection, SnapDrive for UNIX re-activates all of the logical volumes for the target disk group and mounts all the file systems on the logical volumes.
+* If you specify `autorename` option with the snap connect command, host volumes and file systems are always renamed. The disk groups are renamed only if they already exist on the host.
+* If you specify a Snapshot copy that contains an NFS directory tree, SnapDrive for UNIX creates a clone of the FlexVol volume that contains the NFS directory tree. SnapDrive for UNIX then connects the volume to the host and mounts the NFS file system. Within the directory tree, SnapDrive for UNIX deletes any new NFS files or directories that you create after you created the Snapshot copy. SnapDrive for UNIX deletes any files or directories from the FlexVol volume that are outside the NFS directories that you connect, if the `snapconnect-nfs-removedirectories` configuration option is set to on.
+* If you connect a Snapshot copy that contains NFS directory trees using the `-readonly` option, SnapDrive for UNIX mounts the Snapshot copy of the directory directly without creating a clone. You cannot use the `snapdrive snap connect` command to specify NFS mountpoints on the same command line as non-NFS entities; that is, using the options `-vg`, `-dg`, `-fs`, `-lvol`, or `- hostvol`.
 
-NOTE: The snap connect operations with -split option in vFiler environment are supported with Data ONTAP 7.3 and later.
+NOTE: The `snap connect` operations with `-split` option in vFiler environment are supported with Data ONTAP 7.3 and later.

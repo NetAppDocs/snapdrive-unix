@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_informationrequired_forusing_the_snapdrive_storageresize_command.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'There is some information that you need to supply before you can use the snapdrive storage resize command. This information helps you in using the command correctly.'
 ---
 = Information required for using the snapdrive storage resize command
@@ -9,11 +9,12 @@ summary: 'There is some information that you need to supply before you can use t
 :imagesdir: ../media/
 
 [.lead]
-There is some information that you need to supply before you can use the snapdrive storage resize command. This information helps you in using the command correctly.
+There is some information that you need to supply before you can use the `snapdrive storage resize` command. This information helps you in using the command correctly.
 
+[options="header"]
 |===
 | Requirement| Argument
-a|
+2+a|
 Decide whether you want to increase the size of a disk or volume group and enter that entity's name with the appropriate argument.
 
 a|
@@ -22,55 +23,55 @@ Disk group (-dg file_spec) or volume group (-vg file_spec)
 a|
 _name of the disk or volume group_
 
-a|
+2+a|
 Decide how you want to increase the storage size. Remember the following when you use this command:
 
-* Use the -growby option to increase the entity size by the bytes specified in the size argument.
-* Use the -growto option to increase the entity size so that the new total size is the number of bytes specified in the size argument.
-* Use the -addlun option to increase the entity size by adding a new, internally-generated LUN to the underlying disk group. If you do not use this argument, SnapDrive for UNIX increases the size of the last LUN in the disk group to meet the byte size specified in either the -growby option or the -growto option.
+* Use the `-growby` option to increase the entity size by the bytes specified in the size argument.
+* Use the `-growto` option to increase the entity size so that the new total `_size_` is the number of bytes specified in the size argument.
+* Use the `-addlun` option to increase the entity size by adding a new, internally-generated LUN to the underlying disk group. If you do not use this argument, SnapDrive for UNIX increases the size of the last LUN in the disk group to meet the byte size specified in either the `-growby` option or the `-growto` option.
 
 a|
-Specify the number of bytes by which you want to increase the storage (-growbysize)
+Specify the number of bytes by which you want to increase the storage (`-growby _size_`)
 
 a|
-number_of_bytes
+`_number_of_bytes_`
 a|
-Specify the size in bytes that you want the storage to reach (-growtosize)
+Specify the size in bytes that you want the storage to reach (`-growto _size_`)
 
 a|
-number_of_bytes
+`_number_of_bytes_`
 a|
-Tell SnapDrive for UNIX to increase the size by adding a new LUN to the disk group (-addlun)
-
-== a|
-
-a|
-Tell SnapDrive for UNIX to increase the size with or without creating a space reservation -reserve | -noreserve
+Tell SnapDrive for UNIX to increase the size by adding a new LUN to the disk group (`-addlun`)
 
 == a|
 
 a|
+Tell SnapDrive for UNIX to increase the size with or without creating a space reservation `-reserve \| -noreserve`
+
+a|
+
+2+a|
 *Optional:* It is recommended that you use the default igroup for your host instead of supplying an igroup name.
 
 a|
-Igroup name (-igroup)
+Igroup name (`-igroup`)
 
 a|
-ig_name
+`_ig_name_`
 
 a|
--fstype
+`_-fstype_`
 
 a|
-type
+`_type_`
 
 a|
--vmtype
+`-vmtype`
 
 a|
-type
+`_type_`
 
-a|
+2+a|
 *Optional:* Specifies the type of file system and volume manager to be used for SnapDrive for UNIX operations.
 
 |===

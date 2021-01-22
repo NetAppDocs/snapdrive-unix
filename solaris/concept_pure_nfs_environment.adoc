@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_pure_nfs_environment.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'If you configure a system for multiple subnets and one or more NFS volumes are mounted through the management interface, then you should always configure the first data interface as the management interface.'
 ---
 = Pure NFS environment
@@ -11,7 +11,7 @@ summary: 'If you configure a system for multiple subnets and one or more NFS vol
 [.lead]
 If you configure a system for multiple subnets and one or more NFS volumes are mounted through the management interface, then you should always configure the first data interface as the management interface.
 
-In the following example, the management interface is 10.72.221.19, and the data interface is 10.72.220.45.
+In the following example, the management interface is `10.72.221.19`, and the data interface is `10.72.220.45`.
 
 ----
 # snapdrive config list

@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_diagnostic_files_installed_by_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapDrive for UNIX installs diagnostic files that help detect problems in SnapDrive for UNIX.'
 ---
 = Diagnostic files installed by SnapDrive for UNIX
@@ -11,11 +11,11 @@ summary: 'SnapDrive for UNIX installs diagnostic files that help detect problems
 [.lead]
 SnapDrive for UNIX installs diagnostic files that help detect problems in SnapDrive for UNIX.
 
-* /opt/NTAPsnapdrive/diag/snapdrive.dc
-* /opt/NTAPsnapdrive/diag/solaris_info
-* /opt/NTAPsnapdrive/diag/filer_info
-* /opt/NTAPsnapdrive/diag/brocade_info
-* /opt/NTAPsnapdrive/diag/cisco_info
-* /opt/NTAPsnapdrive/diag/mcdata_info
-* /opt/NTAPsnapdrive/diag/SHsupport.pm
-* /opt/NTAPsnapdrive/diag/Telnet.pm
+* `/opt/NTAPsnapdrive/diag/snapdrive.dc`
+* `/opt/NTAPsnapdrive/diag/solaris_info`
+* `/opt/NTAPsnapdrive/diag/filer_info`
+* `/opt/NTAPsnapdrive/diag/brocade_info`
+* `/opt/NTAPsnapdrive/diag/cisco_info`
+* `/opt/NTAPsnapdrive/diag/mcdata_info`
+* `/opt/NTAPsnapdrive/diag/SHsupport.pm`
+* `/opt/NTAPsnapdrive/diag/Telnet.pm`

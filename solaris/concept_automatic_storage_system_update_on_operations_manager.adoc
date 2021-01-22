@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_automatic_storage_system_update_on_operations_manager.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Operations Manager console discovers the storage systems supported on your network. It periodically monitors data that it collects from the discovered storage systems. The data is refreshed at a set interval. The Operations Manager console administrator can configure the refresh interval.'
 ---
 = Automatic storage system update on Operations Manager console
@@ -14,8 +14,8 @@ Operations Manager console discovers the storage systems supported on your netwo
 LUN monitoring Interval, qtree monitoring Interval, and vFiler monitoring interval are important fields that decide the frequency of LUN, qtree, and vFiler updates. For example, if a new LUN is created on a storage system, the new LUN is not immediately updated on Operations Manager console. For this reason, and access check issued to Operations Manager console for that LUN to Operations Manager console fails. To avoid this situation, you can modify the LUN monitoring interval to suit your requirements.
 
 . Select *Setup* > *Options* in Operations Manager console to change the monitoring interval.
-. The Operations Manager console administrator can also forcefully refresh Operations Manager console by executing dfm host discovery filername in the command-line interface.
-. The Operations Manager console administrator can also grant DFM.Database.Write capability on the global group to sd-admin to enable SnapDrive for UNIX to refresh storage system entities on Operations Manager console.
+. The Operations Manager console administrator can also forcefully refresh Operations Manager console by executing `dfm host discovery filername` in the command-line interface.
+. The Operations Manager console administrator can also grant `DFM.Database.Write` capability on the global group to sd-admin to enable SnapDrive for UNIX to refresh storage system entities on Operations Manager console.
 +
 ----
 # dfm role add sd-admin-role DFM.Database.Write Global

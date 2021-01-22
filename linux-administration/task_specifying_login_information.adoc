@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/task_specifying_login_information.html
 sidebar: sidebar
-keywords: 
-summary: 'You must specify the user login information for a storage system. Depending on what you specified when you set up the storage system, each storage system could use either the same user name or password or a unique user name or password. If all the storage systems use the same user name or password information, you must perform the following steps once. If the storage systems use unique user names or passwords, you must repeat the following steps for each storage system.'
+keywords: snap, snapdrive, login, user, password
+summary: You must specify the user login information for a storage system. Depending on what you specified when you set up the storage system, each storage system could use either the same user name or password or a unique user name or password. If all the storage systems use the same user name or password information, you must perform the following steps once. If the storage systems use unique user names or passwords, you must repeat the following steps for each storage system.
 ---
 = Specifying login information
 :icons: font
@@ -13,19 +13,23 @@ You must specify the user login information for a storage system. Depending on w
 
 Ensure that you are logged in as a root user.
 
-. Enter the following command: snapdrive config setuser_namefilername [filername...]
+.Steps
+
+. Enter the following command:
 +
-user_name is the user name that was specified for that storage system when you first set it up.
+`*snapdrive config set _user_name filername_ [_filername..._]*`
 +
-filername is the name of the storage system.
+`_user_name_` is the user name that was specified for that storage system when you first set it up.
 +
-[filername...] defines that you can enter multiple storage system names on one command line if they all have the same user login or password. You must enter the name of at least one storage system.
+`_filername_` is the name of the storage system.
++
+`_[filername...]_` defines that you can enter multiple storage system names on one command line if they all have the same user login or password. You must enter the name of at least one storage system.
 
 . At the prompt, enter the password, if there is one.
 +
 NOTE: If no password was set, press Enter (the null value) when prompted for a password.
 +
-This example sets up a user called root for a storage system called toaster:
+This example sets up a user called `root` for a storage system called toaster:
 +
 ----
 # snapdrive config set root toaster
@@ -33,7 +37,7 @@ Password for root:
 Retype Password:
 ----
 +
-This example sets up one user called root for three storage systems:
+This example sets up one user called `root` for three storage systems:
 +
 ----
 # snapdrive config set root toaster oven broiler

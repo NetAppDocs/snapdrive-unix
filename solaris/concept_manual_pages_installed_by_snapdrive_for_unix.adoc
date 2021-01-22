@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_manual_pages_installed_by_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'SnapDrive for UNIX provides man pages in several formats.'
 ---
 = Man pages installed by SnapDrive for UNIX
@@ -13,15 +13,15 @@ SnapDrive for UNIX provides man pages in several formats.
 
 The man pages are available at the following location:
 
-* /opt/NTAPsnapdrive/docs/snapdrive.1
-* /opt/NTAPsnapdrive/docs/snapdrived.1
-* /opt/NTAPsnapdrive/docs/snapdrive.1.html
-* /opt/NTAPsnapdrive/docs/snapdrived.1.html
-* /opt/NTAPsnapdrive/docs/solaris_info.1
-* /opt/NTAPsnapdrive/docs/brocade_info.1
-* /opt/NTAPsnapdrive/docs/mcdata_info.1
-* /opt/NTAPsnapdrive/docs/cisco_info.1
-* /opt/NTAPsnapdrive/docs/filer_info.1
-* /opt/NTAPsnapdrive/docs/snapdrive.dc.1
+* `/opt/NTAPsnapdrive/docs/snapdrive.1`
+* `/opt/NTAPsnapdrive/docs/snapdrived.1`
+* `/opt/NTAPsnapdrive/docs/snapdrive.1.html`
+* `/opt/NTAPsnapdrive/docs/snapdrived.1.html`
+* `/opt/NTAPsnapdrive/docs/solaris_info.1`
+* `/opt/NTAPsnapdrive/docs/brocade_info.1`
+* `/opt/NTAPsnapdrive/docs/mcdata_info.1`
+* `/opt/NTAPsnapdrive/docs/cisco_info.1`
+* `/opt/NTAPsnapdrive/docs/filer_info.1`
+* `/opt/NTAPsnapdrive/docs/snapdrive.dc.1`
 
-If you install SnapDrive for UNIX in a sparse root zone, it will not add man pages at /usr/share/man/ because /usr/share/man/ is mounted as a read-only file system. To extract the man pages in a sparse root zone, run the pkgtrans NTAPsnapdrive.pkg /tmp command. After you run the command, the man pages are extracted to /tmp/NTAPsnapdrive/root/opt/NTAPsnapdrive/docs .
+If you install SnapDrive for UNIX in a sparse root zone, it will not add man pages at `/usr/share/man/` because `/usr/share/man/` is mounted as a read-only file system. To extract the man pages in a sparse root zone, run the `pkgtrans NTAPsnapdrive.pkg /tmp` command. After you run the command, the man pages are extracted to `/tmp/NTAPsnapdrive/root/opt/NTAPsnapdrive/docs` .

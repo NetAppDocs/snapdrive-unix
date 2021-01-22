@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/task_viewing_the_result_of_a_clone_split_using_filespec.html
 sidebar: sidebar
-keywords: 
-summary: 'You can view the result of the completed clone split operation using job ID or file specification.'
+keywords: snap, snapdrive, clone, split, specification
+summary: You can view the result of the completed clone split operation using job ID or file specification.
 ---
 = Viewing the result of a clone split operation using job ID or file specification
 :icons: font
@@ -11,7 +11,10 @@ summary: 'You can view the result of the completed clone split operation using j
 [.lead]
 You can view the result of the completed clone split operation using job ID or file specification.
 
-. Enter the following command to view the clone split result using a file specification: snapdrive clone split result [-lun]long_lun_name [long_lun_name...] |[{-dg | -vg | -fs | -hostvol | -lvol} file_spec [file_spec...]] | [-job <jobid>]
+.Steps
+. Enter the following command to view the clone split result using a file specification:
++
+`*snapdrive clone split result [-lun] _long_lun_name_ [_long_lun_name..._] |[{-dg | -vg | -fs | -hostvol | -lvol} _file_spec_ [_file_spec..._]] | [-job _<jobid>_]*`
 +
 SnapDrive for UNIX displays the result of the clone split that is completed, or failed for a file specification, and then removes the file specification from the job, and removes the job from the job queue.
 

@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_what_volume_based_snaprestore_is.html
 sidebar: sidebar
-keywords: 
-summary: 'Volume-based SnapRestore \(VBSR\) restores the volume with all its storage objects. The volume-based restore is faster than each storage object restored individually. VBSR also works with FlexClone volumes and vFiler configurations. VBSR for vFiler is available for Data ONTAP 7.3 and later.'
+keywords: snap, snapdrive, volume, snaprestore, vbsr, storage, object, flexcone, vfiler, ontap
+summary: Volume-based SnapRestore \(VBSR\) restores the volume with all its storage objects. The volume-based restore is faster than each storage object restored individually. VBSR also works with FlexClone volumes and vFiler configurations. VBSR for vFiler is available for Data ONTAP 7.3 and later.
 ---
 = What volume-based SnapRestore is
 :icons: font

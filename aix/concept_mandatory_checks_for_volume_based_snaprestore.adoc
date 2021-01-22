@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_mandatory_checks_for_volume_based_snaprestore.html
 sidebar: sidebar
-keywords: 
-summary: 'Before volume based SnapRestore is carried out, SnapDrive for UNIX does some mandatory checks with the system. These checks are required so that volume based SnapRestore is used safely. The mandatory checks cannot be over-ridden by the user.'
+keywords: snap, snapdrive, check, colume, snaprestore, mandatory
+summary: Before volume based SnapRestore is carried out, SnapDrive for UNIX does some mandatory checks with the system. These checks are required so that volume based SnapRestore is used safely. The mandatory checks cannot be over-ridden by the user.
 ---
 = Mandatory checks for volume-based SnapRestore
 :icons: font

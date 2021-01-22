@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_types_of_flexclone_volumes.html
 sidebar: sidebar
-keywords: 
-summary: 'FlexClone volumes can be classified as temporary or all-purpose depending on how SnapDrive for UNIX uses them.'
+keywords: snap, snapdrive, flexcone, volume, temporary, restricted, unrestricted
+summary: FlexClone volumes can be classified as temporary or all-purpose depending on how SnapDrive for UNIX uses them.
 ---
 = Types of FlexClone volumes
 :icons: font
@@ -11,5 +11,5 @@ summary: 'FlexClone volumes can be classified as temporary or all-purpose depend
 [.lead]
 FlexClone volumes can be classified as temporary or all-purpose depending on how SnapDrive for UNIX uses them.
 
-* *Restricted or temporary FlexClone volume*: This FlexClone volume (created during snap connect) is primarily used to verify data. Provisioning and Snapshot operations (except snap disconnect) through SnapDrive for UNIX are not allowed on this FlexClone volume.
-* *Unrestricted or all-purpose FlexClone volume*: This FlexClone volume (created during snap connect) can be used also as a back end for provisioning and Snapshot operations, just like normal flexible volumes. You can perform all regular SnapDrive operations on this FlexClone volume.
+* *Restricted or temporary FlexClone volume*: This FlexClone volume (created during `snap connect`) is primarily used to verify data. Provisioning and Snapshot operations (except `snap disconnect`) through SnapDrive for UNIX are not allowed on this FlexClone volume.
+* *Unrestricted or all-purpose FlexClone volume*: This FlexClone volume (created during `snap connect`) can be used also as a back end for provisioning and Snapshot operations, just like normal flexible volumes. You can perform all regular SnapDrive operations on this FlexClone volume.

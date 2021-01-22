@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_example_of_an_autosupport_message.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX provides examples for different scenarios. The content of an AutoSupport message in all the examples are essentially the same regardless of your operating system.'
+keywords: snap, snapdrive, example, autosupport, message, support
+summary: SnapDrive for UNIX provides examples for different scenarios. The content of an AutoSupport message in all the examples are essentially the same regardless of your operating system.
 ---
 = Examples of AutoSupport messages
 :icons: font
@@ -13,7 +13,7 @@ SnapDrive for UNIX provides examples for different scenarios. The content of an 
 
 Example: Adding a new storage system
 
-The following example is a message sent from a host named aix207-116:
+The following example is a message sent from a host named `_aix207-116_`:
 
 ----
 computerName="aix207-116"
@@ -48,7 +48,7 @@ computerName="aix207-116"
         subject="host_name=aix207-116, host_os=AIX, host_os_release=1, host_os_version=6, No of controller=1, PM/RBAC=native, Host Virtualization=No, Multipath-type=nativempio, Protection Enabled=No, Protocol=fcp,1384: LUN /vol/vol0/test1 on storage system ohio already mapped to initiators in igroup aix207-116_fcp_SdIg at ID 0."/
 ----
 
-SnapDrive for UNIX sends the following AutoSupport message to the storage system when a snap create operation succeeds:
+SnapDrive for UNIX sends the following AutoSupport message to the storage system when a `snap create` operation succeeds:
 
 ----
 computerName="aix207-116"
