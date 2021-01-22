@@ -2,7 +2,7 @@
 entries:
 - title: Home
   url: "/index.html"
-- title: aix
+- title: Installation and Administration for IBM AIX
   url: "/aix/index.html"
   entries:
   - title: SnapDrive for UNIX overview
@@ -807,7 +807,7 @@ entries:
           url: "/aix/reference_command_line_keywords.html"
         - title: Command-line arguments
           url: "/aix/reference_command_line_arguments.html"
-- title: linux-administration
+- title: Administration for Linux
   url: "/linux-administration/index.html"
   entries:
   - title: Product overview
@@ -1614,7 +1614,7 @@ entries:
           url: "/linux-administration/reference_command_line_keywords.html"
         - title: Command-line arguments
           url: "/linux-administration/reference_command_line_arguments.html"
-- title: linux-installation-7mode
+- title: Installation and Setup for Linux for Data ONTAP Operating in 7-Mode
   url: "/linux-installation-7mode/index.html"
   entries:
   - title: Product overview
@@ -1662,7 +1662,7 @@ entries:
       url: "/linux-installation-7mode/task_verifying_the_snapshot_copy.html"
   - title: Where to go next
     url: "/linux-installation-7mode/reference_where_to_go_next.html"
-- title: linux-installation-cmode
+- title: Installand and Setup for Linux for Clustered Data ONTAP
   url: "/linux-installation-cmode/index.html"
   entries:
   - title: Product overview
@@ -1710,7 +1710,7 @@ entries:
       url: "/linux-installation-cmode/task_verifying_the_snapshot_copy.html"
   - title: Where to go next
     url: "/linux-installation-cmode/reference_where_to_go_next.html"
-- title: solaris
+- title: Installation and Administration for Solaris
   url: "/solaris/index.html"
   entries:
   - title: SnapDrive for UNIX overview
