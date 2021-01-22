@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_guidelines_forconnectingsnapshot_copies.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'Follow the guidelines when connecting to Snapshot copies.'
 ---
 = Guidelines for connecting Snapshot copies
@@ -11,10 +11,10 @@ summary: 'Follow the guidelines when connecting to Snapshot copies.'
 [.lead]
 Follow the guidelines when connecting to Snapshot copies.
 
-* The snapdrive snap connect command works only with Snapshot copies created in SnapDrive 4.2 for UNIX.
+* The `snapdrive snap connect` command works only with Snapshot copies created in SnapDrive 4.2 for UNIX.
 * On an originating host, SnapDrive for UNIX supports connecting and restoring Snapshot copies that are created by previous versions of SnapDrive for UNIX.
-* For read and write access to NFS directory trees, the snapdrive snap connect command uses the Data ONTAP FlexVol volume feature, and therefore requires Data ONTAP 7.3 or later. Configurations with Data ONTAP 7.1 can connect NFS files or directory trees, but are provided with read-only access.
-* If you set the enable-split-clone configuration variable value to "`on`" or "`sync`" during the Snapshot connect operation and "`off`" during the Snapshot disconnect operation, SnapDrive for UNIX does not delete the original volume or LUN that is present in the Snapshot copy.
-* You have to set the value of Data ONTAP 7.2.2 configuration option vfiler.vol_clone_zapi_allow to "`on`" to connect to a Snapshot copy of a volume or LUN in a vFiler unit.
+* For read and write access to NFS directory trees, the `snapdrive snap connect` command uses the Data ONTAP FlexVol volume feature, and therefore requires Data ONTAP 7.3 or later. Configurations with Data ONTAP 7.1 can connect NFS files or directory trees, but are provided with read-only access.
+* If you set the `_enable-split-clone_` configuration variable value to "`on`" or "`sync`" during the Snapshot connect operation and "`off`" during the Snapshot disconnect operation, SnapDrive for UNIX does not delete the original volume or LUN that is present in the Snapshot copy.
+* You have to set the value of Data ONTAP 7.2.2 configuration option vfiler. `vol_clone_zapi_allow` to "`on`" to connect to a Snapshot copy of a volume or LUN in a vFiler unit.
 * The Snapshot connect operation is not supported on the hosts having different host configurations.
-* The snapdrive snap connect command used to connect to a root volume of a physical storage system or a vFiler unit fails because Data ONTAP does not allow cloning of a root volume.
+* The `snapdrive snap connect` command used to connect to a root volume of a physical storage system or a vFiler unit fails because Data ONTAP does not allow cloning of a root volume.

@@ -1,7 +1,7 @@
 ---
 permalink: solaris/reference_storage_disconnect_of_disk_group_fails.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'On storage systems using Solaris version 10, update 10 or later, the SnapDrive for UNIX command to delete and disconnect the disk groups fails without the -full option. The delete and disconnect command fails because the host volumes are not completely disconnected or deleted.'
 ---
 = Storage disconnect of disk group fails
@@ -9,8 +9,8 @@ summary: 'On storage systems using Solaris version 10, update 10 or later, the S
 :imagesdir: ../media/
 
 [.lead]
-On storage systems using Solaris version 10, update 10 or later, the SnapDrive for UNIX command to delete and disconnect the disk groups fails without the -full option. The delete and disconnect command fails because the host volumes are not completely disconnected or deleted.
+On storage systems using Solaris version 10, update 10 or later, the SnapDrive for UNIX command to delete and disconnect the disk groups fails without the `-full` option. The delete and disconnect command fails because the host volumes are not completely disconnected or deleted.
 
 == Workaround
 
-Run the -full command to disconnect all file systems and associated host volumes.
+Run the `-full` command to disconnect all file systems and associated host volumes.

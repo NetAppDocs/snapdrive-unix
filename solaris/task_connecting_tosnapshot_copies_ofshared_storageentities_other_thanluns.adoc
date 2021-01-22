@@ -1,7 +1,7 @@
 ---
 permalink: solaris/task_connecting_tosnapshot_copies_ofshared_storageentities_other_thanluns.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use the snapdrive snap connect command to connect to a Snapshot copy of shared storage entities other than LUNs.'
 ---
 = Connecting to Snapshot copies of shared storage entities other than LUNs
@@ -9,11 +9,15 @@ summary: 'You can use the snapdrive snap connect command to connect to a Snapsho
 :imagesdir: ../media/
 
 [.lead]
-You can use the snapdrive snap connect command to connect to a Snapshot copy of shared storage entities other than LUNs.
+You can use the `snapdrive snap connect` command to connect to a Snapshot copy of shared storage entities other than LUNs.
 
-. Enter the following command: snapdrive snap connectfspec_set [fspec_set...] -snapname long_snap_name [-devicetype shared] [-split]
+.Steps
+
+. Enter the following command:
 +
-In this syntax, fspec_set is: {-dg | -fs}src_file_spec [dest_file_spec ] [-destdg dgname]
+`*snapdrive snap connect _fspec_set_ [_fspec_set..._] -snapname _long_snap_name_ [-devicetype shared] [-split]*`
++
+In this syntax, `_fspec_set_` is: `{-dg | -fs}_src_file_spec_ [_dest_file_spec_ ] [-destdg _dgname_]`
 
 The following example connects to a Snapshot copy that contains shared storage entities on an originating host cluster. The operation is executed from the non-cluster-master node, but the command is shipped to the master node and executed:
 

@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_informationrequired_forusing_the_snapdrive_snapcreate_command.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When you create a Snapshot copy, you should determine the storage entity that you want to capture and specify a name of the Snapshot copy.'
 ---
 = Information required for using the snapdrive snap create command
@@ -11,88 +11,93 @@ summary: 'When you create a Snapshot copy, you should determine the storage enti
 [.lead]
 When you create a Snapshot copy, you should determine the storage entity that you want to capture and specify a name of the Snapshot copy.
 
-The following table provides the information you need when you use the snapdrive snap create command:
+The following table provides the information you need when you use the `snapdrive snap create` command:
 
+[options="header"]
 |===
 | Requirement/Options| Argument
-a|
+2+a|
 Determine the type of storage entity you want to capture in the Snapshot copy. You can specify NFS entities, LUNs, file systems created directly on LUNs, and LVM entities on a single command line.
 
-Supply that entity's name with the appropriate argument. This is the value for the file_spec argument.
+Supply that entity's name with the appropriate argument. This is the value for the `file_spec` argument.
 
 * If you specify a disk group that has a host volume or file specification, the argument translates into a set of disk groups on the storage system. SnapDrive for UNIX creates the entire disk group containing the entity, even if the entity is a host volume or file system.
 * If you specify a file specification that is an NFS mount point, the argument translates to the directory tree on the storage system volume.
 * If you specify a LUN, or a LUN that has a file system, the argument translates to the LUN, or to the LUN that has the file system.
 +
-NOTE: You cannot specify special characters with the storage entities such as -vg, -dg, -fs, -lvol, and - hostvol. However, slash (/) is allowed for storage entities such as -fs, -lvol, and- hostvol.
+NOTE: You cannot specify special characters with the storage entities such as `-vg`, `-dg`, `-fs`, `-lvol`, and `- hostvol`. However, slash (/) is allowed for storage entities such as `-fs`, `-lvol`, and `-hostvol`.
 
 a|
-LUN (-lunfile_spec)
+LUN (`-lun _file_spec_`)
 a|
 Name of the LUN
 
 You must include the name of the storage system, volume, and LUN.
 
 a|
-Disk group (-dgfile_spec) or volume group (-vgfile_spec)
+Disk group (`-dg _file_spec_`) or volume group (`-vg _file_spec_`)
 
 a|
 Name of the disk or volume group
 a|
-File system (-fsfile_spec)
+File system (`-fs _file_spec_`)
 a|
 filesystem_name
 a|
-Host volume (-hostvolfile_spec ) or logical volume (-lvolfile_spec )
+Host volume (`-hostvol file_spec` ) or logical volume (`-lvol file_spec` )
 
 a|
-Name of the host or logical volume *Note:* You must supply both the requested volume and the disk group containing it; for example, -hostvol dg3/acct_volume.
+Name of the host or logical volume
+
+NOTE: You must supply both the requested volume and the disk group containing it; for example, -hostvol dg3/acct_volume.
 
 a|
-Snapshot copy name (-snapnamesnap_name)
+Snapshot copy name (`-snapname snap_name`)
 
 a|
 Snapshot copy_name
-a|
+2+a|
 Specify the name for the Snapshot copy. This can be either the long version of the name that includes the storage system and volume with the Snapshot copy name or the short version that is the Snapshot copy name.
 
-NOTE: You must ensure that the value specified for snapname does not exceed 200 characters.
+NOTE: You must ensure that the value specified for `snapname` does not exceed 200 characters.
 
 a|
--unrelated
+`-unrelated`
 a|
 ~
-a|
+2+a|
 Optional: To create a Snapshot copy of storage entities that have no dependent writes when the Snapshot copy is created, SnapDrive for UNIX creates a crash-consistent Snapshot copy of the individual storage entities, but does not try to make the entities consistent with each other.
 
 a|
--force
+`-force`
 a|
 ~
 a|
--noprompt
+`-noprompt`
 a|
 ~
+2+a|
+Optional: Decide if you want to overwrite an existing Snapshot copy. Without this option, this operation halts if you supply the name of an existing Snapshot copy. When you supply this option and specify the name of an existing Snapshot copy, the command prompts you to confirm that you want to overwrite the Snapshot copy. To prevent SnapDrive for UNIX from displaying the prompt, include the `-noprompt` option also. (You must always include the `-force` option if you want to use the `-noprompt` option.)
 a|
-Optional: Decide if you want to overwrite an existing Snapshot copy. Without this option, this operation halts if you supply the name of an existing Snapshot copy. When you supply this option and specify the name of an existing Snapshot copy, the command prompts you to confirm that you want to overwrite the Snapshot copy. To prevent SnapDrive for UNIX from displaying the prompt, include the -noprompt option also. (You must always include the -force option if you want to use the -noprompt option.)
-a|
--devicetype
+`-devicetype`
 a|
 ~
-a|
-Optional: Specify the type of device to be used for SnapDrive for UNIX operations. This can be either "`shared`" that specifies the scope of LUN, disk group, and file system as host cluster-wide or "`dedicated`" that specifies the scope of LUN, disk group, and file system as local. If you specify the -devicetype dedicated option, all the options of snapdrive snap create command currently supported in SnapDrive 2.1 for UNIX function as they always have.
+2+a|
+Optional: Specify the type of device to be used for SnapDrive for UNIX operations. This can be either "`shared`" that specifies the scope of LUN, disk group, and file system as host cluster-wide or "`dedicated`" that specifies the scope of LUN, disk group, and file system as local.
 
-If you initiate the snapdrive snap create command with the -devicetype shared option from any nonmaster node in the host cluster, the command is shipped to the master node and executed. For this to happen, you must ensure that the rsh or ssh access-without-password-prompt for the root user should be configured for all nodes in the host cluster.
+If you specify the `-devicetype dedicated` option, all the options of `snapdrive snap create` command currently supported in SnapDrive 2.1 for UNIX function as they always have.
+
+If you initiate the `snapdrive snap create` command with the `-devicetype shared` option from any nonmaster node in the host cluster, the command is shipped to the master node and executed. For this to happen, you must ensure that the `rsh` or `ssh` access-without-password-prompt for the root user should be configured for all nodes in the host cluster.
 
 a|
--fstype
+`-fstype`
 a|
-type
+`_type_`
 a|
--vmtype
+`-vmtype`
 a|
-type
-a|
+`_type_`
+2+a|
 Optional: Specify the type of file system and volume manager to be used for SnapDrive for UNIX operations.
 
 |===

@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_displayingsnapshot_copies_of_a_storage_system_volume.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'You can use the SnapDrive command to display Snapshot copies on a storage system volume.'
 ---
 = Displaying Snapshot copies of a storage system volume
@@ -13,4 +13,4 @@ You can use the SnapDrive command to display Snapshot copies on a storage system
 
 To display information about Snapshot copies of a storage system volume, use the following syntax:
 
-snapdrive snap show -filervol filervol [filervol...] [-verbose]
+`snapdrive snap show -filervol filervol [filervol...] [-verbose]`

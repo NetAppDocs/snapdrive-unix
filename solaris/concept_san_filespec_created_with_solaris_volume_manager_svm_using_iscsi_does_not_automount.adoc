@@ -1,7 +1,7 @@
 ---
 permalink: solaris/concept_san_filespec_created_with_solaris_volume_manager_svm_using_iscsi_does_not_automount.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: 'When the host system is restarted, the storage area network file specification created with Solaris Volume Manager \(SVM\) using iSCSI, does not mount automatically and the host does not start.'
 ---
 = Storage area network file specification created with Solaris Volume Manager using iSCSI does not mount automatically
@@ -15,8 +15,16 @@ If the host starts, then you can mount the file specification by using the steps
 
 == Workaround
 
-. Enter the metaset -s dgname -t command to change the disk set ownership manually.
+. Enter the metaset
++
+`*-s dgname -t*`
++
+command to change the disk set ownership manually.
 +
 NOTE: Ensure that metadb is defined.
 
-. Enter the mount -a command to mount the file specification.
+. Enter the
++
+`*mount -a*`
++
+command to mount the file specification.
