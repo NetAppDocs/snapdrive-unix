@@ -22,12 +22,12 @@ The volumes of each Vserver are related through junctions and are mounted on jun
 
 *Related information*
 
-xref:concept_configuration_information_for_vserver_environment.adoc[Configuration information for Vserver]
+link:concept_configuration_information_for_vserver_environment.adoc[Configuration information for Vserver]
 
-xref:task_verifying_login_information_for_vserver.adoc[Verifying login information for Vserver]
+link:task_verifying_login_information_for_vserver.adoc[Verifying login information for Vserver]
 
-xref:task_specifying_login_information_for_vserver.adoc[Specifying login information for the Vserver]
+link:task_specifying_login_information_for_vserver.adoc[Specifying login information for the Vserver]
 
-xref:task_deleting_a_user_for_a_vserver.adoc[Deleting a user from a Vserver]
+link:task_deleting_a_user_for_a_vserver.adoc[Deleting a user from a Vserver]
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ssg/home.html[ONTAP 9 Software Setup Guide]
+link:http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-ssg/home.html[ONTAP 9 Software Setup Guide]
