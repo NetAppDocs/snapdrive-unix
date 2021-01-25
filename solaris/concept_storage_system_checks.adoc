@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_storage_system_checks.html
 sidebar: sidebar
-keywords:
-summary: 'Before you install SnapDrive for UNIX, you must prepare your storage system by ensuring that your storage system meets some requirements.'
+keywords: snap, snapdrive, storage, prepare
+summary: Before you install SnapDrive for UNIX, you must prepare your storage system by ensuring that your storage system meets some requirements.
 ---
 = Preparing your storage system
 :icons: font

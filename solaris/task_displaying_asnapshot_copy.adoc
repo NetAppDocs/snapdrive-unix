@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_displaying_asnapshot_copy.html
 sidebar: sidebar
-keywords:
-summary: 'The command snapdrive snap show or list displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.'
+keywords: snap, snapdrive, display, snapshot, copy
+summary: The command snapdrive snap show or list displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.
 ---
 = Displaying a Snapshot copy
 :icons: font

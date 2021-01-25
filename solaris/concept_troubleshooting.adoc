@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_troubleshooting.html
 sidebar: sidebar
-keywords: 
-summary: 'The troubleshooting tool in SnapDrive for UNIX enables you to find information in addition to solving problems.'
+keywords: snap, snapdrive, troubleshoot
+summary: The troubleshooting tool in SnapDrive for UNIX enables you to find information in addition to solving problems.
 ---
 = Troubleshooting
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_viewing_the_list_of_igroups.html
 sidebar: sidebar
-keywords:
-summary: 'You can view all the igroups that are configured on the host.'
+keywords: snap, snapdrive, view, igroup, list
+summary: You can view all the igroups that are configured on the host.
 ---
 = Viewing the list of igroups
 :icons: font

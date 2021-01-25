@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_snapshot_connectand_snapshotrestore_operations.html
 sidebar: sidebar
-keywords: 
-summary: 'Snapshot copy clones the information when you connect to the Snapshot copy.'
+keywords: snap, snapshot, restore, connect, operation
+summary: Snapshot copy clones the information when you connect to the Snapshot copy.
 ---
 = Snapshot connect and Snapshot restore operations
 :icons: font

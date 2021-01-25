@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_how_the_snapdrivesnap_connect_command_works.html
 sidebar: sidebar
-keywords:
-summary: 'When you use the snapdrive snap connect command, it clones the storage for the entity you specify and imports it to the host:'
+keywords: snapdrive, snap, connect, command
+summary: When you use the snapdrive snap connect command, it clones the storage for the entity you specify and imports it to the host:
 ---
 = How the snapdrive snap connect command works
 :icons: font

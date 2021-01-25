@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_support_for_volume_migration.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX supports volume migration, which enables you to nondisruptively move a volume from one aggregate to another within the same controller for capacity utilization, improved performance, and to satisfy service-level agreements. In a SAN environment, FlexVol volumes and the LUNs in the volumes are moved nondisruptively from one aggregate to another.'
+keywords: snap, snapdrive, volume, support, migration
+summary: SnapDrive for UNIX supports volume migration, which enables you to nondisruptively move a volume from one aggregate to another within the same controller for capacity utilization, improved performance, and to satisfy service-level agreements. In a SAN environment, FlexVol volumes and the LUNs in the volumes are moved nondisruptively from one aggregate to another.
 ---
 = Support for volume migration
 :icons: font

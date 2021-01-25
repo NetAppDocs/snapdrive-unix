@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_types_of_flexclone_volumes.html
 sidebar: sidebar
-keywords:
-summary: 'FlexClone volumes can be classified as temporary or all-purpose depending on how SnapDrive for UNIX uses them.'
+keywords: snap, snapdrive, flexclone, volume
+summary: FlexClone volumes can be classified as temporary or all-purpose depending on how SnapDrive for UNIX uses them.
 ---
 = Types of FlexClone volumes
 :icons: font

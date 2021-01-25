@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_disconnectingsnapshot_copy_withstorage_entities.html
 sidebar: sidebar
-keywords:
-summary: 'You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains storage entities.'
+keywords: snap, snapdrive, disconnect, snapshot, copy, storage
+summary: You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains storage entities.
 ---
 = Disconnecting Snapshot copy with storage entities
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_connecting_to_a_single_filespec_in_a_lun.html
 sidebar: sidebar
-keywords:
-summary: 'You can connect to a single filespec which resides in a LUN. The following example describes how you can complete this operation.'
+keywords: snap, snapdrive, connect, filespec, lun
+summary: You can connect to a single filespec which resides in a LUN. The following example describes how you can complete this operation.
 ---
 = Connecting to a single filespec in a LUN
 :icons: font

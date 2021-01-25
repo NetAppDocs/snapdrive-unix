@@ -1,8 +1,8 @@
 ---
 permalink: solaris/reference_script_example.html
 sidebar: sidebar
-keywords: 
-summary: 'This is an example of a script that uses exit status values.'
+keywords: snap, snapdrive, script
+summary: This is an example of a script that uses exit status values.
 ---
 = Script example
 :icons: font

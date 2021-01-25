@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_considerations_for_provisioning_rdm_luns.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX has a few considerations for provisioning RDM LUNs.'
+keywords: snap, snapdrive, rdm, lun, provisioning
+summary: SnapDrive for UNIX has a few considerations for provisioning RDM LUNs.
 ---
 = Considerations for provisioning RDM LUNs
 :icons: font

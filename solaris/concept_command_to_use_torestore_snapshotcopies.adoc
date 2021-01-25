@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_command_to_use_torestore_snapshotcopies.html
 sidebar: sidebar
-keywords:
-summary: 'Use the command snapdrive snap restore to restore a Snapshot copy.'
+keywords: snap, snapdrive, command, restore, snapshot, copy
+summary: Use the command snapdrive snap restore to restore a Snapshot copy.
 ---
 = Command to use to restore Snapshot copies
 :icons: font

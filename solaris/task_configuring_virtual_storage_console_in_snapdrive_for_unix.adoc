@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_configuring_virtual_storage_console_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'You must configure Virtual Storage Console to access the storage system, and use the login names and passwords assigned to the storage system.'
+keywords: snap, snapdrive, configure, virtual, storage, console
+summary: You must configure Virtual Storage Console to access the storage system, and use the login names and passwords assigned to the storage system.
 ---
 = Configuring Virtual Storage Console for SnapDrive for UNIX
 :icons: font

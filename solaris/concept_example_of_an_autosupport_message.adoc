@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_example_of_an_autosupport_message.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX provides examples for different scenarios. The content of an AutoSupport message in all the examples are essentially the same regardless of your operating system.'
+keywords: snap, snapdrive, autsupport, example
+summary: SnapDrive for UNIX provides examples for different scenarios. The content of an AutoSupport message in all the examples are essentially the same regardless of your operating system.
 ---
 = Examples of AutoSupport messages
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_verifying_the_status_of_clone_split.html
 sidebar: sidebar
-keywords:
-summary: 'You can query the clone split status by using a job ID or file specification. SnapDrive for UNIX indicates the current status of the clone split as in-progress, failed, or complete.'
+keywords: snap, snapdrive, volume, lun, clone, split, view, status
+summary: You can query the clone split status by using a job ID or file specification. SnapDrive for UNIX indicates the current status of the clone split as in-progress, failed, or complete.
 ---
 = Viewing the status of a volume clone or LUN clone split
 :icons: font
@@ -74,7 +74,7 @@ Clone-Split-Status for /fs1_3 is 100% Complete
 * When a job is removed from the job set and you query the status of a clone split using a job ID, SnapDrive for UNIX displays the error message as
 +
 `Job ID is not valid`
-* When all file specifications are removed from a job and you query the status of a clone split using the Job ID, SnapDrive for UNIX displays as 
+* When all file specifications are removed from a job and you query the status of a clone split using the Job ID, SnapDrive for UNIX displays as
 +
 `Job ID is not valid`
 +

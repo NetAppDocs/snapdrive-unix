@@ -1,8 +1,8 @@
 ---
 permalink: solaris/index.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords:
+summary: 
 ---
 = Installation and Administration Guide
 :icons: font

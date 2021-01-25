@@ -1,8 +1,8 @@
 ---
 permalink: solaris/reference_configuration_parameters_for_role_based_access_control.html
 sidebar: sidebar
-keywords:
-summary: 'You must set the various configuration variables related to role-based access control in the snapdrive.conf file.'
+keywords: snap, snapdrive, configuration, variable, rbac, access, control, role
+summary: You must set the various configuration variables related to role-based access control in the snapdrive.conf file.
 ---
 = Configuration variables for role-based access control
 :icons: font

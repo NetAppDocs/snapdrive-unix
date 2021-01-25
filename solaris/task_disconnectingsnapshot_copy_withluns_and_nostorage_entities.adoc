@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_disconnectingsnapshot_copy_withluns_and_nostorage_entities.html
 sidebar: sidebar
-keywords:
-summary: 'You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains LUNs having no storage entities.'
+keywords: snap, snapdrive, disconnet, snapshot, copy, lun, storage
+summary: You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains LUNs having no storage entities.
 ---
 = Disconnecting Snapshot copy with LUNs and no storage entities
 :icons: font

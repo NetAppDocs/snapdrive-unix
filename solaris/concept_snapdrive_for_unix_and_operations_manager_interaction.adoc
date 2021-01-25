@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_snapdrive_for_unix_and_operations_manager_interaction.html
 sidebar: sidebar
-keywords: 
-summary: 'Use of Role-based access control \(RBAC\) depends on the Operations Manager console infrastructure. The Operations Manager console administrator must create user names for SnapDrive for UNIX use. All storage operation requests are first sent to Operations Manager console for an access check. After Operations Manager console verifies a storage operation from a specific SnapDrive user, the operation is completed.'
+keywords: snap, snapdrive, manager, console, operations
+summary: Use of Role-based access control \(RBAC\) depends on the Operations Manager console infrastructure. The Operations Manager console administrator must create user names for SnapDrive for UNIX use. All storage operation requests are first sent to Operations Manager console for an access check. After Operations Manager console verifies a storage operation from a specific SnapDrive user, the operation is completed.
 ---
 = SnapDrive for UNIX and Operations Manager console interaction
 :icons: font

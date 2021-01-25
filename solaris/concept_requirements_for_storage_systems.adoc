@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_requirements_for_storage_systems.html
 sidebar: sidebar
-keywords:
-summary: 'You must consider the storage system requirements before setting it up.'
+keywords: snap, snapdrive, storage, system, requirements
+summary: You must consider the storage system requirements before setting it up.
 ---
 = Requirements for storage systems
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/reference_examples_of_using_snapdrive_dc.html
 sidebar: sidebar
-keywords: 
-summary: 'This is an example of the data collection command.'
+keywords: snap, snapdrive, example, data, collection, command
+summary: This is an example of the data collection command.
 ---
 = Examples of using snapdrive.dc
 :icons: font

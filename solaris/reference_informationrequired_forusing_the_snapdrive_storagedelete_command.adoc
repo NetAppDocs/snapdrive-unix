@@ -1,8 +1,8 @@
 ---
 permalink: solaris/reference_informationrequired_forusing_the_snapdrive_storagedelete_command.html
 sidebar: sidebar
-keywords:
-summary: 'There is some information that you need to supply before you can use the snapdrive storage delete command. This information helps you in using the command correctly.'
+keywords: snap, snapdrive, storage, delete, command, information, requirement
+summary: There is some information that you need to supply before you can use the snapdrive storage delete command. This information helps you in using the command correctly.
 ---
 = Information required for using the snapdrive storage delete command
 :icons: font

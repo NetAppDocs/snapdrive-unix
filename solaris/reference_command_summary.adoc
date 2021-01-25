@@ -1,8 +1,8 @@
 ---
 permalink: solaris/reference_command_summary.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX supports the different command lines, such as, configuration, storage provisioning, host-side management, and Snapshot operation.'
+keywords:  snap, snapdrive, command, summary
+summary: SnapDrive for UNIX supports the different command lines, such as, configuration, storage provisioning, host-side management, and Snapshot operation.
 ---
 = Command summary
 :icons: font

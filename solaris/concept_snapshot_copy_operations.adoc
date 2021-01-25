@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_snapshot_copy_operations.html
 sidebar: sidebar
-keywords:
-summary: 'You can create Snapshot copies by using the snapdrive snap create command.'
+keywords: snap, snapdrive, snapshot, copy, operation
+summary: You can create Snapshot copies by using the snapdrive snap create command.
 ---
 = Snapshot copy operations
 :icons: font

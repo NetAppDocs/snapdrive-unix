@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_snap_disconnect_procedure.html
 sidebar: sidebar
-keywords:
-summary: 'This section explains the procedure followed for snap disconnect.'
+keywords: snap, snapdrive, disconnect, cli
+summary: This section explains the procedure followed for snap disconnect.
 ---
 = Snap disconnect procedure
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_reasons_to_deletesnapshotcopies.html
 sidebar: sidebar
-keywords: 
-summary: 'Delete older Snapshot copies to free space on the storage system volume, or to keep fewer Snapshot copies.'
+keywords: snap, snapdrive, delete, snapshot, copy
+summary: Delete older Snapshot copies to free space on the storage system volume, or to keep fewer Snapshot copies.
 ---
 = Reasons to delete Snapshot copies
 :icons: font

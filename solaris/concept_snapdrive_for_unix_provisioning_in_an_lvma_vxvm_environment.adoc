@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_snapdrive_for_unix_provisioning_in_an_lvma_vxvm_environment.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: snap, snapdrive, provisioning, vxvm, provisioning
+summary:
 ---
 = SnapDrive for UNIX provisioning in a VxVM environment
 :icons: font

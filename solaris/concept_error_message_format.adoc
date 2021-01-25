@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_error_message_format.html
 sidebar: sidebar
-keywords:
-summary: 'The format of the error message helps you determine the cause of the error.'
+keywords: snap, snapdrive, error, message
+summary: The format of the error message helps you determine the cause of the error.
 ---
 = Error message format
 :icons: font

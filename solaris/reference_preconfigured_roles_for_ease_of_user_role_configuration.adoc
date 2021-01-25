@@ -1,8 +1,8 @@
 ---
 permalink: solaris/reference_preconfigured_roles_for_ease_of_user_role_configuration.html
 sidebar: sidebar
-keywords:
-summary: 'Preconfigured roles simplify the task of assigning roles to users.'
+keywords: snapdrive, snap, user, role, configuration, preconfigured
+summary: Preconfigured roles simplify the task of assigning roles to users.
 ---
 = Preconfigured roles for ease of user role configuration
 :icons: font

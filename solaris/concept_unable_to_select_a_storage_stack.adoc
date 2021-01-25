@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_unable_to_select_a_storage_stack.html
 sidebar: sidebar
-keywords:
-summary: 'You cannot select a storage stack due to inappropriate values specified in the snapdrive.conf file.'
+keywords: snap, snapdrive, select, storage, stack
+summary: You cannot select a storage stack due to inappropriate values specified in the snapdrive.conf file.
 ---
 = Unable to select a storage stack
 :icons: font

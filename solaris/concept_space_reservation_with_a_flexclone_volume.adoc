@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_space_reservation_with_a_flexclone_volume.html
 sidebar: sidebar
-keywords:
-summary: 'You can carry out space reservation operation on both restricted and unrestricted type of FlexClone volumes. By default FlexClone volumes do not have write reservations.'
+keywords: snapdrive, snap, space, flexclone, volume, reservation
+summary: You can carry out space reservation operation on both restricted and unrestricted type of FlexClone volumes. By default FlexClone volumes do not have write reservations.
 ---
 = Space reservation with a FlexClone volume
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_configuring_sd_admin_in_operations_manager.html
 sidebar: sidebar
-keywords:
-summary: 'The Operations Manager console administrator can create the sd-admin user.'
+keywords: snap, snapdrive, configure, operations, console, manager, sd
+summary: The Operations Manager console administrator can create the sd-admin user.
 ---
 = Configuring sd-admin in Operations Manager console
 :icons: font

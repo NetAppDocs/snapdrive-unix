@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_log_file_rotation_settings.html
 sidebar: sidebar
-keywords:
-summary: 'The values you specify for the variable in the snapdrive.conf file affect the log file rotation.'
+keywords: snap, snpadrive, log, file, rotation, setting
+summary: The values you specify for the variable in the snapdrive.conf file affect the log file rotation.
 ---
 = Log file rotation settings
 :icons: font

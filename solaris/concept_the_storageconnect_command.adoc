@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_the_storageconnect_command.html
 sidebar: sidebar
-keywords:
-summary: 'The snapdrive storage connect command connects storage entities to the host. Using this command you can connect LUNs and storage entities to the host'
+keywords: snap, snapdrive, storage, connect, command
+summary: The snapdrive storage connect command connects storage entities to the host. Using this command you can connect LUNs and storage entities to the host
 ---
 = The storage connect command
 :icons: font

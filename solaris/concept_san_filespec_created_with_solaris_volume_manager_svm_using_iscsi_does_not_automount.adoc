@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_san_filespec_created_with_solaris_volume_manager_svm_using_iscsi_does_not_automount.html
 sidebar: sidebar
-keywords:
-summary: 'When the host system is restarted, the storage area network file specification created with Solaris Volume Manager \(SVM\) using iSCSI, does not mount automatically and the host does not start.'
+keywords: snap, snapdrive, storage, filespec, iscsi, volume, solaris, manager, network, mount
+summary: When the host system is restarted, the storage area network file specification created with Solaris Volume Manager \(SVM\) using iSCSI, does not mount automatically and the host does not start.
 ---
 = Storage area network file specification created with Solaris Volume Manager using iSCSI does not mount automatically
 :icons: font

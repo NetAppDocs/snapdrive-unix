@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_specifying_login_information.html
 sidebar: sidebar
-keywords:
-summary: 'You must specify the user login information for a storage system. Depending on what you specified when you set up the storage system, each storage system could use either the same user name or password or a unique user name or password. If all the storage systems use the same user name or password information, you must perform the following steps once. If the storage systems use unique user names or passwords, you must repeat the following steps for each storage system.'
+keywords: snap, snapdrive, specify, login, information
+summary: You must specify the user login information for a storage system. Depending on what you specified when you set up the storage system, each storage system could use either the same user name or password or a unique user name or password. If all the storage systems use the same user name or password information, you must perform the following steps once. If the storage systems use unique user names or passwords, you must repeat the following steps for each storage system.
 ---
 = Specifying login information
 :icons: font

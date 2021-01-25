@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_configuration_options_and_their_default_values.html
 sidebar: sidebar
-keywords:
-summary: 'You can determine the current configurable variables and their settings by running the snapdrive config show command.'
+keywords: snap, snapdrive, configuration, default, value
+summary: You can determine the current configurable variables and their settings by running the snapdrive config show command.
 ---
 = Configuration options and their default values
 :icons: font

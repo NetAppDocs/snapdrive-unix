@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_verifying_the_veritas_stack_configuration.html
 sidebar: sidebar
-keywords:
-summary: 'To verify the Veritas stack configuration, you must run the snapdrive storage connect and the vxdisk list commands.'
+keywords: snap, snapdrive, verify, veritas, stack, configuration
+summary: To verify the Veritas stack configuration, you must run the snapdrive storage connect and the vxdisk list commands.
 ---
 = Verifying the Veritas stack configuration
 :icons: font
@@ -38,7 +38,7 @@ You might get one of the following results:
 * If the Veritas configuration on the host is correct, the expected output for the device status is
 +
 `online invalid.`
-* If the Veritas configuration on the host is incorrect, the expected output for the device status is 
+* If the Veritas configuration on the host is incorrect, the expected output for the device status is
 +
 `error.`
 +

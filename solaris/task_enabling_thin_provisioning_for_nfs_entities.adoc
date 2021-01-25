@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_enabling_thin_provisioning_for_nfs_entities.html
 sidebar: sidebar
-keywords:
-summary: 'You can use SnapDrive for UNIX to carry out thin provisioning for NFS entities on your storage system. Thin provisioning is referred as space-reservation.'
+keywords: snap, snapdrive, enable, thin, provisioning, nfs, entity
+summary: You can use SnapDrive for UNIX to carry out thin provisioning for NFS entities on your storage system. Thin provisioning is referred as space-reservation.
 ---
 = Enabling thin provisioning for NFS entities
 :icons: font

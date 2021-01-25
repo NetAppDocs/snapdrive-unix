@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_generating_ca_signed_certificate.html
 sidebar: sidebar
-keywords:
-summary: 'The SnapDrive for UNIX daemon service requires that you generate a CA-signed certificate for successful daemon communication. You must provide the CA-signed certificate at the path specified in the snapdrive.conf file.'
+keywords: snap, snapdrive, generate, ca, certificate
+summary: The SnapDrive for UNIX daemon service requires that you generate a CA-signed certificate for successful daemon communication. You must provide the CA-signed certificate at the path specified in the snapdrive.conf file.
 ---
 = Generating a CA-signed certificate
 :icons: font
