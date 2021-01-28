@@ -9,7 +9,13 @@ summary: SnapDrive for UNIX allows you to add a particular igroup for the storag
 :imagesdir: ../media/
 
 [.lead]
-SnapDrive for UNIX allows you to add a particular igroup for the storage system to the host and perform SnapDrive operations using the configured igroup. You must ensure that the igroup is available in the storage system.
+SnapDrive for UNIX allows you to add a particular igroup for the storage system to the host and perform SnapDrive operations using the configured igroup.
+
+To add an igroup to the host you must do the following:
+
+* Use the `snapdrive igroup add` command
+* Ensure that the igroup is available in the storage system
+
 
 .Steps
 
