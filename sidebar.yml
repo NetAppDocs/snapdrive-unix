@@ -1662,7 +1662,7 @@ entries:
       url: "/linux-installation-7mode/task_verifying_the_snapshot_copy.html"
   - title: Where to go next
     url: "/linux-installation-7mode/reference_where_to_go_next.html"
-- title: Installand and Setup for Linux for Clustered Data ONTAP
+- title: Install and and Setup for Linux for Clustered Data ONTAP
   url: "/linux-installation-cmode/index.html"
   entries:
   - title: Product overview
