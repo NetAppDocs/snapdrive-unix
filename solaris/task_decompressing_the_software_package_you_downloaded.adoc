@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_decompressing_the_software_package_you_downloaded.html
 sidebar: sidebar
-keywords:
-summary: 'You must download and decompress the NTAPsnapdrive_sun_x86_5.2.tar.Z or NTAPsnapdrive_sun_sparc_5.2.tar.Z package to install SnapDrive on a Solaris host. The software package depends on whether you are using Solaris on x86 or SPARC platform.'
+keywords: snap, snapdrive, download, decompress, software, package
+summary: You must download and decompress the NTAPsnapdrive_sun_x86_5.2.tar.Z or NTAPsnapdrive_sun_sparc_5.2.tar.Z package to install SnapDrive on a Solaris host. The software package depends on whether you are using Solaris on x86 or SPARC platform.
 ---
 = Downloading and decompressing the software package
 :icons: font

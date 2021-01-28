@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_setting_values_in_the_snapdrive_conf_file.html
 sidebar: sidebar
-keywords:
-summary: 'You can change the values in the snapdrive.conf file or add new name-value pairs.'
+keywords: snap, snapdrive, value, name, add, change
+summary: You can change the values in the snapdrive.conf file or add new name-value pairs.
 ---
 = Setting values in the snapdrive.conf file
 :icons: font

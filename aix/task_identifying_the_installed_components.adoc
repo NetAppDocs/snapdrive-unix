@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_identifying_the_installed_components.html
 sidebar: sidebar
-keywords: SnapDrive for UNIX
-summary: 'You can identify the installed components on the host platform by using the SnapDrive for UNIX configuration checker tool.'
+keywords: snap, snapdrive, installed, component, identify
+summary: You can identify the installed components on the host platform by using the SnapDrive for UNIX configuration checker tool.
 ---
 = Identifying the installed components
 :icons: font

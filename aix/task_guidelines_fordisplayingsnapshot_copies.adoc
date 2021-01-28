@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_guidelines_fordisplayingsnapshot_copies.html
 sidebar: sidebar
-keywords:
-summary: 'You can use wildcards to display the Snapshot copies. You can display all the Snapshot copies present in a specific object.'
+keywords: snap, snapdrive, display, snapshot, copy
+summary: You can use wildcards to display the Snapshot copies. You can display all the Snapshot copies present in a specific object.
 ---
 = Guidelines for displaying Snapshot copies
 :icons: font

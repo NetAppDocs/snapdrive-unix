@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_adding_host_entries_for_new_luns.html
 sidebar: sidebar
-keywords:
-summary: 'You can create a specific number of new LUNs using SnapDrive for UNIX. SnapDrive for UNIX provides specific commands for this purpose.'
+keywords: snap, snapdrive, add, host, lun, entry
+summary: You can create a specific number of new LUNs using SnapDrive for UNIX. SnapDrive for UNIX provides specific commands for this purpose.
 ---
 = Adding host entries for new LUNs
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_creating_an_lvm_a_vxvm_entity_and_settingup_the_lunautomatically.html
 sidebar: sidebar
-keywords:
-summary: 'You can create an entity such as a file system, logical volume, or disk group on the host and have SnapDrive for UNIX automatically create the associated LUN.'
+keywords: snap, snapdrive, create, vxvm, lun
+summary: You can create an entity such as a file system, logical volume, or disk group on the host and have SnapDrive for UNIX automatically create the associated LUN.
 ---
 = Creating a VxVM entity and setting up the LUN automatically
 :icons: font

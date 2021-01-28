@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_snapdrived_stop_or_snapdrived_start_command_hangs.html
 sidebar: sidebar
-keywords:
-summary: 'snapdrived stop or snapdrived start command might hang in some cases.'
+keywords: snap, snapdrive, stop, start, command, hang
+summary: snapdrived stop or snapdrived start command might hang in some cases.
 ---
 = snapdrived stop or snapdrived start command hangs
 :icons: font

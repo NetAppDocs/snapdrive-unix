@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_verifying_supported_configurations_using_configuration_checker_tool.html
 sidebar: sidebar
-keywords: 
-summary: 'The SnapDrive for UNIX configuration checker tool helps you to identify and verify the configurations supported to run SnapDrive for UNIX.'
+keywords: snap, snapdrive, verify, supported, configuration
+summary: The SnapDrive for UNIX configuration checker tool helps you to identify and verify the configurations supported to run SnapDrive for UNIX.
 ---
 = Verifying supported configurations
 :icons: font

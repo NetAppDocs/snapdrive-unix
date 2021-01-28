@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_volume_based_snaprestore_for_space_reservation.html
 sidebar: sidebar
-keywords:
-summary: 'For space reservation with volume based snap reserve you need to set space-reservations-volume-enabled option in the snapdrive.conf file.'
+keywords: snap, snapdrive, colume, snaprestore, space, reservation
+summary: For space reservation with volume based snap reserve you need to set space-reservations-volume-enabled option in the snapdrive.conf file.
 ---
 = Volume-based SnapRestore for space reservation
 :icons: font

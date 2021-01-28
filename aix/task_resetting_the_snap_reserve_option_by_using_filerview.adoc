@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_resetting_the_snap_reserve_option_by_using_filerview.html
 sidebar: sidebar
-keywords:
-summary: 'When you use Data ONTAP in an FC or iSCSI environment, you should reset the snap reserve option to 0 percent by using FilerView.'
+keywords: snap, snapdrive, reset, reserve, filerview
+summary: When you use Data ONTAP in an FC or iSCSI environment, you should reset the snap reserve option to 0 percent by using FilerView.
 ---
 = Resetting the snap reserve option by using FilerView
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_steps_to_cleanup_the_mapped_rdm_luns_in_the_guest_os_or_esx_server.html
 sidebar: sidebar
-keywords:
-summary: 'You must clean up the RDM LUNs in the guest operating system as well as in ESX server.'
+keywords: snap, snapdrive, mapped, rdm, lun, guest, esx, server, system
+summary: You must clean up the RDM LUNs in the guest operating system as well as in ESX server.
 ---
 = Cleaning up the mapped RDM LUNs in the guest operating system and ESX server
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_contents_of_autosupport_message_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'AutoSupport messages contain the following information.'
+keywords: snap, snapdrive, autosupport, message
+summary: AutoSupport messages contain the following information.
 ---
 = Contents of AutoSupport messages
 :icons: font

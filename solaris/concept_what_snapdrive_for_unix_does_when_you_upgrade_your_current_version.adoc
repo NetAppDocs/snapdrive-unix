@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_what_snapdrive_for_unix_does_when_you_upgrade_your_current_version.html
 sidebar: sidebar
-keywords:
-summary: 'You can easily upgrade SnapDrive for UNIX to the latest version. As part of the upgrade process, few variables change in the snapdrive.conf file. To ensure that SnapDrive for UNIX is functioning correctly, check the various default values in the snapdrive.conf file.'
+keywords: snap, snapdrive, upgrade, current, version
+summary: You can easily upgrade SnapDrive for UNIX to the latest version. As part of the upgrade process, few variables change in the snapdrive.conf file. To ensure that SnapDrive for UNIX is functioning correctly, check the various default values in the snapdrive.conf file.
 ---
 = Upgrade SnapDrive for UNIX to current version
 :icons: font

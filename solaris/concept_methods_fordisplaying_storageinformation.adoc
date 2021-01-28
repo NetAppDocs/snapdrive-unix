@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_methods_fordisplaying_storageinformation.html
 sidebar: sidebar
-keywords:
-summary: 'To make it easier to display information about storage, SnapDrive for UNIX provides several formats for the snapdrive storage show command.'
+keywords: snap, snapdrive, storage, information, display
+summary: To make it easier to display information about storage, SnapDrive for UNIX provides several formats for the snapdrive storage show command.
 ---
 = Methods for displaying storage information
 :icons: font

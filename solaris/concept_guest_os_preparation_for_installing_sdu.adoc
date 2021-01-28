@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_guest_os_preparation_for_installing_sdu.html
 sidebar: sidebar
-keywords: 
-summary: 'You must prepare the guest system before you can install SnapDrive for UNIX on your system. As part of the guest preparation, you must install the Solaris Host Utilities.'
+keywords: snap, snapdrve, guest, os, install, prepare
+summary: You must prepare the guest system before you can install SnapDrive for UNIX on your system. As part of the guest preparation, you must install the Solaris Host Utilities.
 ---
 = Guest OS preparation for installing SnapDrive for UNIX
 :icons: font

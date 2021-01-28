@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_disable_a_node_ora_cluster_from_usingshared_resources.html
 sidebar: sidebar
-keywords:
-summary: 'You have to modify the /etc/VRTSvcs/conf/config/main.cf file to disable a node from using a shared resource. For more information about the main.cf file, see the Veritas Cluster Server Installation Guide for Solaris.'
+keywords: snap, snapdrive, disable, node, cluster, resource
+summary: You have to modify the /etc/VRTSvcs/conf/config/main.cf file to disable a node from using a shared resource. For more information about the main.cf file, see the Veritas Cluster Server Installation Guide for Solaris.
 ---
 = Disable a node or a cluster from using shared resources
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_operations_supported_on_host_clustered_unix_systems.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX on host clustered UNIX systems enables you to create storage and perform Snapshot operations on a host cluster-wide shared storage.'
+keywords: snap, snpadrive, support, host, cluster
+summary: SnapDrive for UNIX on host clustered UNIX systems enables you to create storage and perform Snapshot operations on a host cluster-wide shared storage.
 ---
 = Operations supported on host clustered UNIX systems
 :icons: font

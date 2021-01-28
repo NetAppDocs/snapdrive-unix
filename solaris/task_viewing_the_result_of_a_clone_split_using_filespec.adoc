@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_viewing_the_result_of_a_clone_split_using_filespec.html
 sidebar: sidebar
-keywords:
-summary: 'You can view the result of the completed clone split operation using job ID or file specification.'
+keywords: snap, snapdrive, view, result, clone, split, job, id, filespec
+summary: You can view the result of the completed clone split operation using job ID or file specification.
 ---
 = Viewing the result of a clone split operation using job ID or file specification
 :icons: font

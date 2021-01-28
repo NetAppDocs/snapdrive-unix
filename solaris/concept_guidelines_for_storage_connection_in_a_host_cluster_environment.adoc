@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_guidelines_for_storage_connection_in_a_host_cluster_environment.html
 sidebar: sidebar
-keywords:
-summary: 'You have to follow few guidelines before using the snapdrive storage connect command in a host cluster environment.'
+keywords: snap, snapdrive, storage, connect, host, cluster
+summary: You have to follow few guidelines before using the snapdrive storage connect command in a host cluster environment.
 ---
 = Guidelines for storage connection in a host cluster environment
 :icons: font

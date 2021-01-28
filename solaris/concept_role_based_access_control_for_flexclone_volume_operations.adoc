@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_role_based_access_control_for_flexclone_volume_operations.html
 sidebar: sidebar
-keywords:
-summary: 'If Operations Manager is configured with the system, the Operations Manager administrator must grant you the required capabilities to carry out storage operations on FlexClone volumes.'
+keywords: snap, snapdrive, rbac, access, control, flexclone, volume
+summary: If Operations Manager is configured with the system, the Operations Manager administrator must grant you the required capabilities to carry out storage operations on FlexClone volumes.
 ---
 = Role-based access control for FlexClone volume operations
 :icons: font

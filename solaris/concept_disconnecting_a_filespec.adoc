@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_disconnecting_a_filespec.html
 sidebar: sidebar
-keywords:
-summary: 'You can disconnect a file specification. The following example describes how you can complete this operation.'
+keywords: snap, snapdrive, disconnect, filespec
+summary: You can disconnect a file specification. The following example describes how you can complete this operation.
 ---
 = Disconnecting a file specification
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_deleting_a_storage_system_entry.html
 sidebar: sidebar
-keywords:
-summary: 'You can delete the storage system mapping information from the host system.'
+keywords: snap, snapdrive, delete, storage, mapping, host, information
+summary: You can delete the storage system mapping information from the host system.
 ---
 = Deleting the storage system mapping information from the host system
 :icons: font

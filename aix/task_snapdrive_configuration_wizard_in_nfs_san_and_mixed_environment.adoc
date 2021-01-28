@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_snapdrive_configuration_wizard_in_nfs_san_and_mixed_environment.html
 sidebar: sidebar
-keywords:
-summary: 'The configuration wizard allows you to configure in NFS, SAN or Mixed environment.'
+keywords: snap, snapdrive, configuration, wizard
+summary: The configuration wizard allows you to configure in NFS, SAN or Mixed environment.
 ---
 = Using the SnapDrive configuration wizard
 :icons: font

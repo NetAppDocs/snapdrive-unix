@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_the_storagedisconnect_command.html
 sidebar: sidebar
-keywords:
-summary: 'The storage disconnect operation removes the LUNs, or the LUNs and storage entities that were mapped to the host using the snapdrive storage create or snapdrive storage connect command.'
+keywords: snap, snapdrive, storage, disconnect, command
+summary: The storage disconnect operation removes the LUNs, or the LUNs and storage entities that were mapped to the host using the snapdrive storage create or snapdrive storage connect command.
 ---
 = The storage disconnect command
 :icons: font

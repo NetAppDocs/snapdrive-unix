@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_restoring_a_single_storage_entity_on_a_storage_system_or_storagesystem_cluster.html
 sidebar: sidebar
-keywords: 
-summary: 'You can restore a Snapshot copy that contains a single storage entity.'
+keywords: snap, snapdrive, restore, snapshot, copy, ha, storage, pair
+summary: You can restore a Snapshot copy that contains a single storage entity.
 ---
 = Restoring a single storage entity on a storage system or storage system HA pair
 :icons: font

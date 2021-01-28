@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_nfs_configuration_checks.html
 sidebar: sidebar
-keywords:
-summary: 'For configurations that use Network File System \(NFS\), you must check that NFS clients are operating correctly, before you set up your host and storage systems.'
+keywords: snap, snapdrive, nfs, configuration, check
+summary: For configurations that use Network File System \(NFS\), you must check that NFS clients are operating correctly, before you set up your host and storage systems.
 ---
 = NFS configuration checks
 :icons: font

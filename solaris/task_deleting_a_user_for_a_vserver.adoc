@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_deleting_a_user_for_a_vserver.html
 sidebar: sidebar
-keywords:
-summary: 'You can delete login information from a Vserver by executing the snapdrive config delete command.'
+keywords: snap, snapdrive, delete, user, vserver
+summary: You can delete login information from a Vserver by executing the snapdrive config delete command.
 ---
 = Deleting a user from a Vserver
 :icons: font

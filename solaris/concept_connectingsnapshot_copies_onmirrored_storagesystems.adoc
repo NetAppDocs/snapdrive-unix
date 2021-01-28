@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_connectingsnapshot_copies_onmirrored_storagesystems.html
 sidebar: sidebar
-keywords: 
-summary: 'In the case of a Snapshot copy on a mirrored storage system, you can connect the Snapshot copy on the source storage system and the destination system.'
+keywords: snap, snapdrive, connect, snapshot, copy, mirrored, storage
+summary: In the case of a Snapshot copy on a mirrored storage system, you can connect the Snapshot copy on the source storage system and the destination system.
 ---
 = Connecting Snapshot copies on mirrored storage systems
 :icons: font

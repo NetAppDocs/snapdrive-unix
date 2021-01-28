@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_uninstalling_snapdrive_for_unix_from_a_solaris_host.html
 sidebar: sidebar
-keywords:
-summary: 'To uninstall SnapDrive for UNIX from a Solaris system, you must use the uninstall command.'
+keywords: snap, snapdrive, solaris, host, uninstall
+summary: To uninstall SnapDrive for UNIX from a Solaris system, you must use the uninstall command.
 ---
 = Uninstalling SnapDrive for UNIX from a Solaris host
 :icons: font

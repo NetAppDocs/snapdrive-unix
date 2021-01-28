@@ -1,8 +1,8 @@
 ---
 permalink: solaris/reference_snapshot_operation_command_lines.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX commands are used for Snapshot operations.'
+keywords: snap, snapdrive, snapshot, command, line, operation
+summary: SnapDrive for UNIX commands are used for Snapshot operations.
 ---
 = Snapshot operation command lines
 :icons: font

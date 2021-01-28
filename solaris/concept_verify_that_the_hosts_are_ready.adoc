@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_verify_that_the_hosts_are_ready.html
 sidebar: sidebar
-keywords:
-summary: 'You must verify that the hosts are ready. To start the verification operations, you should first test whether the host is connected to the storage system by entering the ping filername command.'
+keywords: snap, snapdrive, host, verify
+summary: You must verify that the hosts are ready. To start the verification operations, you should first test whether the host is connected to the storage system by entering the ping filername command.
 ---
 = Verifying the hosts are ready
 :icons: font

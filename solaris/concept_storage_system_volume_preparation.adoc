@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_storage_system_volume_preparation.html
 sidebar: sidebar
-keywords:
-summary: 'You can either use the command prompt on the storage system or the FilerView option to create a storage system volume for the dedicated use of SnapDrive for UNIX.'
+keywords: snap, snapdrive, storage, system, volume, prepare
+summary: You can either use the command prompt on the storage system or the FilerView option to create a storage system volume for the dedicated use of SnapDrive for UNIX.
 ---
 = Storage system volume preparation
 :icons: font

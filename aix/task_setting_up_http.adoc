@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_setting_up_http.html
 sidebar: sidebar
-keywords:
-summary: 'You can configure SnapDrive for UNIX to use HTTP for your host platform.'
+keywords: snap, snapdrive, http, configure
+summary: You can configure SnapDrive for UNIX to use HTTP for your host platform.
 ---
 = Setting up HTTP
 :icons: font

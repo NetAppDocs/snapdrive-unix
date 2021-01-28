@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_automatic_detection_of_host_entities.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX automatically detects the configuration of the host entity for some commands. A few snap storage commands need only the name of the host entity. In these cases, you do not have to specify the type of the host entity.'
+keywords: snap, snapdrive, automatic, detection, host
+summary: SnapDrive for UNIX automatically detects the configuration of the host entity for some commands. A few snap storage commands need only the name of the host entity. In these cases, you do not have to specify the type of the host entity.
 ---
 = Automatic detection of host entities
 :icons: font

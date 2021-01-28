@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_creating_a_filesystem_on_a_lunand_specifying_thelun.html
 sidebar: sidebar
-keywords:
-summary: 'You can create a file system on a LUN and specify the LUNs that are created as a part of it.'
+keywords: snap, snapdrive, create, file, lun, specify
+summary: You can create a file system on a LUN and specify the LUNs that are created as a part of it.
 ---
 = Creating a file system on a LUN and specifying the LUN
 :icons: font

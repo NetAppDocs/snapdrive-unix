@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_mounting_a_flexvol_volume_fails_in_nfs_environment.html
 sidebar: sidebar
-keywords:
-summary: 'When you mount a FlexVol volume, an entry is added in the /etc/exports file. In NFS environment, SnapDrive for UNIX fails, and an error message is generated.'
+keywords: snap, snapdrive, mount, flexclone, fail, volume, nfs
+summary: When you mount a FlexVol volume, an entry is added in the /etc/exports file. In NFS environment, SnapDrive for UNIX fails, and an error message is generated.
 ---
 = Mounting a FlexVol volume fails in NFS environment
 :icons: font

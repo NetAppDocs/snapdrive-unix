@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_viewing_all_the_data_interfaces_of_a_management_interface.html
 sidebar: sidebar
-keywords:
-summary: 'You can view all the data interfaces for a management interface by using the snapdrive config list command in an NFS environment.'
+keywords: snap, snapdrive, view, data, interface, management
+summary: You can view all the data interfaces for a management interface by using the snapdrive config list command in an NFS environment.
 ---
 = Viewing all the data interfaces for a management interface
 :icons: font

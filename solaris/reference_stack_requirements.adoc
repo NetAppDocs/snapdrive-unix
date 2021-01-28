@@ -1,8 +1,8 @@
 ---
 permalink: solaris/reference_stack_requirements.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX requires a host operating system, host file systems, NFS, volume managers, FC or iSCSI Host Utilities, storage system licenses, ONTAP software, MultiStore software, and Internet Protocol \(IP\) access. SnapDrive for UNIX also has certain stack requirements which it must fulfill.'
+keywords: snap, snapdrive, stack, requirements
+summary: SnapDrive for UNIX requires a host operating system, host file systems, NFS, volume managers, FC or iSCSI Host Utilities, storage system licenses, ONTAP software, MultiStore software, and Internet Protocol \(IP\) access. SnapDrive for UNIX also has certain stack requirements which it must fulfill.
 ---
 = Stack requirements
 :icons: font

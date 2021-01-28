@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_multiple_subnet_configuration.html
 sidebar: sidebar
-keywords:
-summary: 'Multiple subnets are useful in an environment where you want to separate management traffic and data traffic. This separation creates a more secure environment for managing network traffic. SnapDrive 4.1.1 for UNIX and later versions running on servers in such environments supports all the SnapDrive operations available in stand-alone environments and host and HA pair environments.'
+keywords: snap, snpadrive, multiple, subnet, configuration
+summary: Multiple subnets are useful in an environment where you want to separate management traffic and data traffic. This separation creates a more secure environment for managing network traffic. SnapDrive 4.1.1 for UNIX and later versions running on servers in such environments supports all the SnapDrive operations available in stand-alone environments and host and HA pair environments.
 ---
 = Multiple subnet configuration
 :icons: font

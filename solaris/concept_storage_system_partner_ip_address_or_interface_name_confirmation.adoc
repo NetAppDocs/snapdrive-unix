@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_storage_system_partner_ip_address_or_interface_name_confirmation.html
 sidebar: sidebar
-keywords: 
-summary: 'When you run the setup program on your storage system, it prompts you to provide an IP address or interface name for a partner storage system to use in case of a failover. If you do not provide this, SnapDrive for UNIX cannot search for the storage entities on a storage system that it took over.'
+keywords: snap, snapdrive, storage, partner, ip, address, interface, name
+summary: When you run the setup program on your storage system, it prompts you to provide an IP address or interface name for a partner storage system to use in case of a failover. If you do not provide this, SnapDrive for UNIX cannot search for the storage entities on a storage system that it took over.
 ---
 = Storage system partner IP address or interface name confirmation
 :icons: font

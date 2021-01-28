@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_verifying_login_information_for_vserver.html
 sidebar: sidebar
-keywords:
-summary: 'You can verify if the Vserver is configured in SnapDrive for UNIX using the snapdrive config list command.'
+keywords: snap, snapdrive, verify, login, information, vserver
+summary: You can verify if the Vserver is configured in SnapDrive for UNIX using the snapdrive config list command.
 ---
 = Verifying login information for Vserver
 :icons: font

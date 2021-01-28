@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_command_to_use_todisplay_availablestorage.html
 sidebar: sidebar
-keywords:
-summary: 'The snapdrive storage show or snapdrive storage list show LUNs or NFS directory trees underlying one or more storage entities. You can use the snapdrive storage show command to learn and know what is in a Snapshot copy of a disk group, host volume, file system, or NFS directory tree.'
+keywords: snap, snapdrive, storage, display, nfs, lun, command
+summary: The snapdrive storage show or snapdrive storage list show LUNs or NFS directory trees underlying one or more storage entities. You can use the snapdrive storage show command to learn and know what is in a Snapshot copy of a disk group, host volume, file system, or NFS directory tree.
 ---
 = Command to use to display available storage
 :icons: font
