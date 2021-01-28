@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_unable_to_start_the_daemon.html
 sidebar: sidebar
-keywords:
-summary: 'The daemon cannot be started when the daemon finds few stale entries in the snapdrive process.'
+keywords: snap, snapdrive, start, daemon, error
+summary: The daemon cannot be started when the daemon finds few stale entries in the snapdrive process.
 ---
 = Unable to start the daemon
 :icons: font

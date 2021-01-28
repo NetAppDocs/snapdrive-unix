@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_forcing_daemon_restart.html
 sidebar: sidebar
-keywords:
-summary: 'You can force the daemon to restart. A forceful restart of the daemon stops the execution of all running commands.'
+keywords: snap, snapdrive, force, daemon, restart, command
+summary: You can force the daemon to restart. A forceful restart of the daemon stops the execution of all running commands.
 ---
 = Forcing daemon restart
 :icons: font

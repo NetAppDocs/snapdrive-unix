@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_snapdrive_storage_create_command_fails_when_multiple_san_paths_are_present.html
 sidebar: sidebar
-keywords: 
-summary: 'The SnapDrive storage create command fails when multiple SAN paths are present but multipathing is disabled.'
+keywords: snap, snapdrive, storage, create, command, fail, san, multipathing, disable
+summary: The SnapDrive storage create command fails when multiple SAN paths are present but multipathing is disabled.
 ---
 = SnapDrive storage create command fails when multiple SAN paths are present but multipathing is disabled
 :icons: font

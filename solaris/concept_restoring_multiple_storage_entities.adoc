@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_restoring_multiple_storage_entities.html
 sidebar: sidebar
-keywords:
-summary: 'You can restore a Snapshot copy that contains multiple storage entities.'
+keywords: snap, snapdrive, restore, storage, multiple
+summary: You can restore a Snapshot copy that contains multiple storage entities.
 ---
 = Restoring multiple storage entities
 :icons: font

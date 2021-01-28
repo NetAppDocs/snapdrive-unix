@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_what_snapdrive_for_unix_is.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX simplifies the storage management tasks for you. SnapDrive for UNIX uses Snapshot technology to create an image of data stored on a shared or unshared storage system. SnapDrive also helps you with storage provisioning.'
+keywords: snap, snapdrive, unix
+summary: SnapDrive for UNIX simplifies the storage management tasks for you. SnapDrive for UNIX uses Snapshot technology to create an image of data stored on a shared or unshared storage system. SnapDrive also helps you with storage provisioning.
 ---
 = What SnapDrive for UNIX does
 :icons: font

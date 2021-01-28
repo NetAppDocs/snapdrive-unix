@@ -1,8 +1,8 @@
 ---
 permalink: solaris/reference_some_configuration_commands.html
 sidebar: sidebar
-keywords:
-summary: 'There are few commands that help you in configuring SnapDrive for UNIX.'
+keywords: snap, snapdrive, configuration, command
+summary: There are few commands that help you in configuring SnapDrive for UNIX.
 ---
 = Some configuration commands
 :icons: font

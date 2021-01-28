@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_stopping_the_clone_and_lun_clone_split.html
 sidebar: sidebar
-keywords:
-summary: 'You can stop the clone split for a volume clone or LUN clone using the job ID or file specification.'
+keywords: snap, snapdrive, stop, volume, clone, split, operation
+summary: You can stop the clone split for a volume clone or LUN clone using the job ID or file specification.
 ---
 = Stopping the volume clone or LUN clone split operation
 :icons: font

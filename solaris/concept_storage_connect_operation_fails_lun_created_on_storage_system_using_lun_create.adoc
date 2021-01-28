@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_storage_connect_operation_fails_lun_created_on_storage_system_using_lun_create.html
 sidebar: sidebar
-keywords:
-summary: 'The snapdrive storage connect command fails to connect to a LUN if it is created on a storage system by using the lun create command or by using System Manager.'
+keywords: snap, snapdrive, connect, storage, fail, lun, create, command
+summary: The snapdrive storage connect command fails to connect to a LUN if it is created on a storage system by using the lun create command or by using System Manager.
 ---
 = Storage connect operation fails to connect to a LUN created on a storage system using the LUN create command
 :icons: font

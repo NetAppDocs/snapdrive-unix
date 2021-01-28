@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_preparation_for_installing_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
-summary: 'The hosts on which you are installing SnapDrive for UNIX must meet the specific software, hardware, browser, database, and operating system requirements. For the latest information about these requirements, see the Interoperability Matrix.'
+keywords: snap, snapdrive, install, perpare, unix
+summary: The hosts on which you are installing SnapDrive for UNIX must meet the specific software, hardware, browser, database, and operating system requirements. For the latest information about these requirements, see the Interoperability Matrix.
 ---
 = Preparing to install SnapDrive for UNIX
 :icons: font

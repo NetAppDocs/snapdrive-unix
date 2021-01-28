@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_volume_based_snap_restore_operation_fails_in_slave_node.html
 sidebar: sidebar
-keywords:
-summary: 'With SFRAC on Solaris, volume-based snap restore \(vbsr\) operation fails in slave node.'
+keywords: snap, snapdrive, volume, snaprestore, fail, slave, mode
+summary: With SFRAC on Solaris, volume-based snap restore \(vbsr\) operation fails in slave node.
 ---
 = Volume-based snap restore operation fails in slave node
 :icons: font

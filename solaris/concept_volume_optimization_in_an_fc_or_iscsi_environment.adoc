@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_volume_optimization_in_an_fc_or_iscsi_environment.html
 sidebar: sidebar
-keywords: 
-summary: 'You can optimize your volume usage in a FC and Internet Small Computer System Interface \(iSCSI\) environment by having host-specific Logical Units Numbers \(LUNs\) on the same volume.'
+keywords: snap, snapdrive, colume, fc, iscsi, optimization
+summary: You can optimize your volume usage in a FC and Internet Small Computer System Interface \(iSCSI\) environment by having host-specific Logical Units Numbers \(LUNs\) on the same volume.
 ---
 = Volume optimization in an FC or iSCSI environment
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_mixed_environments_of_san_and_nfs.html
 sidebar: sidebar
-keywords:
-summary: 'In mixed SAN and NFS environments, the management and data interface must be mapped so that the first data interface is the same as the management interface.'
+keywords: snap, snapdrive, mixed, san, nfs, environment
+summary: In mixed SAN and NFS environments, the management and data interface must be mapped so that the first data interface is the same as the management interface.
 ---
 = Mixed SAN and NFS environments
 :icons: font

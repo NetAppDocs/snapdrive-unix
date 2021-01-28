@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_guidelines_for_snapshot_copy_creation_in_a_host_cluster_environment.html
 sidebar: sidebar
-keywords: 
-summary: 'Creating Snapshot copies with SnapDrive for UNIX is supported in some environment, but not in some. See the guidelines to know more.'
+keywords: snap, snapdrive, snapshot, copy, create, host, cluster
+summary: Creating Snapshot copies with SnapDrive for UNIX is supported in some environment, but not in some. See the guidelines to know more.
 ---
 = Guidelines for Snapshot copy creation in a host cluster environment
 :icons: font

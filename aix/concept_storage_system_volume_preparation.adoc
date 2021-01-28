@@ -23,8 +23,6 @@ When you create a volume on a storage system to hold LUNs or the NFS directory t
 
 *Related information*
 
-http://mysupport.netapp.com/portal/documentation[NetApp Documentation]
-
 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.cdot-famg-nfs/home.html[ONTAP 9 NFS Reference]
 
 https://library.netapp.com/ecm/ecm_download_file/ECMP1401220[Data ONTAP 8.2 File Access and Protocols Management Guide for 7-Mode]

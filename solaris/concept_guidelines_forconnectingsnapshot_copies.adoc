@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_guidelines_forconnectingsnapshot_copies.html
 sidebar: sidebar
-keywords:
-summary: 'Follow the guidelines when connecting to Snapshot copies.'
+keywords: snap, snapdrive, connect, snapshot, copy
+summary: Follow the guidelines when connecting to Snapshot copies.
 ---
 = Guidelines for connecting Snapshot copies
 :icons: font

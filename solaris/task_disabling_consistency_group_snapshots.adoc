@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_disabling_consistency_group_snapshots.html
 sidebar: sidebar
-keywords:
-summary: 'You can configure SnapDrive for UNIX to disable a consistency group Snapshot copy.'
+keywords: snap, snapdrive, disable, snapshot, copy, consistency, group
+summary: You can configure SnapDrive for UNIX to disable a consistency group Snapshot copy.
 ---
 = Disabling consistency group Snapshots copies
 :icons: font

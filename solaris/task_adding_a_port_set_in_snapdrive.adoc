@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_adding_a_port_set_in_snapdrive.html
 sidebar: sidebar
-keywords: port set
-summary: 'You can add a port set in the storage system to communicate with a Vserver. This is a one-time activity and must be done before using the storage system.'
+keywords: port, set, add, snap, snapdrive
+summary: You can add a port set in the storage system to communicate with a Vserver. This is a one-time activity and must be done before using the storage system.
 ---
 = Adding a port set in SnapDrive
 :icons: font

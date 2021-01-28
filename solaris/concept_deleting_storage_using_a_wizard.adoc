@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_deleting_storage_using_a_wizard.html
 sidebar: sidebar
-keywords:
-summary: 'You can use the storage delete wizard to perform certain delete operations.'
+keywords: snap, snapdrive, delete, storage, wizard
+summary: You can use the storage delete wizard to perform certain delete operations.
 ---
 = Deleting storage using a wizard
 :icons: font

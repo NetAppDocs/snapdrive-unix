@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_specifying_login_information_for_vserver.html
 sidebar: sidebar
-keywords:
-summary: 'You must specify the user login information for the Vserver. Depending on what you specified when you set up the Vserver, each Vserver must use the configured Vserver user name. If there is a change in your Vserver name, you must ensure that the new Vserver name is configured in SnapDrive for UNIX.'
+keywords: snap, snapdrive, login, infromation, vserver, specify
+summary: You must specify the user login information for the Vserver. Depending on what you specified when you set up the Vserver, each Vserver must use the configured Vserver user name. If there is a change in your Vserver name, you must ensure that the new Vserver name is configured in SnapDrive for UNIX.
 ---
 = Specifying login information for the Vserver
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_viewing_the_list_of_port_set.html
 sidebar: sidebar
-keywords:
-summary: 'You can use the snapdrive portset list command to view all the port sets that are configured in SnapDrive on the host.'
+keywords: snap, snapdrive, view, list, port, set
+summary: You can use the snapdrive portset list command to view all the port sets that are configured in SnapDrive on the host.
 ---
 = Viewing the list of port set
 :icons: font

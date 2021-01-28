@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_some_commands_are_delayed_when_the_storage_cluster_is_in_failover_mode.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX commands that create, connect, delete, or disconnect a LUN take several minutes to complete on a Solaris host when one of the clustered storage system is down.'
+keywords: snap, snapdrive, command, delay, failover, storage, cluster
+summary: SnapDrive for UNIX commands that create, connect, delete, or disconnect a LUN take several minutes to complete on a Solaris host when one of the clustered storage system is down.
 ---
 = Some commands are delayed when the storage cluster is in failover mode
 :icons: font

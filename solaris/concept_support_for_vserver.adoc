@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_support_for_vserver.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX supports Vserver. Vserver is a secure virtual storage server that supports multiple protocols and unified storage. A Vserver contains data volumes and one or more LIFs, which it uses to serve data to clients.'
+keywords: snap, snapdrive, vserver, support
+summary: SnapDrive for UNIX supports Vserver. Vserver is a secure virtual storage server that supports multiple protocols and unified storage. A Vserver contains data volumes and one or more LIFs, which it uses to serve data to clients.
 ---
 = Support for Vserver
 :icons: font

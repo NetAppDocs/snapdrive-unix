@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_starting_the_volume_or_lun_clone_split_start.html
 sidebar: sidebar
-keywords:
-summary: 'You can start a volume clone or LUN clone split operation.'
+keywords: snap, snapdrive, volume, clone, lun, split, start
+summary: You can start a volume clone or LUN clone split operation.
 ---
 = Starting the volume clone or LUN clone split
 :icons: font

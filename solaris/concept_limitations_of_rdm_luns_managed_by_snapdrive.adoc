@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_limitations_of_rdm_luns_managed_by_snapdrive.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive has a few limitations for provisioning RDM LUNs. You must be aware of the limitations that might affect your environment.'
+keywords: snap, snapdrive, limitations, rdm, lun
+summary: SnapDrive has a few limitations for provisioning RDM LUNs. You must be aware of the limitations that might affect your environment.
 ---
 = Limitations of RDM LUNs managed by SnapDrive
 :icons: font

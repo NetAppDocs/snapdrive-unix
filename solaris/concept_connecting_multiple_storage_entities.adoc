@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_connecting_multiple_storage_entities.html
 sidebar: sidebar
-keywords:
-summary: 'You can connect a Snapshot copy containing multiple storage entities.'
+keywords: snap, snapdrve, storage, entity, connect, multiple
+summary: You can connect a Snapshot copy containing multiple storage entities.
 ---
 = Connecting multiple storage entities
 :icons: font

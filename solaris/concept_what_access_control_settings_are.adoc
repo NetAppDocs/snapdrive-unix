@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_what_access_control_settings_are.html
 sidebar: sidebar
-keywords:
-summary: 'To determine user access, SnapDrive for UNIX checks one of two permissions files in the root volume of the storage system. You must check the rules set in those file to evaluate access control.'
+keywords: snap, snapdrive, access, control, settings
+summary: To determine user access, SnapDrive for UNIX checks one of two permissions files in the root volume of the storage system. You must check the rules set in those file to evaluate access control.
 ---
 = What access control settings are
 :icons: font

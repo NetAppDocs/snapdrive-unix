@@ -1,8 +1,8 @@
 ---
 permalink: solaris/delete_reference_trademark.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords:
+summary: 
 ---
 = Trademark
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_command_to_use_todisplay_snapshotcopy_information.html
 sidebar: sidebar
-keywords:
-summary: 'Use the snapdrive snap show \(or list\) command to display information about the Snapshot copies.'
+keywords: snap, snapdrive, command, display, snapshot, copy
+summary: Use the snapdrive snap show \(or list\) command to display information about the Snapshot copies.
 ---
 = Command to use to display Snapshot copy information
 :icons: font

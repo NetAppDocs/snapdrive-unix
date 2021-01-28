@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_limitations_of_luns_managed_by_snapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'When working with SnapDrive, you must be aware of the limitations related to LUNs.'
+keywords: snap, snapdrive, limitations, lun
+summary: When working with SnapDrive, you must be aware of the limitations related to LUNs.
 ---
 = Limitations of LUNs managed by SnapDrive
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_connecting_tosnapshot_copies_ofshared_storageentities_other_thanluns.html
 sidebar: sidebar
-keywords:
-summary: 'You can use the snapdrive snap connect command to connect to a Snapshot copy of shared storage entities other than LUNs.'
+keywords: snap, snapdrive, connect, snapshot, copy, shared, storage, lun
+summary: You can use the snapdrive snap connect command to connect to a Snapshot copy of shared storage entities other than LUNs.
 ---
 = Connecting to Snapshot copies of shared storage entities other than LUNs
 :icons: font

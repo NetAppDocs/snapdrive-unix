@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_security_featuresprovided_bysnapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX provides certain features that allow you to work with it more securely. These features give you more control over which users can perform operations on a storage system and from which host.'
+keywords: snap, snapdrive, security
+summary: SnapDrive for UNIX provides certain features that allow you to work with it more securely. These features give you more control over which users can perform operations on a storage system and from which host.
 ---
 = What the Security features are
 :icons: font

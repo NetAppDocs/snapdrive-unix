@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_guidelines_for_connecting_snapshot_copies_in_a_host_cluster_environment.html
 sidebar: sidebar
-keywords:
-summary: 'You can connect a Snapshot copy from any node in a host cluster. Follow the guidelines while connecting to a Snapshot copy.'
+keywords: snap, snapdrive, guideline, connect, copy, host, cluster, snapshot
+summary: You can connect a Snapshot copy from any node in a host cluster. Follow the guidelines while connecting to a Snapshot copy.
 ---
 = Guidelines for connecting Snapshot copies in a host cluster environment
 :icons: font

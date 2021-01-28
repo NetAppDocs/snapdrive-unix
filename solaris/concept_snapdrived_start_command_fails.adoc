@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_snapdrived_start_command_fails.html
 sidebar: sidebar
-keywords:
-summary: 'In some conditions snapdrived start command may fail. There are a few troubleshooting steps to resolve this.'
+keywords: snap, snapdrive, start, command, fail
+summary: In some conditions snapdrived start command may fail. There are a few troubleshooting steps to resolve this.
 ---
 = snapdrived start command fails
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_after_rebooting_the_host_os_and_cluster_services_fail_to_start.html
 sidebar: sidebar
-keywords:
-summary: 'On a Solaris 10 host, if the file system fails to mount after reboot, OS and cluster does not start.'
+keywords: reboot, host, os, cluster, fail, start
+summary: On a Solaris 10 host, if the file system fails to mount after reboot, OS and cluster does not start.
 ---
 = After rebooting the host, OS and cluster services fail to start
 :icons: font

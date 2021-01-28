@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_uninstall_files_installed_by_snapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX uses the uninstall files to remove SnapDrive for UNIX.'
+keywords: snap, snapdrive, uninstall, install
+summary: SnapDrive for UNIX uses the uninstall files to remove SnapDrive for UNIX.
 ---
 = Uninstall files installed by SnapDrive for UNIX
 :icons: font

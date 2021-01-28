@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_creating_lunswithout_hostentities.html
 sidebar: sidebar
-keywords:
-summary: 'You can use SnapDrive for UNIX commands to provision storage by creating a LUN on the storage system.'
+keywords: snap, snapdrive, create, lun, host, entity
+summary: You can use SnapDrive for UNIX commands to provision storage by creating a LUN on the storage system.
 ---
 = Creating LUNs without host entities
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_uninstalling_snapdrive_for_unix_from_an_aix_host.html
 sidebar: sidebar
-keywords:
-summary: 'You can use System Management Interface Tool \(SMIT\) to uninstall SnapDrive for UNIX from an AIX system.'
+keywords: snap, snapdrive, uninstall, aix, host, unix
+summary: You can use System Management Interface Tool \(SMIT\) to uninstall SnapDrive for UNIX from an AIX system.
 ---
 = Uninstalling SnapDrive for UNIX from an AIX host
 :icons: font

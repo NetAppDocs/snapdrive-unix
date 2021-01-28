@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_command_to_use_todelete_snapshotcopies.html
 sidebar: sidebar
-keywords: 
-summary: 'Use the snapdrive snap delete command to delete a Snapshot copy.'
+keywords: snap, snapdrive, command, delete, snapshot, copy
+summary: Use the snapdrive snap delete command to delete a Snapshot copy.
 ---
 = Command to use to delete Snapshot copies
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_viewing_the_access_control_permission.html
 sidebar: sidebar
-keywords:
-summary: 'You can view the access control permissions by running the snapdrive config access show command.'
+keywords: snap, snapdrive, view, access, control, permission
+summary: You can view the access control permissions by running the snapdrive config access show command.
 ---
 = Viewing the access control permission
 :icons: font

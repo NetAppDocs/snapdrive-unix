@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_creating_a_file_system_directly_on_a_lun_fails.html
 sidebar: sidebar
-keywords:
-summary: 'On Solaris hosts, creating a UFS file system directly on a LUN fails.'
+keywords: snap, snapdrive, lun, fail, create, file, system
+summary: On Solaris hosts, creating a UFS file system directly on a LUN fails.
 ---
 = Creating a file system directly on a LUN fails
 :icons: font

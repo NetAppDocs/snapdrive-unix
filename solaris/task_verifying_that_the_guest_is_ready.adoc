@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_verifying_that_the_guest_is_ready.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX must ensure that the guest is ready to communicate with the storage system.'
+keywords: snap, snapdrive, verify, guest
+summary: SnapDrive for UNIX must ensure that the guest is ready to communicate with the storage system.
 ---
 = Verifying that the guest is ready
 :icons: font

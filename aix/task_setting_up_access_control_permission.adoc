@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_setting_up_access_control_permission.html
 sidebar: sidebar
-keywords:
-summary: 'You can set up access control permission in SnapDrive for UNIX by creating a special directory and file in the root volume of the storage system.'
+keywords: snap, snapdrive, access, control, permission
+summary: You can set up access control permission in SnapDrive for UNIX by creating a special directory and file in the root volume of the storage system.
 ---
 = Setting up access control permission
 :icons: font

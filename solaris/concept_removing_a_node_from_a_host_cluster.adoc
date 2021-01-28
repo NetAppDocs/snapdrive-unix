@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_removing_a_node_from_a_host_cluster.html
 sidebar: sidebar
-keywords:
-summary: 'To remove a new node from a host cluster, follow the instructions in the Veritas Cluster Server Installation Guide for Solaris. After configuring LLT and GAB, you must unmap all the LUNs for all the shared storage entities in the host cluster using the snapdrive storage disconnect command.'
+keywords: snap, snapdrive, remove, node, host, cluster
+summary: To remove a new node from a host cluster, follow the instructions in the Veritas Cluster Server Installation Guide for Solaris. After configuring LLT and GAB, you must unmap all the LUNs for all the shared storage entities in the host cluster using the snapdrive storage disconnect command.
 ---
 = Removing a node from a host cluster
 :icons: font

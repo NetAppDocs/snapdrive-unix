@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_installing_snapdrive_for_unix_on_an_aix_host.html
 sidebar: sidebar
-keywords:
-summary: 'You can use the System Management Interface Tool \(SMIT\) to install SnapDrive for UNIX on the AIX host.'
+keywords: snap, snapdrive, install, aix, host, unix
+summary: You can use the System Management Interface Tool \(SMIT\) to install SnapDrive for UNIX on the AIX host.
 ---
 = Installing SnapDrive for UNIX on an AIX host
 :icons: font

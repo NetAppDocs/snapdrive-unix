@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_operation_with_multiple_storage_objects.html
 sidebar: sidebar
-keywords:
-summary: 'The following example shows the error message you would receive when you are not an authorized user to carry out the specific operation.'
+keywords: snap, snapdrive, storage, object, multiple, error
+summary: The following example shows the error message you would receive when you are not an authorized user to carry out the specific operation.
 ---
 = Operation with multiple storage objects
 :icons: font

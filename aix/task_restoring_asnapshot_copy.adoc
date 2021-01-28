@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_restoring_asnapshot_copy.html
 sidebar: sidebar
-keywords:
-summary: 'You can restore a Snapshot copy by using the snapdrive snap restore command. The restore operation can take several minutes, depending on the type, and amount of data being restored.'
+keywords: snap, snapdrive, restore, snapshot, copy
+summary: You can restore a Snapshot copy by using the snapdrive snap restore command. The restore operation can take several minutes, depending on the type, and amount of data being restored.
 ---
 = Restoring a Snapshot copy
 :icons: font

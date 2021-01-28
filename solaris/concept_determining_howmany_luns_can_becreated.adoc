@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_determining_howmany_luns_can_becreated.html
 sidebar: sidebar
-keywords:
-summary: 'SnapDrive for UNIX lets you determine how many LUNs can be created on the host without exceeding the limit.'
+keywords: snap, snapdrive, lun, create
+summary: SnapDrive for UNIX lets you determine how many LUNs can be created on the host without exceeding the limit.
 ---
 = Determining how many LUNs can be created
 :icons: font

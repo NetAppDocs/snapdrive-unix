@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_volume_managers_on_snapdrive_for_unix.html
 sidebar: sidebar
-keywords:
-summary: 'On a Solaris platform, you can use VxVM or Solaris Volume Manager \(SVM\). The SVM comes bundled as a part of Solaris OS.'
+keywords: snap, snapdrive, volume, manager, unix
+summary: On a Solaris platform, you can use VxVM or Solaris Volume Manager \(SVM\). The SVM comes bundled as a part of Solaris OS.
 ---
 = Volume managers on SnapDrive for UNIX
 :icons: font
