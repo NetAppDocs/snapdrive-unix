@@ -9,6 +9,6 @@ summary: Describes initial tasks you need to perform to deploy SnapDrive for UNI
 :imagesdir: ../media/
 
 [.lead]
-This guide describes initial tasks you need to perform to deploy SnapDrive for UNIX with clustered Data ONTAP in a Linux environment.
+This guide describes initial tasks you need to perform to deploy SnapDrive 5.3.2 for UNIX with clustered Data ONTAP in a Linux environment.
 
 Topics include how to install and configure the product and how to back up the databases.

@@ -2,7 +2,7 @@
 permalink: linux-installation-cmode/task_verifying_the_snapshot_copy.html
 sidebar: sidebar
 keywords: snap, snapdrive, snapshot, copy, verify
-summary:
+summary: You can verify your Snapshot copy by restoring the data.
 ---
 = Verifying the Snapshot copy
 :icons: font

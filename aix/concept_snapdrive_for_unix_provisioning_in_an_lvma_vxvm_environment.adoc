@@ -2,7 +2,7 @@
 permalink: aix/concept_snapdrive_for_unix_provisioning_in_an_lvma_vxvm_environment.html
 sidebar: sidebar
 keywords: snap, snapdrive, lvm, provisioning, environment
-summary:
+summary: SnapDrive for UNIX storage commands provision LVM entities by creating LVM objects.
 ---
 = SnapDrive for UNIX provisioning in an LVM environment
 :icons: font
