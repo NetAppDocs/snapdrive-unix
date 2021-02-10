@@ -24,6 +24,7 @@ To add an igroup to the host you must do the following:
 `*snapdrive igroup add _igroup_name filer_name [filer_name...]_*`
 +
 The following example output shows an igroup that has been added successfully for the storage system toaster.
++
 ----
 snapdrive igroup add ig toaster
 Added igroup configuration for appliance: toaster
