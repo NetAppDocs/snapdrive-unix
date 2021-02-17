@@ -11,7 +11,7 @@ summary: SnapDrive for UNIX allows you to add a particular igroup for the storag
 [.lead]
 SnapDrive for UNIX allows you to add a particular igroup for the storage system to the host and perform SnapDrive operations by using the configured igroup.
 
-To add an igroup to the host you must do the following:
+To add an igroup to the host, you must do the following:
 
 * Use the `snapdrive igroup add` command
 * Verify that the igroup is available in the storage system
