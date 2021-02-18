@@ -2,6 +2,8 @@
 entries:
 - title: Home
   url: "/index.html"
+- title: Release notes
+  url: "/releasenotes.html"
 - title: Installation and Administration for IBM AIX
   url: "/aix/index.html"
   entries:
@@ -2603,3 +2605,5 @@ entries:
           url: "/solaris/reference_command_line_keywords.html"
         - title: Command-line arguments
           url: "/solaris/reference_command_line_arguments.html"
+- title: Legal notices
+  url: "/reference_legal_notices.html"
