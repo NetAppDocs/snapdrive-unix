@@ -4,4 +4,4 @@ sidebar: sidebar
 ---
 = SnapDrive for UNIX 5.3.2 Documentation
 
-Welcome to the SnapDrive for UNIX Information Library. Here you will find documentation for 5.3.2 of SnapDrive for UNIX software including how to install, configure, use and administer SnapDrive for AIX, Linux, and Solaris.
+Welcome to the SnapDrive for UNIX Information Library. Here you will find documentation for 5.3.2 of SnapDrive for UNIX software including how to install, configure, use and administer SnapDrive for Linus, Solaris, and AIX.
