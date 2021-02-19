@@ -6,5 +6,5 @@ summary: Describes new features, upgrade notes, fixed issues, known limitations,
 ---
 = SnapDrive for Unix 5.3.2 Release Notes
 
-The SnapDrive for Unix 5.3.2 Release Notes describe new features, upgrade notes, fixed issues, known limitations, and known issues.
-You are require to sign on to the NetApp Support Site to access the Release Notes.
+The link:https://library.netapp.com/ecm/ecm_get_file/ECMLP2849339[SnapDrive for Unix 5.3.2 Release Notes] describe new features, upgrade notes, fixed issues, known limitations, and known issues.
+You are required to sign on to the NetApp Support Site to access the Release Notes.
