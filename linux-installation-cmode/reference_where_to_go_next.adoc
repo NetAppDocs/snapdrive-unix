@@ -13,9 +13,11 @@ After configuring SnapDrive for UNIX and creating a Snapshot copy, you can perfo
 
 You can find more information about these features, as well as release-specific information about SnapDrive for UNIX, in the following documentation, available on the NetApp Support Site:
 
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2849340[SnapDrive 5.3.2 for UNIX Administration Guide for Linux]
+* link:../linux-administration/index.html[SnapDrive 5.3.2 for UNIX Administration Guide for Linux]
 +
 Describes how to configure various features on SnapDrive for UNIX after the deployment is complete. Topics include how to configure igroups, configure SnapDrive for UNIX, configure RBAC, and use the data collection utility to diagnose issues with SnapDrive for UNIX.
+
+* link:../
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2849339[SnapDrive 5.3.2 for UNIX Release Notes (AIX, Linux, and Solaris)]
 +
