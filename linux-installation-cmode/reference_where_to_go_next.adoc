@@ -27,6 +27,6 @@ Describes new features, important cautions, known problems, and limitations for 
 +
 Describes initial tasks you must perform to deploy SnapManager for Oracle with clustered-mode in UNIX environment. Topics include how to install and configure the product and how to back up the databases.
 
-* link:https://www.netapp.com/pdf.html?item=/media/16322-tr-4212.pdf[NetApp Technical Report 4212: Best Practice Guide for SnapDrive for UNIX 5.3]
+* link:https://www.netapp.com/pdf.html?item=/media/16322-tr-4212.pdf[NetApp Technical Report 4212: Best Practice Guide for SnapDrive 5.3 for UNIX]
 +
 Describes SnapDrive for UNIX best practices.
