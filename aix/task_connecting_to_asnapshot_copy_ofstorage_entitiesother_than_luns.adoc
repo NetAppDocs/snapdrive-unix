@@ -1,25 +1,29 @@
 ---
 permalink: aix/task_connecting_to_asnapshot_copy_ofstorage_entitiesother_than_luns.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the snapdrive snap connect command for connecting to a Snapshot copy that contains storage entities other than LUNs. This command cannot be used when destination names you provide are currently in use or, there is a file system name that is used as a mountpoint.'
+keywords: snap, snapdrive, connect, snapshot, copy, storage, lun
+summary: You can use the snapdrive snap connect command for connecting to a Snapshot copy that contains storage entities other than LUNs. This command cannot be used when destination names you provide are currently in use or, there is a file system name that is used as a mountpoint.
 ---
 = Connecting to a Snapshot copy of storage entities other than LUNs
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the snapdrive snap connect command for connecting to a Snapshot copy that contains storage entities other than LUNs. This command cannot be used when destination names you provide are currently in use or, there is a file system name that is used as a mountpoint.
+You can use the `snapdrive snap connect` command for connecting to a Snapshot copy that contains storage entities other than LUNs. This command cannot be used when destination names you provide are currently in use or, there is a file system name that is used as a mountpoint.
 
-When you connect from a non-originating host to a Snapshot copy containing the VxFS file system mounted with the default mount qio option, you should have the Veritas license for Veritas File Device Driver (VxFDD) installed.
+When you connect from a non-originating host to a Snapshot copy containing the VxFS file system mounted with the default mount `qio` option, you should have the Veritas license for Veritas File Device Driver (VxFDD) installed.
 
-. Enter the following command: snapdrive snap connect -snapname fspec_set [fspec_set...] -snapname long_snap_name [-igroup ig_name [ig_name...]] [-autoexpand] [-autorename] [-nopersist] [{-reserve | -noreserve}] [-readonly] [-split]
+.Steps
+
+. Enter the following command:
 +
-In the preceding usage, fspec_set has the following format:
+`*snapdrive snap connect -snapname fspec_set [_fspec_set_...] -snapname _long_snap_name_ [-igroup _ig_name_ [_ig_name_...]] [-autoexpand] [-autorename] [-nopersist] [{-reserve | -noreserve}] [-readonly] [-split]*`
 +
-{-dg | -fs | -hostvol} src_file_spec [dest_file_spec] [{-destdg | -destvg} dgname] [{-destlv | -desthv} lvname]
+In the preceding usage, `_fspec_set_` has the following format:
 +
-This command must always start with the name of the storage entity you want to connect (for example, -dg, -hostvol, or -fs). If you specify an NFS mountpoint, you cannot specify non-NFS entities (-vg, -dg, -fs, -lvol or -hostvol) on the same command line.
+`*{-dg | -fs | -hostvol} _src_file_spec_ [_dest_file_spec_] [{-destdg | -destvg} _dgname_] [{-destlv | -desthv} lvname]*`
++
+This command must always start with the name of the storage entity you want to connect (for example, `-dg`, `-hostvol, or `-fs`). If you specify an NFS mountpoint, you cannot specify non-NFS entities (`-vg`, `-dg`, `-fs`, `-lvol` or `-hostvol`) on the same command line.
 
 SnapDrive for UNIX clones the LUNs you specify and connects them to a new location.
 
@@ -81,7 +85,7 @@ discovering new lun(s) ... done
 Importing vg1
 ----
 
-The following command line includes the-autorename option as it connects a disk group with two file systems and two LUNs:
+The following command line includes the `-autorename` option as it connects a disk group with two file systems and two LUNs:
 
 ----
 # snapdrive snap connect -fs mnt/fs1 -snapname

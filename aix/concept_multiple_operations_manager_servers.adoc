@@ -1,15 +1,15 @@
 ---
 permalink: aix/concept_multiple_operations_manager_servers.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX supports multiple Operations Manager console servers. This feature is required when a group of storage systems is managed by more than one Operations Manager console server. SnapDrive for UNIX contacts the Operations Manager console servers in the same order that the Operations Manager console servers are configured in SnapDrive for UNIX. You can run the snapdrive config list command to obtain the configuration order.'
+keywords: snap, snapdrive, multiple, operations, manager, console, server
+summary: SnapDrive for UNIX supports multiple Operations Manager console servers. This feature is required when a group of storage systems is managed by more than one Operations Manager console server. SnapDrive for UNIX contacts the Operations Manager console servers in the same order that the Operations Manager console servers are configured in SnapDrive for UNIX. You can run the snapdrive config list command to obtain the configuration order.
 ---
 = Multiple Operations Manager console servers
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapDrive for UNIX supports multiple Operations Manager console servers. This feature is required when a group of storage systems is managed by more than one Operations Manager console server. SnapDrive for UNIX contacts the Operations Manager console servers in the same order that the Operations Manager console servers are configured in SnapDrive for UNIX. You can run the snapdrive config list command to obtain the configuration order.
+SnapDrive for UNIX supports multiple Operations Manager console servers. This feature is required when a group of storage systems is managed by more than one Operations Manager console server. SnapDrive for UNIX contacts the Operations Manager console servers in the same order that the Operations Manager console servers are configured in SnapDrive for UNIX. You can run the `snapdrive config list` command to obtain the configuration order.
 
 The following example shows output for multiple Operations Manager console servers:
 

@@ -1,17 +1,21 @@
 ---
 permalink: solaris/task_adding_a_node_to_a_host_cluster.html
 sidebar: sidebar
-keywords: 
-summary: 'To add a new node to a host cluster, follow the instructions in the Veritas Cluster Server Installation Guide for Solaris. After configuring Low Latency Transport \(LLT\) and Global Atomic Broadcast \(GAB\), you must complete some additional steps. To ensure that the host cluster is set up properly, you should use the snapdrive config check cluster option before using any of the SnapDrive for UNIX commands.'
+keywords: snap, snapdrive, node, host, cluster
+summary: To add a new node to a host cluster, follow the instructions in the Veritas Cluster Server Installation Guide for Solaris. After configuring Low Latency Transport \(LLT\) and Global Atomic Broadcast \(GAB\), you must complete some additional steps. To ensure that the host cluster is set up properly, you should use the snapdrive config check cluster option before using any of the SnapDrive for UNIX commands.
 ---
 = Adding a node to a host cluster
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To add a new node to a host cluster, follow the instructions in the _Veritas Cluster Server Installation Guide for Solaris_. After configuring Low Latency Transport (LLT) and Global Atomic Broadcast (GAB), you must complete some additional steps. To ensure that the host cluster is set up properly, you should use the snapdrive config check cluster option before using any of the SnapDrive for UNIX commands.
+To add a new node to a host cluster, follow the instructions in the _Veritas Cluster Server Installation Guide for Solaris_. After configuring Low Latency Transport (LLT) and Global Atomic Broadcast (GAB), you must complete some additional steps. To ensure that the host cluster is set up properly, you should use the `snapdrive config check cluster` option before using any of the SnapDrive for UNIX commands.
 
-. Use the following command to map all the LUNs for all the shared disk groups in the host cluster: snapdrive storage connect
+.Steps
+
+. Use the following command to map all the LUNs for all the shared disk groups in the host cluster:
++
+`*snapdrive storage connect*`
 . Start the Cluster Volume Manager (CVM) on the new node.
 +
 For instructions, see the _Veritas Cluster Server Installation Guide for Solaris_.

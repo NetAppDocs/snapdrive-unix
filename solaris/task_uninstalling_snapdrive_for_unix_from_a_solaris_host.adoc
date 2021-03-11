@@ -1,31 +1,35 @@
 ---
 permalink: solaris/task_uninstalling_snapdrive_for_unix_from_a_solaris_host.html
 sidebar: sidebar
-keywords: 
-summary: 'To uninstall SnapDrive for UNIX from a Solaris system, you must use the uninstall command.'
+keywords: snap, snapdrive, solaris, host, uninstall
+summary: To uninstall SnapDrive for UNIX from a Solaris system, you must use the uninstall command.
 ---
 = Uninstalling SnapDrive for UNIX from a Solaris host
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To uninstall SnapDrive for UNIX from a Solaris system, you must use the uninstall command.
+To uninstall SnapDrive for UNIX from a Solaris system, you must use the `uninstall` command.
 
 Ensure that you are logged in as a root user.
 
-When you uninstall SnapDrive for UNIX in sparse root zones, the uninstallation process does not remove the symbolic links for SnapDrive for UNIX in /usr/bin and /usr/sbin because the symbolic links are mounted as read-only file systems in sparse root zones. You must remove these symbolic links from the global zone. Before removing the symbolic links, ensure that no other sparse root zones are using SnapDrive for UNIX.
+When you uninstall SnapDrive for UNIX in sparse root zones, the uninstallation process does not remove the symbolic links for SnapDrive for UNIX in `/usr/bin` and `/usr/sbin` because the symbolic links are mounted as read-only file systems in sparse root zones. You must remove these symbolic links from the global zone. Before removing the symbolic links, ensure that no other sparse root zones are using SnapDrive for UNIX.
 
-rm /usr/sbin/snapdrive
+`rm /usr/sbin/snapdrive`
 
-rm /usr/sbin/snapdrived
+`rm /usr/sbin/snapdrived`
 
-rm /usr/bin/snapdrive
+`rm /usr/bin/snapdrive`
 
-. Use the following command to remove the software: uninstall
+.Steps
+
+. Use the following command to remove the software:
++
+`*uninstall*`
 . Answer y (or yes) when the command asks whether you are sure you want to remove the Attach Kit.
 +
 If you answer n (or no), the command does not uninstall the Attach Kit.
 +
-To avoid getting the confirmation query, enter the ./uninstall command with the -f option, which prevents the uninstall script from running in interactive mode.
+To avoid getting the confirmation query, enter the `./uninstall` command with the `-f` option, which prevents the uninstall script from running in interactive mode.
 +
-NOTE: To ensure that all the SnapDrive for UNIX services are stopped, use the SnapDrive for UNIX uninstall script; do not use the operating system tools like pkgrm.
+NOTE: To ensure that all the SnapDrive for UNIX services are stopped, use the SnapDrive for UNIX uninstall script; do not use the operating system tools like `pkgrm`.

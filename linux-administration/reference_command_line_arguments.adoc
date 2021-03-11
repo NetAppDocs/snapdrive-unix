@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/reference_command_line_arguments.html
 sidebar: sidebar
-keywords: 
-summary: 'The SnapDrive for UNIX takes arguments in a specific format.'
+keywords: snap, snapdrive, command, argument, format, copy, snapshot
+summary: The SnapDrive for UNIX takes arguments in a specific format.
 ---
 = Command-line arguments
 :icons: font
@@ -13,8 +13,11 @@ The SnapDrive for UNIX takes arguments in a specific format.
 
 The following table describes the arguments you can specify with the keywords.
 
-Use the format snapdrive type_name operation_name [<keyword/option> <arguments>]; for example, if you wanted to create a Snapshot copy called snap_hr from the host file system /mnt/dir, you would enter the following command line: snapdrive snap create -fs/mnt/dir -snapnamesnap_hr.
+Use the format `snapdrive type_name operation_name [<keyword/option> <arguments>]`; for example, if you wanted to create a Snapshot copy called `snap_hr` from the host file system `/mnt/dir`, you would enter the following command line:
 
+`*snapdrive snap create -fs/mnt/dir -snapname _snap_hr*`.
+
+[options="header"]
 |===
 | Argument| Description
 a|
@@ -38,9 +41,9 @@ filer_path
 a|
 A path name to a storage system object. This name can contain the storage system name and volume, but it does not have to if SnapDrive for UNIX can use default values for the missing components based on values supplied in the previous arguments. The following are examples of path names:
 
-* test_filer:/vol/vol3/qtree_2
-* /vol/vol3/qtree_2
-* qtree_2
+* `test_filer:/vol/vol3/qtree_2`
+* `/vol/vol3/qtree_2`
+* `qtree_2`
 
 a|
 file_spec
@@ -58,19 +61,21 @@ If you supply values for this argument that resolve to redundant disk groups or 
 
 Example of incorrect usage: This example assumes dg1 has host volumes hv1 and hv2, with file systems fs1 and fs2. As a result, the following arguments would fail because they involve redundant disk groups or host volumes.
 
--dgdg1 -hostvoldg1/hv1
+`-dg _dg1_ -hostvoldg1/hv1`
 
--dgdg1-fs/fs1
+`-dg _dg1_`
 
--hostvoldg1/hv1 -fs/fs1
+`-fs/fs1`
+
+`-hostvol dg1/hv1 -fs /fs1`
 
 Example of correct usage: This example shows the correct usage for this argument.
 
--hostvoldg1/hv1dg1/hv2
+`-hostvoldg1/hv1dg1/hv2`
 
--fs/fs1/fs2
+`-fs/fs1/fs2`
 
--hostvoldg1/hv1 -fs/fs2
+`-hostvoldg1/hv1 -fs/fs2`
 
 a|
 fspec_set
@@ -82,23 +87,23 @@ Used with the snap connect command to identify:
 
 The argument also lets you specify a set of destination names that SnapDrive for UNIX uses when it makes the entity available in the newly connected copy of the Snapshot copy.
 
-The format for fspec_set is: { -vg | -dg | -fs | -lvol | -hostvol } src_fspec [dest_fspec] [{ -destdg | -destvg } dg_name] [{ - destlv | -desthv } lv_name]
+The format for fspec_set is: `{ -vg \| -dg \| -fs \| -lvol \| -hostvol } _src_fspec_ [_dest_fspec_] [{ -destdg \| -destvg } _dg_name_] [{ - destlv \| -desthv } _lv_name_]`
 
-a|
+.2+a|
 host_lvm_fspec
 a|
 Lets you specify whether you want to create a file system, logical volume, or disk group when you are executing the storage create command. This argument might have any of the three formats as described in the following. The format you use depends on the entity you want to create.
 
-NOTE: The -dg and -vg options are synonyms that reflect the fact that some operating systems refer to disk groups and others refer to volume groups. In addition, -lvol and -hostvol are also synonyms. This guide uses -dg to refer to both disk groups and volume groups and -hostvol to refer to both logical volumes and host volumes.
+NOTE: The `-dg` and `-vg` options are synonyms that reflect the fact that some operating systems refer to disk groups and others refer to volume groups. In addition, `-lvol` and `-hostvol` are also synonyms. This guide uses -dg to refer to both disk groups and volume groups and `-hostvol` to refer to both logical volumes and host volumes.
 
 a|
-To create a file system, use this format: -fs file_spec [-fstypetype] [-fsoptsoptions] [-hostvolfile_spec] [-dgdg_name] To create a logical or host volume, use this format: [-hostvolfile_spec] [-dgdg_name] | -hostvol To create a disk or volume group, use this format: file_spec [-dgdg_name] | -dgdg_name
+To create a file system, use this format: -fs file_spec ``[-fstype _type_] [-fsopts _options_] [-hostvol _file_spec_] [-dg _dg_name_] To create a logical or host volume, use this format: [-hostvol _file_spec_] [-dg _dg_name_] \| -hostvol` To create a disk or volume group, use this format: file_spec `[-dg _dg_name_] \| -dg _dg_name_`
 
 You must name the top-level entity that you are creating. You do not need to supply names for any underlying entities. If you do not supply names for the underlying entities, SnapDrive for UNIX creates them with internally generated names.
 
-If you specify that SnapDrive for UNIX create a file system, you must specify a type that SnapDrive for UNIX supports with the host LVM. These types include ext4 or ext3
+If you specify that SnapDrive for UNIX create a file system, you must specify a type that SnapDrive for UNIX supports with the host LVM. These types include `ext4` or `ext3`
 
-The option -fsopts is used to specify options to be passed to the host operation that creates the new file system; for example, mkfs.
+The option `-fsopts` is used to specify options to be passed to the host operation that creates the new file system; for example, `mkfs`.
 
 a|
 ig_name
@@ -109,29 +114,29 @@ long_filer_path
 a|
 A path name that includes the storage system name, volume name, and possibly other directory and file elements within that volume. The following are examples of long path names:
 
-test_filer:/vol/vol3/qtree_2
+`test_filer:/vol/vol3/qtree_2`
 
-10.10.10.1:/vol/vol4/lun_21
+`10.10.10.1:/vol/vol4/lun_21`
 
 a|
 long_lun_name
 a|
 A name that includes the storage system name, volume, and LUN name. The following is an example of a long LUN name:
 
-test_filer:/vol/vol1/lunA
+`test_filer:/vol/vol1/lunA`
 
 a|
 long_snap_name
 a|
-A name that includes the storage system name, volume, and Snapshot copy name. The following is an example of a long Snapshot copy name: test_filer:/vol/account_vol:snap_20040202
+A name that includes the storage system name, volume, and Snapshot copy name. The following is an example of a long Snapshot copy name: `test_filer:/vol/account_vol:snap_20040202`
 
-With the snapdrive snap show and snapdrive snap delete commands, you can use the asterisk (*) character as a wildcard to match any part of a Snapshot copy name. If you use a wildcard character, you must place it at the end of the Snapshot copy name. SnapDrive for UNIX displays an error message if you use a wildcard at any other point in a name.
+With the `snapdrive snap show` and `snapdrive snap delete` commands, you can use the asterisk (*) character as a wildcard to match any part of a Snapshot copy name. If you use a wildcard character, you must place it at the end of the Snapshot copy name. SnapDrive for UNIX displays an error message if you use a wildcard at any other point in a name.
 
-Example: This example uses wildcards with both the snap show command and the snap delete command: snap show myfiler:/vol/vol2:mysnap*
+Example: This example uses wildcards with both the `snap show` command and the `snap delete` command: `snap show myfiler:/vol/vol2:mysnap*`
 
-myfiler:/vol/vol2:/yoursnap* snap show myfiler:/vol/vol1/qtree1:qtree_snap* snap delete 10.10.10.10:/vol/vol2:mysnap* 10.10.10.11:/vol/vol3:yoursnap* hersnap
+`myfiler:/vol/vol2:/yoursnap* snap show myfiler:/vol/vol1/qtree1:qtree_snap* snap delete 10.10.10.10:/vol/vol2:mysnap* 10.10.10.11:/vol/vol3:yoursnap* hersnap`
 
-Limitation for wildcards: You cannot enter a wildcard in the middle of a Snapshot copy name. For example, the following command line produces an error message because the wildcard is in the middle of the Snapshot copy name: banana:/vol/vol1:my*snap
+Limitation for wildcards: You cannot enter a wildcard in the middle of a Snapshot copy name. For example, the following command line produces an error message because the wildcard is in the middle of the Snapshot copy name: `banana:/vol/vol1:my*snap`
 
 a|
 lun_name
@@ -148,7 +153,7 @@ prefix used in the volume clone's name generation
 a|
 s_lun_name
 a|
-Indicates a LUN entity that is captured in the Snapshot copy specified by long_snap_name.
+Indicates a LUN entity that is captured in the Snapshot copy specified by `_long_snap_name_`.
 |===
 *Related information*
 

@@ -1,19 +1,23 @@
 ---
 permalink: solaris/task_deleting_a_user_for_a_vserver.html
 sidebar: sidebar
-keywords: 
-summary: 'You can delete login information from a Vserver by executing the snapdrive config delete command.'
+keywords: snap, snapdrive, delete, user, vserver
+summary: You can delete login information from a Vserver by executing the snapdrive config delete command.
 ---
 = Deleting a user from a Vserver
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can delete login information from a Vserver by executing the snapdrive config delete command.
+You can delete login information from a Vserver by executing the `snapdrive config delete` command.
 
-. Enter the following command: snapdrive config delete appliance_name
+.Steps
+
+. Enter the following command:
 +
-appliance_name is the name of the Vserver on which you want to delete login information.
+`*snapdrive config delete _appliance_name_*`
++
+`_appliance_name_` is the name of the Vserver on which you want to delete login information.
 +
 ----
 # snapdrive config delete clstr-vs2

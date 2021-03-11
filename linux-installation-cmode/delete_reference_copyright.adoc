@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-cmode/delete_reference_copyright.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords:
+summary:
 ---
 = Copyright
 :icons: font

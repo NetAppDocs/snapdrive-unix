@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_limitations_of_luns_managed_by_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
-summary: 'When working with SnapDrive, you must be aware of the limitations related to LUNs.'
+keywords: snap, snapdrive, limitations, lun
+summary: When working with SnapDrive, you must be aware of the limitations related to LUNs.
 ---
 = Limitations of LUNs managed by SnapDrive
 :icons: font
@@ -14,8 +14,8 @@ When working with SnapDrive, you must be aware of the limitations related to LUN
 * A LUN managed by SnapDrive cannot serve either as a boot disk or a system disk.
 * The Solaris hosts have operating system limits on how many LUNs you can create.
 +
-You can run the snapdrive config check luns command when you create the LUNs on these hosts. This command enables you to determine how many LUNs you can create.
+You can run the `snapdrive config check luns` command when you create the LUNs on these hosts. This command enables you to determine how many LUNs you can create.
 
 * SnapDrive does not support the colon (:) in the long forms of the names for LUNs and Snapshot copies.
 +
-The colon is allowed between the components of a long Snapshot copy name or between the storage system name and storage system volume name of a LUN. For example, toaster:/vol/vol1:snap1 is a typical long Snapshot name, while toaster:/vol/vol1/lunA is a typical long LUN name.
+The colon is allowed between the components of a long Snapshot copy name or between the storage system name and storage system volume name of a LUN. For example, `toaster:/vol/vol1:snap1` is a typical long Snapshot name, while `toaster:/vol/vol1/lunA` is a typical long LUN name.

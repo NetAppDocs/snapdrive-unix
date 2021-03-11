@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/reference_collecting_information_needed_by_commands.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX commands follow a format and have keywords associated with them. The commands have options and arguments, and require values to be entered by the user.'
+keywords: snap, snapdrive, command, information, keywords, arguments, values, options, format
+summary: SnapDrive for UNIX commands follow a format and have keywords associated with them. The commands have options and arguments, and require values to be entered by the user.
 ---
 = Collecting information needed by commands
 :icons: font

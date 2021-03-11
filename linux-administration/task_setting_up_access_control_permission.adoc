@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/task_setting_up_access_control_permission.html
 sidebar: sidebar
-keywords: 
-summary: 'You can set up access control permission in SnapDrive for UNIX by creating a special directory and file in the root volume of the storage system.'
+keywords: snap, snapdrive, access, control, permission, directory
+summary: You can set up access control permission in SnapDrive for UNIX by creating a special directory and file in the root volume of the storage system.
 ---
 = Setting up access control permission
 :icons: font
@@ -13,14 +13,18 @@ You can set up access control permission in SnapDrive for UNIX by creating a spe
 
 Ensure that you are logged in as a root user.
 
-. Create the directory sdprbac in the root volume of the target storage system.
+.Steps
+
+. Create the directory `sdprbac` in the root volume of the target storage system.
 +
 One way to make the root volume accessible is to mount the volume using NFS.
 
-. Create the permissions file in the sdprbac directory. Ensure the following statements are true:
- ** The file must be named sdhost-name.prbac where host-name is the name of the host for which you are specifying access permissions.
+. Create the permissions file in the `sdprbac` directory. Ensure the following statements are true:
+ ** The file must be named `sdhost-name.prbac` where host-name is the name of the host for which you are specifying access permissions.
  ** The file must be read-only to ensure that SnapDrive for UNIX can read it, but that it cannot be modified.
-To give a host named dev-sun1 access permission, you would create the following file on the storage system: /vol/vol1/sdprbac/sddev-sun1.prbac
+
++
+To give a host named dev-sun1 access permission, you would create the following file on the storage system: `/vol/vol1/sdprbac/sddev-sun1.prbac`
 . Set the permissions in the file for that host.
 +
 You must use the following format for the file:
@@ -30,7 +34,10 @@ You must use the following format for the file:
  ** Permission strings are case-insensitive.
  ** No white space can precede the permission string.
  ** No comments are allowed.
+
++
 These valid permission strings allow the following access levels:
+
  ** NONE--The host has no access to the storage system.
  ** SNAP CREATE--The host can create Snapshot copies.
  ** SNAP USE--The host can delete and rename Snapshot copies.
@@ -39,9 +46,13 @@ These valid permission strings allow the following access levels:
  ** STORAGE USE--The host can connect and disconnect storage, and also perform clone split estimate and clone split start on storage.
  ** STORAGE ALL--The host can create, delete, connect, and disconnect storage, and also perform clone split estimate and clone split start on storage.
  ** ALL ACCESS--The host has access to all the preceding SnapDrive for UNIX operations.
+
++
 Each of these permission strings is discrete. If you specify SNAP USE, the host can delete or rename Snapshot copies, but it cannot create Snapshot copies or restore or perform any storage provisioning operations.
 
 +
 Regardless of the permissions you set, the host can perform show and list operations.
 
-. Verify the access permissions by entering the following command: snapdrive config access show filer_name
+. Verify the access permissions by entering the following command:
++
+`*snapdrive config access show filer_name*`

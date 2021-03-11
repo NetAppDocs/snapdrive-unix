@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_security_considerations.html
 sidebar: sidebar
-keywords: 
-summary: 'You can enable SnapDrive for UNIX to access the storage systems connected to the host, and must configure the host to use the login names and passwords assigned to the storage systems. If you do not provide this information, SnapDrive for UNIX cannot communicate with the storage system.'
+keywords: snap, snapdrive, security, considerations, login
+summary: You can enable SnapDrive for UNIX to access the storage systems connected to the host, and must configure the host to use the login names and passwords assigned to the storage systems. If you do not provide this information, SnapDrive for UNIX cannot communicate with the storage system.
 ---
 = Security considerations
 :icons: font

@@ -1,17 +1,21 @@
 ---
 permalink: linux-administration/task_displaying_asnapshot_copy.html
 sidebar: sidebar
-keywords: 
-summary: 'The command snapdrive snap show or list displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.'
+keywords: snap, snapdrive, snapshot, shot, list, command
+summary: The command snapdrive snap show or list displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.
 ---
 = Displaying a Snapshot copy
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The command snapdrive snap show or list displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.
+The command `snapdrive snap show` or `list` displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.
 
-. Enter the following command syntax to display a Snapshot copy: snapdrive snap show [-snapname] long_snap_name [snap_name...] [-verbose]
+.Steps
+
+. Enter the following command syntax to display a Snapshot copy:
++
+`*snapdrive snap show [-snapname] long_snap_name [snap_name...] [-verbose]*`
 
 This operation displays, at a minimum, the following information about the Snapshot copy:
 
@@ -22,7 +26,7 @@ This operation displays, at a minimum, the following information about the Snaps
 * The name of the Snapshot copy
 * The names of the disk groups included in the Snapshot copy
 
-*Example*: The following are examples of snapdrive snap show commands:
+*Example*: The following are examples of `snapdrive snap show` commands:
 
 ----
 # snapdrive snap show -snapname toaster:/vol/vol2:snapA snapX snapY
@@ -59,7 +63,7 @@ toaster:/vol/vol1:snap2 DBserver Mar 8
 Mar 8 10:18 rdg1
 ----
 
-*Example*: This example shows a Snapshot copy of an NFS-mounted directory tree on a Linux host using the snapdrive snap list command with the - verbose option:
+*Example*: This example shows a Snapshot copy of an NFS-mounted directory tree on a Linux host using the snapdrive snap list command with the `- verbose` option:
 
 ----
 # snapdrive snap list -fs /mnt/acctfs1 -v

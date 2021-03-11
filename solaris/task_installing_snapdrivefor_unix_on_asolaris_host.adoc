@@ -1,28 +1,32 @@
 ---
 permalink: solaris/task_installing_snapdrivefor_unix_on_asolaris_host.html
 sidebar: sidebar
-keywords: 
-summary: 'To install SnapDrive for UNIX on a Solaris host, you must confirm that you are logged in as root. If you are executing this file remotely and your system configuration does not allow you to log in as root, you can use the su command to become root. The installation file is a standard Solaris.pkg file.'
+keywords: snap, snapdrive, install, solaris, host, unix
+summary: To install SnapDrive for UNIX on a Solaris host, you must confirm that you are logged in as root. If you are executing this file remotely and your system configuration does not allow you to log in as root, you can use the su command to become root. The installation file is a standard Solaris.pkg file.
 ---
 = Installing SnapDrive for UNIX on a Solaris host
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-To install SnapDrive for UNIX on a Solaris host, you must confirm that you are logged in as root. If you are executing this file remotely and your system configuration does not allow you to log in as root, you can use the su command to become root. The installation file is a standard Solaris.pkg file.
+To install SnapDrive for UNIX on a Solaris host, you must confirm that you are logged in as root. If you are executing this file remotely and your system configuration does not allow you to log in as root, you can use the `su` command to become root. The installation file is a standard Solaris.pkg file.
 
 Ensure that you do not delete the directory where SnapDrive for UNIX is installed. If you delete the directory, problems with starting and stopping the daemon can occur. You should have also installed the Solaris Host Utilities before you install SnapDrive for UNIX.
 
 In sparse root zones, SnapDrive for UNIX installation can be only partially successful because some of the file systems have read-only access in the sparse root zone. To avoid this situation, you can create a few symbolic links in the global zone, so that the links are available to the sparse root zones.
 
-ln -s /opt/NTAPsnapdrive/bin/snapdrive /usr/bin/snapdrive
+`ln -s /opt/NTAPsnapdrive/bin/snapdrive /usr/bin/snapdrive`
 
-ln -s /opt/NTAPsnapdrive/bin/snapdrive /usr/sbin/snapdrive
+`ln -s /opt/NTAPsnapdrive/bin/snapdrive /usr/sbin/snapdrive`
 
-ln -s /opt/NTAPsnapdrive/bin/snapdrived /usr/sbin/snapdrived
+`ln -s /opt/NTAPsnapdrive/bin/snapdrived /usr/sbin/snapdrived`
+
+.Steps
 
 . Change to the directory on your Solaris host where you put the software you downloaded from the the NetApp Support Site.
-. Enter the following command to install SnapDrive for UNIX: ./install
+. Enter the following command to install SnapDrive for UNIX:
++
+`*./install*`
 +
 The script installs the SnapDrive for UNIX software without a problem. It writes installation information to a log file.
 +

@@ -1,21 +1,23 @@
 ---
 permalink: aix/task_verifying_login_information_for_vserver.html
 sidebar: sidebar
-keywords: 
-summary: 'You can verify if the Vserver is configured in SnapDrive for UNIX using the snapdrive config list command.'
+keywords: snap, snapdrive, verify, login, information, vserver
+summary: You can verify if the Vserver is configured in SnapDrive for UNIX using the snapdrive config list command.
 ---
 = Verifying login information for Vserver
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can verify if the Vserver is configured in SnapDrive for UNIX using the snapdrive config listcommand.
+You can verify if the Vserver is configured in SnapDrive for UNIX using the `snapdrive config list` command.
 
-. Enter the following command: snapdrive config list
+.Steps
+
+. Enter the following command: `snapdrive config list`
 +
 This command displays the user name or Vserver specified in SnapDrive for UNIX, and does not display the passwords for the Vserver.
 +
-The following example displays the vsadmin as a StorageSystem.
+The following example displays the `_vsadmin_` as a `_StorageSystem_`.
 +
 ----
 # snapdrive config list

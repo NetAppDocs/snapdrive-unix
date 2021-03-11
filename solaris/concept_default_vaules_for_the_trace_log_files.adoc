@@ -1,22 +1,22 @@
 ---
 permalink: solaris/concept_default_vaules_for_the_trace_log_files.html
 sidebar: sidebar
-keywords: 
-summary: 'The trace log files allow you to set various parameters and also change them. These parameters must be set in the snapdrive.conf file.'
+keywords: snap, snapdrive, default, value, trace, log
+summary: The trace log files allow you to set various parameters and also change them. These parameters must be set in the snapdrive.conf file.
 ---
 = Default values for the trace log files
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The trace log files allow you to set various parameters and also change them. These parameters must be set in the snapdrive.conf file.
+The trace log files allow you to set various parameters and also change them. These parameters must be set in the `snapdrive.conf` file.
 
-The following values must be set in the snapdrive.conf file:
+The following values must be set in the `snapdrive.conf` file:
 
 * The name of the file containing the trace log.
 * The maximum size of the trace log file. The default size is "0 " bytes. This value ensures that each trace log file contains only one SnapDrive for UNIX command.
 +
-If you reset the default size to a value other than 0, when the file reaches the size you specified, SnapDrive for UNIX renames the current trace log file by adding an arbitrary number to the name. Then it starts a new trace log file using the name specified by the trace-log-file value.
+If you reset the default size to a value other than 0, when the file reaches the size you specified, SnapDrive for UNIX renames the current trace log file by adding an arbitrary number to the name. Then it starts a new trace log file using the name specified by the `trace-log-file` value.
 
 * The maximum number of old trace files that SnapDrive for UNIX saves. The default is 100.
 * The types of messages that SnapDrive for UNIX writes to the trace log file. By default, the trace log file contains fatal errors, admin errors, command errors, warnings, and information messages.

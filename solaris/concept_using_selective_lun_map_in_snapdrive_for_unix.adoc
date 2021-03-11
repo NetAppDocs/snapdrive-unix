@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_using_selective_lun_map_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
-summary: 'Beginning with clustered Data ONTAP 8.3, Selective LUN Map \(SLM\) is enabled by default on all new LUN maps. When you create a new LUN map, the LUN is accessible only through paths found on the node that owns that LUN and its HA partner.'
+keywords: snap, snapdrive, selective, lun, map
+summary: Beginning with clustered Data ONTAP 8.3, Selective LUN Map \(SLM\) is enabled by default on all new LUN maps. When you create a new LUN map, the LUN is accessible only through paths found on the node that owns that LUN and its HA partner.
 ---
 = Using Selective LUN Map in SnapDrive for UNIX
 :icons: font
@@ -17,12 +17,15 @@ NOTE: SLM does not automatically apply to LUN maps created prior to clustered Da
 
 If you are accessing the LUN through the node that owns the LUN, the path is called "active optimized." However, if you access that LUN through the HA partner node, the path is called "active non-optimized."
 
+[options="header"]
 |===
 | SnapDrive command| Description
 a|
-snapdrive lun showpaths long_lun_name
+`snapdrive lun showpaths _long_lun_name_`
 a|
-The snapdrive lun showpaths command lists all the paths to LUN. It also displays which path is active optimized and which path is active non-optimized.long_lun_name is the name of the LUN. If you do not specify the LUN, the operation is performed on all the LUNs.
+The `snapdrive lun showpaths` command lists all the paths to LUN. It also displays which path is active optimized and which path is active non-optimized.
+
+`_long_lun_name_` is the name of the LUN. If you do not specify the LUN, the operation is performed on all the LUNs.
 
 ----
 snapdrive lun showpaths
@@ -34,9 +37,9 @@ vs1:/vol/vol2/lun1  /dev/mapper/3600a09807746505a4e24455450473656    Optimized
 ----
 
 a|
-snapdrive lun fixpaths long_lun_name
+`snapdrive lun fixpaths _long_lun_name_`
 a|
-The snapdrive lun fixpaths command tries to fix the path of the LUNs for the LUNs that do not have at least one active optimized path. long_lun_name is the name of the LUN. If you do not specify the LUN, the operation is performed on all the LUNs that do not have at least one active optimized path.
+The `snapdrive lun fixpaths` command tries to fix the path of the LUNs for the LUNs that do not have at least one active optimized path. `_long_lun_name_` is the name of the LUN. If you do not specify the LUN, the operation is performed on all the LUNs that do not have at least one active optimized path.
 
 ----
 snapdrive lun fixpaths
@@ -49,12 +52,12 @@ Path correction successful for the following LUNs
 vs1:/vol/vol2/lun10
 ----
 
-NOTE: The snapdrive lun fixpaths command does not work in guest operating system.
+NOTE: The `snapdrive lun fixpaths` command does not work in guest operating system.
 
 |===
-The lunpath-monitor-frequency parameter allows you to specify the frequency in which SnapDrive for UNIX automatically fix path for LUNs. The default value is 24 hours.
+The `lunpath-monitor-frequency` parameter allows you to specify the frequency in which SnapDrive for UNIX automatically fix path for LUNs. The default value is 24 hours.
 
-If the snapdrive lun fixpaths operation fails, an AutoSupport (ASUP) message is generated for all the LUNs. The ASUP message contains the following details:
+If the `snapdrive lun fixpaths` operation fails, an AutoSupport (ASUP) message is generated for all the LUNs. The ASUP message contains the following details:
 
 * computerName
 * eventSource

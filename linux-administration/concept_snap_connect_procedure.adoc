@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_snap_connect_procedure.html
 sidebar: sidebar
-keywords: 
-summary: 'The snap connect procedure is valid for Data ONTAP 7.2 or later and explain the steps for snap connect operation.'
+keywords: snap, snapdrive, connect, procedure, ontap, operation
+summary: The snap connect procedure is valid for Data ONTAP 7.2 or later and explain the steps for snap connect operation.
 ---
 = Snap connect procedure
 :icons: font
@@ -13,13 +13,15 @@ The snap connect procedure is valid for Data ONTAP 7.2 or later and explain the 
 
 The following steps depict the snap connect procedure:
 
+.Steps
+
 . SnapDrive for UNIX obtains the file spec name and the Snapshot name from the snap connect CLI. It then finds out the original storage system volume(s) where the snapshot(s) resides.
 . SnapDrive for UNIX chooses an appropriate cloning method for storage system entities based on CLI configuration options.
 +
-NOTE: If the CLI option is specified, it always overrides the snapdrive.conf file option.
+NOTE: If the CLI option is specified, it always overrides the `snapdrive.conf` file option.
 
- .. If -clone lunclone option is specified in the CLI or the san-clone-method=lunclone option in the snapdrive.conf file, then SnapDrive for UNIX creates a LUN clone in the same volume from the given snapshot.
- .. If -clone unrestricted option is specified in the CLI or the san-clone-method=unrestricted option in the snapdrive.conf file, then SnapDrive for UNIX creates or reuses all-purpose FlexClone from the given Snapshot.
- .. If -clone optimal option is specified in the CLI or the san-clone-method=optimal option in the snapdrive.conf file, then SnapDrive for UNIX automatically chooses between restricted FlexClone and LUN clone, based on storage system configuration.
+ .. If `-clone lunclone` option is specified in the CLI or the `san-clone-method=lunclone` option in the `snapdrive.conf` file, then SnapDrive for UNIX creates a LUN clone in the same volume from the given snapshot.
+ .. If `-clone unrestricted` option is specified in the CLI or the `san-clone-method=unrestricted` option in the `snapdrive.conf` file, then SnapDrive for UNIX creates or reuses all-purpose FlexClone from the given Snapshot.
+ .. If `-clone optimal` option is specified in the CLI or the `san-clone-method=optimal` option in the `snapdrive.conf` file, then SnapDrive for UNIX automatically chooses between restricted FlexClone and LUN clone, based on storage system configuration.
 
 NOTE: By default, clones created by SnapDrive for UNIX are backup clones.

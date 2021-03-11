@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-7mode/delete_reference_trademark.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords:
+summary: 
 ---
 = Trademark
 :icons: font

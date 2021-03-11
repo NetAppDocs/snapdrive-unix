@@ -1,12 +1,12 @@
 ---
 permalink: aix/concept_snapshot_copies_information_display.html
 sidebar: sidebar
-keywords: 
-summary: 'You can display Snapshot copies for a storage system, a storage system volume, LUNs, and other storage entities. Use the command snapdrive snap show \(or list\) to display a Snapshot copy.'
+keywords: snap, snapdrive, information, display, snapshot, copy
+summary: You can display Snapshot copies for a storage system, a storage system volume, LUNs, and other storage entities. Use the command snapdrive snap show \(or list\) to display a Snapshot copy.
 ---
 = Snapshot copies information display
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can display Snapshot copies for a storage system, a storage system volume, LUNs, and other storage entities. Use the command snapdrive snap show (or list) to display a Snapshot copy.
+You can display Snapshot copies for a storage system, a storage system volume, LUNs, and other storage entities. Use the command `snapdrive snap show` (or `list`) to display a Snapshot copy.

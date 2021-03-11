@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_snapdrive_limitations_for_data_ontap_operating_in_cluster_mode.html
 sidebar: sidebar
-keywords: 
-summary: 'Some SnapDrive features and operations are not supported for clustered Data ONTAP.'
+keywords: snap, snapdrive, clustered, ontap, limitations, operations
+summary: Some SnapDrive features and operations are not supported for clustered Data ONTAP.
 ---
 = SnapDrive limitations for clustered Data ONTAP
 :icons: font
@@ -16,9 +16,9 @@ Some SnapDrive features and operations are not supported for clustered Data ONTA
 * The symbolic links that reside inside a mount point are not supported.
 * Aggregates that contain Vserver volumes must be assigned to the Vserver's aggregate list to configure the Vserver and execute SnapDrive operations.
 * SnapDrive for UNIX does not support migration of the Vserver because it is not supported by clustered Data ONTAP.
-* Snap connect operation with the -readonly option mounts only the .snapshot directory on the host and does not create the clone volume.
+* Snap connect operation with the `-readonly` option mounts only the `.snapshot` directory on the host and does not create the clone volume.
 +
-In clustered Data ONTAP, the export policy is defined only at the volume level and not at the directory level. Therefore, the .snapshot directory cannot be exported to the secondary host (the host that does not have the export permission on the parent volume).
+In clustered Data ONTAP, the export policy is defined only at the volume level and not at the directory level. Therefore, the `.snapshot` directory cannot be exported to the secondary host (the host that does not have the export permission on the parent volume).
 
 * SnapDrive for UNIX does not support volume-based SnapRestore (VBSR) operations from a Snapshot copy created prior to the base Snapshot copy, when the volume is in a SnapMirror or SnapVault operation.
-* SnapDrive for UNIX does not support the snapdelete operation of the Snapshot copy created before SnapVault update, when the volume is in SnapVault (XDP) relationship.
+* SnapDrive for UNIX does not support the `snapdelete` operation of the Snapshot copy created before SnapVault update, when the volume is in SnapVault (XDP) relationship.

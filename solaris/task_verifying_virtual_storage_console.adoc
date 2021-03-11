@@ -1,17 +1,19 @@
 ---
 permalink: solaris/task_verifying_virtual_storage_console.html
 sidebar: sidebar
-keywords: 
-summary: 'You can verify if the virtual interface is configured in SnapDrive for UNIX using the snapdrive config list command.'
+keywords: snap, snapdrive, verify, login, information, virtual, storage, console
+summary: You can verify if the virtual interface is configured in SnapDrive for UNIX using the snapdrive config list command.
 ---
 = Verifying login information for Virtual Storage Console
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can verify if the virtual interface is configured in SnapDrive for UNIX using the snapdrive config list command.
+You can verify if the virtual interface is configured in SnapDrive for UNIX using the `snapdrive config list` command.
 
-. Enter the following command: snapdrive config list
+.Steps
+
+. Enter the following command: `snapdrive config list`
 +
 This command displays the user name or virtual interface specified in SnapDrive for UNIX. This does not display the passwords for the virtual interface system.
 +

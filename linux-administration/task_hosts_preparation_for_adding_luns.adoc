@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/task_hosts_preparation_for_adding_luns.html
 sidebar: sidebar
-keywords: 
-summary: 'You need to prepare the host to add LUNs.'
+keywords: snap, snapdrive, host, preparation, lun, add
+summary: You need to prepare the host to add LUNs.
 ---
 = Host preparation for adding LUNs
 :icons: font

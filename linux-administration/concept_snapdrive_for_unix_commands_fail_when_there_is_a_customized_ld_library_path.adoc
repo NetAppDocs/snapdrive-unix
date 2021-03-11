@@ -1,16 +1,16 @@
 ---
 permalink: linux-administration/concept_snapdrive_for_unix_commands_fail_when_there_is_a_customized_ld_library_path.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX commands fail if there is a customized LD_LIBRARY_PATH and also if snapcreate-check-nonpersistent-nfs is set to off .'
+keywords: snap, snapdrive, command, fail, customized
+summary: SnapDrive for UNIX commands fail if there is a customized LD_LIBRARY_PATH and also if snapcreate-check-nonpersistent-nfs is set to off.
 ---
 = SnapDrive for UNIX commands fail with customized LD_LIBRARY_PATH
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapDrive for UNIX commands fail if there is a customized LD_LIBRARY_PATH and also if snapcreate-check-nonpersistent-nfs is set to off .
+SnapDrive for UNIX commands fail if there is a customized `LD_LIBRARY_PATH` and also if `snapcreate-check-nonpersistent-nfs` is set to off .
 
 == Workaround
 
-Set the env variable in a wrapper script to ensure that the variable is visible only to the SnapDrive binaries.
+Set the `env` variable in a wrapper script to ensure that the variable is visible only to the SnapDrive binaries.

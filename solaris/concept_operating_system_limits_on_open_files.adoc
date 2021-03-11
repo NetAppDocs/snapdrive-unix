@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_operating_system_limits_on_open_files.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX checks for the number of files opened simultaneously. If it crosses the limit, SnapDrive for UNIX throws an error.'
+keywords: snap, snapdrive, operating, system, limit, file, open
+summary: SnapDrive for UNIX checks for the number of files opened simultaneously. If it crosses the limit, SnapDrive for UNIX throws an error.
 ---
 = Operating system limits on open files
 :icons: font
@@ -15,8 +15,12 @@ SnapDrive for UNIX checks for operating system limitations on the number of file
 
 NOTE: The default limit for the number of file handles opened simultaneously by one process varies based on your operating system. Check your operating system documentation to determine the limit.
 
-If the number of open LUNs for one operation exceeds the operating system limit on the number of file handles opened simultaneously by one process, SnapDrive for UNIX exits with the following error message:0001-001 Admin error: Unable to open device path-to-device
+If the number of open LUNs for one operation exceeds the operating system limit on the number of file handles opened simultaneously by one process, SnapDrive for UNIX exits with the following error message:
+
+`0001-001 Admin error: Unable to open device path-to-device`
 
 == Example
 
-You see an error message similar to the following one if this limit is exceeded on a Solaris host: 0001-001 Admin error: Unable to open device /dev/rdsk/c1t1d26s2
+You see an error message similar to the following one if this limit is exceeded on a Solaris host:
+
+`0001-001 Admin error: Unable to open device /dev/rdsk/c1t1d26s2`

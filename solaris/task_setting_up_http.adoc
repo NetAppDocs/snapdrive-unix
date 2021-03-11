@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_setting_up_http.html
 sidebar: sidebar
-keywords: 
-summary: 'You can configure SnapDrive for UNIX to use HTTP for your host platform.'
+keywords: snap, snapdrive, http, configure
+summary: You can configure SnapDrive for UNIX to use HTTP for your host platform.
 ---
 = Setting up HTTP
 :icons: font
@@ -13,11 +13,13 @@ You can configure SnapDrive for UNIX to use HTTP for your host platform.
 
 Ensure that you are logged in as a root user.
 
-. Make a backup of the snapdrive.conf file.
-. Open the snapdrive.conf file in a text editor.
-. Change the value of the use-https-to-filer variable to off.
+.Steps
+
+. Make a backup of the `snapdrive.conf` file.
+. Open the `snapdrive.conf` file in a text editor.
+. Change the value of the `_use-https-to-filer_` variable to `off`.
 +
-A good practice any time you modify the snapdrive.conf file is to perform the following steps:
+A good practice any time you modify the `snapdrive.conf` file is to perform the following steps:
 
  .. Comment out the line you want to modify.
  .. Copy the commented-out line.

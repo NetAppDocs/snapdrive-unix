@@ -1,15 +1,15 @@
 ---
 permalink: solaris/concept_unable_to_select_a_storage_stack.html
 sidebar: sidebar
-keywords: 
-summary: 'You cannot select a storage stack due to inappropriate values specified in the snapdrive.conf file.'
+keywords: snap, snapdrive, select, storage, stack
+summary: You cannot select a storage stack due to inappropriate values specified in the snapdrive.conf file.
 ---
 = Unable to select a storage stack
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You cannot select a storage stack due to inappropriate values specified in the snapdrive.conf file.
+You cannot select a storage stack due to inappropriate values specified in the `snapdrive.conf` file.
 
 The following warning message appears.
 
@@ -18,7 +18,7 @@ WARNING!!! Unable to find a SAN storage stack. Please verify that the appropriat
 ----
 
 * If you are using an NFS environment, ignore the warning message and continue to use SnapDrive operations on your host system.
-* If you are using SAN environment, ensure that the appropriate acceptable values are specified in the snapdrive.conf file as provided in the Solaris matrix stack. Then, restart the daemon.
+* If you are using SAN environment, ensure that the appropriate acceptable values are specified in the `snapdrive.conf` file as provided in the Solaris matrix stack. Then, restart the daemon.
 
 *Related information*
 

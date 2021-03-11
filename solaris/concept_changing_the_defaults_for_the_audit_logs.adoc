@@ -1,19 +1,19 @@
 ---
 permalink: solaris/concept_changing_the_defaults_for_the_audit_logs.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use snapdrive.conf file to change the logging parameters of the audit log files such as maximum size of audit log file, and maximum number of old audit files.'
+keywords: snap, snapdrive, audit, log, default
+summary: You can use snapdrive.conf file to change the logging parameters of the audit log files such as maximum size of audit log file, and maximum number of old audit files.
 ---
 = Changing the defaults for the audit logs
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use snapdrive.conf file to change the logging parameters of the audit log files such as maximum size of audit log file, and maximum number of old audit files.
+You can use `snapdrive.conf` file to change the logging parameters of the audit log files such as maximum size of audit log file, and maximum number of old audit files.
 
-The snapdrive.conf file enables you to set the following values for audit logging:
+The `snapdrive.conf` file enables you to set the following values for audit logging:
 
-* The maximum size of the audit log file. The default size is 20K. After the file size reaches the value specified in the snapdrive.conf file, SnapDrive for UNIX renames the current audit log file by adding an arbitrary number to the name. Then, a new audit file is started using the name specified by the audit-log-file value.
+* The maximum size of the audit log file. The default size is 20K. After the file size reaches the value specified in the `snapdrive.conf` file, SnapDrive for UNIX renames the current audit log file by adding an arbitrary number to the name. Then, a new audit file is started using the name specified by the `audit-log-file` value.
 * The maximum number of old audit files that SnapDrive for UNIX saves. The default is 2.
 
 *Example of an audit log file:*
@@ -29,4 +29,4 @@ rdg -snapname snap_rdg1
 
 The first pair of lines in this example shows an operation that succeeded, as indicated by the "Status=0" line.
 
-The second pair of lines indicates an operation that failed. The return code of "4" means "`already exists.`" If you look at the two command lines, you can see that the first created a Snapshot copy called snap_rdg1. The second line attempted to do the same, but the name already existed, so the operation failed.
+The second pair of lines indicates an operation that failed. The return code of "4" means "`already exists.`" If you look at the two command lines, you can see that the first created a Snapshot copy called `snap_rdg1`. The second line attempted to do the same, but the name already existed, so the operation failed.

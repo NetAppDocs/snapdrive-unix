@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_creating_an_lvm_a_vxvmentity_andspecifying_the_lun.html
 sidebar: sidebar
-keywords: 
-summary: 'You can create a host entity such as a file system, logical volume, or disk group and specify the LUN that is created as part of it.'
+keywords: snap, snapdrive, create, vxvm, lun
+summary: You can create a host entity such as a file system, logical volume, or disk group and specify the LUN that is created as part of it.
 ---
 = Creating a VxVM entity and specifying the LUN
 :icons: font
@@ -11,11 +11,15 @@ summary: 'You can create a host entity such as a file system, logical volume, or
 [.lead]
 You can create a host entity such as a file system, logical volume, or disk group and specify the LUN that is created as part of it.
 
-. At the command line, enter the following command: snapdrive storage create-host_lvm_fspec -lunlong_lun_name [lun_name...] -lunsize size [-igroup ig_name [ig_name...]] [{ -reserve | -noreserve }]
+.Steps
+
+. At the command line, enter the following command:
++
+`*snapdrive storage create _-host_lvm_fspec_ -lun _long_lun_name_ [_lun_name..._] -lunsize _size_ [-igroup _ig_name_ [_ig_name..._]] [{ -reserve | -noreserve }]*`
 +
 This example on a Solaris host creates the file system acctfs on three LUNs and explicitly names the volume group and host volume underneath it. Each LUN is 10 GB:
 +
-# snapdrive storage create -fs /mnt/acctfs -hostvol acctfsdg/acctfshv -lun acctfiler:/vol/vol1/lunA lunB lunC -lunsize 10g
+`# snapdrive storage create -fs /mnt/acctfs -hostvol acctfsdg/acctfshv -lun acctfiler:/vol/vol1/lunA lunB lunC -lunsize 10g`
 +
 ----
 LUN acctfiler:/vol/vol1/lunA ... created

@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_login_information_for_vserver.html
 sidebar: sidebar
-keywords: 
-summary: 'A user name and password allows SnapDrive for UNIX to access the Vserver. It also provides security because, in addition to being logged in as a vsadmin, you must run SnapDrive for UNIX and provide the correct user name and password whenever prompted.'
+keywords: snap, snapdrive, login, vserver, security
+summary: A user name and password allows SnapDrive for UNIX to access the Vserver. It also provides security because, in addition to being logged in as a vsadmin, you must run SnapDrive for UNIX and provide the correct user name and password whenever prompted.
 ---
 = Login information for the Vserver
 :icons: font

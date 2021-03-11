@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_guidelines_for_restoring_a_snapshot_copy_in_a_host_cluster_environment.html
 sidebar: sidebar
-keywords: 
-summary: 'Follow the guidelines while restoring a Snapshot copy.'
+keywords: snap, snapdrive, snapshot, copy, host, restore
+summary: Follow the guidelines while restoring a Snapshot copy.
 ---
 = Guidelines for restoring a Snapshot copy in a host cluster environment
 :icons: font
@@ -11,14 +11,14 @@ summary: 'Follow the guidelines while restoring a Snapshot copy.'
 [.lead]
 Follow the guidelines while restoring a Snapshot copy.
 
-* The snapdrive snapshot restore command can be executed from any node in the host cluster.
+* The `snapdrive snapshot restore` command can be executed from any node in the host cluster.
 * The file system or disk groups have to be shared across all the nodes in the host cluster, if they are live.
 * The Snapshot restore operation on a shared file system or disk group fails, if any of the LUNs are mapped to a node outside the host cluster. Ensure that none of the shared LUNs are mapped to a node outside the host cluster.
 * The Snapshot create operation can be conducted on a dedicated file system or disk group, but to restore the Snapshot copy in a shared mode, you have to ensure that the file system or disk group does not exist in dedicated mode on any node in the host cluster. Otherwise, SnapDrive for UNIX gives you an error.
-* If a file system or disk group does not exist in the host cluster, SnapDrive for UNIX creates the LUNs from the Snapshot copy, maps them to all nodes in the host cluster, and activates the disk group and file system. After mapping the LUNs to all nodes in the host cluster, Veritas cluster volume manager refreshes the LUN information between all the nodes in the host cluster. If the disk group activation is attempted before the LUNs information is refreshed among the CVM instances in cluster nodes, the Snapshot restore operation might fail. For CVM refresh, you have to reissue the snapdrive snap restore command.
+* If a file system or disk group does not exist in the host cluster, SnapDrive for UNIX creates the LUNs from the Snapshot copy, maps them to all nodes in the host cluster, and activates the disk group and file system. After mapping the LUNs to all nodes in the host cluster, Veritas cluster volume manager refreshes the LUN information between all the nodes in the host cluster. If the disk group activation is attempted before the LUNs information is refreshed among the CVM instances in cluster nodes, the Snapshot restore operation might fail. For CVM refresh, you have to reissue the `snapdrive snap restore` command.
 * A Snapshot copy created on a node outside a host cluster can be restored and shared in the cluster only if the following is true:
  ** The file system or disk group does not exist in the dedicated mode on any node in the host cluster.
  ** The LUNs are invisible to the node outside of the host cluster.
 * You cannot restore Snapshot copies on shared and dedicated systems in one Snapshot restore operation.
-* If the snapdrive snap restore command is issued with the -devicetype dedicated option or without a -devicetype option specified on a shared disk group or file system, SnapDrive for UNIX alerts you that the LUNs connected to multiple nodes is restored.
+* If the `snapdrive snap restore` command is issued with the `-devicetype` dedicated option or without a `-devicetype` option specified on a shared disk group or file system, SnapDrive for UNIX alerts you that the LUNs connected to multiple nodes is restored.
 * If the disk group configuration is changed between Snapshot copy creation and Snapshot copy restore, SnapDrive for UNIX alerts you that the configuration is changed.

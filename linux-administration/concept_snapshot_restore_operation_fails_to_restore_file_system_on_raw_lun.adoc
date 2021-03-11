@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_snapshot_restore_operation_fails_to_restore_file_system_on_raw_lun.html
 sidebar: sidebar
-keywords: 
-summary: 'The Snapshot restore operation of the file system on raw LUN fails after performing a Snapshot connect operation on a non-originating host.'
+keywords: snap, snapdrive, restore, fail, lun, snapshot, host
+summary: The Snapshot restore operation of the file system on raw LUN fails after performing a Snapshot connect operation on a non-originating host.
 ---
 = Snapshot restore operation fails to restore file system on raw LUN
 :icons: font
@@ -24,5 +24,5 @@ The command fails because the iSCSI daemon remaps the device entry for the resto
 
 You can do any of the following:
 
-* Execute the snapdrive snap restore command again.
+* Execute the `snapdrive snap restore` command again.
 * Delete the connected LUN (if it is mounted on the same filespec as in Snapshot copy) before trying to restore a Snapshot copy of an original LUN.

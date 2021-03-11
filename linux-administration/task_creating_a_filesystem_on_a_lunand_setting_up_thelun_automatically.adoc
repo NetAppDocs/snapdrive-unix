@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/task_creating_a_filesystem_on_a_lunand_setting_up_thelun_automatically.html
 sidebar: sidebar
-keywords: 
-summary: 'You can create a file system on a LUN using SnapDrive for UNIX. SnapDrive for UNIX automatically create the associated LUN.'
+keywords: snap, snapdrive, lun, create, file
+summary: You can create a file system on a LUN using SnapDrive for UNIX. SnapDrive for UNIX automatically create the associated LUN.
 ---
 = Creating a file system on a LUN and setting up the LUN automatically
 :icons: font
@@ -11,7 +11,11 @@ summary: 'You can create a file system on a LUN using SnapDrive for UNIX. SnapDr
 [.lead]
 You can create a file system on a LUN using SnapDrive for UNIX. SnapDrive for UNIX automatically create the associated LUN.
 
-. At the command line, enter the following command: snapdrive storage create -fs file_spec -nolvm [-fstype type] [-fsopts options] [-mntopts options] [-nopersist] -filervol long_filer_path -lunsize size [-igroup ig_name[ig_name ...]] [{-reserve | -noreserve }]
+.Steps
+
+. At the command line, enter the following command:
++
+`*snapdrive storage create -fs _file_spec_ -nolvm [-fstype type] [-fsopts options] [-mntopts options] [-nopersist] -filervol _long_filer_path_ -lunsize size [-igroup _ig_name[ig_name ...]]_ [{-reserve | -noreserve }]*`
 +
 SnapDrive for UNIX creates the file system you specify and creates a LUN for it on the storage system you specify. It performs all of the tasks associated with host preparation and discovery for the LUNs, as well as mapping and connecting the LUNs to the host entity.
 

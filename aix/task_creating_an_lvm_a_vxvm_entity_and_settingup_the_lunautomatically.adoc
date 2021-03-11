@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_creating_an_lvm_a_vxvm_entity_and_settingup_the_lunautomatically.html
 sidebar: sidebar
-keywords: 
-summary: 'You can create an entity such as a file system, logical volume, or disk group on the host and have SnapDrive for UNIX automatically create the associated LUN.'
+keywords: snap, snapdrive, lv, lun, create, automatically
+summary: You can create an entity such as a file system, logical volume, or disk group on the host and have SnapDrive for UNIX automatically create the associated LUN.
 ---
 = Creating an LVM entity and setting up the LUN automatically
 :icons: font
@@ -11,17 +11,25 @@ summary: 'You can create an entity such as a file system, logical volume, or dis
 [.lead]
 You can create an entity such as a file system, logical volume, or disk group on the host and have SnapDrive for UNIX automatically create the associated LUN.
 
-* The host_lvm_fspec argument lets you specify whether you want to create a file system, logical volume, or disk group. This argument has three general formats. The format you use depends on the entity you want to create.
+* The `host_lvm_fspec` argument lets you specify whether you want to create a file system, logical volume, or disk group. This argument has three general formats. The format you use depends on the entity you want to create.
 +
-To create a file system, use this format: -fs file_spec [-fstype type] [-fsopts options] [-mntopts options] [-nopersist] [ -hostvol file_spec] [ -dg dg_name]
+To create a file system, use this format: `-fs file_spec [-fstype type] [-fsopts options] [-mntopts options] [-nopersist] [ -hostvol file_spec] [ -dg dg_name]`
 +
-To create a logical or host volume, use this format:[-hostvol file_spec]file_spec [-dg dg_name]
+To create a logical or host volume, use this format:
 +
-To create a disk or volume group, use this format: -dgdg_name
+`*[-hostvol file_spec] _file_spec_ [-dg _dg_name_]*`
++
+To create a disk or volume group, use this format:
++
+`*-dg__dg_name__*`
 
 * If you create a file system, you can also include the host volume specifications, the disk group specifications, or both specifications to indicate the host volume and disk group on which the file system resides. If you do not include these specifications, SnapDrive for UNIX automatically generates the names for the host volume and disk group or both.
 * When you specify a host volume, SnapDrive for UNIX creates a concatenated host volume. While this is the only format SnapDrive for UNIX supports when creating host volumes, it does allow you to manipulate existing striped host volumes.
 
-. At the command line, enter the following command: snapdrive storage createhost_vxvm_fspec -filervol long_filer_path -dgsize size [-igroup ig_name[ig_name ...]] [{ -reserve | -noreserve }]
+.Steps
+
+. At the command line, enter the following command:
++
+`*snapdrive storage create _host_vxvm_fspec_ -filervol _long_filer_path_ -dgsize size [-igroup _ig_name [ig_name ...]]_ [{ -reserve | -noreserve }]*`
 +
 SnapDrive for UNIX creates the host entity you specify and creates LUNs for it on the storage system you specify. It performs all of the tasks associated with host preparation and discovery for each of the LUNs, as well as mapping and connecting the LUNs to the host entity.

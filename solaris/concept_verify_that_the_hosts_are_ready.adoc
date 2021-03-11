@@ -1,24 +1,24 @@
 ---
 permalink: solaris/concept_verify_that_the_hosts_are_ready.html
 sidebar: sidebar
-keywords: 
-summary: 'You must verify that the hosts are ready. To start the verification operations, you should first test whether the host is connected to the storage system by entering the ping filername command.'
+keywords: snap, snapdrive, host, verify
+summary: You must verify that the hosts are ready. To start the verification operations, you should first test whether the host is connected to the storage system by entering the ping filername command.
 ---
 = Verifying the hosts are ready
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must verify that the hosts are ready. To start the verification operations, you should first test whether the host is connected to the storage system by entering the ping filername command.
+You must verify that the hosts are ready. To start the verification operations, you should first test whether the host is connected to the storage system by entering the `ping filername` command.
 
-You must also confirm that the hosts and the storage system can communicate with each other. To confirm this, execute the snapdrive storage show -all command and check if the hosts and storage system are communicating. Verify that the hosts are ready by performing certain operations:
+You must also confirm that the hosts and the storage system can communicate with each other. To confirm this, execute the `snapdrive storage show -all` command and check if the hosts and storage system are communicating. Verify that the hosts are ready by performing certain operations:
 
 * Confirm that you have set up the host and storage system correctly according to the instructions in the Host Utilities documentation for the host.
 * Confirm that you have a configuration that uses NFS, and configure the exports file.
 * Confirm that the host meets the minimum requirements for SnapDrive for UNIX, including the required operating system patches.
 * Install the NTAPasl library before installing the Veritas stack on the host.
 +
-NOTE: If you installed the Veritas stack without installing the NTAPasl library, you should install the NTAPasl library and execute the vxinstall command to bring the LUNs and disk groups online.
+NOTE: If you installed the Veritas stack without installing the NTAPasl library, you should install the NTAPasl library and execute the `vxinstall` command to bring the LUNs and disk groups online.
 
 *Related information*
 

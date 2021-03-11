@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_configuring_sd_admin_in_operations_manager.html
 sidebar: sidebar
-keywords: 
-summary: 'The Operations Manager console administrator can create the sd-admin user.'
+keywords: snap, snapdrive, configure, operations, console, manager, sd
+summary: The Operations Manager console administrator can create the sd-admin user.
 ---
 = Configuring sd-admin in Operations Manager console
 :icons: font
@@ -11,8 +11,8 @@ summary: 'The Operations Manager console administrator can create the sd-admin u
 [.lead]
 The Operations Manager console administrator can create the sd-admin user.
 
-The Operations Manager console administrator creates a user named, sd-admin, with the capability to perform a core access check on global group (global DFM.Core.AccessCheck). After the Operations Manager console administrator configures the sd-admin user, you must manually send the credential information to the SnapDrive for UNIX administrator. For more information about using Operations Manager console to configure users and roles, see the _Operations Manager Console Administration guide_ and the Online Help.
+The Operations Manager console administrator creates a user named, sd-admin, with the capability to perform a core access check on global group (global `DFM.Core.AccessCheck`). After the Operations Manager console administrator configures the sd-admin user, you must manually send the credential information to the SnapDrive for UNIX administrator. For more information about using Operations Manager console to configure users and roles, see the _Operations Manager Console Administration guide_ and the Online Help.
 
 NOTE: You can use any name in place of sd-admin; however, it is best to use sd-admin.
 
-To create a role in Operations Manager console, select *Setup* > *Roles*. In the sd-admin configuration page, the Operations Manager console administrator must assign DFM.Database.Write capability on the global group to sd-admin-role, so that SnapDrive for UNIX can refresh storage entities in Operations Manager console.
+To create a role in Operations Manager console, select *Setup* > *Roles*. In the sd-admin configuration page, the Operations Manager console administrator must assign `DFM.Database.Write` capability on the global group to sd-admin-role, so that SnapDrive for UNIX can refresh storage entities in Operations Manager console.

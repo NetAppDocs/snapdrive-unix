@@ -1,14 +1,14 @@
 ---
 permalink: solaris/concept_what_the_snapdrive_conf_file_is.html
 sidebar: sidebar
-keywords: 
-summary: 'The snapdrive.conf file contains a name-value pair for each configurable variable that SnapDrive for UNIX use to function. SnapDrive for UNIX automatically checks the information in this file each time it starts. You can use a text editor to modify this file.'
+keywords: snap, snapdrive, file, config, command
+summary: The snapdrive.conf file contains a name-value pair for each configurable variable that SnapDrive for UNIX use to function. SnapDrive for UNIX automatically checks the information in this file each time it starts. You can use a text editor to modify this file.
 ---
 = What the snapdrive.conf file is
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The snapdrive.conf file contains a name-value pair for each configurable variable that SnapDrive for UNIX use to function. SnapDrive for UNIX automatically checks the information in this file each time it starts. You can use a text editor to modify this file.
+The `snapdrive.conf` file contains a name-value pair for each configurable variable that SnapDrive for UNIX use to function. SnapDrive for UNIX automatically checks the information in this file each time it starts. You can use a text editor to modify this file.
 
-The snapdrive.conf file is located in the SnapDrive installation directory. The snapdrive config show command displays the current and active contents of the snapdrive.conf file.
+The `snapdrive.conf` file is located in the SnapDrive installation directory. The `snapdrive config show` command displays the current and active contents of the `snapdrive.conf` file.

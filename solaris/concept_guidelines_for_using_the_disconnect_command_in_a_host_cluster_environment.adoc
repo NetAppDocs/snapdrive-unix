@@ -1,20 +1,20 @@
 ---
 permalink: solaris/concept_guidelines_for_using_the_disconnect_command_in_a_host_cluster_environment.html
 sidebar: sidebar
-keywords: 
-summary: 'Following are the guidelines for using snapdrive storage disconnect command in a host cluster environment:'
+keywords: snap, snapdrive, disconnect, command, host, cluster
+summary: Following are the guidelines for using snapdrive storage disconnect command in a host cluster environment:
 ---
 = Guidelines for using the disconnect command in a host cluster environment
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Following are the guidelines for using snapdrive storage disconnect command in a host cluster environment:
+Following are the guidelines for using `snapdrive storage disconnect` command in a host cluster environment:
 
-* The snapdrive storage disconnect command can be executed from any node in the host cluster.
+* The `snapdrive storage disconnect` command can be executed from any node in the host cluster.
 * For the storage disconnect operation to be successful, either of the following should be true:
  ** The storage entities should be shared across all the nodes in the host cluster.
  ** The LUNs should be mapped to all the nodes in the host cluster.
-* You can disconnect a storage entity from a specific node using the -devicetype dedicated option or by omitting the -devicetype option in the command altogether, because the default value is dedicated.
-* The snapdrive storage disconnect command gives an error if a shared storage entity or LUN is disconnected with dedicated option, or if a dedicated storage entity or LUN is disconnected with shared option.
-* SnapDrive for UNIX executes the snapdrive storage disconnect command on the master node. It destroys the storage entities, disconnects the LUNs on all the nonmaster nodes, and then disconnects the LUNs from the master node in the host cluster. If any error message occurs during this sequence, the storage disconnect operation fails.
+* You can disconnect a storage entity from a specific node using the `-devicetype dedicated` option or by omitting the `-devicetype` option in the command altogether, because the default value is dedicated.
+* The `snapdrive storage disconnect` command gives an error if a shared storage entity or LUN is disconnected with `dedicated` option, or if a dedicated storage entity or LUN is disconnected with `shared` option.
+* SnapDrive for UNIX executes the `snapdrive storage disconnect` command on the master node. It destroys the storage entities, disconnects the LUNs on all the nonmaster nodes, and then disconnects the LUNs from the master node in the host cluster. If any error message occurs during this sequence, the storage disconnect operation fails.

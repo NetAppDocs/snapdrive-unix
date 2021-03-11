@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_how_to_manage_snapshot_copies_of_lvm_vxvm_raw_devices_and_nfs_entities.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use SnapDrive commands to create, restore, and manage Snapshot copies of LVM, raw devices and NFS entities.'
+keywords: snap, snapdrive, snapshot, lvm, nfs, raw, device
+summary: You can use SnapDrive commands to create, restore, and manage Snapshot copies of LVM, raw devices and NFS entities.
 ---
 = How to manage Snapshot copies of LVM, raw devices, and NFS entities
 :icons: font

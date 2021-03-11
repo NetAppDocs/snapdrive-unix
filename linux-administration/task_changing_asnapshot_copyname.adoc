@@ -1,21 +1,25 @@
 ---
 permalink: linux-administration/task_changing_asnapshot_copyname.html
 sidebar: sidebar
-keywords: 
-summary: 'You can change the name of a Snapshot copy by using the snapdrive snap rename command. The Snapshot rename operation changes the name of the source Snapshot copy to the name specified by the target argument.'
+keywords: snap, snapdrive, snapshot, rename, command, source, name
+summary: You can change the name of a Snapshot copy by using the snapdrive snap rename command. The Snapshot rename operation changes the name of the source Snapshot copy to the name specified by the target argument.
 ---
 = Changing a Snapshot copy name
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can change the name of a Snapshot copy by using the snapdrive snap rename command. The Snapshot rename operation changes the name of the source Snapshot copy to the name specified by the target argument.
+You can change the name of a Snapshot copy by using the `snapdrive snap rename` command. The Snapshot rename operation changes the name of the source Snapshot copy to the name specified by the target argument.
 
 Before you execute this syntax, you must understand the options, keywords, and arguments mentioned in this command.
 
-. Enter the following command to change the Snapshot copy name: snapdrive snap rename [-snapname]old_long_snap_namenew_snap_name [-force [-noprompt]]
+.Steps
 
-The following are examples of the snapdrive snap rename command. The first command line includes the-force option because a Snapshot copy named new snapshot copy already exists. In the second example, both Snapshot copy names use the long form of the name, but they both resolve to the same storage system volume.
+. Enter the following command to change the Snapshot copy name:
++
+`*snapdrive snap rename [-snapname] _old_long_snap_name new_snap_name_ [-force [-noprompt]]*`
+
+The following are examples of the `snapdrive snap rename` command. The first command line includes the `-force` option because a Snapshot copy named `new snapshot` copy already exists. In the second example, both Snapshot copy names use the long form of the name, but they both resolve to the same storage system volume.
 
 ----
 snapdrive snap rename -force filer1:/vol/vol1:oldsnap new snapshot

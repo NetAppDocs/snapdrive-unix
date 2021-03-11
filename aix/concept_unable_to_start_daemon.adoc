@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_unable_to_start_daemon.html
 sidebar: sidebar
-keywords: 
-summary: 'The daemon cannot be started when the host is not able to communicate to any configured storage system.'
+keywords: snap, snapdrive, restart, daemon, storage, system, host
+summary: The daemon cannot be started when the host is not able to communicate to any configured storage system.
 ---
 = Unable to restart the daemon when host cannot communicate to the storage system
 :icons: font
@@ -20,4 +20,4 @@ Unable to start daemon...check daemon log file for more details
 Primarily, you need to ensure if the host is communicating to the storage system by executing the ping command to the storage system. If the host is still not able to communicate to the storage system, then try to use the following options:
 
 * Delete the storage system that is not communicating to the host, and then try to restart the daemon.
-* In case, you do not want to delete the storage system that is configured to the host, then disable the option autosupport-enabled to off in the snapdrive.conf file to suppress the error message.
+* In case, you do not want to delete the storage system that is configured to the host, then disable the option `_autosupport-enabled_` to `_off_` in the `snapdrive.conf` file to suppress the error message.

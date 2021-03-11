@@ -1,28 +1,28 @@
 ---
 permalink: solaris/concept_guidelines_for_storage_deletion_in_a_host_cluster_environment.html
 sidebar: sidebar
-keywords: 
-summary: 'You must be aware of some guidelines for using thesnapdrive storage delete command in a host cluster environment.'
+keywords: snap, snapdrive, storage, delete, host, cluster
+summary: You must be aware of some guidelines for using thesnapdrive storage delete command in a host cluster environment.
 ---
 = Guidelines for storage deletion in a host cluster environment
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You must be aware of some guidelines for using thesnapdrive storage delete command in a host cluster environment.
+You must be aware of some guidelines for using the `snapdrive storage delete` command in a host cluster environment.
 
-* If you initiate the snapdrive storage delete command with -devicetype shared option from any nonmaster node in the host cluster, the command is sent to the master node and executed. For this to happen, you have to ensure that the rsh or ssh access-without-password-prompt is allowed on all the host cluster nodes.
-* The snapdrive storage delete command can be executed from any node in the host cluster.
+* If you initiate the `snapdrive storage delete` command with `-devicetype` shared option from any nonmaster node in the host cluster, the command is sent to the master node and executed. For this to happen, you have to ensure that the rsh or ssh `access-without-password-prompt` is allowed on all the host cluster nodes.
+* The `snapdrive storage delete` command can be executed from any node in the host cluster.
 * For the storage delete operation to be successful, neither should be false:
  ** The storage entities have to be shared.
  ** The LUNs should be mapped to all the nodes in the host cluster.
-* You can delete a storage entity on a specific node either by using the -devicetypededicated option or by omitting the -devicetype option in the command line syntax, altogether because the default value is dedicated.
-* The snapdrive storage delete command gives an error message if a shared storage entity or LUN is deleted with -devicetype dedicated option, or if a dedicated storage entity or LUN is deleted with shared option.
+* You can delete a storage entity on a specific node either by using the `-devicetype dedicated` option or by omitting the `-devicetype` option in the command line syntax, altogether because the default value is dedicated.
+* The `snapdrive storage delete` command gives an error message if a shared storage entity or LUN is deleted with `-devicetype dedicated` option, or if a dedicated storage entity or LUN is deleted with shared option.
 * The storage delete operation fails, if one of the following happens:
  ** If any error occurs during the process of deleting a storage entity.
 +
 SnapDrive for UNIX deletes the storage entities, disconnect the LUNs from all the nonmaster nodes and then disconnect and delete the LUNs from the master node in the host cluster.
 
- ** If a node in the host cluster shuts down and reboots before the snapdrive storage delete command is executed.
+ ** If a node in the host cluster shuts down and reboots before the `snapdrive storage delete` command is executed.
 +
-This happens because the LUNs are still be mapped to the non-existing node. To avoid this, use the -force option.
+This happens because the LUNs are still be mapped to the non-existing node. To avoid this, use the `-force` option.

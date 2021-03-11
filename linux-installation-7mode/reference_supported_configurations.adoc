@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-7mode/reference_supported_configurations.html
 sidebar: sidebar
-keywords: 
-summary: 'You should use the NetApp Interoperability Matrix Tool \(IMT\) to verify SnapDrive support for your configuration before installing SnapDrive for UNIX.'
+keywords: snap, snapdrive, supported, configurations, interoperability
+summary: You should use the NetApp Interoperability Matrix Tool \(IMT\) to verify SnapDrive support for your configuration before installing SnapDrive for UNIX.
 ---
 = Supported configurations
 :icons: font

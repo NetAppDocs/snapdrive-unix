@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_using_port_set_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
-summary: 'Port set is a group of SAN data port or interface, and is used to control the path available to a host by grouping the set of SAN data port or interface.'
+keywords: snap, snapdrive, port, set
+summary: Port set is a group of SAN data port or interface, and is used to control the path available to a host by grouping the set of SAN data port or interface.
 ---
 = Using port set in SnapDrive for UNIX
 :icons: font

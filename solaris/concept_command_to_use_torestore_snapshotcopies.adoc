@@ -1,23 +1,24 @@
 ---
 permalink: solaris/concept_command_to_use_torestore_snapshotcopies.html
 sidebar: sidebar
-keywords: 
-summary: 'Use the command snapdrive snap restore to restore a Snapshot copy.'
+keywords: snap, snapdrive, command, restore, snapshot, copy
+summary: Use the command snapdrive snap restore to restore a Snapshot copy.
 ---
 = Command to use to restore Snapshot copies
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-Use the command snapdrive snap restore to restore a Snapshot copy.
+Use the command `snapdrive snap restore` to restore a Snapshot copy.
 
-The snapdrive snap restore command restores data from the Snapshot copy you specify at the command prompt to the storage system. This operation replaces the contents of the file_spec arguments (for example disk groups, NFS files, NFS directory trees, file systems created directly on LUNs) that you specified on the snapdrive snap restore command with the contents of the file_spec arguments located in the specified Snapshot copy.
+The `snapdrive snap restore` command restores data from the Snapshot copy you specify at the command prompt to the storage system. This operation replaces the contents of the `file_spec` arguments (for example disk groups, NFS files, NFS directory trees, file systems created directly on LUNs) that you specified on the `snapdrive snap restore` command with the contents of the `file_spec` arguments located in the specified Snapshot copy.
 
-You can also restore Snapshot copies for non-existent file_spec arguments. This happens when the value you specify no longer exists on the host, but existed when you took the Snapshot copy. For example, it might be a file system that you have now unmounted or a disk group that you have removed.
+You can also restore Snapshot copies for non-existent `file_spec` arguments. This happens when the value you specify no longer exists on the host, but existed when you took the Snapshot copy. For example, it might be a file system that you have now unmounted or a disk group that you have removed.
 
 Normally, you restore Snapshot copies from the host where you took the Snapshot copies (in other words, the originating host).
 
-NOTE:
-
+[NOTE]
+====
 * In a NFS entity, when the same volume is mounted on two different IPs, snap restore operations can be performed only for one file specification at a time for these volumes.
 * If you are a non-root user then, from SnapDrive 4.1 for UNIX, you should have storage write capability on global in addition to GlobalSDSnapshot capability for Snapshot restore to work.
+====

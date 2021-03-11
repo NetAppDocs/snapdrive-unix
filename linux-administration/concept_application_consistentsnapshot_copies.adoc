@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_application_consistentsnapshot_copies.html
 sidebar: sidebar
-keywords: 
-summary: 'To make an application-consistent Snapshot copy, you should halt the application before the Snapshot operation.'
+keywords: snap, snapdrive, copy, application
+summary: To make an application-consistent Snapshot copy, you should halt the application before the Snapshot operation.
 ---
 = Application-consistent Snapshot copies
 :icons: font

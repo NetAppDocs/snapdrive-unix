@@ -1,15 +1,15 @@
 ---
 permalink: aix/concept_snapdrive_storage_show_command_returns_incorrect_path_if_volume_deleted_without_unmount.html
 sidebar: sidebar
-keywords: 
-summary: 'If a volume is deleted on the Vserver without unmounting the volume on the host system, and when you execute snapdrive storage show -v command, the actual path is incorrect.'
+keywords: snap, snapdrive, delete, vserver, storage, show, incorrect, unmount
+summary: If a volume is deleted on the Vserver without unmounting the volume on the host system, and when you execute snapdrive storage show -v command, the actual path is incorrect.
 ---
 = If a volume is deleted on the Vserver without unmounting the volume on the host system, the snapdrive storage show command displays the incorrect actual path
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-If a volume is deleted on the Vserver without unmounting the volume on the host system, and when you execute snapdrive storage show -vcommand, the actual path is incorrect.
+If a volume is deleted on the Vserver without unmounting the volume on the host system, and when you execute `snapdrive storage show -v` command, the actual path is incorrect.
 
 You might also experience the same when the volume is not junctioned on the Vserver. The following example show the incorrect actual path:
 

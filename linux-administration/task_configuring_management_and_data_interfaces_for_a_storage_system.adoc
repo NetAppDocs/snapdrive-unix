@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/task_configuring_management_and_data_interfaces_for_a_storage_system.html
 sidebar: sidebar
-keywords: 
-summary: 'You can configure multiple data interfaces for a single management interface in an NFS environment, so that you can separate management traffic from data traffic on your storage system.'
+keywords: snap, snapdrive, management, configure, data, interface, nfs, traffic
+summary: You can configure multiple data interfaces for a single management interface in an NFS environment, so that you can separate management traffic from data traffic on your storage system.
 ---
 = Configuring management and data interfaces for a storage system
 :icons: font
@@ -11,7 +11,11 @@ summary: 'You can configure multiple data interfaces for a single management int
 [.lead]
 You can configure multiple data interfaces for a single management interface in an NFS environment, so that you can separate management traffic from data traffic on your storage system.
 
-. Set the configuration for the new management interface: snapdrive config set root
+.Steps
+
+. Set the configuration for the new management interface:
++
+`*snapdrive config set root*`
 +
 ----
 # snapdrive config set root f3050-197-91
@@ -27,7 +31,9 @@ Password for vsadmin:
 Retype password:
 ----
 
-. Configure the data interface for the new management interface: snapdrive config set
+. Configure the data interface for the new management interface:
++
+`*snapdrive config set*`
 +
 ----
 # snapdrive config set -mgmtpath f3050-197-91 f3050-220-91#

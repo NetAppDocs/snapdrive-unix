@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_features_supported_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
-summary: 'You can find information about the features and supported configurations in SnapDrive for UNIX.'
+keywords: snap, snapdrive, feature, support, unix
+summary: You can find information about the features and supported configurations in SnapDrive for UNIX.
 ---
 = Features supported in SnapDrive for UNIX
 :icons: font

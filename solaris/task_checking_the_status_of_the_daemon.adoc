@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_checking_the_status_of_the_daemon.html
 sidebar: sidebar
-keywords: 
-summary: 'You can check the status of the daemon to see whether the daemon is running. If the daemon is already running, you do not need to restart it until the SnapDrive for UNIX configuration file has been updated.'
+keywords: snap, snapdrive, check, daemon, status, command
+summary: You can check the status of the daemon to see whether the daemon is running. If the daemon is already running, you do not need to restart it until the SnapDrive for UNIX configuration file has been updated.
 ---
 = Checking the status of the daemon
 :icons: font
@@ -13,4 +13,8 @@ You can check the status of the daemon to see whether the daemon is running. If 
 
 You must be logged in as a root user.
 
-. Check the status of the daemon: snapdrived status
+.Steps
+
+. Check the status of the daemon:
++
+`*snapdrived status*`

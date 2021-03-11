@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_prerequisites_for_using_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
-summary: 'Depending on your storage system, you can configure Fibre Channel \(FC\), Internet Small Computer System Interface \(iSCSI\), or a Network File System \(NFS\) configuration that uses NFS directory trees.'
+keywords: snap, snapdrive, hardware, software, configuration
+summary: Depending on your storage system, you can configure Fibre Channel \(FC\), Internet Small Computer System Interface \(iSCSI\), or a Network File System \(NFS\) configuration that uses NFS directory trees.
 ---
 = Hardware and software configuration
 :icons: font

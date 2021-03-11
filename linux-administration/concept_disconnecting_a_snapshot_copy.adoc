@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_disconnecting_a_snapshot_copy.html
 sidebar: sidebar
-keywords: 
-summary: 'You can disconnect a Snapshot copy from a LUN, a file system on a LUN, disk groups, NFS directories, or shared disk groups, host volumes, and file systems on a LUN.'
+keywords: snap, snapdrive, snapshot, copy, disconnect
+summary: You can disconnect a Snapshot copy from a LUN, a file system on a LUN, disk groups, NFS directories, or shared disk groups, host volumes, and file systems on a LUN.
 ---
 = Disconnecting a Snapshot copy
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/reference_command_line_options.html
 sidebar: sidebar
-keywords: 
-summary: 'There are various options that are used with SnapDrive for UNIX commands.'
+keywords: snap, snapdrive, command, line, options
+summary: There are various options that are used with SnapDrive for UNIX commands.
 ---
 = Command-line options
 :icons: font
@@ -11,191 +11,192 @@ summary: 'There are various options that are used with SnapDrive for UNIX comman
 [.lead]
 There are various options that are used with SnapDrive for UNIX commands.
 
-SnapDrive for UNIX enables you to include the following options as appropriate with its commands. In certain cases, you can abbreviate these options. For example, you can use -h instead of -help.
+SnapDrive for UNIX enables you to include the following options as appropriate with its commands. In certain cases, you can abbreviate these options. For example, you can use `-h` instead of `-help`.
 
+[options="header"]
 |===
 | Option| Description
 a|
--addlun
+`-addlun`
 a|
 Tells SnapDrive for UNIX to add a new, internally-generated LUN to a storage entity in order to increase its size.
 a|
--all
+`-all`
 a|
-Used with the snapdrive storage {show | list} command to display all devices and LVM entities known to the host.
+Used with the snapdrive storage `{show \| list}` command to display all devices and LVM entities known to the host.
 a|
--autoexpand
+`-autoexpand`
 a|
-Used with the snapdrive snap connect command to enable you to request that a disk group be connected when you supply a subset of the logical volumes or file systems in the disk group.
+Used with the `snapdrive snap connect` command to enable you to request that a disk group be connected when you supply a subset of the logical volumes or file systems in the disk group.
 a|
--autorename
+`-autorename`
 a|
-Used with the snapdrive snap connect command to enable the command to rename any newly-connected LVM entities for which the default name is already in use.
+Used with the `snapdrive snap connect` command to enable the command to rename any newly-connected LVM entities for which the default name is already in use.
 a|
--clone type
+`-clone type`
 a|
-Clone-method to be used during snap connect operation. Here type refers to lunclone (creates lun clone(s)), Optimal (SnapDrive automatically chooses between Restricted FlexClone(s) and LUN clone depending on the storage configuration) and Unrestricted (creates FlexClone(s) which can be used for provisioning and Snapshot operations, just like normal flexible volumes).
+Clone-method to be used during `snap connect` operation. Here type refers to lunclone (creates lun clone(s)), Optimal (SnapDrive automatically chooses between Restricted FlexClone(s) and LUN clone depending on the storage configuration) and Unrestricted (creates FlexClone(s) which can be used for provisioning and Snapshot operations, just like normal flexible volumes).
 
 a|
--capabilities
+-`apabilities`
 a|
-used with snapdrive storage show command to know the allowed operations on the host file specs.
+used with `snapdrive storage show` command to know the allowed operations on the host file specs.
 
 a|
--devices or -dev
+`-devices` or `-dev`
 a|
-Used with the storage {show | list} command to display all devices known to the host.
+Used with the storage `{show \| list}` command to display all devices known to the host.
 a|
--devicetype
+`-devicetype`
 a|
 Specifies the type of device to be used for SnapDrive for UNIX operations. Following are the values for this option:
 
-* shared-- specifies the scope of LUN, disk group, and file system as host cluster.
-* dedicated--specifies the scope of LUN, disk group, and file system as local. This is the default value.
+* `shared`-- specifies the scope of LUN, disk group, and file system as host cluster.
+* `dedicated`--specifies the scope of LUN, disk group, and file system as local. This is the default value.
 
-If you do not specify the -devicetype option in SnapDrive for UNIX commands that supports this option, it is equivalent to specifying -devicetype dedicated.
+If you do not specify the `-devicetype` option in SnapDrive for UNIX commands that supports this option, it is equivalent to specifying `-devicetype dedicated`.
 
 a|
--dgsize or -vgsize
+`-dgsize` or `-vgsize`
 a|
-Used with the snapdrive storage create command to specify the size in bytes of the disk group you want to create.
+Used with the `snapdrive storage create` command to specify the size in bytes of the disk group you want to create.
 a|
--force (or -f)
+`-force` (or `-f`)
 a|
 Causes operations to be attempted that SnapDrive for UNIX would not undertake ordinarily. SnapDrive for UNIX prompts you to ask for confirmation before it executes the operation.
 a|
--fsopts
+`-fsopts`
 a|
-The options you want passed to the host operation that creates the new file system. Depending on your host operating system, this host operation might be a command such as the mkfs command.
+The options you want passed to the host operation that creates the new file system. Depending on your host operating system, this host operation might be a command such as the `mkfs` command.
 
 The argument you supply with this option usually needs to be specified as a quoted string and must contain the exact text to be passed to the command.
 
-For example, you might enter -o largefiles as the option you want passed to the host operation.
+For example, you might enter `-o largefiles` as the option you want passed to the host operation.
 
 a|
--fstype
+`-fstype`
 a|
 The type of file system you want to use for the SnapDrive for UNIX operations. The file system must be a type that SnapDrive for UNIX supports for your operating system. Current values that you can set for this variable is
 
-You can also specify the type of file system that you want to use by using the -fstype configuration variable.
+You can also specify the type of file system that you want to use by using the `-fstype` configuration variable.
 
 a|
--full
+`-full`
 a|
 Allows operations on a specified host-side entity to be performed even if the entity is not empty (for example, the entity might be a volume group containing one or more logical volumes).
 
 a|
--growby
+`-growby`
 a|
 The number of bytes you want to add to a LUN or disk group in order to increase its size.
 
 a|
--growto
+`-growto`
 a|
 The target size in bytes for a LUN, disk group, or volume group. SnapDrive for UNIX automatically calculates the number of bytes necessary to reach the target size and increases the size of the object by that number of bytes.
 
 a|
--help
+`-help`
 a|
 Prints out the usage message for the command and operation. Enter this option by itself without other options. Following are the examples of possible command lines.
 
 a|
--lunsize
+`-lunsize`
 a|
 The size of the LUN in bytes to be created by a given command.
 
 a|
--mntopts
+`-mntopts`
 a|
 Specifies options that you want passed to the host mount command (for example, to specify file system logging behavior). Options are also stored in the host file system table file. The options allowed depend on the host file system type.
 
-The -mntopts argument that you supply is a file system-type option that is specified using the mount command "`- o`" flag. Do not include the '`'`- o`" flag in the -mntopts argument. For example, the sequence -mntoptstmplog passes the string -otmplog to the mount command line, and inserts the text "`tmplog`" on a new command line.
+The `-mntopts` argument that you supply is a file system-type option that is specified using the `mount` command `"`- o`"` flag. Do not include the `"`- o`"` flag in the `-mntopts` argument. For example, the sequence `-mntopts _tmplog_` passes the string `-o _tmplog_` to the mount command line, and inserts the text `"`tmplog`"` on a new command line.
 
 a|
--nofilerfence
+`-nofilerfence`
 a|
 Suppresses the use of the Data ONTAP consistency group feature in creating Snapshot copies that span multiple filer volumes.
 
-In Data ONTAP 7.2 or above, you can suspend access to an entire filer volume. By using the -nofilerfence option, you can freeze access to an individual LUN.
+In Data ONTAP 7.2 or above, you can suspend access to an entire filer volume. By using the `-nofilerfence` option, you can freeze access to an individual LUN.
 
 a|
--nolvm
+`-nolvm`
 a|
 Connects or creates a file system directly on a LUN without involving the host LVM.
 
-All commands that take this option for connecting or creating a file system directly on a LUN will not accept it for host cluster or shared resources. This option is allowed only for local resources. If you have enabled the -devicetype shared option, then this option cannot be used, because -nolvm option is valid only for local resources and not for shared resource.
+All commands that take this option for connecting or creating a file system directly on a LUN will not accept it for host cluster or shared resources. This option is allowed only for local resources. If you have enabled the `-devicetype` shared option, then this option cannot be used, because `-nolvm` option is valid only for local resources and not for shared resource.
 
 a|
--nopersist
+`-nopersist`
 a|
 Connects or creates a file system, or a Snapshot copy that has a file system, without adding an entry in the host's persistent mount entry file.
 
 a|
--prefixfv
+`-prefixfv`
 a|
-prefix to be used while generating cloned volume name. The format of the name of the new volume would be <pre-fix>_<original_volume_name>.
+prefix to be used while generating cloned volume name. The format of the name of the new volume would be `<pre-fix>_<original_volume_name>`.
 
 a|
--reserve - noreserve
+`-reserve - noreserve`
 a|
-Used with the snapdrive storage create, snapdrive snap connect or snapdrive snap restore commands to specify whether or not SnapDrive for UNIX creates a space reservation. By default, SnapDrive for UNIX creates reservation for storage create, resize, and Snapshot create operations, and does not create reservation for Snapshot connect operation.
+Used with the `snapdrive storage create`, `snapdrive snap connect` or `snapdrive snap restore` commands to specify whether or not SnapDrive for UNIX creates a space reservation. By default, SnapDrive for UNIX creates reservation for storage create, resize, and Snapshot create operations, and does not create reservation for Snapshot connect operation.
 
 a|
--noprompt
+`-noprompt`
 a|
-Suppresses prompting during command execution. By default, any operation that might have dangerous or non-intuitive side effects prompts you to confirm that SnapDrive for UNIX should be attempted. This option overrides that prompt; when combined with the -force option, SnapDrive for UNIX performs the operation without asking for confirmation.
+Suppresses prompting during command execution. By default, any operation that might have dangerous or non-intuitive side effects prompts you to confirm that SnapDrive for UNIX should be attempted. This option overrides that prompt; when combined with the `-force` option, SnapDrive for UNIX performs the operation without asking for confirmation.
 
 a|
--quiet (or -q)
+`-quiet` (or `-q`)
 a|
-Suppresses the reporting of errors and warnings, regardless of whether they are normal or diagnostic. It returns zero (success) or non-zero status. The -quiet option overrides the -verbose option.
+Suppresses the reporting of errors and warnings, regardless of whether they are normal or diagnostic. It returns zero (success) or non-zero status. The `-quiet` option overrides the `-verbose` option.
 
-This option will be ignored for snapdrive storage show, snapdrive snap show, and snapdrive config show commands.
+This option will be ignored for `snapdrive storage show`, `snapdrive snap show`, and `snapdrive config show` commands.
 
 a|
--readonly
+`-readonly`
 a|
 Required for configurations with Data ONTAP 7.1 or any configuration that uses traditional volumes. Connects the NFS file or directory with read-only access.
 
 Optional for configurations with Data ONTAP 7.0 that use FlexVol volumes. Connects the NFS file or directory tree with read-only access. (Default is read/write).
 
 a|
--split
+`-split`
 a|
 Enables to split the cloned volumes or LUNs during Snapshot connect and Snapshot disconnect operations.
 
-You can also split the cloned volumes or LUNs by using the enable-split-clone configuration variable.
+You can also split the cloned volumes or LUNs by using the `_enable-split-clone_` configuration variable.
 
 a|
--status
+`-status`
 a|
-Used with the snapdrive storage show command to know if the volume or LUN is cloned.
+Used with the `snapdrive storage show` command to know if the volume or LUN is cloned.
 
 a|
--unrelated
+`-unrelated`
 a|
-Creates a Snapshot copy of file_spec entities that have no dependent writes when the Snapshot copy is taken. Because the entities have no dependent writes, SnapDrive for UNIX creates a crash-consistent Snapshot copy of the individual storage entities, but does not take steps to make the entities consistent with each other.
+Creates a Snapshot copy of `_file_spec_` entities that have no dependent writes when the Snapshot copy is taken. Because the entities have no dependent writes, SnapDrive for UNIX creates a crash-consistent Snapshot copy of the individual storage entities, but does not take steps to make the entities consistent with each other.
 a|
--verbose (or -v)
+`-verbose` (or `-v`)
 a|
 Displays detailed output, wherever appropriate. All commands and operations accept this option, although some might ignore it.
 a|
--vgsize or -dgsize
+`-vgsize` or `-dgsize`
 a|
-Used with the storage create command to specify the size in bytes of the volume group you want to create.
+Used with the `storage create` command to specify the size in bytes of the volume group you want to create.
 a|
--vmtype
+`-vmtype`
 a|
 The type of volume manager you want to use for the SnapDrive for UNIX operations.
 
-If the user specifies the -vmtype option in the command line explicitly, SnapDrive for UNIX uses the value specified in the option irrespective of the value specified in the vmtype configuration variable. If the -vmtype option is not specified in the command-line option, SnapDrive for UNIX uses the volume manager that is in the configuration file.
+If the user specifies the `-vmtype` option in the command line explicitly, SnapDrive for UNIX uses the value specified in the option irrespective of the value specified in the `vmtype` configuration variable. If the `-vmtype` option is not specified in the command-line option, SnapDrive for UNIX uses the volume manager that is in the configuration file.
 
 The volume manager must be a type that SnapDrive for UNIX supports for your operating system. Current values that you can set for this variable as vxvm.
 
 You can also specify the type of volume manager that you want to use by using the vmtype configuration variable.
 
 a|
--vbsr {preview|execute}
+`-vbsr {preview\|execute}`
 a|
-The preview option initiates a volume based SnapRestore preview mechanism for the given host filespec. With the execute option, SnapDrive for UNIX proceeds with volume based SnapRestore for the specified filespec.
+The `preview` option initiates a volume based SnapRestore preview mechanism for the given host filespec. With the `execute` option, SnapDrive for UNIX proceeds with volume based SnapRestore for the specified filespec.
 |===

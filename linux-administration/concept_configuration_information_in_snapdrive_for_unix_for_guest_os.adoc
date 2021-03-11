@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_configuration_information_in_snapdrive_for_unix_for_guest_os.html
 sidebar: sidebar
-keywords: 
-summary: 'You must configure the storage systems and Virtual Storage Console in the guest operating system for provisioning RDM LUNs.'
+keywords: snap, snapdrive, configuration, guest, lun, operating
+summary: You must configure the storage systems and Virtual Storage Console in the guest operating system for provisioning RDM LUNs.
 ---
 = Configuration information in SnapDrive for UNIX for guest operating system
 :icons: font

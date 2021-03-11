@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_determining_howmany_luns_can_becreated.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX lets you determine how many LUNs can be created on the host without exceeding the limit.'
+keywords: snap, snapdrive, lun, create
+summary: SnapDrive for UNIX lets you determine how many LUNs can be created on the host without exceeding the limit.
 ---
 = Determining how many LUNs can be created
 :icons: font
@@ -11,6 +11,6 @@ summary: 'SnapDrive for UNIX lets you determine how many LUNs can be created on 
 [.lead]
 SnapDrive for UNIX lets you determine how many LUNs can be created on the host without exceeding the limit.
 
-You can use snapdrive config check luns command to determine this value.
+You can use `snapdrive config check luns` command to determine this value.
 
-On a Solaris host, this command scans/kernel/drv/sd.conf to determine how many unused entries would be suitable for LUNs.
+On a Solaris host, this command scans `/kernel/drv/sd.conf` to determine how many unused entries would be suitable for LUNs.

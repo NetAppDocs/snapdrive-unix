@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_volume_based_snaprestore_command.html
 sidebar: sidebar
-keywords: 
-summary: 'This section describes the commands and the options to use volume based SnapRestore.'
+keywords: snap, snapdrive, volume, snaprestore, command
+summary: This section describes the commands and the options to use volume based SnapRestore.
 ---
 = Volume-based SnapRestore command
 :icons: font
@@ -11,7 +11,7 @@ summary: 'This section describes the commands and the options to use volume base
 [.lead]
 This section describes the commands and the options to use volume based SnapRestore.
 
--vbsr option is added in snap restore CLI to select volume based SnapRestore. Use the following command syntax to perform restore using volume based SnapRestore:
+`-vbsr` option is added in snap restore CLI to select volume based SnapRestore. Use the following command syntax to perform restore using volume based SnapRestore:
 
 ----
 snapdrive snap restore {-lun | -dg | -vg | -hostvol |
@@ -22,12 +22,13 @@ snapdrive snap restore {-lun | -dg | -vg | -hostvol |
 [-vbsr [execute | preview]]
 ----
 
-If no argument is supplied with the -vbsr, the default output is that of the preview option. A --verbose option is used which enables detailed output of all the mandatory checks that can be over-ridden by the user. The default output when -verbose option is not provided displays the results of the checks that is failed.
+If no argument is supplied with the `-vbsr`, the default output is that of the preview option. A `-verbose` option is used which enables detailed output of all the mandatory checks that can be over-ridden by the user. The default output when -verbose option is not provided displays the results of the checks that is failed.
 
--devicetype shared | dedicated option supports with -vbsr. This allows host cluster-wide shared host filespec support with volume based SnapRestore. This is the same as support for single file snap restore.
+`-devicetype shared | dedicated` option supports with `-vbsr`. This allows host cluster-wide shared host filespec support with volume based SnapRestore. This is the same as support for single file snap restore.
 
-If you do not want any confirmation message to prompt, while executing volume based SnapRestore, you can use -noprompt and -force option with snap restore -vbsr execute command. The following table describes SnapDrive for UNIX behavior depending on the options provided by you.
+If you do not want any confirmation message to prompt, while executing volume based SnapRestore, you can use `-noprompt` and `-force` option with `snap restore -vbsr execute` command. The following table describes SnapDrive for UNIX behavior depending on the options provided by you.
 
+[options="header"]
 |===
 | S.N.| -vbsr execute| -force| -noprompt| Result
 a|

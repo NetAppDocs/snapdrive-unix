@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_operations_performed_using_wizards.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use different wizards to create storage entities and manipulate SnapDrive for UNIX in an efficient manner.'
+keywords: snap, snapdrive, wizards, storage, create
+summary: You can use different wizards to create storage entities and manipulate SnapDrive for UNIX in an efficient manner.
 ---
 = Operations performed using wizards
 :icons: font
@@ -13,8 +13,8 @@ You can use different wizards to create storage entities and manipulate SnapDriv
 
 The following SnapDrive for UNIX commands have an equivalent wizard to perform operations:
 
-* storage create
-* storage delete
-* snap restore
-* snap connect
-* snap disconnect
+* `storage create`
+* `storage delete`
+* `snap restore`
+* `snap connect`
+* `snap disconnect`

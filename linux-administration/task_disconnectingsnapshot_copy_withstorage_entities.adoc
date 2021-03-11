@@ -1,24 +1,29 @@
 ---
 permalink: linux-administration/task_disconnectingsnapshot_copy_withstorage_entities.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains storage entities.'
+keywords: snap, snapdrive, disconnect, snapshot, command
+summary: You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains storage entities.
 ---
 = Disconnecting Snapshot copy with storage entities
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can use the snapdrive snap disconnect command to disconnect a Snapshot copy that contains storage entities.
+You can use the `snapdrive snap disconnect` command to disconnect a Snapshot copy that contains storage entities.
 
-. Enter the following command: snapdrive snap disconnect {-dg | -fs | -hostvol}file_spec [file_spec...]{-dg | -fs | -hostvol} file_spec [file_spec...]] [-full] [-fstype type] [-vmtype type] [-split]
+.Steps
+
+. Enter the following command:
 +
-This command must always start with the storage entity, for example, -lun, -dg, -hostvol, or -fs.
+`*snapdrive snap disconnect {-dg | -fs | -hostvol} _file_spec_ [_file_spec..._]{-dg | -fs | -hostvol} _file_spec_ [file_spec...]] [-full] [-fstype type] [-vmtype type] [-split]
++
+This command must always start with the storage entity, for example, `-lun`, `-dg`, `-hostvol`, or `-fs`.
 
- ** If you specify a LUN (-lun), you must enter the long LUN name. You cannot specify a LUN with the -lun option on the same command line as other storage entities (-vg,-dg,-fs,-lvol, or -hostvol options).
- ** If you specify an RDM LUN (-lun), you must enter the long RDM LUN name. You cannot specify an RDM LUN with the -lun option on the same command line as other storage entities (-vg,-dg,-fs,-lvol, or -hostvol options).
- ** If you specify an NFS mountpoint, you cannot specify non-NFS entities (-vg, -dg, -fs, -lvol, or -hostvol) on the same command line. You must use a separate command to specify the NFS mountpoint.
-*Note:* An error message occurs if the host entity is using LUNs that are not part of the Snapshot copy. An error also occurs if you specify a subset of the host volumes and/or file systems contained in each target disk group.
+ ** If you specify a LUN (`-lun`), you must enter the long LUN name. You cannot specify a LUN with the `-lun` option on the same command line as other storage entities (`-vg`,`-dg`,`-fs`,`-lvol`, or `-hostvol` options).
+ ** If you specify an RDM LUN (`-lun`), you must enter the long RDM LUN name. You cannot specify an RDM LUN with the `-lun` option on the same command line as other storage entities (`-vg`,`-dg`,`-fs`,`-lvol`, or `-hostvol` options).
+ ** If you specify an NFS mountpoint, you cannot specify non-NFS entities (`-vg`, `-dg`, `-fs`, `-lvol`, or `-hostvol`) on the same command line. You must use a separate command to specify the NFS mountpoint.
+
+NOTE: An error message occurs if the host entity is using LUNs that are not part of the Snapshot copy. An error also occurs if you specify a subset of the host volumes and/or file systems contained in each target disk group.
 
 SnapDrive for UNIX removes the mappings for the storage entities specified in the command line.
 
@@ -62,7 +67,7 @@ This example disconnects a Snapshot copy with file system, disk group on LVM sta
 
 ----
 # snapdrive snap disconnect -fs /mnt/fs1_clone -fstype ext3
-					
+
 delete file system /mnt/fs1_clone
 - fs /mnt/fs1_clone ... deleted
 - hostvol lvm1_0/fs1_SdHv_0 ... deleted

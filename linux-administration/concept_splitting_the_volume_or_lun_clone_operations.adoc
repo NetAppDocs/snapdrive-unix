@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_splitting_the_volume_or_lun_clone_operations.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX enables you to split a volume clone or LUN clone. After the clone split is complete, the relationship between the parent volume and the clone is destroyed, and both the entities are independent of each other, and have their own individual storage space.'
+keywords: snap, snapdrive, clone, lun, volume, split, parent
+summary: SnapDrive for UNIX enables you to split a volume clone or LUN clone. After the clone split is complete, the relationship between the parent volume and the clone is destroyed, and both the entities are independent of each other, and have their own individual storage space.
 ---
 = Splitting a volume clone or LUN clone
 :icons: font
@@ -18,10 +18,11 @@ The following are the clone split operations:
 * Stop the volume clone or LUN clone split.
 * View the status of the clone split that is in progress, completed, or failed.
 
-NOTE:
-
+[NOTE]
+====
 * If a volume clone is split, all Snapshot copies in the cloned volume are deleted.
 * It is mandatory to run the clone split estimate command before splitting the file specification to determine, if there are any Snapshot copies taken in the cloned volume.
-* For all clone split commands, only long LUN name must be specified with -lun option. You cannot specify -lun option on the same command line along with other storage entities (-vg, -dg, -fs, - lvol, or -hostvol options).
+* For all clone split commands, only long LUN name must be specified with `-lun` option. You cannot specify `-lun` option on the same command line along with other storage entities (-vg, -dg, -fs, - lvol, or -hostvol options).
 * It is always mandatory to use the absolute pathname for the file specifications with clone split commands.
 * The LUN clone split estimation using Snapshot is available only for Snapshot copies that are created from SnapDrive 4.2 for UNIX and later.
+====

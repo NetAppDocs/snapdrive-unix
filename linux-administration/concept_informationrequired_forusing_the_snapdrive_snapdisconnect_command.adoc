@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_informationrequired_forusing_the_snapdrive_snapdisconnect_command.html
 sidebar: sidebar
-keywords: 
-summary: 'To disconnect a Snapshot copy, specify the type of storage entity to be used, such as, LUN, disk groups, file systems, or host volume.'
+keywords: snap, snapdrive, command, disconnect, lun, disk, file
+summary: To disconnect a Snapshot copy, specify the type of storage entity to be used, such as, LUN, disk groups, file systems, or host volume.
 ---
 = Information required for using the snapdrive snap disconnect command
 :icons: font
@@ -11,51 +11,54 @@ summary: 'To disconnect a Snapshot copy, specify the type of storage entity to b
 [.lead]
 To disconnect a Snapshot copy, specify the type of storage entity to be used, such as, LUN, disk groups, file systems, or host volume.
 
-The following table gives the information you need to supply when you use the snapdrive snap disconnect command.
+The following table gives the information you need to supply when you use the `snapdrive snap disconnect` command.
 
+[options="header"]
 |===
 | Requirement/Option| Argument
 a|
-LUN (-lun file_spec )
+LUN (`-lun _file_spec_` )
 a|
 _name of the LUN. Include the name of the filer, volume and LUN._
 
 a|
-Disk group (-dg file_spec ) or volume group (-vg file_spec )
+Disk group (`-dg _file_spec_` ) or volume group (`-vg _file_spec_` )
 a|
 _name of the disk or volume group_
 a|
-File system (-fs file_spec )
+File system (`-fs _file_spec_` )
 a|
-filesystem_name
+`_filesystem_name_`
 a|
-Host volume (-hostvol file_spec ) or logical volume (-lvol file_spec )
+Host volume (`-hostvol _file_spec_` ) or logical volume (`-lvol _file_spec_` )
 a|
 _name of the host or logical volume_
-a|
-Specify the type of storage entity that you want to use to disconnect the Snapshot copy and supply that entity's name with the appropriate argument.This is the value for the file_spec argument.
+2+a|
+Specify the type of storage entity that you want to use to disconnect the Snapshot copy and supply that entity's name with the appropriate argument.
+
+This is the value for the `_file_spec_` argument.
 
 a|
--full
+`-full`
 a|
 ~
-a|
+2+a|
 Include the -full option on the command line if you want SnapDrive for UNIX to disconnect the objects from the Snapshot copy even if a host-side entity on the command line has other entities (such as a disk group that has one or more host volumes). If you do not include this option, you must specify only empty host-side entities.
 a|
--fstype
+`-fstype`
 a|
-type
+`_type_`
 a|
--vmtype
+`-vmtype`
 a|
-type
-a|
+`_type_`
+2+a|
 Optional: Specify the type of file system and volume manager to be used.
 a|
--split
+`-split`
 a|
 ~
-a|
+2+a|
 Enables to split the cloned volumes or LUNs during Snapshot connect and Snapshot disconnect operations.
 
 |===

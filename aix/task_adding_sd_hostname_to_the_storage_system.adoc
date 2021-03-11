@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_adding_sd_hostname_to_the_storage_system.html
 sidebar: sidebar
-keywords: 
-summary: 'The Operations Manager console administrator can create the sd-hostname user on the storage system using Operations Manager console. After the steps are completed, the Operations Manager console administrator must manually send the credentials to the SnapDrive for UNIX administrator. You can use any name in place of sd-hostname; however it is best to use sd-hostname.'
+keywords: snap, snapdrive, hostname, storage, system
+summary: The Operations Manager console administrator can create the sd-hostname user on the storage system using Operations Manager console. After the steps are completed, the Operations Manager console administrator must manually send the credentials to the SnapDrive for UNIX administrator. You can use any name in place of sd-hostname; however it is best to use sd-hostname.
 ---
 = Adding sd-hostname to the storage system
 :icons: font
@@ -11,11 +11,13 @@ summary: 'The Operations Manager console administrator can create the sd-hostnam
 [.lead]
 The Operations Manager console administrator can create the sd-hostname user on the storage system using Operations Manager console. After the steps are completed, the Operations Manager console administrator must manually send the credentials to the SnapDrive for UNIX administrator. You can use any name in place of sd-hostname; however it is best to use sd-hostname.
 
+.Steps
+
 . Obtain the root password of the storage system and store the password.
 +
 To add the password for the storage system, select *Management* > *Storage System*.
 
 . Create an sd-hostname user for each UNIX system.
-. Assign capabilities api-* and login-* to a role, such as sd-role.
+. Assign capabilities `api-*` and `login-*` to a role, such as sd-role.
 . Include this role (sd-role) in a new usergroup, such as sd-usergroup.
 . Associate this usergroup (sd-usergroup) with the sd-hostname user on the storage system.

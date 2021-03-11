@@ -1,20 +1,20 @@
 ---
 permalink: linux-administration/concept_about_the_data_collection_utility.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX provides a data collection utility \(snapdrive.dc\) that collects diagnostic information about SnapDrive for UNIX, SnapDrive configuration checker, and your system setup.'
+keywords: snap, snapdrive, data, utility, admin, connection
+summary: SnapDrive for UNIX provides a data collection utility \(snapdrive.dc\) that collects diagnostic information about SnapDrive for UNIX, SnapDrive configuration checker, and your system setup.
 ---
 = About the data collection utility
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-SnapDrive for UNIX provides a data collection utility (snapdrive.dc) that collects diagnostic information about SnapDrive for UNIX, SnapDrive configuration checker, and your system setup.
+SnapDrive for UNIX provides a data collection utility (`snapdrive.dc`) that collects diagnostic information about SnapDrive for UNIX, SnapDrive configuration checker, and your system setup.
 
 It does this by running NetApp diagnostic utilities and copying SnapDrive for UNIX log files to a special directory. Then it creates a compressed file containing this information that you can send to NetApp technical support for analysis.
 
-In SnapDrive 5.0 for UNIX, the -dump and -dumpall options are implemented. The -dump option collects the first log of the SnapDrive command, and the -dumpall option collects all the logs of the SnapDrive command. When you perform the SnapDrive operations using the -dump or -dumpall option, snapdrive.dc is generated and lists the compressed file location. The tar file collects all the log information of the SnapDrive commands, you can untar, and retrieve the file from the respective location.
+In SnapDrive 5.0 for UNIX, the `-dump` and `-dumpall` options are implemented. The `-dump` option collects the first log of the SnapDrive command, and the `-dumpall` option collects all the logs of the SnapDrive command. When you perform the SnapDrive operations using the `-dump` or `-dumpall` option, `snapdrive.dc` is generated and lists the compressed file location. The tar file collects all the log information of the SnapDrive commands, you can untar, and retrieve the file from the respective location.
 
-The -dump or -dumpall option is implemented for SnapDrive commands such as snapdrive storage show, snapdrive storage create, snapdrive storage delete,snapdrive snap create, snapdrive snap connect, snapdrive snap disconnect, snapdrive snap restore, snapdrive clone split estimate, and snapdrive clone split start operations.
+The `-dump` or `-dumpall` option is implemented for SnapDrive commands such as `snapdrive storage show`, `snapdrive storage create`, `snapdrive storage delete`, `snapdrive snap create`, `snapdrive snap connect`, `snapdrive snap disconnect`, `snapdrive snap restore`, `snapdrive clone split estimate`, and `snapdrive clone split start` operations.
 
 NOTE: It does not copy the file containing login information for the storage systems. It also does not make any configuration changes.

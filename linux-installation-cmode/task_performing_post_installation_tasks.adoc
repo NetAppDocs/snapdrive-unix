@@ -1,8 +1,8 @@
 ---
 permalink: linux-installation-cmode/task_performing_post_installation_tasks.html
 sidebar: sidebar
-keywords: 
-summary: 'After the installation is complete, you must configure additional features and functions. You must install the server certificate and configure SnapDrive for UNIX to use a secure connection with the storage system and daemon service.'
+keywords: snap, snapdrive, installation, task, perform, configure, install
+summary: After the installation is complete, you must configure additional features and functions. You must install the server certificate and configure SnapDrive for UNIX to use a secure connection with the storage system and daemon service.
 ---
 = Performing post-installation tasks
 :icons: font
@@ -11,14 +11,18 @@ summary: 'After the installation is complete, you must configure additional feat
 [.lead]
 After the installation is complete, you must configure additional features and functions. You must install the server certificate and configure SnapDrive for UNIX to use a secure connection with the storage system and daemon service.
 
-. Install the server certificate that is used by SnapDrive for UNIX in the sdu-daemoncertificate-path=/opt/NetApp/snapdrive/snapdrive.pem location if you are using a secure connection with the storage system and daemon service.
-+
-The certificate path is defined in the sdu-daemoncertificate-path configuration variable in the snapdrive.conf file.
+.Steps
 
-. Set use-https-to-sdu-daemon=on in the snapdrive.conf file to use HTTPS for a secure connection with the storage system and daemon service.
+. Install the server certificate that is used by SnapDrive for UNIX in the `sdu-daemoncertificate-path=/opt/NetApp/snapdrive/snapdrive.pem` location if you are using a secure connection with the storage system and daemon service.
++
+The certificate path is defined in the `sdu-daemoncertificate-path` configuration variable in the `snapdrive.conf` file.
+
+. Set `_use-https-to-sdu-daemon=on_` in the `snapdrive.conf` file to use HTTPS for a secure connection with the storage system and daemon service.
 +
 NOTE: SnapDrive 5.0 for UNIX and later versions support HTTPS for daemon communication. By default, this optional parameter is disabled.
 
-. Restart the SnapDrive daemon service: snapdrived start
+. Restart the SnapDrive daemon service:
++
+`*snapdrived start*`
 +
 NOTE: You must restart the SnapDrive daemon every time you manually change the configuration file.

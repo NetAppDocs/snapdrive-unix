@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_snapshot_create_and_delete_operation_fails.html
 sidebar: sidebar
-keywords: 
-summary: 'The Snapshot create and delete operation fails to remove Snapshot copies on the storage system because the LUNs are busy.'
+keywords: snap, snapdrive, snapshot, create, delete, fail, operation
+summary: The Snapshot create and delete operation fails to remove Snapshot copies on the storage system because the LUNs are busy.
 ---
 = Snapshot create and delete operation fails
 :icons: font
@@ -22,31 +22,29 @@ You might encounter this error and might not be able to directly delete a Snapsh
 
 * A disk group spans across multiple storage systems.
 * The following SnapDrive commands are executed in a loop for more than 50 iterations (the number of iterations depends on the host operating system):
- ** snapdrive storage create
- ** snapdrive snap create
- ** snapdrive storage delete
- ** snapdrive snap restore
- ** snapdrive snap connect
- ** snapdrive storage delete
- ** snapdrive snap delete
+ ** `snapdrive storage create`
+ ** `snapdrive snap create`
+ ** `snapdrive storage delete`
+ ** `snapdrive snap restore`
+ ** `snapdrive snap connect`
+ ** `snapdrive storage delete`
+ ** `snapdrive snap delete`
 
-At this point, the Snapshot copy status on the storage system shows LUNs-Busy, and this status prolongs for a few hours.
+At this point, the Snapshot copy status on the storage system shows `*LUNs-Busy*`, and this status prolongs for a few hours.
 
 == Workaround
 
+[options="header"]
 |===
 a|
-*If...*
-
-a|
-*Then...*
+*If...*| *Then...*
 
 a|
 There are cloned LUNs in a Snapshot copy that are not connected to a host.
 a|
 You can do one of the following to delete the Snapshot copy:
 
-* Split the cloned LUNs from the storage system by using the filer split clonecommand.
+* Split the cloned LUNs from the storage system by using the `filer split clone` command.
 * Delete the cloned LUNs.
 
 a|
@@ -54,7 +52,7 @@ There are cloned LUNs in a Snapshot copy that are not connected to a host.
 a|
 Do the following steps:
 
-. Disconnect the cloned LUNs from the host by using the snapdrive snap disconnect command.
+. Disconnect the cloned LUNs from the host by using the `snapdrive snap disconnect` command.
 . Delete the cloned LUNs.
 . Delete the Snapshot copy.
 
@@ -67,7 +65,7 @@ There are any of the following:
 a|
 Complete the following steps:
 
-. Run the following command in the storage system command prompt: lun snap usage -s <volumename>< snap-name>
+. Run the following command in the storage system command prompt: `lun snap usage -s <volumename>< snap-name>`
 +
 This lists the name of the Snapshot copies that contain the Snapshot copies of the cloned LUNs, as shown in the following example:
 +
@@ -85,12 +83,12 @@ james
 
 . Delete the Snapshot copies from the storage system in the same order as they are listed in the lun snap usage command output, as shown in the following example.
 +
-snap delete vol1 mpiotest2
+`snap delete vol1 mpiotest2`
 +
 NOTE: Ensure that the Snapshot copy you are deleting is not used by any other host. If it is being accessed, you cannot delete.
 
 a|
 There are no cloned LUNs
 a|
-Wait until the LUNs-Busystatus of the Snapshot copy on the storage system disappears.
+Wait until the `LUNs-Busy` status of the Snapshot copy on the storage system disappears.
 |===

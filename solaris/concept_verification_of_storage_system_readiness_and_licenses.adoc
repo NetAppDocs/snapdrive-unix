@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_verification_of_storage_system_readiness_and_licenses.html
 sidebar: sidebar
-keywords: 
-summary: 'Before you install SnapDrive for UNIX, you must verify the storage system readiness and check for licenses of certain software.'
+keywords: snap, snapdrive, storage, licenses, verfiy
+summary: Before you install SnapDrive for UNIX, you must verify the storage system readiness and check for licenses of certain software.
 ---
 = Verification of storage system readiness and licenses
 :icons: font

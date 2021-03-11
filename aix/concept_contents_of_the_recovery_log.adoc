@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_contents_of_the_recovery_log.html
 sidebar: sidebar
-keywords: 
-summary: 'The recovery log helps you to trace the reasons for an inconsistent system state. SnapDrive for UNIX generates this file when some operation stops working.'
+keywords: snap, snapdrive, recovery, log
+summary: The recovery log helps you to trace the reasons for an inconsistent system state. SnapDrive for UNIX generates this file when some operation stops working.
 ---
 = Contents of the recovery log
 :icons: font

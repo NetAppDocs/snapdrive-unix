@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_understanding_how_snapdrive_commands_mount_file_systems_and_modify_system_files.html
 sidebar: sidebar
-keywords: 
-summary: 'Certain SnapDrive for UNIX commands can cause file systems to be mounted or unmounted. When a command performs an operation that mounts a file system, SnapDrive for UNIX adds the file system’s name to the standard system file for your host platform. If an operation unmounts a file system, SnapDrive for UNIX removes the name from the system file. This should not pose a problem; however, it is useful to know when system files are modified.'
+keywords: snap, snapdrive, command, mount, file, modify, unmount, name
+summary: Certain SnapDrive for UNIX commands can cause file systems to be mounted or unmounted. When a command performs an operation that mounts a file system, SnapDrive for UNIX adds the file system’s name to the standard system file for your host platform. If an operation unmounts a file system, SnapDrive for UNIX removes the name from the system file. This should not pose a problem; however, it is useful to know when system files are modified.
 ---
 = SnapDrive commands sometimes result in mounting or unmounting file systems and modify system files
 :icons: font
@@ -13,30 +13,28 @@ Certain SnapDrive for UNIX commands can cause file systems to be mounted or unmo
 
 The name of the system file varies depending on your host platform. The following table lists the host platforms and their system files.
 
+[options="header"]
 |===
 a|
-*Host*
-
-a|
-*System file*
+*Host*|*System file*
 
 a|
 Linux
 a|
-etc/fstab
+`etc/fstab`
 |===
 Any of the following commands can mount file systems:
 
-* snapdrive snap restore
-* snapdrive snap connect
-* snapdrive storage create
-* snapdrive host connect
-* snapdrive storage connect
+* `snapdrive snap restore`
+* `snapdrive snap connect`
+* `snapdrive storage create`
+* `snapdrive host connect`
+* `snapdrive storage connect`
 
 The following commands perform operations that can unmount a file system:
 
-* snapdrive snap restore
-* snapdrive snap disconnect
-* snapdrive storage disconnect
-* snapdrive storage delete
-* snapdrive host disconnect
+* `snapdrive snap restore`
+* `snapdrive snap disconnect`
+* `snapdrive storage disconnect`
+* `snapdrive storage delete`
+* `snapdrive host disconnect`

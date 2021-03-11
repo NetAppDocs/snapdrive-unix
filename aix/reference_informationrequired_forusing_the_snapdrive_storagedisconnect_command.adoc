@@ -1,19 +1,20 @@
 ---
 permalink: aix/reference_informationrequired_forusing_the_snapdrive_storagedisconnect_command.html
 sidebar: sidebar
-keywords: 
-summary: 'The following table gives the information you need to supply when you use the snapdrive storage disconnect command:'
+keywords: snap, snapdrive, storage, disconnect, command, required
+summary: The following table gives the information you need to supply when you use the snapdrive storage disconnect command:
 ---
 = Information required for using the snapdrive storage disconnect command
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following table gives the information you need to supply when you use the snapdrive storage disconnect command:
+The following table gives the information you need to supply when you use the `snapdrive storage disconnect` command:
 
+[options="header"]
 |===
 | Requirement| Argument
-a|
+2+a|
 Based on the command you enter, you can remove mappings from any of the following:
 
 * LUNs
@@ -24,7 +25,7 @@ To specify additional LUNs, you can use the LUN name alone if the new LUN is on 
 
 * File systems on LUNs
 +
-The file_spec given to -fs is the name of the file system mountpoint. SnapDrive for UNIX automatically locates and disconnects the LUN that is associated with the file system you specify.
+The `_file_spec_` given to `-fs` is the name of the file system mountpoint. SnapDrive for UNIX automatically locates and disconnects the LUN that is associated with the file system you specify.
 
 * Disk or volume groups
 * File systems on disk or volume groups
@@ -33,42 +34,42 @@ The file_spec given to -fs is the name of the file system mountpoint. SnapDrive 
 The value you enter for the file_spec argument must identify the storage entity you are disconnecting.
 
 a|
-A LUN (-lun)
+A LUN (`-lun`)
 a|
-lun_name (long or short form)
+`_lun_name_` (long or short form)
 a|
-Disk group (-dgfile_spec) or volume group (-vgfile_spec)
+Disk group (`-dg _file_spec_`) or volume group (`-vg _file_spec_`)
 
 a|
 name of the disk or volume group
 a|
-File system (-fsfile_spec)
+File system (`-fs _file_spec_`)
 a|
-filesystem_name
+`_filesystem_name_`
 a|
-Host volume (-hostvolfile_spec) or logical volume (-lvolfile_spec)
+Host volume (`-hostvol _file_spec_`) or logical volume (`-lvol _file_spec_`)
 
 a|
 name of the host or logical volume
-a|
-If you want SnapDrive for UNIX to disconnect the storage you specify even if you include at the command prompt a host-side entity that has other entities (such as a disk group that has one or more host volumes), include the -full option at the command prompt.
+2+a|
+If you want SnapDrive for UNIX to disconnect the storage you specify even if you include at the command prompt a host-side entity that has other entities (such as a disk group that has one or more host volumes), include the `-full` option at the command prompt.
 
 If you do not include this option, you must specify only empty host-side entities.
 
 a|
--full
+`-full`
 a|
 ~
-a|
+2+a|
 If you want to disable a node or a host cluster from sharing a file system
 a|
--fstype
+`-fstype`
 a|
-type
+`_type_`
 a|
--vmtype
+`-vmtype`
 a|
-type
-a|
+`_type_`
+2+a|
 *Optional:* Specifies the type of file system and volume manager to be used for SnapDrive for UNIX operations.
 |===

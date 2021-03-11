@@ -1,8 +1,8 @@
 ---
 permalink: aix/concept_storage_creation_for_lvm_vxvm_entities.html
 sidebar: sidebar
-keywords: 
-summary: 'If you use SnapDrive for UNIX to create a logical volume or file system using the LVM, SnapDrive for UNIX automatically creates the required disk group. SnapDrive for UNIX creates the file system based on the type that is supported by the host volume manager. For AIX, it includes JFS2, JFS, and VxFS.'
+keywords: snap, snapdrive, storage, create, lvm, entity
+summary: If you use SnapDrive for UNIX to create a logical volume or file system using the LVM, SnapDrive for UNIX automatically creates the required disk group. SnapDrive for UNIX creates the file system based on the type that is supported by the host volume manager. For AIX, it includes JFS2, JFS, and VxFS.
 ---
 = Storage creation for LVM entities
 :icons: font

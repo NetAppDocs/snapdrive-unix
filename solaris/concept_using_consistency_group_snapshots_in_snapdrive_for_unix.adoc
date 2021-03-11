@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_using_consistency_group_snapshots_in_snapdrive_for_unix.html
 sidebar: sidebar
-keywords: 
-summary: 'Consistency Group Snapshot is a Snapshot copy of a set of volumes that span different Vservers or nodes of a cluster, which is managed as a single entity.'
+keywords: snap, snapdrive, snapshot, copy, group, consistency
+summary: Consistency Group Snapshot is a Snapshot copy of a set of volumes that span different Vservers or nodes of a cluster, which is managed as a single entity.
 ---
 = Consistency group Snapshot copies in SnapDrive for UNIX
 :icons: font

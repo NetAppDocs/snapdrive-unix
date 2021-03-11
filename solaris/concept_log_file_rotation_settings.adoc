@@ -1,29 +1,29 @@
 ---
 permalink: solaris/concept_log_file_rotation_settings.html
 sidebar: sidebar
-keywords: 
-summary: 'The values you specify for the variable in the snapdrive.conf file affect the log file rotation.'
+keywords: snap, snpadrive, log, file, rotation, setting
+summary: The values you specify for the variable in the snapdrive.conf file affect the log file rotation.
 ---
 = Log file rotation settings
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The values you specify for the variable in the snapdrive.conf file affect the log file rotation.
+The values you specify for the variable in the `snapdrive.conf` file affect the log file rotation.
 
-The values you specify in the snapdrive.conf file enable automatic log file rotations. You can change these values, if necessary, by editing the snapdrive.conf variables. The following options affect log file rotation:
+The values you specify in the `snapdrive.conf` file enable automatic log file rotations. You can change these values, if necessary, by editing the `snapdrive.conf` variables. The following options affect log file rotation:
 
-* audit-log-max-size
-* audit-log-save
-* trace-max-size
-* trace-log-max-save
-* recovery-log-save
+* `audit-log-max-size`
+* `audit-log-save`
+* `trace-max-size`
+* `trace-log-max-save`
+* `recovery-log-save`
 
-With automatic log rotation, SnapDrive for UNIX keeps old log files until it reaches the limit specified in the audit-log-save, trace-log-save, and recovery-log-save variable. Then it deletes the oldest log file.
+With automatic log rotation, SnapDrive for UNIX keeps old log files until it reaches the limit specified in the `audit-log-save`, `trace-log-save`, and `recovery-log-save` variable. Then it deletes the oldest log file.
 
 SnapDrive for UNIX tracks which file is oldest by assigning the file the number "0" when it creates the file. Each time it creates a new file, it increments by 1 the number assigned to each of the existing log files. When a log file's number reaches the save value, SnapDrive for UNIX deletes that file.
 
-*Example:* This example uses the ls command to display information about the log files on the system.
+*Example:* This example uses the `ls` command to display information about the log files on the system.
 
 Based on those settings, you would see the following information in log files.
 

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_estimating_the_storage_space_to_split_a_volume_clone.html
 sidebar: sidebar
-keywords: clone split estimate
-summary: 'The clone split estimation helps you to estimate the required storage space \(in MB\) to split a volume clone. Depending on the clone split estimation provided by SnapDrive for UNIX, you can determine the space availability to split a volume clone.'
+keywords: clone, split, estimate, snap, snapdrive, volume
+summary: The clone split estimation helps you to estimate the required storage space \(in MB\) to split a volume clone. Depending on the clone split estimation provided by SnapDrive for UNIX, you can determine the space availability to split a volume clone.
 ---
 = Estimating the storage space to split a volume clone
 :icons: font
@@ -11,7 +11,11 @@ summary: 'The clone split estimation helps you to estimate the required storage 
 [.lead]
 The clone split estimation helps you to estimate the required storage space (in MB) to split a volume clone. Depending on the clone split estimation provided by SnapDrive for UNIX, you can determine the space availability to split a volume clone.
 
-. Enter the following command to estimate the required storage space to split a volume clone. snapdrive clone split estimate [-lun]long_lun_name [long_lun_name...] | [{-dg | -vg | -fs | -hostvol | -lvol} file_spec [file_spec...]] | [-snapname long_snap_name] {-volclone|-lunclone}] [-v | -verbose] [-dump | -dumpall]
+.Steps
+
+. Enter the following command to estimate the required storage space to split a volume clone.
++
+`*snapdrive clone split estimate [-lun] _long_lun_name_ [long___lun_name__...] | [{-dg | -vg | -fs | -hostvol | -lvol} _file_spec_ [_file_spec..._]] | [-snapname _long_snap_name_] {-volclone|-lunclone}] [-v | -verbose] [-dump | -dumpall]*`
 +
 This operation displays the following information:
 
@@ -22,7 +26,9 @@ This operation displays the following information:
  ** Storage Status - indicates the space availability for a volume clone split
  ** Owned Space - space occupied by the volume clone
  ** Shared space - space occupied by the volume clone along with the parent
-The Owned Space and Shared Space is displayed when you use -verbose option.
+
++
+The `Owned Space` and `Shared Space` is displayed when you use `-verbose` option.
 
 The following example estimates the storage space to split a volume clone.
 
@@ -36,9 +42,9 @@ Resource     Container  Required Available  Storage
               -112:aggr1
 ----
 
-For every file specification, SnapDrive for UNIX determines the required space that is available in the storage system to split a volume clone. Here, the /mnt/my_mnt1 file specification has the required space to split, and thus the storage status displays as AVAILABLE. Whereas, the/mnt/my_mnt2 file specification does not have the required space to split, and so the storage status displays as NOT AVAILABLE.
+For every file specification, SnapDrive for UNIX determines the required space that is available in the storage system to split a volume clone. Here, the `/mnt/my_mnt1` file specification has the required space to split, and thus the storage status displays as AVAILABLE. Whereas, the `/mnt/my_mnt2` file specification does not have the required space to split, and so the storage status displays as NOT AVAILABLE.
 
-The following is an example of using the -verbose option. Alternatively, you can use -v option.
+The following is an example of using the `-verbose` option. Alternatively, you can use `-v` option.
 
 ----
 # snapdrive clone split estimate -fs /mnt/my_mnt1 -verbose

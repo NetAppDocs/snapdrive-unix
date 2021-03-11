@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_enabling_thin_provisioning_for_luns.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use SnapDrive for UNIX to carry out thin provisioning on your storage system. Thin provisioning is also referred as space-reservation.'
+keywords: snap, snapdrive, enable, thin, provisioning, lun
+summary: You can use SnapDrive for UNIX to carry out thin provisioning on your storage system. Thin provisioning is also referred as space-reservation.
 ---
 = Enabling thin provisioning for LUNs
 :icons: font
@@ -11,16 +11,20 @@ summary: 'You can use SnapDrive for UNIX to carry out thin provisioning on your 
 [.lead]
 You can use SnapDrive for UNIX to carry out thin provisioning on your storage system. Thin provisioning is also referred as space-reservation.
 
-. Set the space-reservations-enabled configuration variable value to on.
+.Steps
+
+. Set the `_space-reservations-enabled_` configuration variable value to `_on_`.
 +
-You can also enable thin provisioning by using the -reserve and -noreserve parameters.
+You can also enable thin provisioning by using the `-reserve` and `-noreserve` parameters.
 +
 Parameter override the value mentioned in the -space-reservations-enabled variable.
 +
 You could use -reserve and -noreserve with the following commands to enable or disable LUN reservation:
 
- ** snapdrive storage create
- ** snapdrive storage resize
- ** snapdrive snap connect
- ** snapdrive snap restore
-By default, SnapDrive for UNIX enables space reservation for a fresh or new storage create operations. For snap restore and snap connect operations, it uses the space reservation present in the Snapshot copy if the -reserve or -noreserve parameters are not specified at the command line, or if the value in the configuration file is uncommented.
+ ** `snapdrive storage create`
+ ** `snapdrive storage resize`
+ ** `snapdrive snap connect`
+ ** `snapdrive snap restore`
+
++
+By default, SnapDrive for UNIX enables space reservation for a fresh or new storage create operations. For snap restore and snap connect operations, it uses the space reservation present in the Snapshot copy if the `_-reserve_` or `_-noreserve_` parameters are not specified at the command line, or if the value in the configuration file is uncommented.

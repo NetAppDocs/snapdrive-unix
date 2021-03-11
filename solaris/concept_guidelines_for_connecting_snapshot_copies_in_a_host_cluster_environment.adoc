@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_guidelines_for_connecting_snapshot_copies_in_a_host_cluster_environment.html
 sidebar: sidebar
-keywords: 
-summary: 'You can connect a Snapshot copy from any node in a host cluster. Follow the guidelines while connecting to a Snapshot copy.'
+keywords: snap, snapdrive, guideline, connect, copy, host, cluster, snapshot
+summary: You can connect a Snapshot copy from any node in a host cluster. Follow the guidelines while connecting to a Snapshot copy.
 ---
 = Guidelines for connecting Snapshot copies in a host cluster environment
 :icons: font
@@ -11,15 +11,15 @@ summary: 'You can connect a Snapshot copy from any node in a host cluster. Follo
 [.lead]
 You can connect a Snapshot copy from any node in a host cluster. Follow the guidelines while connecting to a Snapshot copy.
 
-* The snapdrive snapshot connect command can be executed from any node in the host cluster. If you initiate the snapdrive snap connectcommand with the -devicetype shared option from any nonmaster node in the host cluster, the command is sent to the master node and executed. For this to happen, ensure that the rsh or ssh access-without-password-prompt is allowed on all the host cluster nodes.
+* The `snapdrive snapshot connect` command can be executed from any node in the host cluster. If you initiate the `snapdrive snap connect` command with the `-devicetype shared` option from any nonmaster node in the host cluster, the command is sent to the master node and executed. For this to happen, ensure that the `rsh` or `ssh` access-without-password-prompt is allowed on all the host cluster nodes.
 * The multiple file systems and disk groups that are specified in this operation should have the same device type scope; that is, either all should be shared or all should be dedicated.
-* The snapdrive snap connect command with NFS or storage entities on raw LUNs is not supported.
-* The -igroup option is supported with the -devicetype dedicated option and not with the -devicetype shared option in the snapdrive snap connect command.
-* SnapDrive for UNIX executes the snapdrive snap connect command on the master node. Before creating the shared storage entities, it creates and maps the LUN on the master node and then maps the LUNs on all the nonmaster nodes. Is also creates and manages the igroups for all the nodes in the host cluster. If any error message occurs during this sequence, the Snapshot connect operation fails.
-* The snapdrive snap connect command can be used to connect the following storage entities:
+* The `snapdrive snap connect` command with NFS or storage entities on raw LUNs is not supported.
+* The `-igroup` option is supported with the `-devicetype` dedicated option and not with the `-devicetype` shared option in the `snapdrive snap connect` command.
+* SnapDrive for UNIX executes the `snapdrive snap connect` command on the master node. Before creating the shared storage entities, it creates and maps the LUN on the master node and then maps the LUNs on all the nonmaster nodes. Is also creates and manages the igroups for all the nodes in the host cluster. If any error message occurs during this sequence, the Snapshot connect operation fails.
+* The `snapdrive snap connect` command can be used to connect the following storage entities:
  ** A shared file system or disk group that is already present in a shared or dedicated mode in the host cluster.
  ** A dedicated file system or disk group to a single node in the host cluster even if the file system or disk group is already present in a shared mode in the host cluster.
  ** A Snapshot copy of a file system or disk group that is created on a node outside the host cluster.
-* A dedicated file system or disk group that is already present in a nonmaster node cannot be connected again in a shared mode in the host cluster without the -destdg option for a disk group and the -autorename option for a file system.
+* A dedicated file system or disk group that is already present in a nonmaster node cannot be connected again in a shared mode in the host cluster without the `-destdg` option for a disk group and the `-autorename` option for a file system.
 
-That is, if a file system is already present in dedicated mode in one of the nonmaster nodes in the host cluster, you have to specify the snapdrive snap connect command with the -destdg and -autorename options, or explicitly specify the destination file system in the command.
+That is, if a file system is already present in dedicated mode in one of the nonmaster nodes in the host cluster, you have to specify the `snapdrive snap connect` command with the `-destdg` and `-autorename` options, or explicitly specify the destination file system in the command.

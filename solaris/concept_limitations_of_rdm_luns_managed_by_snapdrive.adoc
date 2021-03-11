@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_limitations_of_rdm_luns_managed_by_snapdrive.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive has a few limitations for provisioning RDM LUNs. You must be aware of the limitations that might affect your environment.'
+keywords: snap, snapdrive, limitations, rdm, lun
+summary: SnapDrive has a few limitations for provisioning RDM LUNs. You must be aware of the limitations that might affect your environment.
 ---
 = Limitations of RDM LUNs managed by SnapDrive
 :icons: font
@@ -13,12 +13,12 @@ SnapDrive has a few limitations for provisioning RDM LUNs. You must be aware of 
 
 * An RDM LUN cannot serve either as a boot disk or system disk.
 * SnapDrive does not support MPIO in the guest operating system, although VMware ESX server supports MPIO.
-* When the transport protocol is FC, the igroup that is specified in the CLI command is ignored by SnapDrive, and the igroup is automatically created by the virtual interface.
-* You can rename, move, or delete the /usr/bin/rescan-scsi-bus.sh script that is bundled as part of sg3_utils to avoid limiting the number of RDM LUNs to eight.
+* When the transport protocol is `_FC_`, the igroup that is specified in the CLI command is ignored by SnapDrive, and the igroup is automatically created by the virtual interface.
+* You can rename, move, or delete the `/usr/bin/rescan-scsi-bus.sh` script that is bundled as part of `sg3_utils` to avoid limiting the number of RDM LUNs to eight.
 +
-NOTE: If you want to retain /usr/bin/rescan-scsi-bus.sh in sg3_utils and avoid limiting the number of RDM LUNs to eight, then you must create a wrapper script /root/dynamic-lun-rescan.sh and from that script run /usr/bin/rescan-scsi-bus.sh, with the options-w, -c, and -r and assign full permissions.
+NOTE: If you want to retain `/usr/bin/rescan-scsi-bus.sh` in `sg3_utils` and avoid limiting the number of RDM LUNs to eight, then you must create a wrapper script `/root/dynamic-lun-rescan.sh` and from that script run `/usr/bin/rescan-scsi-bus.sh`, with the options `-w`, `-c`, and `-r` and assign full permissions.
 
-The following is an example of the modified content of /root/dynamic-lun-rescan.sh:
+The following is an example of the modified content of `/root/dynamic-lun-rescan.sh`:
 
 ----
 #cat /root/dynamic-lun-rescan.sh

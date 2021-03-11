@@ -1,21 +1,25 @@
 ---
 permalink: solaris/task_deleting_a_user_login_for_a_virtual_storage_console.html
 sidebar: sidebar
-keywords: 
-summary: 'You can delete a user login of a virtual interface, by executing the snapdrive config delete command.'
+keywords: snap, snapdrive, delete, user, login, virtual, storage, console
+summary: You can delete a user login of a virtual interface, by executing the snapdrive config delete command.
 ---
 = Deleting a user login for a Virtual Storage Console
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-You can delete a user login of a virtual interface, by executing the snapdrive config delete command.
+You can delete a user login of a virtual interface, by executing the `snapdrive config delete` command.
 
 Ensure that you have configured the Virtual Storage Console in the vCenter.
 
-. Enter the following command: snapdrive config delete appliance_name
+.Steps
+
+. Enter the following command:
 +
-appliance_name is the name or the IP address of the virtual interface system.
+`*snapdrive config delete _appliance_name_*`
++
+`_appliance_name_` is the name or the IP address of the virtual interface system.
 +
 SnapDrive for UNIX removes the user name or password login information for the virtual interface you specify.
 +

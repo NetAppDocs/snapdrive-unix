@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_capturing_a_consistency_group_snapshot.html
 sidebar: sidebar
-keywords: 
-summary: 'You can configure SnapDrive for UNIX to create a consistency group Snapshot copy.'
+keywords: snap, snapdrive, create, consistency, group, snapshot, copy
+summary: You can configure SnapDrive for UNIX to create a consistency group Snapshot copy.
 ---
 = Creating a consistency group Snapshot copy
 :icons: font
@@ -11,9 +11,13 @@ summary: 'You can configure SnapDrive for UNIX to create a consistency group Sna
 [.lead]
 You can configure SnapDrive for UNIX to create a consistency group Snapshot copy.
 
-. Enter the following command on the host: snapdrive snap create -fs /mnt/test -snapname snapshotname -f -noprompt.
+.Steps
+
+. Enter the following command on the host:
 +
-snapshotname is the name specified for the consistency group Snapshot copy.
+`*snapdrive snap create -fs /mnt/test -snapname _snapshotname_ -f -noprompt*`.
++
+`_snapshotname_` is the name specified for the consistency group Snapshot copy.
 
 == Example
 

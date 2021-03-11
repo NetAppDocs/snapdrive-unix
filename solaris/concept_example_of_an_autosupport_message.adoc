@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_example_of_an_autosupport_message.html
 sidebar: sidebar
-keywords: 
-summary: 'SnapDrive for UNIX provides examples for different scenarios. The content of an AutoSupport message in all the examples are essentially the same regardless of your operating system.'
+keywords: snap, snapdrive, autsupport, example
+summary: SnapDrive for UNIX provides examples for different scenarios. The content of an AutoSupport message in all the examples are essentially the same regardless of your operating system.
 ---
 = Examples of AutoSupport messages
 :icons: font
@@ -13,7 +13,7 @@ SnapDrive for UNIX provides examples for different scenarios. The content of an 
 
 Example: Adding a new storage system
 
-The following example is a message sent from a host named sun197-90:
+The following example is a message sent from a host named `_sun197-90_`:
 
 ----
 computerName="sun221-51"
@@ -38,7 +38,7 @@ computerName="sun221-51"
 "
 ----
 
-SnapDrive for UNIX sends the following AutoSupport message to the storage system when a LUN create operation fails:
+SnapDrive for UNIX sends the following AutoSupport message to the storage system when a `LUN create` operation fails:
 
 ----
 computerName="sun221-51"

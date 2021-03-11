@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_fc_or_iscsi_configuration_checks.html
 sidebar: sidebar
-keywords: 
-summary: 'Although Fibre Channel Protocol \(FCP\) and Internet Small Computer System Interface \(iSCSI\) were once distributed as separate utilities, you can find both FCP and iSCSI configuration support available in Solaris Host Utilities.'
+keywords: snap, snapdrive, fc, iscsi, configuration
+summary: Although Fibre Channel Protocol \(FCP\) and Internet Small Computer System Interface \(iSCSI\) were once distributed as separate utilities, you can find both FCP and iSCSI configuration support available in Solaris Host Utilities.
 ---
 = FC or iSCSI configuration checks
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/reference_some_configuration_commands.html
 sidebar: sidebar
-keywords: 
-summary: 'There are few commands that help you in configuring SnapDrive for UNIX.'
+keywords: snap, snapdrive, command, configuration, config
+summary: There are few commands that help you in configuring SnapDrive for UNIX.
 ---
 = Some configuration commands
 :icons: font
@@ -13,40 +13,41 @@ There are few commands that help you in configuring SnapDrive for UNIX.
 
 The following table summarizes additional commands that are helpful in configuring SnapDrive for UNIX:
 
+[options="header"]
 |===
 | Command or action| Description
-a|
+2+a|
 Configuring and verifying your version of SnapDrive for UNIX software
 a|
-snapdrive config show
+`*snapdrive config show*`
 a|
-Check the values in the snapdrive.conf file.
+Check the values in the `snapdrive.conf` file.
 a|
-snapdrive version
+`*snapdrive version*``
 a|
 Check the version of SnapDrive for UNIX.
 a|
-snapdrived start
+`*snapdrived start*`
 a|
 Start the SnapDrive for UNIX daemon.
 a|
-snapdrive config prepare luns -count count_value
+`*snapdrive config prepare luns -count count_value*`
 a|
 Prepare the host for creating a specific number of LUNs as well as to determine how many LUNs you can create.
 a|
-snapdrive config set -viadmin <user> <viadmin_name>
+`*snapdrive config set -viadmin <user> <viadmin_name>*`
 a|
 Prepare the guest for creating RDM LUN on Linux guest OS.
 
 NOTE: You can use these commands only on Linux host by using FCP protocol with no host utilities.
 
 a|
-snapdrive clone split
+`*snapdrive clone split*``
 a|
 Estimate, start, stop, and query the status of split for a volume clone or a LUN clone.
 
 a|
-Edit the variables in the snapdrive.conf file.
+Edit the variables in the `snapdrive.conf` file.
 a|
 Change the path name and options for the log files. SnapDrive for UNIX logs information to three files:
 
@@ -54,10 +55,10 @@ Change the path name and options for the log files. SnapDrive for UNIX logs info
 * A recovery file
 * A trace file
 
-a|
+2+a|
 Setting and displaying access control permissions between a host and a storage system.
 a|
-Edit the access control permissions file (sd hostname.prbac) on the storage system associated with that host.
+Edit the access control permissions file (sd `_hostname_`.prbac) on the storage system associated with that host.
 a|
 Specify the access control permissions a host has on a storage system. You can set the following access levels for a host on a storage system:
 
@@ -71,11 +72,11 @@ Specify the access control permissions a host has on a storage system. You can s
 * ALL ACCESS--All operations.
 
 a|
-snapdrive config access show <filer_name>
+`*snapdrive config access show <filer_name>*`
 a|
 Display information about the access control permissions a host has to a storage system.
 a|
-snapdrive config delete <filername> [<filername> . . .]
+`*snapdrive config delete <filername> [<filername> . . .]*`
 a|
 Remove the specified user name-password pair from SnapDrive for UNIX.
 |===

@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_snapdrive_for_unix_provisioning_in_an_lvma_vxvm_environment.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: snapdrive, unix, storage, commands, provision, provisioning, vxvm, entities, objects
+summary: SnapDrive for UNIX storage commands provision VxVM entities by creating VxVM objects.
 ---
 = SnapDrive for UNIX provisioning in a VxVM environment
 :icons: font
@@ -10,7 +10,7 @@ summary: ''
 
 SnapDrive for UNIX storage commands provision VxVM entities by creating VxVM objects.
 
-If you request a SnapDrive for UNIX storage operation that provisions a VxVM entity--for example, a disk group that includes host volumes or file systems--the snapdrive storage command works with the VxVM to create the VxVM objects and file systems that use the storage.
+If you request a SnapDrive for UNIX storage operation that provisions a VxVM entity--for example, a disk group that includes host volumes or file systems--the `snapdrive storage` command works with the VxVM to create the VxVM objects and file systems that use the storage.
 
 During storage provisioning operation, the following actions occur:
 

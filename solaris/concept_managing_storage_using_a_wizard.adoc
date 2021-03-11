@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_managing_storage_using_a_wizard.html
 sidebar: sidebar
-keywords: 
-summary: 'You can use the SnapDrive for UNIX wizard to create storage in an interactive and efficient manner. The wizard leads you through a set of questions to help you to create storage.'
+keywords: snap, snapdrive, storage, wizard
+summary: You can use the SnapDrive for UNIX wizard to create storage in an interactive and efficient manner. The wizard leads you through a set of questions to help you to create storage.
 ---
 = Managing storage using a wizard
 :icons: font
@@ -11,7 +11,7 @@ summary: 'You can use the SnapDrive for UNIX wizard to create storage in an inte
 [.lead]
 You can use the SnapDrive for UNIX wizard to create storage in an interactive and efficient manner. The wizard leads you through a set of questions to help you to create storage.
 
-You can launch the wizard by using the snapdrive storage wizard create command.
+You can launch the wizard by using the `snapdrive storage wizard create` command.
 
 The following storage management operations can be performed:
 

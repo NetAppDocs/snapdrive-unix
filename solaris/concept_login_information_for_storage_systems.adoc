@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_login_information_for_storage_systems.html
 sidebar: sidebar
-keywords: 
-summary: 'A user name or password allows SnapDrive for UNIX to access each storage system. It also provides security because, in addition to being logged in as root, the person running SnapDrive for UNIX must supply the correct user name or password when prompted for it. If a login is compromised, you can delete it and set a new user login.'
+keywords: snap, snapdrive, login, storage, system
+summary: A user name or password allows SnapDrive for UNIX to access each storage system. It also provides security because, in addition to being logged in as root, the person running SnapDrive for UNIX must supply the correct user name or password when prompted for it. If a login is compromised, you can delete it and set a new user login.
 ---
 = Login information for storage systems
 :icons: font
@@ -13,4 +13,4 @@ A user name or password allows SnapDrive for UNIX to access each storage system.
 
 You created the user login for each storage system when you set it up. For SnapDrive for UNIX to work with the storage system, you must supply it with this login information. Depending on what you specified when you set up the storage systems, each storage system could use either the same login or a unique login.
 
-SnapDrive for UNIX stores these logins and passwords in encrypted form on each host. You can specify that SnapDrive for UNIX encrypt this information when it communicates with the storage system by setting the snapdrive.conf configuration variable use-https-to-filer=on.
+SnapDrive for UNIX stores these logins and passwords in encrypted form on each host. You can specify that SnapDrive for UNIX encrypt this information when it communicates with the storage system by setting the `_snapdrive.conf_` configuration variable `_use-https-to-filer=on_`.

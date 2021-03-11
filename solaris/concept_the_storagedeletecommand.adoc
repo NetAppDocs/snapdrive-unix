@@ -1,14 +1,14 @@
 ---
 permalink: solaris/concept_the_storagedeletecommand.html
 sidebar: sidebar
-keywords: 
-summary: 'The snapdrive storage delete command removes the storage entities on the host in addition to all underlying host side entities and storage system LUNs backing them.'
+keywords: snap, snapdrive, storage, delete, command
+summary: The snapdrive storage delete command removes the storage entities on the host in addition to all underlying host side entities and storage system LUNs backing them.
 ---
 = The storage delete command
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The snapdrive storage delete command removes the storage entities on the host in addition to all underlying host side entities and storage system LUNs backing them.
+The `snapdrive storage delete` command removes the storage entities on the host in addition to all underlying host side entities and storage system LUNs backing them.
 
 IMPORTANT: This command deletes data.

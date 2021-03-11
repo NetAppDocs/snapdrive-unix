@@ -1,17 +1,21 @@
 ---
 permalink: aix/task_displaying_asnapshot_copy.html
 sidebar: sidebar
-keywords: 
-summary: 'The command snapdrive snap show or list displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.'
+keywords: snap, snapdrive, display, snapshot, copy
+summary: The command snapdrive snap show or list displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.
 ---
 = Displaying a Snapshot copy
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The command snapdrive snap show or list displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.
+The command `snapdrive snap show` or `list` displays the name of the storage system where the Snapshot copy is created, the host name, date and time, and so on.
 
-. Enter the following command syntax to display a Snapshot copy: snapdrive snap show [-snapname] long_snap_name [snap_name...] [-verbose]
+.Steps
+
+. Enter the following command syntax to display a Snapshot copy:
++
+`*snapdrive snap show [-snapname] _long_snap_name_ [_snap_name_...] [-verbose]*`
 
 This operation displays, at a minimum, the following information about the Snapshot copy:
 
@@ -22,7 +26,7 @@ This operation displays, at a minimum, the following information about the Snaps
 * The name of the Snapshot copy
 * The names of the disk groups included in the Snapshot copy
 
-*Example*: The following are examples of snapdrive snap show commands:
+*Example*: The following are examples of `snapdrive snap show` commands:
 
 ----
 # snapdrive snap show -snapname toaster:/vol/vol2:snapA snapX snapY
@@ -59,7 +63,7 @@ toaster:/vol/vol1:snap2 DBserver Mar 8
 Mar 8 10:18 rdg1
 ----
 
-*Example*: In this example, the -verbose option is used in the command line in an AIX host::
+*Example*: In this example, the `-verbose` option is used in the command line in an AIX host:
 
 ----
 # snapdrive snap list betty:/vol/vol1:testsnap -v
@@ -100,7 +104,7 @@ toaster:/vol/vol1:snap3 DBserver3 Oct 31 13:45
 DBdg
 ----
 
-This example displays a Snapshot copy of an LVM-based file system on an AIX host using the snapdrive snap show command and the - verbose option:
+This example displays a Snapshot copy of an LVM-based file system on an AIX host using the `snapdrive snap show` command and the `- verbose` option:
 
 ----
 # snapdrive snap show -v -fs /mnt/check_submit/csdg2/hv3_0

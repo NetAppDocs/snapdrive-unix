@@ -1,8 +1,8 @@
 ---
 permalink: solaris/concept_operation_with_multiple_storage_objects.html
 sidebar: sidebar
-keywords: 
-summary: 'The following example shows the error message you would receive when you are not an authorized user to carry out the specific operation.'
+keywords: snap, snapdrive, storage, object, multiple, error
+summary: The following example shows the error message you would receive when you are not an authorized user to carry out the specific operation.
 ---
 = Operation with multiple storage objects
 :icons: font
@@ -37,4 +37,4 @@ device filename   adapter  path  size  proto  state   clone  lun path           
 
 John is authorized to list storage entities on vol2 but not on vol1. SnapDrive for UNIX displays entities of vol1 and displays a warning message for vol2.
 
-NOTE: For storage list, storage show, snap list, and snap show commands SnapDrive for UNIX displays a warning instead of error.
+NOTE: For `storage list`, `storage show`, `snap list`, and `snap show` commands SnapDrive for UNIX displays a warning instead of error.

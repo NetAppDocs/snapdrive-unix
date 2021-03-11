@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_restoring_a_file_system_from_a_restoring_a_file_system_from_a_snapshot_copy_fails.html
 sidebar: sidebar
-keywords: 
-summary: 'After migration from Red Hat Enterprise Linux 3 updates to Red Hat Enterprise Linux 4 updates, that is, from LVM1 to LVM2, restoring a file system from a Snapshot copy fails.'
+keywords: snap, snapdrive, restore, file, snapshot, copy, fail, error
+summary: After migration from Red Hat Enterprise Linux 3 updates to Red Hat Enterprise Linux 4 updates, that is, from LVM1 to LVM2, restoring a file system from a Snapshot copy fails.
 ---
 = Restoring a file system from a Snapshot copy fails
 :icons: font
@@ -11,8 +11,8 @@ summary: 'After migration from Red Hat Enterprise Linux 3 updates to Red Hat Ent
 [.lead]
 After migration from Red Hat Enterprise Linux 3 updates to Red Hat Enterprise Linux 4 updates, that is, from LVM1 to LVM2, restoring a file system from a Snapshot copy fails.
 
-During restoring a file system (that is taken on LVM1) from a Snapshot copy using LVM2, the snapdrive snap restore -fs command does not mount the file system. However, it successfully restores the disk group and host volume associated with it.
+During restoring a file system (that is taken on LVM1) from a Snapshot copy using LVM2, the `snapdrive snap restore -fs` command does not mount the file system. However, it successfully restores the disk group and host volume associated with it.
 
-For example, the host volume created by LVM1 has a device file in /dev/Mydg_SDDg/Mydg_Sdhv; and the host volume created by LVM2 has a device file in /dev/mapper/Mydg_SdDg-Mydg_Sdhv
+For example, the host volume created by LVM1 has a device file in `/dev/Mydg_SDDg/Mydg_Sdhv`; and the host volume created by LVM2 has a device file in `/dev/mapper/Mydg_SdDg-Mydg_Sdhv`
 
 This happens because Red Hat Enterprise Linux 4 update 3 hosts use LVM2, which uses a device mapper to interface with the kernel, whereas Red Hat Enterprise Linux 3 update 5 hosts use LVM1, which does not use a device mapper.

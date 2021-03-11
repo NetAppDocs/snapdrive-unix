@@ -1,8 +1,8 @@
 ---
 permalink: aix/task_configuring_a_new_storage_system_name_to_a_host_system.html
 sidebar: sidebar
-keywords: 
-summary: 'You must configure the new storage system name in the host system to execute SnapDrive operations using the new storage system.'
+keywords: snap, snapdrive, configure, storage, system, name, host
+summary: You must configure the new storage system name in the host system to execute SnapDrive operations using the new storage system.
 ---
 = Configuring the new storage system name in a host system
 :icons: font
@@ -11,10 +11,14 @@ summary: 'You must configure the new storage system name in the host system to e
 [.lead]
 You must configure the new storage system name in the host system to execute SnapDrive operations using the new storage system.
 
-* The name must be registered with a Domain Name System (DNS) server in your network or in the /etc/hosts file.
-* The old storage system name must be deleted from the host system by using the snapdrive config delete command.
+* The name must be registered with a Domain Name System (DNS) server in your network or in the `/etc/hosts` file.
+* The old storage system name must be deleted from the host system by using the `snapdrive config delete` command.
 
-. Enter the following command: snapdrive config set username storage_system_name
+.Steps
+
+. Enter the following command:
++
+`*snapdrive config set _username storage_system_name_*`
 +
 The SnapManager for Oracle post scripts might fail to establish SnapMirror and SnapVault relationship if you do not enter the actual storage system name. For example, if the actual name of the storage system is "hostname-3" and you enter the alliance name "hostname-3-mgmt," the SnapMirror and SnapVault relationship might not be established.
 +

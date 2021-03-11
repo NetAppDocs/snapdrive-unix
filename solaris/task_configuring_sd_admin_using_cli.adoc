@@ -1,8 +1,8 @@
 ---
 permalink: solaris/task_configuring_sd_admin_using_cli.html
 sidebar: sidebar
-keywords: 
-summary: 'The storage system administrator can configure sd-admin user using command-line interface.'
+keywords: snap, snapdrive, configure, sd, admin, command, line, interface
+summary: The storage system administrator can configure sd-admin user using command-line interface.
 ---
 = Configuring sd-admin using command-line interface
 :icons: font
@@ -10,6 +10,8 @@ summary: 'The storage system administrator can configure sd-admin user using com
 
 [.lead]
 The storage system administrator can configure sd-admin user using command-line interface.
+
+.Steps
 
 . Add a user named sd-admin.
 +
@@ -46,7 +48,7 @@ Created role sd-admin-role.
 Added 1 capability to role sd-admin-role.
 ----
 
-. The Operations Manager administrator can also grant DFM.Database.Write capability on the global group to <sd-admin> to enable SnapDrive for UNIX to refresh storage system entities in Operations Manager.
+. The Operations Manager administrator can also grant `DFM.Database.Write` capability on the global group to `<sd-admin>` to enable SnapDrive for UNIX to refresh storage system entities in Operations Manager.
 +
 ----
 # dfm role add sd-admin-role DFM.Database.Write Global

@@ -1,8 +1,8 @@
 ---
 permalink: linux-administration/concept_snapdrive_for_unix_provisioning_in_an_lvma_vxvm_environment.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: snap, snapdrive, lvm, objects, storage, commands
+summary: SnapDrive for UNIX storage commands provision LVM entities by creating LVM objects.
 ---
 = SnapDrive for UNIX provisioning in an LVM environment
 :icons: font
@@ -10,7 +10,7 @@ summary: ''
 
 SnapDrive for UNIX storage commands provision LVM entities by creating LVM objects.
 
-If you request a SnapDrive for UNIX storage operation that provisions an LVM entity--for example, a disk group that includes host volumes or file systems--the snapdrive storage command works with the LVM to create the LVM objects and file systems that use the storage.
+If you request a SnapDrive for UNIX storage operation that provisions an LVM entity--for example, a disk group that includes host volumes or file systems--the `snapdrive storage` command works with the LVM to create the LVM objects and file systems that use the storage.
 
 During storage provisioning operation, the following actions occur:
 
