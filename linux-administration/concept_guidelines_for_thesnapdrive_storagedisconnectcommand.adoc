@@ -2,7 +2,7 @@
 permalink: linux-administration/concept_guidelines_for_thesnapdrive_storagedisconnectcommand.html
 sidebar: sidebar
 keywords: snap, snapdrive, storage, disconnect, command, guidelines
-summary: Follow these guidelines when using the snapdrive storage disconnect command:
+summary: Follow these guidelines when using the snapdrive storage disconnect command.
 ---
 = Guidelines for the snapdrive storage disconnect command
 :icons: font
