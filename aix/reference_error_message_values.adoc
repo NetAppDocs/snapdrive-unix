@@ -13,19 +13,6 @@ It is helpful for you to be aware of some of the more common error messages that
 
 The following table gives you detailed information about the most common errors that you might encounter when using SnapDrive for UNIX:
 
-
-[options="header"]
-|===
-// header row
-| Error code | Return code | Type | Message | Solution
-
-| 1
-| 2
-| 3
-| 4
-| 5
-|===
-
 *Related information*
 
 https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability]
