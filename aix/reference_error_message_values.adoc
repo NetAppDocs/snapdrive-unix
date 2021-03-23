@@ -1,20 +1,24 @@
 ---
 permalink: aix/reference_error_message_values.html
 sidebar: sidebar
-keywords: snap, snapdrive, error, message, value, messages
-summary: It is helpful for you to be aware of some of the more common error messages that you might see when using SnapDrive for UNIX, and to know how to address them.
+keywords: snap, snapdrive, error, message, values
+summary: Error message values
 ---
 = Error message values
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-It is helpful for you to be aware of some of the more common error messages that you might see when using SnapDrive for UNIX, and to know how to address them.
+You must set the various configuration variables related to role-based access control in the `snapdrive.conf` file.
 
-The following table gives you detailed information about the most common errors that you might encounter when using SnapDrive for UNIX:
+[options="header"]
+|===
+| Error code | Return code | Type | Message | Solution
 
-*Related information*
+| 1
+| 2
+| 3
+| 4
+| 5
 
-https://mysupport.netapp.com/NOW/products/interoperability[NetApp Interoperability]
-
-https://library.netapp.com/ecm/ecm_download_file/ECMP1119223[AIX Host Utilities 6.0 Installation and Setup Guide]
+|===
