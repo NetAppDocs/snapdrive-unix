@@ -15,7 +15,11 @@ The following table gives you detailed information about the most common errors 
 
 [cols=5*,options="header",cols-"10,10,10,35,35"]
 |===
-| Error code | Return code | Type | Message | Solution
+| Error code
+| Return code
+| Type
+| Message
+| Solution
 | 0000-001 | NA | Admin | Datapath has been configured for the storage system <STORAGE-SYSTEM-NAME>. Please delete it using snapdrive config delete -mgmtpath command and retry. | Before deleting the storage system, delete the management path configured for the storage system by using the `snapdrive config delete -mgmtpath` command.
 |===
 *Related information*
