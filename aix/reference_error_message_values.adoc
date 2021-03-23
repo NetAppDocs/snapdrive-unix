@@ -13,18 +13,10 @@ It is helpful for you to be aware of some of the more common error messages that
 
 The following table gives you detailed information about the most common errors that you might encounter when using SnapDrive for UNIX:
 
+[cols=5*,options="header",cols-"10,10,10,35,35"]
 |===
 | Error code | Return code | Type | Message | Solution
-a|
-0000-001
-a|
-NA
-a|
-Admin
-a|
-Datapath has been configured for the storage system <STORAGE-SYSTEM-NAME>. Please delete it using snapdrive config delete -mgmtpath command and retry.
-a|
-Before deleting the storage system, delete the management path configured for the storage system by using the `snapdrive config delete -mgmtpath` command.
+| 0000-001 | NA | Admin | Datapath has been configured for the storage system <STORAGE-SYSTEM-NAME>. Please delete it using snapdrive config delete -mgmtpath command and retry. | Before deleting the storage system, delete the management path configured for the storage system by using the `snapdrive config delete -mgmtpath` command.
 |===
 *Related information*
 
