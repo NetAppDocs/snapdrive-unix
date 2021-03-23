@@ -563,11 +563,10 @@ g. STORAGE ALL
 h. ALL ACCESS
 
 +
-[NOTE]
-====
+.Notes:
+
 * If you do not have `sd-hostname.prbac` file, then modify the `sdgeneric.prbac` file in the storage system.
 * If you have both `sd-hostname.prbac` and `sdgeneric.prbac` file, then modify the settings only in `sdhostname.prbac` file in the storage system.
-====
 
 . In the `snapdrive.conf` file, ensure that the `_all-access-if-rbacunspecified_` configuration variable is set to "`on`".
 
