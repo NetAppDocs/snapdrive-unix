@@ -9,6 +9,6 @@ summary: This guide escribes how to administer SnapDrive for UNIX in a Linux env
 :imagesdir: ../media/
 
 [.lead]
-This guide escribes how to administer SnapDrive 5.3.2 for UNIX in a Linux environment after deployment is complete.
+This guide describes how to administer SnapDrive 5.3.2 for UNIX in a Linux environment after deployment is complete.
 
 Topics include how to configure the product, how to create and clone Snapshot copies, how to upgrade and uninstall the product, and an explanation of CLI commands.
