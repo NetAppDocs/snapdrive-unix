@@ -13,7 +13,7 @@ It is helpful for you to be aware of some of the more common error messages that
 
 The following table gives you detailed information about the most common errors that you might encounter when using SnapDrive for UNIX:
 
-[options="header"]
+[cols=5*,options="header",cols="15,20,15,25,40"]
 |===
 | Error code| Return code| Type| Message| Solution
 a|
@@ -344,7 +344,7 @@ a|
 a|
 As the number of devices supported by the ESX server for a controller has reached the maximum limit, you must add more controllers for the guest operating system.
 
-NOTE: The ESX server limits the maximum controller per guest operating system to 4.
+*NOTE:* The ESX server limits the maximum controller per guest operating system to 4.
 
 a|
 `9000- 023`
@@ -947,7 +947,8 @@ g. STORAGE ALL
 
 h. ALL ACCESS
 +
-[NOTE]
+*NOTE:*
++
 ====
 * If you do not have `sd-hostname.prbac` file, then modify the `sdgeneric.prbac` file in the storage system.
 * If you have both `sd-hostname.prbac` and `sdgeneric.prbac` file, then modify the settings only in `sdhostname.prbac` file in the storage system.
