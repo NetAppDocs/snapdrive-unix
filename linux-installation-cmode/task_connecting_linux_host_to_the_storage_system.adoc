@@ -38,3 +38,5 @@ The command lists the user name and IP address of the cluster management server 
 . Verify that all data and management interfaces are configured properly:
 +
 `*snapdrive config list -mgmtpath*`
+
+// 2022 DEC 9, snapdrive-unix-issues-10
