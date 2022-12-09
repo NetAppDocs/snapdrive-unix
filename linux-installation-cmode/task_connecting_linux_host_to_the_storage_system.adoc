@@ -22,7 +22,7 @@ The IP address of the SVM management logical interface (LIF) must be mapped with
 
 . Create a user on the data SVM:
 +
-`*snapdrive config set* vsadmin_name _Vserver_name_`
+`*snapdrive config set vsadmin_name _Vserver_name_*`
 +
 NOTE: The `_Vserver_name_` is the name of the SVM and must be mapped to the management LIF IP address for the SVM.
 
