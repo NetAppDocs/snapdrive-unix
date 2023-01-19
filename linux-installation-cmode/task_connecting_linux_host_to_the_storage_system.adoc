@@ -16,9 +16,13 @@ For successful SnapDrive for UNIX operations, you must set up your storage virtu
 +
 The IP address of the SVM management logical interface (LIF) must be mapped with the SVM name, either in the Domain Name Service (DNS) or in the `/etc/hosts` file.
 
-* If you are running ONTAP 8.2.2 or earlier, you must first create a user on the cluster management server, also called adminSVM, by running the `*snapdrive config set -cserver _csadmin_name cserver_name_*` command.
-
 .Steps
+
+. If you are running ONTAP 8.2.2 or earlier, create a user on the cluster management server, also called adminSVM: +
++
+`*snapdrive config set -cserver _csadmin_name cserver_name_*`
++
+If you are running ONTAP 8.2.3 or later, then skip this step.
 
 . Create a user on the data SVM:
 +
