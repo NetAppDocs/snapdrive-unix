@@ -12,7 +12,6 @@ summary: You can create Snapshot copies of multiple file systems, host volumes, 
 You can create Snapshot copies of multiple file systems, host volumes, LUNs, or disk groups by using a single command while using storage area network (SAN) and NFS volumes in network-attached storage (NAS).
 
 .Steps
-
 . Create a Snapshot copy:
 +
 `*snapdrive snap create -fs _file_spec_ -snapname _snapshot_copy_name_*`
