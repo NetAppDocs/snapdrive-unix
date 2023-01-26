@@ -9,7 +9,7 @@ summary: For successful SnapDrive for UNIX operations, you must set up your stor
 :imagesdir: ../media/
 
 [.lead]
-For successful SnapDrive for UNIX operations, you must set up your storage virtual machines (SVMs, formerly known as Vservers)
+For successful SnapDrive for UNIX operations, you must set up your storage virtual machines (SVMs, formerly known as Vservers).
 
 * You must have assigned the aggregates that contain volumes to the SVMs aggregate list to execute the SnapDrive for UNIX operations.
 * You must have one or more SVMs created to serve data from the cluster.
@@ -17,7 +17,6 @@ For successful SnapDrive for UNIX operations, you must set up your storage virtu
 The IP address of the SVM management logical interface (LIF) must be mapped with the SVM name, either in the Domain Name Service (DNS) or in the `/etc/hosts` file.
 
 .Steps
-
 . If you are running ONTAP 8.2.2 or earlier, create a user on the cluster management server, also called adminSVM: +
 +
 `*snapdrive config set -cserver _csadmin_name cserver_name_*`
@@ -26,9 +25,10 @@ If you are running ONTAP 8.2.3 or later, then skip this step.
 
 . Create a user on the data SVM:
 +
-`*snapdrive config set*`
+`*snapdrive config set vsadmin_name _Vserver_name_*`
 +
-`_vsadmin_name Vserver_name_`
+NOTE: `_Vserver_name_` is the name of the SVM and it must be mapped to the management LIF IP address.
+
 . Verify that the SVM is configured in SnapDrive for UNIX:
 +
 `*snapdrive config list*`
@@ -41,3 +41,5 @@ The command lists the user name and IP address of the cluster management server 
 . Verify that all data and management interfaces are configured properly:
 +
 `*snapdrive config list -mgmtpath*`
+
+// 2022 DEC 9, snapdrive-unix-issues-10
