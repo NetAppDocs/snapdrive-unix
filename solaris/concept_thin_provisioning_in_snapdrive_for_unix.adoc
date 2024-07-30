@@ -15,4 +15,4 @@ Within SnapDrive for UNIX, you cannot set the fractional reserve value, and ther
 
 *Related information*
 
-http://www.netapp.com/us/media/tr-3483.pdf[NetApp Technical Report 3483: Thin Provisioning in a NetApp SAN or IP SAN Enterprise Environment]
+https://www.netapp.com/pdf.html?item=/media/19670-tr-3483.pdf[NetApp Technical Report 3483: Thin Provisioning in a NetApp SAN or IP SAN Enterprise Environment^]
